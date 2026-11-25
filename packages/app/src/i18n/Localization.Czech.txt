@@ -1,0 +1,417 @@
+.,Czech
+// Translated by Claude from the English texts (October 2026): corrections by native speakers are welcome.
+APP_NAME,Valkyrie Universalis
+UNOFFICIAL,Neoficiální, vytvořeno fanoušky
+ADD_SCENARIO,Přidat soubor scénáře
+NO_SCENARIOS,Zatím tu nejsou žádné scénáře. Přidejte soubor .valkyrie z obchodu nebo od jeho autora.
+NOT_A_SCENARIO,{0} není scénář pro Valkyrie.
+SCENARIO_ADDED,{0} přidán.
+SCENARIO_OTHER_GAME,{0} je scénář pro {1}: najdeš ho v jeho seznamu.
+SCENARIO_FILTERED,{0} přidán, ale filtry ho skrývají (jeho jazyky nebo rozšíření, která nemáš).
+SCENARIO_INVALID,{0} nelze otevřít: jeho quest.ini není platný pro tuto verzi Valkyrie.
+RELOAD_LIST,Znovu načíst seznam
+PLAY_SCENARIO,Hrát
+LANGUAGES,Jazyky: {0}
+RATING,Hodnocení: {0} z 10
+DOWNLOAD_FAILED,{0} se nepodařilo stáhnout. Zkontrolujte připojení a zkuste to znovu.
+HEROES_RANGE,{0} až {1} vyšetřovatelů
+MINUTES_RANGE,{0} až {1} minut
+ABOUT_TEXT,Valkyrie Universalis je webová verze Valkyrie, svobodné aplikace od NPBruce a jeho přispěvatelů. Tvoří ji fanoušci a nemá nic společného s Fantasy Flight Games. Neobsahuje obrázky, zvuky ani texty vydavatele: každý hráč si importuje své vlastní a ty zůstávají v jeho prohlížeči.
+ABOUT_CODE,Kód pod licencí Apache 2.0, převedený z Valkyrie {0}.
+STORAGE_OFF,Tento prohlížeč neukládá soubory: co přidáte, po jeho zavření zmizí.
+STOPPED,Scénář se zastavil: {0}
+LOADING,Načítání…
+SYMBOL_STRENGTH,Síla
+SYMBOL_AGILITY,Obratnost
+SYMBOL_OBSERVATION,Pozornost
+SYMBOL_LORE,Znalosti
+SYMBOL_INFLUENCE,Vliv
+SYMBOL_WILL,Vůle
+SYMBOL_ACTION,akce
+SYMBOL_SUCCESS,úspěch
+SYMBOL_CLUE,stopa
+SYMBOL_TENTACLE,chapadlo
+SYMBOL_PRODUCT,ikona rozšíření
+MORALE,Morálka: {0}
+AVAILABLE_XP,Dostupné zkušenosti: {0}
+SYMBOL_HEART,zdraví
+SYMBOL_FATIGUE,únava
+SYMBOL_MIGHT,Síla
+SYMBOL_KNOWLEDGE,Znalosti
+SYMBOL_AWARENESS,Vnímání
+SYMBOL_SHIELD,štít
+SYMBOL_SURGE,příval
+MONSTER_LIST,Nestvůry
+NEXT_PHASE,Další fáze
+PHASE_BAR,Kolo
+SCROLL_UP,Předchozí nestvůry
+SCROLL_DOWN,Další nestvůry
+AWARENESS,Ostražitost {0}
+HORROR_VALUE,Hrůza {0}
+HEALTH,Zdraví {0}
+DAMAGE,Zranění {0}
+DUPLICATE,Skupina {0}
+END_TITLE,Konec
+WELCOME_TITLE,Vítejte ve Valkyrie Universalis
+WELCOME_TEXT,Valkyrie Universalis je webová verze Valkyrie, která běží na jakémkoli zařízení: počítači, tabletu nebo telefonu, kde si ji můžete nainstalovat i jako aplikaci.\n\nJde o ranou verzi. Byla důkladně otestována a vše se zdá fungovat, ale přesto může obsahovat chyby.\n\nNěkteré věci ještě chybí, například editor scénářů, a rozhraní je potřeba doladit. Už ale můžete hrát a hodnotit scénáře a čeká vás i několik nových možností k objevení…\n\nPříjemnou zábavu!
+WELCOME_HIDE,Znovu nezobrazovat
+WELCOME_START,Začít
+RATING_ALREADY_SENT,Hodnocení tohoto scénáře jste už odeslali ({0}/10). Každý scénář se na jednom zařízení hodnotí jen jednou.
+RATING_NOT_SENT,Hodnocení se nepodařilo odeslat: zkontrolujte připojení a zkuste to znovu. Vaše hodnocení zůstává uložené v tomto zařízení.
+MY_RATING,Vaše hodnocení: {0}/10
+FEEDBACK_BUTTON,Nahlásit problém s aplikací
+FEEDBACK_TITLE,Nahlásit problém nebo navrhnout nápad
+FEEDBACK_INTRO,Něco nefunguje, nebo máte nápad? Napište nám: dostane se to přímo k vývojáři. U chyby popište, co jste dělali a co se stalo.
+FEEDBACK_KIND,Druh
+FEEDBACK_BUG,Chyba
+FEEDBACK_IDEA,Nápad
+FEEDBACK_OTHER,Jiné
+FEEDBACK_COMMENT,Váš komentář
+FEEDBACK_EMAIL,Váš e-mail (nepovinný, pokud chcete odpověď)
+FEEDBACK_TECHNICAL,Technické údaje odesílané spolu s komentářem
+FEEDBACK_EMPTY,Před odesláním napište komentář.
+FEEDBACK_FAILED,Odeslání se nezdařilo: zkontrolujte připojení a zkuste to znovu.
+FEEDBACK_SENT,Děkujeme! Váš komentář byl odeslán.
+FEEDBACK_SEND,Odeslat
+FEEDBACK_CANCEL,Zrušit
+FEEDBACK_CLOSE,Zavřít
+PUZZLE_SYMBOLS,Symboly
+PUZZLE_ADD,Přidat {0}
+PUZZLE_REMOVE,Odebrat {0}
+PUZZLE_CODE,Váš tip
+PUZZLE_GUESSES,Dosavadní tipy
+PUZZLE_RESULT,{0} správně na správném místě, {1} správně na špatném místě
+PUZZLE_BLOCKS,Bloky
+PUZZLE_TARGET_BLOCK,Červený blok
+PUZZLE_BLOCK,Blok
+PUZZLE_PIECES,Dílky obrázku
+PUZZLE_PIECE,Dílek {0}
+PUZZLE_TOWERS,Věže
+PUZZLE_TOWER,Věž {0}
+IMPORT_SUBTITLE,Universalis používá obsah, který Valkyrie importovala z vaší vlastní kopie oficiální aplikace {0}. Do tohoto prohlížeče se zkopíruje jen jednou a nikdy ho neopustí.
+IMPORT_FROM_FOLDER,Vybrat složku import aplikace Valkyrie
+IMPORT_FOLDER_DESC,Ve Windows je v %APPDATA%\Valkyrie\{0}\import.
+IMPORT_ZIP_DESC,Zip téže složky import: způsob pro telefony a tablety.
+IMPORT_PROGRESS,{0} z {1} souborů
+IMPORT_NO_INI,Chybí import.ini: vyberte složku import aplikace Valkyrie nebo její zip.
+IMPORT_RAW_ASSETS,Toto jsou soubory samotné oficiální aplikace. Universalis je zatím neumí číst: nejprve je importujte ve Valkyrii a pak vyberte její složku import.
+IMPORT_NO_SPACE,V tomto prohlížeči není dost místa: je potřeba {0} MB a volných je {1} MB.
+IMPORT_UNREADABLE,Zip nelze přečíst: {0}
+IMPORT_FAILED,Import se nezdařil: {0}
+IMPORT_OLD,Tento import pochází z jiné verze Valkyrie nebo oficiální aplikace, proto se nepoužije. Importujte znovu v aktuální Valkyrii a přineste sem její složku.
+THEME,Motiv
+FELT,Sukno pod herní plochou
+COLOUR_BLACK,Černá
+COLOUR_GREEN,Zelená
+COLOUR_RED,Vínová
+COLOUR_BLUE,Modrá
+BOARD_TILT,Náklon herní plochy
+BOARD_TILT_TABLE,Jako stůl (30°)
+BOARD_TILT_VALKYRIE,Jako ve Valkyrii (10°)
+VERSION,Verze {0}
+NEW_VERSION,Je k dispozici nová verze aplikace.
+RELOAD_APP,Načíst znovu
+INSTALL_APP,Nainstalovat aplikaci
+INSTALL_APPLE,Chcete-li ji nainstalovat na tento iPhone nebo iPad, klepněte na Sdílet a pak na „Přidat na plochu“.
+IMPORT_INSTALL_FIRST,Na iPhonu a iPadu nejprve nainstalujte aplikaci (Sdílet a pak „Přidat na plochu“) a importujte z ní: nainstalovaná aplikace má své soubory odděleně od souborů prohlížeče.
+IMPORT_TO_PLAY,Ke hraní potřebuje Universalis obsah, který Valkyrie importovala z vaší vlastní kopie oficiální aplikace {0}. Do té doby si můžete prohlížet scénáře.
+BACKUP,Záloha
+BACKUP_TEXT,Co si aplikace ukládá (vaše hry, volby, vaše sbírka a stažené scénáře a balíčky), je v tomto prohlížeči na tomto zařízení. Záloha to vše shromáždí do jednoho souboru: abyste to mohli přenést do jiného prohlížeče nebo zařízení, nebo to získat zpět, když prohlížeč smaže svá data. Oficiální import v ní není: je třeba ho importovat znovu.
+BACKUP_DOWNLOAD,Stáhnout zálohu
+BACKUP_RESTORE,Obnovit zálohu
+BACKUP_MAKING,Vytváření zálohy: {0} z {1} souborů…
+BACKUP_MADE,Záloha stažena: {0} MB.
+BACKUP_CONFIRM,Vše, co aplikace v tomto prohlížeči uchovává, bude nahrazeno obsahem souboru {0}. Pokračovat?
+BACKUP_RESTORE_GO,Obnovit
+BACKUP_RESTORING,Obnovování: {0} z {1}…
+BACKUP_NOT_ONE,Tento soubor není záloha Valkyrie Universalis.
+BACKUP_UNREADABLE,Zálohu nelze přečíst: {0}
+BACKUP_FAILED,Nepodařilo se: {0}
+BACKUP_UNFINISHED,Záloha je v prohlížeči: na své místo se dostane při příštím spuštění aplikace.
+BACKUP_NOT_FINISHED,Záloha se zatím nemohla dostat na své místo ({0}): aplikace to zkusí znovu při spuštění.
+DOOM_NAME,DooM
+DOOM_NEEDS_PACK,Mise DooM potřebují svůj komunitní balíček obsahu. Stáhněte si ho z obchodu, abyste je mohli hrát.
+DOOM_DOWNLOAD_PACK,Stáhnout DooM
+TURN_PHONE,Otočte telefon: hry se hrají na šířku.
+PLAY_UPRIGHT,Hrát na výšku
+MOM_TITLE,Panství děsu
+MOM_EDITION,Druhá edice
+D2E_TITLE,Descent
+D2E_SUBTITLE,Výprava do temnot
+D2E_EDITION,Druhá edice
+COLOUR_UNIVERSALIS,Universalis (ilustrovaný)
+COLOUR_PURE,Čistá černá
+MARKS,Tvé značky
+MARK_PLAYED,Odehráno
+MARK_FAVORITE,Oblíbené
+MARK_PENDING,Na později
+FILTER_PLAYED,Odehrané či ne
+FILTER_PLAYERS,Hráči
+SORT_TITLE,Seřadit podle
+FILTER_CATEGORIES,Druh dobrodružství
+FILTER_CATEGORIES_NOTE,Jen pro Panství hrůzy. Ukáže dobrodružství, která mají všechna zaškrtnutá.
+CATEGORY_BEGINNERS,Pro začátečníky
+CATEGORY_SHORT,Krátké
+CATEGORY_NARRATIVE,Příběhové
+CATEGORY_COMBAT,Boj
+CATEGORY_CAMPAIGN,Kampaň nebo série
+CATEGORY_REPLAYABLE,Znovuhratelné
+FILTERS_ON,Filtrováno: {0} z {1}
+FILTERS_CLEAR,Zrušit filtry
+FILTERS_HIDE_ALL,Filtry skrývají všechny scénáře. Zrušte je, abyste je znovu viděli.
+FILTER_SEARCH_ON,Hledání: „{0}“
+FILTER_LANGS_ON,Jazyky: {0}
+FILTER_EXPANSIONS_ON,Bez chybějících rozšíření
+FILTER_PLAYERS_ON,Hráči: {0}
+ADULT_CONTENT,Obsah pro dospělé
+IGOR_NOT_LISTED,Toto dobrodružství v tomto seznamu není. Přejděte online do obchodu.
+IGOR_OPEN,Mluvit s Igorem
+IGOR_FILTERED,Igor dobrodružství našel, ale filtry ho skrývají. Zrušte je, abyste ho viděli.
+FILTER_MARKS,Označené
+FILTER_ALL,Vše
+FILTER_PLAYED_ONLY,Odehrané
+FILTER_UNPLAYED,Neodehrané
+FILTER_FAVORITES,Oblíbené
+FILTER_PENDING,Na později
+SIZE_NORMAL,Normální
+SIZE_LARGE,Velký
+SIZE_LARGER,Velmi velký
+PIECE_SIZE,Velikost žetonů na herní ploše
+PIECE_SIZE_LARGE,Velký (+30 %)
+OPTIONS_LOOK,Vzhled
+OPTIONS_ADVANCED_TEXT,Změny v průběhu hry. Když je vše vypnuto, hraje se jako ve Valkyrii.
+CONFIRM_PHASE,Zeptat se před koncem fáze vyšetřovatelů
+CONFIRM_PHASE_TEXT,Ukončit fázi vyšetřovatelů a začít fázi Mýtů?
+KEEP_ZOOM,Zachovat mé přiblížení, když scénář pohne kamerou
+HIDE_CURSOR,Skrýt ukazatel myši
+LOG_COPIED,Zkopírováno
+READ_ALOUD,Přečíst nahlas
+STOP_READING,Přestat číst
+AUTO_READ,Číst události nahlas, jakmile se objeví
+ITEM_SIZE,Velikost předmětů
+MONSTER_PLACE,Příšery
+MONSTER_PLACE_RIGHT,Vpravo
+MONSTER_PLACE_BOTTOM,Dole
+BUTTONS_APART,Tlačítka událostí odděleně od textu, jako v oficiální aplikaci
+EPIC_SPAWNS,Zvýraznit příchod silné příšery
+VOICE,Hlas pro čtení nahlas
+VOICE_BROWSER,Prohlížeče
+VOICE_OFF,Vypnuto
+VOICE_SAMPLE,Dveře se se skřípotem otevřou. Ve tmě něco čeká.
+VOICE_TRY,Vyzkoušet hlas
+VOICE_NONE,Tento prohlížeč nemá vlastní hlasy.
+VOICE_WHICH,Hlas
+VOICE_BEST,Nejlepší pro jazyk
+VOICE_GEMINI,Gemini (Google)
+VOICE_GEMINI_KEY,Klíč API Gemini
+VOICE_GEMINI_MODEL,Model
+VOICE_GEMINI_STYLE,Jak číst (nepovinné)
+VOICE_GEMINI_STYLE_HINT,Čti jako vypravěč hororu, tichým hlasem
+VOICE_GEMINI_NOTE,Texty se ke čtení posílají do Googlu. Klíč zůstává v tomto prohlížeči a neukládá se do záloh.
+VOICE_GEMINI_NO_KEY,Zadejte klíč pro použití Gemini (aistudio.google.com/apikey). Do té doby čte hlas prohlížeče.
+VOICE_GEMINI_TIME,První zvuk po {0} s; celé audio po {1} s.
+VOICE_GEMINI_FAILED,Gemini to nedokázal přečíst: {0}. Přečetl to hlas prohlížeče.
+VOICE_SPEECHIFY,Speechify
+VOICE_SPEECHIFY_KEY,Klíč API Speechify
+VOICE_SPEECHIFY_LOADING,Načítání hlasů…
+VOICE_SPEECHIFY_NO_VOICES,Speechify nemá pro tento jazyk s tímto modelem žádné hlasy.
+VOICE_SPEECHIFY_NOTE,Texty se ke čtení posílají do Speechify. Klíč zůstává v tomto prohlížeči a neukládá se do záloh.
+VOICE_SPEECHIFY_NO_KEY,Zadejte klíč pro použití Speechify (platform.speechify.ai). Do té doby čte hlas prohlížeče.
+VOICE_SPEECHIFY_FAILED,Speechify to nedokázal přečíst: {0}. Přečetl to hlas prohlížeče.
+VOICE_DEEPGRAM,Deepgram
+VOICE_DEEPGRAM_KEY,Klíč API Deepgram
+VOICE_DEEPGRAM_NO_VOICES,Deepgram nemá pro tento jazyk hlasy Aura-2: čte hlas prohlížeče.
+VOICE_DEEPGRAM_NOTE,Texty se ke čtení posílají do Deepgramu. Klíč zůstává v tomto prohlížeči a neukládá se do záloh.
+VOICE_DEEPGRAM_NO_KEY,Zadejte klíč pro použití Deepgramu (console.deepgram.com). Do té doby čte hlas prohlížeče.
+VOICE_DEEPGRAM_FAILED,Deepgram to nedokázal přečíst: {0}. Přečetl to hlas prohlížeče.
+VOICE_DEEPGRAM_FAMILY,Druh hlasu
+VOICE_DEEPGRAM_OTHER,Jiný hlas (jeho jméno v playgroundu)
+HORROR_REMINDER,Připomenout zkoušky hrůzy po aktivaci příšer
+HORROR_REMINDER_TEXT,Krok hrůzy: každý vyšetřovatel provede zkoušku hrůzy proti příšeře v dosahu s nejvyšší hodnotou hrůzy.
+BLANK_TILES,Když dílek chybí, místo zastavení dát prázdný
+CLICK_SOUND,Zvuk kliknutí u tlačítek v nabídkách
+MUSIC_IMPORTED,Hudba oficiální hry (importovaná)
+MUSIC_CUSTOM,Hudba dobrodružství (od autora)
+MENU_SOUND,Zvuk nabídek
+FILTER_DOWNLOADED,Stažené
+FILTER_DOWNLOADED_ONLY,Stažené
+FILTER_NOT_DOWNLOADED,Nestažené
+UPDATE_ALL,Aktualizovat vše ({0})
+UPDATING_ALL,Aktualizace {0} z {1}: {2}
+TILES_SHOW,Zobrazit dílky
+TILES_SPOILER,Upozornění na spoiler: dílky prozradí část mapy, kterou budete prozkoumávat. Chcete je vidět?
+TILES_CONTINUE,Pokračovat a zobrazit
+TILES_TITLE,Dílky scénáře
+TILES_LOADING,Načítání map scénáře…
+TILES_NONE,Tento scénář nepokládá žádné dílky.
+TILES_OPTIONAL,Volitelné: z „{0}“, které nemáš ve sbírce
+TILES_OPTIONAL_NOTE,Scénář tyto dílky pokládá jen tehdy, když máš tento balíček. Pokud ho máš, zaškrtni ho ve své sbírce.
+TILES_UNKNOWN,V žádném známém balíčku
+HEROES_ASKED_EXACT,Tento scénář vyžaduje: {0}
+HEROES_ASKED_RANGE,Tento scénář vyžaduje: {0} až {1}
+HEROES_CHOSEN,vybráno: {0}
+HERO_VIEW,Velikost seznamu
+HERO_VIEW_NORMAL,Malé
+HERO_VIEW_LARGE,Velké
+HERO_VIEW_LARGER,Portréty
+OPTIONS_RESET,Obnovit výchozí nastavení
+OPTIONS_RESET_CONFIRM,Vrátit všechny možnosti do původního stavu? Jazyk, hry, značky a stažené soubory zůstanou beze změny.
+TRANSLATE,Automatický překlad
+TRANSLATE_WARNING,Umělá inteligence překládá scénáře, které nejsou ve vašem jazyce. Může dělat chyby a kvalita závisí na zvoleném modelu. Texty se k překladu odesílají do OpenRouter. Nastavení je snadné:
+TRANSLATE_STEP_1,Založte si bezplatný účet na openrouter.ai.
+TRANSLATE_STEP_2,Otevřete Keys (openrouter.ai/keys), stiskněte Create Key, pojmenujte ho a zkopírujte klíč: začíná sk-or- a zobrazí se jen jednou.
+TRANSLATE_STEP_3,Vložte jej níže. Uloží se jen v tomto prohlížeči.
+TRANSLATE_STEP_4,Vyberte model, nebo ponechte bezplatný model DeepSeek, který nastavujeme. Bezplatné modely mohou být pomalé nebo mít limit za minutu; s kreditem můžete použít rychlejší.
+TRANSLATE_ENABLE,Zapnout
+TRANSLATE_KEY,Klíč OpenRouter
+TRANSLATE_MODEL,Model
+TRANSLATE_MODELS_LOADING,Hledání bezplatných modelů OpenRouter…
+TRANSLATE_MODEL_OTHER,Jiný model (jeho název v OpenRouter)
+TRANSLATE_TRY,Vyzkoušet překlad
+TRANSLATE_WORKING,Překládá se…
+TRANSLATED,Automatický překlad
+TRANSLATE_FAILED,Nepodařilo se přeložit: {0}
+TILES_TABLE,Potřebný stůl: asi {0} × {1} cm
+TILES_TABLE_NOTE,Největší mapa se všemi dílky najednou, bez karet a komponent kolem.
+MUSIC_CREDIT_LABEL,Autoři hudby
+MUSIC_CREDIT,Hudba: {0}
+MUSIC_CREDIT_CHANNEL,{0} na YouTube
+MORE_INFO,Více informací
+TILES_TABLE_INFO,Tato informace se může lišit od skutečnosti: je to největší velikost vypočtená z mapy scénáře.
+TRANSLATE_TIMEOUT,model odpovídal déle než {0} s. Zkuste to znovu nebo zvolte jiný model
+TRANSLATE_TOOK,{0} odpověděl za {1} s.
+TRANSLATE_DISABLED,Dočasně vypnuto, dokud ho vylepšujeme.
+STORAGE,Úložiště
+STORAGE_USED,Aplikace zabírá {0} MB z {1} MB, které jí tento prohlížeč povoluje.
+STORAGE_PERSISTED,Prohlížeč tyto soubory ponechá, i když mu dojde místo.
+STORAGE_NOT_PERSISTED,Když prohlížeči dojde místo, může tyto soubory smazat: občas si udělej zálohu.
+STORAGE_PERSIST,Požádat prohlížeč, ať je ponechá
+STORAGE_PERSIST_REFUSED,Prohlížeč nesouhlasil. Některé to dělají jen u nainstalovaných aplikací nebo často navštěvovaných stránek.
+STORAGE_WRITE_FAILED,Něco se v tomto prohlížeči nepodařilo uložit: {0}
+GO_ON_PLAYING,Hrát dál
+SAVE_AND_QUIT,Uložit a odejít
+COPY_DIAGNOSTICS,Zkopírovat podrobnosti o chybě
+DIAGNOSTICS_COPIED,Zkopírováno: vlož to do hlášení
+OTHER_WINDOW,Aplikace je už otevřená v jiném okně nebo kartě: používej jen jedno, jinak si přepíšou data.
+DELETE_SCENARIO_CONFIRM,Smazat {0} z tohoto zařízení? Abys ho mohl hrát, budeš ho muset stáhnout znovu.
+SAVE_FAILED,Hru se nepodařilo uložit: {0}
+NOT_A_ZIP,{0} není soubor zip: scénář Valkyrie je zip s příponou .valkyrie.
+CHECK_TITLE,{0} přidáno, s upozorněními
+CHECK_TITLE_ERRORS,{0} nelze otevřít
+CHECK_FIXED_FOLDER,Scénář byl v zipu uvnitř složky «{0}», a tak ho aplikace vytáhla, aby se dal hrát. Valkyrie by ho takto neotevřela: ke sdílení zabal obsah složky, ne složku.
+CHECK_BLANK_LINE,{0}, řádek {1}: obsahuje jen mezery nebo tabulátory a Valkyrie soubor nepřečte. Nech ho prázdný.
+CHECK_FORMAT,Jeho formát ({0}) Valkyrie nečte (čte {1} až {2}).
+CHECK_NO_QUESTTEXT,quest.ini nemá oddíl [QuestText], který uvádí jeho texty: Valkyrie ho neotevře.
+CHECK_MISSING_FILE,quest.ini uvádí soubor {0}, který ve scénáři není.
+CHECK_LOCALIZATION_HEADER,{0}: první řádek musí být jako «.,Czech» a uvádět jazyk; Valkyrie ho nepřečte.
+CHECK_MISSING_EVENT,{0} má tlačítko na událost {1}, která neexistuje.
+CHECK_MORE,A dalších {0} podobných.
+CHECK_UNREADABLE,{0} nelze přečíst: {1}
+COLOUR_CLASSIC,Klasický
+PREVIOUS_PAGE,Předchozí strana
+NEXT_PAGE,Další strana
+PAGE_OF,Strana {0} z {1}
+TRANSLATION_BUTTON,Můj překlad
+TRANSLATION_TITLE,Tvůj překlad tohoto scénáře
+TRANSLATION_EXPLAIN,Načti zip se souborem Localization.<jazyk>.txt svého překladu a, pokud je měníš, s obrázky a zvuky pod jmény, která jim dává scénář. Uloží se v tomto zařízení a použije se, když začneš hru tohoto scénáře v tom jazyce. Jiný překlad do stejného jazyka ho nahradí.
+TRANSLATION_NONE,Nemáš žádný vlastní překlad tohoto scénáře.
+TRANSLATION_SAVED_LINE,{0}: {1} z {2} textů, {3} obrázků a {4} zvuků ({5}).
+TRANSLATION_LOAD,Načíst zip
+TRANSLATION_REMOVE,Odebrat
+TRANSLATION_REMOVE_LANGUAGE,Odebrat překlad do jazyka {0}
+TRANSLATION_READING,Načítám…
+TRANSLATION_REPORT_TITLE,Co se našlo v {0}
+TRANSLATION_NOT_SAVED,Neuložilo se:
+TRANSLATION_TEXTS,Přeložené texty: {0} z {1}.
+TRANSLATION_IMAGES,Nahrazené obrázky: {0}.
+TRANSLATION_SOUNDS,Nahrazené zvuky: {0}.
+TRANSLATION_SAVED,Uloženo v tomto zařízení: použije se, když budeš hrát tento scénář v jazyce {0}.
+TRANSLATION_REPLACED,Nahrazuje tvůj dřívější překlad do jazyka {0}.
+TRANSLATION_NOT_ZIP,Soubor není zip.
+TRANSLATION_NO_TEXTS_FILE,Zip neobsahuje žádný soubor Localization.<jazyk>.txt s texty.
+TRANSLATION_SEVERAL_LANGUAGES,Zip obsahuje texty ve více jazycích ({0}): načítej po jednom.
+TRANSLATION_UNKNOWN_LANGUAGE,«{0}» není jedním z jazyků Valkyrie ({1}).
+TRANSLATION_NAME_LANGUAGE,Název {0} neodpovídá jazyku uvnitř ({1}): platí ten uvnitř.
+TRANSLATION_NOTHING_TRANSLATED,Žádný z jeho textů nepatří k tomuto scénáři: není z jiného?
+TRANSLATION_UNKNOWN_TEXTS,{0} textů ve scénáři neexistuje (z jiné verze?): {1}.
+TRANSLATION_UNUSED_FILES,{0} souborů nenahrazuje žádný soubor scénáře a nepoužijí se: {1}. Musí se jmenovat jako soubory scénáře.
+TRANSLATION_REPLACES_OWN,Scénář už je v jazyce {0}: tvé texty nahradí jeho vlastní.
+TRANSLATION_OTHER_LANGUAGE,Je v jazyce {0} a ty hraješ v jazyce {1}: použije se, jen když přepneš jazyk na {0}.
+TRANSLATION_SWITCH_ASK,Změnit teď jazyk aplikace? Nový jazyk: {0}. Nabídky i tento scénář se změní s ním.
+TRANSLATION_SWITCH,Přepnout: {0}
+TRANSLATION_STAY,Ponechat: {0}
+RULES_HELP,Nápověda a pravidla
+RULES_ACTIONS,Akce vyšetřovatele
+RULES_ACTIONS_D2E,Akce hrdiny
+RULES_ACTIONS_DOOM,Akce mariňáka
+RULES_SUMMARY,Shrnutí pravidel
+RULES_NOTE,Shrnutí od fanoušků pro připomenutí, jak se hraje. Nenahrazuje oficiální pravidla.
+SHOW_MAP,Zobrazit mapu
+SHOW_TEXT,Zpět k textu
+CLEAR_ELIMINATED,Zrušit eliminaci
+NO_WEBGL,Tento prohlížeč neumí vykreslit hrací plochu, protože nemá WebGL. Zapněte v jeho nastavení hardwarovou akceleraci, nebo zkuste jiný prohlížeč.
+BOARD_LOST,Hrací ploše došla paměť a nelze ji znovu vykreslit. Aplikaci úplně zavřete, znovu ji otevřete a použijte Pokračovat.
+TILES_TAB,Dílky
+MONSTERS_SHOW,Nepřátelé
+ITEMS_SHOW,Předměty
+MONSTERS_TITLE,Nepřátelé scénáře
+ITEMS_TITLE,Předměty scénáře
+MONSTERS_NOTE,Příšery, které scénář jmenuje. Ty, které losuje podle vlastností, tu nejsou.
+ITEMS_NOTE,Předměty, které scénář jmenuje. Losované tu nejsou.
+MONSTERS_NONE,Tento scénář nejmenuje žádné vlastní příšery.
+ITEMS_NONE,Tento scénář nejmenuje žádné vlastní předměty.
+HELP_SEARCH,Hledat v nápovědě
+HELP_SEARCH_NONE,V nápovědě nic neodpovídá.
+QUIT_CONFIRM,Odejít do hlavní nabídky? Hra se uloží sama a Pokračovat ji obnoví.
+QUIT_CONFIRM_YES,Odejít
+BUTTON_HINTS,Po chvíli bez stisku jemně rozzářit tlačítka scénáře
+QUEST_SERIOUS,Pozor: tento scénář má {0} chyb autora, které mohou hru zastavit nebo nechat událost napůl.
+QUEST_SERIOUS_SHOW,Zobrazit
+QUEST_SERIOUS_HIDE,Skrýt
+QUEST_SERIOUS_TELL,Jsou to chyby autora: pokud vám některá hru zastaví, dejte mu vědět.
+FAULT_ADD_MISSING,{0} dává na stůl něco, co neexistuje
+FAULT_TILE,Dílek {0} není v žádném balíčku
+FAULT_START,Nemá úvodní událost
+FAULT_TWICE,{0} je zapsáno dvakrát
+FAULT_TEXT,Text v jazyce {0} není správně uzavřen
+GAME_TIMER,Zobrazit délku kola a hry
+TIMER_ROUND,Kolo {0}
+TIMER_GAME,Hra {0}
+SCENARIO_FAULTS,Upozornit v podrobnostech scénáře na vážné chyby autora
+TV_MODE,Režim TV: vše větší a čitelné z dálky
+FULLSCREEN,Celá obrazovka
+NOTES,Poznámky
+NOTES_HINT,Stopy, kódy, kdo co nese…
+NOTES_KEPT,Ukládají se spolu se hrou.
+EDITOR_NOT_READY,Editor není hotový
+EDITOR_EARLY,Jsme ve velmi rané fázi: používejte ho jen k vyzkoušení, ne jako hotový nástroj
+EDITOR_COMPUTER_ONLY,Zatím se otevře jen na počítači, s myší nebo touchpadem: ne na telefonu ani na tabletu.
+EDITOR_ENTER,Rozumím, vstoupit
+ADD_CONTENT_PACK,Přidat balíček ze souboru
+PACKS_FROM_FILES,V tomto zařízení, mimo seznam obchodu
+PACK_ADDED,{0} přidán. Chcete-li ho použít, vyberte ho v {1}, v části {2}.
+PACK_CHECK_TITLE,{0} přidán, s upozorněními
+PACK_CHECK_TITLE_ERRORS,{0} nelze přidat
+PACK_NOT_ZIP,{0} není soubor zip: balíček obsahu je zip s příponou .valkyrieContentPack.
+PACK_IS_SCENARIO,{0} je scénář, ne balíček obsahu: přidejte ho v seznamu scénářů tlačítkem „{1}“.
+PACK_NO_INI,{0} nemá content_pack.ini, nahoře ani v žádné své složce, a Valkyrie ho proto nebere jako balíček.
+PACK_NO_NAME,content_pack.ini nemá v [ContentPack] name: Valkyrie se při jeho čtení zastaví. Přidejte name=… s názvem balíčku.
+PACK_NO_ID,content_pack.ini nemá v [ContentPack] id. Přidejte jedinečné id (stejné jako v manifestu): pod ním se balíček ukládá a scénáře si ho tak žádají.
+PACK_BAD_ID,Id „{0}“ obsahuje mezery nebo znaky: scénáře oddělují své balíčky mezerami a id pojmenovává soubor. Používejte jen písmena, číslice, - a _.
+PACK_OFFICIAL_ID,Id „{0}“ patří oficiálnímu balíčku: tento by ho nahradil. Zvolte jiné id.
+PACK_STORE_ID,Obchod už má balíček s id „{0}“: v tomto zařízení zaujme jeho místo tento. Pokud to není vaše verze toho balíčku, zvolte jiné id.
+PACK_NO_TYPE,content_pack.ini nemá type: přidejte type={0}Custom.
+PACK_OTHER_GAME,Je to balíček pro druhou hru (type={0}): přidejte ho z {1}.
+PACK_BAD_TYPE,type={0} nepatří k této hře: musí začínat {1}, například {1}Custom.
+PACK_NOT_CUSTOM,type={0}: komunitní balíčky používají {1}; s jiným typem se mezi nimi ve sbírce neobjeví.
+PACK_NO_IMAGE,Obrázek balíčku ({0}) v balíčku není: zobrazí se bez obrázku.
+PACK_NO_ICON,Ikona balíčku ({0}) v balíčku není.
+PACK_CASE,{0} se v balíčku jmenuje {1}. Této aplikaci a Windows na velikosti písmen nezáleží, ale Valkyrie v Androidu a Linuxu ano a soubor nenajde. Napište ho se stejnými velkými písmeny.
+PACK_LANGUAGE_LINE,[LanguageData] má řádek „{0}“: musí uvádět slovník a soubor, například „pck Localization.Czech.txt“.
+PACK_MISSING_LANGUAGE,[LanguageData] uvádí {0}, který v balíčku není: jeho texty se nezobrazí.
+PACK_MISSING_DATA,[ContentPackData] uvádí {0}, který v balíčku není: Valkyrie u tohoto souboru přestane balíček načítat.
+PACK_UNKNOWN_SECTION,{0}: Valkyrie neví, co je [{1}], a přeskočí to. Název sekce musí začínat jejím typem (TileSide, Monster, Item, Token…).
+PACK_DUPLICATE,[{0}] je v {1} i v {2}: platí jen první. Dejte každému vlastní název.
+PACK_NAME_TAKEN,[{0}] už definuje balíček {1}: platí jen jeden z nich. Dejte svému vlastní název.
+PACK_MISSING_IMAGE,{0}, [{1}]: obrázek {2} v balíčku není (ani jako .png, .jpg, .dds…): zobrazí se bez obrázku.
+PACK_IMAGE_ROOTED,{0}, [{1}]: obrázek {2} začíná lomítkem, takže ho Valkyrie hledá mimo balíček. Lomítko odstraňte.

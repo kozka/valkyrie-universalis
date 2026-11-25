@@ -1,0 +1,712 @@
+/* The board fills the screen; the heroes and the windows lie over it, as Valkyrie's UI canvas over its board. Its
+   margins are half the menus' (kozka, 7 November 2026), so that the board gets the room */
+.quest-screen {
+  /* Not in Valkyrie (11 November 2026): margins nearly none on a phone or tablet, a little on a big screen */
+  --gutter: clamp(3px, calc(1.2vw - 6px), 20px);
+  /* Valkyrie's unit, a thirtieth of the screen's height (UIScaler.GetPixelsPerUnit): the portraits are sized by it, as
+     there, and not by the text size, so that they grow with the screen without jumps (11 November 2026). Valkyrie's
+     are 4 units; ours are a little smaller by default (--portrait-scale), never under 40 pixels nor wider than a
+     seventh of the screen */
+  --unit: calc(100vh / 30);
+  --portrait-scale: 0.83;
+  --monster-size: clamp(40px, var(--unit, 3.333vh) * 4 * var(--portrait-scale, 0.83), 14vw);
+  --hero-size: var(--monster-size, 5rem);
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
+/* HeroCanvas: the heroes down the left edge, as in Valkyrie */
+.hero-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: var(--gutter) 0.75rem var(--gutter) var(--gutter);
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.hero-slot {
+  width: var(--hero-size, 4.5rem);
+  height: var(--hero-size, 4.5rem);
+  padding: 0;
+  border: 2px solid var(--trim);
+  border-radius: 50%;
+  background: var(--panel);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hero-slot .empty {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px dashed var(--line);
+}
+
+.hero-slot .portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  font-size: var(--step-sub);
+}
+
+.hero-slot.activated {
+  border-color: var(--hero-done);
+}
+
+.hero-slot.defeated .portrait {
+  filter: grayscale(1) brightness(0.35);
+}
+
+.hero-slot.selected {
+  border-color: var(--hero-selected);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--hero-selected) 35%, transparent);
+}
+
+/* Descent's morale (MoraleDisplay): its number in red, in a red box above the heroes */
+.morale {
+  margin: 0;
+  width: var(--hero-size, 4.5rem);
+  height: var(--hero-size, 4.5rem);
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--morale);
+  border-radius: var(--radius);
+  background: var(--panel);
+  color: var(--morale);
+  font-size: var(--step-title);
+  line-height: 1;
+}
+
+/* Descent's heroes and monsters stay above the windows and can be pressed while one is open, as in Valkyrie: a hero is
+   knocked out during a monster's activation, or chosen for an event */
+/* Not in Valkyrie (12 November 2026): Descent's heroes end above its log, skills and items, now in the corner below them */
+:root[data-game='D2E'] .quest-screen .hero-canvas {
+  max-height: calc(100% - min(3.6rem, 13vh) - var(--gutter) - 0.5rem);
+}
+
+:root[data-game='D2E'] .hero-canvas,
+:root[data-game='D2E'] .monster-list {
+  z-index: 22;
+}
+
+/* So its windows open between the two columns, as Valkyrie's do; on a phone's narrow screen the portraits are smaller */
+:root[data-game='D2E'] .quest-screen .window-layer {
+  padding-left: calc(var(--gutter) + var(--hero-size, 4.5rem) + 0.75rem);
+}
+
+:root[data-game='D2E'] .quest-screen:has(.monster-list) .window-layer {
+  padding-right: calc(var(--gutter) + var(--monster-size, 5rem) + 0.5rem);
+}
+
+/* Not in Valkyrie (11 November 2026): and clear of the menu button above that column, measured (play/Hud.tsx), monsters
+   or not; on a phone held upright, where that would leave too little, they start below it instead */
+@media not all and (max-width: 40rem) and (orientation: portrait) {
+  :root[data-game='D2E'] .quest-screen .window-layer {
+    padding-right: calc(var(--gutter) + var(--menu-width, 0px) + 0.5rem);
+  }
+
+  :root[data-game='D2E'] .quest-screen:has(.monster-list) .window-layer {
+    padding-right: calc(var(--gutter) + max(var(--menu-width, 0px), var(--monster-size, 5rem)) + 0.5rem);
+  }
+
+  /* With the monsters along the bottom (Options): clear of the menu only, and above the monsters */
+  :root[data-game='D2E'][data-monster-place='bottom'] .quest-screen:has(.monster-list) .window-layer {
+    padding-right: calc(var(--gutter) + var(--menu-width, 0px) + 0.5rem);
+    padding-bottom: calc(var(--gutter) + min(3.6rem, 13vh) + 0.75rem);
+  }
+}
+
+
+
+/* Descent's heroes have square portraits, in the frame Valkyrie draws them */
+:root[data-game='D2E'] .hero-slot,
+:root[data-game='D2E'] .hero-slot .portrait,
+:root[data-game='D2E'] .hero-slot .empty {
+  border-radius: var(--radius);
+}
+
+/* Game.StartQuest and HeroSelection, over the empty board and under the hero icons */
+.hero-selection {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  background: color-mix(in srgb, var(--background) 90%, transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: var(--gutter) var(--gutter) var(--gutter) calc(var(--gutter) + 6rem);
+  overflow-y: auto;
+}
+
+.hero-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.6rem 1rem;
+}
+
+.hero-choice {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.45rem 0.9rem 0.45rem 0.45rem;
+  border: 1px solid var(--card-edge);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--card-text);
+  text-align: left;
+  cursor: pointer;
+  box-shadow: var(--card-shadow);
+}
+
+.hero-choice .portrait {
+  flex: none;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  object-fit: cover;
+  font-size: var(--step-ui);
+}
+
+.hero-choice span:last-child {
+  font-size: var(--step-body);
+  line-height: 1.2;
+}
+
+/* A chosen hero turns grey, as HeroSelection.Select does */
+.hero-choice[aria-pressed='true'] {
+  background: var(--chosen);
+  color: var(--chosen-ink);
+  box-shadow: none;
+}
+
+/* The board and what stays on screen over it */
+.quest-play {
+  display: contents;
+}
+
+/* Windows over the table */
+.window-layer {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--gutter);
+  background: color-mix(in srgb, var(--shade) 72%, transparent);
+  z-index: 20;
+  overflow-y: auto;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: min(100%, 48rem);
+  max-height: 100%;
+}
+
+.items-window {
+  padding: 1.5rem;
+}
+
+.items-window > .button {
+  align-self: center;
+}
+
+.item-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+  gap: 1rem;
+  overflow-y: auto;
+}
+
+.item-grid li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: center;
+  font-size: var(--step-ui);
+  line-height: 1.2;
+}
+
+.item-picture {
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+  border-radius: var(--radius);
+  font-size: var(--step-sub);
+}
+
+/* DialogWindow: the event's text, read aloud, and its buttons below in their authors' colours */
+.dialog-layer {
+  align-items: flex-start;
+  background: transparent;
+  pointer-events: none;
+  /* Not in Valkyrie (11 November 2026): the room the windows have, measured, so that the monster's panel and the
+     windows lay themselves out by it (play.css, .dialog-stack) */
+  container: dialogs / size;
+}
+
+/* The monster's panel and the windows, laid out together: side by side, centred, both from the top; they share the
+   width, the windows giving way first, so that neither ever covers the other (the panel sat fixed at the top left and a
+   wide window, with large text or the television mode, went over it, 11 November 2026) */
+.dialog-stack {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gutter);
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  pointer-events: none;
+}
+
+.dialog-stack > .event-window {
+  flex: 0 1 auto;
+  min-width: min(100%, 17rem);
+}
+
+/* No window is ever drawn past its frame: on a short screen with large text (a phone held sideways in the television
+   mode) the items' and the notes' Close went below it, over the phase bar; what does not fit scrolls (11 November 2026) */
+.dialog-stack > .window,
+.window-layer > .window.panel {
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+/* Not in Valkyrie (11 November 2026): the windows leave the menu button in reach, as Descent's shop does. In Mansions
+   they keep left of the column of the menu and the monsters, as Descent's keep between its two columns (a wide window,
+   with large text or the television mode, went over the menu); on a phone held upright there is no room beside it, so
+   they start below it */
+:root[data-game='MoM'] .quest-screen .dialog-stack {
+  padding-right: calc(max(var(--menu-width, 6rem), var(--monster-size, 5rem)) + 0.5rem);
+}
+
+/* With the monsters along the bottom (Options), only the menu's column */
+:root[data-game='MoM'][data-monster-place='bottom'] .quest-screen .dialog-stack {
+  padding-right: calc(var(--menu-width, 6rem) + 0.5rem);
+}
+
+/* Too narrow to keep the column free (a small phone held sideways with large text): the windows take it, rather than
+   going off the screen, and the menu is in reach again once they close */
+@container dialogs (max-width: 30rem) {
+  :root[data-game='MoM'] .quest-screen .dialog-stack {
+    padding-right: 0;
+  }
+
+  .dialog-stack > .event-window {
+    min-width: min(100%, 12rem);
+  }
+}
+
+@media (max-width: 40rem) and (orientation: portrait) {
+  .quest-screen .dialog-layer {
+    padding-top: calc(var(--gutter) + 3.25rem);
+  }
+
+  :root[data-game='MoM'] .quest-screen .dialog-stack {
+    padding-right: 0;
+  }
+}
+
+/* A narrow screen held upright (a phone, or a tablet with large text): the monster above, the window under it */
+@container dialogs (max-width: 36rem) and (orientation: portrait) {
+  .dialog-stack {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .dialog-stack > .event-window {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+/* The same without container queries (Chrome before 105), by the screen's width */
+@supports not (container-type: size) {
+  @media (max-width: 36rem) and (orientation: portrait) {
+    .dialog-stack {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .dialog-stack > .event-window {
+      min-width: 0;
+      max-width: 100%;
+    }
+  }
+}
+
+.event-window {
+  width: min(100%, 40rem);
+  gap: 0;
+  pointer-events: auto;
+}
+
+/* Centred, as Valkyrie centres it (UIElement.SetText) */
+.event-text {
+  padding: 1.5rem 2.6rem 1.4rem;
+  text-align: center;
+  border-radius: var(--radius) var(--radius) 0 0;
+  font-size: var(--step-read);
+  line-height: 1.5;
+}
+
+.event-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.9rem;
+}
+
+.event-button {
+  width: 100%;
+}
+
+/* One under another, a button never gets shorter than its words: the list scrolls instead (on a short screen a long
+   label in three lines went over the next button, 11 November 2026) */
+.event-buttons[data-layout='column'] > * {
+  flex-shrink: 0;
+}
+
+/* Not in Valkyrie (29 October 2026): side by side when every button fits whole (play/ButtonRow.tsx), in equal shares
+   (row) or each as wide as its words with the room left shared out (row-fit) */
+.event-buttons:is([data-layout='row'], [data-layout='row-fit']) {
+  flex-direction: row;
+}
+
+.event-buttons:is([data-layout='row'], [data-layout='row-fit']) > .button {
+  min-width: 0;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.event-buttons[data-layout='row'] > .button {
+  flex: 1 1 0;
+}
+
+.event-buttons[data-layout='row-fit'] > .button {
+  flex: 1 0 auto;
+}
+
+.quota {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.quota-value {
+  min-width: 2ch;
+  text-align: center;
+  font-size: var(--step-sub);
+}
+
+@media (max-width: 40rem) {
+  .hero-canvas {
+    gap: 0.45rem;
+    padding: var(--gutter) 0.5rem var(--gutter) var(--gutter);
+  }
+
+  .hero-selection {
+    padding-left: calc(var(--gutter) + 4.5rem);
+  }
+}
+
+/* Descent's ClassSelectionScreen: a column for each hero, its picture over the classes of its archetype, as Valkyrie
+   draws them: free ones white, one another hero has dark, the hero's own and a hybrid class on top green */
+.class-heroes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.class-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.class-hero .portrait {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: var(--radius);
+  font-size: var(--step-sub);
+}
+
+.class-hero h2 {
+  margin: 0;
+  font-size: var(--step-body);
+  text-align: center;
+}
+
+.class-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.class-choice {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--class-ink);
+  border-radius: var(--radius);
+  background: var(--class-paper);
+  color: var(--class-ink);
+  font: inherit;
+  font-size: var(--step-ui);
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.class-choice:disabled {
+  background: var(--class-taken);
+  cursor: default;
+}
+
+.class-choice.picked {
+  background: var(--class-picked);
+}
+
+/* Not in Valkyrie: the items' pictures large (Options), each with its name beside it, as Valkyrie lays out a card */
+:root[data-item-size='large'] .item-grid {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+}
+
+:root[data-item-size='large'] .item-grid li {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+  text-align: start;
+  font-size: var(--step-body);
+}
+
+:root[data-item-size='large'] .item-picture {
+  flex: none;
+  width: 9rem;
+  height: 9rem;
+}
+
+/* Not in Valkyrie: how many investigators the scenario asks for, and three sizes for their list */
+.hero-selection-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+}
+
+.hero-selection-head h1 {
+  flex: 1 1 auto;
+}
+
+.hero-count {
+  margin: 0;
+  color: var(--quiet);
+  font-size: var(--step-ui);
+}
+
+.hero-views {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.hero-view {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--panel);
+  color: var(--quiet);
+  cursor: pointer;
+}
+
+.hero-view[aria-checked='true'] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.hero-view svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: currentColor;
+}
+
+.hero-selection[data-view='large'] .hero-list {
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  gap: 0.8rem 1.2rem;
+}
+
+.hero-selection[data-view='large'] .hero-choice .portrait {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+.hero-selection[data-view='large'] .hero-choice span:last-child {
+  font-size: var(--step-read);
+}
+
+.hero-selection[data-view='larger'] .hero-list {
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+  gap: 1rem;
+}
+
+.hero-selection[data-view='larger'] .hero-choice {
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem 0.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.hero-selection[data-view='larger'] .hero-choice .portrait {
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: var(--radius);
+}
+
+/* Not in Valkyrie: a long event fits the screen above the phase bar, its text scrolling and its buttons always in sight
+   (on a phone the window went under the bar, hiding its button, 16 October 2026). The bar's height is measured
+   (play/Hud.tsx), so the room left for the windows follows it whatever the theme or the screen. */
+.quest-screen:has(.phase-bar) .dialog-layer {
+  padding-bottom: calc(var(--gutter) + var(--phase-bar-height, 3.75rem));
+}
+
+.event-window {
+  min-height: 0;
+  overflow-y: auto;
+}
+
+/* The text gives way first, down to a few lines, and scrolls; the buttons keep all the rest of the screen, and only if
+   even that is not enough do they scroll among themselves. The window never grows past the room it has, so no button
+   is ever left outside it (a window with many buttons spilled them under the bar, 25 October 2026) */
+.event-window > .event-text {
+  flex: 1 1 auto;
+  min-height: min(4.5rem, 16vh);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.event-window > .event-buttons {
+  flex: 0 0 auto;
+  max-height: max(3.6rem, calc(100dvh - var(--phase-bar-height, 0px) - 2 * var(--gutter) - 7.5rem));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+/* A window with buttons only (a monster's, the game's menu) keeps no room for a text it does not have: all its buttons
+   show, and only if the screen is too short for them does the window scroll (on a phone held sideways a monster's
+   window showed Attack alone, its Evade and Cancel hidden under it, 11 November 2026) */
+.event-window > .event-buttons:first-child {
+  max-height: none;
+  /* They scroll themselves, inside the frame, rather than the whole window over its edge */
+  flex: 0 1 auto;
+  min-height: 0;
+}
+
+/* Not in Valkyrie (12 November 2026): on a short screen (a phone or a small tablet held sideways) a window of buttons
+   only (the game's menu, a monster's) is one wide column of plain buttons, sized by the screen so that all of them fit:
+   the framed buttons were too tall there, and only one or two showed */
+@media (max-height: 32rem) and (orientation: landscape) {
+  .quest-screen .dialog-stack > .event-window:has(> .event-buttons:first-child) {
+    width: min(100%, 36rem);
+  }
+
+  :root .quest-screen .dialog-stack > .event-window.panel > .event-buttons:first-child > .button {
+    --button-h: min(2.6rem, 8.5vh);
+    min-height: var(--button-h, 2.6rem);
+    padding: 0.1rem 1rem;
+    border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    border-image: none;
+    border-radius: var(--radius-small);
+    background: color-mix(in srgb, var(--card) 80%, transparent);
+    font-size: min(var(--step-ui), 4.6vh);
+    line-height: 1.1;
+  }
+
+  :root .quest-screen .dialog-stack > .event-window.panel > .event-buttons:first-child {
+    gap: min(0.4rem, 1.2vh);
+  }
+}
+
+/* Not in Valkyrie: when an event's text or buttons do not fit and scroll, their lower edge fades out, so it shows that
+   there is more below; it fades less as it is scrolled, and not at all when it fits (25 October 2026) */
+@property --scroll-fade {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 0px;
+}
+
+@keyframes scroll-fade {
+  from {
+    --scroll-fade: 1.75rem;
+  }
+
+  95% {
+    --scroll-fade: 1.75rem;
+  }
+
+  to {
+    --scroll-fade: 0px;
+  }
+}
+
+.event-window > :is(.event-text, .event-buttons) {
+  mask-image: linear-gradient(to bottom, var(--shade) calc(100% - var(--scroll-fade, 0px)), transparent);
+  animation: scroll-fade linear both;
+  animation-timeline: scroll(self);
+}
+
+/* Not in Valkyrie (29 October 2026): on a short screen (a phone held sideways) an event's window is narrower, its
+   words a step smaller, and it keeps to the left, so that most of the board stays in sight beside it; the camera then
+   brings what the event places into that free part (board/focus.ts). Valkyrie's window takes about half the width. */
+@media (max-height: 32rem) and (orientation: landscape) {
+  .quest-screen .dialog-stack {
+    justify-content: flex-start;
+  }
+
+  .quest-screen .event-window {
+    width: min(100%, 30rem, 60vw);
+  }
+
+  .quest-screen .event-window > .event-text {
+    padding: 1rem 2.5rem 0.9rem;
+    font-size: var(--step-body);
+    line-height: 1.4;
+  }
+
+  .quest-screen .event-buttons {
+    gap: 0.4rem;
+    padding: 0.6rem;
+  }
+}

@@ -1,0 +1,1852 @@
+/* What stays on screen while playing: the menu button, Mansions' bar and the monsters (play/Hud.tsx) */
+.menu-button {
+  position: absolute;
+  top: var(--gutter);
+  right: var(--gutter);
+  z-index: 6;
+}
+
+/* LogButton, SkillButton and InventoryButton: Descent's along the bottom, in its heading font; in the bottom left corner,
+   as Mansions' bar has its buttons (kozka, 12 November 2026), the heroes' column ending above them */
+.descent-buttons {
+  position: absolute;
+  left: var(--gutter);
+  bottom: calc(var(--gutter) + env(safe-area-inset-bottom, 0px));
+  z-index: 6;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.descent-buttons .button {
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+}
+
+/* NextStageButton: items, set and log on the left, the phase in the middle, the next phase on the right.
+   Not in Valkyrie (25 October 2026): no slab across the screen, only a shade that fades up from the bottom edge and the
+   phase's name between two hairlines; the bar itself lets every press through to what lies under it (a window's button
+   that reaches down that far is still pressed), and only its own buttons take presses. The Mythos tints the bar and the
+   edges of the screen red, as the official app reddens its screen. */
+.phase-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.1rem var(--gutter) calc(0.45rem + env(safe-area-inset-bottom, 0px));
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--bar) 70%, transparent),
+    color-mix(in srgb, var(--bar) 38%, transparent) 55%,
+    transparent
+  );
+}
+
+.phase-bar > .button {
+  pointer-events: auto;
+}
+
+.phase-bar.mythos {
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--mythos-tint) 55%, transparent),
+    color-mix(in srgb, var(--mythos-tint) 22%, transparent) 55%,
+    transparent
+  );
+}
+
+/* The phase's name, small and spaced, between two hairlines that fade out */
+.phase-name {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  pointer-events: none;
+  font-style: italic;
+  font-size: var(--step-sub);
+  letter-spacing: 0.04em;
+  color: var(--text);
+  text-shadow:
+    0 0 0.5rem var(--phase-halo),
+    0 1px 0.2rem var(--phase-halo);
+  white-space: nowrap;
+}
+
+/* A soft dark halo, not a box, so that the name reads over a light tile */
+.phase-name > span {
+  flex: none;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0.15rem 1.2rem;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--phase-halo) 55%, transparent), transparent);
+}
+
+.phase-name::before,
+.phase-name::after {
+  content: '';
+  /* They give way long before the name does */
+  flex: 0 1000 7rem;
+  min-width: 0;
+  height: 1px;
+  background: linear-gradient(to var(--fade, left), transparent, color-mix(in srgb, var(--accent) 70%, transparent));
+}
+
+.phase-name::after {
+  --fade: right;
+}
+
+.phase-bar.mythos .phase-name {
+  color: var(--alert-light);
+  text-shadow: 0 0 0.6rem color-mix(in srgb, var(--mythos-name-glow) 70%, transparent);
+}
+
+.phase-bar.mythos .phase-name::before,
+.phase-bar.mythos .phase-name::after {
+  background: linear-gradient(to var(--fade, left), transparent, color-mix(in srgb, var(--alert-light) 70%, transparent));
+}
+
+/* The Mythos' red at the edges of the screen, over the board and under the windows; it never takes a press */
+.phase-vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  box-shadow: inset 0 0 14vmin color-mix(in srgb, var(--mythos-vignette) 45%, transparent);
+  animation: phase-vignette-in 900ms ease both;
+}
+
+@keyframes phase-vignette-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .phase-vignette {
+    animation: none;
+  }
+}
+
+/* A short screen (a phone held sideways): the name a step smaller, so that it is read whole */
+@media (max-height: 32rem) {
+  .phase-name {
+    font-size: var(--step-body);
+  }
+}
+
+/* A phone held upright: the phase's name on a line of its own over the buttons, read whole (7 November 2026: with the
+   notes' button it was cut to «Fase de l…») */
+@media (max-width: 40rem) {
+  .phase-bar {
+    flex-wrap: wrap;
+    row-gap: 0.2rem;
+  }
+
+  .phase-bar > .button.next-phase {
+    margin-left: auto;
+  }
+
+  .phase-name {
+    order: -1;
+    flex-basis: 100%;
+    gap: 0.5rem;
+  }
+
+  .phase-name::before,
+  .phase-name::after {
+    flex-basis: 2rem;
+  }
+}
+
+.button.next-phase {
+  font-size: 1.4rem;
+  line-height: 1;
+  padding-inline: 1.1rem;
+}
+
+/* MonsterCanvas: up to five monsters down the right edge, under the menu button */
+.monster-list {
+  position: absolute;
+  top: calc(var(--gutter) + 3.25rem);
+  right: var(--gutter);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: min(0.4rem, 1.2vh);
+}
+
+.monster-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: min(0.5rem, 1.6vh);
+}
+
+.monster-list .scroll {
+  width: 100%;
+  min-height: min(1.8rem, 7vh);
+  padding: 0;
+  line-height: 1;
+}
+
+.monster-icon {
+  position: relative;
+  display: block;
+  /* By the screen's height, as Valkyrie's (--monster-size in QuestScreen.css); MonsterList in Hud.tsx shows as many
+     as fit */
+  width: var(--monster-size, 5rem);
+  height: var(--monster-size, 5rem);
+  padding: 0;
+  border: 2px solid var(--edge);
+  border-radius: var(--radius);
+  background: var(--panel);
+  cursor: pointer;
+}
+
+.monster-icon .monster-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-small);
+  font-size: var(--step-ui);
+}
+
+.monster-icon.activated .monster-picture {
+  filter: brightness(0.5);
+}
+
+.monster-icon.unique {
+  border-color: var(--unique);
+}
+
+.monster-badge,
+.monster-duplicate {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  /* Smaller with a small picture (a phone held sideways), so that they do not cover it */
+  min-width: min(1.7rem, 5vh);
+  height: min(1.7rem, 5vh);
+  padding: 0 0.25rem;
+  border: 2px solid currentColor;
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--shade) 90%, transparent);
+  font-size: var(--step-ui);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.monster-badge {
+  top: -0.35rem;
+  right: -0.35rem;
+}
+
+.monster-badge.awareness {
+  color: var(--awareness);
+}
+
+.monster-badge.horror {
+  color: var(--horror);
+}
+
+.monster-badge.health {
+  color: var(--health);
+}
+
+.monster-duplicate {
+  bottom: -0.35rem;
+  left: -0.35rem;
+  color: var(--text);
+}
+
+/* Not in Valkyrie (12 November 2026): the monsters along the bottom, as the official app has them (Options: Monsters,
+   at the bottom), between the bar's buttons on the left and the next phase's (MonsterList places it), as big as those
+   buttons; the phase's name gives its room up. Arrows at each end when they do not all fit */
+:root[data-monster-place='bottom'] .monster-list {
+  top: auto;
+  z-index: 7;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: min(0.4rem, 1.2vh);
+}
+
+:root[data-monster-place='bottom'] .monster-list ul {
+  flex-direction: row;
+  gap: min(0.6rem, 1.6vh);
+}
+
+:root[data-monster-place='bottom'] .monster-list .monster-icon {
+  width: min(3.6rem, 13vh);
+  height: min(3.6rem, 13vh);
+}
+
+:root[data-monster-place='bottom'] .monster-list .scroll {
+  width: auto;
+  min-width: min(1.8rem, 7vh);
+  min-height: min(3.6rem, 13vh);
+}
+
+:root[data-monster-place='bottom'] .phase-bar .phase-name {
+  visibility: hidden;
+}
+
+/* The windows over the board (play/Windows.tsx) */
+.event-text h3 {
+  margin: 0.8rem 0 0.3rem;
+  font-size: var(--step-sub);
+  font-weight: 500;
+}
+
+.event-text h3.master {
+  color: var(--alert);
+}
+
+/* Descent's activation (ActivateDialog.CreateWindow): the actions in a box, which on the master's step is red, as its
+   header and its button are */
+.activation-actions {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+}
+
+.activation-actions.master {
+  border-color: var(--alert);
+}
+
+.event-button.master {
+  color: var(--alert);
+}
+
+/* ActivateDialog (Descent): the monster's name opens its information */
+.activation-name {
+  display: block;
+  width: 100%;
+  margin: 0 0 0.8rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--card-quiet);
+  border-radius: var(--radius);
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* MonsterDialogMoM.DrawMonster: the monster at the top left, with its health and damage. Not in Valkyrie (11 November
+   2026): beside the windows, in their box (.dialog-stack in QuestScreen.css), not fixed over them; its picture follows
+   the height of the screen, so that its damage buttons are always in sight, and its words keep the size chosen */
+.monster-panel {
+  /* A third of the height, and never so big that the name and the damage buttons are left without room under it; here
+     from the screen's height, for browsers that cannot measure the windows' room (Chrome before 105), below from it */
+  --portrait: clamp(2.5rem, min(30vh, 100vh - 9rem - var(--phase-bar-height, 3.75rem) - 2 * var(--gutter)), var(--monster-size, 5rem) * 2.35);
+  flex: none;
+  /* As wide as its picture, its name or its damage buttons, − value +, whichever is widest, so that none goes past its
+     frame; a long name wraps */
+  width: max-content;
+  min-width: calc(var(--portrait, 10rem) + 1.5rem);
+  max-width: max(15rem, var(--portrait, 10rem) + 3rem);
+  max-height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  pointer-events: auto;
+}
+
+.monster-portrait {
+  position: relative;
+  flex: none;
+  width: var(--portrait, 10rem);
+  height: var(--portrait, 10rem);
+}
+
+.monster-portrait .monster-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: var(--radius);
+  font-size: var(--step-sub);
+}
+
+.monster-name {
+  margin: 0;
+  font-size: var(--step-sub);
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.monster-damage {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.monster-damage .button {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  border-color: var(--health);
+  color: var(--health);
+}
+
+.damage-value {
+  min-width: 2ch;
+  text-align: center;
+  font-size: var(--step-sub);
+  color: var(--health);
+}
+
+@supports (width: 1cqh) {
+  .monster-panel {
+    --portrait: clamp(2.5rem, min(32cqh, 100cqh - 9rem), var(--monster-size, 5rem) * 2.35);
+  }
+}
+
+/* Chrome before 105 has no container queries: the same layouts by the screen's size, with the browser's own rem */
+@supports not (container-type: size) {
+  @media (max-height: 30rem) {
+    .monster-panel {
+      gap: 0.3rem;
+    }
+
+    .monster-name {
+      line-height: 1.15;
+    }
+  }
+
+  @media (max-width: 36rem) and (orientation: portrait) {
+    .monster-panel {
+      --portrait: clamp(3.5rem, 10vh, 5rem);
+      width: min(100%, 40rem);
+      max-width: none;
+      max-height: none;
+      overflow: visible;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 0.9rem;
+    }
+  }
+}
+
+/* A short room (a phone held sideways): tighter, so that its picture keeps a useful size above its name and buttons */
+@container dialogs (max-height: 22rem) {
+  .monster-panel {
+    --portrait: clamp(2.5rem, 100cqh - 7.5rem, 6rem);
+    gap: 0.3rem;
+  }
+
+  .monster-name {
+    line-height: 1.15;
+  }
+}
+
+/* Descent's and DooM's monster beside its window (Windows.tsx MonsterPicture): half as big again as its icon, as much
+   as the room allows */
+.monster-panel.picture-only {
+  --portrait: clamp(2.5rem, 100vh - 8rem - var(--phase-bar-height, 0px) - 2 * var(--gutter), var(--monster-size, 5rem) * 1.5);
+}
+
+@supports (width: 1cqh) {
+  .monster-panel.picture-only {
+    --portrait: clamp(2.5rem, 100cqh - 5rem, var(--monster-size, 5rem) * 1.5);
+  }
+}
+
+/* The item an event gives (Windows.tsx ItemPanel): Valkyrie's 6 units, a fifth of the screen's height */
+.monster-panel.item-panel {
+  --portrait: clamp(2.5rem, 100vh - 8rem - var(--phase-bar-height, 0px) - 2 * var(--gutter), var(--unit, 3.333vh) * 6);
+  margin: 0;
+}
+
+@supports (width: 1cqh) {
+  .monster-panel.item-panel {
+    --portrait: clamp(2.5rem, 100cqh - 5rem, var(--unit, 3.333vh) * 6);
+  }
+}
+
+.item-panel .monster-picture {
+  object-fit: contain;
+}
+
+/* Too narrow for it beside the window (a small phone with large text): the window alone, as in Valkyrie */
+@container dialogs (max-width: 30rem) {
+  .monster-panel.picture-only:not(.item-panel) {
+    display: none;
+  }
+
+  /* The item stays, as it is what the event gave, smaller */
+  .monster-panel.item-panel {
+    --portrait: clamp(2.5rem, 22cqh, 5rem);
+  }
+}
+
+/* Not in Valkyrie (12 November 2026): the monster or the hero whose window is open, softly lit in its place, until the
+   window closes (MonsterIcon in Hud.tsx, QuestScreen.tsx; chosenMonster and chosenHero in ui/store.ts) */
+.monster-icon.chosen,
+.hero-slot.chosen {
+  outline: 2px solid color-mix(in srgb, var(--accent-bright) 80%, transparent);
+  outline-offset: 2px;
+  filter: drop-shadow(0 0 0.5rem color-mix(in srgb, var(--accent-bright) 55%, transparent));
+}
+
+/* A narrow screen held upright: the monster in a strip above the window, its picture small, its name and damage beside it */
+@container dialogs (max-width: 36rem) and (orientation: portrait) {
+  .monster-panel {
+    --portrait: clamp(3.5rem, 10cqh, 5rem);
+    width: min(100%, 40rem);
+    max-width: none;
+    max-height: none;
+    overflow: visible;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 0.9rem;
+  }
+}
+
+.monster-panel .defeated {
+  width: 100%;
+  border-color: var(--health);
+  color: var(--health);
+}
+
+.inventory-window,
+.log-window {
+  padding: 1.25rem;
+  pointer-events: auto;
+}
+
+.log-window {
+  width: min(100%, 48rem);
+}
+
+.inventory-window > .button,
+.log-window > .button {
+  align-self: center;
+}
+
+.log-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.item-row {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0.5rem;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.inventory-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  width: 8rem;
+  padding: 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--card-text);
+  cursor: pointer;
+}
+
+/* InventoryWindow: Descent's items are only shown, with the party's gold under them */
+li.inventory-item {
+  cursor: default;
+}
+
+.inventory-window .gold {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0;
+  font-size: var(--step-sub);
+}
+
+/* ShopInterface: Descent's shop lies over the board and under the windows that open over it, which stop its buttons;
+   below the menu button, which stays in reach on a phone too */
+.window-layer.shop-layer {
+  container: shop / inline-size;
+  z-index: 19;
+  align-items: flex-start;
+  padding-top: calc(var(--gutter) + 3.25rem);
+  background: transparent;
+  pointer-events: none;
+}
+
+.shop {
+  width: min(100%, 64rem);
+  padding: 1.25rem;
+  pointer-events: auto;
+}
+
+.shop-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 12rem) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+  min-height: 0;
+}
+
+/* Not in Valkyrie (11 November 2026): too narrow for three columns (a tablet held upright with large text squeezed them
+   to nothing), the event's buttons, what it sells and what can be sold one under another */
+@container shop (max-width: 42rem) {
+  .shop-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.shop-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.shop-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 0;
+}
+
+.shop-list h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.shop-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+  gap: 0.75rem;
+  max-height: min(55vh, 32rem);
+  overflow-y: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.shop-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  width: 100%;
+  padding: 0.25rem;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.shop-item .item-picture {
+  width: 5rem;
+  height: 5rem;
+}
+
+.shop-price,
+.shop-act {
+  padding: 0 0.5rem;
+  border: 1px solid var(--shop-ink);
+  color: var(--shop-ink);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.shop-price {
+  background: var(--shop-price);
+}
+
+.shop-act {
+  background: var(--shop-act);
+  font-size: var(--step-ui);
+}
+
+.shop-name {
+  width: 100%;
+  padding: 0.15rem 0.35rem;
+  background: var(--shop-paper);
+  color: var(--shop-ink);
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.shop .gold {
+  display: flex;
+  gap: 0.75rem;
+  margin: 0;
+  font-size: var(--step-sub);
+}
+
+@media (max-width: 40rem) {
+  .shop-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .shop-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* SkillWindow: Descent's heroes, then the chosen one's skills in rows by their cost, coloured as Valkyrie colours them */
+.skills-window {
+  padding: 1.25rem;
+  pointer-events: auto;
+}
+
+.skills-window > .button {
+  align-self: center;
+}
+
+.skill-heroes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skill-hero {
+  position: relative;
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 0;
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  cursor: pointer;
+}
+
+.skill-hero .portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-small);
+  font-size: var(--step-ui);
+  filter: brightness(0.45);
+}
+
+.skill-hero[aria-pressed='true'] {
+  border-color: var(--trim);
+}
+
+.skill-hero[aria-pressed='true'] .portrait {
+  filter: none;
+}
+
+.skill-xp {
+  position: absolute;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  display: grid;
+  place-items: center;
+  min-width: 1.7rem;
+  height: 1.7rem;
+  border: 2px solid var(--skill-xp);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--shade) 90%, transparent);
+  color: var(--skill-xp);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.skill-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.skill-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0.75rem;
+  padding: 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.skill-row.hybrid {
+  flex-wrap: wrap;
+  padding: 0;
+  border: 0;
+}
+
+.skill-row.hybrid > .skill-row {
+  flex: 1 1 10rem;
+}
+
+.skill-cost {
+  display: grid;
+  place-items: center;
+  min-width: 1.5rem;
+  padding-right: 0.6rem;
+  border-right: 1px solid var(--line);
+  font-size: var(--step-sub);
+}
+
+.skill-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button.skill {
+  border-color: currentColor;
+}
+
+.button.skill.picked {
+  color: var(--skill-picked);
+}
+
+.button.skill.affordable {
+  color: var(--skill-free);
+}
+
+.button.skill.locked {
+  color: var(--skill-locked);
+}
+
+.log-columns {
+  display: flex;
+  gap: 1rem;
+  min-height: 0;
+}
+
+.log-entries {
+  flex: 1;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 1.25rem;
+  max-height: min(65vh, 40rem);
+  overflow-y: auto;
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--card-text);
+  font-size: var(--step-body);
+  line-height: 1.55;
+}
+
+.log-entries li {
+  position: relative;
+  padding-right: 2.25rem;
+  text-align: left;
+}
+
+.log-entries li .read-aloud {
+  top: 0;
+  right: 0;
+}
+
+.log-entries li + li {
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--card-edge);
+}
+
+.log-entries li + li .read-aloud {
+  top: 0.65rem;
+}
+
+/* Not in Valkyrie: a new round and the Mythos phase stand out, as headings between the entries (Valkyrie issue 1519) */
+.log-entries li.log-mark {
+  padding-right: 0;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  text-align: center;
+}
+
+.log-entries li.log-mark + li,
+.log-entries li + li.log-mark {
+  border-top-width: 2px;
+}
+
+.log-vars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 16rem;
+  max-height: min(65vh, 40rem);
+  overflow-y: auto;
+}
+
+.log-vars label {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: var(--step-ui);
+}
+
+.log-vars input {
+  width: 4.5rem;
+}
+
+/* PuzzleCodeWindow: the symbols to choose, the guess being built, and the guesses made with their result */
+.puzzle-window {
+  width: min(100%, 40rem);
+  padding: 1.25rem;
+  pointer-events: auto;
+  /* Not in Valkyrie (11 November 2026): never drawn past its frame (over the phase bar); what does not fit scrolls, and
+     the slide, picture and tower puzzles shrink first (Puzzles.tsx, usePuzzleUnit) */
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.puzzle-window > * {
+  flex: none;
+}
+
+/* Its Close and Solved always in sight, at the foot of the window even while the rest scrolls */
+.puzzle-window > .event-buttons:last-child {
+  position: sticky;
+  bottom: 0;
+  padding-top: 0.6rem;
+  background: linear-gradient(to bottom, transparent, var(--card) 0.6rem);
+}
+
+/* On a short screen a puzzle takes the phase bar's room too: its buttons do nothing while a window is open */
+@media (max-height: 40rem) {
+  .quest-screen:has(.phase-bar) .dialog-layer:has(.puzzle-window) {
+    padding-bottom: var(--gutter);
+  }
+}
+
+.code-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.code-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.code-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.code-symbol {
+  display: inline-grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 1px solid var(--card-shade);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--card-text);
+  font: inherit;
+  font-size: var(--step-sub);
+  line-height: 1;
+}
+
+button.code-symbol {
+  cursor: pointer;
+}
+
+button.code-symbol:hover {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.code-symbol.empty {
+  border-style: dashed;
+  background: transparent;
+}
+
+.code-symbol-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: var(--radius-small);
+}
+
+.code-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+  margin-left: auto;
+}
+
+.code-skill,
+.code-moves {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.code-skill .card,
+.code-moves .card {
+  padding: 0.2rem 0.6rem;
+}
+
+.code-moves {
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+
+.code-guesses {
+  list-style: none;
+  margin: 0;
+  padding: 0.75rem;
+  /* The guesses give way first, down to one row, so that the symbols and the buttons stay in sight */
+  flex: 1 1 auto;
+  min-height: min(4.5rem, 12vh);
+  max-height: min(40vh, 18rem);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.code-result {
+  display: flex;
+  gap: 0.35rem;
+  margin-left: auto;
+}
+
+.code-symbol.result {
+  width: 2.25rem;
+  height: 2.25rem;
+  font-size: var(--step-body);
+}
+
+.puzzle-window .event-buttons {
+  flex-direction: row;
+  padding: 0;
+}
+
+.puzzle-window .event-button {
+  flex: 1;
+}
+
+/* The slide, picture and tower puzzles (Puzzles.tsx): the puzzle, the skill and the moves beside it, and its buttons */
+.slide-window,
+.image-window,
+.tower-window {
+  width: auto;
+  max-width: 100%;
+}
+
+.puzzle-play {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.puzzle-counts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.puzzle-counts p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.puzzle-counts .card {
+  min-width: 2.5rem;
+  padding: 0.2rem 0.6rem;
+  text-align: center;
+}
+
+.tower-window .puzzle-counts {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+
+.slide-board,
+.image-board {
+  position: relative;
+  flex: none;
+  touch-action: none;
+}
+
+.slide-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.slide-frame path {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2px;
+  vector-effect: non-scaling-stroke;
+}
+
+.slide-block {
+  position: absolute;
+  box-sizing: border-box;
+  border: 2px solid var(--accent);
+  border-radius: var(--radius-small);
+  background: var(--trim);
+  cursor: grab;
+  touch-action: none;
+}
+
+.slide-block.target {
+  border-color: var(--alert-light);
+  background: var(--alert);
+}
+
+.slide-block:active {
+  cursor: grabbing;
+}
+
+.image-piece {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  background-color: var(--card-shade);
+  background-repeat: no-repeat;
+  cursor: grab;
+  touch-action: none;
+}
+
+/* Without the picture, a frame and a number on each piece */
+.image-piece:not([style*='background-image']) {
+  border: 1px solid var(--line);
+}
+
+.image-piece.solved {
+  cursor: default;
+}
+
+.image-piece.fading {
+  animation-name: puzzle-fade-in;
+  animation-timing-function: linear;
+}
+
+@keyframes puzzle-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.image-number {
+  color: var(--card-text);
+  font-size: var(--step-sub);
+}
+
+.tower-row {
+  display: flex;
+  justify-content: center;
+  touch-action: none;
+}
+
+.tower-box {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid var(--line);
+  cursor: grab;
+}
+
+.tower-block {
+  flex: none;
+  box-sizing: border-box;
+  border: 2px solid var(--accent);
+  border-radius: var(--radius-small);
+  background: var(--trim);
+}
+
+/* ChangePhaseWindow: the phase's picture over everything for three seconds. It covers the screen in black from its
+   first frame, so that the windows the new phase opens behind it are never seen through it, and its picture fades in
+   over the black */
+.transition-window {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: var(--gutter) calc(var(--gutter) * 2);
+  background: var(--shade);
+  isolation: isolate;
+}
+
+.transition-window::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(ellipse at 30% 30%, var(--investigators-glow), var(--investigators-dark) 70%);
+}
+
+.transition-window.mythos::before {
+  background: radial-gradient(ellipse at 30% 30%, var(--mythos-glow), var(--mythos-dark) 70%);
+}
+
+.transition-window::before,
+.transition-window > * {
+  animation: transition-in 0.4s ease-out;
+}
+
+.transition-title {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-style: italic;
+  color: var(--investigators-title);
+}
+
+.transition-window.mythos .transition-title {
+  color: var(--mythos-title);
+}
+
+.transition-heroes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.transition-heroes .portrait {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: 2px solid var(--trim);
+  object-fit: cover;
+  font-size: var(--step-sub);
+}
+
+@keyframes transition-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* EndGameScreen */
+.end-window {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  padding: var(--gutter);
+  background: var(--background);
+}
+
+.end-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.end-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: min(100%, 44rem);
+  max-height: 100%;
+  overflow-y: auto;
+  padding: 2rem;
+  background: color-mix(in srgb, var(--shade) 85%, transparent);
+  text-align: center;
+}
+
+.end-card h2 {
+  margin: 0;
+  font-size: var(--step-title);
+}
+
+.end-quest {
+  margin: 0;
+  font-style: italic;
+  color: var(--accent);
+}
+
+@media (max-width: 40rem) {
+  .button.hud {
+    padding: 0.3rem 0.6rem;
+  }
+
+  .phase-name {
+    font-size: var(--step-ui);
+  }
+
+  .log-columns {
+    flex-direction: column;
+  }
+
+  .log-vars {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .transition-window::before,
+  .transition-window > * {
+    animation: none;
+  }
+}
+
+/* Not in Valkyrie: reading the card aloud (ui/speech.ts), a small speaker in its corner */
+.event-text {
+  position: relative;
+}
+
+.read-aloud {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: var(--radius-small);
+  background: transparent;
+  color: var(--card-quiet);
+  cursor: pointer;
+}
+
+.read-aloud:hover,
+.read-aloud:focus-visible,
+.read-aloud[aria-pressed='true'] {
+  border-color: var(--card-edge);
+  color: var(--accent);
+}
+
+.read-aloud svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.read-aloud svg path:first-child {
+  fill: currentColor;
+}
+
+/* Not in Valkyrie (29 October 2026): in the other top corner of an event's text, a folded map that folds the window
+   away to a thin strip, to look at the board under it; the strip unfolds it again (play/Windows.tsx, Card) */
+.peek-map {
+  position: absolute;
+  top: 0.35rem;
+  left: 0.35rem;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: var(--radius-small);
+  background: transparent;
+  color: var(--card-quiet);
+  cursor: pointer;
+}
+
+.peek-map:hover,
+.peek-map:focus-visible {
+  border-color: var(--card-edge);
+  color: var(--accent);
+}
+
+.peek-map svg,
+.event-peek svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.event-window.folded {
+  width: min(100%, 24rem);
+  animation: fold-in 180ms ease both;
+}
+
+.event-peek {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.3rem 0.8rem;
+  border: none;
+  background: transparent;
+  color: var(--card-text);
+  font: inherit;
+  font-size: var(--step-ui);
+  font-style: italic;
+  text-align: left;
+  cursor: pointer;
+}
+
+.event-peek svg {
+  color: var(--accent);
+}
+
+.event-peek-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0.85;
+}
+
+.event-peek:hover .event-peek-text,
+.event-peek:focus-visible .event-peek-text {
+  opacity: 1;
+}
+
+@keyframes fold-in {
+  from {
+    opacity: 0;
+    transform: translateY(-0.4rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .event-window.folded {
+    animation: none;
+  }
+}
+
+/* Not in Valkyrie: the items large (Options), with the name beside the picture, in the inventories and in the item an
+   event gives */
+:root[data-item-size='large'] .item-row {
+  flex-wrap: wrap;
+  overflow-x: visible;
+  max-height: min(60vh, 36rem);
+  overflow-y: auto;
+}
+
+:root[data-item-size='large'] .inventory-item {
+  flex-direction: row;
+  width: min(100%, 19rem);
+  gap: 1rem;
+  text-align: start;
+  font-size: var(--step-body);
+}
+
+:root[data-item-size='large'] .shop-item .item-picture {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+/* Not in Valkyrie: the options opened from the game's menu (QuickOptions.tsx) */
+.quick-options-layer {
+  z-index: 40;
+}
+
+.quick-options {
+  padding: 1.25rem;
+  width: min(100%, 52rem);
+  overflow-y: auto;
+}
+
+.quick-options-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem 2.5rem;
+}
+
+@media (min-width: 60rem) {
+  .quick-options-body {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quick-options-body .voice-options {
+    grid-column: 1 / -1;
+  }
+}
+
+.quick-options-body h2 {
+  font-size: var(--step-body);
+}
+
+.quick-options > .button {
+  align-self: center;
+}
+
+/* Not in Valkyrie: a monster that just came shines a moment; one defeated burns away (Hud.tsx useMonsterChanges) */
+.monster-icon.monster-new {
+  animation: monster-new 2.5s ease-out;
+}
+
+@keyframes monster-new {
+  0%,
+  40% {
+    box-shadow: 0 0 0 2px var(--accent), 0 0 1.4rem 0.4rem color-mix(in srgb, var(--accent) 70%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+.monster-gone {
+  pointer-events: none;
+}
+
+.monster-gone .monster-icon {
+  animation: monster-gone 0.9s ease-in forwards;
+}
+
+@keyframes monster-gone {
+  0% {
+    filter: none;
+    transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    filter: brightness(1.8) sepia(1) saturate(6) hue-rotate(-30deg);
+    transform: scale(1.12);
+  }
+  100% {
+    filter: brightness(0.4) sepia(1) saturate(4) hue-rotate(-40deg) blur(4px);
+    transform: scale(0.6) translateY(-0.6rem);
+    opacity: 0;
+  }
+}
+
+/* The questions of EndGameScreen: whether the players won, their rating and a comment */
+.end-welcome,
+.end-sent {
+  margin: 0;
+  font-size: var(--step-ui);
+  color: var(--quiet);
+}
+
+.end-question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.end-ask {
+  white-space: pre-line;
+}
+
+.end-choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.end-rating .button.end-choice {
+  min-width: 2.6rem;
+  padding-inline: 0.4rem;
+}
+
+.button.end-choice[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.end-comments {
+  width: 100%;
+  resize: vertical;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--shade);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--step-ui);
+}
+
+.end-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.end-error {
+  margin: 0;
+  color: var(--alert-light);
+  font-size: var(--step-ui);
+}
+
+/* Not in Valkyrie: the players' notes (play/NotesWindow.tsx), over the game's windows */
+.window-layer.notes-layer {
+  z-index: 44;
+}
+
+.notes-window {
+  width: min(100%, 36rem);
+  padding: 1.25rem 1.5rem;
+  gap: 0.8rem;
+}
+
+.notes-window h2 {
+  margin: 0;
+  color: var(--accent);
+}
+
+.notes-text {
+  width: 100%;
+  /* As tall as it can be, down to a few lines on a short screen, so that Close stays inside the window */
+  flex: 1 1 auto;
+  height: min(50vh, 22rem);
+  min-height: min(4.5rem, 20vh);
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--card-edge);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--card-text);
+  font: inherit;
+  font-size: var(--step-body);
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.notes-note {
+  margin: 0;
+  color: var(--quiet);
+  font-size: var(--step-small, 0.9rem);
+}
+
+.notes-window > .button {
+  align-self: center;
+}
+
+/* Not in Valkyrie: how long the round and the game have lasted (play/GameTimer.tsx), small at the top, under the windows */
+.game-timer {
+  position: absolute;
+  top: calc(var(--gutter) * 0.5);
+  left: 50%;
+  z-index: 4;
+  display: flex;
+  gap: 0.9rem;
+  margin: 0;
+  padding: 0.15rem 0.7rem;
+  transform: translateX(-50%);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--shade) 55%, transparent);
+  color: var(--quiet);
+  font-size: var(--step-small);
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Not in Valkyrie (12 November 2026): a tough monster's coming, by how tough it is (epicSpawn.ts, Hud.tsx EpicSpawn) */
+.monster-icon.monster-epic {
+  animation: monster-epic 2.6s ease-out;
+  z-index: 1;
+}
+
+.monster-icon.epic-1 {
+  --epic-glow: var(--accent);
+}
+
+.monster-icon.epic-2,
+.monster-icon.epic-3 {
+  --epic-glow: var(--mythos-name-glow);
+}
+
+@keyframes monster-epic {
+  /* Light, never bigger: a larger icon would leave the list's room, past the next phase's button */
+  0% {
+    filter: brightness(1.9);
+    box-shadow: 0 0 0 3px var(--epic-glow, var(--accent)), 0 0 2.4rem 0.9rem color-mix(in srgb, var(--epic-glow, var(--accent)) 85%, transparent);
+  }
+  15% {
+    filter: none;
+  }
+  25%,
+  55% {
+    box-shadow: 0 0 0 3px var(--epic-glow, var(--accent)), 0 0 1.8rem 0.6rem color-mix(in srgb, var(--epic-glow, var(--accent)) 75%, transparent);
+  }
+  40% {
+    box-shadow: 0 0 0 2px var(--epic-glow, var(--accent)), 0 0 0.8rem 0.2rem color-mix(in srgb, var(--epic-glow, var(--accent)) 50%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+.board-stage.epic-shake-2 {
+  animation: epic-shake 0.5s ease-out;
+}
+
+.board-stage.epic-shake-3 {
+  animation: epic-shake 0.9s ease-out;
+  --shake: 14px;
+}
+
+@keyframes epic-shake {
+  0%,
+  100% {
+    transform: none;
+  }
+  10% {
+    transform: translate(calc(var(--shake, 7px) * -1), calc(var(--shake, 7px) * 0.5));
+  }
+  25% {
+    transform: translate(var(--shake, 7px), calc(var(--shake, 7px) * -0.6));
+  }
+  40% {
+    transform: translate(calc(var(--shake, 7px) * -0.7), calc(var(--shake, 7px) * -0.3));
+  }
+  55% {
+    transform: translate(calc(var(--shake, 7px) * 0.5), calc(var(--shake, 7px) * 0.4));
+  }
+  75% {
+    transform: translate(calc(var(--shake, 7px) * -0.2), 0);
+  }
+}
+
+/* A boss: its picture rises out of a red glow at the screen's edges and fades, never in the way of a press */
+.epic-spawn {
+  --epic-red: var(--mythos-name-glow);
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 35%, color-mix(in srgb, var(--epic-red, var(--mythos-name-glow)) 55%, transparent) 100%);
+  animation: epic-veil 2.8s ease-out forwards;
+}
+
+.epic-spawn-picture {
+  width: min(60vh, 70vw);
+  height: min(60vh, 70vw);
+  object-fit: contain;
+  filter: drop-shadow(0 0 2rem var(--epic-red, var(--mythos-name-glow))) drop-shadow(0 0 0.6rem var(--epic-red, var(--mythos-name-glow)));
+  animation: epic-rise 2.8s ease-out forwards;
+}
+
+@keyframes epic-veil {
+  0% {
+    opacity: 0;
+  }
+  12%,
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes epic-rise {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  15% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  25%,
+  60% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .board-stage:is(.epic-shake-2, .epic-shake-3) {
+    animation: none;
+  }
+
+  .monster-icon.monster-epic {
+    animation-name: monster-new;
+  }
+
+  .epic-spawn-picture {
+    animation-name: epic-veil;
+  }
+}
+
+/* Not in Valkyrie (12 November 2026, kozka): the advanced option «buttons apart» (ui/preferences.ts, data-buttons-apart)
+   frames an event's text alone and leaves its buttons below the frame, over the board, as the official app does. A
+   window of buttons alone, and one folded to a strip, keep their frame. The themes frame the text their own way
+   (themes/universalis/*Play.css). */
+:root[data-buttons-apart] .quest-screen .event-window.panel:has(> .event-text):not(.folded) {
+  padding: 0;
+  border: none;
+  border-image: none;
+  background: none;
+  box-shadow: none;
+}
+
+:root[data-buttons-apart] .quest-screen .event-window:not(.folded) > .event-text.card {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  box-shadow: var(--window-shadow);
+}
+
+:root[data-buttons-apart] .quest-screen .event-window:not(.folded) > .event-text + .event-buttons {
+  margin-top: 0.6rem;
+  padding: 0;
+  background: none;
+}

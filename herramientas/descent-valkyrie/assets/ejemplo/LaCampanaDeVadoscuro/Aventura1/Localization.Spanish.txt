@@ -1,0 +1,69 @@
+.,Spanish
+EventPrologo.text,<i>Al amanecer seguís las rodadas del carro de los trasgos colina arriba. A media mañana oís sus risas al otro lado del camino, y un grito de mujer en la espesura.</i>
+EventPrologo.button1,Continuar
+EventPreparar.text,"<b>Preparación</b>\n\nApartad las piezas {c:TileCamino}, {c:TileClaro} y {c:TileCampamento}, una Entrada, 3 terminales y una puerta."
+EventPreparar.button1,Continuar
+EventColocarMapa.text,Colocad las piezas {c:TileCamino} y {c:TileClaro}, la Entrada, 2 terminales y la puerta de la empalizada como se indica.
+EventColocarMapa.button1,Continuar
+EventColocarHeroes.text,Colocad a los héroes en la Entrada.
+EventColocarHeroes.button1,Continuar
+EventColocarFichas.text,Colocad 2 fichas de Búsqueda y una ficha de Aldeana como se indica. La aldeana está atada a un árbol.
+EventColocarFichas.button1,Continuar
+SpawnTrasgos.text,Colocad el grupo de {type} como se indica (el marco rojo es el líder), respetando el límite de monstruos.
+SpawnTrasgos.button1,Continuar
+EventObjetivo.text,"<b>Objetivo:</b> la campana está tras la empalizada del campamento trasgo. Abrid su puerta y derrotad al cabecilla.\n\n<b>Reglas especiales:</b> la puerta de la empalizada está atrancada. Un héroe adyacente puede intentar forzarla como {action}."
+EventObjetivo.button1,Continuar
+TokenAldeana.text,Una mujer atada a un tronco os hace señas desesperadas.
+TokenAldeana.button1,{action} Desatarla
+EventDesatar.text,Un héroe adyacente a la aldeana realiza una prueba de {might} o de {knowledge} (a su elección) para soltar los nudos.
+EventDesatar.button1,Superada
+EventDesatar.button2,Fallada
+EventNudos.text,Los nudos no ceden y la cuerda te quema las manos: sufres 1 {fatigue}. Podéis volver a intentarlo.
+EventNudos.button1,Continuar
+EventAldeanaLibre.text,"La aldeana se llama Ilsa y os abraza llorando. «Se llevaron la campana a su campamento, tras la empalizada. ¡Y cuidado: algo los sigue desde el bosque!»\n\nRetirad la ficha de Aldeana. Vuestra Moral sube en 1."
+EventAldeanaLibre.button1,Continuar
+SpawnAcechadores.text,Atraídas por los gritos, unas criaturas salen de la espesura. Colocad un grupo de {type} en la pieza {c:TileClaro}, lo más lejos posible de los héroes y respetando el límite de monstruos.
+SpawnAcechadores.button1,Continuar
+TokenBusqueda1.text,Un fardo abandonado junto al camino.
+TokenBusqueda1.button1,{action} Buscar
+EventBuscar1.text,Roba una carta de Búsqueda.
+EventBuscar1.button1,Continuar
+TokenBusqueda2.text,Algo brilla entre la hierba alta.
+TokenBusqueda2.button1,{action} Buscar
+EventBuscar2.text,Roba una carta de Búsqueda. Entre la hierba encuentras además una bolsa con monedas: los héroes ganan 25 de oro.
+EventBuscar2.button1,Continuar
+DoorEmpalizada.text,Una empalizada de troncos afilados cierra el paso. La puerta está atrancada por dentro.
+DoorEmpalizada.button1,{action} Forzar la tranca
+EventForzar.text,Un héroe adyacente a la puerta realiza una prueba de {might}.
+EventForzar.button1,Superada
+EventForzar.button2,Fallada
+EventTrancaResiste.text,La tranca aguanta y una astilla se te clava en el brazo: sufres 1 {heart}.
+EventTrancaResiste.button1,Continuar
+EventAbrirCampamento.text,La tranca se parte con un crujido. Retirad la puerta y colocad la pieza {c:TileCampamento}, un terminal y una ficha de Objetivo roja como se indica: es la campana, atada a un carro.
+EventAbrirCampamento.button1,Continuar
+SpawnGorruk.text,Junto al carro, un ettin enorme se levanta de un salto: es Gorruk el Rompehuesos. Colocadlo como se indica.
+SpawnGorruk.button1,Continuar
+SpawnGorruk.uniquetitle,Gorruk el Rompehuesos
+SpawnGorruk.uniquetext,Gorruk el Rompehuesos es un Ettin líder. Tiene 3 {heart} más, y 1 {heart} más por héroe. Gasta los {surge} en este orden: primero en {heart} adicional, después en Arrojar (pon al héroe lo más lejos posible de sus compañeros).
+EventObjetivoActualizado.text,<b>Objetivo actualizado:</b> derrotad a Gorruk. Mientras siga en pie, la campana no se mueve del carro.
+EventObjetivoActualizado.button1,Continuar
+TokenCampana.text,La campana de Vadoscuro, atada al carro con cadenas. Mientras Gorruk siga en pie no podréis llevárosla.
+TokenCampana.button1,Continuar
+CustomMonsterGorruk.monstername,Gorruk el Rompehuesos
+CustomMonsterGorruk.info,Gorruk usa la miniatura y la carta de Ettin del Acto I, como líder. Tiene Vida adicional (en rojo).
+ActivationGorrukEmbestida.ability,"<i>Gorruk ha fijado sus ojillos en {0}.</i>\nDurante esta activación, sus ataques ganan +1 {heart}."
+ActivationGorrukEmbestida.master,"{action} Se confronta con el héroe señalado arriba (si no puede llegar, con el héroe más cercano).\n{action} Ataca a ese héroe."
+ActivationGorrukRugido.ability,"<i>{1} suelta un rugido que hace temblar la empalizada.</i>\nCada héroe a 3 casillas o menos realiza una prueba de {will}; si la falla, sufre 1 {fatigue}."
+ActivationGorrukRugido.master,"{action} Se confronta con el héroe más cercano.\n{action} Ataca al héroe adyacente con menos Vida restante."
+EventPeligroMenor.text,"<i>Un cuervo grazna tres veces sobre vuestras cabezas.</i>\n\nLa amenaza crece: al final de esta ronda ocurrirá un peligro."
+EventPeligroMenor.button1,Continuar
+EventPeligroMayor.text,"<i>El suelo tiembla. Algo se ha dado cuenta de que estáis aquí.</i>\n\nLa amenaza es grave: al final de esta ronda ocurrirá un peligro mayor."
+EventPeligroMayor.button1,Continuar
+EventPeligroMortal.text,"<i>Ya no queda tiempo.</i>\n\nAl final de esta ronda ocurrirá un peligro mortal."
+EventPeligroMortal.button1,Continuar
+EventRefuerzos.text,<b>Refuerzos:</b> colocad un esbirro del grupo de {c:SpawnTrasgos} en la Entrada (o en la casilla vacía más cercana), respetando el límite de monstruos.
+EventRefuerzos.button1,Continuar
+EventVictoria.text,"<b>Victoria</b>\n\nGorruk se desploma junto al carro. Bajo una lona encontráis la campana de Vadoscuro… pero le falta el badajo. Una nota manchada de cera dice: «Para el señor de la cripta».\n\nEntre los trastos de Gorruk también encontráis este objeto.\n\nCada héroe recibe 1 PE. Los héroes ganan 25 de oro por héroe y 1 de fama."
+EventVictoria.button1,Volver a Puertoalto
+EventDerrota.text,"<b>Derrota</b>\n\nOs retiráis colina abajo mientras los trasgos se llevan la campana a las montañas. Sin ella, los muertos de Vadoscuro serán más fuertes.\n\nCada héroe recibe 1 PE."
+EventDerrota.button1,Volver a Puertoalto

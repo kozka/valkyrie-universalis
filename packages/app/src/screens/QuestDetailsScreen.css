@@ -1,0 +1,351 @@
+.quest-details {
+  max-width: 64rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: minmax(9rem, 14rem) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.details > .photo {
+  max-width: 14rem;
+}
+
+/* Authors write long addresses: they wrap, or a phone's screen would grow past its width and over the buttons */
+.details-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  overflow-wrap: anywhere;
+}
+
+/* The description is read aloud at the table: a card set for reading, centred as Valkyrie centres it (UIElement.SetText) */
+.description {
+  padding: 1.4rem 1.6rem;
+  text-align: center;
+  font-size: var(--step-read);
+  line-height: 1.5;
+}
+
+.details-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+/* Each fact in a thin frame, as the description's card (7 November 2026: loose under it, they read as a footnote) */
+.details-facts > div {
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--card) 70%, transparent);
+}
+
+.details-facts dt {
+  font-style: italic;
+  color: var(--quiet);
+  font-size: var(--step-ui);
+}
+
+.details-facts dd {
+  margin: 0;
+}
+
+.details-facts .authors {
+  flex-basis: 100%;
+  font-size: var(--step-ui);
+  color: var(--quiet);
+}
+
+.details-facts .authors dd {
+  margin-top: 0.3rem;
+  line-height: 1.5;
+}
+
+.details-facts .difficulty .marks {
+  color: color-mix(in srgb, var(--text) 20%, transparent);
+}
+
+.details-facts .difficulty .marks.lit {
+  color: var(--accent);
+}
+
+@media (max-width: 40rem) {
+  .details {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .details > .photo {
+    max-width: 10rem;
+  }
+}
+
+/* The marks on the left and, apart on the right, the tiles the scenario uses (QuestTiles.tsx) */
+.details-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.tiles-warning,
+.tiles-window {
+  padding: 1.5rem;
+}
+
+.tiles-warning {
+  width: min(100%, 30rem);
+}
+
+.tiles-window {
+  width: min(100%, 56rem);
+  overflow-y: auto;
+}
+
+.tiles-window > .button {
+  align-self: center;
+}
+
+.tiles-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.tiles-tabs .button[aria-pressed='true'] {
+  color: var(--accent-bright);
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+.tiles-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+  gap: 1.25rem 1rem;
+}
+
+.tiles-grid li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  text-align: center;
+  font-size: var(--step-ui);
+  line-height: 1.2;
+}
+
+.tile-picture {
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+}
+
+.tile-copies {
+  color: var(--accent);
+}
+
+/* The tiles of a pack the collection leaves out, apart under their pack's name */
+.tiles-optional {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.tiles-optional h3 {
+  margin: 0;
+  font-size: var(--step-sub);
+  font-weight: 400;
+}
+
+.tiles-optional-note {
+  margin: 0 0 0.5rem;
+  font-size: var(--step-small);
+  font-style: italic;
+  color: var(--quiet);
+}
+
+/* The table the largest map needs, over the tiles */
+.tiles-table {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: var(--step-sub);
+}
+
+.tiles-table-note {
+  font-size: var(--step-small);
+  font-style: italic;
+  color: var(--quiet);
+}
+
+.tiles-table-size {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Not in Valkyrie: asking before deleting a downloaded scenario */
+.delete-confirm {
+  width: min(100%, 30rem);
+  padding: 1.5rem;
+}
+
+.delete-confirm .choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Not in Valkyrie: the player's own translation of the scenario (CustomTranslation.tsx) */
+.translation-window {
+  width: min(100%, 38rem);
+  padding: 1.5rem;
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+}
+
+.translation-window h2,
+.translation-window h3 {
+  margin: 0;
+}
+
+.translation-window h3 {
+  font-size: var(--step-ui);
+}
+
+.translation-explain,
+.translation-none {
+  margin: 0;
+  color: var(--card-quiet);
+}
+
+.translation-kept,
+.translation-report ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.translation-kept li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+
+.translation-report {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.translation-failed,
+.translation-error {
+  color: var(--alert-light);
+}
+
+.translation-warning {
+  color: var(--accent);
+}
+
+.translation-saved {
+  font-style: italic;
+}
+
+.translation-window .choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+/* A translation into another language than the app's: the offer to switch to it now */
+.translation-switch {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--trim);
+  border-radius: var(--radius-small);
+}
+
+.translation-switch p {
+  margin: 0;
+}
+
+.translation-switch .choices {
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Not in Valkyrie: the author's mistakes that stop a game (QuestHealth.tsx) */
+.quest-health {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid color-mix(in srgb, var(--alert) 60%, transparent);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--alert) 12%, transparent);
+  color: var(--text);
+  font-size: var(--step-ui);
+}
+
+.quest-health-more {
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+}
+
+/* The list, in a small card just under the line, over what follows */
+.quest-health-popover {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  left: 0;
+  z-index: 5;
+  width: min(32rem, 100%);
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--card-edge);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--card-text);
+  box-shadow: 0 0.4rem 1.2rem color-mix(in srgb, var(--shade) 70%, transparent);
+}
+
+.quest-health-popover ul {
+  margin: 0 0 0.5rem;
+  padding-left: 1.1rem;
+}
+
+.quest-health-popover p {
+  margin: 0;
+  color: var(--card-quiet);
+}

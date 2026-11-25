@@ -1,0 +1,117 @@
+/* The editor's panel beside a game it tests (TestPanel.tsx): on the right, under the menu button and above Mansions'
+   phase bar, whose next phase stays in reach; over the board and the game's windows, under the phase's picture and the
+   end of the game */
+.test-panel {
+  position: fixed;
+  top: calc(var(--gutter) + 3.25rem);
+  right: var(--gutter);
+  bottom: calc(var(--gutter) + 4.5rem);
+  z-index: 25;
+  width: min(22rem, calc(100vw - 2 * var(--gutter)));
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 0.6rem 0.75rem;
+  overflow-y: auto;
+  font-size: var(--step-small);
+}
+
+.test-panel-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+}
+
+.test-panel-head h2 {
+  flex: 1 1 100%;
+  margin: 0;
+  font-size: var(--step-ui);
+  overflow-wrap: anywhere;
+}
+
+.test-panel .button {
+  min-height: 2rem;
+  padding: 0.2rem 0.7rem;
+  font-size: var(--step-small);
+}
+
+.test-panel-open {
+  position: fixed;
+  top: var(--gutter);
+  left: 50%;
+  z-index: 25;
+  transform: translateX(-50%);
+}
+
+.test-panel-part {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.test-panel-part h3 {
+  margin: 0;
+  color: var(--quiet);
+  font-size: var(--step-small);
+  font-weight: 600;
+}
+
+.test-events,
+.test-vars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.test-events li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 0.5rem;
+}
+
+.test-cause {
+  color: var(--accent);
+}
+
+.test-vars li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 5rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.test-vars code {
+  overflow-wrap: anywhere;
+}
+
+.test-new-var {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 5rem auto;
+  gap: 0.4rem;
+}
+
+.test-panel input {
+  min-width: 0;
+  padding: 0.15rem 0.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--background);
+  color: var(--text);
+}
+
+/* A change of quest in a campaign's test, between the events of one adventure and the next */
+.test-events .test-change {
+  padding-top: 0.2rem;
+  border-top: 1px solid var(--line);
+  font-style: italic;
+}
+
+.test-in {
+  color: var(--quiet);
+  overflow-wrap: anywhere;
+}

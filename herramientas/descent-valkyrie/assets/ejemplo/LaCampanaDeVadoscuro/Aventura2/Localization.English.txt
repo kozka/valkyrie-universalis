@@ -1,0 +1,84 @@
+.,English
+EventPrologoGanada.text,<i>The bell hangs in its tower again, silent: its clapper is missing. Following the trail of wax you go down into the temple's crypt, where the old bell-ringer has slept for a hundred years… or had.</i>
+EventPrologoGanada.button1,Continue
+EventPrologoPerdida.text,<i>Without the bell, more dead rise every night. The smiths will cast a new one if you bring them the old clapper, which rumour says lies in the temple's crypt. Down you go, and the air smells of burnt wax.</i>
+EventPrologoPerdida.button1,Continue
+EventIlsa.text,"Ilsa, the villager you saved, waits for you at the crypt's door with a flask of holy water and sprinkles you with it, blessing you.\n\nYour morale increases by 1."
+EventIlsa.button1,Continue
+EventPreparar.text,"<b>Setup</b>\n\nSet aside tiles {c:TileAntesala}, {c:TileOsario} and {c:TileTumba}, an entrance, 3 end caps and 2 doors."
+EventPreparar.button1,Continue
+EventColocarAntesala.text,Place tile {c:TileAntesala}, the Entrance, an end cap, a door and a search token as shown.
+EventColocarAntesala.button1,Continue
+EventColocarHeroes.text,Place the heroes on the Entrance.
+EventColocarHeroes.button1,Continue
+SpawnZombis.text,Among the sarcophagi, the dead sit up. Place the {type} group as shown, respecting the group limit.
+SpawnZombis.button1,Continue
+EventObjetivo.text,<b>Objective:</b> find the bell's clapper and bring it to the Entrance, where the tower's rope hangs.
+EventObjetivo.button1,Continue
+EventVelas.text,"<i>Every candle in the crypt goes out at once.</i>\n\n{rnd:hero} feels an icy hand on their neck and suffers 1 {fatigue}."
+EventVelas.button1,Continue
+TokenBusquedaA.text,A niche with dusty offerings.
+TokenBusquedaA.button1,{action} Search
+EventBuscarA.text,Draw a search card.
+EventBuscarA.button1,Continue
+DoorOsario.text,An oak door with rusty fittings.
+DoorOsario.button1,{action} Open
+EventAbrirOsario.text,Remove the door. Place tile {c:TileOsario}, an end cap, a search token and a red (sealed) door as shown.
+EventAbrirOsario.button1,Continue
+SpawnAcolitos.text,By the ossuaries, monks in grey robes pray before a black candle. The oldest turns: it is Brother Odric. Place the {type} group as shown.
+SpawnAcolitos.button1,Continue
+SpawnAcolitos.uniquetitle,Brother Odric
+SpawnAcolitos.uniquetext,Brother Odric is the acolytes' master and has extra Health (in red, on his portrait). The key to the sealed door hangs from his neck.
+SpawnAcolitosFuerte.text,By the ossuaries, monks in grey robes pray before a black candle. The oldest turns: it is Brother Odric. Place the {type} group as shown. Without the bell, Odric is stronger than ever.
+SpawnAcolitosFuerte.button1,Continue
+SpawnAcolitosFuerte.uniquetitle,Brother Odric
+SpawnAcolitosFuerte.uniquetext,Brother Odric is the acolytes' master and has extra Health (in red, on his portrait). The key to the sealed door hangs from his neck.
+EventOdric.text,|||"The clapper is no longer yours. When it rings, it will wake every dead soul in the valley, and they will obey me."\n\n<b>Objective updated:</b> the sealed door leads to the bell-ringer's tomb. Defeat Odric to take his key, or force the slab.|||
+EventOdric.button1,Continue
+EventOdricCae.text,Odric falls and his candle goes out. You take the black iron key: now you can open the sealed door.
+EventOdricCae.button1,Continue
+CustomMonsterAcolito.monstername,Crypt Acolytes
+CustomMonsterAcolito.info,Use the Flesh Moulder miniatures and Act I cards. They spend {surge} in this order: Mend first, then +1 {heart}.
+ActivationAcolitoRito.ability,"<i>The acolytes chant a litany and the shadows thicken around {0}.</i>\nThat hero suffers 1 {fatigue}."
+ActivationAcolitoRito.minion,"{action} Move away from the closest hero.\n{action} Attack the hero with the lowest {will} within 3 spaces."
+ActivationAcolitoRito.master,"{action} Each monster within 3 spaces of Brother Odric recovers 2 {heart}.\n{action} Attack the closest hero."
+ActivationAcolitoAzote.ability,<i>The black candles sputter.</i>
+ActivationAcolitoAzote.master,"{action} Spot the closest hero.\n{action} Attack that hero. If the attack deals {heart}, that hero is Diseased."
+ActivationAcolitoAzote.minion,"{action} Spot the hero who has suffered the most {heart}.\n{action} Attack that hero."
+TokenBusquedaB.text,A carefully stacked pile of skulls.
+TokenBusquedaB.button1,{action} Search
+EventBuscarB.text,Draw a search card.
+EventBuscarB.button1,Continue
+DoorSello.text,A slab bearing the bell-ringer's seal blocks the way. It has a black iron lock.
+DoorSello.button1,{action} Open with the key
+DoorSello.button2,{action} Force the slab
+EventForzarLosa.text,A hero adjacent to the slab tests {might}.
+EventForzarLosa.button1,Passed
+EventForzarLosa.button2,Failed
+EventLosaResiste.text,The slab barely moves: suffer 2 {fatigue}.
+EventLosaResiste.button1,Continue
+EventAbrirTumba.text,The slab slides aside. Remove it and place tile {c:TileTumba}, an end cap and a white objective token as shown: it is the clapper, on the bell-ringer's sarcophagus.
+EventAbrirTumba.button1,Continue
+TokenBadajo.text,The bronze clapper rests on the bell-ringer's sarcophagus.
+TokenBadajo.button1,{action} Take the clapper
+EventElegirPortador.text,Who takes the clapper? Press that hero's portrait (they must be on or adjacent to the token), then Continue.
+EventElegirPortador.button1,Continue
+EventCogerBadajo.text,"{c:EventElegirPortador} lifts the clapper. At that moment, the sarcophagus lid cracks…\n\n<b>Objective updated:</b> carry the clapper to the Entrance and ring the bell. If its bearer is knocked out, the clapper is left in their space and another hero may pick it up as an {action}."
+EventCogerBadajo.button1,Continue
+SpawnDespertar.text,The dead of the tomb awaken! Place a {type} group on tile {c:TileTumba}, as close to the sarcophagus as possible and respecting the group limit.
+SpawnDespertar.button1,Continue
+TokenCuerda.text,The bell rope hangs from the Entrance's ceiling.
+TokenCuerda.button1,{action} Ring the bell
+EventTanir.text,Is the hero carrying the clapper on the Entrance?
+EventTanir.button1,Yes
+EventTanir.button2,Not yet
+EventVictoria.text,"<b>Victory</b>\n\nYou fit the clapper and pull the rope. The toll rolls across the valley, and one by one the dead collapse like puppets with cut strings.\n\nDarkford sleeps in peace again. <i>End of the campaign.</i>"
+EventVictoria.button1,End
+EventDerrota.text,"<b>Defeat</b>\n\nYou flee the crypt with the dead at your heels. That night, the whole valley hears the scratching under the slabs…\n\n<i>End of the campaign.</i>"
+EventDerrota.button1,End
+EventPeligroMenor.text,"<i>From deep in the crypt comes the echo of a toll that rings nowhere.</i>\n\nThe threat grows: a peril will happen at the end of this round."
+EventPeligroMenor.button1,Continue
+EventPeligroMayor.text,"<i>The ground shakes. Something has noticed you.</i>\n\nThe threat is serious: a major peril will happen at the end of this round."
+EventPeligroMayor.button1,Continue
+EventPeligroMortal.text,"<i>Time has run out.</i>\n\nA deadly peril will happen at the end of this round."
+EventPeligroMortal.button1,Continue

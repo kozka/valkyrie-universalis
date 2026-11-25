@@ -1,0 +1,700 @@
+/* The scenario's graph (GraphPanel.tsx): a toolbar, and a view that pans and zooms, where every kind of thing has its
+   own shape and colours: tokens round, tiles square, events dashed (they are not on the board) with their buttons in a
+   solid square, conditions in pink, + and − on what an event adds and takes away. Colours are the theme's roles. */
+.graph-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.graph-toolbar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0 0 0.35rem;
+}
+
+.graph-rows select {
+  height: 1.85rem;
+  max-width: 22rem;
+  padding: 0 0.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font-tool);
+  font-size: 0.8125rem;
+}
+
+.graph-search {
+  margin: 0;
+  width: 14rem;
+}
+
+.graph-tools-gap {
+  flex: 1 1 auto;
+}
+
+.graph-zoom {
+  min-width: 2.8rem;
+  color: var(--quiet);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.graph-view {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 5rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background-color: var(--background);
+  background-image: radial-gradient(color-mix(in srgb, var(--text) 9%, transparent) 1px, transparent 1px);
+  background-size: 22px 22px;
+  cursor: grab;
+  touch-action: none;
+  outline: none;
+}
+
+.graph-view:focus-visible {
+  border-color: var(--accent);
+}
+
+.graph-view:active {
+  cursor: grabbing;
+}
+
+.graph-lines {
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.graph-world {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 0 0;
+}
+
+/* Rows: a line between them and what starts each one */
+.graph-row line {
+  stroke: var(--line);
+  stroke-width: 2;
+  stroke-dasharray: 2 6;
+}
+
+.graph-row-head {
+  position: absolute;
+  left: 0;
+  width: 120px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 4px;
+  pointer-events: none;
+}
+
+.graph-row-head span {
+  padding: 3px 8px;
+  border-left: 3px solid var(--accent);
+  color: var(--accent-bright);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+/* Lines */
+.graph-edge-line {
+  fill: none;
+  stroke: var(--graph-edge);
+  stroke-width: 1.6;
+  opacity: 0.85;
+}
+
+.graph-edge-add .graph-edge-line {
+  stroke: var(--graph-add);
+  stroke-dasharray: 6 4;
+}
+
+.graph-edge-remove .graph-edge-line {
+  stroke: var(--graph-remove);
+  stroke-dasharray: 6 4;
+}
+
+.graph-edge-monster .graph-edge-line,
+.graph-edge-activation .graph-edge-line,
+.graph-edge-inspect .graph-edge-line {
+  stroke-dasharray: 2 4;
+}
+
+.graph-edge-hit {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 12;
+  pointer-events: stroke;
+  cursor: pointer;
+}
+
+.graph-edge:hover .graph-edge-line {
+  stroke-width: 2.6;
+  opacity: 1;
+}
+
+.graph-edge-chosen .graph-edge-line {
+  stroke: var(--accent) !important;
+  stroke-width: 3;
+  opacity: 1;
+}
+
+.graph-add circle,
+.graph-remove circle {
+  fill: var(--background);
+  stroke-width: 1.6;
+}
+
+.graph-add circle {
+  stroke: var(--graph-add);
+}
+
+.graph-remove circle {
+  stroke: var(--graph-remove);
+}
+
+.graph-add text,
+.graph-remove text {
+  font-family: var(--font-tool);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.graph-add text {
+  fill: var(--graph-add);
+}
+
+.graph-remove text {
+  fill: var(--graph-remove);
+}
+
+.graph-brace path {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 1.6;
+}
+
+.graph-brace .graph-brace-stub {
+  stroke: var(--graph-edge);
+  stroke-width: 1.2;
+}
+
+.graph-brace-label {
+  fill: var(--quiet);
+  font-family: var(--font-tool);
+  font-size: 11px;
+}
+
+.graph-link-drag {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-dasharray: 5 4;
+}
+
+/* Nodes */
+.graph-node {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  font-family: var(--font-tool);
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--text);
+  cursor: pointer;
+  user-select: none;
+}
+
+.graph-event,
+.graph-ui,
+.graph-small {
+  border: 1.5px dashed color-mix(in srgb, var(--text) 45%, transparent);
+  background: color-mix(in srgb, var(--panel) 92%, transparent);
+}
+
+/* On the board or the screen: a solid frame */
+.graph-ui {
+  border-style: solid;
+  border-color: var(--link);
+}
+
+.graph-node:hover {
+  border-color: var(--text-bright);
+}
+
+.graph-selected {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  box-shadow: 0 0 18px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.graph-head {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 6px;
+  min-width: 0;
+}
+
+.graph-head .editor-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--accent);
+}
+
+.graph-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.graph-badge {
+  flex: none;
+  padding: 0 5px;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--text) 12%, transparent);
+  color: var(--quiet);
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.graph-badge-trigger {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+  color: var(--accent-bright);
+}
+
+.graph-badge-end {
+  background: color-mix(in srgb, var(--graph-ends) 25%, transparent);
+  color: var(--graph-ends);
+  font-weight: 700;
+}
+
+.graph-text {
+  display: -webkit-box;
+  padding: 0 7px;
+  overflow: hidden;
+  color: var(--quiet);
+  font-family: var(--font);
+  font-size: 12.5px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.graph-operations {
+  padding: 0 7px;
+  overflow: hidden;
+  color: var(--graph-sets);
+  font-family: var(--font-code);
+  font-size: 11px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* A condition: a thin pink box with bevelled corners */
+.graph-condition {
+  display: flex;
+  align-items: center;
+  margin: 0 -1px;
+  padding: 0 10px;
+  background: var(--graph-condition);
+  clip-path: polygon(6px 0, calc(100% - 6px) 0, 100% 50%, calc(100% - 6px) 100%, 6px 100%, 0 50%);
+}
+
+.graph-condition span {
+  overflow: hidden;
+  color: var(--on-accent);
+  font-family: var(--font-code);
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* The buttons: a solid square, each button a row in its colour, with its port on the right */
+.graph-buttons {
+  margin: 0 5px 4px;
+  padding: 4px 0;
+  border: 1.5px solid color-mix(in srgb, var(--text) 55%, transparent);
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--background) 70%, transparent);
+}
+
+.graph-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 14px 0 6px;
+  min-width: 0;
+}
+
+.graph-swatch {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border: 1px solid color-mix(in srgb, var(--text) 40%, transparent);
+  border-radius: 2px;
+}
+
+.graph-button-label {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* A button's condition: pink, its frame lit by what it does to the button */
+.graph-button-condition {
+  flex: 0 1 auto;
+  max-width: 55%;
+  overflow: hidden;
+  padding: 0 4px;
+  border: 1.5px solid;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--graph-condition) 22%, transparent);
+  color: var(--graph-condition);
+  font-family: var(--font-code);
+  font-size: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.graph-effect-hide {
+  border-color: var(--graph-shows);
+  box-shadow: 0 0 6px color-mix(in srgb, var(--graph-shows) 60%, transparent);
+}
+
+.graph-effect-disable {
+  border-color: var(--graph-greys);
+  box-shadow: 0 0 6px color-mix(in srgb, var(--graph-greys) 60%, transparent);
+}
+
+.graph-effect-none {
+  border-color: var(--graph-ignores);
+  box-shadow: 0 0 6px color-mix(in srgb, var(--graph-ignores) 60%, transparent);
+}
+
+/* Ports: a button's leads to events; an event's + puts pieces on the board */
+.graph-port,
+.graph-effects-port {
+  position: absolute;
+  right: -9px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--panel);
+  border-radius: 50%;
+  background: var(--graph-edge);
+  cursor: crosshair;
+}
+
+.graph-port {
+  top: calc(50% - 7px);
+}
+
+.graph-port:hover,
+.graph-effects-port:hover {
+  background: var(--accent);
+  transform: scale(1.3);
+}
+
+.graph-effects-port {
+  right: -10px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--graph-add);
+  color: var(--on-accent);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.graph-linking,
+.graph-linking * {
+  cursor: crosshair !important;
+}
+
+/* Pieces: a round token or a square tile with its picture, its name under it */
+.graph-piece {
+  align-items: center;
+  border: 0;
+  background: transparent;
+}
+
+.graph-piece .graph-condition {
+  align-self: stretch;
+}
+
+.graph-picture {
+  position: relative;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  border: 2px solid var(--link);
+  background: var(--panel);
+}
+
+.graph-picture > img,
+.graph-picture > .placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  font-size: 14px;
+}
+
+.graph-circle {
+  border-radius: 50%;
+}
+
+.graph-square {
+  border-radius: 3px;
+}
+
+.graph-piece.graph-selected {
+  outline: none;
+  box-shadow: none;
+}
+
+.graph-piece.graph-selected .graph-picture {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  box-shadow: 0 0 18px color-mix(in srgb, var(--accent) 50%, transparent);
+}
+
+.graph-piece-name {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 100%;
+  overflow: hidden;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.graph-piece .graph-buttons {
+  align-self: stretch;
+}
+
+/* A component drawn whole elsewhere, or an item, place, monster or activation: a small dashed pill */
+.graph-small {
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  padding: 0 8px;
+  border-radius: 999px;
+}
+
+.graph-small .editor-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--quiet);
+}
+
+.graph-copy {
+  opacity: 0.8;
+}
+
+/* The circled number of what the graph shows more than once */
+.graph-mark {
+  flex: none;
+  color: var(--accent-bright);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.graph-picture .graph-mark {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  padding: 0 2px;
+  border-radius: 50%;
+  background: var(--panel);
+}
+
+/* With something chosen, its own lines stand out and the rest step back */
+.graph-focus .graph-edge-line {
+  opacity: 0.32;
+}
+
+.graph-focus .graph-edge-near .graph-edge-line {
+  opacity: 1;
+  stroke-width: 2.4;
+  filter: drop-shadow(0 0 3px color-mix(in srgb, var(--accent) 70%, transparent));
+}
+
+/* What a chosen link can do */
+.graph-edge-tools {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--panel);
+  transform: translate(-50%, -50%);
+  box-shadow: var(--window-shadow);
+}
+
+.graph-menu {
+  position: absolute;
+  z-index: 10;
+}
+
+.graph-minimap {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: color-mix(in srgb, var(--panel) 90%, transparent);
+  cursor: pointer;
+}
+
+.graph-empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* The legend: every shape and colour, what it says */
+.graph-legend {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 5;
+  display: grid;
+  gap: 5px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: var(--window-shadow);
+  font-family: var(--font-tool);
+  font-size: 12px;
+  cursor: default;
+}
+
+.graph-legend > div {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.graph-legend-circle,
+.graph-legend-square,
+.graph-legend-event,
+.graph-legend-buttons {
+  justify-self: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--link);
+}
+
+.graph-legend-circle {
+  border-radius: 50%;
+}
+
+.graph-legend-event {
+  width: 28px;
+  height: 16px;
+  border: 1.5px dashed color-mix(in srgb, var(--text) 55%, transparent);
+}
+
+.graph-legend-buttons {
+  width: 24px;
+  height: 16px;
+  border: 1.5px solid color-mix(in srgb, var(--text) 55%, transparent);
+}
+
+.graph-legend-condition {
+  justify-self: center;
+  width: 28px;
+  height: 12px;
+  background: var(--graph-condition);
+  clip-path: polygon(4px 0, calc(100% - 4px) 0, 100% 50%, calc(100% - 4px) 100%, 4px 100%, 0 50%);
+}
+
+.graph-legend-effect {
+  justify-self: center;
+  width: 26px;
+  height: 14px;
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--graph-condition) 22%, transparent);
+}
+
+.graph-legend-sign,
+.graph-legend-brace {
+  justify-self: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.graph-legend-sign.graph-add {
+  color: var(--graph-add);
+}
+
+.graph-legend-sign.graph-remove {
+  color: var(--graph-remove);
+}
+
+/* The graph's tab gives the panel below room */
+.editor-bottom-graph .editor-tab-body {
+  padding: 0.35rem 0.5rem 0.5rem;
+  overflow: hidden;
+}
+
+/* Seen from far: only the shapes, so that a big scenario still moves smoothly */
+.graph-far {
+  border-width: 3px;
+}
+
+.graph-far.graph-event {
+  background: color-mix(in srgb, var(--text) 10%, var(--panel));
+}
+
+.graph-far .graph-picture {
+  border-width: 5px;
+  background: color-mix(in srgb, var(--link) 25%, var(--panel));
+}
+
+@media (max-width: 60rem) {
+  .graph-view {
+    min-height: 60vh;
+  }
+
+  .graph-search {
+    width: auto;
+    flex: 1 1 8rem;
+  }
+}

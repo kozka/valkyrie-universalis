@@ -1,0 +1,13 @@
+.,Spanish
+quest.name,La campana de Vadoscuro
+quest.synopsys,Unos trasgos han robado la campana que protegía a Vadoscuro de sus muertos.
+quest.description,"Cada anochecer, desde hace cien años, la campana del templo de Vadoscuro tañe y los muertos del valle duermen. Hace tres noches unos trasgos se la llevaron colina arriba.\n\n<i>Minicampaña de ejemplo de dos aventuras con una visita a la ciudad entre ellas, para 2-4 héroes y solo el juego básico, con las reglas de Camino a la leyenda. Lo que hagáis en la primera aventura cambia la segunda.</i>"
+quest.authors,"<b>Autor</b>\nEjemplo de la skill descent-valkyrie"
+quest.authors_short,Skill descent-valkyrie
+EventIntro1.text,"<i>Cada anochecer, desde hace cien años, la campana del templo de Vadoscuro tañe sobre el valle y los muertos del viejo cementerio duermen tranquilos.</i>\n\n<i>Hace tres noches la campana calló. Unos trasgos la arrancaron de su torre y se la llevaron colina arriba en un carro. Desde entonces, cada noche se oyen arañazos bajo las losas…</i>"
+EventIntro1.button1,Continuar
+EventIntro2.text,"<b>La campaña</b>\n\nDos aventuras con una visita a Puertoalto entre ellas. Lo que hagáis en la primera cambia la segunda.\n\nValkyrie lleva la moral, la experiencia (botón Habilidades: cada héroe gasta sus PE), el oro y los objetos (botón Objetos). Todo lo demás —daño, fatiga, Estados, movimiento— lo aplicáis vosotros con las reglas de Camino a la leyenda."
+EventIntro2.button1,Continuar
+EventDificultad.text,"Elegid la dificultad, como en Camino a la leyenda:\n\n<b>Normal</b>: empezáis con 50 de oro por héroe.\n<b>Difícil</b>: sin oro, y los peligros llegan una ronda antes."
+EventDificultad.button1,Normal
+EventDificultad.button2,Difícil

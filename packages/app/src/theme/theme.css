@@ -1,0 +1,886 @@
+/* The app's whole look. Components and the board use only these roles, never colours of their own (tests/theme.test.ts);
+   a game sets them again under :root[data-game='…'] (App.tsx), and windows, cards and buttons share .panel, .card and
+   .button, so frames drawn from pictures and effects can come later in one place each (docs/plan.md). */
+
+/* Mansions of Madness, the default: a reading-room table at night. Black under a banker's lamp, unless the player
+   chooses another colour for the app in Options (data-theme), and the felt the board lies on in a game, black unless
+   chosen too (data-felt); dark windows and cards like Valkyrie's (black at 90% with a light border), whose colours the
+   scenarios' authors choose their texts for; brass and lamplight for what to press. EB Garamond (OFL) stands in for
+   the game's Garamond. */
+:root {
+  /* The colours the player can choose for the app and for the felt (ui/preferences.ts); pure black only for the felt */
+  --tone-pure: #000000;
+  --tone-black: #0e0e0e;
+  --tone-green: #15281f;
+  --tone-red: #2a1013;
+  --tone-blue: #0f1b2d;
+  /* Surfaces: the page, and the felt under the board in a game */
+  --background: var(--tone-black);
+  --table: var(--tone-pure);
+  /* Whether the felt has a fine grain (board/table.ts): not the pure black one, the default */
+  --table-grain: 0;
+  --panel: #181715;
+  --line: #3b3732;
+  --edge: #d6cbb0;
+  --shade: #050505;
+  /* Reading cards: dark, framed in bone, with warm white text */
+  --card: #11100f;
+  --card-edge: #6c6354;
+  --card-shade: #2c2924;
+  --photo: #f8f5ec;
+  /* Text on the surfaces and on cards */
+  --text: #ebe4d1;
+  --text-bright: #f6efdc;
+  --quiet: #b0a99c;
+  --card-text: #ece6d6;
+  --card-quiet: #a59e90;
+  /* What draws the eye */
+  --trim: #c19a55;
+  --accent: #f0c875;
+  --accent-bright: #f5d796;
+  --on-accent: #221d16;
+  --alert: #b4392d;
+  --alert-light: #e0968a;
+  /* The addresses and emails in scenario texts (ui/RichText.tsx) */
+  --link: #8cc8ff;
+  /* The player's marks on a scenario (ui/MarkButtons.tsx): played, favourite, pending */
+  --mark-played: #7fcf98;
+  --mark-favorite: #f5c542;
+  --mark-pending: #8cb4ff;
+  /* The editor's selection windows mark what is already on the board, as Valkyrie colours it blue */
+  --editor-taken: #8a94ff;
+  /* The editor's graph (editor/graph/): conditions in pink; a button's condition lit by what it does to the button
+     (shows it, greys it, changes nothing); what an event adds and takes away; what it sets; what ends the game */
+  --graph-condition: #ff8fc8;
+  --graph-shows: #5fd38a;
+  --graph-greys: #ff6b5e;
+  --graph-ignores: #f2c94c;
+  --graph-add: #5fd38a;
+  --graph-remove: #ff6b5e;
+  --graph-sets: #6fd3d8;
+  --graph-ends: #c084fc;
+  --graph-edge: #8d877b;
+  /* The player's own rating of a scenario (EndGameScreen), next to the marks */
+  --mark-rating: #e9b4ff;
+  /* The game selection's buttons (screens/gameArt.ts): each game's name in the colours of its frame */
+  --mom-title: #f6eac8;
+  --d2e-title: #dfe9f2;
+  --doom-glow: #ff3a10;
+  --video-brand: #ff0033;
+  --video-play: #ffffff;
+  /* Mansions' investigator selection in the Universalis theme (themes/universalis/HeroRoom.tsx): ink on its parchment
+     plates, its gold titles, candlelight and the embers of the circles still to fill */
+  --room-ink: #2b1b0e;
+  --room-title: #f2e3bd;
+  --room-glow: #ffcf7a;
+  --room-ember: #ff8a3a;
+  /* Descent's hero selection in the Universalis theme (themes/universalis/DescentHeroRoom.tsx): its pale gold words
+     on dark stone, the lava of its frames, the hot core of a spark, and the soot of its shadows */
+  --hall-title: #f4dcb8;
+  --hall-ink: #ead6bb;
+  --hall-glow: #ff9a3c;
+  --hall-ember: #ff4a12;
+  --hall-spark: #fff1c9;
+  --hall-soot: #0a0604;
+  /* The same in Descent's runestone (2 November 2026): silver words on dark stone, the runes' blue, ice at their core */
+  --rune-title: #e9f1f8;
+  --rune-ink: #dfe8f0;
+  --rune-glow: #5ec8ff;
+  --rune-deep: #1e8ee8;
+  --rune-spark: #e8f8ff;
+  --rune-soot: #04070b;
+  /* DooM's (themes/universalis/DoomHeroRoom.tsx): pale steel words, the ship's orange lights, and a hard, narrow
+     type, Windows' own Bahnschrift where there is one */
+  --deck-title: #ecebe6;
+  --deck-ink: #f1e9df;
+  --deck-glow: #ff8a2a;
+  --deck-ember: #ff4a0a;
+  --deck-spark: #fff0d6;
+  --deck-soot: #050302;
+  --font-deck: 'Bahnschrift', 'Bahnschrift SemiBold Condensed', 'Impact', 'Arial Narrow', 'Roboto Condensed', sans-serif;
+  /* Universalis' scenario list for Mansions (themes/universalis/scenarios.css): the red of its warning buttons' words */
+  --room-red: #e8604a;
+
+  /* The game's own marks, after Valkyrie's colours: a monster's health, horror and awareness, a unique monster, the
+     heroes that have acted or are selected, a hero already chosen, Descent's morale (red) and the class a hero has
+     (green) */
+  --health: #ff6b5e;
+  --horror: #7fa8ff;
+  --awareness: #6fd36f;
+  --unique: #99ff99;
+  --hero-done: #3a3733;
+  --hero-selected: #7fcf98;
+  --chosen: #8d8a80;
+  --chosen-ink: #2c2a25;
+  --morale: #ff4d40;
+  --class-picked: #00b300;
+  --class-ink: #000000;
+  --class-paper: #ffffff;
+  --class-taken: #333333;
+  /* Descent's skills (SkillWindow): the hero's, within its experience, out of reach, and the experience left */
+  --skill-picked: #00ff00;
+  --skill-free: #ffffff;
+  --skill-locked: #666666;
+  --skill-xp: #00ffff;
+  /* Descent's shop (ShopInterface): an item's name on white, its price on dark gold, its act on grey */
+  --shop-paper: #ffffff;
+  --shop-ink: #000000;
+  --shop-price: #b29a00;
+  --shop-act: #808080;
+  /* The round's phases: their bar under the board and the window that announces them */
+  --bar: #000000;
+  --mythos-bar: #0d0000;
+  --investigators-title: #c0c0c0;
+  --investigators-glow: #234434;
+  --investigators-dark: #0b1610;
+  --mythos-title: #c43a3a;
+  /* The phase bar over the board (play/play.css): the Mythos' tint, the halo behind the phase's name, its red glow
+     and the red at the edges of the screen */
+  --mythos-tint: #5a0a0a;
+  --phase-halo: #000000;
+  --mythos-name-glow: #b01818;
+  --mythos-vignette: #7a0d0d;
+  --mythos-glow: #3a1010;
+  --mythos-dark: #0c0404;
+  /* The board drawn without the official pictures (board/schematic.ts): printed paper and ink */
+  --floor-inside: #e4d9bf;
+  --floor-outside: #c5c9b2;
+  --plan-paper: #ebe4d1;
+  --plan-paper-shade: #d6cbb0;
+  --plan-ink: #221d16;
+  --plan-ink-soft: #5c5446;
+
+  --card-shadow: 0 1px 0 rgb(0 0 0 / 0.35), 0 10px 22px -12px rgb(0 0 0 / 0.7);
+  --lift-shadow: 0 1px 0 rgb(0 0 0 / 0.35), 0 16px 28px -14px rgb(0 0 0 / 0.8);
+  --window-shadow: 0 18px 40px -16px rgb(0 0 0 / 0.85);
+  --photo-shadow: 0 2px 6px rgb(0 0 0 / 0.35);
+  --radius: 3px;
+  --radius-small: 2px;
+
+  --font: 'EB Garamond', Garamond, 'Iowan Old Style', 'Palatino Linotype', serif;
+  /* Valkyrie: GameType.GetHeaderFont and GetSymbolFont, each game's own for titles and for its symbols */
+  --font-heading: var(--font);
+  /* Tools' chrome (the scenario editor's bars, lists and fields): a plain sans, small and steady */
+  --font-tool: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-code: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  --font-symbol: var(--font);
+  /* A classical scale (The Elements of Typographic Style) */
+  --step-small: 0.875rem; /* 14 */
+  --step-ui: 1rem; /* 16 */
+  --step-body: 1.125rem; /* 18 */
+  --step-read: 1.3125rem; /* 21 */
+  --step-sub: 1.5rem; /* 24 */
+  --step-title: 2.25rem; /* 36 */
+  --step-display: 3.75rem; /* 60 */
+
+  --gutter: clamp(16px, 4vw, 48px);
+
+  color-scheme: dark;
+}
+
+/* The app's theme (themes/themes.ts): Universalis, the default, on black with its pictures, or a plain colour; and the
+   felt under the board (ui/preferences.ts), pure black by default, as Valkyrie clears its camera to black */
+:root[data-theme='green'] {
+  --background: var(--tone-green);
+}
+
+:root[data-theme='red'] {
+  --background: var(--tone-red);
+}
+
+:root[data-theme='blue'] {
+  --background: var(--tone-blue);
+}
+
+:root[data-felt='black'] {
+  --table: var(--tone-black);
+  --table-grain: 1;
+}
+
+:root[data-felt='green'] {
+  --table: var(--tone-green);
+  --table-grain: 1;
+}
+
+:root[data-felt='red'] {
+  --table: var(--tone-red);
+  --table-grain: 1;
+}
+
+:root[data-felt='blue'] {
+  --table: var(--tone-blue);
+  --table-grain: 1;
+}
+
+/* Mansions with the official import: Valkyrie's fonts for it (MADGaramondPro, OldNewspaperTypes), loaded from the
+   import (officialImport.ts), which brings the glyphs of its symbols */
+/* The scenario editor's own colours (editor/layout.ts, chosen in its bar): Dusk is the app's, as the player chose it;
+   the others are made for long work on its panels, and keep the game's dark card under the texts, whose colours their
+   authors chose for it */
+.editor-workbench[data-editor-theme='graphite'] {
+  --background: #1d1f23;
+  --panel: #26292f;
+  --line: #3f444d;
+  --edge: #9aa3b2;
+  --text: #e8eaee;
+  --text-bright: #ffffff;
+  --quiet: #a9afba;
+  --trim: #7fb0ff;
+  --accent: #6ea8ff;
+  --accent-bright: #94beff;
+  --on-accent: #0b1424;
+  --alert-light: #ff8f84;
+  --editor-taken: #b39dff;
+  --graph-edge: #8b929e;
+}
+
+.editor-workbench[data-editor-theme='paper'] {
+  --background: #eef0f3;
+  --panel: #fbfbfc;
+  --line: #c9ced6;
+  --edge: #5b6472;
+  --text: #1c2129;
+  --text-bright: #000000;
+  --quiet: #545d6b;
+  --trim: #1f5fd6;
+  --accent: #1f5fd6;
+  --accent-bright: #3b78ea;
+  --on-accent: #ffffff;
+  --alert: #c0392b;
+  --alert-light: #b3261e;
+  --link: #1f5fd6;
+  --editor-taken: #5b3fd9;
+  --graph-condition: #c2337a;
+  --graph-shows: #1b8a4a;
+  --graph-greys: #cc3326;
+  --graph-ignores: #a77800;
+  --graph-add: #1b8a4a;
+  --graph-remove: #cc3326;
+  --graph-sets: #0b7f86;
+  --graph-ends: #7b3fc9;
+  --graph-edge: #6c7480;
+}
+
+.editor-workbench[data-editor-theme='contrast'] {
+  --background: #000000;
+  --panel: #0a0a0a;
+  --line: #9a9a9a;
+  --edge: #ffffff;
+  --text: #ffffff;
+  --text-bright: #ffffff;
+  --quiet: #dcdcdc;
+  --trim: #ffd400;
+  --accent: #ffd400;
+  --accent-bright: #ffe45c;
+  --on-accent: #000000;
+  --alert-light: #ff9b90;
+  --link: #7cc4ff;
+  --editor-taken: #c4b5ff;
+  --graph-edge: #c8c8c8;
+}
+
+:root[data-game='MoM'][data-official-fonts~='MoM'] {
+  --font: 'MAD Garamond Pro', 'EB Garamond', Garamond, serif;
+  --font-heading: 'Old Newspaper Types', 'MAD Garamond Pro', 'EB Garamond', serif;
+  --font-symbol: 'MAD Garamond Pro';
+}
+
+/* Descent with Valkyrie's fonts for it (Gara_Scenario_Desc, Windl, Descent_symbol), fetched from its repository
+   (host/gameFonts.ts): the text font draws Descent's symbols, and the expansions' icons follow from the symbol font.
+   Windlass has no accented letters, which come from the text font */
+:root[data-game='D2E'][data-official-fonts~='D2E'] {
+  --font: 'Gara Scenario Descent', 'EB Garamond', 'Descent Symbols', Garamond, serif;
+  --font-heading: 'Windlass', 'Gara Scenario Descent', 'EB Garamond', serif;
+  --font-symbol: 'Descent Symbols', 'Gara Scenario Descent';
+}
+
+/* Descent's screens in the Universalis theme (themes/universalis/scenarios.css, DescentHeroRoom.tsx), "Dwarven
+   Runestone" (2 November 2026): pale silver words, the cold blue of its runes, red only for danger, and silver lines */
+:root[data-theme='universalis'][data-look='D2E'] {
+  --room-title: #e6eef5;
+  --room-glow: #5ec8ff;
+  --room-red: #ff5a4a;
+  --accent: #9fb4c6;
+  --accent-bright: #d8ecff;
+}
+
+/* DooM's (themes/universalis/scenarios.css, descentScreens.css): pale steel words and the ship's orange lights */
+:root[data-theme='universalis'][data-look='DooM'] {
+  --room-title: #f3e8dc;
+  --room-glow: #ff7a24;
+  --room-red: #ff5d33;
+}
+
+/* Windlass draws every letter as a capital: so do the accented ones it lacks (Ü, Ú, Ñ…), which come from the next font,
+   or «Menü» shows a small ü (7 November 2026, German players). Every rule with the heading font takes this case */
+:root[data-game='D2E'][data-official-fonts~='D2E'] {
+  --heading-case: uppercase;
+}
+
+:root[data-game='D2E'][data-official-fonts~='D2E'] :is(h1, h2, .descent-buttons .button) {
+  text-transform: uppercase;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Not in Valkyrie: no pull-to-refresh or bounce on the menus. A tablet reloaded the app when a list was swiped down
+   from its top, and the player lost the screen they were on (16 October 2026); a game's board already takes its
+   gestures (touch-action in board.css) */
+html,
+body {
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: var(--font);
+  font-size: var(--step-body);
+  line-height: 1.45;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  color: var(--text);
+  background-color: var(--background);
+  /* The lamp: one warm pool of light on the felt */
+  background-image: radial-gradient(
+    ellipse 70% 55% at 22% -8%,
+    color-mix(in srgb, var(--accent) 20%, transparent),
+    color-mix(in srgb, var(--accent) 5%, transparent) 55%,
+    transparent 75%
+  );
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  /* An app, not a page: its text is not selected, nor a long press on it opens the browser's menu */
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* Except where the player writes, and a stopped game's message, which is there to be copied */
+input,
+textarea,
+.stop-window {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+}
+
+h1 {
+  font-size: var(--step-title);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: var(--step-sub);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* A screen on the table */
+.screen {
+  min-height: 100%;
+  padding: var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.screen-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.75rem 1.5rem;
+}
+
+.screen-head h1 {
+  flex: 1 1 auto;
+}
+
+.screen-foot {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.quiet {
+  color: var(--quiet);
+}
+
+.fan-made {
+  font-style: italic;
+  color: var(--quiet);
+  font-size: var(--step-ui);
+}
+
+/* Every button: an outline in the colour of the text; lamplight for the one to press next */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.4rem 1.1rem;
+  border: 1px solid currentColor;
+  border-radius: var(--radius-small);
+  background: transparent;
+  color: var(--text);
+  font-size: var(--step-body);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.button:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--text) 8%, transparent);
+}
+
+.button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+
+.button.primary:hover:not(:disabled) {
+  background: var(--accent-bright);
+}
+
+.button.back {
+  color: var(--alert-light);
+}
+
+/* Over the board: smaller, on a veil so the board does not show through */
+.button.hud {
+  min-height: 2.5rem;
+  padding: 0.35rem 0.9rem;
+  border-color: var(--edge);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--shade) 85%, transparent);
+  font-size: var(--step-ui);
+  font-weight: 400;
+}
+
+.button.hud:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--shade) 85%, transparent);
+  color: var(--accent);
+}
+
+.button:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+/* Every window over the table: its frame */
+.panel {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: var(--window-shadow);
+}
+
+/* Cards: what is read, dark and framed as Valkyrie's windows, so that the colours authors give their texts show */
+.card {
+  border: 1px solid var(--card-edge);
+  background: var(--card);
+  color: var(--card-text);
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+}
+
+.placeholder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--panel);
+  color: var(--trim);
+  font-style: italic;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--line);
+  user-select: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.notice {
+  position: fixed;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+  max-width: min(36rem, calc(100% - 2 * var(--gutter)));
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--card-edge);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--card-text);
+  box-shadow: var(--card-shadow);
+  z-index: 30;
+}
+
+/* A new version of the app, at the top, with its reload button */
+.notice.new-version {
+  top: 1rem;
+  bottom: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 1rem;
+  width: max-content;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+.loading {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-size: var(--step-sub);
+}
+
+.about {
+  padding-left: max(var(--gutter), 8vw);
+  gap: 2.5rem;
+}
+
+.about-text {
+  max-width: 34rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: var(--step-read);
+  line-height: 1.5;
+}
+
+.stop-layer {
+  z-index: 40;
+}
+
+.stop-window {
+  width: min(100%, 34rem);
+  padding: 1.5rem;
+  border-color: var(--alert);
+}
+
+.stop-window .button {
+  align-self: flex-start;
+}
+
+.stop-detail {
+  font-size: var(--step-ui);
+  overflow-wrap: anywhere;
+}
+
+/* Not in Valkyrie: go on playing, save and quit, back, copy what failed (App.tsx StopWindow) */
+.stop-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stop-detail {
+  max-height: 30vh;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+/* A phone held upright during a game: asked to turn, as Valkyrie plays in landscape (host/orientation.ts) */
+.turn-phone {
+  display: none;
+}
+
+@media (orientation: portrait) and (pointer: coarse) and (max-width: 40rem) {
+  .turn-phone {
+    position: fixed;
+    inset: 0;
+    z-index: 38;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: var(--gutter);
+    background: var(--background);
+    color: var(--text);
+    text-align: center;
+    font-size: var(--step-read);
+  }
+}
+
+.turn-phone-icon {
+  width: 5rem;
+  height: 5rem;
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: turn-phone 2.4s ease-in-out infinite;
+}
+
+@keyframes turn-phone {
+  0%,
+  20% {
+    rotate: 0deg;
+  }
+  50%,
+  80% {
+    rotate: -90deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+/* The games' symbols inside texts (ui/Symbols.tsx) */
+.symbol.skill {
+  font-variant: small-caps;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0 0.2em;
+  border: 1px solid currentColor;
+  border-radius: 0.3em;
+  white-space: nowrap;
+}
+
+/* With the official fonts, the symbols are the game's own glyphs */
+.symbol.official {
+  font-family: var(--font-symbol);
+  font-style: normal;
+}
+
+.symbol.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.14em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* The addresses and emails scenario authors write in their texts (ui/RichText.tsx), in their own colour */
+.rich-link {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  overflow-wrap: anywhere;
+  user-select: text;
+}
+
+.rich-link:hover,
+.rich-link:focus-visible {
+  color: var(--text-bright);
+}
+
+/* The player's marks on a scenario (ui/MarkButtons.tsx): badges on its card, buttons in its details */
+.mark-icon {
+  width: 1em;
+  height: 1em;
+  flex: none;
+}
+
+.mark-badges {
+  display: inline-flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.mark-badge {
+  display: inline-flex;
+  font-size: 1rem;
+}
+
+.mark-badge.played,
+.mark-button.played[aria-pressed='true'] .mark-icon {
+  color: var(--mark-played);
+}
+
+.mark-badge.favorite,
+.mark-button.favorite[aria-pressed='true'] .mark-icon {
+  color: var(--mark-favorite);
+}
+
+.mark-badge.pending,
+.mark-button.pending[aria-pressed='true'] .mark-icon {
+  color: var(--mark-pending);
+}
+
+.mark-badge.my-rating {
+  min-width: 1.35em;
+  padding: 0 0.3em;
+  justify-content: center;
+  border: 1px solid var(--mark-rating);
+  border-radius: 999px;
+  color: var(--mark-rating);
+  font-size: var(--step-small);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.my-rating-note {
+  align-self: center;
+  color: var(--mark-rating);
+  font-size: var(--step-ui);
+}
+
+.mark-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.button.mark-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.button.mark-button[aria-pressed='false'] {
+  opacity: 0.7;
+}
+
+.button.mark-button[aria-pressed='true'] {
+  border-color: var(--accent);
+}
+
+/* Options, advanced: no mouse pointer anywhere (Valkyrie issue 1663: an iPad driven from a computer shows one) */
+:root[data-hide-cursor],
+:root[data-hide-cursor] * {
+  cursor: none !important;
+}
+
+/* Not in Valkyrie: a button over the board that would do nothing now, while a window is open (Valkyrie issue 987) */
+.button.hud.idle {
+  opacity: 0.45;
+}
+
+/* Not in Valkyrie: lines that shimmer while a translation comes (ui/TranslateOptions.tsx TranslatingLines) */
+.translating {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: 0.3rem 0;
+}
+
+.translating span {
+  height: 0.8rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--card-quiet) 18%, transparent) 0%, color-mix(in srgb, var(--card-quiet) 45%, transparent) 50%, color-mix(in srgb, var(--card-quiet) 18%, transparent) 100%);
+  background-size: 200% 100%;
+  animation: translating 1.4s linear infinite;
+}
+
+.translating span:nth-child(2) {
+  width: 88%;
+}
+
+.translating span:nth-child(3) {
+  width: 64%;
+}
+
+.translating p {
+  margin: 0.2rem 0 0;
+  font-size: var(--step-small);
+  font-style: italic;
+  color: var(--card-quiet);
+}
+
+@keyframes translating {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+/* A text the app translated, said so under it */
+.translated-note {
+  margin: 0.6rem 0 0;
+  font-size: var(--step-small);
+  font-style: italic;
+  color: var(--card-quiet);
+}
+
+.translated-note.problem {
+  color: var(--alert-light);
+}
+
+/* Not in Valkyrie (7 November 2026): the television mode (Options), for a screen across the room sent from a browser,
+   whose picture the cast blurs: a fifth bigger (preferences.ts), with heavier words, a shadow under them and wider
+   windows; the scenario's own interface keeps the size its author gave it */
+:root[data-tv] :is(.card, .event-window, .button, .phase-name, .monster-panel, .log-entries, .notes-text) {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+:root[data-tv] :is(.card, .event-window, .phase-name) {
+  text-shadow: 0 1px 2px var(--shade);
+}
+
+:root[data-tv] .quest-screen .event-window {
+  width: min(100%, 50rem);
+}
+
+:root[data-tv] .quest-screen .card {
+  background: var(--card);
+}

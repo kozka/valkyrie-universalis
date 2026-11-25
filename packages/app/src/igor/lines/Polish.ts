@@ -1,0 +1,151 @@
+// What Igor says in Polish (lines.ts says what each kind of line is for). Not in Valkyrie.
+import type { IgorLines } from '../lines.ts';
+
+export const Polish: IgorLines = {
+  greetings: [
+    'Dobry wieczór, mój panie. Spodziewałem się pana… zawsze się pana spodziewam.',
+    'Ach, to pan. Proszę wejść, proszę. Dom tęsknił za panem. Ci, którzy w nim mieszkają, również.',
+    'Czy pan dzwonił, mój panie? Mógłbym przysiąc, że słyszałem dzwonek. A może to wiatr między nagrobkami.',
+    'Witam ponownie w zamku, mój panie. Zostawiłem dla pana fotel przy kominku.',
+    'Mój panie. Cóż za radość widzieć pana ze wszystkimi kończynami na swoim miejscu.',
+    'Dobry wieczór. Proszę nie zwracać uwagi na drapanie w drzwiach piwnicy. To… wilgoć.',
+    'Przybywa pan o dobrej porze, mój panie. Księżyc jest pełny, a świece prawie całe.',
+  ],
+  halloween: [
+    'W te noce, gdy zasłona między żywymi a umarłymi cienieje, nie należy być samemu.',
+    'Zbliża się wigilia Wszystkich Świętych. Zmarli już o pana pytali.',
+    'Dynie szczerzą się w tym tygodniu bardziej, niż wypada, mój panie. Nie ufałbym im.',
+    'Mówią, że w Noc Zmarłych posiadłości opowiadają własne historie. Znam kilka z nich.',
+  ],
+  smallTalk: [
+    'Jak się pan dziś czuje, mój panie? Proszę podejść do ognia, usiąść. Przyniosę coś ciepłego.',
+    'Proszę spocząć. Fotel skrzypi, ale jeszcze trzyma. Jak ja.',
+    'Nawiasem mówiąc, wymawia się „Aj-gor”. Choć teraz jest mi to już obojętne.',
+    'Wypolerowałem srebra i nakarmiłem… to, co mieszka w studni. Wszystko w porządku.',
+    'Proszę wybaczyć zapach siarki. Odkurzałem zakazaną bibliotekę.',
+    'Doktor dziś nie przyjmuje. Ale ja tak, mój panie. Ja zawsze przyjmuję.',
+    'Burza nie ustaje. Wspaniała noc, by postradać zmysły w dobrym towarzystwie.',
+  ],
+  offer: [
+    'Czym mogę panu dziś służyć?',
+    'Proszę powiedzieć, czego życzy sobie wasza ekscelencja?',
+    'Mam do opowiedzenia wielkie historie, mój panie. Zechce pan którejś wysłuchać?',
+    'Szuka pan jakiegoś konkretnego koszmaru? Piwnica jest pełna.',
+  ],
+  wantAdventure: ['Igorze, poleć mi przygodę.', 'Chcę dobrej historii, Igorze.', 'Zaskocz mnie jakąś grozą.'],
+  wantNews: 'Są jakieś nowości?',
+  wantNothing: ['Nic, dziękuję, Igorze.', 'Tylko wpadłem się przywitać.', 'Nie teraz, Igorze.'],
+  newsIntro: [
+    'Ach, mój panie, zanim cokolwiek… {0} Chce pan wiedzieć więcej?',
+    'Mam wieści, które nie mogą czekać. {0} Opowiedzieć?',
+    'Pozwoli pan na szept, zanim usłyszą go ściany. {0} Pokazać ją panu?',
+  ],
+  newsMore: 'Opowiedz mi więcej.',
+  newsOther: 'Wolę, żebyś polecił mi inną.',
+  noNews: [
+    'Nic nowego pod księżycem, mój panie. Tylko zwykłe koszmary, dobrze zakonserwowane.',
+    'Żadnych nowości. Poczta zza grobu chodzi ostatnio powoli.',
+    'Wszystko po staremu: te same posiadłości, ci sami niespokojni zmarli.',
+  ],
+  beforeQuestions: [
+    'Pozwoli pan, że zadam kilka pytań, by nie chybić z pana gustem.',
+    'Zanim otworzę właściwą kryptę, pozwoli pan, że o coś zapytam.',
+    'Będzie mi miło. Ale proszę powiedzieć…',
+    'Doskonale. Mam tu księgę rejestrową. Zobaczmy…',
+  ],
+  questions: {
+    players: {
+      ask: [
+        'Ile dusz zasiądzie dziś do stołu?',
+        'Ilu badaczy odważy się przekroczyć próg?',
+        'Dla ilu osób mam przygotować salon… i trumny?',
+      ],
+      options: { '1': 'Tylko ja', '2': 'Dwoje', '3': 'Troje', '4': 'Czworo', '5': 'Pięcioro lub więcej' },
+    },
+    experience: {
+      ask: [
+        'Czy przemierzyli państwo już wiele przeklętych posiadłości, czy to pierwsza wizyta?',
+        'Czy dobrze znają państwo okropieństwa Arkham, czy wolą zacząć łagodnie?',
+        'Ile szaleństwa już państwo dźwigają?',
+      ],
+      options: { new: 'Jesteśmy nowi', some: 'Kilka partii', veteran: 'Zaprawieni weterani' },
+    },
+    time: {
+      ask: [
+        'Ile czasu mogą państwo dziś poświęcić grozie?',
+        'Do której zamierzają państwo zostać? Pytam ze względu na świece.',
+        'Krótka wizyta czy zostaną państwo do piania koguta?',
+      ],
+      options: { short: 'Coś krótkiego', evening: 'Jeden wieczór', night: 'Całą noc' },
+    },
+    style: {
+      ask: [
+        'Na co mają państwo większą ochotę: dobrą historię, walkę czy zagadkę do rozwiązania?',
+        'Wolą państwo czytać stare dzienniki, chwycić za strzelbę czy łamać szyfry?',
+        'Jaki koszmar panu odpowiada, mój panie?',
+      ],
+      options: { story: 'Dobra historia', action: 'Akcja i potwory', mystery: 'Tajemnice i zagadki', surprise: 'Zaskocz mnie' },
+    },
+    format: {
+      ask: [
+        'Szukają państwo jednej nocy grozy czy sagi na kilka sesji?',
+        'Historia, która skończy się dziś, czy taka, która będzie państwa nawiedzać tygodniami?',
+      ],
+      options: { oneNight: 'Jedna noc', saga: 'Saga w kilku częściach' },
+    },
+  },
+  acks: {
+    'players:1': ['Samotna dusza. Posiadłości wolą tych, którzy chodzą sami…', 'Tylko pan. Tym lepiej: nikt nie usłyszy krzyku.'],
+    'players:2': ['Dwoje. Dzielna para albo dwoje szaleńców.', 'Dwie dusze. Ani mniej, ani więcej.'],
+    'players:3': ['Troje. Liczba czarownic z Makbeta.', 'Trzech badaczy. Zaparzę trzy filiżanki herbaty.'],
+    'players:4': ['Czworo. Pełny stół, jak za dawnych czasów.', 'Czworo śmiałków. Albo cztery przekąski, zależy, jak patrzeć.'],
+    'players:5': ['Cały tłum! Wyciągnę porcelanę od święta.', 'Wielu gości. Wielkie domy są wdzięczne.'],
+    'experience:new': ['Świeża krew. Będę delikatny… na początku.', 'Proszę się nie lękać, zaczniemy od najmniej przeklętego skrzydła.'],
+    'experience:veteran': ['Ach, doświadczone dusze. Mam coś, co odbierze państwu sen.', 'Weterani. Zejdziemy więc do najgłębszych piwnic.'],
+    'time:short': ['Coś krótkiego. Szybki dreszcz przed snem.', 'Rozumiem: groza w wersji kieszonkowej.'],
+    'time:night': ['Całą noc. Zapalę więcej świec.', 'Zatem do świtu. Powiem kogutowi, żeby nie piał.'],
+    'style:story': ['Historie… mam je oprawione w skórę. Proszę nie pytać, czyją.', 'Dobra opowieść. Jak te, które snuł stary Lovecraft.'],
+    'style:action': ['Akcja! Przyniosę strzelbę dziadka.', 'Zatem potwory. Naostrzę pogrzebacz.'],
+    'style:mystery': ['Zagadka. Nie ma to jak podejrzewać wszystkich.', 'Łamigłówki… moja ulubiona rozrywka zaraz po kopaniu.'],
+    'format:saga': ['Saga. Będą państwo wracać noc w noc, jak niespokojni zmarli.'],
+    any: ['Rozumiem.', 'Pojmuję, mój panie.', 'Doskonały wybór.', 'Hmm… tak, tak.', 'Zanotowane najlepszym atramentem.', 'Bardzo dobrze.'],
+  },
+  results: [
+    'Przeszukałem najbardziej zakurzone półki. Czekają na pana te trzy historie:',
+    'Chyba mam dokładnie to, czego pan potrzebuje. Proszę spojrzeć na te trzy, mój panie:',
+    'Ach, tak. Te trzy przyprawią pana o należyte drżenie:',
+    'Spośród wszystkich koszmarów biblioteki wybrałbym te trzy:',
+  ],
+  resultsFew: ['Historii dla tak wymagającego gustu jest niewiele, ale oto, co znalazłem:'],
+  resultsNone: [
+    'Obawiam się, że zna pan już każdy koszmar, którego szukał, mój panie. Proszę poprosić mnie o coś innego.',
+    'Żadna historia nie pasuje… Może w pana kolekcji brakuje dodatków albo przeżył pan je wszystkie.',
+  ],
+  goThere: 'Zabierz mnie tam',
+  askAgain: 'Zapytaj mnie jeszcze raz',
+  thanks: 'Dziękuję, Igorze',
+  farewell: [
+    'Przyjemnych koszmarów, mój panie.',
+    'Odprowadzę pana do drzwi… nie, nie tędy. Tędy. Proszę za mną!',
+    'Proszę wracać szybko. My się nigdzie nie wybieramy.',
+    'Dobranoc. I błagam, niech pan nie otwiera drzwi do piwnicy.',
+    'Niech Wielcy Przedwieczni będą panu łaskawi.',
+  ],
+  why: {
+    players: 'dla {0} graczy',
+    minutes: 'ok. {0} min',
+    tags: {
+      beginners: 'na początek',
+      narrative: 'bardzo fabularna',
+      combat: 'z walką',
+      deduction: 'kryminalna zagadka',
+      puzzles: 'z łamigłówkami',
+      campaign: 'część sagi',
+      replayable: 'do wielokrotnej gry',
+      short: 'krótka',
+      long: 'długa',
+      hard: 'wymagająca',
+    },
+  },
+  close: 'Zamknij',
+};

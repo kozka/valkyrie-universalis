@@ -1,0 +1,151 @@
+// What Igor says in Portuguese (lines.ts says what each kind of line is for). Not in Valkyrie.
+import type { IgorLines } from '../lines.ts';
+
+export const Portuguese: IgorLines = {
+  greetings: [
+    'Boa noite, meu senhor. Eu o esperava… sempre o espero.',
+    'Ah, é o senhor. Entre, entre. A casa sentia a sua falta. E os que nela habitam também.',
+    'O senhor chamou? Juraria ter ouvido a sineta. Ou talvez fosse o vento entre as lápides.',
+    'Bem-vindo de volta ao castelo, meu senhor. Guardei sua poltrona junto à lareira.',
+    'Meu senhor. Que alegria vê-lo com todos os membros no lugar.',
+    'Boa noite. Não ligue para os arranhões na porta do porão. É… a umidade.',
+    'O senhor chega em boa hora. A lua está cheia e as velas, quase inteiras.',
+  ],
+  halloween: [
+    'Nestas noites em que o véu entre os vivos e os mortos se afina, convém não ficar sozinho.',
+    'Aproxima-se a véspera de Todos os Santos. Os finados já perguntam pelo senhor.',
+    'Esta semana as abóboras sorriem mais do que deviam, meu senhor. Eu não confiaria nelas.',
+    'Dizem que na noite de Finados as mansões contam suas próprias histórias. Eu conheço algumas.',
+  ],
+  smallTalk: [
+    'Como está o senhor hoje? Chegue perto do fogo, sente-se. Trarei algo quente.',
+    'Sente-se. A poltrona range, mas ainda aguenta. Como eu.',
+    'A propósito, pronuncia-se «Áigor». Embora, a esta altura, tanto faz.',
+    'Dei brilho à prataria e alimentei… aquilo que vive no poço. Tudo em ordem.',
+    'Perdoe o cheiro de enxofre. Estive tirando o pó da biblioteca proibida.',
+    'O doutor não recebe hoje. Mas eu sim, meu senhor. Eu sempre recebo.',
+    'A tempestade não amaina. Uma noite excelente para perder o juízo em boa companhia.',
+  ],
+  offer: [
+    'Em que posso servi-lo esta noite?',
+    'Diga-me, o que deseja vossa excelência?',
+    'Tenho grandes histórias para lhe contar, meu senhor. Gostaria de ouvir alguma?',
+    'Procura algum horror em particular? O porão está cheio.',
+  ],
+  wantAdventure: ['Igor, me recomenda uma aventura.', 'Quero uma boa história, Igor.', 'Me surpreenda com algum horror.'],
+  wantNews: 'Alguma novidade?',
+  wantNothing: ['Nada, obrigado, Igor.', 'Só passei para dar um oi.', 'Agora não, Igor.'],
+  newsIntro: [
+    'Ah, meu senhor, antes de mais nada… {0} Deseja saber mais?',
+    'Tenho notícias que não podem esperar. {0} Posso contar?',
+    'Permita-me um sussurro, antes que as paredes o ouçam. {0} Quer que eu a mostre?',
+  ],
+  newsMore: 'Me conta mais.',
+  newsOther: 'Prefiro que me recomende outra.',
+  noNews: [
+    'Nada de novo sob a lua, meu senhor. Só os horrores de sempre, bem conservados.',
+    'Nenhuma novidade. O correio do além anda lento estes dias.',
+    'Tudo continua igual: as mesmas mansões, os mesmos mortos inquietos.',
+  ],
+  beforeQuestions: [
+    'Permita-me algumas perguntas, para não errar o seu gosto.',
+    'Antes de abrir a cripta certa, deixe-me perguntar uma ou duas coisas.',
+    'Será um prazer. Mas diga-me…',
+    'Muito bem. Tenho o livro de registros aqui mesmo. Vejamos…',
+  ],
+  questions: {
+    players: {
+      ask: [
+        'Quantas almas vão se sentar à mesa esta noite?',
+        'Quantos investigadores ousarão cruzar o umbral?',
+        'Para quantos devo preparar o salão… e os caixões?',
+      ],
+      options: { '1': 'Só eu', '2': 'Dois', '3': 'Três', '4': 'Quatro', '5': 'Cinco ou mais' },
+    },
+    experience: {
+      ask: [
+        'Já percorreram muitas mansões amaldiçoadas, ou é a primeira visita?',
+        'Conhecem bem os horrores de Arkham, ou preferem começar com calma?',
+        'Quanta loucura já carregam nas costas?',
+      ],
+      options: { new: 'Somos novatos', some: 'Algumas partidas', veteran: 'Veteranos calejados' },
+    },
+    time: {
+      ask: [
+        'Quanto tempo podem conceder ao horror esta noite?',
+        'Até que horas pensam ficar? Pergunto por causa das velas.',
+        'Uma visita breve, ou ficam até o galo cantar?',
+      ],
+      options: { short: 'Algo curto', evening: 'Uma noitada', night: 'A noite toda' },
+    },
+    style: {
+      ask: [
+        'O que lhes apetece mais: uma boa história, lutar ou resolver um mistério?',
+        'Preferem ler velhos diários, empunhar a espingarda ou decifrar enigmas?',
+        'Que tipo de pesadelo lhe agrada, meu senhor?',
+      ],
+      options: { story: 'Uma boa história', action: 'Ação e monstros', mystery: 'Mistério e enigmas', surprise: 'Me surpreenda' },
+    },
+    format: {
+      ask: [
+        'Procuram uma só noite de horror, ou uma saga que dure várias sessões?',
+        'Uma história que termine esta noite, ou uma que os persiga por semanas?',
+      ],
+      options: { oneNight: 'Uma só noite', saga: 'Uma saga em várias partes' },
+    },
+  },
+  acks: {
+    'players:1': ['Uma alma solitária. As mansões preferem os que andam sozinhos…', 'Só o senhor. Melhor: assim ninguém o ouvirá gritar.'],
+    'players:2': ['Dois. Um casal valente, ou dois insensatos.', 'Duas almas. Nem uma a mais, nem uma a menos.'],
+    'players:3': ['Três. O número das bruxas de Macbeth.', 'Três investigadores. Prepararei três xícaras de chá.'],
+    'players:4': ['Quatro. Uma mesa completa, como nos velhos tempos.', 'Quatro valentes. Ou quatro aperitivos, dependendo do ponto de vista.'],
+    'players:5': ['Uma multidão! Vou tirar a louça boa.', 'Muitos convidados. As grandes mansões agradecem.'],
+    'experience:new': ['Sangue novo. Serei delicado… no começo.', 'Não se preocupe, começaremos pela ala menos amaldiçoada.'],
+    'experience:veteran': ['Ah, almas calejadas. Tenho algo que vai lhes tirar o sono.', 'Veteranos. Então desceremos aos porões mais fundos.'],
+    'time:short': ['Algo curto. Um susto rápido antes de dormir.', 'Entendido: horror de bolso.'],
+    'time:night': ['A noite toda. Acenderei mais velas.', 'Até o amanhecer, então. Avisarei o galo para não cantar.'],
+    'style:story': ['Histórias… tenho-as encadernadas em couro. Não pergunte de quem.', 'Um bom relato. Como os que o velho Lovecraft contava.'],
+    'style:action': ['Ação! Vou buscar a espingarda do avô.', 'Monstros, então. Vou afiar o atiçador.'],
+    'style:mystery': ['Um mistério. Nada como suspeitar de todo mundo.', 'Enigmas… meu passatempo favorito depois de cavar.'],
+    'format:saga': ['Uma saga. Voltarão noite após noite, como as almas penadas.'],
+    any: ['Entendo.', 'Compreendo, meu senhor.', 'Excelente escolha.', 'Hmm… sim, sim.', 'Anoto com a minha melhor tinta.', 'Muito bem.'],
+  },
+  results: [
+    'Procurei nas prateleiras mais empoeiradas. Estas três histórias o esperam:',
+    'Creio ter exatamente o que precisa. Veja estas três, meu senhor:',
+    'Ah, sim. Estas três o farão tremer como se deve:',
+    'De todos os horrores da biblioteca, eu escolheria estes três:',
+  ],
+  resultsFew: ['Escasseiam as histórias para um gosto tão exigente, mas aqui está o que encontrei:'],
+  resultsNone: [
+    'Receio que o senhor já conheça todos os horrores que procurava. Experimente me pedir outra coisa.',
+    'Nenhuma história se encaixa… Talvez faltem expansões na sua coleção, ou já viveu todas.',
+  ],
+  goThere: 'Me leve até ela',
+  askAgain: 'Pergunte de novo',
+  thanks: 'Obrigado, Igor',
+  farewell: [
+    'Tenha pesadelos agradáveis, meu senhor.',
+    'Vou acompanhá-lo até a porta… não, por aí não. Por aqui. Siga-me!',
+    'Volte logo. Nós não vamos a lugar nenhum.',
+    'Boa noite. E não abra a porta do porão, eu lhe peço.',
+    'Que os Grandes Antigos lhe sejam propícios.',
+  ],
+  why: {
+    players: 'para {0} jogadores',
+    minutes: 'cerca de {0} min',
+    tags: {
+      beginners: 'para começar',
+      narrative: 'muito narrativa',
+      combat: 'com combate',
+      deduction: 'de dedução',
+      puzzles: 'com enigmas',
+      campaign: 'parte de uma saga',
+      replayable: 'rejogável',
+      short: 'curta',
+      long: 'longa',
+      hard: 'exigente',
+    },
+  },
+  close: 'Fechar',
+};

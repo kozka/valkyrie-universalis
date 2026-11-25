@@ -1,0 +1,10 @@
+.,Spanish
+// Valkyrie's own texts that its Spanish file leaves out or empty and the app shows, written by Claude (October 2026): only
+// gaps, loaded before Valkyrie's so that an empty line of its own does not hide them (host/boot.ts; tests/texts.test.ts)
+DOWNLOAD_PACKAGE,Descargando el paquete
+DEFAULTMUSICON,Activar la música por defecto
+ORIGINAL,Original
+PUZZLE_SOLUTION,Solución
+tower,Torre
+ELEMENT,Elemento
+INVESTIGATOR_ATTACKS,Ataques contra los investigadores

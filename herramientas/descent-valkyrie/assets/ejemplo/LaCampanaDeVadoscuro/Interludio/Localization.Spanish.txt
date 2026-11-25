@@ -1,0 +1,14 @@
+.,Spanish
+EventLlegadaVictoria.text,"<b>Puertoalto</b>\n\nEntráis en la ciudad con la campana en el carro y los vecinos de Vadoscuro que han bajado al mercado os aplauden. En la posada os cuentan que el badajo se lo llevó «un monje de la cripta».\n\nDescansáis: vuestra Moral vuelve a ser {var:$%morale}."
+EventLlegadaVictoria.button1,Continuar
+EventLlegadaDerrota.text,"<b>Puertoalto</b>\n\nLlegáis a la ciudad cansados y sin la campana. Los herreros dicen que podrían fundir otra… si alguien recupera el badajo, que según los rumores está en la cripta de Vadoscuro.\n\nDescansáis: vuestra Moral vuelve a ser {var:$%morale}."
+EventLlegadaDerrota.button1,Continuar
+EventCiudad.text,¿Qué hacéis en Puertoalto? En el mercado, además de comprar y vender, podéis gastar vuestros PE con el botón Habilidades.
+EventCiudad.button1,Ir al mercado
+EventCiudad.button2,Donativo al templo (25 de oro)
+EventCiudad.button3,Partir hacia Vadoscuro
+EventMercado.button1,Salir del mercado
+EventDonativo.text,El sacerdote os bendice y anota vuestros nombres en el libro del templo: los héroes ganan 1 de fama.
+EventDonativo.button1,Continuar
+EventPartir.text,Tomáis el camino de la costa hacia Vadoscuro. Al anochecer, las losas del cementerio crujen.
+EventPartir.button1,Continuar

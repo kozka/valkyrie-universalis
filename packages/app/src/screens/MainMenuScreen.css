@@ -1,0 +1,127 @@
+.main-menu {
+  padding-left: max(var(--gutter), 8vw);
+  gap: 2.5rem;
+}
+
+.app-name {
+  display: block;
+  width: clamp(8rem, 14vw, 11rem);
+  height: auto;
+  margin-bottom: 0.75rem;
+  filter: drop-shadow(0 2px 6px var(--shade));
+}
+
+/* The game's name, set as its button in the game selection: the title large, the subtitle under it in the heading's
+   letters, the edition small and quieter */
+.game-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-width: 24ch;
+  margin: 0;
+}
+
+.game-heading-name {
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-size: clamp(2.25rem, 4.6vw, 3.5rem);
+  font-weight: 500;
+  line-height: 1.02;
+}
+
+/* Descent's own word, alone on its line, larger still */
+.game-heading[data-look='d2e'] .game-heading-name {
+  font-size: clamp(2.75rem, 5.8vw, 4.5rem);
+  letter-spacing: 0.04em;
+}
+
+.game-heading-more {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 0.9rem;
+  line-height: 1.2;
+}
+
+.game-heading-subtitle {
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-size: clamp(1.25rem, 2.3vw, 1.75rem);
+  font-weight: 500;
+}
+
+.game-heading-edition {
+  font-family: var(--font);
+  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
+  font-weight: 400;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.1em;
+  text-transform: none;
+  opacity: 0.7;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+}
+
+/* Entries set like a book's contents: large, quiet, lit by the lamp when pointed at */
+.menu-entry {
+  position: relative;
+  padding: 0.35rem 0;
+  border: none;
+  background: none;
+  color: var(--text);
+  font-size: clamp(1.5rem, 3.4vw, 1.875rem);
+  line-height: 1.25;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menu-entry::before {
+  content: '';
+  position: absolute;
+  left: -1.1rem;
+  top: 55%;
+  width: 0.6rem;
+  height: 2px;
+  background: var(--accent);
+  opacity: 0;
+  transform: translateX(-0.4rem);
+  transition: opacity 140ms ease, transform 140ms ease;
+}
+
+.menu-entry:hover:not(:disabled)::before,
+.menu-entry:focus-visible::before {
+  opacity: 1;
+  transform: none;
+}
+
+.menu-entry:hover:not(:disabled) {
+  color: var(--text-bright);
+}
+
+.menu-entry:disabled {
+  color: var(--quiet);
+  opacity: 0.45;
+  cursor: default;
+}
+
+/* DooM's title drawing in place of a game's name, and what it needs before its missions can be played */
+.doom-title img {
+  display: block;
+  width: min(100%, 20rem);
+  height: auto;
+  filter: drop-shadow(0 0 18px color-mix(in srgb, var(--doom-glow) 30%, transparent));
+}
+
+.doom-pack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  max-width: 32rem;
+  font-size: var(--step-ui);
+}

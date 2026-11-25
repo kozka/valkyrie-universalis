@@ -1,0 +1,27 @@
+# Reference clones and downloads: never committed, never redistributed
+referencias/*
+!referencias/README.md
+!referencias/clonar.mjs
+!referencias/descargar-escenarios.mjs
+!referencias/versiones.json
+
+# Official content for local import tests: never committed
+/contenido-oficial/
+
+# Full battery report (the baseline next to it is committed)
+/tests/battery/report.json
+# Editor round trip report (tools/battery/roundtrip.ts)
+/tests/battery/roundtrip-report.json
+# The skills' validators run by tools/battery/checks-compare.ts
+/tests/battery/checks-python/
+
+node_modules/
+dist/
+coverage/
+.vite/
+playwright-report/
+test-results/
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/

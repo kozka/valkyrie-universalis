@@ -1,0 +1,84 @@
+.,Spanish
+EventPrologoGanada.text,<i>La campana ya cuelga de nuevo en su torre, muda: le falta el badajo. Siguiendo el rastro de cera bajáis a la cripta del templo, donde el viejo campanero duerme desde hace cien años… o dormía.</i>
+EventPrologoGanada.button1,Continuar
+EventPrologoPerdida.text,<i>Sin la campana, cada noche se levantan más muertos. Los herreros fundirán otra si les lleváis el viejo badajo, que según los rumores está en la cripta del templo. Allí bajáis, y el aire huele a cera quemada.</i>
+EventPrologoPerdida.button1,Continuar
+EventIlsa.text,"Ilsa, la aldeana que salvasteis, os espera en la puerta de la cripta con un frasco de agua bendita y os lo echa por encima entre bendiciones.\n\nVuestra Moral sube en 1."
+EventIlsa.button1,Continuar
+EventPreparar.text,"<b>Preparación</b>\n\nApartad las piezas {c:TileAntesala}, {c:TileOsario} y {c:TileTumba}, una Entrada, 3 terminales y 2 puertas."
+EventPreparar.button1,Continuar
+EventColocarAntesala.text,Colocad la pieza {c:TileAntesala}, la Entrada, un terminal, una puerta y una ficha de Búsqueda como se indica.
+EventColocarAntesala.button1,Continuar
+EventColocarHeroes.text,Colocad a los héroes en la Entrada.
+EventColocarHeroes.button1,Continuar
+SpawnZombis.text,Entre los sarcófagos, los muertos se incorporan. Colocad el grupo de {type} como se indica, respetando el límite de monstruos.
+SpawnZombis.button1,Continuar
+EventObjetivo.text,<b>Objetivo:</b> encontrad el badajo de la campana y llevadlo a la Entrada, donde cuelga la cuerda de la torre.
+EventObjetivo.button1,Continuar
+EventVelas.text,"<i>Todas las velas de la cripta se apagan a la vez.</i>\n\n{rnd:hero} siente una mano helada en la nuca: sufre 1 {fatigue}."
+EventVelas.button1,Continuar
+TokenBusquedaA.text,Un nicho con ofrendas polvorientas.
+TokenBusquedaA.button1,{action} Buscar
+EventBuscarA.text,Roba una carta de Búsqueda.
+EventBuscarA.button1,Continuar
+DoorOsario.text,Una puerta de roble con herrajes oxidados.
+DoorOsario.button1,{action} Abrir
+EventAbrirOsario.text,Retirad la puerta. Colocad la pieza {c:TileOsario}, un terminal, una ficha de Búsqueda y una puerta roja (sellada) como se indica.
+EventAbrirOsario.button1,Continuar
+SpawnAcolitos.text,Junto a los osarios, unos monjes de túnica gris rezan ante un cirio negro. El más viejo se gira: es el hermano Odric. Colocad el grupo de {type} como se indica.
+SpawnAcolitos.button1,Continuar
+SpawnAcolitos.uniquetitle,Hermano Odric
+SpawnAcolitos.uniquetext,El hermano Odric es el líder de los acólitos y tiene Vida adicional (en rojo, en su retrato). Lleva colgada del cuello la llave de la puerta sellada.
+SpawnAcolitosFuerte.text,Junto a los osarios, unos monjes de túnica gris rezan ante un cirio negro. El más viejo se gira: es el hermano Odric. Colocad el grupo de {type} como se indica. Sin la campana, Odric es más fuerte que nunca.
+SpawnAcolitosFuerte.button1,Continuar
+SpawnAcolitosFuerte.uniquetitle,Hermano Odric
+SpawnAcolitosFuerte.uniquetext,El hermano Odric es el líder de los acólitos y tiene Vida adicional (en rojo, en su retrato). Lleva colgada del cuello la llave de la puerta sellada.
+EventOdric.text,"«El badajo ya no es vuestro. Cuando suene, despertará a todos los muertos del valle, y me obedecerán.»\n\n<b>Objetivo actualizado:</b> la puerta sellada lleva a la tumba del campanero. Derrotad a Odric para quitarle la llave, o forzad la losa."
+EventOdric.button1,Continuar
+EventOdricCae.text,Odric cae al suelo y su cirio se apaga. Le quitáis la llave de hierro negro: ya podéis abrir la puerta sellada.
+EventOdricCae.button1,Continuar
+CustomMonsterAcolito.monstername,Acólitos de la cripta
+CustomMonsterAcolito.info,Usad las miniaturas y las cartas de Moldeador de carne del Acto I. Gastan los {surge} así: primero Cerrar heridas, después +1 {heart}.
+ActivationAcolitoRito.ability,"<i>Los acólitos entonan una letanía y las sombras se espesan alrededor de {0}.</i>\nEse héroe sufre 1 {fatigue}."
+ActivationAcolitoRito.minion,"{action} Se aleja del héroe más cercano.\n{action} Ataca al héroe con menos {will} a 3 casillas o menos."
+ActivationAcolitoRito.master,"{action} Cada monstruo a 3 casillas o menos del hermano Odric recupera 2 {heart}.\n{action} Ataca al héroe más cercano."
+ActivationAcolitoAzote.ability,<i>Las velas negras chisporrotean.</i>
+ActivationAcolitoAzote.master,"{action} Divisa al héroe más cercano.\n{action} Ataca a ese héroe. Si el ataque causa {heart}, ese héroe queda Enfermo."
+ActivationAcolitoAzote.minion,"{action} Divisa al héroe con más {heart} sufrido.\n{action} Ataca a ese héroe."
+TokenBusquedaB.text,Un montón de cráneos ordenados con mimo.
+TokenBusquedaB.button1,{action} Buscar
+EventBuscarB.text,Roba una carta de Búsqueda.
+EventBuscarB.button1,Continuar
+DoorSello.text,Una losa con el sello del campanero cierra el paso. Tiene una cerradura de hierro negro.
+DoorSello.button1,{action} Abrir con la llave
+DoorSello.button2,{action} Forzar la losa
+EventForzarLosa.text,Un héroe adyacente a la losa realiza una prueba de {might}.
+EventForzarLosa.button1,Superada
+EventForzarLosa.button2,Fallada
+EventLosaResiste.text,La losa apenas se mueve: sufres 2 {fatigue}.
+EventLosaResiste.button1,Continuar
+EventAbrirTumba.text,La losa se aparta. Retiradla y colocad la pieza {c:TileTumba}, un terminal y una ficha de Objetivo blanca como se indica: es el badajo, sobre el sarcófago del campanero.
+EventAbrirTumba.button1,Continuar
+TokenBadajo.text,El badajo de bronce descansa sobre el sarcófago del campanero.
+TokenBadajo.button1,{action} Coger el badajo
+EventElegirPortador.text,¿Quién coge el badajo? Pulsad el retrato de ese héroe (debe estar en la ficha o adyacente) y después Continuar.
+EventElegirPortador.button1,Continuar
+EventCogerBadajo.text,"{c:EventElegirPortador} levanta el badajo. En ese momento, la tapa del sarcófago se agrieta…\n\n<b>Objetivo actualizado:</b> llevad el badajo hasta la Entrada y tañed la campana. Si quien lo lleva queda fuera de combate, deja el badajo en su casilla y otro héroe puede recogerlo como {action}."
+EventCogerBadajo.button1,Continuar
+SpawnDespertar.text,¡Los muertos de la tumba despiertan! Colocad un grupo de {type} en la pieza {c:TileTumba}, lo más cerca posible del sarcófago y respetando el límite de monstruos.
+SpawnDespertar.button1,Continuar
+TokenCuerda.text,La cuerda de la campana cuelga del techo de la entrada.
+TokenCuerda.button1,{action} Tañer la campana
+EventTanir.text,¿Está en la Entrada el héroe que lleva el badajo?
+EventTanir.button1,Sí
+EventTanir.button2,Todavía no
+EventVictoria.text,"<b>Victoria</b>\n\nEncajáis el badajo y tiráis de la cuerda. El tañido rueda por el valle, y uno a uno los muertos se derrumban como marionetas sin hilos.\n\nVadoscuro duerme tranquilo otra vez. <i>Fin de la campaña.</i>"
+EventVictoria.button1,Fin
+EventDerrota.text,"<b>Derrota</b>\n\nHuís de la cripta con los muertos pisándoos los talones. Esa noche, el valle entero oye arañar las losas…\n\n<i>Fin de la campaña.</i>"
+EventDerrota.button1,Fin
+EventPeligroMenor.text,"<i>Desde el fondo de la cripta llega el eco de un tañido que no suena en ninguna parte.</i>\n\nLa amenaza crece: al final de esta ronda ocurrirá un peligro."
+EventPeligroMenor.button1,Continuar
+EventPeligroMayor.text,"<i>El suelo tiembla. Algo se ha dado cuenta de que estáis aquí.</i>\n\nLa amenaza es grave: al final de esta ronda ocurrirá un peligro mayor."
+EventPeligroMayor.button1,Continuar
+EventPeligroMortal.text,"<i>Ya no queda tiempo.</i>\n\nAl final de esta ronda ocurrirá un peligro mortal."
+EventPeligroMortal.button1,Continuar

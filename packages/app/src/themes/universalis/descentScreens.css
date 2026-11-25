@@ -1,0 +1,518 @@
+/* Descent's class selection (QuestScreen.tsx ClassSelectionView) and skills window (play/Windows.tsx SkillsWindow) in
+   the Universalis theme (1 November 2026), with the pieces of kozka's frames for Descent's scenario screens
+   (brand/d2e-scenarios/) and the rings of its hero selection (brand/d2e-hero-room/): the cave behind, each hero in the
+   card's frame with its portrait in a lit ring, the classes and skills as framed buttons, the one chosen in red. Only
+   the look: the screens are the classic ones. DooM's look (brand/doom-scenarios/, brand/doom-hero-room/) at the end. Not
+   in Valkyrie. */
+
+/* The class selection: the cave behind, the title on its banner, the heroes side by side */
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-selection {
+  background: none;
+  isolation: isolate;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-selection::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(color-mix(in srgb, var(--shade) 50%, transparent), color-mix(in srgb, var(--shade) 50%, transparent)),
+    url('../../assets/d2e-scenario-cave.webp') center / cover;
+}
+
+/* The banner as the scenario screens' (d2e-scenario-title.webp, 984×238), with its hammer and its gem */
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-selection > h1 {
+  --title-h: clamp(4.6rem, 9vw, 7.2rem);
+  position: relative;
+  flex: none;
+  height: var(--title-h, 6rem);
+  min-width: calc(var(--title-h, 6rem) / 227 * 640);
+  margin: 0;
+  padding: calc(var(--title-h, 6rem) / 227 * 88) calc(var(--title-h, 6rem) / 227 * 165) calc(var(--title-h, 6rem) / 227 * 58);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-image: url('../../assets/d2e-scenario-title.webp') 85 150 55 fill / calc(var(--title-h, 6rem) / 227 * 85)
+    calc(var(--title-h, 6rem) / 227 * 150) calc(var(--title-h, 6rem) / 227 * 55);
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-weight: 400;
+  font-size: calc(var(--title-h, 6rem) * 0.25);
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--room-title);
+  text-shadow:
+    0 0.12rem 0 var(--shade),
+    0 0 0.7rem color-mix(in srgb, var(--room-glow) 35%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-selection > h1::before,
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-selection > h1::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: center / 100% 100% no-repeat;
+  pointer-events: none;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-selection > h1::before {
+  top: -1px;
+  width: calc(var(--title-h, 6rem) / 227 * 245);
+  height: calc(var(--title-h, 6rem) / 227 * 126);
+  background-image: url('../../assets/d2e-scenario-title-crest.webp');
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-selection > h1::after {
+  top: calc(var(--title-h, 6rem) / 227 * 146 - 1px);
+  width: calc(var(--title-h, 6rem) / 227 * 105);
+  height: calc(var(--title-h, 6rem) / 227 * 81);
+  background-image: url('../../assets/d2e-scenario-title-medal.webp');
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-heroes {
+  width: min(100%, 78rem);
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 19rem));
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+/* Each hero in the card's frame (d2e-scenario-card.webp, corners of 120), its portrait round in the lit ring of the
+   hero selection (d2e-heroes-ring-lit.webp, 140 across, its hole 100) */
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-hero {
+  --portrait: 6.2rem;
+  position: relative;
+  gap: 0.75rem;
+  padding: 2.6rem 1.9rem 2.6rem;
+  border: 1px solid transparent;
+  border-image: url('../../assets/d2e-scenario-card.webp') 120 fill / 3.4rem;
+  animation: d2e-class-rise 0.5s ease-out both;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-hero:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-hero:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-hero:nth-child(n + 4) {
+  animation-delay: 0.24s;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-hero .portrait {
+  width: var(--portrait, 6rem);
+  height: var(--portrait, 6rem);
+  margin-top: calc(var(--portrait, 6rem) * 0.2);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 25%;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-hero::before {
+  content: '';
+  position: absolute;
+  top: 2.2rem;
+  left: 50%;
+  width: calc(var(--portrait, 6rem) * 1.4);
+  height: calc(var(--portrait, 6rem) * 1.4);
+  transform: translateX(-50%);
+  background: url('../../assets/d2e-heroes-ring-lit.webp') center / contain no-repeat;
+  pointer-events: none;
+  animation: d2e-class-breathe 3s ease-in-out infinite;
+}
+
+/* A hero with its class: its ring calm, burning bright */
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-hero:has(.class-choice.picked)::before {
+  animation: none;
+  filter: brightness(1.25) drop-shadow(0 0 0.5rem var(--room-glow));
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-hero h2 {
+  margin: 0.6rem 0 0.2rem;
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-weight: 400;
+  font-size: 1.35rem;
+  color: var(--room-title);
+  text-shadow: 0 0.1rem 0.2rem var(--shade);
+}
+
+/* The classes: the dark frame (d2e-scenario-button.webp, 394×90, ends 52 wide); the hero's own in the red one, lit; one
+   another hero has, dim */
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-choice {
+  --button-h: 3rem;
+  min-height: var(--button-h, 3rem);
+  padding: 0.25rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/d2e-scenario-button.webp') 44 52 45 fill / calc(var(--button-h, 3rem) / 2) calc(var(--button-h, 3rem) / 90 * 52);
+  background: none;
+  color: var(--room-title);
+  transition:
+    filter 140ms ease,
+    transform 140ms ease;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-choice:hover:not(:disabled) {
+  filter: brightness(1.2);
+  text-shadow: 0 0 0.5rem color-mix(in srgb, var(--room-glow) 40%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-choice:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-choice:disabled {
+  background: none;
+  filter: grayscale(0.8) brightness(0.5);
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-choice.picked {
+  border-image-source: url('../../assets/d2e-scenario-button-red.webp');
+  border-image-slice: 47 50 fill;
+  border-image-width: calc(var(--button-h, 3rem) / 2) calc(var(--button-h, 3rem) / 112 * 52);
+  background: none;
+  color: var(--room-title);
+  text-shadow: 0 0 0.5rem color-mix(in srgb, var(--room-glow) 70%, transparent);
+  filter: drop-shadow(0 0 0.45rem color-mix(in srgb, var(--room-glow) 45%, transparent));
+  animation: d2e-class-picked 0.45s ease-out;
+}
+
+/* Back, red; Finished, dark until every hero has a class, then burning */
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-selection .screen-foot {
+  width: min(100%, 78rem);
+  margin-top: auto;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-selection .screen-foot .button {
+  --button-h: 3.3rem;
+  min-height: var(--button-h, 3.3rem);
+  padding: 0.2rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/d2e-scenario-button.webp') 44 52 45 fill / calc(var(--button-h, 3.3rem) / 2) calc(var(--button-h, 3.3rem) / 90 * 52);
+  background: none;
+  box-shadow: none;
+  color: var(--room-title);
+  font-size: 1.2rem;
+  transition: filter 140ms ease;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-selection .screen-foot .button.back {
+  border-image: url('../../assets/d2e-scenario-button-red.webp') 55 52 56 fill / calc(var(--button-h, 3.3rem) / 2) calc(var(--button-h, 3.3rem) / 112 * 52);
+  color: var(--room-red);
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-selection .screen-foot .button:hover {
+  filter: brightness(1.2);
+  text-shadow: 0 0 0.5rem color-mix(in srgb, var(--room-glow) 40%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .class-selection[data-ready] .screen-foot .button.primary {
+  border-image: url('../../assets/d2e-scenario-button-red.webp') 55 52 56 fill / calc(var(--button-h, 3.3rem) / 2) calc(var(--button-h, 3.3rem) / 112 * 52);
+  text-shadow: 0 0 0.6rem var(--room-glow);
+  animation: d2e-class-ready 2.4s ease-in-out infinite;
+}
+
+/* The skills window, in the card's frame: the heroes in their rings, each with a red gem of its experience left; the
+   skills by their cost, each row in the field's frame with its cost on a gem, as framed buttons: the hero's own red and
+   lit, those its experience pays for bright, the rest dim */
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .skills-window {
+  padding: 2.9rem 3rem 2.7rem;
+  gap: 1.1rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/d2e-scenario-card.webp') 120 fill / 3.8rem;
+  background: none;
+  box-shadow: 0 1rem 3rem var(--shade);
+  color: var(--room-title);
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .skills-window h2 {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-align: center;
+  color: var(--room-title);
+  text-shadow:
+    0 0.1rem 0 var(--shade),
+    0 0 0.7rem color-mix(in srgb, var(--room-glow) 35%, transparent);
+  background: linear-gradient(to right, transparent, color-mix(in srgb, var(--accent) 70%, transparent), transparent) bottom / 70% 1px
+    no-repeat;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .skill-heroes {
+  gap: 1.4rem;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .skill-hero {
+  width: 5.2rem;
+  height: 5.2rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .skill-hero .portrait {
+  position: absolute;
+  inset: 14.3%;
+  width: 71.4%;
+  height: 71.4%;
+  border-radius: 50%;
+  object-position: 50% 25%;
+  filter: grayscale(0.6) brightness(0.45);
+  transition: filter 200ms ease;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .skill-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../../assets/d2e-heroes-ring-dark.webp') center / contain no-repeat;
+  pointer-events: none;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .skill-hero:hover .portrait {
+  filter: grayscale(0.2) brightness(0.8);
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .skill-hero[aria-pressed='true'] .portrait {
+  filter: none;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .skill-hero[aria-pressed='true']::after {
+  background-image: url('../../assets/d2e-heroes-ring-lit.webp');
+  filter: drop-shadow(0 0 0.45rem var(--room-glow));
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .skill-xp {
+  right: -0.2rem;
+  bottom: -0.2rem;
+  z-index: 1;
+  min-width: 1.8rem;
+  height: 1.8rem;
+  border: 2px solid color-mix(in srgb, var(--accent) 85%, transparent);
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, var(--room-red), color-mix(in srgb, var(--room-red) 45%, var(--shade)));
+  box-shadow: 0 0 0.5rem color-mix(in srgb, var(--room-glow) 60%, transparent);
+  color: var(--room-title);
+  font-weight: 600;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .skill-row:not(.hybrid) {
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.1rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/d2e-scenario-textbox.webp') 30 30 fill / 1.15rem 1.2rem;
+}
+
+/* The cost on a gold diamond */
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .skill-cost {
+  position: relative;
+  flex: none;
+  width: 2.1rem;
+  min-width: 0;
+  height: 2.1rem;
+  padding: 0;
+  border: 0;
+  color: var(--room-title);
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-size: 1.15rem;
+  isolation: isolate;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .skill-cost::before {
+  content: '';
+  position: absolute;
+  inset: 0.3rem;
+  z-index: -1;
+  transform: rotate(45deg);
+  border: 2px solid color-mix(in srgb, var(--accent) 85%, transparent);
+  background: color-mix(in srgb, var(--room-red) 35%, var(--shade));
+  box-shadow: 0 0 0.4rem color-mix(in srgb, var(--room-glow) 40%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .button.skill {
+  --button-h: 2.7rem;
+  min-height: var(--button-h, 2.7rem);
+  padding: 0.2rem 1.35rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/d2e-scenario-button.webp') 44 52 45 fill / calc(var(--button-h, 2.7rem) / 2) calc(var(--button-h, 2.7rem) / 90 * 52);
+  background: none;
+  box-shadow: none;
+  transition: filter 140ms ease;
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .button.skill.affordable {
+  color: var(--room-title);
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .button.skill.locked {
+  color: color-mix(in srgb, var(--room-title) 40%, transparent);
+  filter: grayscale(0.7) brightness(0.65);
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .button.skill.picked {
+  border-image-source: url('../../assets/d2e-scenario-button-red.webp');
+  border-image-slice: 47 50 fill;
+  border-image-width: calc(var(--button-h, 2.7rem) / 2) calc(var(--button-h, 2.7rem) / 112 * 52);
+  color: var(--room-title);
+  text-shadow: 0 0 0.5rem color-mix(in srgb, var(--room-glow) 70%, transparent);
+  filter: drop-shadow(0 0 0.4rem color-mix(in srgb, var(--room-glow) 40%, transparent));
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .button.skill:hover:not(.locked) {
+  filter: brightness(1.2);
+  text-shadow: 0 0 0.5rem color-mix(in srgb, var(--room-glow) 40%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .skills-window > .button {
+  --button-h: 3rem;
+  min-height: var(--button-h, 3rem);
+  padding: 0.2rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/d2e-scenario-button-red.webp') 55 52 56 fill / calc(var(--button-h, 3rem) / 2) calc(var(--button-h, 3rem) / 112 * 52);
+  background: none;
+  box-shadow: none;
+  color: var(--room-title);
+}
+
+:root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) .skills-window > .button:hover {
+  filter: brightness(1.2);
+  text-shadow: 0 0 0.5rem color-mix(in srgb, var(--room-glow) 40%, transparent);
+}
+
+/* DooM's look: the bridge behind, the steel frames, the marines in the hero selection's rings */
+:root[data-theme='universalis'][data-look='DooM'] .class-selection::before {
+  background:
+    linear-gradient(color-mix(in srgb, var(--shade) 50%, transparent), color-mix(in srgb, var(--shade) 50%, transparent)),
+    url('../../assets/doom-scenario-room.webp') center / cover;
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .class-selection > h1 {
+  --title-h: clamp(5rem, 10vw, 8rem);
+  min-width: calc(var(--title-h, 6rem) / 535 * 1400);
+  padding: calc(var(--title-h, 6rem) / 535 * 125) calc(var(--title-h, 6rem) / 535 * 500) calc(var(--title-h, 6rem) / 535 * 132);
+  border-image: url('../../assets/doom-scenario-title.webp') 118 480 127 fill / calc(var(--title-h, 6rem) / 535 * 118)
+    calc(var(--title-h, 6rem) / 535 * 480) calc(var(--title-h, 6rem) / 535 * 127);
+  font-family: var(--font-deck);
+  font-weight: 700;
+  font-stretch: condensed;
+  font-size: calc(var(--title-h, 6rem) * 0.27);
+  text-transform: none;
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .class-selection > h1::before {
+  top: -1px;
+  width: calc(var(--title-h, 6rem) / 535 * 212);
+  height: var(--title-h, 6rem);
+  margin-left: calc(var(--title-h, 6rem) / 535 * -14);
+  background-image: url('../../assets/doom-scenario-title-lights.webp');
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .class-selection > h1::after {
+  display: none;
+}
+
+:root[data-theme='universalis'][data-look='DooM'] :is(.class-hero, .skills-window) {
+  border-image-source: url('../../assets/doom-scenario-card.webp');
+  border-image-slice: 115 fill;
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .class-hero::before {
+  background-image: url('../../assets/doom-heroes-ring-lit.webp');
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .class-hero .portrait {
+  margin-top: calc(var(--portrait, 6rem) * 0.205);
+}
+
+:root[data-theme='universalis'][data-look='DooM'] :is(.class-hero h2, .skills-window h2) {
+  font-family: var(--font-deck);
+  font-weight: 700;
+  font-stretch: condensed;
+}
+
+:root[data-theme='universalis'][data-look='DooM'] :is(.class-choice, .class-selection .screen-foot .button, .button.skill) {
+  border-image-source: url('../../assets/doom-scenario-button.webp');
+  border-image-slice: 35 34 36 fill;
+  border-image-width: calc(var(--button-h, 3rem) / 2) calc(var(--button-h, 3rem) / 72 * 34);
+}
+
+:root[data-theme='universalis'][data-look='DooM'] :is(.class-choice.picked, .class-selection .screen-foot .button.back, .class-selection[data-ready] .screen-foot .button.primary, .button.skill.picked, .skills-window > .button) {
+  border-image-source: url('../../assets/doom-scenario-button-red.webp');
+  border-image-slice: 43 34 fill;
+  border-image-width: calc(var(--button-h, 3rem) / 2) calc(var(--button-h, 3rem) / 86 * 34);
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .skill-hero::after {
+  background-image: url('../../assets/doom-heroes-ring-dark.webp');
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .skill-hero[aria-pressed='true']::after {
+  background-image: url('../../assets/doom-heroes-ring-lit.webp');
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .skill-row:not(.hybrid) {
+  border-image-source: url('../../assets/doom-scenario-textbox.webp');
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .skill-cost::before {
+  transform: none;
+  border-radius: 0.2rem;
+}
+
+@keyframes d2e-class-rise {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+}
+
+@keyframes d2e-class-breathe {
+  0%,
+  100% {
+    filter: brightness(0.85);
+  }
+  50% {
+    filter: brightness(1.2) drop-shadow(0 0 0.4rem var(--room-glow));
+  }
+}
+
+@keyframes d2e-class-picked {
+  from {
+    filter: brightness(1.8) drop-shadow(0 0 0.9rem var(--room-glow));
+  }
+}
+
+@keyframes d2e-class-ready {
+  0%,
+  100% {
+    filter: brightness(1.05) drop-shadow(0 0 0.3rem color-mix(in srgb, var(--room-glow) 45%, transparent));
+  }
+  50% {
+    filter: brightness(1.3) drop-shadow(0 0 0.9rem var(--room-glow));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) :is(.class-selection, .skills-window) *,
+  :root[data-theme='universalis']:is([data-look='D2E'], [data-look='DooM']) :is(.class-selection, .skills-window) *::before {
+    animation: none !important;
+  }
+}

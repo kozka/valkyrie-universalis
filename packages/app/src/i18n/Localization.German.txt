@@ -1,0 +1,417 @@
+.,German
+// Translated by Claude from the English texts (October 2026): corrections by native speakers are welcome.
+APP_NAME,Valkyrie Universalis
+UNOFFICIAL,Inoffiziell, von Fans gemacht
+ADD_SCENARIO,Szenariodatei hinzufügen
+NO_SCENARIOS,Noch keine Szenarien. Füge eine .valkyrie-Datei aus dem Shop oder von ihrem Autor hinzu.
+NOT_A_SCENARIO,{0} ist kein Valkyrie-Szenario.
+SCENARIO_ADDED,{0} hinzugefügt.
+SCENARIO_OTHER_GAME,{0} ist ein Szenario für {1}: Es steht in dessen Liste.
+SCENARIO_FILTERED,{0} hinzugefügt, aber die Filter blenden es aus (seine Sprachen oder Erweiterungen, die du nicht hast).
+SCENARIO_INVALID,{0} kann nicht geöffnet werden: Seine quest.ini ist für diese Valkyrie-Version ungültig.
+RELOAD_LIST,Liste neu laden
+PLAY_SCENARIO,Spielen
+LANGUAGES,Sprachen: {0}
+RATING,Bewertung: {0} von 10
+DOWNLOAD_FAILED,{0} konnte nicht heruntergeladen werden. Prüfe die Verbindung und versuche es erneut.
+HEROES_RANGE,{0} bis {1} Ermittler
+MINUTES_RANGE,{0} bis {1} Minuten
+ABOUT_TEXT,Valkyrie Universalis ist eine Webversion von Valkyrie, der freien App von NPBruce und seinen Mitwirkenden. Sie wird von Fans gemacht und hat nichts mit Fantasy Flight Games zu tun. Sie enthält keine Bilder, Töne oder Texte des Verlags: Jeder Spieler importiert seine eigenen, und sie bleiben in seinem Browser.
+ABOUT_CODE,Code unter der Lizenz Apache 2.0, portiert von Valkyrie {0}.
+STORAGE_OFF,Dieser Browser speichert keine Dateien: Was du hinzufügst, ist beim Schließen weg.
+STOPPED,Das Szenario wurde angehalten: {0}
+LOADING,Wird geladen…
+SYMBOL_STRENGTH,Stärke
+SYMBOL_AGILITY,Geschick
+SYMBOL_OBSERVATION,Beobachtung
+SYMBOL_LORE,Wissen
+SYMBOL_INFLUENCE,Einfluss
+SYMBOL_WILL,Willenskraft
+SYMBOL_ACTION,Aktion
+SYMBOL_SUCCESS,Erfolg
+SYMBOL_CLUE,Hinweis
+SYMBOL_TENTACLE,Tentakel
+SYMBOL_PRODUCT,Erweiterungssymbol
+MORALE,Moral: {0}
+AVAILABLE_XP,Verfügbare Erfahrung: {0}
+SYMBOL_HEART,Gesundheit
+SYMBOL_FATIGUE,Erschöpfung
+SYMBOL_MIGHT,Stärke
+SYMBOL_KNOWLEDGE,Wissen
+SYMBOL_AWARENESS,Wahrnehmung
+SYMBOL_SHIELD,Schild
+SYMBOL_SURGE,Kraftschub
+MONSTER_LIST,Monster
+NEXT_PHASE,Nächste Phase
+PHASE_BAR,Runde
+SCROLL_UP,Vorherige Monster
+SCROLL_DOWN,Weitere Monster
+AWARENESS,Wachsamkeit {0}
+HORROR_VALUE,Horror {0}
+HEALTH,Gesundheit {0}
+DAMAGE,Schaden {0}
+DUPLICATE,Gruppe {0}
+END_TITLE,Ende
+WELCOME_TITLE,Willkommen bei Valkyrie Universalis
+WELCOME_TEXT,Valkyrie Universalis ist eine Webversion von Valkyrie, die auf jedem Gerät läuft: Computer, Tablet oder Smartphone, wo du sie auch als App installieren kannst.\n\nDies ist eine frühe Version. Sie wurde gründlich getestet und alles scheint zu funktionieren, kann aber noch Fehler enthalten.\n\nEiniges fehlt noch, etwa der Szenario-Editor, und die Oberfläche muss noch verfeinert werden. Aber du kannst schon spielen und Szenarien bewerten, und es gibt einige neue Optionen zu entdecken…\n\nViel Spaß!
+WELCOME_HIDE,Nicht mehr anzeigen
+WELCOME_START,Los geht’s
+RATING_ALREADY_SENT,Du hast deine Bewertung dieses Szenarios bereits gesendet ({0}/10). Jedes Szenario wird pro Gerät nur einmal bewertet.
+RATING_NOT_SENT,Die Bewertung konnte nicht gesendet werden: Prüfe deine Verbindung und versuche es erneut. Deine Bewertung bleibt auf diesem Gerät gespeichert.
+MY_RATING,Deine Bewertung: {0}/10
+FEEDBACK_BUTTON,App-Problem melden
+FEEDBACK_TITLE,Problem melden oder Idee vorschlagen
+FEEDBACK_INTRO,Funktioniert etwas nicht, oder hast du eine Idee? Schreib es uns: Es geht direkt an den Entwickler. Bei einem Fehler sag, was du gerade gemacht hast und was passiert ist.
+FEEDBACK_KIND,Art
+FEEDBACK_BUG,Fehler
+FEEDBACK_IDEA,Idee
+FEEDBACK_OTHER,Sonstiges
+FEEDBACK_COMMENT,Dein Kommentar
+FEEDBACK_EMAIL,Deine E-Mail (optional, falls du eine Antwort möchtest)
+FEEDBACK_TECHNICAL,Technische Daten, die mitgesendet werden
+FEEDBACK_EMPTY,Schreib vor dem Senden einen Kommentar.
+FEEDBACK_FAILED,Senden fehlgeschlagen: Prüfe deine Verbindung und versuche es erneut.
+FEEDBACK_SENT,Danke! Dein Kommentar wurde gesendet.
+FEEDBACK_SEND,Senden
+FEEDBACK_CANCEL,Abbrechen
+FEEDBACK_CLOSE,Schließen
+PUZZLE_SYMBOLS,Symbole
+PUZZLE_ADD,{0} hinzufügen
+PUZZLE_REMOVE,{0} entfernen
+PUZZLE_CODE,Dein Tipp
+PUZZLE_GUESSES,Bisherige Tipps
+PUZZLE_RESULT,{0} richtig an der richtigen Stelle, {1} richtig an der falschen Stelle
+PUZZLE_BLOCKS,Blöcke
+PUZZLE_TARGET_BLOCK,Roter Block
+PUZZLE_BLOCK,Block
+PUZZLE_PIECES,Teile des Bildes
+PUZZLE_PIECE,Teil {0}
+PUZZLE_TOWERS,Türme
+PUZZLE_TOWER,Turm {0}
+IMPORT_SUBTITLE,Universalis verwendet die Inhalte, die Valkyrie aus deiner eigenen Kopie der offiziellen {0}-App importiert hat. Sie werden einmal in diesen Browser kopiert und verlassen ihn nie.
+IMPORT_FROM_FOLDER,Valkyries Import-Ordner wählen
+IMPORT_FOLDER_DESC,Unter Windows liegt er in %APPDATA%\Valkyrie\{0}\import.
+IMPORT_ZIP_DESC,Ein Zip desselben Import-Ordners: der Weg für Handys und Tablets.
+IMPORT_PROGRESS,{0} von {1} Dateien
+IMPORT_NO_INI,Es gibt keine import.ini: Wähle Valkyries Import-Ordner oder ein Zip davon.
+IMPORT_RAW_ASSETS,Das sind die Dateien der offiziellen App selbst. Universalis kann sie noch nicht lesen: Importiere sie zuerst in Valkyrie und wähle dann dessen Import-Ordner.
+IMPORT_NO_SPACE,In diesem Browser ist nicht genug Platz: Es werden {0} MB gebraucht, frei sind {1} MB.
+IMPORT_UNREADABLE,Das Zip kann nicht gelesen werden: {0}
+IMPORT_FAILED,Der Import ist fehlgeschlagen: {0}
+IMPORT_OLD,Dieser Import stammt von einer anderen Version von Valkyrie oder der offiziellen App und wird deshalb nicht verwendet. Importiere erneut mit einem aktuellen Valkyrie und bring dessen Ordner hierher.
+THEME,Design
+FELT,Spielmatte unter dem Spielplan
+COLOUR_BLACK,Schwarz
+COLOUR_GREEN,Grün
+COLOUR_RED,Bordeaux
+COLOUR_BLUE,Blau
+BOARD_TILT,Neigung des Spielplans
+BOARD_TILT_TABLE,Wie ein Tisch (30°)
+BOARD_TILT_VALKYRIE,Wie in Valkyrie (10°)
+VERSION,Version {0}
+NEW_VERSION,Es gibt eine neue Version der App.
+RELOAD_APP,Neu laden
+INSTALL_APP,App installieren
+INSTALL_APPLE,Um sie auf diesem iPhone oder iPad zu installieren, tippe auf „Teilen“ und dann auf „Zum Home-Bildschirm“.
+IMPORT_INSTALL_FIRST,Installiere auf iPhone und iPad zuerst die App („Teilen“, dann „Zum Home-Bildschirm“) und importiere aus ihr: Die installierte App bewahrt ihre Dateien getrennt von denen des Browsers auf.
+IMPORT_TO_PLAY,Zum Spielen braucht Universalis die Inhalte, die Valkyrie aus deiner eigenen Kopie der offiziellen {0}-App importiert hat. Bis dahin kannst du dir die Szenarien ansehen.
+BACKUP,Sicherung
+BACKUP_TEXT,Was die App aufbewahrt (deine Partien, die Optionen, deine Sammlung und die heruntergeladenen Szenarien und Packs), liegt in diesem Browser auf diesem Gerät. Eine Sicherung fasst alles in einer Datei zusammen: um es in einen anderen Browser oder auf ein anderes Gerät mitzunehmen oder um es zurückzubekommen, falls der Browser seine Daten löscht. Der offizielle Import ist nicht enthalten: Er wird erneut importiert.
+BACKUP_DOWNLOAD,Sicherung herunterladen
+BACKUP_RESTORE,Sicherung wiederherstellen
+BACKUP_MAKING,Sicherung wird erstellt: {0} von {1} Dateien…
+BACKUP_MADE,Sicherung heruntergeladen: {0} MB.
+BACKUP_CONFIRM,Alles, was die App in diesem Browser aufbewahrt, wird durch den Inhalt von {0} ersetzt. Fortfahren?
+BACKUP_RESTORE_GO,Wiederherstellen
+BACKUP_RESTORING,Wird wiederhergestellt: {0} von {1}…
+BACKUP_NOT_ONE,Diese Datei ist keine Sicherung von Valkyrie Universalis.
+BACKUP_UNREADABLE,Die Sicherung kann nicht gelesen werden: {0}
+BACKUP_FAILED,Das hat nicht geklappt: {0}
+BACKUP_UNFINISHED,Die Sicherung liegt im Browser: Sie tritt an ihre Stelle, wenn die App das nächste Mal startet.
+BACKUP_NOT_FINISHED,Die Sicherung konnte noch nicht an ihre Stelle treten ({0}): Beim nächsten Start der App wird es erneut versucht.
+DOOM_NAME,DooM
+DOOM_NEEDS_PACK,Die Missionen von DooM brauchen ihr Inhaltspaket der Community. Lade es im Shop herunter, um sie zu spielen.
+DOOM_DOWNLOAD_PACK,DooM herunterladen
+TURN_PHONE,Drehe dein Handy: Partien werden im Querformat gespielt.
+PLAY_UPRIGHT,Im Hochformat spielen
+MOM_TITLE,Villen des Wahnsinns
+MOM_EDITION,2. Edition
+D2E_TITLE,Descent
+D2E_SUBTITLE,Die Reise ins Dunkel
+D2E_EDITION,2. Edition
+COLOUR_UNIVERSALIS,Universalis (illustriert)
+COLOUR_PURE,Reines Schwarz
+MARKS,Deine Markierungen
+MARK_PLAYED,Gespielt
+MARK_FAVORITE,Favorit
+MARK_PENDING,Vorgemerkt
+FILTER_PLAYED,Gespielt oder nicht
+FILTER_PLAYERS,Spieler
+SORT_TITLE,Sortieren nach
+FILTER_CATEGORIES,Art des Abenteuers
+FILTER_CATEGORIES_NOTE,Nur für Villen des Wahnsinns. Zeigt die Abenteuer, die alle angekreuzten haben.
+CATEGORY_BEGINNERS,Für Einsteiger
+CATEGORY_SHORT,Kurz
+CATEGORY_NARRATIVE,Erzählerisch
+CATEGORY_COMBAT,Kampf
+CATEGORY_CAMPAIGN,Kampagne oder Reihe
+CATEGORY_REPLAYABLE,Wiederspielbar
+FILTERS_ON,Gefiltert: {0} von {1}
+FILTERS_CLEAR,Filter entfernen
+FILTERS_HIDE_ALL,Die Filter verbergen alle Szenarien. Entferne sie, um sie wieder zu sehen.
+FILTER_SEARCH_ON,Suche: „{0}“
+FILTER_LANGS_ON,Sprachen: {0}
+FILTER_EXPANSIONS_ON,Ohne fehlende Erweiterungen
+FILTER_PLAYERS_ON,Spieler: {0}
+ADULT_CONTENT,Inhalte für Erwachsene
+IGOR_NOT_LISTED,Dieses Abenteuer ist nicht in dieser Liste. Geh online in den Store, um es zu sehen.
+IGOR_OPEN,Mit Igor sprechen
+IGOR_FILTERED,Igor hat das Abenteuer gefunden, aber die Filter verbergen es. Entferne sie, um es zu sehen.
+FILTER_MARKS,Markiert
+FILTER_ALL,Alle
+FILTER_PLAYED_ONLY,Gespielt
+FILTER_UNPLAYED,Nicht gespielt
+FILTER_FAVORITES,Favoriten
+FILTER_PENDING,Vorgemerkt
+SIZE_NORMAL,Normal
+SIZE_LARGE,Groß
+SIZE_LARGER,Sehr groß
+PIECE_SIZE,Größe der Marker auf dem Spielplan
+PIECE_SIZE_LARGE,Groß (+30 %)
+OPTIONS_LOOK,Aussehen
+OPTIONS_ADVANCED_TEXT,Änderungen am Spielablauf. Ist alles aus, spielt es sich wie in Valkyrie.
+CONFIRM_PHASE,Vor dem Ende der Ermittlerphase nachfragen
+CONFIRM_PHASE_TEXT,Die Ermittlerphase beenden und die Mythosphase beginnen?
+KEEP_ZOOM,Meinen Zoom behalten, wenn das Szenario die Kamera bewegt
+HIDE_CURSOR,Mauszeiger ausblenden
+LOG_COPIED,Kopiert
+READ_ALOUD,Vorlesen
+STOP_READING,Vorlesen beenden
+AUTO_READ,Ereignisse beim Erscheinen vorlesen
+ITEM_SIZE,Größe der Gegenstände
+MONSTER_PLACE,Monster
+MONSTER_PLACE_RIGHT,Rechts
+MONSTER_PLACE_BOTTOM,Unten
+BUTTONS_APART,Ereignis-Schaltflächen getrennt vom Text, wie in der offiziellen App
+EPIC_SPAWNS,Das Erscheinen eines harten Monsters hervorheben
+VOICE,Stimme zum Vorlesen
+VOICE_BROWSER,Die des Browsers
+VOICE_OFF,Aus
+VOICE_SAMPLE,Die Tür öffnet sich knarrend. Etwas wartet in der Dunkelheit.
+VOICE_TRY,Stimme testen
+VOICE_NONE,Dieser Browser hat keine eigenen Stimmen.
+VOICE_WHICH,Stimme
+VOICE_BEST,Die beste für die Sprache
+VOICE_GEMINI,Gemini (Google)
+VOICE_GEMINI_KEY,Gemini-API-Schlüssel
+VOICE_GEMINI_MODEL,Modell
+VOICE_GEMINI_STYLE,Wie vorlesen (optional)
+VOICE_GEMINI_STYLE_HINT,Lies wie ein Horror-Erzähler, mit leiser Stimme
+VOICE_GEMINI_NOTE,Die Texte werden zum Vorlesen an Google gesendet. Der Schlüssel bleibt in diesem Browser und kommt nicht in Sicherungen.
+VOICE_GEMINI_NO_KEY,Gib einen Schlüssel ein, um Gemini zu nutzen (aistudio.google.com/apikey). Bis dahin liest die Stimme des Browsers.
+VOICE_GEMINI_TIME,Erster Ton nach {0} s; das ganze Audio nach {1} s.
+VOICE_GEMINI_FAILED,Gemini konnte es nicht vorlesen: {0}. Stattdessen hat die Stimme des Browsers gelesen.
+VOICE_SPEECHIFY,Speechify
+VOICE_SPEECHIFY_KEY,Speechify-API-Schlüssel
+VOICE_SPEECHIFY_LOADING,Stimmen werden geladen…
+VOICE_SPEECHIFY_NO_VOICES,Speechify hat für diese Sprache mit diesem Modell keine Stimmen.
+VOICE_SPEECHIFY_NOTE,Die Texte werden zum Vorlesen an Speechify gesendet. Der Schlüssel bleibt in diesem Browser und kommt nicht in Sicherungen.
+VOICE_SPEECHIFY_NO_KEY,Gib einen Schlüssel ein, um Speechify zu nutzen (platform.speechify.ai). Bis dahin liest die Stimme des Browsers.
+VOICE_SPEECHIFY_FAILED,Speechify konnte es nicht vorlesen: {0}. Stattdessen hat die Stimme des Browsers gelesen.
+VOICE_DEEPGRAM,Deepgram
+VOICE_DEEPGRAM_KEY,Deepgram-API-Schlüssel
+VOICE_DEEPGRAM_NO_VOICES,Deepgram hat für diese Sprache keine Aura-2-Stimmen: Die Stimme des Browsers liest.
+VOICE_DEEPGRAM_NOTE,Die Texte werden zum Vorlesen an Deepgram gesendet. Der Schlüssel bleibt in diesem Browser und kommt nicht in Sicherungen.
+VOICE_DEEPGRAM_NO_KEY,Gib einen Schlüssel ein, um Deepgram zu nutzen (console.deepgram.com). Bis dahin liest die Stimme des Browsers.
+VOICE_DEEPGRAM_FAILED,Deepgram konnte es nicht vorlesen: {0}. Stattdessen hat die Stimme des Browsers gelesen.
+VOICE_DEEPGRAM_FAMILY,Art der Stimme
+VOICE_DEEPGRAM_OTHER,Andere Stimme (ihr Name im Playground)
+HORROR_REMINDER,Nach der Aktivierung der Monster an die Horrorproben erinnern
+HORROR_REMINDER_TEXT,Horrorschritt: Jeder Ermittler legt eine Horrorprobe gegen das Monster in Reichweite mit dem höchsten Horrorwert ab.
+BLANK_TILES,Fehlt ein Spielplanteil, ein leeres zeigen statt anzuhalten
+CLICK_SOUND,Klickgeräusch bei den Schaltflächen der Menüs
+MUSIC_IMPORTED,Musik des offiziellen Spiels (importiert)
+MUSIC_CUSTOM,Musik des Abenteuers (vom Autor)
+MENU_SOUND,Ton der Menüs
+FILTER_DOWNLOADED,Heruntergeladen
+FILTER_DOWNLOADED_ONLY,Heruntergeladen
+FILTER_NOT_DOWNLOADED,Nicht heruntergeladen
+UPDATE_ALL,Alle aktualisieren ({0})
+UPDATING_ALL,Aktualisiere {0} von {1}: {2}
+TILES_SHOW,Spielplanteile ansehen
+TILES_SPOILER,Spoiler-Warnung: Die Spielplanteile verraten einen Teil der Karte, die du erkunden wirst. Willst du sie sehen?
+TILES_CONTINUE,Weiter und ansehen
+TILES_TITLE,Spielplanteile des Szenarios
+TILES_LOADING,Karten des Szenarios werden gelesen…
+TILES_NONE,Dieses Szenario legt keine Spielplanteile aus.
+TILES_OPTIONAL,Optional: aus „{0}“, das nicht in deiner Sammlung ist
+TILES_OPTIONAL_NOTE,Das Szenario legt diese Teile nur aus, wenn du dieses Paket besitzt. Falls ja, wähle es in deiner Sammlung aus.
+TILES_UNKNOWN,In keinem bekannten Paket
+HEROES_ASKED_EXACT,Dieses Szenario verlangt {0}
+HEROES_ASKED_RANGE,Dieses Szenario verlangt {0} bis {1}
+HEROES_CHOSEN,gewählt: {0}
+HERO_VIEW,Größe der Liste
+HERO_VIEW_NORMAL,Klein
+HERO_VIEW_LARGE,Groß
+HERO_VIEW_LARGER,Porträts
+OPTIONS_RESET,Standardoptionen wiederherstellen
+OPTIONS_RESET_CONFIRM,Alle Optionen auf den Ausgangszustand zurücksetzen? Sprache, Spielstände, Markierungen und Heruntergeladenes bleiben erhalten.
+TRANSLATE,Automatische Übersetzung
+TRANSLATE_WARNING,Eine KI übersetzt die Szenarien, die nicht in deiner Sprache vorliegen. Sie kann Fehler machen, und wie gut sie ist, hängt vom gewählten Modell ab. Die Texte werden zum Übersetzen an OpenRouter gesendet. Die Einrichtung ist einfach:
+TRANSLATE_STEP_1,Lege ein kostenloses Konto auf openrouter.ai an.
+TRANSLATE_STEP_2,Öffne Keys (openrouter.ai/keys), drücke Create Key, gib ihm einen Namen und kopiere den Schlüssel: Er beginnt mit sk-or- und wird nur einmal angezeigt.
+TRANSLATE_STEP_3,Füge ihn unten ein. Er bleibt nur in diesem Browser gespeichert.
+TRANSLATE_STEP_4,Wähle ein Modell oder behalte das kostenlose von DeepSeek, das wir eintragen. Kostenlose Modelle können langsam sein oder ein Limit pro Minute haben; mit Guthaben gehen schnellere.
+TRANSLATE_ENABLE,Einschalten
+TRANSLATE_KEY,OpenRouter-Schlüssel
+TRANSLATE_MODEL,Modell
+TRANSLATE_MODELS_LOADING,Suche nach den kostenlosen Modellen von OpenRouter…
+TRANSLATE_MODEL_OTHER,Anderes Modell (sein Name bei OpenRouter)
+TRANSLATE_TRY,Übersetzung testen
+TRANSLATE_WORKING,Übersetzung wird erstellt…
+TRANSLATED,Automatische Übersetzung
+TRANSLATE_FAILED,Übersetzung nicht möglich: {0}
+TILES_TABLE,Benötigter Tisch: etwa {0} × {1} cm
+TILES_TABLE_NOTE,Die größte Karte mit allen Teilen gleichzeitig ausgelegt, ohne Karten und Material drumherum.
+MUSIC_CREDIT_LABEL,Musik-Credits
+MUSIC_CREDIT,Musik: {0}
+MUSIC_CREDIT_CHANNEL,{0} auf YouTube
+MORE_INFO,Mehr Informationen
+TILES_TABLE_INFO,Diese Angabe kann von der Wirklichkeit abweichen: Es ist die größte aus der Karte des Szenarios berechnete Größe.
+TRANSLATE_TIMEOUT,das Modell hat länger als {0} Sekunden gebraucht. Versuche es erneut oder wähle ein anderes Modell
+TRANSLATE_TOOK,{0} hat in {1} s geantwortet.
+TRANSLATE_DISABLED,Vorübergehend deaktiviert, während wir sie verbessern.
+STORAGE,Speicher
+STORAGE_USED,Die App belegt {0} MB der {1} MB, die dieser Browser ihr erlaubt.
+STORAGE_PERSISTED,Der Browser behält diese Dateien, auch wenn ihm der Platz ausgeht.
+STORAGE_NOT_PERSISTED,Wenn dem Browser der Platz ausgeht, kann er diese Dateien löschen: Mach ab und zu eine Sicherung.
+STORAGE_PERSIST,Den Browser bitten, sie zu behalten
+STORAGE_PERSIST_REFUSED,Der Browser hat abgelehnt. Manche tun das nur für installierte Apps oder Seiten, die du oft besuchst.
+STORAGE_WRITE_FAILED,Etwas konnte in diesem Browser nicht gespeichert werden: {0}
+GO_ON_PLAYING,Weiterspielen
+SAVE_AND_QUIT,Speichern und beenden
+COPY_DIAGNOSTICS,Fehlerdetails kopieren
+DIAGNOSTICS_COPIED,Kopiert: füge es in deine Meldung ein
+OTHER_WINDOW,Die App ist schon in einem anderen Fenster oder Tab geöffnet: Nutze nur eines, sonst überschreiben sie gegenseitig ihre Daten.
+DELETE_SCENARIO_CONFIRM,{0} von diesem Gerät löschen? Zum Spielen musst du es erneut herunterladen.
+SAVE_FAILED,Das Spiel konnte nicht gespeichert werden: {0}
+NOT_A_ZIP,{0} ist keine ZIP-Datei: Ein Valkyrie-Szenario ist ein ZIP mit der Endung .valkyrie.
+CHECK_TITLE,{0} hinzugefügt, mit Hinweisen
+CHECK_TITLE_ERRORS,{0} kann nicht geöffnet werden
+CHECK_FIXED_FOLDER,Das Szenario lag im Ordner «{0}» des ZIP, also hat die App es herausgeholt, um es zu spielen. Valkyrie würde es so nicht öffnen: Zum Teilen packe den Inhalt des Ordners, nicht den Ordner.
+CHECK_BLANK_LINE,{0}, Zeile {1}: Sie enthält nur Leerzeichen oder Tabs, und Valkyrie kann die Datei nicht lesen. Lass sie leer.
+CHECK_FORMAT,Sein Format ({0}) liest Valkyrie nicht (von {1} bis {2}).
+CHECK_NO_QUESTTEXT,quest.ini hat keinen Abschnitt [QuestText], der die Texte nennt: Valkyrie kann es nicht öffnen.
+CHECK_MISSING_FILE,quest.ini nennt die Datei {0}, die im Szenario fehlt.
+CHECK_LOCALIZATION_HEADER,{0}: Die erste Zeile muss wie «.,German» die Sprache nennen; Valkyrie kann die Datei nicht lesen.
+CHECK_MISSING_EVENT,{0} hat einen Knopf zum Ereignis {1}, das es nicht gibt.
+CHECK_MORE,Und {0} weitere dieser Art.
+CHECK_UNREADABLE,{0} kann nicht gelesen werden: {1}
+COLOUR_CLASSIC,Klassisch
+PREVIOUS_PAGE,Vorherige Seite
+NEXT_PAGE,Nächste Seite
+PAGE_OF,Seite {0} von {1}
+TRANSLATION_BUTTON,Meine Übersetzung
+TRANSLATION_TITLE,Deine Übersetzung dieses Szenarios
+TRANSLATION_EXPLAIN,Lade ein Zip mit der Localization.<Sprache>.txt deiner Übersetzung und, falls du sie änderst, den Bildern und Tönen unter den Namen, die ihnen das Szenario gibt. Sie wird auf diesem Gerät gespeichert und verwendet, wenn du eine Partie dieses Szenarios in dieser Sprache beginnst. Eine andere in derselben Sprache ersetzt sie.
+TRANSLATION_NONE,Du hast keine eigene Übersetzung dieses Szenarios.
+TRANSLATION_SAVED_LINE,{0}: {1} von {2} Texten, {3} Bilder und {4} Töne ({5}).
+TRANSLATION_LOAD,Zip laden
+TRANSLATION_REMOVE,Entfernen
+TRANSLATION_REMOVE_LANGUAGE,Die Übersetzung ins {0} entfernen
+TRANSLATION_READING,Wird gelesen…
+TRANSLATION_REPORT_TITLE,Was in {0} gefunden wurde
+TRANSLATION_NOT_SAVED,Sie wurde nicht gespeichert:
+TRANSLATION_TEXTS,Übersetzte Texte: {0} von {1}.
+TRANSLATION_IMAGES,Ersetzte Bilder: {0}.
+TRANSLATION_SOUNDS,Ersetzte Töne: {0}.
+TRANSLATION_SAVED,Auf diesem Gerät gespeichert: Sie wird verwendet, wenn du dieses Szenario auf {0} spielst.
+TRANSLATION_REPLACED,Sie ersetzt deine bisherige Übersetzung ins {0}.
+TRANSLATION_NOT_ZIP,Die Datei ist kein Zip.
+TRANSLATION_NO_TEXTS_FILE,Das Zip enthält keine Localization.<Sprache>.txt mit den Texten.
+TRANSLATION_SEVERAL_LANGUAGES,Das Zip enthält Texte in mehreren Sprachen ({0}): lade jeweils eine.
+TRANSLATION_UNKNOWN_LANGUAGE,«{0}» ist keine der Sprachen von Valkyrie ({1}).
+TRANSLATION_NAME_LANGUAGE,Der Name von {0} nennt nicht die Sprache darin ({1}): Es zählt die im Inneren.
+TRANSLATION_NOTHING_TRANSLATED,Keiner ihrer Texte gehört zu diesem Szenario: Stammt sie von einem anderen?
+TRANSLATION_UNKNOWN_TEXTS,{0} Texte gibt es im Szenario nicht (aus einer anderen Version?): {1}.
+TRANSLATION_UNUSED_FILES,{0} Dateien ersetzen keine des Szenarios und werden nicht verwendet: {1}. Sie müssen wie die des Szenarios heißen.
+TRANSLATION_REPLACES_OWN,Das Szenario gibt es schon auf {0}: Deine Texte ersetzen seine.
+TRANSLATION_OTHER_LANGUAGE,Sie ist auf {0} und du spielst auf {1}: Sie wird nur verwendet, wenn du die Sprache auf {0} umstellst.
+TRANSLATION_SWITCH_ASK,Die App jetzt auf {0} umstellen? Die Menüs und dieses Szenario wechseln mit.
+TRANSLATION_SWITCH,Auf {0} umstellen
+TRANSLATION_STAY,Bei {0} bleiben
+RULES_HELP,Hilfe und Regeln
+RULES_ACTIONS,Aktionen der Ermittler
+RULES_ACTIONS_D2E,Aktionen der Helden
+RULES_ACTIONS_DOOM,Aktionen der Marines
+RULES_SUMMARY,Regelübersicht
+RULES_NOTE,Eine Zusammenfassung von Fans, um sich an das Spiel zu erinnern. Sie ersetzt nicht die offiziellen Regelhefte.
+SHOW_MAP,Spielplan ansehen
+SHOW_TEXT,Zurück zum Text
+CLEAR_ELIMINATED,Ausscheiden aufheben
+NO_WEBGL,Dieser Browser kann das Spielbrett nicht zeichnen, weil er kein WebGL hat. Schalte in seinen Einstellungen die Hardwarebeschleunigung ein oder versuche einen anderen Browser.
+BOARD_LOST,Dem Spielbrett ist der Speicher ausgegangen, es kann nicht neu gezeichnet werden. Schließe die App ganz, öffne sie wieder und wähle „Weiter“.
+TILES_TAB,Spielplanteile
+MONSTERS_SHOW,Gegner
+ITEMS_SHOW,Gegenstände
+MONSTERS_TITLE,Gegner des Szenarios
+ITEMS_TITLE,Gegenstände des Szenarios
+MONSTERS_NOTE,Die Monster, die das Szenario nennt. Zufällig nach Merkmalen gezogene fehlen hier.
+ITEMS_NOTE,Die Gegenstände, die das Szenario nennt. Zufällig gezogene fehlen hier.
+MONSTERS_NONE,Dieses Szenario nennt keine eigenen Monster.
+ITEMS_NONE,Dieses Szenario nennt keine eigenen Gegenstände.
+HELP_SEARCH,In der Hilfe suchen
+HELP_SEARCH_NONE,Nichts in der Hilfe passt dazu.
+QUIT_CONFIRM,Zum Hauptmenü? Das Spiel speichert sich selbst und lässt sich mit „Weiter“ fortsetzen.
+QUIT_CONFIRM_YES,Verlassen
+BUTTON_HINTS,Die Schaltflächen des Szenarios nach einer Weile ohne Eingabe sanft leuchten lassen
+QUEST_SERIOUS,Achtung: Dieses Szenario hat {0} Fehler des Autors, die das Spiel anhalten oder ein Ereignis halb abbrechen können.
+QUEST_SERIOUS_SHOW,Anzeigen
+QUEST_SERIOUS_HIDE,Ausblenden
+QUEST_SERIOUS_TELL,Sie stammen vom Autor: Wenn einer dein Spiel anhält, sag ihm Bescheid.
+FAULT_ADD_MISSING,{0} legt etwas auf den Tisch, das es nicht gibt
+FAULT_TILE,Das Teil {0} ist in keinem Paket
+FAULT_START,Es hat kein Startereignis
+FAULT_TWICE,{0} steht zweimal
+FAULT_TEXT,Ein Text auf {0} ist nicht richtig geschlossen
+GAME_TIMER,Anzeigen, wie lange Runde und Spiel dauern
+TIMER_ROUND,Runde {0}
+TIMER_GAME,Spiel {0}
+SCENARIO_FAULTS,In den Details eines Szenarios vor schweren Fehlern des Autors warnen
+TV_MODE,Fernsehmodus: alles größer und aus der Ferne lesbar
+FULLSCREEN,Vollbild
+NOTES,Notizen
+NOTES_HINT,Hinweise, Codes, wer was trägt…
+NOTES_KEPT,Sie werden mit dem Spiel gespeichert.
+EDITOR_NOT_READY,Der Editor ist noch nicht fertig
+EDITOR_EARLY,Wir sind in einer sehr frühen Phase: Nutze ihn nur zum Ausprobieren, nicht als fertiges Werkzeug
+EDITOR_COMPUTER_ONLY,Vorerst öffnet er sich nur auf einem Computer, mit Maus oder Touchpad: nicht auf dem Handy oder Tablet.
+EDITOR_ENTER,Verstanden, öffnen
+ADD_CONTENT_PACK,Paket aus einer Datei hinzufügen
+PACKS_FROM_FILES,Auf diesem Gerät, nicht in der Liste des Stores
+PACK_ADDED,{0} hinzugefügt. Um es zu nutzen, wähle es unter {1}, bei {2}.
+PACK_CHECK_TITLE,{0} hinzugefügt, mit Warnungen
+PACK_CHECK_TITLE_ERRORS,{0} kann nicht hinzugefügt werden
+PACK_NOT_ZIP,{0} ist keine Zip-Datei: Ein Contentpack ist ein Zip mit der Endung .valkyrieContentPack.
+PACK_IS_SCENARIO,{0} ist ein Szenario, kein Contentpack: Füge es in der Szenarioliste mit „{1}“ hinzu.
+PACK_NO_INI,{0} hat keine content_pack.ini, weder oben noch in einem seiner Ordner, daher erkennt Valkyrie es nicht als Paket.
+PACK_NO_NAME,content_pack.ini hat kein name in [ContentPack]: Valkyrie bricht beim Lesen ab. Füge name=… mit dem Namen des Pakets hinzu.
+PACK_NO_ID,content_pack.ini hat keine id in [ContentPack]. Füge eine eindeutige id hinzu (dieselbe wie im Manifest): Unter ihr wird das Paket gespeichert, und Szenarien verlangen es damit.
+PACK_BAD_ID,Die id „{0}“ hat Leerzeichen oder Sonderzeichen: Szenarien trennen ihre Pakete mit Leerzeichen, und sie benennt eine Datei. Verwende nur Buchstaben, Ziffern, - und _.
+PACK_OFFICIAL_ID,Die id „{0}“ gehört zu einem offiziellen Paket: Dieses würde es ersetzen. Wähle eine andere id.
+PACK_STORE_ID,Der Store hat schon ein Paket mit der id „{0}“: Auf diesem Gerät tritt dieses an seine Stelle. Wenn es nicht deine Version jenes Pakets ist, wähle eine andere id.
+PACK_NO_TYPE,content_pack.ini hat keinen type: Füge type={0}Custom hinzu.
+PACK_OTHER_GAME,Es ist ein Paket für das andere Spiel (type={0}): Füge es bei {1} hinzu.
+PACK_BAD_TYPE,type={0} gehört nicht zu diesem Spiel: Er muss mit {1} beginnen, etwa {1}Custom.
+PACK_NOT_CUSTOM,type={0}: Community-Pakete verwenden {1}; mit einem anderen Typ erscheint es in der Sammlung nicht bei ihnen.
+PACK_NO_IMAGE,Das Bild des Pakets ({0}) ist nicht im Paket: Es wird ohne Bild angezeigt.
+PACK_NO_ICON,Das Symbol des Pakets ({0}) ist nicht im Paket.
+PACK_CASE,{0} heißt im Paket {1}. Dieser App und Windows ist die Groß- und Kleinschreibung egal, Valkyrie unter Android und Linux aber nicht: Es findet die Datei nicht. Schreibe sie gleich.
+PACK_LANGUAGE_LINE,[LanguageData] hat die Zeile „{0}“: Sie muss Wörterbuch und Datei nennen, etwa „pck Localization.German.txt“.
+PACK_MISSING_LANGUAGE,[LanguageData] nennt {0}, das nicht im Paket ist: Seine Texte werden nicht angezeigt.
+PACK_MISSING_DATA,[ContentPackData] nennt {0}, das nicht im Paket ist: Valkyrie hört bei dieser Datei auf, das Paket zu laden.
+PACK_UNKNOWN_SECTION,{0}: Valkyrie kennt [{1}] nicht und ignoriert es. Der Name eines Abschnitts muss mit seinem Typ beginnen (TileSide, Monster, Item, Token…).
+PACK_DUPLICATE,[{0}] steht in {1} und in {2}: Nur das erste zählt. Gib jedem einen eigenen Namen.
+PACK_NAME_TAKEN,[{0}] wird schon vom Paket {1} definiert: Nur eines der beiden zählt. Gib deinem einen eigenen Namen.
+PACK_MISSING_IMAGE,{0}, [{1}]: Das Bild {2} ist nicht im Paket (auch nicht mit .png, .jpg, .dds…): Es wird ohne Bild angezeigt.
+PACK_IMAGE_ROOTED,{0}, [{1}]: Das Bild {2} beginnt mit einem Schrägstrich, daher sucht Valkyrie es außerhalb des Pakets. Entferne den Schrägstrich.

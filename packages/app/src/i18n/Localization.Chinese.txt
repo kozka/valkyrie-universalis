@@ -1,0 +1,417 @@
+.,Chinese
+// Translated by Claude from the English texts (October 2026), in Traditional Chinese like most of Valkyrie's: corrections by native speakers are welcome.
+APP_NAME,Valkyrie Universalis
+UNOFFICIAL,非官方，由愛好者製作
+ADD_SCENARIO,加入劇本檔案
+NO_SCENARIOS,尚無劇本。請從商店或作者處加入 .valkyrie 檔案。
+NOT_A_SCENARIO,{0} 不是 Valkyrie 劇本。
+SCENARIO_ADDED,已加入 {0}。
+SCENARIO_OTHER_GAME,{0} 是 {1} 的劇本：請在其列表中查看。
+SCENARIO_FILTERED,已加入 {0}，但被篩選條件隱藏（語言，或你沒有的擴充）。
+SCENARIO_INVALID,無法開啟 {0}：其 quest.ini 不適用於此版本的 Valkyrie。
+RELOAD_LIST,重新載入清單
+PLAY_SCENARIO,開始遊戲
+LANGUAGES,語言：{0}
+RATING,評分：{0}／10
+DOWNLOAD_FAILED,無法下載 {0}。請檢查網路連線後再試一次。
+HEROES_RANGE,{0} 至 {1} 名調查員
+MINUTES_RANGE,{0} 至 {1} 分鐘
+ABOUT_TEXT,Valkyrie Universalis 是 Valkyrie 的網頁版；Valkyrie 是 NPBruce 與其貢獻者製作的免費應用程式。本程式由愛好者製作，與 Fantasy Flight Games 沒有任何關係。程式不含出版商的圖片、聲音或文字：每位玩家自行匯入，內容只會留在自己的瀏覽器中。
+ABOUT_CODE,程式碼採用 Apache 2.0 授權，移植自 Valkyrie {0}。
+STORAGE_OFF,此瀏覽器不會保存檔案：關閉後，你加入的內容都會消失。
+STOPPED,劇本已停止：{0}
+LOADING,載入中…
+SYMBOL_STRENGTH,力量
+SYMBOL_AGILITY,敏捷
+SYMBOL_OBSERVATION,觀察
+SYMBOL_LORE,學識
+SYMBOL_INFLUENCE,影響力
+SYMBOL_WILL,意志
+SYMBOL_ACTION,行動
+SYMBOL_SUCCESS,成功
+SYMBOL_CLUE,線索
+SYMBOL_TENTACLE,觸手
+SYMBOL_PRODUCT,擴充圖示
+MORALE,士氣：{0}
+AVAILABLE_XP,可用經驗：{0}
+SYMBOL_HEART,生命
+SYMBOL_FATIGUE,疲勞
+SYMBOL_MIGHT,力量
+SYMBOL_KNOWLEDGE,知識
+SYMBOL_AWARENESS,感知
+SYMBOL_SHIELD,盾牌
+SYMBOL_SURGE,激發
+MONSTER_LIST,怪物
+NEXT_PHASE,下一階段
+PHASE_BAR,回合
+SCROLL_UP,前面的怪物
+SCROLL_DOWN,更多怪物
+AWARENESS,警覺 {0}
+HORROR_VALUE,恐怖 {0}
+HEALTH,生命 {0}
+DAMAGE,傷害 {0}
+DUPLICATE,第 {0} 組
+END_TITLE,完
+WELCOME_TITLE,歡迎使用 Valkyrie Universalis
+WELCOME_TEXT,Valkyrie Universalis 是 Valkyrie 的網頁版，可在任何裝置上執行：電腦、平板或手機，也可以安裝成應用程式。\n\n這是早期版本。它經過仔細測試，一切看來運作正常，但仍可能有一些錯誤。\n\n還有一些功能尚未完成，例如劇本編輯器，介面也還需要打磨。不過你已經可以遊玩並評分劇本，還有一些新選項等你發掘……\n\n祝你玩得愉快！
+WELCOME_HIDE,不再顯示
+WELCOME_START,開始
+RATING_ALREADY_SENT,你已送出這個劇本的評分（{0}/10）。每個劇本在每台裝置上只能評分一次。
+RATING_NOT_SENT,無法送出評分：請檢查網路連線後再試一次。你的評分已保存在這台裝置上。
+MY_RATING,你的評分：{0}/10
+FEEDBACK_BUTTON,回報應用程式問題
+FEEDBACK_TITLE,回報問題或提出建議
+FEEDBACK_INTRO,發現問題或有好點子嗎？告訴我們：會直接送到開發者手上。如果是錯誤，請說明你當時在做什麼以及發生了什麼。
+FEEDBACK_KIND,類型
+FEEDBACK_BUG,錯誤
+FEEDBACK_IDEA,建議
+FEEDBACK_OTHER,其他
+FEEDBACK_COMMENT,你的意見
+FEEDBACK_EMAIL,你的電子郵件（選填，如果想收到回覆）
+FEEDBACK_TECHNICAL,一併送出的技術資料
+FEEDBACK_EMPTY,送出前請先寫下意見。
+FEEDBACK_FAILED,無法送出：請檢查網路連線後再試一次。
+FEEDBACK_SENT,謝謝！你的意見已送出。
+FEEDBACK_SEND,送出
+FEEDBACK_CANCEL,取消
+FEEDBACK_CLOSE,關閉
+PUZZLE_SYMBOLS,符號
+PUZZLE_ADD,加入 {0}
+PUZZLE_REMOVE,移除 {0}
+PUZZLE_CODE,你的猜測
+PUZZLE_GUESSES,已做的猜測
+PUZZLE_RESULT,{0} 個正確且位置正確，{1} 個正確但位置錯誤
+PUZZLE_BLOCKS,方塊
+PUZZLE_TARGET_BLOCK,紅色方塊
+PUZZLE_BLOCK,方塊
+PUZZLE_PIECES,圖片碎片
+PUZZLE_PIECE,碎片 {0}
+PUZZLE_TOWERS,塔
+PUZZLE_TOWER,塔 {0}
+IMPORT_SUBTITLE,Universalis 使用 Valkyrie 從你自己的 {0} 官方應用程式匯入的內容。內容只會複製到此瀏覽器一次，且永遠不會離開。
+IMPORT_FROM_FOLDER,選擇 Valkyrie 的 import 資料夾
+IMPORT_FOLDER_DESC,在 Windows 上位於 %APPDATA%\Valkyrie\{0}\import。
+IMPORT_ZIP_DESC,同一個 import 資料夾的 zip 壓縮檔：適用於手機和平板。
+IMPORT_PROGRESS,{0}／{1} 個檔案
+IMPORT_NO_INI,找不到 import.ini：請選擇 Valkyrie 的 import 資料夾，或其 zip 壓縮檔。
+IMPORT_RAW_ASSETS,這些是官方應用程式本身的檔案。Universalis 目前還無法讀取：請先在 Valkyrie 中匯入，再選擇它的 import 資料夾。
+IMPORT_NO_SPACE,此瀏覽器空間不足：需要 {0} MB，目前只剩 {1} MB。
+IMPORT_UNREADABLE,無法讀取 zip 檔：{0}
+IMPORT_FAILED,匯入失敗：{0}
+IMPORT_OLD,此匯入來自其他版本的 Valkyrie 或官方應用程式，因此不會使用。請在最新版的 Valkyrie 中重新匯入，再將其資料夾帶到這裡。
+THEME,主題
+FELT,圖板下的桌布
+COLOUR_BLACK,黑色
+COLOUR_GREEN,綠色
+COLOUR_RED,酒紅色
+COLOUR_BLUE,藍色
+BOARD_TILT,圖板傾斜
+BOARD_TILT_TABLE,像桌面一樣（30°）
+BOARD_TILT_VALKYRIE,與 Valkyrie 相同（10°）
+VERSION,版本 {0}
+NEW_VERSION,應用程式有新版本。
+RELOAD_APP,重新載入
+INSTALL_APP,安裝應用程式
+INSTALL_APPLE,若要安裝到這台 iPhone 或 iPad，請點「分享」，再點「加入主畫面」。
+IMPORT_INSTALL_FIRST,在 iPhone 和 iPad 上，請先安裝應用程式（「分享」→「加入主畫面」），再從應用程式中匯入：已安裝的應用程式會將檔案與瀏覽器的檔案分開保存。
+IMPORT_TO_PLAY,要開始遊戲，Universalis 需要 Valkyrie 從你自己的 {0} 官方應用程式匯入的內容。在那之前，你可以先瀏覽劇本。
+BACKUP,備份
+BACKUP_TEXT,應用程式保存的內容（你的遊戲進度、選項、收藏，以及下載的劇本和擴充包）存放在此裝置的這個瀏覽器中。備份會將所有內容集中在一個檔案裡：可帶到其他瀏覽器或裝置，或在瀏覽器清除資料時復原。官方匯入不包含在內：需要重新匯入。
+BACKUP_DOWNLOAD,下載備份
+BACKUP_RESTORE,還原備份
+BACKUP_MAKING,正在建立備份：{0}／{1} 個檔案…
+BACKUP_MADE,已下載備份：{0} MB。
+BACKUP_CONFIRM,應用程式在此瀏覽器中保存的所有內容，都會被 {0} 的內容取代。要繼續嗎？
+BACKUP_RESTORE_GO,還原
+BACKUP_RESTORING,正在還原：{0}／{1}…
+BACKUP_NOT_ONE,此檔案不是 Valkyrie Universalis 的備份。
+BACKUP_UNREADABLE,無法讀取備份：{0}
+BACKUP_FAILED,無法完成：{0}
+BACKUP_UNFINISHED,備份已在瀏覽器中：下次開啟應用程式時便會生效。
+BACKUP_NOT_FINISHED,備份尚未生效（{0}）：下次開啟應用程式時會再試一次。
+DOOM_NAME,DooM
+DOOM_NEEDS_PACK,DooM 的任務需要其社群內容包。請從商店下載後再遊玩。
+DOOM_DOWNLOAD_PACK,下載 DooM
+TURN_PHONE,請將手機轉為橫向：遊戲以橫向進行。
+PLAY_UPRIGHT,直向遊玩
+MOM_TITLE,瘋狂詭宅
+MOM_EDITION,第二版
+D2E_TITLE,Descent
+D2E_SUBTITLE,Journeys in the Dark
+D2E_EDITION,Second Edition
+COLOUR_UNIVERSALIS,Universalis（插畫）
+COLOUR_PURE,純黑
+MARKS,你的標記
+MARK_PLAYED,已玩
+MARK_FAVORITE,最愛
+MARK_PENDING,待玩
+FILTER_PLAYED,是否已玩
+FILTER_PLAYERS,玩家人數
+SORT_TITLE,排序
+FILTER_CATEGORIES,冒險類型
+FILTER_CATEGORIES_NOTE,僅限瘋狂宅邸。顯示同時具有所有勾選項目的冒險。
+CATEGORY_BEGINNERS,適合新手
+CATEGORY_SHORT,時長較短
+CATEGORY_NARRATIVE,劇情向
+CATEGORY_COMBAT,戰鬥
+CATEGORY_CAMPAIGN,戰役或系列
+CATEGORY_REPLAYABLE,可重玩
+FILTERS_ON,篩選中：{1} 個中的 {0} 個
+FILTERS_CLEAR,清除篩選
+FILTERS_HIDE_ALL,篩選隱藏了所有劇本。清除篩選即可再次看到。
+FILTER_SEARCH_ON,搜尋：「{0}」
+FILTER_LANGS_ON,語言：{0}
+FILTER_EXPANSIONS_ON,不含缺少的擴充
+FILTER_PLAYERS_ON,玩家：{0}
+ADULT_CONTENT,成人內容
+IGOR_NOT_LISTED,這個冒險不在此列表中。請連線到商店查看。
+IGOR_OPEN,與伊戈爾交談
+IGOR_FILTERED,伊戈爾找到了這個冒險，但篩選把它隱藏了。清除篩選即可看到。
+FILTER_MARKS,已標記
+FILTER_ALL,全部
+FILTER_PLAYED_ONLY,已玩
+FILTER_UNPLAYED,未玩
+FILTER_FAVORITES,最愛
+FILTER_PENDING,待玩
+SIZE_NORMAL,一般
+SIZE_LARGE,大
+SIZE_LARGER,特大
+PIECE_SIZE,圖板上標記的大小
+PIECE_SIZE_LARGE,大（+30%）
+OPTIONS_LOOK,外觀
+OPTIONS_ADVANCED_TEXT,改變遊戲進行的方式。全部關閉時，與 Valkyrie 相同。
+CONFIRM_PHASE,結束調查員階段前先詢問
+CONFIRM_PHASE_TEXT,結束調查員階段並開始神話階段？
+KEEP_ZOOM,劇本移動鏡頭時保留我的縮放
+HIDE_CURSOR,隱藏滑鼠指標
+LOG_COPIED,已複製
+READ_ALOUD,朗讀
+STOP_READING,停止朗讀
+AUTO_READ,事件出現時自動朗讀
+ITEM_SIZE,物品大小
+MONSTER_PLACE,怪物
+MONSTER_PLACE_RIGHT,右侧
+MONSTER_PLACE_BOTTOM,底部
+BUTTONS_APART,事件按钮与文本分开，如官方应用
+EPIC_SPAWNS,突出强大怪物的出现
+VOICE,朗讀的聲音
+VOICE_BROWSER,瀏覽器的
+VOICE_OFF,關閉
+VOICE_SAMPLE,門吱呀一聲打開了。有東西在黑暗中等待。
+VOICE_TRY,試聽
+VOICE_NONE,此瀏覽器沒有內建語音。
+VOICE_WHICH,聲音
+VOICE_BEST,最適合該語言的
+VOICE_GEMINI,Gemini（Google）
+VOICE_GEMINI_KEY,Gemini API 金鑰
+VOICE_GEMINI_MODEL,模型
+VOICE_GEMINI_STYLE,朗讀方式（選填）
+VOICE_GEMINI_STYLE_HINT,像恐怖故事的旁白一樣，低聲朗讀
+VOICE_GEMINI_NOTE,文字會傳送到 Google 進行朗讀。金鑰只保存在此瀏覽器中，不會放入備份。
+VOICE_GEMINI_NO_KEY,輸入金鑰以使用 Gemini（aistudio.google.com/apikey）。在此之前由瀏覽器的聲音朗讀。
+VOICE_GEMINI_TIME,{0} 秒後出現第一個聲音；{1} 秒後收到全部音訊。
+VOICE_GEMINI_FAILED,Gemini 無法朗讀：{0}。已改由瀏覽器的聲音朗讀。
+VOICE_SPEECHIFY,Speechify
+VOICE_SPEECHIFY_KEY,Speechify API 金鑰
+VOICE_SPEECHIFY_LOADING,正在載入聲音…
+VOICE_SPEECHIFY_NO_VOICES,Speechify 在此模型中沒有此語言的聲音。
+VOICE_SPEECHIFY_NOTE,文字會傳送到 Speechify 進行朗讀。金鑰只保存在此瀏覽器中，不會放入備份。
+VOICE_SPEECHIFY_NO_KEY,輸入金鑰以使用 Speechify（platform.speechify.ai）。在此之前由瀏覽器的聲音朗讀。
+VOICE_SPEECHIFY_FAILED,Speechify 無法朗讀：{0}。已改由瀏覽器的聲音朗讀。
+VOICE_DEEPGRAM,Deepgram
+VOICE_DEEPGRAM_KEY,Deepgram API 金鑰
+VOICE_DEEPGRAM_NO_VOICES,Deepgram 沒有此語言的 Aura-2 聲音：由瀏覽器的聲音朗讀。
+VOICE_DEEPGRAM_NOTE,文字會傳送到 Deepgram 進行朗讀。金鑰只保存在此瀏覽器中，不會放入備份。
+VOICE_DEEPGRAM_NO_KEY,輸入金鑰以使用 Deepgram（console.deepgram.com）。在此之前由瀏覽器的聲音朗讀。
+VOICE_DEEPGRAM_FAILED,Deepgram 無法朗讀：{0}。已改由瀏覽器的聲音朗讀。
+VOICE_DEEPGRAM_FAMILY,聲音類型
+VOICE_DEEPGRAM_OTHER,其他聲音（在 playground 中的名稱）
+HORROR_REMINDER,怪物行動後提醒恐懼檢定
+HORROR_REMINDER_TEXT,恐懼步驟：每位調查員對範圍內恐懼值最高的怪物進行一次恐懼檢定。
+BLANK_TILES,缺少板塊時放置空白板塊，而不是停止
+CLICK_SOUND,選單按鈕的點擊音效
+MUSIC_IMPORTED,官方遊戲的音樂（匯入）
+MUSIC_CUSTOM,冒險的音樂（作者提供）
+MENU_SOUND,選單的聲音
+FILTER_DOWNLOADED,已下載
+FILTER_DOWNLOADED_ONLY,已下載
+FILTER_NOT_DOWNLOADED,未下載
+UPDATE_ALL,全部更新（{0}）
+UPDATING_ALL,正在更新第 {0} 個，共 {1} 個：{2}
+TILES_SHOW,查看板塊
+TILES_SPOILER,劇透警告：板塊會透露你將探索的部分地圖。要查看嗎？
+TILES_CONTINUE,繼續並查看
+TILES_TITLE,劇本的板塊
+TILES_LOADING,正在讀取劇本的地圖…
+TILES_NONE,此劇本不放置板塊。
+TILES_OPTIONAL,可選：來自「{0}」，不在你的收藏中
+TILES_OPTIONAL_NOTE,只有擁有該擴充時劇本才會放置這些板塊。如果你有，請在我的收藏中勾選它。
+TILES_UNKNOWN,不在任何已知的擴充中
+HEROES_ASKED_EXACT,此劇本需要 {0} 位
+HEROES_ASKED_RANGE,此劇本需要 {0} 至 {1} 位
+HEROES_CHOSEN,已選：{0}
+HERO_VIEW,清單大小
+HERO_VIEW_NORMAL,小
+HERO_VIEW_LARGE,大
+HERO_VIEW_LARGER,肖像
+OPTIONS_RESET,恢復預設選項
+OPTIONS_RESET_CONFIRM,將所有選項恢復原狀？語言、遊戲存檔、標記和已下載的內容保持不變。
+TRANSLATE,自動翻譯
+TRANSLATE_WARNING,由 AI 翻譯沒有你語言版本的劇本。它可能出錯，品質取決於你選擇的模型。文字會傳送到 OpenRouter 進行翻譯。設定很簡單：
+TRANSLATE_STEP_1,在 openrouter.ai 建立免費帳號。
+TRANSLATE_STEP_2,前往 Keys（openrouter.ai/keys），按 Create Key，取個名稱並複製金鑰：它以 sk-or- 開頭，只會顯示一次。
+TRANSLATE_STEP_3,貼到下方。它只會儲存在這個瀏覽器中。
+TRANSLATE_STEP_4,選擇一個模型，或保留我們預設的免費 DeepSeek 模型。免費模型可能較慢或每分鐘有限制；有額度時可以用更快的模型。
+TRANSLATE_ENABLE,啟用
+TRANSLATE_KEY,OpenRouter 金鑰
+TRANSLATE_MODEL,模型
+TRANSLATE_MODELS_LOADING,正在尋找 OpenRouter 的免費模型…
+TRANSLATE_MODEL_OTHER,其他模型（OpenRouter 上的名稱）
+TRANSLATE_TRY,試用翻譯
+TRANSLATE_WORKING,正在翻譯…
+TRANSLATED,自動翻譯
+TRANSLATE_FAILED,無法翻譯：{0}
+TILES_TABLE,所需桌面：約 {0} × {1} 公分
+TILES_TABLE_NOTE,最大的地圖同時擺上所有板塊，不含周圍的卡牌和配件。
+MUSIC_CREDIT_LABEL,音乐致谢
+MUSIC_CREDIT,音乐：{0}
+MUSIC_CREDIT_CHANNEL,{0} 的 YouTube 频道
+MORE_INFO,更多信息
+TILES_TABLE_INFO,此信息可能与实际不同：这是根据剧本地图计算出的最大尺寸。
+TRANSLATE_TIMEOUT,模型超过 {0} 秒未回应。请重试或选择其他模型
+TRANSLATE_TOOK,{0} 用时 {1} 秒回应。
+TRANSLATE_DISABLED,暫時停用，我們正在改進。
+STORAGE,儲存空間
+STORAGE_USED,此應用程式佔用了此瀏覽器允許的 {1} MB 中的 {0} MB。
+STORAGE_PERSISTED,即使空間不足，瀏覽器也會保留這些檔案。
+STORAGE_NOT_PERSISTED,瀏覽器空間不足時，可能會刪除這些檔案：請不時做一次備份。
+STORAGE_PERSIST,請瀏覽器保留它們
+STORAGE_PERSIST_REFUSED,瀏覽器沒有同意。有些瀏覽器只會對已安裝的應用程式或你常造訪的網站這樣做。
+STORAGE_WRITE_FAILED,有些內容無法儲存在此瀏覽器中：{0}
+GO_ON_PLAYING,繼續遊戲
+SAVE_AND_QUIT,儲存並離開
+COPY_DIAGNOSTICS,複製錯誤詳細資訊
+DIAGNOSTICS_COPIED,已複製：請貼到你的回報中
+OTHER_WINDOW,應用程式已在另一個視窗或分頁開啟：請只使用一個，否則資料會互相覆蓋。
+DELETE_SCENARIO_CONFIRM,要從此裝置刪除 {0} 嗎？之後要再玩需重新下載。
+SAVE_FAILED,無法儲存遊戲：{0}
+NOT_A_ZIP,{0} 不是 zip 檔案：Valkyrie 劇本是副檔名為 .valkyrie 的 zip。
+CHECK_TITLE,已加入 {0}，但有提醒
+CHECK_TITLE_ERRORS,無法開啟 {0}
+CHECK_FIXED_FOLDER,劇本位於 zip 的「{0}」資料夾內，應用程式已將其取出以便遊玩。Valkyrie 無法這樣開啟：分享時請壓縮資料夾內的內容，而不是資料夾本身。
+CHECK_BLANK_LINE,{0}，第 {1} 行：只有空格或定位字元，Valkyrie 無法讀取此檔案。請讓它保持完全空白。
+CHECK_FORMAT,其格式（{0}）不是 Valkyrie 可讀取的格式（{1} 至 {2}）。
+CHECK_NO_QUESTTEXT,quest.ini 沒有列出文字檔的 [QuestText] 區段：Valkyrie 無法開啟。
+CHECK_MISSING_FILE,quest.ini 提到的檔案 {0} 不在劇本中。
+CHECK_LOCALIZATION_HEADER,{0}：第一行必須像「.,English」一樣寫出語言；Valkyrie 無法讀取。
+CHECK_MISSING_EVENT,{0} 有一個按鈕指向不存在的事件 {1}。
+CHECK_MORE,還有 {0} 個類似的問題。
+CHECK_UNREADABLE,無法讀取 {0}：{1}
+COLOUR_CLASSIC,經典
+PREVIOUS_PAGE,上一頁
+NEXT_PAGE,下一頁
+PAGE_OF,第 {0} 頁，共 {1} 頁
+TRANSLATION_BUTTON,我的翻译
+TRANSLATION_TITLE,你对此剧本的翻译
+TRANSLATION_EXPLAIN,载入一个 zip,内含你的翻译文件 Localization.<语言>.txt,以及(如有更改)以剧本原有名称命名的图片和声音。它保存在本设备上,在你以该语言开始此剧本的游戏时使用。同一语言的新翻译会替换旧的。
+TRANSLATION_NONE,你还没有此剧本的自定义翻译。
+TRANSLATION_SAVED_LINE,{0}:{2} 条文本中的 {1} 条,{3} 张图片,{4} 个声音({5})。
+TRANSLATION_LOAD,载入 zip
+TRANSLATION_REMOVE,移除
+TRANSLATION_REMOVE_LANGUAGE,移除{0}翻译
+TRANSLATION_READING,正在读取…
+TRANSLATION_REPORT_TITLE,在 {0} 中找到的内容
+TRANSLATION_NOT_SAVED,未保存:
+TRANSLATION_TEXTS,已翻译文本:{1} 条中的 {0} 条。
+TRANSLATION_IMAGES,替换的图片:{0}。
+TRANSLATION_SOUNDS,替换的声音:{0}。
+TRANSLATION_SAVED,已保存在本设备上:以{0}游玩此剧本时将使用它。
+TRANSLATION_REPLACED,它替换了你之前的{0}翻译。
+TRANSLATION_NOT_ZIP,该文件不是 zip。
+TRANSLATION_NO_TEXTS_FILE,zip 中没有包含文本的 Localization.<语言>.txt 文件。
+TRANSLATION_SEVERAL_LANGUAGES,zip 中包含多种语言的文本({0}):请一次载入一种。
+TRANSLATION_UNKNOWN_LANGUAGE,«{0}» 不是 Valkyrie 支持的语言({1})。
+TRANSLATION_NAME_LANGUAGE,{0} 的文件名与其中的语言({1})不符:以内容为准。
+TRANSLATION_NOTHING_TRANSLATED,其中没有任何文本属于此剧本:是另一个剧本的翻译吗?
+TRANSLATION_UNKNOWN_TEXTS,有 {0} 条文本在剧本中不存在(来自其他版本?):{1}。
+TRANSLATION_UNUSED_FILES,有 {0} 个文件没有替换剧本中的任何文件,不会被使用:{1}。它们的名称须与剧本中的文件相同。
+TRANSLATION_REPLACES_OWN,此剧本已有{0}版本:你的文本将替换它自带的文本。
+TRANSLATION_OTHER_LANGUAGE,它是{0},而你使用{1}游玩:只有把语言改为{0}时才会使用。
+TRANSLATION_SWITCH_ASK,現在將應用程式語言切換為{0}嗎？選單和此劇本也會一起切換。
+TRANSLATION_SWITCH,切換為{0}
+TRANSLATION_STAY,維持{0}
+RULES_HELP,說明與規則
+RULES_ACTIONS,調查員行動
+RULES_ACTIONS_D2E,英雄行動
+RULES_ACTIONS_DOOM,陸戰隊員行動
+RULES_SUMMARY,規則摘要
+RULES_NOTE,由玩家整理的摘要，用來回想遊戲怎麼玩。不能取代官方規則書。
+SHOW_MAP,查看地圖
+SHOW_TEXT,返回文字
+CLEAR_ELIMINATED,取消調查員被消滅
+NO_WEBGL,此瀏覽器無法繪製版圖，因為它沒有 WebGL。請在設定中開啟硬體加速，或改用其他瀏覽器。
+BOARD_LOST,版圖記憶體不足，無法重新繪製。請完全關閉應用程式，重新開啟後選擇「繼續」。
+TILES_TAB,板塊
+MONSTERS_SHOW,敵人
+ITEMS_SHOW,物品
+MONSTERS_TITLE,劇本的敵人
+ITEMS_TITLE,劇本的物品
+MONSTERS_NOTE,劇本指名的怪物。依特性隨機抽取的不在此列。
+ITEMS_NOTE,劇本指名的物品。隨機抽取的不在此列。
+MONSTERS_NONE,此劇本沒有指名的怪物。
+ITEMS_NONE,此劇本沒有指名的物品。
+HELP_SEARCH,搜尋說明
+HELP_SEARCH_NONE,說明中沒有相符的內容。
+QUIT_CONFIRM,要回到主界面嗎？遊戲會自動存檔，可用「繼續」接著玩。
+QUIT_CONFIRM_YES,離開
+BUTTON_HINTS,一段時間沒有點擊時，讓劇本自己的按鈕微微發光
+QUEST_SERIOUS,注意：此劇本有 {0} 個作者留下的錯誤，可能讓遊戲停止或事件中斷。
+QUEST_SERIOUS_SHOW,查看
+QUEST_SERIOUS_HIDE,隱藏
+QUEST_SERIOUS_TELL,這些是作者的錯誤：若讓你的遊戲停止，請告知作者。
+FAULT_ADD_MISSING,{0} 放上了不存在的東西
+FAULT_TILE,板塊 {0} 不在任何擴充中
+FAULT_START,沒有開始事件
+FAULT_TWICE,{0} 寫了兩次
+FAULT_TEXT,{0}的一段文字沒有正確結束
+GAME_TIMER,顯示回合與遊戲的時間
+TIMER_ROUND,第 {0} 回合
+TIMER_GAME,遊戲 {0}
+SCENARIO_FAULTS,在劇本詳情中提醒作者的嚴重錯誤
+TV_MODE,電視模式：全部放大，遠處也易讀
+FULLSCREEN,全螢幕
+NOTES,筆記
+NOTES_HINT,線索、密碼、誰拿著什麼…
+NOTES_KEPT,存檔時會一併保存。
+EDITOR_NOT_READY,編輯器尚未完成
+EDITOR_EARLY,目前仍在非常早期的階段：僅供試用，請勿當作正式工具使用
+EDITOR_COMPUTER_ONLY,目前只能在有滑鼠或觸控板的電腦上開啟，手機和平板無法使用。
+EDITOR_ENTER,了解，進入
+ADD_CONTENT_PACK,從檔案加入內容包
+PACKS_FROM_FILES,在此裝置上，不在商店清單中
+PACK_ADDED,已加入 {0}。要使用它，請在「{1}」的「{2}」中選取。
+PACK_CHECK_TITLE,已加入 {0}，但有警告
+PACK_CHECK_TITLE_ERRORS,無法加入 {0}
+PACK_NOT_ZIP,{0} 不是 zip 檔：內容包是副檔名為 .valkyrieContentPack 的 zip。
+PACK_IS_SCENARIO,{0} 是劇本，不是內容包：請在劇本清單中用「{1}」加入。
+PACK_NO_INI,{0} 的最上層和資料夾中都沒有 content_pack.ini，所以 Valkyrie 不會把它當成內容包。
+PACK_NO_NAME,content_pack.ini 的 [ContentPack] 沒有 name：Valkyrie 讀到時會停止。請加入 name=… 寫上內容包名稱。
+PACK_NO_ID,content_pack.ini 的 [ContentPack] 沒有 id。請加入唯一的 id（與 manifest 中相同）：內容包以它儲存，劇本也用它來要求內容包。
+PACK_BAD_ID,id「{0}」含有空格或符號：劇本以空格分隔內容包，而 id 也是檔名。請只用字母、數字、- 和 _。
+PACK_OFFICIAL_ID,id「{0}」屬於官方內容包：這個內容包會取代它。請換一個 id。
+PACK_STORE_ID,商店已有 id 為「{0}」的內容包：在此裝置上，這個會取代它。如果這不是你的版本，請換一個 id。
+PACK_NO_TYPE,content_pack.ini 沒有 type：請加入 type={0}Custom。
+PACK_OTHER_GAME,這是另一個遊戲的內容包（type={0}）：請從 {1} 加入。
+PACK_BAD_TYPE,type={0} 不屬於這個遊戲：必須以 {1} 開頭，例如 {1}Custom。
+PACK_NOT_CUSTOM,type={0}：社群內容包使用 {1}，用其他類型就不會出現在收藏的社群內容包中。
+PACK_NO_IMAGE,內容包的圖片（{0}）不在內容包中：將不顯示圖片。
+PACK_NO_ICON,內容包的圖示（{0}）不在內容包中。
+PACK_CASE,{0} 在內容包中名為 {1}。這個 app 和 Windows 不區分大小寫，但 Android 和 Linux 上的 Valkyrie 會區分，因而找不到它。請寫成相同的大小寫。
+PACK_LANGUAGE_LINE,[LanguageData] 有一行「{0}」：應寫出字典和檔案，例如「pck Localization.Chinese.txt」。
+PACK_MISSING_LANGUAGE,[LanguageData] 列出的 {0} 不在內容包中：其文字將不會顯示。
+PACK_MISSING_DATA,[ContentPackData] 列出的 {0} 不在內容包中：Valkyrie 會在這個檔案停止載入內容包。
+PACK_UNKNOWN_SECTION,{0}：Valkyrie 不認得 [{1}]，會略過它。區段名稱必須以其類型開頭（TileSide、Monster、Item、Token…）。
+PACK_DUPLICATE,[{0}] 同時在 {1} 和 {2} 中：只有第一個有效。請替每個取不同的名稱。
+PACK_NAME_TAKEN,[{0}] 已由內容包 {1} 定義：兩者只有一個有效。請替你的取一個自己的名稱。
+PACK_MISSING_IMAGE,{0}，[{1}]：圖片 {2} 不在內容包中（加上 .png、.jpg、.dds… 也沒有）：將不顯示圖片。
+PACK_IMAGE_ROOTED,{0}，[{1}]：圖片 {2} 以斜線開頭，所以 Valkyrie 會到內容包外尋找。請拿掉斜線。

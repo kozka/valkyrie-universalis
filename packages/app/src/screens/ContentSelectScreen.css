@@ -1,0 +1,189 @@
+.content-select {
+  max-width: 64rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.pack-types,
+.packs,
+.pack-downloads {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+/* A category or a pack: its picture and its name on a card, as Valkyrie's white rows */
+.pack-type,
+.pack-choice {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4.5rem auto 1fr;
+  align-items: center;
+  gap: 0.4rem 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--line);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.pack-type:hover,
+.pack-choice:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--lift-shadow);
+}
+
+.pack-picture img,
+.pack-picture .placeholder {
+  display: flex;
+  width: 4.5rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius-small);
+}
+
+.pack-name {
+  margin: 0;
+  font-size: var(--step-sub);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.pack-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+}
+
+.pack-row .pack-choice {
+  position: relative;
+  flex: 1 1 20rem;
+  padding-right: 3.75rem;
+}
+
+/* Not in Valkyrie, whose rows only change their text's colour: the packs the player has stand out, lit and ticked */
+.pack-row.chosen .pack-choice {
+  border: 2px solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 16%, var(--card));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.pack-row.chosen .pack-choice::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 700;
+  transform: translateY(-50%);
+}
+
+/* Valkyrie greys the packs the player does not have: here their pictures fade too */
+.pack-row:not(.chosen) .pack-choice {
+  border-color: var(--line);
+  background: color-mix(in srgb, var(--card) 55%, transparent);
+  color: var(--card-quiet);
+  box-shadow: none;
+}
+
+.pack-row:not(.chosen) .pack-picture {
+  filter: grayscale(1);
+  opacity: 0.55;
+}
+
+.pack-note {
+  color: var(--card-quiet);
+}
+
+.pack-note.required {
+  color: var(--alert);
+}
+
+.pack-language select {
+  min-height: 2.75rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--panel);
+  color: var(--text);
+}
+
+.content-foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* A community pack of the store, with its cover pinned on like a scenario's */
+.pack-download {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr auto;
+  align-items: start;
+  gap: 1.25rem;
+  padding: 1rem 1.25rem 1.1rem 1rem;
+}
+
+.pack-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.pack-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pack-actions .button {
+  color: var(--card-text);
+}
+
+@media (max-width: 34rem) {
+  .pack-download {
+    grid-template-columns: 5rem 1fr;
+    gap: 0.9rem;
+  }
+
+  .pack-actions {
+    grid-column: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .pack-type,
+  .pack-choice {
+    grid-template-columns: 3.5rem 1fr;
+  }
+
+  .pack-picture img,
+  .pack-picture .placeholder {
+    width: 3.5rem;
+  }
+
+  .pack-note {
+    grid-column: 2;
+  }
+}
+
+/* Not in Valkyrie (17 November 2026): the packs added from a file, below the store's (addContentPack.ts) */
+.packs-from-files {
+  margin-top: 1.5rem;
+}
+
+.packs-from-files h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}

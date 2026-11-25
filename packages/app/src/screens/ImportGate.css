@@ -1,0 +1,11 @@
+/* Not in Valkyrie: the import asked for before a game is played (ImportGate.tsx) */
+.import-gate {
+  width: min(100%, 30rem);
+  padding: 1.5rem;
+}
+
+.import-gate .choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

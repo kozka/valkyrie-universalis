@@ -1,0 +1,69 @@
+.,English
+EventPrologo.text,<i>At dawn you follow the goblin cart's tracks up the hill. By mid-morning you hear their laughter on the other side of the road, and a woman's scream in the thicket.</i>
+EventPrologo.button1,Continue
+EventPreparar.text,"<b>Setup</b>\n\nSet aside tiles {c:TileCamino}, {c:TileClaro} and {c:TileCampamento}, an entrance, 3 end caps and a door."
+EventPreparar.button1,Continue
+EventColocarMapa.text,Place tiles {c:TileCamino} and {c:TileClaro}, the Entrance, 2 end caps and the palisade door as shown.
+EventColocarMapa.button1,Continue
+EventColocarHeroes.text,Place the heroes on the Entrance.
+EventColocarHeroes.button1,Continue
+EventColocarFichas.text,Place 2 search tokens and a villager token as shown. The villager is tied to a tree.
+EventColocarFichas.button1,Continue
+SpawnTrasgos.text,Place the {type} group as shown (the red frame is the master), respecting the group limit.
+SpawnTrasgos.button1,Continue
+EventObjetivo.text,"<b>Objective:</b> the bell is behind the palisade of the goblin camp. Open its door and defeat the chieftain.\n\n<b>Special rules:</b> the palisade door is barred. An adjacent hero may try to force it as an {action}."
+EventObjetivo.button1,Continue
+TokenAldeana.text,A woman tied to a tree trunk waves at you desperately.
+TokenAldeana.button1,{action} Untie her
+EventDesatar.text,A hero adjacent to the villager tests {might} or {knowledge} (their choice) to undo the knots.
+EventDesatar.button1,Passed
+EventDesatar.button2,Failed
+EventNudos.text,The knots hold and the rope burns your hands: suffer 1 {fatigue}. You may try again.
+EventNudos.button1,Continue
+EventAldeanaLibre.text,|||The villager, Ilsa, hugs you in tears. "They took the bell to their camp, behind the palisade. And beware: something follows them from the woods!"\n\nRemove the villager token. Your morale increases by 1.|||
+EventAldeanaLibre.button1,Continue
+SpawnAcechadores.text,Drawn by the screams, creatures burst out of the thicket. Place a {type} group on tile {c:TileClaro}, as far from the heroes as possible and respecting the group limit.
+SpawnAcechadores.button1,Continue
+TokenBusqueda1.text,An abandoned bundle by the road.
+TokenBusqueda1.button1,{action} Search
+EventBuscar1.text,Draw a search card.
+EventBuscar1.button1,Continue
+TokenBusqueda2.text,Something glints in the tall grass.
+TokenBusqueda2.button1,{action} Search
+EventBuscar2.text,Draw a search card. In the grass you also find a purse: the heroes gain 25 gold.
+EventBuscar2.button1,Continue
+DoorEmpalizada.text,A palisade of sharpened logs blocks the way. The door is barred from inside.
+DoorEmpalizada.button1,{action} Force the bar
+EventForzar.text,A hero adjacent to the door tests {might}.
+EventForzar.button1,Passed
+EventForzar.button2,Failed
+EventTrancaResiste.text,The bar holds and a splinter drives into your arm: suffer 1 {heart}.
+EventTrancaResiste.button1,Continue
+EventAbrirCampamento.text,The bar snaps with a crack. Remove the door and place tile {c:TileCampamento}, an end cap and a red objective token as shown: it is the bell, tied to a cart.
+EventAbrirCampamento.button1,Continue
+SpawnGorruk.text,By the cart, a huge ettin leaps to its feet: it is Gorruk the Bonebreaker. Place him as shown.
+SpawnGorruk.button1,Continue
+SpawnGorruk.uniquetitle,Gorruk the Bonebreaker
+SpawnGorruk.uniquetext,Gorruk the Bonebreaker is an Ettin master. He has 3 extra {heart}, plus 1 {heart} per hero. He spends {surge} in this order: extra {heart} first, then Throw (place the hero as far as possible from the other heroes).
+EventObjetivoActualizado.text,<b>Objective updated:</b> defeat Gorruk. While he stands, the bell stays on the cart.
+EventObjetivoActualizado.button1,Continue
+TokenCampana.text,The bell of Darkford, chained to the cart. While Gorruk stands you cannot take it.
+TokenCampana.button1,Continue
+CustomMonsterGorruk.monstername,Gorruk the Bonebreaker
+CustomMonsterGorruk.info,Gorruk uses the Ettin miniature and Act I card, as a master. He has extra Health (in red).
+ActivationGorrukEmbestida.ability,"<i>Gorruk has fixed his small eyes on {0}.</i>\nDuring this activation, his attacks gain +1 {heart}."
+ActivationGorrukEmbestida.master,"{action} Engage the hero named above (if he cannot reach them, the closest hero).\n{action} Attack that hero."
+ActivationGorrukRugido.ability,"<i>{1} lets out a roar that shakes the palisade.</i>\nEach hero within 3 spaces tests {will}; if they fail, they suffer 1 {fatigue}."
+ActivationGorrukRugido.master,"{action} Engage the closest hero.\n{action} Attack the adjacent hero with the lowest remaining Health."
+EventPeligroMenor.text,"<i>A crow caws three times above your heads.</i>\n\nThe threat grows: a peril will happen at the end of this round."
+EventPeligroMenor.button1,Continue
+EventPeligroMayor.text,"<i>The ground shakes. Something has noticed you.</i>\n\nThe threat is serious: a major peril will happen at the end of this round."
+EventPeligroMayor.button1,Continue
+EventPeligroMortal.text,"<i>Time has run out.</i>\n\nA deadly peril will happen at the end of this round."
+EventPeligroMortal.button1,Continue
+EventRefuerzos.text,<b>Reinforcements:</b> place a minion of the {c:SpawnTrasgos} group on the Entrance (or the closest empty space), respecting the group limit.
+EventRefuerzos.button1,Continue
+EventVictoria.text,|||<b>Victory</b>\n\nGorruk collapses by the cart. Under a tarp you find the bell of Darkford… but its clapper is missing. A wax-stained note says: "For the lord of the crypt".\n\nAmong Gorruk's junk you also find this item.\n\nEach hero gains 1 XP. The heroes gain 25 gold per hero and 1 fame.|||
+EventVictoria.button1,Back to Highport
+EventDerrota.text,"<b>Defeat</b>\n\nYou retreat down the hill while the goblins carry the bell off to the mountains. Without it, the dead of Darkford will grow stronger.\n\nEach hero gains 1 XP."
+EventDerrota.button1,Back to Highport

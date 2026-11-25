@@ -1,0 +1,125 @@
+.,English
+quest.name,Hesperia Breach
+quest.synopsys,The Argent well of Hesperia station has burst: shut its valves.
+quest.description,"An example mission for the DooM community pack, for 1-4 marines, 60 to 90 minutes: portals that open when seen, a threat deck, Argent energy, weapons to pick up, a keycard door, two consoles and a boss.\n\n<i>Needs the DOOM board game (2016) and the DooM pack enabled in Valkyrie.</i>"
+quest.authors,"<b>Author</b>\nExample of the doom-valkyrie skill"
+quest.authors_short,doom-valkyrie skill
+EventPrologo.text,"<i>Hesperia pumping station draws Argent energy from deep under Mars. An hour ago the master valve of its well burst, and what came out of it was not gas.</i>\n\n<i>Your squad arrives through the emergency teleporter in the airlock. Both safety valves must be shut by hand before the breach reaches the surface.</i>"
+EventPrologo.button1,Continue
+EventPreparacion.text,"<b>Setup</b>\n\nEach marine builds their deck with the UAC set and two different starting weapons (the class you chose in Valkyrie only suggests them) and draws 3 cards. With fewer than 4 marines, use the squad cards.\n\nNo Invasion card is needed: the app decides what comes out of each portal. Shuffle any 3 event decks for the demons' defense, and keep their cards, the Argent and the Glory Kill deck at hand."
+EventPreparacion.button1,Continue
+EventArgentRonda.text,"<b>Argent energy</b>\n\nThe invader gains 2 Argent: split it as evenly as possible among the cards of the demons on the map."
+EventArgentRonda.button1,Continue
+EventAmenazaPregunta.text,"<b>Threat deck</b>\n\nDo you play with this mission's threat deck? At the start of each round a random card with an effect for that round will come up."
+EventAmenazaPregunta.button1,Yes
+EventAmenazaPregunta.button2,No
+EventAmenaza1.text,"<b>Threat card: Bloodthirst</b>\n\nThis round, each demon rolls 1 additional red die when attacking.\n\n<i>{var:amenazaQuedan} cards left in the deck.</i>"
+EventAmenaza1.button1,Continue
+EventAmenaza2.text,"<b>Threat card: Iron Hide</b>\n\nThis round, each demon adds 1 shield to its defense.\n\n<i>{var:amenazaQuedan} cards left in the deck.</i>"
+EventAmenaza2.button1,Continue
+EventAmenaza3.text,"<b>Threat card: Argent Tide</b>\n\nThe invader gains 1 Argent for each faceup demon card.\n\n<i>{var:amenazaQuedan} cards left in the deck.</i>"
+EventAmenaza3.button1,Continue
+EventAmenaza4.text,"<b>Threat card: Roar from the Deep</b>\n\nThe first demon group activated this round gains 2 movement points.\n\n<i>{var:amenazaQuedan} cards left in the deck.</i>"
+EventAmenaza4.button1,Continue
+EventAmenaza5.text,"<b>Threat card: Breach</b>\n\nIf any portal is left on the map, press the one closest to a marine: it opens now, even if nobody sees it.\n\n<i>{var:amenazaQuedan} cards left in the deck.</i>"
+EventAmenaza5.button1,Continue
+EventAmenaza6.text,"<b>Threat card: Breather</b>\n\nNothing happens this round. Make the most of it.\n\n<i>{var:amenazaQuedan} cards left in the deck.</i>"
+EventAmenaza6.button1,Continue
+TokenTeleEntrada.text,An active teleporter: marines can respawn here. All active teleporters are adjacent to each other for movement.
+TokenTeleEntrada.button1,Continue
+TokenReglasApp.text,"<b>Playing with the app</b>\n\nValkyrie plays the invader. Play the marines' activations in any order: after each one, press «End Turn» on that marine's portrait and the app will activate a random demon group. Move and attack with its figures as the activation says. A demon's defense is the top card of the event deck: use only its icons.\n\nWhen a marine dies, press KO on their portrait. At the start of their next activation they respawn on an active teleporter: press Recover.\n\nWhen a marine has line of sight to a portal, press it. Demons do not open doors.\n\n<b>A single marine</b> (Solo Operative squad card) has two activations each round. After the first, press «Force Activate» on the portrait of a demon group that has not acted yet, chosen at random; after the second, «End Turn»."
+TokenReglasApp.button1,Continue
+TokenReglasMision.text,"<b>Mission rules</b>\n\n<b>Portals:</b> they open when a marine sees them (the Valkyrie missions' variant of Infestation). If no figures of a demon are left, no more come out.\n<b>Squad:</b> with fewer than 4 marines, use the squad cards.\n<b>Argent:</b> the invader gains 2 at the start of each round if there are demons on the map, and more from some portals.\n<b>Threat deck:</b> if you use it, one card at the start of each round.\n<b>Frags:</b> the invader wins with 6. Valkyrie tracks them as its «morale»: the red number at the top left is how many more casualties you can take without losing, and each KO lowers it by 1."
+TokenReglasMision.button1,Continue
+TokenObjetivo.text,"<b>Objective</b>\n\nShut both safety valves: one is in the storeroom and the other in the well room, behind the yellow door (its keycard is in the storeroom). Once they are shut, something will come for you.\n\nThe invader wins with 6 frags."
+TokenObjetivo.button1,Continue
+TokenBotiquinEsclusa.text,An emergency health pack. A marine who moves through its space picks it up.
+TokenBotiquinEsclusa.button1,A marine picks it up
+EventBotiquinEsclusa.text,That marine recovers 5 damage.
+EventBotiquinEsclusa.button1,Continue
+DoorEsclusa.text,The inner door of the airlock.
+DoorEsclusa.button1,Open it (1 movement point)
+EventMontar.text,"Place tiles {c:TileEntrada} and {c:TileEsclusa}, the door, the teleporter and a health pack as shown. The marines start on the teleporter or next to it.\n\nThe tokens on the left, off the map, remind you of the objective and the rules: press them whenever you want."
+EventMontar.button1,Continue
+SpawnInicio.text,Something is already moving in the airlock. Place the {type} group on the marked spaces.
+SpawnInicio.button1,Continue
+TokenPortalCruce.text,A blue portal crackles. Press it as soon as a marine has line of sight to it.
+TokenPortalCruce.button1,A marine sees it: it opens!
+SpawnPortalCruceA.text,"<b>The blue portal opens!</b>\n\nPlace the {type} group on the marked spaces or, if they do not fit, on the closest empty ones."
+SpawnPortalCruceA.button1,Continue
+SpawnPortalCruceB.text,"<b>The blue portal opens!</b>\n\nPlace the {type} group on the marked spaces or, if they do not fit, on the closest empty ones."
+SpawnPortalCruceB.button1,Continue
+EventArgentPortal1.text,The invader gains 1 Argent: place it on the cards of the demons that just came out.
+EventArgentPortal1.button1,Continue
+TokenPortalAlmacen.text,A blue portal crackles. Press it as soon as a marine has line of sight to it.
+TokenPortalAlmacen.button1,A marine sees it: it opens!
+SpawnPortalAlmacenA.text,"<b>The blue portal opens!</b>\n\nPlace the {type} group on the marked spaces or, if they do not fit, on the closest empty ones."
+SpawnPortalAlmacenA.button1,Continue
+SpawnPortalAlmacenB.text,"<b>The blue portal opens!</b>\n\nPlace the {type} group on the marked spaces or, if they do not fit, on the closest empty ones."
+SpawnPortalAlmacenB.button1,Continue
+TokenTeleAlmacen.text,An active teleporter: marines can respawn here. All active teleporters are adjacent to each other for movement.
+TokenTeleAlmacen.button1,Continue
+TokenTeleInactivoAlmacen.text,A teleporter, powered down. It turns on when a marine enters its space.
+TokenTeleInactivoAlmacen.button1,A marine has entered
+EventTeleAlmacen.text,The teleporter powers up: from now on, marines can respawn here.
+EventTeleAlmacen.button1,Continue
+TokenArmaMotosierra.text,Here lies the Chainsaw. A marine who moves through its space picks it up, at no movement cost.
+TokenArmaMotosierra.button1,A marine picks it up
+EventArmaMotosierra.text,The marine who picks it up shuffles its cards and places them facedown on top of their action deck.
+EventArmaMotosierra.button1,Continue
+TokenTarjetaAmarilla.text,A yellow keycard.
+TokenTarjetaAmarilla.button1,A marine picks it up
+EventTarjetaAmarilla.text,You have the yellow keycard: you can now open yellow doors.
+EventTarjetaAmarilla.button1,Continue
+TokenBotiquinCruce.text,An emergency health pack. A marine who moves through its space picks it up.
+TokenBotiquinCruce.button1,A marine picks it up
+EventBotiquinCruce.text,That marine recovers 5 damage.
+EventBotiquinCruce.button1,Continue
+TokenConsolaAlmacen.text,"The storeroom's safety valve, stuck half shut.\n\nOnce during their activation, an adjacent marine may discard 1 action card to make 1 step of progress. It takes 2."
+TokenConsolaAlmacen.button1,A marine has discarded a card
+EventConsolaHechaAlmacen.text,The valve screeches and shuts tight. Valves shut: {var:valvulas} of 2.
+EventConsolaHechaAlmacen.button1,Continue
+EventConsolaFaltaAlmacen.text,Progress made: {var:girosAlmacen} of 2.
+EventConsolaFaltaAlmacen.button1,Continue
+DoorAmarilla.text,The door of the well room, with a card reader. Only the yellow keycard opens it.
+DoorAmarilla.button1,Open it (1 movement point)
+EventAbrirEsclusa.text,The door opens onto a crossing of corridors that smells of ozone. Remove the door and place tiles {c:TileCruce} and {c:TileAlmacen}, three {c:TileCuartoCruce} tiles, the yellow door and the tokens as shown: two blue portals, a powered-down teleporter, a console, the yellow keycard, the chainsaw and a health pack.
+EventAbrirEsclusa.button1,Continue
+TokenPortalPozo.text,A yellow portal crackles. Press it as soon as a marine has line of sight to it.
+TokenPortalPozo.button1,A marine sees it: it opens!
+SpawnPortalPozoA1.text,"<b>The yellow portal opens!</b>\n\nPlace the {type} group on the marked spaces or, if they do not fit, on the closest empty ones."
+SpawnPortalPozoA1.button1,Continue
+SpawnPortalPozoA2.text,And also: place the {type} group on the marked spaces.
+SpawnPortalPozoA2.button1,Continue
+SpawnPortalPozoB.text,"<b>The yellow portal opens!</b>\n\nPlace the {type} group on the marked spaces or, if they do not fit, on the closest empty ones."
+SpawnPortalPozoB.button1,Continue
+TokenArmaLanzamisiles.text,Here lies the Rocket Launcher. A marine who moves through its space picks it up, at no movement cost.
+TokenArmaLanzamisiles.button1,A marine picks it up
+EventArmaLanzamisiles.text,The marine who picks it up shuffles its cards and places them facedown on top of their action deck.
+EventArmaLanzamisiles.button1,Continue
+TokenConsolaPozo.text,"The well room's safety valve. The floor shakes under your feet.\n\nOnce during their activation, an adjacent marine may discard 1 action card to make 1 step of progress. It takes 2."
+TokenConsolaPozo.button1,A marine has discarded a card
+EventConsolaHechaPozo.text,The valve screeches and shuts tight. Valves shut: {var:valvulas} of 2.
+EventConsolaHechaPozo.button1,Continue
+EventConsolaFaltaPozo.text,Progress made: {var:girosPozo} of 2.
+EventConsolaFaltaPozo.button1,Continue
+EventAbrirPozo.text,The reader takes the card and the blast door retracts in a shower of sparks. Beyond it, the mouth of the borehole glows red. Remove the door and place tiles {c:TilePozo} and {c:TileArmeria}, a yellow portal, the console and the rocket launcher as shown.
+EventAbrirPozo.button1,Continue
+EventPozoSellado.text,"<b>The well is sealed!</b>\n\nPressure spikes and a red flash bursts from the mouth of the well. Something huge climbs up the borehole."
+EventPozoSellado.button1,Continue
+CustomMonsterBaronPozo.monstername,Baron of the Well
+CustomMonsterBaronPozo.info,Use the Baron of Hell figure and card. It has extra health (in red on its portrait) and can be glory killed like any demon.
+ActivationBaronEmbestida.ability,<i>The Baron smells {0}'s blood.</i>
+ActivationBaronEmbestida.master,"{action} Moves up to 5 spaces toward that marine (if they are not on the map, toward the closest one) until adjacent.\n{action} Attacks them.\nIf it still has 5 movement points, it spends them to attack that marine again."
+ActivationBaronFuego.ability,<i>A green fireball grows between its claws.</i>
+ActivationBaronFuego.master,"[1 Argent] Great fireball: this attack gains +3 range.\n{action} Moves up to 4 spaces to get the farthest marine it can see in range.\n{action} Attacks them."
+SpawnBaron.text,Place the {type} on the marked space: if its figure covers several spaces, one of them must be that one (or as close as possible if it does not fit). The invader gains 2 Argent: place them on its card.
+SpawnBaron.button1,Continue
+SpawnBaron.uniquetitle,Baron of the Well
+SpawnBaron.uniquetext,The Baron of the Well has 2 extra health, plus 2 per marine. When it falls, press «Defeated» on its portrait.
+EventObjetivoFinal.text,<b>Objective updated:</b> kill the Baron of the Well. If it falls, the station is safe.
+EventObjetivoFinal.button1,Continue
+EventVictoria.text,"<b>Victory</b>\n\nThe Baron collapses over the mouth of the well and the red glow dies with it. The valves hold: the Hesperia breach will not reach the surface.\n\n<i>End of the mission.</i>"
+EventVictoria.button1,End
+EventDerrota.text,"<b>Defeat</b>\n\nThe invader claims its sixth frag. Hesperia's teleporters go dark one by one, and the breach keeps rising.\n\n<i>End of the mission.</i>"
+EventDerrota.button1,End

@@ -1,0 +1,26 @@
+{
+ "_about": "Lo que Igor anuncia al abrir su ventana: una aventura nueva, una que se quiera promocionar o un aviso. Cada noticia se muestra entre «from» y «until» (incluidos); la más reciente que el jugador no haya visto va en el saludo, y todas en «¿Hay alguna novedad?». «scenario» es la clave de la tienda (como en guide/MoM.json) y puede faltar en un aviso sin aventura. «text» va por idioma de Valkyrie; sin el del jugador, se usa el inglés. Cómo añadir una: docs/guia-escenarios.md, «Igor».",
+ "news": [
+  {
+   "id": "2026-10-halloween-poseida",
+   "scenario": "Possessed",
+   "from": "2026-10-20",
+   "until": "2026-11-03",
+   "text": {
+    "Spanish": "Para la noche de Difuntos le recomiendo «Poseída»: una mansión abandonada, un viejo demonio y una deuda familiar que hay que saldar.",
+    "English": "For the Night of the Dead I recommend “Possessed”: an abandoned mansion, an ancient demon and a family debt that must be settled.",
+    "French": "Pour la nuit des Morts, je vous recommande « Possédés » : une demeure abandonnée, un démon ancien et une dette familiale qu’il faut solder.",
+    "German": "Für die Nacht der Toten empfehle ich Ihnen „Besessen“: eine verlassene Villa, ein uralter Dämon und eine Familienschuld, die beglichen werden muss.",
+    "Italian": "Per la notte dei Morti le consiglio «Possessione»: una villa abbandonata, un antico demone e un debito di famiglia da saldare.",
+    "Portuguese": "Para a noite de Finados recomendo «Possessed»: uma mansão abandonada, um velho demônio e uma dívida de família que precisa ser saldada.",
+    "Polish": "Na Noc Zmarłych polecam panu „Opętaną”: opuszczoną posiadłość, pradawnego demona i rodzinny dług, który trzeba spłacić.",
+    "Czech": "Na Dušičky vám doporučuji „Posednutí“: opuštěné sídlo, prastarého démona a rodinný dluh, který je třeba splatit.",
+    "Russian": "На Ночь мёртвых я рекомендую Вам «Одержимые»: заброшенный особняк, древний демон и семейный долг, который предстоит уплатить.",
+    "Ukrainian": "На Ніч мертвих я раджу Вам «Одержимі»: покинутий маєток, давній демон і родинний борг, який треба сплатити.",
+    "Chinese": "在亡靈之夜，我向您推薦「附身」：一座廢棄的宅邸、一個古老的惡魔，以及一筆必須清償的家族舊債。",
+    "Japanese": "死者の夜には「憑依」をおすすめいたします。打ち捨てられた屋敷、古き悪魔、そして清算せねばならぬ一族の負債でございます。",
+    "Korean": "망자의 밤에는 「빙의」를 추천해 드립니다: 버려진 저택, 오래된 악마, 그리고 갚아야 할 가문의 빚이 기다립니다."
+   }
+  }
+ ]
+}

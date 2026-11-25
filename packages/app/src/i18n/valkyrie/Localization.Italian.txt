@@ -1,0 +1,17 @@
+.,Italian
+// Valkyrie's own texts that its Italian file leaves out or empty and the app shows, written by Claude (October 2026): only
+// gaps, loaded before Valkyrie's so that an empty line of its own does not hide them (host/boot.ts; tests/texts.test.ts)
+AUTHORS,Autori
+AUTOSAVE,Salvataggio automatico
+CONFIRM,Conferma
+CONTENTPACK_CATEGORY_CUSTOM,Pack di contenuti della comunità
+DIFFICULTY,Difficoltà:
+DOWNLOAD_PACKAGE,Download del pacchetto
+DURATION,Durata:
+ITEMS,Oggetti
+ITEMS_SMALL,Oggetti
+ROUND,Round {0}
+SELECT_SAVE,Scegli un salvataggio
+STARTING_ITEM,Oggetto iniziale
+TEXT_SIZE,Dimensione del testo
+CONFIRM,Conferma

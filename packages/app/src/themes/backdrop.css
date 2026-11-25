@@ -1,0 +1,43 @@
+/* A theme's picture behind a screen (Backdrop.tsx): still, or alive under a canvas, darker where the screen's words are */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: var(--background) var(--still, none) var(--still-position, center) / cover no-repeat;
+  animation: backdrop-in 1.4s ease-out both;
+}
+
+.backdrop[data-travels] {
+  background-image: none;
+}
+
+@keyframes backdrop-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.backdrop canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.backdrop::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, color-mix(in srgb, var(--background) 55%, transparent), transparent 60%);
+}
+
+/* On a phone the words cover the whole picture: what matters in it behind them, darker all over */
+@media (max-width: 899px) {
+  .backdrop {
+    background-position: var(--phone-position, center);
+  }
+
+  .backdrop::after {
+    background: color-mix(in srgb, var(--background) 45%, transparent);
+  }
+}

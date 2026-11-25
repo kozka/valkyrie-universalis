@@ -1,0 +1,5 @@
+.,Korean
+// Valkyrie's own texts that its Korean file leaves out or empty and the app shows, written by Claude (October 2026): only
+// gaps, loaded before Valkyrie's so that an empty line of its own does not hide them (host/boot.ts; tests/texts.test.ts)
+OFFLINE_DUE_TO_ERROR,오프라인 (네트워크 오류)
+REPORT_ISSUE,문제 신고

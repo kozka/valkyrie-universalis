@@ -1,0 +1,417 @@
+.,Polish
+// Translated by Claude from the English texts (October 2026): corrections by native speakers are welcome.
+APP_NAME,Valkyrie Universalis
+UNOFFICIAL,Nieoficjalna, stworzona przez fanów
+ADD_SCENARIO,Dodaj plik scenariusza
+NO_SCENARIOS,Nie ma jeszcze scenariuszy. Dodaj plik .valkyrie ze sklepu lub od jego autora.
+NOT_A_SCENARIO,{0} nie jest scenariuszem Valkyrie.
+SCENARIO_ADDED,Dodano {0}.
+SCENARIO_OTHER_GAME,{0} to scenariusz do gry {1}: jest na jej liście.
+SCENARIO_FILTERED,Dodano {0}, ale filtry go ukrywają (jego języki lub dodatki, których nie masz).
+SCENARIO_INVALID,Nie można otworzyć {0}: jego quest.ini nie jest poprawny dla tej wersji Valkyrie.
+RELOAD_LIST,Wczytaj listę ponownie
+PLAY_SCENARIO,Graj
+LANGUAGES,Języki: {0}
+RATING,Ocena: {0} na 10
+DOWNLOAD_FAILED,Nie udało się pobrać {0}. Sprawdź połączenie i spróbuj ponownie.
+HEROES_RANGE,Od {0} do {1} badaczy
+MINUTES_RANGE,Od {0} do {1} minut
+ABOUT_TEXT,Valkyrie Universalis to internetowa wersja Valkyrie, darmowej aplikacji autorstwa NPBruce'a i współtwórców. Tworzą ją fani i nie ma żadnego związku z Fantasy Flight Games. Nie zawiera obrazów, dźwięków ani tekstów wydawcy: każdy gracz importuje własne i zostają one w jego przeglądarce.
+ABOUT_CODE,Kod na licencji Apache 2.0, przeniesiony z Valkyrie {0}.
+STORAGE_OFF,Ta przeglądarka nie przechowuje plików: to, co dodasz, zniknie po jej zamknięciu.
+STOPPED,Scenariusz został zatrzymany: {0}
+LOADING,Wczytywanie…
+SYMBOL_STRENGTH,Siła
+SYMBOL_AGILITY,Zręczność
+SYMBOL_OBSERVATION,Spostrzegawczość
+SYMBOL_LORE,Wiedza
+SYMBOL_INFLUENCE,Wpływy
+SYMBOL_WILL,Wola
+SYMBOL_ACTION,akcja
+SYMBOL_SUCCESS,sukces
+SYMBOL_CLUE,trop
+SYMBOL_TENTACLE,macka
+SYMBOL_PRODUCT,ikona dodatku
+MORALE,Morale: {0}
+AVAILABLE_XP,Dostępne doświadczenie: {0}
+SYMBOL_HEART,zdrowie
+SYMBOL_FATIGUE,zmęczenie
+SYMBOL_MIGHT,Siła
+SYMBOL_KNOWLEDGE,Wiedza
+SYMBOL_AWARENESS,Spostrzegawczość
+SYMBOL_SHIELD,tarcza
+SYMBOL_SURGE,przypływ
+MONSTER_LIST,Potwory
+NEXT_PHASE,Następna faza
+PHASE_BAR,Runda
+SCROLL_UP,Poprzednie potwory
+SCROLL_DOWN,Więcej potworów
+AWARENESS,Czujność {0}
+HORROR_VALUE,Groza {0}
+HEALTH,Zdrowie {0}
+DAMAGE,Obrażenia {0}
+DUPLICATE,Grupa {0}
+END_TITLE,Koniec
+WELCOME_TITLE,Witaj w Valkyrie Universalis
+WELCOME_TEXT,Valkyrie Universalis to internetowa wersja Valkyrie, która działa na każdym urządzeniu: komputerze, tablecie lub telefonie, gdzie możesz ją też zainstalować jako aplikację.\n\nTo wczesna wersja. Została dokładnie przetestowana i wszystko wydaje się działać, ale nadal może zawierać błędy.\n\nWciąż brakuje niektórych rzeczy, na przykład edytora scenariuszy, a interfejs wymaga dopracowania. Ale już teraz możesz grać i oceniać scenariusze, a do odkrycia jest kilka nowych opcji…\n\nMiłej zabawy!
+WELCOME_HIDE,Nie pokazuj ponownie
+WELCOME_START,Zaczynamy
+RATING_ALREADY_SENT,Twoja ocena tego scenariusza została już wysłana ({0}/10). Każdy scenariusz ocenia się tylko raz na danym urządzeniu.
+RATING_NOT_SENT,Nie udało się wysłać oceny: sprawdź połączenie i spróbuj ponownie. Twoja ocena zostaje zapisana na tym urządzeniu.
+MY_RATING,Twoja ocena: {0}/10
+FEEDBACK_BUTTON,Zgłoś problem z aplikacją
+FEEDBACK_TITLE,Zgłoś problem lub zaproponuj pomysł
+FEEDBACK_INTRO,Coś nie działa albo masz pomysł? Napisz nam: trafi prosto do twórcy. Jeśli to błąd, opisz, co robiłeś i co się stało.
+FEEDBACK_KIND,Rodzaj
+FEEDBACK_BUG,Błąd
+FEEDBACK_IDEA,Pomysł
+FEEDBACK_OTHER,Inne
+FEEDBACK_COMMENT,Twój komentarz
+FEEDBACK_EMAIL,Twój e-mail (opcjonalnie, jeśli chcesz odpowiedzi)
+FEEDBACK_TECHNICAL,Dane techniczne wysyłane razem z komentarzem
+FEEDBACK_EMPTY,Napisz komentarz przed wysłaniem.
+FEEDBACK_FAILED,Nie udało się wysłać: sprawdź połączenie i spróbuj ponownie.
+FEEDBACK_SENT,Dziękujemy! Twój komentarz został wysłany.
+FEEDBACK_SEND,Wyślij
+FEEDBACK_CANCEL,Anuluj
+FEEDBACK_CLOSE,Zamknij
+PUZZLE_SYMBOLS,Symbole
+PUZZLE_ADD,Dodaj {0}
+PUZZLE_REMOVE,Usuń {0}
+PUZZLE_CODE,Twoja próba
+PUZZLE_GUESSES,Dotychczasowe próby
+PUZZLE_RESULT,{0} trafionych na właściwym miejscu, {1} trafionych na złym miejscu
+PUZZLE_BLOCKS,Bloki
+PUZZLE_TARGET_BLOCK,Czerwony blok
+PUZZLE_BLOCK,Blok
+PUZZLE_PIECES,Fragmenty obrazu
+PUZZLE_PIECE,Fragment {0}
+PUZZLE_TOWERS,Wieże
+PUZZLE_TOWER,Wieża {0}
+IMPORT_SUBTITLE,Universalis korzysta z treści, które Valkyrie zaimportowała z twojej własnej kopii oficjalnej aplikacji {0}. Są kopiowane do tej przeglądarki tylko raz i nigdy jej nie opuszczają.
+IMPORT_FROM_FOLDER,Wybierz folder import Valkyrie
+IMPORT_FOLDER_DESC,W systemie Windows znajduje się w %APPDATA%\Valkyrie\{0}\import.
+IMPORT_ZIP_DESC,Zip tego samego folderu import: sposób dla telefonów i tabletów.
+IMPORT_PROGRESS,{0} z {1} plików
+IMPORT_NO_INI,Brak pliku import.ini: wybierz folder import Valkyrie albo jego zip.
+IMPORT_RAW_ASSETS,To pliki samej oficjalnej aplikacji. Universalis nie potrafi ich jeszcze odczytać: najpierw zaimportuj je w Valkyrie, a potem wybierz jej folder import.
+IMPORT_NO_SPACE,W tej przeglądarce brakuje miejsca: potrzeba {0} MB, a wolne jest {1} MB.
+IMPORT_UNREADABLE,Nie można odczytać pliku zip: {0}
+IMPORT_FAILED,Import się nie powiódł: {0}
+IMPORT_OLD,Ten import pochodzi z innej wersji Valkyrie lub oficjalnej aplikacji, więc nie jest używany. Zaimportuj ponownie w aktualnej Valkyrie i przynieś tu jej folder.
+THEME,Motyw
+FELT,Sukno pod planszą
+COLOUR_BLACK,Czarny
+COLOUR_GREEN,Zielony
+COLOUR_RED,Bordowy
+COLOUR_BLUE,Niebieski
+BOARD_TILT,Nachylenie planszy
+BOARD_TILT_TABLE,Jak stół (30°)
+BOARD_TILT_VALKYRIE,Jak w Valkyrie (10°)
+VERSION,Wersja {0}
+NEW_VERSION,Jest nowa wersja aplikacji.
+RELOAD_APP,Wczytaj ponownie
+INSTALL_APP,Zainstaluj aplikację
+INSTALL_APPLE,Aby zainstalować ją na tym iPhonie lub iPadzie, stuknij Udostępnij, a potem „Do ekranu początkowego”.
+IMPORT_INSTALL_FIRST,Na iPhonie i iPadzie najpierw zainstaluj aplikację (Udostępnij, potem „Do ekranu początkowego”) i importuj z niej: zainstalowana aplikacja trzyma swoje pliki osobno od plików przeglądarki.
+IMPORT_TO_PLAY,Do gry Universalis potrzebuje treści, które Valkyrie zaimportowała z twojej własnej kopii oficjalnej aplikacji {0}. Do tego czasu możesz przeglądać scenariusze.
+BACKUP,Kopia zapasowa
+BACKUP_TEXT,To, co przechowuje aplikacja (twoje rozgrywki, opcje, kolekcja oraz pobrane scenariusze i paczki), znajduje się w tej przeglądarce, na tym urządzeniu. Kopia zapasowa zbiera wszystko w jednym pliku: żeby przenieść to do innej przeglądarki lub na inne urządzenie albo odzyskać, jeśli przeglądarka usunie swoje dane. Oficjalnego importu w niej nie ma: trzeba go zaimportować ponownie.
+BACKUP_DOWNLOAD,Pobierz kopię zapasową
+BACKUP_RESTORE,Przywróć kopię zapasową
+BACKUP_MAKING,Tworzenie kopii: {0} z {1} plików…
+BACKUP_MADE,Pobrano kopię: {0} MB.
+BACKUP_CONFIRM,Wszystko, co aplikacja przechowuje w tej przeglądarce, zostanie zastąpione zawartością {0}. Kontynuować?
+BACKUP_RESTORE_GO,Przywróć
+BACKUP_RESTORING,Przywracanie: {0} z {1}…
+BACKUP_NOT_ONE,Ten plik nie jest kopią zapasową Valkyrie Universalis.
+BACKUP_UNREADABLE,Nie można odczytać kopii: {0}
+BACKUP_FAILED,Nie udało się: {0}
+BACKUP_UNFINISHED,Kopia jest już w przeglądarce: zajmie swoje miejsce przy następnym uruchomieniu aplikacji.
+BACKUP_NOT_FINISHED,Kopia nie mogła jeszcze zająć swojego miejsca ({0}): aplikacja spróbuje ponownie przy uruchomieniu.
+DOOM_NAME,DooM
+DOOM_NEEDS_PACK,Misje DooM wymagają pakietu zawartości od społeczności. Pobierz go ze sklepu, aby w nie zagrać.
+DOOM_DOWNLOAD_PACK,Pobierz DooM
+TURN_PHONE,Obróć telefon: rozgrywki prowadzi się w poziomie.
+PLAY_UPRIGHT,Graj w pionie
+MOM_TITLE,Posiadłość Szaleństwa
+MOM_EDITION,2. Edycja
+D2E_TITLE,Descent
+D2E_SUBTITLE,Wędrówki w Mroku
+D2E_EDITION,2. edycja
+COLOUR_UNIVERSALIS,Universalis (ilustrowany)
+COLOUR_PURE,Czysta czerń
+MARKS,Twoje oznaczenia
+MARK_PLAYED,Rozegrany
+MARK_FAVORITE,Ulubiony
+MARK_PENDING,Do rozegrania
+FILTER_PLAYED,Rozegrane lub nie
+FILTER_PLAYERS,Gracze
+SORT_TITLE,Sortuj według
+FILTER_CATEGORIES,Rodzaj przygody
+FILTER_CATEGORIES_NOTE,Tylko w Posiadłości Szaleństwa. Pokazuje przygody, które mają wszystkie zaznaczone.
+CATEGORY_BEGINNERS,Dla początkujących
+CATEGORY_SHORT,Krótka
+CATEGORY_NARRATIVE,Fabularna
+CATEGORY_COMBAT,Walka
+CATEGORY_CAMPAIGN,Kampania lub seria
+CATEGORY_REPLAYABLE,Do wielokrotnej gry
+FILTERS_ON,Filtrowanie: {0} z {1}
+FILTERS_CLEAR,Usuń filtry
+FILTERS_HIDE_ALL,Filtry ukrywają wszystkie scenariusze. Usuń je, aby znów je zobaczyć.
+FILTER_SEARCH_ON,Szukaj: „{0}”
+FILTER_LANGS_ON,Języki: {0}
+FILTER_EXPANSIONS_ON,Bez brakujących dodatków
+FILTER_PLAYERS_ON,Gracze: {0}
+ADULT_CONTENT,Treści dla dorosłych
+IGOR_NOT_LISTED,Tej przygody nie ma na tej liście. Przejdź do sklepu online, aby ją zobaczyć.
+IGOR_OPEN,Porozmawiaj z Igorem
+IGOR_FILTERED,Igor znalazł przygodę, ale filtry ją ukrywają. Usuń je, aby ją zobaczyć.
+FILTER_MARKS,Oznaczone
+FILTER_ALL,Wszystkie
+FILTER_PLAYED_ONLY,Rozegrane
+FILTER_UNPLAYED,Nierozegrane
+FILTER_FAVORITES,Ulubione
+FILTER_PENDING,Do rozegrania
+SIZE_NORMAL,Normalny
+SIZE_LARGE,Duży
+SIZE_LARGER,Bardzo duży
+PIECE_SIZE,Rozmiar żetonów na planszy
+PIECE_SIZE_LARGE,Duży (+30%)
+OPTIONS_LOOK,Wygląd
+OPTIONS_ADVANCED_TEXT,Zmiany w sposobie gry. Gdy wszystko jest wyłączone, gra się jak w Valkyrie.
+CONFIRM_PHASE,Pytaj przed zakończeniem fazy badaczy
+CONFIRM_PHASE_TEXT,Zakończyć fazę badaczy i rozpocząć fazę Mitów?
+KEEP_ZOOM,Zachowaj moje przybliżenie, gdy scenariusz przesuwa kamerę
+HIDE_CURSOR,Ukryj wskaźnik myszy
+LOG_COPIED,Skopiowano
+READ_ALOUD,Czytaj na głos
+STOP_READING,Przestań czytać
+AUTO_READ,Czytaj wydarzenia na głos, gdy się pojawiają
+ITEM_SIZE,Rozmiar przedmiotów
+MONSTER_PLACE,Potwory
+MONSTER_PLACE_RIGHT,Po prawej
+MONSTER_PLACE_BOTTOM,Na dole
+BUTTONS_APART,Przyciski zdarzeń oddzielnie od tekstu, jak w oficjalnej aplikacji
+EPIC_SPAWNS,Wyróżniaj pojawienie się groźnego potwora
+VOICE,Głos do czytania na głos
+VOICE_BROWSER,Przeglądarki
+VOICE_OFF,Wyłączony
+VOICE_SAMPLE,Drzwi otwierają się ze skrzypieniem. Coś czeka w ciemności.
+VOICE_TRY,Wypróbuj głos
+VOICE_NONE,Ta przeglądarka nie ma własnych głosów.
+VOICE_WHICH,Głos
+VOICE_BEST,Najlepszy dla języka
+VOICE_GEMINI,Gemini (Google)
+VOICE_GEMINI_KEY,Klucz API Gemini
+VOICE_GEMINI_MODEL,Model
+VOICE_GEMINI_STYLE,Jak czytać (opcjonalnie)
+VOICE_GEMINI_STYLE_HINT,Czytaj jak narrator horroru, ściszonym głosem
+VOICE_GEMINI_NOTE,Teksty są wysyłane do Google do odczytania. Klucz zostaje w tej przeglądarce i nie trafia do kopii zapasowych.
+VOICE_GEMINI_NO_KEY,Podaj klucz, aby używać Gemini (aistudio.google.com/apikey). Do tego czasu czyta głos przeglądarki.
+VOICE_GEMINI_TIME,Pierwszy dźwięk po {0} s; całe audio po {1} s.
+VOICE_GEMINI_FAILED,Gemini nie mógł tego odczytać: {0}. Przeczytał to głos przeglądarki.
+VOICE_SPEECHIFY,Speechify
+VOICE_SPEECHIFY_KEY,Klucz API Speechify
+VOICE_SPEECHIFY_LOADING,Wczytywanie głosów…
+VOICE_SPEECHIFY_NO_VOICES,Speechify nie ma głosów dla tego języka w tym modelu.
+VOICE_SPEECHIFY_NOTE,Teksty są wysyłane do Speechify do odczytania. Klucz zostaje w tej przeglądarce i nie trafia do kopii zapasowych.
+VOICE_SPEECHIFY_NO_KEY,Podaj klucz, aby używać Speechify (platform.speechify.ai). Do tego czasu czyta głos przeglądarki.
+VOICE_SPEECHIFY_FAILED,Speechify nie mógł tego odczytać: {0}. Przeczytał to głos przeglądarki.
+VOICE_DEEPGRAM,Deepgram
+VOICE_DEEPGRAM_KEY,Klucz API Deepgram
+VOICE_DEEPGRAM_NO_VOICES,Deepgram nie ma głosów Aura-2 dla tego języka: czyta głos przeglądarki.
+VOICE_DEEPGRAM_NOTE,Teksty są wysyłane do Deepgram do odczytania. Klucz zostaje w tej przeglądarce i nie trafia do kopii zapasowych.
+VOICE_DEEPGRAM_NO_KEY,Podaj klucz, aby używać Deepgram (console.deepgram.com). Do tego czasu czyta głos przeglądarki.
+VOICE_DEEPGRAM_FAILED,Deepgram nie mógł tego odczytać: {0}. Przeczytał to głos przeglądarki.
+VOICE_DEEPGRAM_FAMILY,Rodzaj głosu
+VOICE_DEEPGRAM_OTHER,Inny głos (jego nazwa w playground)
+HORROR_REMINDER,Przypominaj o testach grozy po aktywacji potworów
+HORROR_REMINDER_TEXT,Krok grozy: każdy badacz wykonuje test grozy przeciwko potworowi w zasięgu o najwyższej wartości grozy.
+BLANK_TILES,Pokaż pusty kafel, gdy jakiegoś brakuje, zamiast przerywać
+CLICK_SOUND,Dźwięk kliknięcia przycisków w menu
+MUSIC_IMPORTED,Muzyka oficjalnej gry (zaimportowana)
+MUSIC_CUSTOM,Muzyka przygody (jej autora)
+MENU_SOUND,Dźwięk menu
+FILTER_DOWNLOADED,Pobrane
+FILTER_DOWNLOADED_ONLY,Pobrane
+FILTER_NOT_DOWNLOADED,Niepobrane
+UPDATE_ALL,Zaktualizuj wszystkie ({0})
+UPDATING_ALL,Aktualizacja {0} z {1}: {2}
+TILES_SHOW,Zobacz kafle
+TILES_SPOILER,Uwaga, spoiler: kafle zdradzają część mapy, którą będziesz badać. Chcesz je zobaczyć?
+TILES_CONTINUE,Dalej i zobacz
+TILES_TITLE,Kafle scenariusza
+TILES_LOADING,Wczytywanie map scenariusza…
+TILES_NONE,Ten scenariusz nie układa kafli.
+TILES_OPTIONAL,Opcjonalne: z „{0}”, którego nie ma w twojej kolekcji
+TILES_OPTIONAL_NOTE,Scenariusz układa te kafle tylko wtedy, gdy masz ten dodatek. Jeśli go masz, zaznacz go w swojej kolekcji.
+TILES_UNKNOWN,W żadnym znanym dodatku
+HEROES_ASKED_EXACT,Ten scenariusz wymaga: {0}
+HEROES_ASKED_RANGE,Ten scenariusz wymaga: od {0} do {1}
+HEROES_CHOSEN,wybrano: {0}
+HERO_VIEW,Rozmiar listy
+HERO_VIEW_NORMAL,Małe
+HERO_VIEW_LARGE,Duże
+HERO_VIEW_LARGER,Portrety
+OPTIONS_RESET,Przywróć opcje domyślne
+OPTIONS_RESET_CONFIRM,Przywrócić wszystkie opcje do stanu początkowego? Język, gry, oznaczenia i pobrane pliki pozostaną bez zmian.
+TRANSLATE,Automatyczne tłumaczenie
+TRANSLATE_WARNING,SI tłumaczy scenariusze, które nie są w twoim języku. Może się mylić, a jakość zależy od wybranego modelu. Teksty są wysyłane do OpenRouter do przetłumaczenia. Konfiguracja jest prosta:
+TRANSLATE_STEP_1,Załóż darmowe konto na openrouter.ai.
+TRANSLATE_STEP_2,Przejdź do Keys (openrouter.ai/keys), naciśnij Create Key, nadaj nazwę i skopiuj klucz: zaczyna się od sk-or- i jest widoczny tylko raz.
+TRANSLATE_STEP_3,Wklej go poniżej. Jest przechowywany tylko w tej przeglądarce.
+TRANSLATE_STEP_4,Wybierz model albo zostaw darmowy model DeepSeek, który ustawiamy. Darmowe modele mogą być wolne lub mieć limit na minutę; z doładowaniem możesz używać szybszych.
+TRANSLATE_ENABLE,Włącz
+TRANSLATE_KEY,Klucz OpenRouter
+TRANSLATE_MODEL,Model
+TRANSLATE_MODELS_LOADING,Szukanie darmowych modeli OpenRouter…
+TRANSLATE_MODEL_OTHER,Inny model (jego nazwa w OpenRouter)
+TRANSLATE_TRY,Wypróbuj tłumaczenie
+TRANSLATE_WORKING,Tłumaczenie…
+TRANSLATED,Tłumaczenie automatyczne
+TRANSLATE_FAILED,Nie udało się przetłumaczyć: {0}
+TILES_TABLE,Potrzebny stół: około {0} × {1} cm
+TILES_TABLE_NOTE,Największa mapa ze wszystkimi kaflami naraz, bez kart i elementów wokół.
+MUSIC_CREDIT_LABEL,Autorzy muzyki
+MUSIC_CREDIT,Muzyka: {0}
+MUSIC_CREDIT_CHANNEL,{0} na YouTube
+MORE_INFO,Więcej informacji
+TILES_TABLE_INFO,Ta informacja może różnić się od rzeczywistości: to największy rozmiar obliczony z mapy scenariusza.
+TRANSLATE_TIMEOUT,model odpowiadał dłużej niż {0} s. Spróbuj ponownie lub wybierz inny model
+TRANSLATE_TOOK,{0} odpowiedział w {1} s.
+TRANSLATE_DISABLED,Tymczasowo wyłączone, dopóki go ulepszamy.
+STORAGE,Pamięć
+STORAGE_USED,Aplikacja zajmuje {0} MB z {1} MB, na które pozwala jej ta przeglądarka.
+STORAGE_PERSISTED,Przeglądarka zachowa te pliki, nawet gdy zabraknie jej miejsca.
+STORAGE_NOT_PERSISTED,Gdy przeglądarce zabraknie miejsca, może usunąć te pliki: co jakiś czas zrób kopię zapasową.
+STORAGE_PERSIST,Poproś przeglądarkę, by je zachowała
+STORAGE_PERSIST_REFUSED,Przeglądarka się nie zgodziła. Niektóre robią to tylko dla zainstalowanych aplikacji lub często odwiedzanych stron.
+STORAGE_WRITE_FAILED,Nie udało się zapisać czegoś w tej przeglądarce: {0}
+GO_ON_PLAYING,Graj dalej
+SAVE_AND_QUIT,Zapisz i wyjdź
+COPY_DIAGNOSTICS,Skopiuj szczegóły błędu
+DIAGNOSTICS_COPIED,Skopiowano: wklej to do zgłoszenia
+OTHER_WINDOW,Aplikacja jest już otwarta w innym oknie lub karcie: używaj tylko jednej, bo nadpiszą sobie dane.
+DELETE_SCENARIO_CONFIRM,Usunąć {0} z tego urządzenia? Aby w to zagrać, trzeba będzie pobrać to ponownie.
+SAVE_FAILED,Nie udało się zapisać gry: {0}
+NOT_A_ZIP,{0} nie jest plikiem zip: scenariusz Valkyrie to zip z rozszerzeniem .valkyrie.
+CHECK_TITLE,Dodano {0}, z uwagami
+CHECK_TITLE_ERRORS,Nie można otworzyć {0}
+CHECK_FIXED_FOLDER,Scenariusz był w folderze «{0}» w zipie, więc aplikacja go wyjęła, żeby dało się w niego grać. Valkyrie by go tak nie otworzyła: aby go udostępnić, spakuj zawartość folderu, a nie folder.
+CHECK_BLANK_LINE,{0}, wiersz {1}: zawiera tylko spacje lub tabulatory i Valkyrie nie odczyta pliku. Zostaw go pustym.
+CHECK_FORMAT,Jego format ({0}) nie jest obsługiwany przez Valkyrie (od {1} do {2}).
+CHECK_NO_QUESTTEXT,quest.ini nie ma sekcji [QuestText], która wskazuje teksty: Valkyrie go nie otworzy.
+CHECK_MISSING_FILE,quest.ini wskazuje plik {0}, którego nie ma w scenariuszu.
+CHECK_LOCALIZATION_HEADER,{0}: pierwszy wiersz musi wyglądać jak «.,Polish» i podawać język; Valkyrie go nie odczyta.
+CHECK_MISSING_EVENT,{0} ma przycisk do zdarzenia {1}, które nie istnieje.
+CHECK_MORE,I jeszcze {0} podobnych.
+CHECK_UNREADABLE,Nie można odczytać {0}: {1}
+COLOUR_CLASSIC,Klasyczny
+PREVIOUS_PAGE,Poprzednia strona
+NEXT_PAGE,Następna strona
+PAGE_OF,Strona {0} z {1}
+TRANSLATION_BUTTON,Moje tłumaczenie
+TRANSLATION_TITLE,Twoje tłumaczenie tego scenariusza
+TRANSLATION_EXPLAIN,Wczytaj zip z plikiem Localization.<język>.txt swojego tłumaczenia oraz, jeśli je zmieniasz, obrazami i dźwiękami pod nazwami, jakie nadaje im scenariusz. Zostaje zapisane na tym urządzeniu i używane, gdy zaczynasz grę w tym scenariuszu w tym języku. Inne w tym samym języku zastępuje poprzednie.
+TRANSLATION_NONE,Nie masz własnego tłumaczenia tego scenariusza.
+TRANSLATION_SAVED_LINE,{0}: {1} z {2} tekstów, {3} obrazów i {4} dźwięków ({5}).
+TRANSLATION_LOAD,Wczytaj zip
+TRANSLATION_REMOVE,Usuń
+TRANSLATION_REMOVE_LANGUAGE,Usuń tłumaczenie na {0}
+TRANSLATION_READING,Czytanie…
+TRANSLATION_REPORT_TITLE,Co znaleziono w {0}
+TRANSLATION_NOT_SAVED,Nie zostało zapisane:
+TRANSLATION_TEXTS,Przetłumaczone teksty: {0} z {1}.
+TRANSLATION_IMAGES,Zastąpione obrazy: {0}.
+TRANSLATION_SOUNDS,Zastąpione dźwięki: {0}.
+TRANSLATION_SAVED,Zapisane na tym urządzeniu: zostanie użyte, gdy zagrasz w ten scenariusz w języku {0}.
+TRANSLATION_REPLACED,Zastępuje twoje wcześniejsze tłumaczenie na {0}.
+TRANSLATION_NOT_ZIP,Plik nie jest zipem.
+TRANSLATION_NO_TEXTS_FILE,Zip nie zawiera pliku Localization.<język>.txt z tekstami.
+TRANSLATION_SEVERAL_LANGUAGES,Zip zawiera teksty w kilku językach ({0}): wczytuj po jednym.
+TRANSLATION_UNKNOWN_LANGUAGE,«{0}» nie jest jednym z języków Valkyrie ({1}).
+TRANSLATION_NAME_LANGUAGE,Nazwa {0} nie zgadza się z językiem w środku ({1}): liczy się ten w środku.
+TRANSLATION_NOTHING_TRANSLATED,Żaden z tekstów nie pochodzi z tego scenariusza: czy jest z innego?
+TRANSLATION_UNKNOWN_TEXTS,{0} tekstów nie istnieje w scenariuszu (z innej wersji?): {1}.
+TRANSLATION_UNUSED_FILES,{0} plików nie zastępuje żadnego ze scenariusza i nie zostaną użyte: {1}. Muszą się nazywać tak jak pliki scenariusza.
+TRANSLATION_REPLACES_OWN,Scenariusz jest już w języku {0}: twoje teksty zastępują jego własne.
+TRANSLATION_OTHER_LANGUAGE,Jest w języku {0}, a grasz w języku {1}: zostanie użyte tylko po zmianie języka na {0}.
+TRANSLATION_SWITCH_ASK,Zmienić teraz język aplikacji? Nowy język: {0}. Menu i ten scenariusz zmienią się razem z nim.
+TRANSLATION_SWITCH,Zmień język: {0}
+TRANSLATION_STAY,Zostaw: {0}
+RULES_HELP,Pomoc i zasady
+RULES_ACTIONS,Akcje badacza
+RULES_ACTIONS_D2E,Akcje bohatera
+RULES_ACTIONS_DOOM,Akcje marine
+RULES_SUMMARY,Skrót zasad
+RULES_NOTE,Skrót przygotowany przez fanów, by przypomnieć sobie zasady. Nie zastępuje oficjalnych instrukcji.
+SHOW_MAP,Pokaż planszę
+SHOW_TEXT,Wróć do tekstu
+CLEAR_ELIMINATED,Cofnij wyeliminowanie
+NO_WEBGL,Ta przeglądarka nie może narysować planszy, bo nie ma WebGL. Włącz w jej ustawieniach akcelerację sprzętową albo spróbuj innej przeglądarki.
+BOARD_LOST,Planszy zabrakło pamięci i nie da się jej narysować ponownie. Zamknij całkiem aplikację, otwórz ją ponownie i wybierz Kontynuuj.
+TILES_TAB,Kafelki
+MONSTERS_SHOW,Wrogowie
+ITEMS_SHOW,Przedmioty
+MONSTERS_TITLE,Wrogowie scenariusza
+ITEMS_TITLE,Przedmioty scenariusza
+MONSTERS_NOTE,Potwory, które scenariusz wymienia. Losowanych według cech tu nie ma.
+ITEMS_NOTE,Przedmioty, które scenariusz wymienia. Losowanych tu nie ma.
+MONSTERS_NONE,Ten scenariusz nie wymienia własnych potworów.
+ITEMS_NONE,Ten scenariusz nie wymienia własnych przedmiotów.
+HELP_SEARCH,Szukaj w pomocy
+HELP_SEARCH_NONE,Nic w pomocy nie pasuje.
+QUIT_CONFIRM,Wyjść do menu głównego? Gra zapisze się sama, a Kontynuuj ją wznowi.
+QUIT_CONFIRM_YES,Wyjdź
+BUTTON_HINTS,Delikatnie podświetlaj przyciski scenariusza po chwili bez naciśnięcia
+QUEST_SERIOUS,Uwaga: ten scenariusz ma {0} błędów autora, które mogą zatrzymać grę lub przerwać wydarzenie.
+QUEST_SERIOUS_SHOW,Pokaż
+QUEST_SERIOUS_HIDE,Ukryj
+QUEST_SERIOUS_TELL,To błędy autora: jeśli któryś zatrzyma grę, daj mu znać.
+FAULT_ADD_MISSING,{0} kładzie na stół coś, co nie istnieje
+FAULT_TILE,Kafelka {0} nie ma w żadnym dodatku
+FAULT_START,Nie ma wydarzenia startowego
+FAULT_TWICE,{0} jest zapisane dwa razy
+FAULT_TEXT,Tekst w języku {0} jest źle zamknięty
+GAME_TIMER,Pokazuj czas rundy i gry
+TIMER_ROUND,Runda {0}
+TIMER_GAME,Gra {0}
+SCENARIO_FAULTS,Ostrzegaj w szczegółach scenariusza o poważnych błędach autora
+TV_MODE,Tryb TV: wszystko większe i czytelne z daleka
+FULLSCREEN,Pełny ekran
+NOTES,Notatki
+NOTES_HINT,Wskazówki, kody, kto co niesie…
+NOTES_KEPT,Zapisują się razem z grą.
+EDITOR_NOT_READY,Edytor nie jest gotowy
+EDITOR_EARLY,Jesteśmy na bardzo wczesnym etapie: używaj go tylko do wypróbowania, nie jako gotowego narzędzia
+EDITOR_COMPUTER_ONLY,Na razie otwiera się tylko na komputerze, z myszą lub touchpadem: nie na telefonie ani tablecie.
+EDITOR_ENTER,Rozumiem, wejdź
+ADD_CONTENT_PACK,Dodaj pakiet z pliku
+PACKS_FROM_FILES,Na tym urządzeniu, poza listą sklepu
+PACK_ADDED,Dodano {0}. Aby go użyć, wybierz go w {1}, w {2}.
+PACK_CHECK_TITLE,Dodano {0}, z ostrzeżeniami
+PACK_CHECK_TITLE_ERRORS,Nie można dodać {0}
+PACK_NOT_ZIP,{0} nie jest plikiem zip: pakiet zawartości to zip z rozszerzeniem .valkyrieContentPack.
+PACK_IS_SCENARIO,{0} to scenariusz, a nie pakiet zawartości: dodaj go na liście scenariuszy przyciskiem „{1}”.
+PACK_NO_INI,{0} nie ma content_pack.ini, ani na górze, ani w żadnym folderze, więc Valkyrie nie uznaje go za pakiet.
+PACK_NO_NAME,content_pack.ini nie ma name w [ContentPack]: Valkyrie zatrzymuje się przy jego odczycie. Dodaj name=… z nazwą pakietu.
+PACK_NO_ID,content_pack.ini nie ma id w [ContentPack]. Dodaj unikalne id (takie samo jak w manifeście): pod nim pakiet jest zapisywany i tak żądają go scenariusze.
+PACK_BAD_ID,Id „{0}” ma spacje lub znaki: scenariusze oddzielają pakiety spacjami, a id nazywa plik. Używaj tylko liter, cyfr, - i _.
+PACK_OFFICIAL_ID,Id „{0}” należy do oficjalnego pakietu: ten by go zastąpił. Wybierz inne id.
+PACK_STORE_ID,Sklep ma już pakiet o id „{0}”: na tym urządzeniu ten zajmie jego miejsce. Jeśli to nie twoja wersja tamtego pakietu, wybierz inne id.
+PACK_NO_TYPE,content_pack.ini nie ma type: dodaj type={0}Custom.
+PACK_OTHER_GAME,To pakiet do drugiej gry (type={0}): dodaj go w {1}.
+PACK_BAD_TYPE,type={0} nie pasuje do tej gry: musi zaczynać się od {1}, np. {1}Custom.
+PACK_NOT_CUSTOM,type={0}: pakiety społeczności używają {1}; z innym typem nie pojawi się wśród nich w kolekcji.
+PACK_NO_IMAGE,Obrazu pakietu ({0}) nie ma w pakiecie: będzie wyświetlany bez obrazu.
+PACK_NO_ICON,Ikony pakietu ({0}) nie ma w pakiecie.
+PACK_CASE,{0} nazywa się w pakiecie {1}. Tej aplikacji i Windowsowi wielkość liter nie przeszkadza, ale Valkyrie na Androidzie i Linuksie tak i nie znajdzie pliku. Zapisz go tak samo.
+PACK_LANGUAGE_LINE,[LanguageData] ma wiersz „{0}”: musi podawać słownik i plik, np. „pck Localization.Polish.txt”.
+PACK_MISSING_LANGUAGE,[LanguageData] wymienia {0}, którego nie ma w pakiecie: jego teksty się nie pojawią.
+PACK_MISSING_DATA,[ContentPackData] wymienia {0}, którego nie ma w pakiecie: Valkyrie przestaje wczytywać pakiet na tym pliku.
+PACK_UNKNOWN_SECTION,{0}: Valkyrie nie wie, czym jest [{1}], i go pomija. Nazwa sekcji musi zaczynać się od jej typu (TileSide, Monster, Item, Token…).
+PACK_DUPLICATE,[{0}] jest w {1} i w {2}: liczy się tylko pierwszy. Nadaj każdemu własną nazwę.
+PACK_NAME_TAKEN,[{0}] definiuje już pakiet {1}: liczy się tylko jeden z nich. Nadaj swojemu własną nazwę.
+PACK_MISSING_IMAGE,{0}, [{1}]: obrazu {2} nie ma w pakiecie (ani jako .png, .jpg, .dds…): będzie wyświetlany bez obrazu.
+PACK_IMAGE_ROOTED,{0}, [{1}]: obraz {2} zaczyna się od ukośnika, więc Valkyrie szuka go poza pakietem. Usuń ukośnik.

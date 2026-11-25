@@ -1,0 +1,417 @@
+.,Japanese
+// Translated by Claude from the English texts (October 2026): corrections by native speakers are welcome.
+APP_NAME,Valkyrie Universalis
+UNOFFICIAL,非公式・ファン制作
+ADD_SCENARIO,シナリオファイルを追加
+NO_SCENARIOS,シナリオはまだありません。ストアや作者から入手した .valkyrie ファイルを追加してください。
+NOT_A_SCENARIO,{0} は Valkyrie のシナリオではありません。
+SCENARIO_ADDED,{0} を追加しました。
+SCENARIO_OTHER_GAME,{0} は {1} のシナリオです。そちらの一覧にあります。
+SCENARIO_FILTERED,{0} を追加しましたが、フィルターで非表示になっています（言語、または持っていない拡張）。
+SCENARIO_INVALID,{0} を開けません。quest.ini がこのバージョンの Valkyrie に対応していません。
+RELOAD_LIST,リストを再読み込み
+PLAY_SCENARIO,プレイ
+LANGUAGES,言語：{0}
+RATING,評価：10 点中 {0} 点
+DOWNLOAD_FAILED,{0} をダウンロードできませんでした。接続を確認して、もう一度お試しください。
+HEROES_RANGE,探索者 {0}～{1} 人
+MINUTES_RANGE,{0}～{1} 分
+ABOUT_TEXT,Valkyrie Universalis は、NPBruce と協力者たちによる無料アプリ Valkyrie のウェブ版です。ファンが制作しており、Fantasy Flight Games とは一切関係ありません。出版社の画像・音声・テキストは含まれていません。各プレイヤーが自分で取り込み、それは各自のブラウザ内にとどまります。
+ABOUT_CODE,Apache 2.0 ライセンスのコード。Valkyrie {0} から移植。
+STORAGE_OFF,このブラウザはファイルを保存しません。追加したものはブラウザを閉じると消えます。
+STOPPED,シナリオが停止しました：{0}
+LOADING,読み込み中…
+SYMBOL_STRENGTH,筋力
+SYMBOL_AGILITY,敏捷性
+SYMBOL_OBSERVATION,観察力
+SYMBOL_LORE,知識
+SYMBOL_INFLUENCE,影響力
+SYMBOL_WILL,意志力
+SYMBOL_ACTION,アクション
+SYMBOL_SUCCESS,成功
+SYMBOL_CLUE,手がかり
+SYMBOL_TENTACLE,触手
+SYMBOL_PRODUCT,拡張アイコン
+MORALE,士気：{0}
+AVAILABLE_XP,使用可能な経験値：{0}
+SYMBOL_HEART,体力
+SYMBOL_FATIGUE,疲労
+SYMBOL_MIGHT,筋力
+SYMBOL_KNOWLEDGE,知識
+SYMBOL_AWARENESS,知覚
+SYMBOL_SHIELD,盾
+SYMBOL_SURGE,サージ
+MONSTER_LIST,モンスター
+NEXT_PHASE,次のフェイズ
+PHASE_BAR,ラウンド
+SCROLL_UP,前のモンスター
+SCROLL_DOWN,さらにモンスターを表示
+AWARENESS,警戒 {0}
+HORROR_VALUE,恐怖 {0}
+HEALTH,体力 {0}
+DAMAGE,ダメージ {0}
+DUPLICATE,グループ {0}
+END_TITLE,終わり
+WELCOME_TITLE,Valkyrie Universalis へようこそ
+WELCOME_TEXT,Valkyrie Universalis は、どんな端末でも動く Valkyrie のウェブ版です。パソコン、タブレット、スマートフォンで使え、アプリとしてインストールすることもできます。\n\nこれは初期バージョンです。十分にテストし、すべて正常に動いているようですが、まだ不具合が残っているかもしれません。\n\nシナリオエディターなど、まだ足りない機能があり、インターフェースも磨く必要があります。それでも、すでにシナリオを遊んで評価でき、新しいオプションもいくつか見つかるはずです…\n\nお楽しみください！
+WELCOME_HIDE,今後表示しない
+WELCOME_START,はじめる
+RATING_ALREADY_SENT,このシナリオの評価はすでに送信済みです（{0}/10）。各シナリオの評価は端末ごとに1回だけです。
+RATING_NOT_SENT,評価を送信できませんでした。接続を確認してもう一度お試しください。評価はこの端末に保存されています。
+MY_RATING,あなたの評価：{0}/10
+FEEDBACK_BUTTON,アプリの不具合を報告
+FEEDBACK_TITLE,不具合の報告・アイデアの提案
+FEEDBACK_INTRO,うまく動かないことや、アイデアはありますか？開発者に直接届きます。不具合の場合は、何をしていて何が起きたかを書いてください。
+FEEDBACK_KIND,種類
+FEEDBACK_BUG,不具合
+FEEDBACK_IDEA,アイデア
+FEEDBACK_OTHER,その他
+FEEDBACK_COMMENT,コメント
+FEEDBACK_EMAIL,メールアドレス（任意。返信がほしい場合）
+FEEDBACK_TECHNICAL,一緒に送信される技術情報
+FEEDBACK_EMPTY,送信する前にコメントを書いてください。
+FEEDBACK_FAILED,送信できませんでした。接続を確認してもう一度お試しください。
+FEEDBACK_SENT,ありがとうございます！コメントを送信しました。
+FEEDBACK_SEND,送信
+FEEDBACK_CANCEL,キャンセル
+FEEDBACK_CLOSE,閉じる
+PUZZLE_SYMBOLS,記号
+PUZZLE_ADD,{0} を追加
+PUZZLE_REMOVE,{0} を外す
+PUZZLE_CODE,あなたの推理
+PUZZLE_GUESSES,これまでの推理
+PUZZLE_RESULT,位置も正しい：{0}、位置違い：{1}
+PUZZLE_BLOCKS,ブロック
+PUZZLE_TARGET_BLOCK,赤いブロック
+PUZZLE_BLOCK,ブロック
+PUZZLE_PIECES,絵のピース
+PUZZLE_PIECE,ピース {0}
+PUZZLE_TOWERS,塔
+PUZZLE_TOWER,塔 {0}
+IMPORT_SUBTITLE,Universalis は、あなたが持っている {0} 公式アプリから Valkyrie がインポートしたコンテンツを使います。このブラウザに一度だけコピーされ、外に出ることはありません。
+IMPORT_FROM_FOLDER,Valkyrie の import フォルダーを選択
+IMPORT_FOLDER_DESC,Windows では %APPDATA%\Valkyrie\{0}\import にあります。
+IMPORT_ZIP_DESC,同じ import フォルダーの zip：スマートフォンやタブレット向けの方法です。
+IMPORT_PROGRESS,{1} 個中 {0} 個のファイル
+IMPORT_NO_INI,import.ini がありません。Valkyrie の import フォルダーか、その zip を選んでください。
+IMPORT_RAW_ASSETS,これは公式アプリそのもののファイルです。Universalis はまだ読み込めません。まず Valkyrie でインポートしてから、その import フォルダーを選んでください。
+IMPORT_NO_SPACE,このブラウザの空き容量が足りません：{0} MB 必要ですが、空きは {1} MB です。
+IMPORT_UNREADABLE,zip を読み込めません：{0}
+IMPORT_FAILED,インポートに失敗しました：{0}
+IMPORT_OLD,このインポートは別のバージョンの Valkyrie か公式アプリで作られたため使用されません。最新の Valkyrie でもう一度インポートし、そのフォルダーをここに持ってきてください。
+THEME,テーマ
+FELT,盤面の下のフェルト
+COLOUR_BLACK,黒
+COLOUR_GREEN,緑
+COLOUR_RED,ワインレッド
+COLOUR_BLUE,青
+BOARD_TILT,盤面の傾き
+BOARD_TILT_TABLE,テーブルのように（30°）
+BOARD_TILT_VALKYRIE,Valkyrie と同じ（10°）
+VERSION,バージョン {0}
+NEW_VERSION,アプリの新しいバージョンがあります。
+RELOAD_APP,再読み込み
+INSTALL_APP,アプリをインストール
+INSTALL_APPLE,この iPhone や iPad にインストールするには、「共有」をタップしてから「ホーム画面に追加」をタップしてください。
+IMPORT_INSTALL_FIRST,iPhone と iPad では、先にアプリをインストールし（「共有」→「ホーム画面に追加」）、そこからインポートしてください。インストールしたアプリは、ブラウザとは別にファイルを保存します。
+IMPORT_TO_PLAY,プレイするには、あなたが持っている {0} 公式アプリから Valkyrie がインポートしたコンテンツが必要です。それまではシナリオを見ることができます。
+BACKUP,バックアップ
+BACKUP_TEXT,アプリが保存しているもの（セーブしたゲーム、オプション、コレクション、ダウンロードしたシナリオとパック）は、この端末のこのブラウザの中にあります。バックアップはそれをすべて 1 つのファイルにまとめます。別のブラウザや端末に移すため、またはブラウザがデータを消したときに取り戻すためです。公式のインポートは含まれないので、もう一度インポートしてください。
+BACKUP_DOWNLOAD,バックアップをダウンロード
+BACKUP_RESTORE,バックアップを復元
+BACKUP_MAKING,バックアップを作成中：{1} 個中 {0} 個のファイル…
+BACKUP_MADE,バックアップをダウンロードしました：{0} MB。
+BACKUP_CONFIRM,このブラウザにアプリが保存しているものは、すべて {0} の内容に置き換わります。続けますか？
+BACKUP_RESTORE_GO,復元
+BACKUP_RESTORING,復元中：{1} 個中 {0} 個…
+BACKUP_NOT_ONE,このファイルは Valkyrie Universalis のバックアップではありません。
+BACKUP_UNREADABLE,バックアップを読み込めません：{0}
+BACKUP_FAILED,できませんでした：{0}
+BACKUP_UNFINISHED,バックアップはブラウザに入りました。次にアプリを開いたときに反映されます。
+BACKUP_NOT_FINISHED,バックアップはまだ反映できていません（{0}）。アプリを開いたときにもう一度試します。
+DOOM_NAME,DooM
+DOOM_NEEDS_PACK,DooM のミッションにはコミュニティのコンテンツパックが必要です。ストアからダウンロードしてください。
+DOOM_DOWNLOAD_PACK,DooM をダウンロード
+TURN_PHONE,スマートフォンを横向きにしてください。ゲームは横画面で遊びます。
+PLAY_UPRIGHT,縦向きで遊ぶ
+MOM_TITLE,マンションオブマッドネス
+MOM_EDITION,第２版
+D2E_TITLE,ディセント
+D2E_SUBTITLE,闇への旅立ち
+D2E_EDITION,第２版
+COLOUR_UNIVERSALIS,Universalis（イラスト）
+COLOUR_PURE,純黒
+MARKS,マーク
+MARK_PLAYED,プレイ済み
+MARK_FAVORITE,お気に入り
+MARK_PENDING,あとで
+FILTER_PLAYED,プレイ済みか
+FILTER_PLAYERS,プレイヤー数
+SORT_TITLE,並べ替え
+FILTER_CATEGORIES,冒険の種類
+FILTER_CATEGORIES_NOTE,マンションズ・オブ・マッドネスのみ。チェックした項目をすべて持つ冒険を表示します。
+CATEGORY_BEGINNERS,初心者向け
+CATEGORY_SHORT,短め
+CATEGORY_NARRATIVE,物語重視
+CATEGORY_COMBAT,戦闘
+CATEGORY_CAMPAIGN,キャンペーン・シリーズ
+CATEGORY_REPLAYABLE,繰り返し遊べる
+FILTERS_ON,絞り込み中：{1}件中{0}件
+FILTERS_CLEAR,絞り込みを解除
+FILTERS_HIDE_ALL,絞り込みですべてのシナリオが隠れています。解除すると再び表示されます。
+FILTER_SEARCH_ON,検索：「{0}」
+FILTER_LANGS_ON,言語：{0}
+FILTER_EXPANSIONS_ON,足りない拡張を除く
+FILTER_PLAYERS_ON,プレイヤー：{0}
+ADULT_CONTENT,成人向け
+IGOR_NOT_LISTED,この冒険はこの一覧にありません。オンラインでストアを表示してください。
+IGOR_OPEN,イゴールと話す
+IGOR_FILTERED,イゴールは冒険を見つけましたが、絞り込みで隠れています。解除すると表示されます。
+FILTER_MARKS,マーク付き
+FILTER_ALL,すべて
+FILTER_PLAYED_ONLY,プレイ済み
+FILTER_UNPLAYED,未プレイ
+FILTER_FAVORITES,お気に入り
+FILTER_PENDING,あとで
+SIZE_NORMAL,標準
+SIZE_LARGE,大
+SIZE_LARGER,特大
+PIECE_SIZE,盤面のトークンの大きさ
+PIECE_SIZE_LARGE,大（+30%）
+OPTIONS_LOOK,外観
+OPTIONS_ADVANCED_TEXT,ゲームの進め方の変更です。すべてオフなら Valkyrie と同じように遊べます。
+CONFIRM_PHASE,探索者フェイズを終える前に確認する
+CONFIRM_PHASE_TEXT,探索者フェイズを終えて神話フェイズを始めますか？
+KEEP_ZOOM,シナリオがカメラを動かしても自分のズームを保つ
+HIDE_CURSOR,マウスポインターを隠す
+LOG_COPIED,コピーしました
+READ_ALOUD,読み上げ
+STOP_READING,読み上げを止める
+AUTO_READ,イベントが表示されたら読み上げる
+ITEM_SIZE,アイテムの大きさ
+MONSTER_PLACE,モンスター
+MONSTER_PLACE_RIGHT,右
+MONSTER_PLACE_BOTTOM,下
+BUTTONS_APART,イベントのボタンを本文と分ける（公式アプリのように）
+EPIC_SPAWNS,強いモンスターの登場を演出する
+VOICE,読み上げの声
+VOICE_BROWSER,ブラウザーの声
+VOICE_OFF,オフ
+VOICE_SAMPLE,扉がきしみながら開く。闇の中で何かが待っている。
+VOICE_TRY,声を試す
+VOICE_NONE,このブラウザーには音声がありません。
+VOICE_WHICH,声
+VOICE_BEST,言語に最適な声
+VOICE_GEMINI,Gemini（Google）
+VOICE_GEMINI_KEY,Gemini API キー
+VOICE_GEMINI_MODEL,モデル
+VOICE_GEMINI_STYLE,読み方（任意）
+VOICE_GEMINI_STYLE_HINT,ホラーの語り手のように、低い声で読んで
+VOICE_GEMINI_NOTE,テキストは読み上げのために Google に送信されます。キーはこのブラウザーにのみ保存され、バックアップには含まれません。
+VOICE_GEMINI_NO_KEY,Gemini を使うにはキーを入力してください（aistudio.google.com/apikey）。それまではブラウザーの音声が読みます。
+VOICE_GEMINI_TIME,最初の音まで {0} 秒、音声全体まで {1} 秒。
+VOICE_GEMINI_FAILED,Gemini は読み上げられませんでした：{0}。代わりにブラウザーの音声が読みました。
+VOICE_SPEECHIFY,Speechify
+VOICE_SPEECHIFY_KEY,Speechify API キー
+VOICE_SPEECHIFY_LOADING,音声を読み込んでいます…
+VOICE_SPEECHIFY_NO_VOICES,このモデルには、この言語の Speechify 音声がありません。
+VOICE_SPEECHIFY_NOTE,テキストは読み上げのために Speechify に送信されます。キーはこのブラウザーにのみ保存され、バックアップには含まれません。
+VOICE_SPEECHIFY_NO_KEY,Speechify を使うにはキーを入力してください（platform.speechify.ai）。それまではブラウザーの音声が読みます。
+VOICE_SPEECHIFY_FAILED,Speechify は読み上げられませんでした：{0}。代わりにブラウザーの音声が読みました。
+VOICE_DEEPGRAM,Deepgram
+VOICE_DEEPGRAM_KEY,Deepgram API キー
+VOICE_DEEPGRAM_NO_VOICES,Deepgram にはこの言語の Aura-2 音声がありません。ブラウザーの音声が読みます。
+VOICE_DEEPGRAM_NOTE,テキストは読み上げのために Deepgram に送信されます。キーはこのブラウザーにのみ保存され、バックアップには含まれません。
+VOICE_DEEPGRAM_NO_KEY,Deepgram を使うにはキーを入力してください（console.deepgram.com）。それまではブラウザーの音声が読みます。
+VOICE_DEEPGRAM_FAILED,Deepgram は読み上げられませんでした：{0}。代わりにブラウザーの音声が読みました。
+VOICE_DEEPGRAM_FAMILY,音声の種類
+VOICE_DEEPGRAM_OTHER,ほかの音声（playground での名前）
+HORROR_REMINDER,モンスターの行動後に恐怖判定を知らせる
+HORROR_REMINDER_TEXT,恐怖ステップ：各探索者は、範囲内で恐怖値が最も高いモンスターに対して恐怖判定を行う。
+BLANK_TILES,タイルがないときは止めずに白紙のタイルを置く
+CLICK_SOUND,メニューのボタンのクリック音
+MUSIC_IMPORTED,公式ゲームの音楽（インポート）
+MUSIC_CUSTOM,冒険の音楽（作者のもの）
+MENU_SOUND,メニューの音
+FILTER_DOWNLOADED,ダウンロード済み
+FILTER_DOWNLOADED_ONLY,ダウンロード済み
+FILTER_NOT_DOWNLOADED,未ダウンロード
+UPDATE_ALL,すべて更新（{0}）
+UPDATING_ALL,{1} 件中 {0} 件目を更新中：{2}
+TILES_SHOW,タイルを見る
+TILES_SPOILER,ネタバレ注意：タイルは探索するマップの一部を明かします。見ますか？
+TILES_CONTINUE,続けて見る
+TILES_TITLE,シナリオのタイル
+TILES_LOADING,シナリオのマップを読み込み中…
+TILES_NONE,このシナリオはタイルを置きません。
+TILES_OPTIONAL,オプション：「{0}」のもの（コレクションにありません）
+TILES_OPTIONAL_NOTE,シナリオはその拡張を持っている場合にのみこれらのタイルを置きます。持っている場合はコレクションでチェックしてください。
+TILES_UNKNOWN,既知のどの拡張にもありません
+HEROES_ASKED_EXACT,このシナリオは {0} 人が必要です
+HEROES_ASKED_RANGE,このシナリオは {0}〜{1} 人が必要です
+HEROES_CHOSEN,選択済み：{0}
+HERO_VIEW,リストの大きさ
+HERO_VIEW_NORMAL,小
+HERO_VIEW_LARGE,大
+HERO_VIEW_LARGER,肖像
+OPTIONS_RESET,既定のオプションに戻す
+OPTIONS_RESET_CONFIRM,すべてのオプションを初期状態に戻しますか？言語、セーブ、マーク、ダウンロードしたものはそのままです。
+TRANSLATE,自動翻訳
+TRANSLATE_WARNING,あなたの言語にないシナリオを AI が翻訳します。誤りがあることもあり、品質は選んだモデルしだいです。テキストは翻訳のため OpenRouter に送られます。設定は簡単です：
+TRANSLATE_STEP_1,openrouter.ai で無料アカウントを作成します。
+TRANSLATE_STEP_2,Keys（openrouter.ai/keys）で Create Key を押し、名前を付けてキーをコピーします。キーは sk-or- で始まり、一度しか表示されません。
+TRANSLATE_STEP_3,下に貼り付けます。このブラウザーにだけ保存されます。
+TRANSLATE_STEP_4,モデルを選ぶか、こちらで設定した無料の DeepSeek モデルのままにします。無料モデルは遅かったり 1 分あたりの制限があったりします。クレジットがあればより速いモデルも使えます。
+TRANSLATE_ENABLE,オンにする
+TRANSLATE_KEY,OpenRouter のキー
+TRANSLATE_MODEL,モデル
+TRANSLATE_MODELS_LOADING,OpenRouter の無料モデルを探しています…
+TRANSLATE_MODEL_OTHER,ほかのモデル（OpenRouter での名前）
+TRANSLATE_TRY,翻訳を試す
+TRANSLATE_WORKING,翻訳中…
+TRANSLATED,自動翻訳
+TRANSLATE_FAILED,翻訳できませんでした：{0}
+TILES_TABLE,必要なテーブル：約 {0} × {1} cm
+TILES_TABLE_NOTE,最大のマップのタイルをすべて同時に置いた場合。周りのカードや駒は含みません。
+MUSIC_CREDIT_LABEL,音楽クレジット
+MUSIC_CREDIT,音楽：{0}
+MUSIC_CREDIT_CHANNEL,YouTube の {0}
+MORE_INFO,詳しい情報
+TILES_TABLE_INFO,この情報は実際と異なる場合があります。シナリオのマップから計算した最大の大きさです。
+TRANSLATE_TIMEOUT,モデルの応答が {0} 秒を超えました。もう一度試すか、別のモデルを選んでください
+TRANSLATE_TOOK,{0} は {1} 秒で応答しました。
+TRANSLATE_DISABLED,改善中のため一時的に無効にしています。
+STORAGE,ストレージ
+STORAGE_USED,このアプリは、このブラウザーが使用を許可している {1} MB のうち {0} MB を使っています。
+STORAGE_PERSISTED,空き容量が足りなくなっても、ブラウザーはこれらのファイルを残します。
+STORAGE_NOT_PERSISTED,ブラウザーの空き容量が足りなくなると、これらのファイルが削除されることがあります。ときどきバックアップを取ってください。
+STORAGE_PERSIST,ブラウザーに保持を依頼する
+STORAGE_PERSIST_REFUSED,ブラウザーに断られました。インストールしたアプリやよく訪れるサイトにしか許可しないブラウザーもあります。
+STORAGE_WRITE_FAILED,このブラウザーに保存できなかったものがあります：{0}
+GO_ON_PLAYING,プレイを続ける
+SAVE_AND_QUIT,保存して終了
+COPY_DIAGNOSTICS,エラーの詳細をコピー
+DIAGNOSTICS_COPIED,コピーしました：報告に貼り付けてください
+OTHER_WINDOW,アプリはすでに別のウィンドウかタブで開いています。1つだけ使ってください。データが上書きされます。
+DELETE_SCENARIO_CONFIRM,{0} をこの端末から削除しますか？遊ぶには再ダウンロードが必要です。
+SAVE_FAILED,ゲームを保存できませんでした：{0}
+NOT_A_ZIP,{0} は zip ファイルではありません。Valkyrie のシナリオは拡張子 .valkyrie の zip です。
+CHECK_TITLE,{0} を追加しました（注意あり）
+CHECK_TITLE_ERRORS,{0} を開けません
+CHECK_FIXED_FOLDER,シナリオは zip の「{0}」フォルダの中にあったため、アプリが取り出してプレイできるようにしました。Valkyrie ではこのままでは開けません。共有するときはフォルダではなく、その中身を圧縮してください。
+CHECK_BLANK_LINE,{0}、{1} 行目：空白またはタブだけの行があり、Valkyrie はファイルを読めません。完全な空行にしてください。
+CHECK_FORMAT,形式（{0}）は Valkyrie が読める形式（{1}〜{2}）ではありません。
+CHECK_NO_QUESTTEXT,quest.ini にテキストを列挙する [QuestText] セクションがないため、Valkyrie は開けません。
+CHECK_MISSING_FILE,quest.ini が指定しているファイル {0} がシナリオにありません。
+CHECK_LOCALIZATION_HEADER,{0}：1 行目は「.,Japanese」のように言語名を書く必要があります。Valkyrie は読めません。
+CHECK_MISSING_EVENT,{0} に存在しないイベント {1} へのボタンがあります。
+CHECK_MORE,ほかに同様のものが {0} 件あります。
+CHECK_UNREADABLE,{0} を読み込めません：{1}
+COLOUR_CLASSIC,クラシック
+PREVIOUS_PAGE,前のページ
+NEXT_PAGE,次のページ
+PAGE_OF,{1} ページ中 {0} ページ
+TRANSLATION_BUTTON,自分の翻訳
+TRANSLATION_TITLE,このシナリオの自分の翻訳
+TRANSLATION_EXPLAIN,翻訳の Localization.<言語>.txt と、変更する場合はシナリオが付けた名前のままの画像や音声を入れた zip を読み込んでください。この端末に保存され、そのシナリオをその言語で始めるときに使われます。同じ言語の別の翻訳は前のものを置き換えます。
+TRANSLATION_NONE,このシナリオの自分の翻訳はありません。
+TRANSLATION_SAVED_LINE,{0}:テキスト {2} 件中 {1} 件、画像 {3}、音声 {4}({5})。
+TRANSLATION_LOAD,zip を読み込む
+TRANSLATION_REMOVE,削除
+TRANSLATION_REMOVE_LANGUAGE,{0}の翻訳を削除
+TRANSLATION_READING,読み込み中…
+TRANSLATION_REPORT_TITLE,{0} で見つかったもの
+TRANSLATION_NOT_SAVED,保存されませんでした:
+TRANSLATION_TEXTS,翻訳済みテキスト:{1} 件中 {0} 件。
+TRANSLATION_IMAGES,置き換える画像:{0}。
+TRANSLATION_SOUNDS,置き換える音声:{0}。
+TRANSLATION_SAVED,この端末に保存しました:このシナリオを{0}で遊ぶときに使われます。
+TRANSLATION_REPLACED,以前の{0}の翻訳を置き換えます。
+TRANSLATION_NOT_ZIP,このファイルは zip ではありません。
+TRANSLATION_NO_TEXTS_FILE,zip にテキストの Localization.<言語>.txt ファイルがありません。
+TRANSLATION_SEVERAL_LANGUAGES,zip に複数の言語のテキストがあります({0}):一度に一つずつ読み込んでください。
+TRANSLATION_UNKNOWN_LANGUAGE,«{0}» は Valkyrie の言語ではありません({1})。
+TRANSLATION_NAME_LANGUAGE,{0} の名前が中の言語({1})と一致しません:中の言語が使われます。
+TRANSLATION_NOTHING_TRANSLATED,このシナリオのテキストが一つもありません:別のシナリオのものではありませんか?
+TRANSLATION_UNKNOWN_TEXTS,{0} 件のテキストがシナリオにありません(別のバージョン?):{1}。
+TRANSLATION_UNUSED_FILES,{0} 個のファイルはシナリオのどのファイルも置き換えないため使われません:{1}。シナリオのファイルと同じ名前にしてください。
+TRANSLATION_REPLACES_OWN,このシナリオにはすでに{0}があります:自分のテキストが元のテキストを置き換えます。
+TRANSLATION_OTHER_LANGUAGE,これは{0}で、あなたは{1}で遊んでいます:言語を{0}に変えたときだけ使われます。
+TRANSLATION_SWITCH_ASK,アプリの言語を今すぐ{0}に切り替えますか？メニューとこのシナリオも切り替わります。
+TRANSLATION_SWITCH,{0}に切り替える
+TRANSLATION_STAY,{0}のままにする
+RULES_HELP,ヘルプとルール
+RULES_ACTIONS,探索者のアクション
+RULES_ACTIONS_D2E,ヒーローのアクション
+RULES_ACTIONS_DOOM,マリーンのアクション
+RULES_SUMMARY,ルール要約
+RULES_NOTE,遊び方を思い出すためのファンによる要約です。公式ルールブックの代わりにはなりません。
+SHOW_MAP,マップを見る
+SHOW_TEXT,テキストに戻る
+CLEAR_ELIMINATED,探索者の死亡を取り消す
+NO_WEBGL,このブラウザーは WebGL に対応していないため、ボードを表示できません。設定でハードウェアアクセラレーションを有効にするか、別のブラウザーをお試しください。
+BOARD_LOST,メモリが不足したため、ボードを再表示できません。アプリを完全に閉じてから開き直し、「ゲームを続ける」を選んでください。
+TILES_TAB,タイル
+MONSTERS_SHOW,敵
+ITEMS_SHOW,アイテム
+MONSTERS_TITLE,シナリオの敵
+ITEMS_TITLE,シナリオのアイテム
+MONSTERS_NOTE,シナリオが指定するモンスター。特徴でランダムに引くものは含みません。
+ITEMS_NOTE,シナリオが指定するアイテム。ランダムに引くものは含みません。
+MONSTERS_NONE,このシナリオは独自のモンスターを指定していません。
+ITEMS_NONE,このシナリオは独自のアイテムを指定していません。
+HELP_SEARCH,ヘルプを検索
+HELP_SEARCH_NONE,ヘルプに一致するものはありません。
+QUIT_CONFIRM,メインメニューに戻りますか？ゲームは自動で保存され、「コンティニュー」で再開できます。
+QUIT_CONFIRM_YES,戻る
+BUTTON_HINTS,しばらく操作がないとき、シナリオのボタンをほのかに光らせる
+QUEST_SERIOUS,注意：このシナリオには、ゲームが止まったりイベントが途中で終わったりする作者のミスが {0} 件あります。
+QUEST_SERIOUS_SHOW,見る
+QUEST_SERIOUS_HIDE,隠す
+QUEST_SERIOUS_TELL,作者のミスです。ゲームが止まったら作者に知らせてください。
+FAULT_ADD_MISSING,{0} が存在しないものを置きます
+FAULT_TILE,タイル {0} はどのパックにもありません
+FAULT_START,開始イベントがありません
+FAULT_TWICE,{0} が二重に書かれています
+FAULT_TEXT,{0}のテキストが正しく閉じていません
+GAME_TIMER,ラウンドとゲームの経過時間を表示
+TIMER_ROUND,ラウンド {0}
+TIMER_GAME,ゲーム {0}
+SCENARIO_FAULTS,シナリオの詳細で作者の重大なミスを知らせる
+TV_MODE,テレビモード：すべて大きく、遠くから読みやすく
+FULLSCREEN,全画面
+NOTES,メモ
+NOTES_HINT,手がかり、暗号、誰が何を持つか…
+NOTES_KEPT,ゲームと一緒に保存されます。
+EDITOR_NOT_READY,エディターはまだ完成していません
+EDITOR_EARLY,まだごく初期の段階です。試すためだけに使い、完成したツールとしては使わないでください
+EDITOR_COMPUTER_ONLY,今のところ、開けるのはマウスかタッチパッドのあるパソコンだけです。スマートフォンやタブレットでは開けません。
+EDITOR_ENTER,わかりました、開く
+ADD_CONTENT_PACK,ファイルからパックを追加
+PACKS_FROM_FILES,この端末にあり、ストアの一覧にないもの
+PACK_ADDED,{0} を追加しました。使うには「{1}」の「{2}」で選んでください。
+PACK_CHECK_TITLE,{0} を追加しました（警告あり）
+PACK_CHECK_TITLE_ERRORS,{0} を追加できません
+PACK_NOT_ZIP,{0} は zip ファイルではありません。コンテンツパックは拡張子 .valkyrieContentPack の zip です。
+PACK_IS_SCENARIO,{0} はシナリオで、コンテンツパックではありません。シナリオ一覧の「{1}」から追加してください。
+PACK_NO_INI,{0} には最上位にもフォルダー内にも content_pack.ini がないため、Valkyrie はパックとして扱いません。
+PACK_NO_NAME,content_pack.ini の [ContentPack] に name がありません。Valkyrie は読み込み時に停止します。name=… でパック名を追加してください。
+PACK_NO_ID,content_pack.ini の [ContentPack] に id がありません。一意の id（manifest と同じもの）を追加してください。パックはこの id で保存され、シナリオもこの id で要求します。
+PACK_BAD_ID,id「{0}」に空白や記号があります。シナリオはパックを空白で区切って並べ、id はファイル名にもなります。英字、数字、- と _ だけを使ってください。
+PACK_OFFICIAL_ID,id「{0}」は公式パックのものです。このパックが置き換えてしまいます。別の id にしてください。
+PACK_STORE_ID,ストアにはすでに id「{0}」のパックがあります。この端末ではこちらが代わりになります。そのパックのあなたの版でなければ、別の id にしてください。
+PACK_NO_TYPE,content_pack.ini に type がありません。type={0}Custom を追加してください。
+PACK_OTHER_GAME,もう一方のゲームのパックです（type={0}）。{1} から追加してください。
+PACK_BAD_TYPE,type={0} はこのゲーム用ではありません。{1}Custom のように {1} で始める必要があります。
+PACK_NOT_CUSTOM,type={0}：コミュニティパックは {1} を使います。他の種類では、コレクションのコミュニティパックに表示されません。
+PACK_NO_IMAGE,パックの画像（{0}）がパック内にありません。画像なしで表示されます。
+PACK_NO_ICON,パックのアイコン（{0}）がパック内にありません。
+PACK_CASE,{0} はパック内では {1} という名前です。このアプリと Windows は大文字小文字を区別しませんが、Android と Linux の Valkyrie は区別するため見つかりません。同じ大文字小文字で書いてください。
+PACK_LANGUAGE_LINE,[LanguageData] に「{0}」という行があります。「pck Localization.Japanese.txt」のように辞書とファイルを書いてください。
+PACK_MISSING_LANGUAGE,[LanguageData] にある {0} がパック内にありません。そのテキストは表示されません。
+PACK_MISSING_DATA,[ContentPackData] にある {0} がパック内にありません。Valkyrie はこのファイルでパックの読み込みをやめます。
+PACK_UNKNOWN_SECTION,{0}：Valkyrie は [{1}] が何か分からず無視します。セクション名は種類で始めてください（TileSide、Monster、Item、Token…）。
+PACK_DUPLICATE,[{0}] が {1} と {2} の両方にあります。有効なのは最初のものだけです。それぞれ別の名前にしてください。
+PACK_NAME_TAKEN,[{0}] はすでにパック {1} で定義されています。どちらか一方しか有効になりません。独自の名前にしてください。
+PACK_MISSING_IMAGE,{0}、[{1}]：画像 {2} がパック内にありません（.png、.jpg、.dds… を付けても）。画像なしで表示されます。
+PACK_IMAGE_ROOTED,{0}、[{1}]：画像 {2} がスラッシュで始まるため、Valkyrie はパックの外を探します。スラッシュを外してください。

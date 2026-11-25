@@ -1,0 +1,10 @@
+.,Japanese
+// Valkyrie's own texts that its Japanese file leaves out or empty and the app shows, written by Claude (October 2026): only
+// gaps, loaded before Valkyrie's so that an empty line of its own does not hide them (host/boot.ts; tests/texts.test.ts)
+STATS_AVERAGE_DURATION,平均プレイ時間：{0} 分
+STATS_AVERAGE_WIN_RATIO,平均勝率：{0}%
+STATS_MENU_BUTTON,メニュー
+STATS_NB_USER_REVIEWS,（ユーザーレビュー {0} 件）
+STATS_NO_AVERAGE_DURATION,平均プレイ時間はまだありません
+STATS_NO_AVERAGE_WIN_RATIO,平均勝率はまだありません
+UPDATE,アップデート

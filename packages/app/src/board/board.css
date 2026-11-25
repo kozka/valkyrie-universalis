@@ -1,0 +1,167 @@
+/* The board fills the quest screen; the canvas takes the pointer for dragging, zooming and clicking pieces */
+.board-stage {
+  position: absolute;
+  inset: 0;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.board-stage.over-control {
+  cursor: pointer;
+}
+
+.board-stage.dragging {
+  cursor: grabbing;
+}
+
+.board-canvas {
+  position: absolute;
+  inset: 0;
+}
+
+.board-canvas canvas {
+  display: block;
+}
+
+/* Why the board is empty in a browser without WebGL (BoardView.tsx) */
+.board-no-webgl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(30rem, calc(100% - 2 * var(--gutter)));
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+}
+
+/* QuestUICanvas: the quest's UI elements, placed as Valkyrie places them (questUI.ts) */
+.quest-ui-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.quest-ui {
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  outline: none;
+  pointer-events: auto;
+  box-shadow: none;
+}
+
+/* UIElementBorder: lines as thick as --border in the element's colour, the top and left ones outside, the others inside */
+.quest-ui::after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--border, 0px));
+  left: calc(-1 * var(--border, 0px));
+  right: 0;
+  bottom: 0;
+  border: var(--border, 0px) solid var(--colour, transparent);
+  pointer-events: none;
+}
+
+.quest-ui.clickable {
+  cursor: pointer;
+}
+
+/* Not in Valkyrie: the scenario's small buttons glow softly a few times after a while without a press (QuestUILayer) */
+.quest-ui-layer.hinting .quest-ui.clickable[data-hint] {
+  animation: quest-ui-hint 3.4s ease-in-out 3;
+}
+
+@keyframes quest-ui-hint {
+  0%,
+  100% {
+    filter: none;
+  }
+  50% {
+    filter: drop-shadow(0 0 0.3rem color-mix(in srgb, var(--accent-bright) 90%, transparent))
+      drop-shadow(0 0 0.9rem color-mix(in srgb, var(--accent) 55%, transparent));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quest-ui-layer.hinting .quest-ui.clickable[data-hint] {
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+  }
+}
+
+.board-stage.dragging .quest-ui.clickable {
+  cursor: grabbing;
+}
+
+.quest-ui.clickable:focus-visible {
+  box-shadow: 0 0 0 3px var(--accent);
+}
+
+/* Unity's Text: centred lines that wrap, cut at the bottom; TextMeshPro lets them overflow */
+.quest-ui-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.15;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.quest-ui-text.rich {
+  overflow: visible;
+}
+
+.quest-ui-picture {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  opacity: var(--alpha, 1);
+}
+
+.quest-ui-placeholder {
+  position: absolute;
+  inset: 0;
+  opacity: var(--alpha, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  border: 1px dashed var(--trim);
+  background: color-mix(in srgb, var(--panel) 65%, transparent);
+  color: var(--trim);
+  font-style: italic;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Not in Valkyrie: the speaker of a scenario's text (QuestUILayer.tsx UISpeaker), inside its top right corner */
+.quest-ui-speaker {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.quest-ui-speaker .read-aloud {
+  top: 0.15rem;
+  right: 0.15rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: color-mix(in srgb, var(--card) 70%, transparent);
+  pointer-events: auto;
+}
+
+.quest-ui-speaker .read-aloud svg {
+  width: 0.95rem;
+  height: 0.95rem;
+}

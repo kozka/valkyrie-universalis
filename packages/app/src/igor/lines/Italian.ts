@@ -1,0 +1,151 @@
+// What Igor says in Italian (lines.ts says what each kind of line is for). Not in Valkyrie.
+import type { IgorLines } from '../lines.ts';
+
+export const Italian: IgorLines = {
+  greetings: [
+    'Buonasera, mio signore. La aspettavo… la aspetto sempre.',
+    'Ah, è lei. Entri, entri. La casa sentiva la sua mancanza. E anche chi la abita.',
+    'Mi ha chiamato, mio signore? Giurerei di aver sentito il campanello. O forse era il vento tra le lapidi.',
+    'Bentornato al castello, mio signore. Le ho tenuto la poltrona accanto al camino.',
+    'Mio signore. Che gioia vederla con tutte le membra al loro posto.',
+    'Buonasera. Non badi ai graffi sulla porta della cantina. È… l’umidità.',
+    'Arriva al momento giusto, mio signore. La luna è piena e le candele quasi intere.',
+  ],
+  halloween: [
+    'In queste notti in cui il velo tra i vivi e i morti si assottiglia, è meglio non restare soli.',
+    'Si avvicina la vigilia di Ognissanti. I defunti chiedono già di lei.',
+    'Questa settimana le zucche sorridono più del dovuto, mio signore. Io non mi fiderei.',
+    'Dicono che nella notte dei Morti le case raccontino le proprie storie. Io ne conosco parecchie.',
+  ],
+  smallTalk: [
+    'Come si sente oggi, mio signore? Si avvicini al fuoco, si sieda. Le porterò qualcosa di caldo.',
+    'Prenda posto. La poltrona scricchiola, ma regge ancora. Come me.',
+    'A proposito, si pronuncia «Aigor». Anche se, ormai, poco m’importa.',
+    'Ho lucidato l’argenteria e ho dato da mangiare a… a ciò che vive nel pozzo. Tutto in ordine.',
+    'Perdoni l’odore di zolfo. Stavo spolverando la biblioteca proibita.',
+    'Il dottore oggi non riceve. Ma io sì, mio signore. Io ricevo sempre.',
+    'La tempesta non si placa. Una notte perfetta per perdere il senno in buona compagnia.',
+  ],
+  offer: [
+    'Come posso servirla stasera?',
+    'Mi dica, che cosa desidera vostra eccellenza?',
+    'Ho grandi storie da raccontarle, mio signore. Le andrebbe di ascoltarne una?',
+    'Cerca un orrore in particolare? Ho la cantina piena.',
+  ],
+  wantAdventure: ['Igor, consigliami un’avventura.', 'Voglio una bella storia, Igor.', 'Sorprendimi con qualche orrore.'],
+  wantNews: 'Ci sono novità?',
+  wantNothing: ['Niente, grazie, Igor.', 'Passavo solo a salutare.', 'Non ora, Igor.'],
+  newsIntro: [
+    'Ah, mio signore, prima di tutto… {0} Desidera saperne di più?',
+    'Ho notizie che non possono aspettare. {0} Gliele racconto?',
+    'Mi permetta un sussurro, prima che lo sentano le pareti. {0} Vuole che gliela mostri?',
+  ],
+  newsMore: 'Raccontami di più.',
+  newsOther: 'Preferisco che me ne consigli un’altra.',
+  noNews: [
+    'Niente di nuovo sotto la luna, mio signore. Solo i soliti orrori, ben conservati.',
+    'Nessuna novità. La posta dall’oltretomba è lenta in questi giorni.',
+    'Tutto come prima: le stesse case, gli stessi morti inquieti.',
+  ],
+  beforeQuestions: [
+    'Mi permetta qualche domanda, per non sbagliare sui suoi gusti.',
+    'Prima di aprire la cripta giusta, mi lasci chiederle un paio di cose.',
+    'Sarà un piacere. Ma mi dica…',
+    'Molto bene. Ho il registro proprio qui. Vediamo…',
+  ],
+  questions: {
+    players: {
+      ask: [
+        'Quante anime siederanno a tavola stasera?',
+        'Quanti investigatori oseranno varcare la soglia?',
+        'Per quanti devo preparare il salone… e le bare?',
+      ],
+      options: { '1': 'Solo io', '2': 'Due', '3': 'Tre', '4': 'Quattro', '5': 'Cinque o più' },
+    },
+    experience: {
+      ask: [
+        'Avete già percorso molte case maledette, o è la vostra prima visita?',
+        'Conoscete bene gli orrori di Arkham, o preferite cominciare con dolcezza?',
+        'Quanta follia vi portate già sulle spalle?',
+      ],
+      options: { new: 'Siamo nuovi', some: 'Qualche partita', veteran: 'Veterani incalliti' },
+    },
+    time: {
+      ask: [
+        'Quanto tempo potete concedere all’orrore stasera?',
+        'Fino a che ora pensate di restare? Lo chiedo per le candele.',
+        'Una visita breve, o restate finché non canta il gallo?',
+      ],
+      options: { short: 'Qualcosa di breve', evening: 'Una serata', night: 'Tutta la notte' },
+    },
+    style: {
+      ask: [
+        'Che cosa vi va di più: una bella storia, combattere o risolvere un mistero?',
+        'Preferite leggere vecchi diari, imbracciare il fucile o decifrare enigmi?',
+        'Che genere di incubo le aggrada, mio signore?',
+      ],
+      options: { story: 'Una bella storia', action: 'Azione e mostri', mystery: 'Mistero ed enigmi', surprise: 'Sorprendimi' },
+    },
+    format: {
+      ask: [
+        'Cercate una sola notte d’orrore, o una saga che duri diverse sessioni?',
+        'Una storia che finisca stanotte, o una che vi perseguiti per settimane?',
+      ],
+      options: { oneNight: 'Una sola notte', saga: 'Una saga in più parti' },
+    },
+  },
+  acks: {
+    'players:1': ['Un’anima solitaria. Le case preferiscono chi cammina da solo…', 'Solo lei. Meglio: così nessuno la sentirà urlare.'],
+    'players:2': ['Due. Una coppia coraggiosa, o due incoscienti.', 'Due anime. Né una di più, né una di meno.'],
+    'players:3': ['Tre. Il numero delle streghe di Macbeth.', 'Tre investigatori. Preparerò tre tazze di tè.'],
+    'players:4': ['Quattro. Una tavola al completo, come ai vecchi tempi.', 'Quattro coraggiosi. O quattro antipasti, dipende dai punti di vista.'],
+    'players:5': ['Una folla! Tirerò fuori il servizio buono.', 'Molti ospiti. Le grandi case ne sono grate.'],
+    'experience:new': ['Sangue nuovo. Sarò delicato… all’inizio.', 'Non si preoccupi, cominceremo dall’ala meno maledetta.'],
+    'experience:veteran': ['Ah, anime temprate. Ho qualcosa che vi toglierà il sonno.', 'Veterani. Allora scenderemo nelle cantine più profonde.'],
+    'time:short': ['Qualcosa di breve. Uno spavento veloce prima di dormire.', 'Inteso: orrore tascabile.'],
+    'time:night': ['Tutta la notte. Accenderò altre candele.', 'Fino all’alba, dunque. Dirò al gallo di non cantare.'],
+    'style:story': ['Storie… le ho rilegate in pelle. Non chieda di chi.', 'Un bel racconto. Come quelli che narrava il vecchio Lovecraft.'],
+    'style:action': ['Azione! Le porto il fucile del nonno.', 'Mostri, allora. Affilerò l’attizzatoio.'],
+    'style:mystery': ['Un mistero. Niente di meglio che sospettare di tutti.', 'Enigmi… il mio passatempo preferito dopo scavare.'],
+    'format:saga': ['Una saga. Tornerete notte dopo notte, come gli spettri.'],
+    any: ['Capisco.', 'Comprendo, mio signore.', 'Scelta eccellente.', 'Mmh… sì, sì.', 'Ne prendo nota col mio inchiostro migliore.', 'Molto bene.'],
+  },
+  results: [
+    'Ho cercato negli scaffali più polverosi. Queste tre storie la aspettano:',
+    'Credo di avere proprio ciò che le serve. Guardi queste tre, mio signore:',
+    'Ah, sì. Queste tre la faranno tremare come si deve:',
+    'Fra tutti gli orrori della biblioteca, io sceglierei questi tre:',
+  ],
+  resultsFew: ['Scarseggiano le storie per un gusto così esigente, ma ecco ciò che ho trovato:'],
+  resultsNone: [
+    'Temo che conosca già tutti gli orrori che cercava, mio signore. Provi a chiedermi altro.',
+    'Nessuna storia è adatta… Forse alla sua collezione mancano espansioni, o le ha già vissute tutte.',
+  ],
+  goThere: 'Portami lì',
+  askAgain: 'Rifammi le domande',
+  thanks: 'Grazie, Igor',
+  farewell: [
+    'Le auguro incubi piacevoli, mio signore.',
+    'La accompagno alla porta… no, non di là. Di qua. Mi segua!',
+    'Torni presto. Noi non andiamo da nessuna parte.',
+    'Buonanotte. E non apra la porta della cantina, la prego.',
+    'Che i Grandi Antichi le siano propizi.',
+  ],
+  why: {
+    players: 'per {0} giocatori',
+    minutes: 'circa {0} min',
+    tags: {
+      beginners: 'per cominciare',
+      narrative: 'molto narrativa',
+      combat: 'con combattimenti',
+      deduction: 'di deduzione',
+      puzzles: 'con enigmi',
+      campaign: 'parte di una saga',
+      replayable: 'rigiocabile',
+      short: 'breve',
+      long: 'lunga',
+      hard: 'impegnativa',
+    },
+  },
+  close: 'Chiudi',
+};

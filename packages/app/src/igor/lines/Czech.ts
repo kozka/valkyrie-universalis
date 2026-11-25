@@ -1,0 +1,151 @@
+// What Igor says in Czech (lines.ts says what each kind of line is for). Not in Valkyrie.
+import type { IgorLines } from '../lines.ts';
+
+export const Czech: IgorLines = {
+  greetings: [
+    'Dobrý večer, můj pane. Očekával jsem vás… vždycky vás očekávám.',
+    'Ach, to jste vy. Pojďte dál, pojďte. Dům se po vás stýskal. A ti, kdo v něm přebývají, také.',
+    'Zvonil jste, můj pane? Přísahal bych, že jsem slyšel zvonek. Nebo to byl vítr mezi náhrobky.',
+    'Vítejte zpět na hradě, můj pane. Schoval jsem vám křeslo u krbu.',
+    'Můj pane. Jaká radost vidět vás se všemi končetinami na svém místě.',
+    'Dobrý večer. Nevšímejte si škrábání na dveřích do sklepa. To je… vlhkost.',
+    'Přicházíte v pravou hodinu, můj pane. Měsíc je v úplňku a svíce skoro celé.',
+  ],
+  halloween: [
+    'V těchto nocích, kdy se závoj mezi živými a mrtvými ztenčuje, by člověk neměl být sám.',
+    'Blíží se předvečer Všech svatých. Zesnulí se už po vás ptali.',
+    'Dýně se tento týden šklebí víc, než se sluší, můj pane. Nevěřil bych jim.',
+    'Říká se, že o Dušičkách vyprávějí sídla své vlastní příběhy. Pár jich znám.',
+  ],
+  smallTalk: [
+    'Jak se dnes cítíte, můj pane? Pojďte blíž k ohni, posaďte se. Přinesu vám něco teplého.',
+    'Posaďte se. Křeslo vrže, ale ještě vydrží. Jako já.',
+    'Mimochodem, vyslovuje se to „Ajgor“. I když mně už je to dnes jedno.',
+    'Vyleštil jsem stříbro a nakrmil… to, co bydlí ve studni. Vše je v pořádku.',
+    'Promiňte ten pach síry. Utíral jsem prach v zakázané knihovně.',
+    'Doktor dnes nepřijímá. Ale já ano, můj pane. Já přijímám vždycky.',
+    'Bouře neustává. Skvělá noc na to přijít o rozum v dobré společnosti.',
+  ],
+  offer: [
+    'Čím vám mohu dnes v noci posloužit?',
+    'Povězte, co si vaše excelence přeje?',
+    'Mám pro vás velké příběhy, můj pane. Ráčíte si některý poslechnout?',
+    'Hledáte nějakou konkrétní hrůzu? Sklep je plný.',
+  ],
+  wantAdventure: ['Igore, doporuč mi dobrodružství.', 'Chci dobrý příběh, Igore.', 'Překvap mě nějakou hrůzou.'],
+  wantNews: 'Je něco nového?',
+  wantNothing: ['Nic, díky, Igore.', 'Jen jsem se zastavil.', 'Teď ne, Igore.'],
+  newsIntro: [
+    'Ach, můj pane, než cokoli jiného… {0} Chcete vědět víc?',
+    'Mám zprávy, které nemohou čekat. {0} Mám vyprávět?',
+    'Dovolte mi zašeptat, než to uslyší zdi. {0} Mám vám ho ukázat?',
+  ],
+  newsMore: 'Řekni mi víc.',
+  newsOther: 'Radši mi doporuč jiné.',
+  noNews: [
+    'Nic nového pod měsícem, můj pane. Jen obvyklé hrůzy, dobře zakonzervované.',
+    'Žádné novinky. Pošta ze záhrobí chodí v těchto dnech pomalu.',
+    'Vše při starém: tatáž sídla, tíž neklidní mrtví.',
+  ],
+  beforeQuestions: [
+    'Dovolte mi pár otázek, abych neminul váš vkus.',
+    'Než otevřu tu správnou kryptu, dovolte mi na něco se zeptat.',
+    'Bude mi potěšením. Ale povězte…',
+    'Velmi dobře. Mám tu knihu záznamů. Podívejme se…',
+  ],
+  questions: {
+    players: {
+      ask: [
+        'Kolik duší dnes v noci usedne ke stolu?',
+        'Kolik vyšetřovatelů se odváží překročit práh?',
+        'Pro kolik mám připravit salon… a rakve?',
+      ],
+      options: { '1': 'Jen já', '2': 'Dva', '3': 'Tři', '4': 'Čtyři', '5': 'Pět a více' },
+    },
+    experience: {
+      ask: [
+        'Prošli jste už mnoho prokletých sídel, nebo je to vaše první návštěva?',
+        'Znáte dobře hrůzy Arkhamu, nebo raději začnete zvolna?',
+        'Kolik šílenství už nesete na bedrech?',
+      ],
+      options: { new: 'Jsme noví', some: 'Pár her', veteran: 'Ostřílení veteráni' },
+    },
+    time: {
+      ask: [
+        'Kolik času dnes můžete věnovat hrůze?',
+        'Dokdy hodláte zůstat? Ptám se kvůli svíčkám.',
+        'Krátká návštěva, nebo zůstanete, dokud nezakokrhá kohout?',
+      ],
+      options: { short: 'Něco krátkého', evening: 'Jeden večer', night: 'Celou noc' },
+    },
+    style: {
+      ask: [
+        'Na co máte největší chuť: dobrý příběh, boj, nebo záhadu k vyřešení?',
+        'Raději čtete staré deníky, sáhnete po brokovnici, nebo luštíte hádanky?',
+        'Jaká noční můra vás těší, můj pane?',
+      ],
+      options: { story: 'Dobrý příběh', action: 'Akce a příšery', mystery: 'Záhady a hádanky', surprise: 'Překvap mě' },
+    },
+    format: {
+      ask: [
+        'Hledáte jedinou noc hrůzy, nebo ságu na několik večerů?',
+        'Příběh, který skončí dnes v noci, nebo takový, který vás bude pronásledovat týdny?',
+      ],
+      options: { oneNight: 'Jediná noc', saga: 'Sága o několika částech' },
+    },
+  },
+  acks: {
+    'players:1': ['Osamělá duše. Sídla mají raději ty, kdo chodí sami…', 'Jen vy. Tím lépe: nikdo vás neuslyší křičet.'],
+    'players:2': ['Dva. Statečná dvojice, nebo dva blázni.', 'Dvě duše. Ani víc, ani méně.'],
+    'players:3': ['Tři. Číslo Macbethových čarodějnic.', 'Tři vyšetřovatelé. Uvařím tři šálky čaje.'],
+    'players:4': ['Čtyři. Plný stůl jako za starých časů.', 'Čtyři stateční. Nebo čtyři chuťovky, podle toho, jak se to vezme.'],
+    'players:5': ['Celý zástup! Vytáhnu sváteční porcelán.', 'Mnoho hostů. Velké domy jsou vděčné.'],
+    'experience:new': ['Čerstvá krev. Budu jemný… zpočátku.', 'Nebojte se, začneme v nejméně prokletém křídle.'],
+    'experience:veteran': ['Ach, otrlé duše. Mám něco, co vás připraví o spánek.', 'Veteráni. Pak sestoupíme do nejhlubších sklepů.'],
+    'time:short': ['Něco krátkého. Rychlé leknutí před spaním.', 'Rozumím: hrůza do kapsy.'],
+    'time:night': ['Celou noc. Zapálím víc svíček.', 'Tedy až do úsvitu. Řeknu kohoutovi, ať nekokrhá.'],
+    'style:story': ['Příběhy… mám je vázané v kůži. Neptejte se čí.', 'Dobré vyprávění. Jako ta, která vyprávěl starý Lovecraft.'],
+    'style:action': ['Akce! Přinesu dědečkovu brokovnici.', 'Tedy příšery. Nabrousím pohrabáč.'],
+    'style:mystery': ['Záhada. Nic se nevyrovná podezírání všech.', 'Hádanky… moje nejoblíbenější kratochvíle hned po kopání.'],
+    'format:saga': ['Sága. Budete se vracet noc co noc jako neklidní mrtví.'],
+    any: ['Chápu.', 'Rozumím, můj pane.', 'Vynikající volba.', 'Hmm… ano, ano.', 'Zaznamenáno mým nejlepším inkoustem.', 'Velmi dobře.'],
+  },
+  results: [
+    'Prohledal jsem nejzaprášenější police. Čekají na vás tyto tři příběhy:',
+    'Myslím, že mám přesně to, co potřebujete. Podívejte se na tyto tři, můj pane:',
+    'Ach ano. Tyto tři vás pořádně rozechvějí:',
+    'Ze všech hrůz knihovny bych vybral tyto tři:',
+  ],
+  resultsFew: ['Na tak náročný vkus je příběhů málo, ale tady je, co jsem našel:'],
+  resultsNone: [
+    'Obávám se, že už znáte každou hrůzu, kterou jste hledal, můj pane. Zkuste mě požádat o něco jiného.',
+    'Žádný příběh nesedí… Možná vaší sbírce chybí rozšíření, nebo jste je prožil všechny.',
+  ],
+  goThere: 'Vezmi mě tam',
+  askAgain: 'Zeptej se mě znovu',
+  thanks: 'Díky, Igore',
+  farewell: [
+    'Příjemné noční můry, můj pane.',
+    'Doprovodím vás ke dveřím… ne, tudy ne. Tudy. Pojďte za mnou!',
+    'Vraťte se brzy. My nikam neodcházíme.',
+    'Dobrou noc. A prosím vás, neotvírejte dveře do sklepa.',
+    'Ať jsou vám Velcí Prastaří nakloněni.',
+  ],
+  why: {
+    players: 'pro {0} hráčů',
+    minutes: 'asi {0} min',
+    tags: {
+      beginners: 'pro začátek',
+      narrative: 'silně příběhové',
+      combat: 's bojem',
+      deduction: 'detektivka',
+      puzzles: 's hádankami',
+      campaign: 'část ságy',
+      replayable: 'znovuhratelné',
+      short: 'krátké',
+      long: 'dlouhé',
+      hard: 'náročné',
+    },
+  },
+  close: 'Zavřít',
+};

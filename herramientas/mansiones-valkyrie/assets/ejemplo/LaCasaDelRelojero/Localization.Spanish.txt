@@ -1,0 +1,159 @@
+.,Spanish
+UIPrologoTexto.uitext,"<i>Muy señores míos:</i>\n\nMi tío, Elias Thorne, relojero de French Hill, no responde a mis cartas desde hace una semana. Ayer me atreví a entrar en su casa: todos los relojes estaban parados a las 3:33... y aun así se oía un tic-tac. Se lo ruego, vengan esta noche. Les esperaré en el vestíbulo.\n\n<i>Margaret Thorne</i>"
+UIPrologoSeguir.uitext,Continuar
+EventColocarVestibulo.text,Coloca {c:TileVestibulo}. La puerta de la calle se cierra a vuestra espalda con un chasquido que suena demasiado definitivo.
+EventColocarVestibulo.button1,Continuar
+EventColocarInvestigadores.text,Colocad a los investigadores en el espacio indicado.
+EventColocarInvestigadores.button1,Continuar
+EventColocarMargaret.text,Coloca una ficha de Personaje en el lugar indicado: es Margaret Thorne, que os esperaba con un candil en la mano.
+EventColocarMargaret.button1,Continuar
+EventColocarFichasVestibulo.text,"Coloca una ficha de Búsqueda y tres de Exploración donde se indica.\n\n<i>La casa está en silencio. Demasiado silencio para la casa de un relojero.</i>"
+EventColocarFichasVestibulo.button1,Empezar
+TokenMargaret.text,Margaret Thorne retuerce un pañuelo entre las manos. «Por favor, encuéntrenlo.»
+TokenMargaret.button1,{action} Preguntar por Elias
+TokenMargaret.button2,{action} Enseñarle el diario
+TokenMargaret.button3,{action} Preguntar por Eleanor
+EventMargaretElias.text,«Desde que murió la tía Eleanor, hace un año, mi tío apenas salía del sótano. Decía que estaba <i>arreglando un error</i>. La semana pasada vendió todo lo que tenía de valor para comprar un libro.»
+EventMargaretElias.button1,Continuar
+EventMargaretDiario.text,Margaret palidece al leer las últimas páginas. «El sótano... La tía guardaba la llave en su joyero, pero él la cambió de sitio. Yo tengo una copia.»
+EventMargaretDiario.button1,Continuar
+EventMargaretLlave.text,Margaret os tiende una llave de latón. Quien haya hablado con ella gana el Objeto único {c:QItemLlave}.
+EventMargaretLlave.button1,Continuar
+EventMargaretSinLlave.text,«Ah, ya la tienen. Entonces no pierdan más tiempo, se lo ruego.»
+EventMargaretSinLlave.button1,Continuar
+EventMargaretEleanor.text,"«Era su mundo entero. Murió a las tres y treinta y tres de la madrugada, y él paró todos los relojes a esa hora... Ahora se han parado solos.»\n\nSu calma os reconforta: cada investigador en este espacio puede descartar 1 carta de Horror boca abajo."
+EventMargaretEleanor.button1,Continuar
+TokenPerchero.text,Un perchero de hierro forjado del que cuelgan un gabán húmedo y un paraguas roto.
+TokenPerchero.button1,{action} Registrar los bolsillos
+EventPercheroTirada.text,Realiza una tirada de {observation} (1).
+EventPercheroTirada.button1,Superada
+EventPercheroTirada.button2,Fallada
+EventPercheroExito.text,"En un bolsillo del gabán hay un recibo de la librería Ye Olde Magick Shoppe: <i>«Horologium Aeternum, edición de 1662. Pagado al contado.»</i>\n\nGanas 1 Pista."
+EventPercheroExito.button1,Continuar
+EventPercheroFallo.text,Solo encuentras pelusa y un botón suelto. Quizá con más calma...
+EventPercheroFallo.button1,Continuar
+TokenExplorarTaller.text,Una puerta entornada. Por la rendija se ve el resplandor anaranjado de una lámpara.
+TokenExplorarTaller.button1,{action} Explorar
+EventRevelarTaller.text,"<b>El taller</b>\nColoca {c:TileTaller} y una ficha de Pared donde se indica. Cientos de relojes desmontados cubren cada superficie. Todos marcan las 3:33."
+EventRevelarTaller.button1,Continuar
+EventColocarFichasTaller.text,Coloca una ficha de Búsqueda y una de Interacción donde se indica.
+EventColocarFichasTaller.button1,Continuar
+TokenEscritorio.text,Un escritorio enterrado bajo engranajes, muelles y tazas de café frío.
+TokenEscritorio.button1,{action} Registrar el escritorio
+EventEscritorio.text,En el cajón, envuelto en un pañuelo de mujer, está el diario de Elias. Ganas el Objeto único {c:QItemDiario}: podéis leerlo cuando queráis pulsándolo en Objetos.
+EventEscritorio.button1,Continuar
+TokenBanco.text,Un banco de trabajo con planos clavados a la pared: círculos dentro de círculos y cálculos en latín.
+TokenBanco.button1,{action} Estudiar los planos
+EventPlanosTirada.text,Realiza una tirada de {lore} (2).
+EventPlanosTirada.button1,Superada
+EventPlanosTirada.button2,Fallada
+EventPlanosExito.text,"No es un reloj: es un calendario que cuenta hacia atrás. Cuando todas sus esferas se alineen, la casa volverá a la noche en que murió Eleanor... y algo vendrá con ella.\n\nGanas 1 Pista."
+EventPlanosExito.button1,Continuar
+EventPlanosFallo.text,Las ecuaciones se retuercen ante tus ojos. Sufres 1 de Horror boca abajo.
+EventPlanosFallo.button1,Continuar
+EventLeerDiario.text,"<i>«14 de octubre. El Horologium no miente: el tiempo es un engranaje más. Si consigo que gire al revés hasta las 3:33 de aquella noche, llegaré a tiempo de despedirme.\n\n21 de octubre. Hay algo al otro lado de la esfera. Me observa cuando ajusto las agujas. Tres, tres y tres: no debo olvidar la combinación.»</i>"
+EventLeerDiario.button1,Cerrar
+TokenExplorarDormitorio.text,Una puerta de dormitorio. Huele a lavanda y a polvo.
+TokenExplorarDormitorio.button1,{action} Explorar
+TokenExplorarDormitorio2.text,Una puerta de dormitorio. Huele a lavanda y a polvo.
+TokenExplorarDormitorio2.button1,{action} Explorar
+EventRevelarDormitorio.text,"<b>El dormitorio</b>\nColoca {c:TileDormitorio} y una ficha de Pared donde se indica. La cama está hecha para dos; uno de los lados no se ha tocado en mucho tiempo."
+EventRevelarDormitorio.button1,Continuar
+EventColocarFichasDormitorio.text,Coloca una ficha de Interacción y una de Búsqueda donde se indica.
+EventColocarFichasDormitorio.button1,Continuar
+TokenFoto.text,Sobre la mesilla, una fotografía enmarcada: una mujer de sonrisa triste con un vestido de 1925.
+TokenFoto.button1,{action} Coger la fotografía
+EventFoto.text,"Al tocar el marco, el cristal se agrieta. Durante un instante, los ojos de la mujer se vuelven hacia ti. Sufres 1 de Horror.\n\nGanas 1 Pista."
+EventFoto.button1,Continuar
+SpawnEleanor.text,El aire se enfría. Una figura translúcida se incorpora en la cama: es {type}. Coloca un Fantasma en el lugar indicado.
+SpawnEleanor.button1,Continuar
+TokenJoyero.text,Un joyero de marquetería con una bailarina de latón.
+TokenJoyero.button1,{action} Abrir el joyero
+EventJoyeroLlave.text,Bajo el forro de terciopelo hay una llave de latón con una etiqueta: «Sótano». Ganas el Objeto único {c:QItemLlave}.
+EventJoyeroLlave.button1,Continuar
+EventJoyeroVacio.text,Solo hay un mechón de pelo castaño atado con una cinta negra.
+EventJoyeroVacio.button1,Continuar
+TokenExplorarPasillo.text,El vestíbulo se abre a un pasillo en penumbra. De algún lugar llega un tic-tac muy lento.
+TokenExplorarPasillo.button1,{action} Explorar
+EventRevelarPasillo.text,"<b>El pasillo</b>\nColoca {c:TilePasillo}. Un gran reloj de pie domina la estancia."
+EventRevelarPasillo.button1,Continuar
+EventColocarFichasPasillo.text,Coloca una ficha de Vistazo y una de Exploración donde se indica.
+EventColocarFichasPasillo.button1,Continuar
+EventPasilloOtraPuerta.text,La otra puerta del pasillo da al dormitorio: coloca otra ficha de Exploración donde se indica.
+EventPasilloOtraPuerta.button1,Continuar
+TokenRelojPie.text,Un reloj de pie de caoba. Sus agujas marcan las 3:33, pero el péndulo sigue oscilando, cada vez más despacio.
+TokenRelojPie.button1,{action} Escuchar el mecanismo
+EventRelojTirada.text,Pegas la oreja a la caja del reloj. Realiza una tirada de {observation} (2).
+EventRelojTirada.button1,Superada
+EventRelojTirada.button2,Fallada
+EventRelojExito.text,"Bajo el tic-tac del péndulo hay otro, más grave, que sube desde el suelo: algo enorme marca el tiempo en el sótano... y va hacia atrás.\n\nGanas 1 Pista."
+EventRelojExito.button1,Continuar
+EventRelojFallo.text,Solo oyes el péndulo. Por un momento juras que el segundero ha retrocedido.
+EventRelojFallo.button1,Continuar
+TokenExplorarEscalera.text,Una puerta de roble con una cerradura de latón nueva. Detrás, unas escaleras bajan hacia el sótano.
+TokenExplorarEscalera.button1,{action} Abrir con la llave de latón
+TokenExplorarEscalera.button2,{action} Forzar la puerta
+EventAbrirConLlave.text,La llave gira sin un ruido, como si la cerradura la estuviera esperando.
+EventAbrirConLlave.button1,Continuar
+EventForzarPuerta.text,Embestís la puerta. Realiza una tirada de {strength} e indica tus éxitos. Se acumulan entre intentos: la puerta cede con 3.
+EventForzarPuerta.button1,Confirmar
+EventForzarPuerta.button2,Confirmar
+EventPuertaCede.text,La madera se astilla y la puerta cede.
+EventPuertaCede.button1,Continuar
+EventPuertaAguanta.text,La puerta cruje, pero aguanta. Habrá que insistir.
+EventPuertaAguanta.button1,Continuar
+EventRevelarEscalera.text,"<b>La escalera</b>\nColoca {c:TileEscalera} y una ficha de Exploración al fondo. El tic-tac grave aquí es casi un latido."
+EventRevelarEscalera.button1,Continuar
+TokenExplorarSotano.text,Los peldaños se hunden en una oscuridad que huele a aceite de máquina y a ozono.
+TokenExplorarSotano.button1,{action} Bajar al sótano
+EventRevelarSotano.text,"<b>El sótano</b>\nColoca {c:TileSotano}. Toda la pared del fondo es un mecanismo de latón y cristal que gira hacia atrás."
+EventRevelarSotano.button1,Continuar
+EventColocarFichasSotano.text,Coloca una ficha de Interacción y una de Oscuridad donde se indica.
+EventColocarFichasSotano.button1,Continuar
+SpawnRelojero.text,"Un hombre flaco con gafas de relojero se vuelve hacia vosotros con una llave inglesa en la mano: es {type}. «No. Esta vez llegaré a tiempo.»\n\nColoca un Sectario en el lugar indicado."
+SpawnRelojero.button1,Continuar
+TokenMecanismo.text,Cientos de engranajes giran hacia atrás alrededor de una esfera con tres agujas. El aire vibra como antes de una tormenta.
+TokenMecanismo.button1,{action} Detener el mecanismo
+TokenMecanismo.button2,{action} Destrozar el mecanismo
+PuzzleMecanismo.button1,Continuar
+EventAntesDelPuzle.text,"Tres agujas, cuatro posiciones cada una. Si aciertas la combinación, la máquina se detendrá.\n\n<i>Rompecabezas de código:</i> tienes tantos pasos como tu {lore} impreso, más 1 por cada Pista que gastes (no en la Oscuridad). Si te quedas sin pasos, pulsa Cerrar: el progreso se guarda."
+EventAntesDelPuzle.button1,Empezar
+EventEpilogoEliasVive.text,"<b>Epílogo</b>\nLa última aguja se detiene y el sótano queda en silencio. Elias cae de rodillas y llora como un niño. «Solo quería decirle adiós.»\n\nMargaret se lo lleva a casa al amanecer. Ningún reloj de French Hill ha vuelto a pararse desde entonces.\n\n<b>Habéis ganado.</b>"
+EventEpilogoEliasVive.button1,Fin
+EventEpilogoEliasMuerto.text,"<b>Epílogo</b>\nLa última aguja se detiene y el sótano queda en silencio. Elias yace entre los engranajes con una fotografía de Eleanor en el bolsillo.\n\nHabéis cerrado la grieta, pero Margaret no volverá a dirigiros la palabra.\n\n<b>Habéis ganado... a un precio.</b>"
+EventEpilogoEliasMuerto.button1,Fin
+EventDestrozar.text,Golpeáis los engranajes con todo lo que tenéis a mano. Realiza una tirada de {strength} e indica tus éxitos. Se acumulan entre intentos: hacen falta 4.
+EventDestrozar.button1,Confirmar
+EventDestrozar.button2,Confirmar
+EventMecanismoResiste.text,El latón se abolla, pero las esferas siguen girando. Una descarga recorre el sótano: cada investigador en el sótano sufre 1 de Daño (anulado por {agility}).
+EventMecanismoResiste.button1,Continuar
+EventMecanismoDestrozado.text,"<b>Epílogo</b>\nEl cristal central estalla y una ráfaga helada apaga todas las luces. Cuando volvéis a encender los candiles, la máquina es chatarra... y cada reloj de la casa marca una hora distinta e imposible.\n\n<b>Habéis ganado</b>, aunque desde esa noche ninguno de vosotros sabe nunca qué hora es."
+EventMecanismoDestrozado.button1,Fin
+CustomMonsterRelojero.monstername,Elias Thorne
+CustomMonsterRelojero.info,El relojero. No quiere haceros daño: solo quiere que nadie toque su máquina.
+EventActivaRelojeroA.text,"<b>{c:CustomMonsterRelojero}</b>\nElias se interpone entre vosotros y su máquina. Si hay algún investigador en su espacio, le golpea con la llave inglesa: ese investigador sufre 3 de Daño (anulado por {agility})."
+EventActivaRelojeroA.button1,Continuar
+EventActivaRelojeroA.button2,No había nadie en su espacio
+EventActivaRelojeroB.text,"<b>{c:CustomMonsterRelojero}</b>\nElias acciona una palanca. Las esferas giran más deprisa y un zumbido os taladra el cráneo: cada investigador en el sótano sufre 1 de Horror (anulado por {will}). Después, Elias se mueve 1 espacio hacia el investigador más cercano."
+EventActivaRelojeroB.button1,Continuar
+EventRelojeroAcelera.text,Elias vuelve junto al mecanismo y ajusta un engranaje con dedos temblorosos. El tic-tac del sótano se acelera: <i>os queda menos tiempo</i>.
+EventRelojeroAcelera.button1,Continuar
+EventRelojeroCae.text,Elias se desploma entre los engranajes. Antes de cerrar los ojos susurra: «Eleanor... casi...»
+EventRelojeroCae.button1,Continuar
+CustomMonsterEleanor.monstername,Eleanor Thorne
+CustomMonsterEleanor.info,El eco de una mujer que murió a las 3:33 de la madrugada. La máquina la está arrastrando de vuelta.
+EventEleanorDescansa.text,La figura de Eleanor se deshace en un polvo dorado, como limaduras de latón. Por un instante, todos los relojes de la casa avanzan un segundo: <i>ganáis algo de tiempo</i>.
+EventEleanorDescansa.button1,Continuar
+EventRevelarObjetivo.text,"<b>Objetivo</b>\nAhora lo entendéis: Elias ha construido en el sótano una máquina para volver a la noche en que murió Eleanor. Cuando sus esferas marquen las 3:33, la grieta que ha abierto en el tiempo se rasgará del todo, y lo que espera al otro lado no es Eleanor.\n\n<b>Bajad al sótano y detened el mecanismo.</b>"
+EventRevelarObjetivo.button1,Continuar
+EventAvisoTiempo.text,"Todos los relojes de la casa empiezan a sonar a la vez, aunque ninguno se mueve. {rnd:hero} nota en la boca un sabor a hierro.\n\n<i>Queda muy poco tiempo.</i>"
+EventAvisoTiempo.button1,Continuar
+EventDerrotaTiempo.text,"<b>Epílogo</b>\nA las 3:33 todas las esferas se alinean. La casa se dobla sobre sí misma como una hoja de papel y, por un instante, veis la noche de hace un año, la cama, a Eleanor... y detrás de ella algo que os mira desde el otro lado del tiempo.\n\nNadie volvió a ver la casa del relojero.\n\n<b>Habéis perdido.</b>"
+EventDerrotaTiempo.button1,Fin
+EventDerrotaEliminado.text,"<b>Epílogo</b>\nUno de vosotros no salió de la casa. Los demás huyeron antes del amanecer y, a las 3:33, la casa del relojero dejó de existir.\n\n<b>Habéis perdido.</b>"
+EventDerrotaEliminado.button1,Fin
+quest.name,La casa del relojero
+quest.synopsys,Un relojero de French Hill lleva una semana sin dar señales de vida y todos sus relojes se han parado a la misma hora.
+quest.description,"Margaret Thorne os pide ayuda: su tío Elias, relojero de French Hill, no responde desde hace una semana y en su casa ya no se oye ni un tic-tac.\n\n<b>Escenario de ejemplo</b> de la skill mansiones-valkyrie: investigación con algo de combate, un rompecabezas de código y tres finales.\n\n<i>1-5 investigadores · solo caja básica · 75-120 minutos</i>"
+quest.authors,"<b>Escenario de ejemplo</b>\nSkill mansiones-valkyrie"
+quest.authors_short,Skill mansiones-valkyrie

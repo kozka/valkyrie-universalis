@@ -1,0 +1,17 @@
+# Code and docs: LF in the repository, whatever the OS
+* text=auto eol=lf
+
+# Windows scripts keep CRLF
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Valkyrie data keeps its exact bytes: line endings and BOMs change what its parsers read.
+# That covers scenarios, packs, the copied base data and test fixtures.
+*.ini -text
+Localization.*.txt -text
+herramientas/mansiones-valkyrie/assets/ejemplo/** -text
+packages/engine/data/** -text
+**/fixtures/** -text
+*.valkyrie binary
+*.valkyrieContentPack binary
+*.vSave binary

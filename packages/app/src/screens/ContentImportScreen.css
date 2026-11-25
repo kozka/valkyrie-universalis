@@ -1,0 +1,83 @@
+/* ContentImportScreen: the ways to bring the import, as cards to read and press, then its progress or its result */
+.content-import {
+  max-width: 48rem;
+}
+
+.import-subtitle {
+  max-width: 40rem;
+  font-size: var(--step-read);
+  line-height: 1.5;
+}
+
+.import-install-first {
+  max-width: 40rem;
+  padding: 0.6rem 1rem;
+  border-left: 3px solid var(--accent);
+  font-style: italic;
+}
+
+.import-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.import-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1.1rem 1.4rem 1.2rem;
+  cursor: pointer;
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.import-card:hover,
+.import-card:focus-within {
+  transform: translateY(-2px);
+  box-shadow: var(--lift-shadow);
+}
+
+.import-card:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.import-card-title {
+  font-size: var(--step-sub);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.import-card-text {
+  font-style: italic;
+  font-size: var(--step-ui);
+  color: var(--card-quiet);
+  overflow-wrap: anywhere;
+}
+
+.import-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 32rem;
+}
+
+.import-progress progress {
+  width: 100%;
+  height: 0.6rem;
+  accent-color: var(--accent);
+}
+
+.import-result {
+  width: min(100%, 34rem);
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.import-result .button {
+  align-self: flex-start;
+}
+
+.import-error {
+  color: var(--alert-light);
+}

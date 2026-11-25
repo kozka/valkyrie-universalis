@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "packages/engine/src",
+    "packages/engine/tests",
+    "packages/module-mom/src",
+    "packages/module-mom/tests",
+    "packages/module-d2e/src",
+    "packages/module-d2e/tests",
+    "tests",
+    "tools",
+    "vitest.config.ts",
+    "packages/app/vite.config.ts",
+    "packages/app/playwright.config.ts",
+    "packages/app/tests"
+  ],
+  "exclude": [
+    "packages/engine/src/platform/globals.d.ts"
+  ]
+}

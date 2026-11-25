@@ -1,0 +1,417 @@
+.,Korean
+// Translated by Claude from the English texts (October 2026): corrections by native speakers are welcome.
+APP_NAME,Valkyrie Universalis
+UNOFFICIAL,비공식, 팬 제작
+ADD_SCENARIO,시나리오 파일 추가
+NO_SCENARIOS,아직 시나리오가 없습니다. 스토어나 제작자에게서 받은 .valkyrie 파일을 추가하세요.
+NOT_A_SCENARIO,{0}은(는) Valkyrie 시나리오가 아닙니다.
+SCENARIO_ADDED,{0}을(를) 추가했습니다.
+SCENARIO_OTHER_GAME,{0}은(는) {1}용 시나리오입니다: 해당 목록에 있습니다.
+SCENARIO_FILTERED,{0}을(를) 추가했지만 필터 때문에 보이지 않습니다(언어 또는 없는 확장).
+SCENARIO_INVALID,{0}을(를) 열 수 없습니다: quest.ini가 이 버전의 Valkyrie에 맞지 않습니다.
+RELOAD_LIST,목록 다시 불러오기
+PLAY_SCENARIO,플레이
+LANGUAGES,언어: {0}
+RATING,평점: 10점 만점에 {0}점
+DOWNLOAD_FAILED,{0}을(를) 다운로드하지 못했습니다. 연결을 확인하고 다시 시도하세요.
+HEROES_RANGE,조사자 {0}~{1}명
+MINUTES_RANGE,{0}~{1}분
+ABOUT_TEXT,Valkyrie Universalis는 NPBruce와 기여자들이 만든 무료 앱 Valkyrie의 웹 버전입니다. 팬들이 만들었으며 Fantasy Flight Games와는 아무 관련이 없습니다. 출판사의 이미지, 소리, 텍스트는 들어 있지 않습니다: 플레이어마다 직접 가져오며, 그 내용은 각자의 브라우저에만 남습니다.
+ABOUT_CODE,Apache 2.0 라이선스 코드, Valkyrie {0}에서 이식했습니다.
+STORAGE_OFF,이 브라우저는 파일을 보관하지 않습니다: 추가한 내용은 브라우저를 닫으면 사라집니다.
+STOPPED,시나리오가 중단되었습니다: {0}
+LOADING,불러오는 중…
+SYMBOL_STRENGTH,힘
+SYMBOL_AGILITY,민첩
+SYMBOL_OBSERVATION,관찰
+SYMBOL_LORE,지식
+SYMBOL_INFLUENCE,영향력
+SYMBOL_WILL,의지
+SYMBOL_ACTION,행동
+SYMBOL_SUCCESS,성공
+SYMBOL_CLUE,단서
+SYMBOL_TENTACLE,촉수
+SYMBOL_PRODUCT,확장 아이콘
+MORALE,사기: {0}
+AVAILABLE_XP,사용 가능한 경험치: {0}
+SYMBOL_HEART,체력
+SYMBOL_FATIGUE,피로
+SYMBOL_MIGHT,힘
+SYMBOL_KNOWLEDGE,지식
+SYMBOL_AWARENESS,인지
+SYMBOL_SHIELD,방패
+SYMBOL_SURGE,서지
+MONSTER_LIST,괴물
+NEXT_PHASE,다음 단계
+PHASE_BAR,라운드
+SCROLL_UP,이전 괴물
+SCROLL_DOWN,괴물 더 보기
+AWARENESS,경계 {0}
+HORROR_VALUE,공포 {0}
+HEALTH,체력 {0}
+DAMAGE,피해 {0}
+DUPLICATE,그룹 {0}
+END_TITLE,끝
+WELCOME_TITLE,Valkyrie Universalis에 오신 것을 환영합니다
+WELCOME_TEXT,Valkyrie Universalis는 어떤 기기에서나 실행되는 Valkyrie의 웹 버전입니다. 컴퓨터, 태블릿, 휴대폰에서 사용할 수 있고 앱으로 설치할 수도 있습니다.\n\n초기 버전입니다. 충분히 테스트했고 모든 것이 잘 작동하는 것 같지만, 아직 오류가 있을 수 있습니다.\n\n시나리오 편집기 등 아직 빠진 기능이 있고 인터페이스도 다듬어야 합니다. 하지만 이미 시나리오를 플레이하고 평가할 수 있으며, 직접 찾아볼 새로운 옵션도 몇 가지 있습니다…\n\n즐거운 시간 되세요!
+WELCOME_HIDE,다시 표시하지 않기
+WELCOME_START,시작
+RATING_ALREADY_SENT,이 시나리오의 평가를 이미 보냈습니다({0}/10). 각 시나리오는 기기마다 한 번만 평가할 수 있습니다.
+RATING_NOT_SENT,평가를 보내지 못했습니다. 연결을 확인하고 다시 시도하세요. 평가는 이 기기에 저장되어 있습니다.
+MY_RATING,내 평가: {0}/10
+FEEDBACK_BUTTON,앱 문제 신고
+FEEDBACK_TITLE,문제 신고 또는 아이디어 제안
+FEEDBACK_INTRO,문제가 있거나 아이디어가 있나요? 알려 주세요. 개발자에게 바로 전달됩니다. 오류라면 무엇을 하던 중이었고 무슨 일이 있었는지 적어 주세요.
+FEEDBACK_KIND,종류
+FEEDBACK_BUG,오류
+FEEDBACK_IDEA,아이디어
+FEEDBACK_OTHER,기타
+FEEDBACK_COMMENT,의견
+FEEDBACK_EMAIL,이메일(선택, 답장을 원하면)
+FEEDBACK_TECHNICAL,함께 전송되는 기술 정보
+FEEDBACK_EMPTY,보내기 전에 의견을 적어 주세요.
+FEEDBACK_FAILED,보내지 못했습니다. 연결을 확인하고 다시 시도하세요.
+FEEDBACK_SENT,감사합니다! 의견을 보냈습니다.
+FEEDBACK_SEND,보내기
+FEEDBACK_CANCEL,취소
+FEEDBACK_CLOSE,닫기
+PUZZLE_SYMBOLS,기호
+PUZZLE_ADD,{0} 추가
+PUZZLE_REMOVE,{0} 빼기
+PUZZLE_CODE,내 추측
+PUZZLE_GUESSES,지금까지의 추측
+PUZZLE_RESULT,자리까지 맞음 {0}개, 자리만 틀림 {1}개
+PUZZLE_BLOCKS,블록
+PUZZLE_TARGET_BLOCK,빨간 블록
+PUZZLE_BLOCK,블록
+PUZZLE_PIECES,그림 조각
+PUZZLE_PIECE,조각 {0}
+PUZZLE_TOWERS,탑
+PUZZLE_TOWER,탑 {0}
+IMPORT_SUBTITLE,Universalis는 Valkyrie가 여러분이 가진 {0} 공식 앱에서 가져온 콘텐츠를 사용합니다. 이 브라우저로 한 번만 복사되며 밖으로 나가지 않습니다.
+IMPORT_FROM_FOLDER,Valkyrie의 import 폴더 선택
+IMPORT_FOLDER_DESC,Windows에서는 %APPDATA%\Valkyrie\{0}\import에 있습니다.
+IMPORT_ZIP_DESC,같은 import 폴더의 zip 파일: 휴대폰과 태블릿에서 쓰는 방법입니다.
+IMPORT_PROGRESS,파일 {1}개 중 {0}개
+IMPORT_NO_INI,import.ini가 없습니다: Valkyrie의 import 폴더나 그 zip 파일을 선택하세요.
+IMPORT_RAW_ASSETS,공식 앱 자체의 파일입니다. Universalis는 아직 이 파일을 읽을 수 없습니다: 먼저 Valkyrie에서 가져온 다음 그 import 폴더를 선택하세요.
+IMPORT_NO_SPACE,이 브라우저에 공간이 부족합니다: {0}MB가 필요하지만 {1}MB만 남아 있습니다.
+IMPORT_UNREADABLE,zip 파일을 읽을 수 없습니다: {0}
+IMPORT_FAILED,가져오기에 실패했습니다: {0}
+IMPORT_OLD,이 가져오기는 다른 버전의 Valkyrie나 공식 앱에서 만들어져 사용하지 않습니다. 최신 Valkyrie에서 다시 가져온 뒤 그 폴더를 여기로 가져오세요.
+THEME,테마
+FELT,보드 아래 천
+COLOUR_BLACK,검정
+COLOUR_GREEN,초록
+COLOUR_RED,버건디
+COLOUR_BLUE,파랑
+BOARD_TILT,보드 기울기
+BOARD_TILT_TABLE,테이블처럼 (30°)
+BOARD_TILT_VALKYRIE,Valkyrie처럼 (10°)
+VERSION,버전 {0}
+NEW_VERSION,앱의 새 버전이 있습니다.
+RELOAD_APP,다시 불러오기
+INSTALL_APP,앱 설치
+INSTALL_APPLE,이 iPhone이나 iPad에 설치하려면 '공유'를 누른 다음 '홈 화면에 추가'를 누르세요.
+IMPORT_INSTALL_FIRST,iPhone과 iPad에서는 먼저 앱을 설치('공유' → '홈 화면에 추가')하고 앱에서 가져오세요: 설치된 앱은 브라우저와 별도로 파일을 보관합니다.
+IMPORT_TO_PLAY,플레이하려면 Valkyrie가 여러분이 가진 {0} 공식 앱에서 가져온 콘텐츠가 필요합니다. 그때까지는 시나리오를 둘러볼 수 있습니다.
+BACKUP,백업
+BACKUP_TEXT,앱이 보관하는 내용(저장한 게임, 옵션, 컬렉션, 다운로드한 시나리오와 팩)은 이 기기의 이 브라우저에 있습니다. 백업은 이 모두를 파일 하나로 모읍니다: 다른 브라우저나 기기로 옮기거나, 브라우저가 데이터를 지웠을 때 되찾기 위해서입니다. 공식 가져오기는 들어 있지 않으니 다시 가져와야 합니다.
+BACKUP_DOWNLOAD,백업 다운로드
+BACKUP_RESTORE,백업 복원
+BACKUP_MAKING,백업 만드는 중: 파일 {1}개 중 {0}개…
+BACKUP_MADE,백업을 다운로드했습니다: {0}MB.
+BACKUP_CONFIRM,앱이 이 브라우저에 보관하는 모든 내용이 {0}의 내용으로 바뀝니다. 계속할까요?
+BACKUP_RESTORE_GO,복원
+BACKUP_RESTORING,복원 중: {1}개 중 {0}개…
+BACKUP_NOT_ONE,이 파일은 Valkyrie Universalis 백업이 아닙니다.
+BACKUP_UNREADABLE,백업을 읽을 수 없습니다: {0}
+BACKUP_FAILED,할 수 없었습니다: {0}
+BACKUP_UNFINISHED,백업이 브라우저에 들어왔습니다: 앱을 다시 열면 적용됩니다.
+BACKUP_NOT_FINISHED,백업을 아직 적용하지 못했습니다({0}): 앱을 열 때 다시 시도합니다.
+DOOM_NAME,DooM
+DOOM_NEEDS_PACK,DooM 임무를 플레이하려면 커뮤니티 콘텐츠 팩이 필요합니다. 스토어에서 내려받으세요.
+DOOM_DOWNLOAD_PACK,DooM 내려받기
+TURN_PHONE,휴대폰을 가로로 돌려 주세요. 게임은 가로 화면으로 진행됩니다.
+PLAY_UPRIGHT,세로로 플레이
+MOM_TITLE,광기의 저택
+MOM_EDITION,2판
+D2E_TITLE,디센트
+D2E_SUBTITLE,어둠속의 여정
+D2E_EDITION,2판
+COLOUR_UNIVERSALIS,Universalis (일러스트)
+COLOUR_PURE,순수한 검정
+MARKS,내 표시
+MARK_PLAYED,플레이함
+MARK_FAVORITE,즐겨찾기
+MARK_PENDING,나중에
+FILTER_PLAYED,플레이 여부
+FILTER_PLAYERS,플레이어 수
+SORT_TITLE,정렬
+FILTER_CATEGORIES,모험 유형
+FILTER_CATEGORIES_NOTE,광기의 저택 전용. 선택한 항목을 모두 가진 모험을 보여 줍니다.
+CATEGORY_BEGINNERS,초보자용
+CATEGORY_SHORT,짧음
+CATEGORY_NARRATIVE,이야기 중심
+CATEGORY_COMBAT,전투
+CATEGORY_CAMPAIGN,캠페인 또는 시리즈
+CATEGORY_REPLAYABLE,반복 플레이
+FILTERS_ON,필터링 중: {1}개 중 {0}개
+FILTERS_CLEAR,필터 해제
+FILTERS_HIDE_ALL,필터 때문에 모든 시나리오가 숨겨졌습니다. 필터를 해제하면 다시 보입니다.
+FILTER_SEARCH_ON,검색: “{0}”
+FILTER_LANGS_ON,언어: {0}
+FILTER_EXPANSIONS_ON,없는 확장 제외
+FILTER_PLAYERS_ON,플레이어: {0}
+ADULT_CONTENT,성인 콘텐츠
+IGOR_NOT_LISTED,이 모험은 이 목록에 없습니다. 온라인 상점에서 확인하세요.
+IGOR_OPEN,이고르와 대화
+IGOR_FILTERED,이고르가 모험을 찾았지만 필터 때문에 숨겨져 있습니다. 필터를 해제하면 보입니다.
+FILTER_MARKS,표시됨
+FILTER_ALL,전체
+FILTER_PLAYED_ONLY,플레이함
+FILTER_UNPLAYED,플레이 안 함
+FILTER_FAVORITES,즐겨찾기
+FILTER_PENDING,나중에
+SIZE_NORMAL,보통
+SIZE_LARGE,크게
+SIZE_LARGER,아주 크게
+PIECE_SIZE,보드 위 토큰 크기
+PIECE_SIZE_LARGE,크게 (+30%)
+OPTIONS_LOOK,모양
+OPTIONS_ADVANCED_TEXT,게임 진행 방식의 변경입니다. 모두 끄면 Valkyrie와 똑같이 진행됩니다.
+CONFIRM_PHASE,조사자 단계를 끝내기 전에 묻기
+CONFIRM_PHASE_TEXT,조사자 단계를 끝내고 신화 단계를 시작할까요?
+KEEP_ZOOM,시나리오가 카메라를 움직일 때 내 확대를 유지
+HIDE_CURSOR,마우스 포인터 숨기기
+LOG_COPIED,복사됨
+READ_ALOUD,소리 내어 읽기
+STOP_READING,읽기 멈추기
+AUTO_READ,이벤트가 나타나면 소리 내어 읽기
+ITEM_SIZE,아이템 크기
+MONSTER_PLACE,몬스터
+MONSTER_PLACE_RIGHT,오른쪽
+MONSTER_PLACE_BOTTOM,아래
+BUTTONS_APART,이벤트 버튼을 본문과 분리 (공식 앱처럼)
+EPIC_SPAWNS,강한 몬스터의 등장을 강조
+VOICE,소리 내어 읽기 음성
+VOICE_BROWSER,브라우저 음성
+VOICE_OFF,끄기
+VOICE_SAMPLE,문이 삐걱거리며 열린다. 어둠 속에서 무언가가 기다린다.
+VOICE_TRY,음성 들어 보기
+VOICE_NONE,이 브라우저에는 음성이 없습니다.
+VOICE_WHICH,음성
+VOICE_BEST,언어에 가장 알맞은 음성
+VOICE_GEMINI,Gemini(Google)
+VOICE_GEMINI_KEY,Gemini API 키
+VOICE_GEMINI_MODEL,모델
+VOICE_GEMINI_STYLE,읽는 방식(선택)
+VOICE_GEMINI_STYLE_HINT,공포 이야기의 해설자처럼 낮은 목소리로 읽어 줘
+VOICE_GEMINI_NOTE,텍스트는 읽기를 위해 Google로 전송됩니다. 키는 이 브라우저에만 저장되며 백업에 포함되지 않습니다.
+VOICE_GEMINI_NO_KEY,Gemini를 사용하려면 키를 입력하세요(aistudio.google.com/apikey). 그 전까지는 브라우저 음성이 읽습니다.
+VOICE_GEMINI_TIME,첫 소리까지 {0}초, 전체 오디오까지 {1}초.
+VOICE_GEMINI_FAILED,Gemini가 읽지 못했습니다: {0}. 대신 브라우저 음성이 읽었습니다.
+VOICE_SPEECHIFY,Speechify
+VOICE_SPEECHIFY_KEY,Speechify API 키
+VOICE_SPEECHIFY_LOADING,음성을 불러오는 중…
+VOICE_SPEECHIFY_NO_VOICES,이 모델에는 이 언어의 Speechify 음성이 없습니다.
+VOICE_SPEECHIFY_NOTE,텍스트는 읽기를 위해 Speechify로 전송됩니다. 키는 이 브라우저에만 저장되며 백업에 포함되지 않습니다.
+VOICE_SPEECHIFY_NO_KEY,Speechify를 사용하려면 키를 입력하세요(platform.speechify.ai). 그 전까지는 브라우저 음성이 읽습니다.
+VOICE_SPEECHIFY_FAILED,Speechify가 읽지 못했습니다: {0}. 대신 브라우저 음성이 읽었습니다.
+VOICE_DEEPGRAM,Deepgram
+VOICE_DEEPGRAM_KEY,Deepgram API 키
+VOICE_DEEPGRAM_NO_VOICES,Deepgram에는 이 언어의 Aura-2 음성이 없습니다. 브라우저 음성이 읽습니다.
+VOICE_DEEPGRAM_NOTE,텍스트는 읽기를 위해 Deepgram으로 전송됩니다. 키는 이 브라우저에만 저장되며 백업에 포함되지 않습니다.
+VOICE_DEEPGRAM_NO_KEY,Deepgram을 사용하려면 키를 입력하세요(console.deepgram.com). 그 전까지는 브라우저 음성이 읽습니다.
+VOICE_DEEPGRAM_FAILED,Deepgram이 읽지 못했습니다: {0}. 대신 브라우저 음성이 읽었습니다.
+VOICE_DEEPGRAM_FAMILY,음성 종류
+VOICE_DEEPGRAM_OTHER,다른 음성(playground에서의 이름)
+HORROR_REMINDER,괴물이 활성화된 뒤 공포 판정을 알림
+HORROR_REMINDER_TEXT,공포 단계: 각 조사자는 범위 안에서 공포 수치가 가장 높은 괴물을 상대로 공포 판정을 합니다.
+BLANK_TILES,타일이 없으면 멈추지 않고 빈 타일을 놓기
+CLICK_SOUND,메뉴 버튼의 클릭 소리
+MUSIC_IMPORTED,공식 게임의 음악(가져온 것)
+MUSIC_CUSTOM,모험의 음악(작가의 것)
+MENU_SOUND,메뉴 소리
+FILTER_DOWNLOADED,내려받음
+FILTER_DOWNLOADED_ONLY,내려받음
+FILTER_NOT_DOWNLOADED,내려받지 않음
+UPDATE_ALL,모두 업데이트 ({0})
+UPDATING_ALL,{1}개 중 {0}번째 업데이트 중: {2}
+TILES_SHOW,타일 보기
+TILES_SPOILER,스포일러 주의: 타일은 탐험할 지도의 일부를 보여 줍니다. 볼까요?
+TILES_CONTINUE,계속해서 보기
+TILES_TITLE,시나리오 타일
+TILES_LOADING,시나리오 지도를 읽는 중…
+TILES_NONE,이 시나리오는 타일을 놓지 않습니다.
+TILES_OPTIONAL,선택: 컬렉션에 없는 「{0}」의 타일
+TILES_OPTIONAL_NOTE,시나리오는 해당 확장을 가지고 있을 때만 이 타일을 놓습니다. 가지고 있다면 내 컬렉션에서 선택하세요.
+TILES_UNKNOWN,알려진 어떤 확장에도 없음
+HEROES_ASKED_EXACT,이 시나리오는 {0}명이 필요합니다
+HEROES_ASKED_RANGE,이 시나리오는 {0}~{1}명이 필요합니다
+HEROES_CHOSEN,선택: {0}
+HERO_VIEW,목록 크기
+HERO_VIEW_NORMAL,작게
+HERO_VIEW_LARGE,크게
+HERO_VIEW_LARGER,초상화
+OPTIONS_RESET,기본 옵션으로 되돌리기
+OPTIONS_RESET_CONFIRM,모든 옵션을 처음 상태로 되돌릴까요? 언어, 게임, 표시와 내려받은 항목은 그대로 둡니다.
+TRANSLATE,자동 번역
+TRANSLATE_WARNING,AI가 내 언어로 되어 있지 않은 시나리오를 번역합니다. 오류가 있을 수 있으며 품질은 선택한 모델에 따라 다릅니다. 텍스트는 번역을 위해 OpenRouter로 전송됩니다. 설정은 간단합니다:
+TRANSLATE_STEP_1,openrouter.ai에서 무료 계정을 만드세요.
+TRANSLATE_STEP_2,Keys(openrouter.ai/keys)에서 Create Key를 누르고 이름을 정한 뒤 키를 복사하세요. 키는 sk-or-로 시작하며 한 번만 표시됩니다.
+TRANSLATE_STEP_3,아래에 붙여 넣으세요. 이 브라우저에만 저장됩니다.
+TRANSLATE_STEP_4,모델을 고르거나 우리가 정해 둔 무료 DeepSeek 모델을 그대로 쓰세요. 무료 모델은 느리거나 분당 제한이 있을 수 있으며, 크레딧이 있으면 더 빠른 모델을 쓸 수 있습니다.
+TRANSLATE_ENABLE,켜기
+TRANSLATE_KEY,OpenRouter 키
+TRANSLATE_MODEL,모델
+TRANSLATE_MODELS_LOADING,OpenRouter의 무료 모델을 찾는 중…
+TRANSLATE_MODEL_OTHER,다른 모델 (OpenRouter 이름)
+TRANSLATE_TRY,번역 시험
+TRANSLATE_WORKING,번역하는 중…
+TRANSLATED,자동 번역
+TRANSLATE_FAILED,번역하지 못했습니다: {0}
+TILES_TABLE,필요한 테이블: 약 {0} × {1} cm
+TILES_TABLE_NOTE,가장 큰 지도의 타일을 한꺼번에 모두 놓았을 때이며, 주변의 카드와 구성물은 빼고 잰 크기입니다.
+MUSIC_CREDIT_LABEL,음악 크레딧
+MUSIC_CREDIT,음악: {0}
+MUSIC_CREDIT_CHANNEL,YouTube의 {0}
+MORE_INFO,자세한 정보
+TILES_TABLE_INFO,이 정보는 실제와 다를 수 있습니다. 시나리오 지도로 계산한 최대 크기입니다.
+TRANSLATE_TIMEOUT,모델이 {0}초 넘게 응답하지 않았습니다. 다시 시도하거나 다른 모델을 고르세요
+TRANSLATE_TOOK,{0}이(가) {1}초 만에 응답했습니다.
+TRANSLATE_DISABLED,개선하는 동안 일시적으로 사용할 수 없습니다.
+STORAGE,저장 공간
+STORAGE_USED,앱이 이 브라우저가 허용하는 {1}MB 중 {0}MB를 사용하고 있습니다.
+STORAGE_PERSISTED,공간이 부족해도 브라우저가 이 파일들을 보관합니다.
+STORAGE_NOT_PERSISTED,브라우저 공간이 부족하면 이 파일들이 삭제될 수 있습니다. 가끔 백업해 두세요.
+STORAGE_PERSIST,브라우저에 보관 요청하기
+STORAGE_PERSIST_REFUSED,브라우저가 허용하지 않았습니다. 일부 브라우저는 설치된 앱이나 자주 방문하는 사이트에만 허용합니다.
+STORAGE_WRITE_FAILED,이 브라우저에 일부 내용을 저장하지 못했습니다: {0}
+GO_ON_PLAYING,계속 플레이
+SAVE_AND_QUIT,저장하고 나가기
+COPY_DIAGNOSTICS,오류 세부 정보 복사
+DIAGNOSTICS_COPIED,복사됨: 신고에 붙여 넣으세요
+OTHER_WINDOW,앱이 이미 다른 창이나 탭에서 열려 있습니다. 하나만 사용하세요. 그렇지 않으면 데이터를 서로 덮어씁니다.
+DELETE_SCENARIO_CONFIRM,이 기기에서 {0}을(를) 삭제할까요? 플레이하려면 다시 내려받아야 합니다.
+SAVE_FAILED,게임을 저장하지 못했습니다: {0}
+NOT_A_ZIP,{0}은(는) zip 파일이 아닙니다. Valkyrie 시나리오는 확장자가 .valkyrie인 zip입니다.
+CHECK_TITLE,{0} 추가됨, 알림 있음
+CHECK_TITLE_ERRORS,{0}을(를) 열 수 없습니다
+CHECK_FIXED_FOLDER,시나리오가 zip의 «{0}» 폴더 안에 있어서 앱이 꺼내어 플레이할 수 있게 했습니다. Valkyrie는 이 상태로는 열지 못합니다. 공유하려면 폴더가 아니라 폴더 안의 내용을 압축하세요.
+CHECK_BLANK_LINE,{0}, {1}번째 줄: 공백이나 탭만 있어 Valkyrie가 파일을 읽지 못합니다. 완전히 비워 두세요.
+CHECK_FORMAT,형식({0})은 Valkyrie가 읽는 형식({1}~{2})이 아닙니다.
+CHECK_NO_QUESTTEXT,quest.ini에 텍스트 파일을 나열하는 [QuestText] 섹션이 없어 Valkyrie가 열 수 없습니다.
+CHECK_MISSING_FILE,quest.ini에 적힌 파일 {0}이(가) 시나리오에 없습니다.
+CHECK_LOCALIZATION_HEADER,{0}: 첫 줄은 «.,Korean»처럼 언어를 적어야 합니다. Valkyrie가 읽을 수 없습니다.
+CHECK_MISSING_EVENT,{0}에 존재하지 않는 이벤트 {1}(으)로 가는 버튼이 있습니다.
+CHECK_MORE,이와 같은 것이 {0}개 더 있습니다.
+CHECK_UNREADABLE,{0}을(를) 읽을 수 없습니다: {1}
+COLOUR_CLASSIC,클래식
+PREVIOUS_PAGE,이전 페이지
+NEXT_PAGE,다음 페이지
+PAGE_OF,{1}쪽 중 {0}쪽
+TRANSLATION_BUTTON,내 번역
+TRANSLATION_TITLE,이 시나리오의 내 번역
+TRANSLATION_EXPLAIN,번역의 Localization.<언어>.txt 파일과, 바꾼다면 시나리오가 붙인 이름 그대로의 그림과 소리를 담은 zip을 불러오세요. 이 기기에 저장되며 이 시나리오를 그 언어로 시작할 때 사용됩니다. 같은 언어의 다른 번역은 이전 것을 대체합니다.
+TRANSLATION_NONE,이 시나리오의 직접 만든 번역이 없습니다.
+TRANSLATION_SAVED_LINE,{0}: 텍스트 {2}개 중 {1}개, 그림 {3}개, 소리 {4}개 ({5}).
+TRANSLATION_LOAD,zip 불러오기
+TRANSLATION_REMOVE,제거
+TRANSLATION_REMOVE_LANGUAGE,{0} 번역 제거
+TRANSLATION_READING,읽는 중…
+TRANSLATION_REPORT_TITLE,{0}에서 찾은 내용
+TRANSLATION_NOT_SAVED,저장되지 않았습니다:
+TRANSLATION_TEXTS,번역된 텍스트: {1}개 중 {0}개.
+TRANSLATION_IMAGES,대체하는 그림: {0}개.
+TRANSLATION_SOUNDS,대체하는 소리: {0}개.
+TRANSLATION_SAVED,이 기기에 저장됨: 이 시나리오를 {0}(으)로 플레이할 때 사용됩니다.
+TRANSLATION_REPLACED,기존의 {0} 번역을 대체합니다.
+TRANSLATION_NOT_ZIP,zip 파일이 아닙니다.
+TRANSLATION_NO_TEXTS_FILE,zip에 텍스트가 담긴 Localization.<언어>.txt 파일이 없습니다.
+TRANSLATION_SEVERAL_LANGUAGES,zip에 여러 언어의 텍스트가 있습니다({0}): 한 번에 하나씩 불러오세요.
+TRANSLATION_UNKNOWN_LANGUAGE,«{0}»은(는) Valkyrie의 언어가 아닙니다({1}).
+TRANSLATION_NAME_LANGUAGE,{0}의 이름이 안의 언어({1})와 맞지 않습니다: 안의 언어가 적용됩니다.
+TRANSLATION_NOTHING_TRANSLATED,이 시나리오의 텍스트가 하나도 없습니다: 다른 시나리오의 번역인가요?
+TRANSLATION_UNKNOWN_TEXTS,텍스트 {0}개가 시나리오에 없습니다(다른 버전?): {1}.
+TRANSLATION_UNUSED_FILES,파일 {0}개가 시나리오의 어떤 파일도 대체하지 않아 사용되지 않습니다: {1}. 시나리오의 파일과 같은 이름이어야 합니다.
+TRANSLATION_REPLACES_OWN,이 시나리오에는 이미 {0}이(가) 있습니다: 내 텍스트가 원래 텍스트를 대체합니다.
+TRANSLATION_OTHER_LANGUAGE,{0}으로 되어 있고 {1}로 플레이 중입니다: 언어를 {0}(으)로 바꿀 때만 사용됩니다.
+TRANSLATION_SWITCH_ASK,앱 언어를 지금 {0}(으)로 바꿀까요? 메뉴와 이 시나리오도 함께 바뀝니다.
+TRANSLATION_SWITCH,{0}(으)로 바꾸기
+TRANSLATION_STAY,{0} 유지
+RULES_HELP,도움말과 규칙
+RULES_ACTIONS,조사자 행동
+RULES_ACTIONS_D2E,영웅 행동
+RULES_ACTIONS_DOOM,해병 행동
+RULES_SUMMARY,규칙 요약
+RULES_NOTE,게임 방법을 떠올리기 위해 팬이 만든 요약입니다. 공식 규칙서를 대신하지 않습니다.
+SHOW_MAP,지도 보기
+SHOW_TEXT,글로 돌아가기
+CLEAR_ELIMINATED,조사자 탈락 취소
+NO_WEBGL,이 브라우저는 WebGL이 없어 보드를 그릴 수 없습니다. 설정에서 하드웨어 가속을 켜거나 다른 브라우저를 사용해 보세요.
+BOARD_LOST,메모리가 부족해 보드를 다시 그릴 수 없습니다. 앱을 완전히 닫았다가 다시 열고 이어하기를 선택하세요.
+TILES_TAB,타일
+MONSTERS_SHOW,적
+ITEMS_SHOW,아이템
+MONSTERS_TITLE,시나리오의 적
+ITEMS_TITLE,시나리오의 아이템
+MONSTERS_NOTE,시나리오가 지정한 괴물입니다. 특성으로 무작위로 뽑는 것은 없습니다.
+ITEMS_NOTE,시나리오가 지정한 아이템입니다. 무작위로 뽑는 것은 없습니다.
+MONSTERS_NONE,이 시나리오는 지정한 괴물이 없습니다.
+ITEMS_NONE,이 시나리오는 지정한 아이템이 없습니다.
+HELP_SEARCH,도움말 검색
+HELP_SEARCH_NONE,도움말에 일치하는 내용이 없습니다.
+QUIT_CONFIRM,주 메뉴로 나갈까요? 게임은 자동으로 저장되며 계속으로 이어서 할 수 있습니다.
+QUIT_CONFIRM_YES,나가기
+BUTTON_HINTS,한동안 누르지 않으면 시나리오의 버튼을 은은하게 빛나게 하기
+QUEST_SERIOUS,주의: 이 시나리오에는 게임을 멈추거나 이벤트를 끊을 수 있는 작성자의 오류가 {0}개 있습니다.
+QUEST_SERIOUS_SHOW,보기
+QUEST_SERIOUS_HIDE,숨기기
+QUEST_SERIOUS_TELL,작성자의 오류입니다. 게임이 멈추면 작성자에게 알려 주세요.
+FAULT_ADD_MISSING,{0}이(가) 존재하지 않는 것을 놓습니다
+FAULT_TILE,타일 {0}은(는) 어떤 팩에도 없습니다
+FAULT_START,시작 이벤트가 없습니다
+FAULT_TWICE,{0}이(가) 두 번 적혀 있습니다
+FAULT_TEXT,{0} 텍스트가 제대로 닫히지 않았습니다
+GAME_TIMER,라운드와 게임 시간 표시
+TIMER_ROUND,라운드 {0}
+TIMER_GAME,게임 {0}
+SCENARIO_FAULTS,시나리오 상세에서 작성자의 심각한 오류 알리기
+TV_MODE,TV 모드: 모두 크게, 멀리서도 읽기 쉽게
+FULLSCREEN,전체 화면
+NOTES,메모
+NOTES_HINT,단서, 암호, 누가 무엇을 들었는지…
+NOTES_KEPT,게임을 저장할 때 함께 저장됩니다.
+EDITOR_NOT_READY,에디터가 아직 준비되지 않았습니다
+EDITOR_EARLY,아직 아주 초기 단계입니다. 시험용으로만 사용하고 완성된 도구로 쓰지 마세요
+EDITOR_COMPUTER_ONLY,지금은 마우스나 터치패드가 있는 컴퓨터에서만 열립니다. 휴대폰이나 태블릿에서는 열리지 않습니다.
+EDITOR_ENTER,알겠습니다, 들어가기
+ADD_CONTENT_PACK,파일에서 팩 추가
+PACKS_FROM_FILES,이 기기에 있고 스토어 목록에 없는 팩
+PACK_ADDED,{0}을(를) 추가했습니다. 사용하려면 {1}의 {2}에서 선택하세요.
+PACK_CHECK_TITLE,{0}을(를) 추가했습니다(경고 있음)
+PACK_CHECK_TITLE_ERRORS,{0}을(를) 추가할 수 없습니다
+PACK_NOT_ZIP,{0}은(는) zip 파일이 아닙니다. 콘텐츠 팩은 확장자가 .valkyrieContentPack인 zip입니다.
+PACK_IS_SCENARIO,{0}은(는) 시나리오이며 콘텐츠 팩이 아닙니다. 시나리오 목록에서 “{1}”로 추가하세요.
+PACK_NO_INI,{0}에는 최상위에도 폴더 안에도 content_pack.ini가 없어 Valkyrie가 팩으로 인식하지 않습니다.
+PACK_NO_NAME,content_pack.ini의 [ContentPack]에 name이 없습니다. Valkyrie는 이를 읽다가 멈춥니다. name=…으로 팩 이름을 추가하세요.
+PACK_NO_ID,content_pack.ini의 [ContentPack]에 id가 없습니다. 고유한 id(manifest와 같은 것)를 추가하세요. 팩은 이 id로 저장되고 시나리오도 이 id로 요구합니다.
+PACK_BAD_ID,id “{0}”에 공백이나 기호가 있습니다. 시나리오는 팩을 공백으로 구분하고, id는 파일 이름도 됩니다. 영문자, 숫자, - 와 _만 쓰세요.
+PACK_OFFICIAL_ID,id “{0}”은(는) 공식 팩의 id입니다. 이 팩이 그것을 대체하게 됩니다. 다른 id를 쓰세요.
+PACK_STORE_ID,스토어에 이미 id가 “{0}”인 팩이 있습니다. 이 기기에서는 이 팩이 그 자리를 대신합니다. 그 팩의 본인 버전이 아니라면 다른 id를 쓰세요.
+PACK_NO_TYPE,content_pack.ini에 type이 없습니다. type={0}Custom을 추가하세요.
+PACK_OTHER_GAME,다른 게임용 팩입니다(type={0}). {1}에서 추가하세요.
+PACK_BAD_TYPE,type={0}은(는) 이 게임용이 아닙니다. {1}Custom처럼 {1}(으)로 시작해야 합니다.
+PACK_NOT_CUSTOM,type={0}: 커뮤니티 팩은 {1}을(를) 씁니다. 다른 유형이면 컬렉션의 커뮤니티 팩에 나오지 않습니다.
+PACK_NO_IMAGE,팩 이미지({0})가 팩 안에 없습니다. 이미지 없이 표시됩니다.
+PACK_NO_ICON,팩 아이콘({0})이 팩 안에 없습니다.
+PACK_CASE,{0}은(는) 팩 안에서 {1}(이)라는 이름입니다. 이 앱과 Windows는 대소문자를 가리지 않지만 Android와 Linux의 Valkyrie는 가리므로 찾지 못합니다. 같은 대소문자로 쓰세요.
+PACK_LANGUAGE_LINE,[LanguageData]에 “{0}” 줄이 있습니다. “pck Localization.Korean.txt”처럼 사전과 파일을 적어야 합니다.
+PACK_MISSING_LANGUAGE,[LanguageData]에 적힌 {0}이(가) 팩 안에 없습니다. 그 텍스트는 표시되지 않습니다.
+PACK_MISSING_DATA,[ContentPackData]에 적힌 {0}이(가) 팩 안에 없습니다. Valkyrie는 이 파일에서 팩 불러오기를 멈춥니다.
+PACK_UNKNOWN_SECTION,{0}: Valkyrie는 [{1}]이(가) 무엇인지 몰라 무시합니다. 섹션 이름은 유형으로 시작해야 합니다(TileSide, Monster, Item, Token…).
+PACK_DUPLICATE,[{0}]이(가) {1}과(와) {2}에 모두 있습니다. 첫 번째만 적용됩니다. 각각 다른 이름을 쓰세요.
+PACK_NAME_TAKEN,[{0}]은(는) 이미 팩 {1}에서 정의되어 있습니다. 둘 중 하나만 적용됩니다. 직접 만든 것에 고유한 이름을 쓰세요.
+PACK_MISSING_IMAGE,{0}, [{1}]: 이미지 {2}이(가) 팩 안에 없습니다(.png, .jpg, .dds… 를 붙여도). 이미지 없이 표시됩니다.
+PACK_IMAGE_ROOTED,{0}, [{1}]: 이미지 {2}이(가) 슬래시로 시작해 Valkyrie가 팩 밖에서 찾습니다. 슬래시를 지우세요.

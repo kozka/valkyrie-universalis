@@ -1,0 +1,66 @@
+/* The editor's warning while it is open to try (ui/EditorWarning.tsx): over the menu, in large capitals, between two
+   bands of warning stripes. Sized by the screen within the player's text size; on a screen too short for it, it scrolls,
+   and the bands go with its words (local), so that they never run under them. Its red frame is a shadow inside, not a
+   border, so that a button half scrolled into sight is pressed where it shows */
+.window-layer.editor-warning-layer {
+  z-index: 45;
+}
+
+/* .window's own size and gap (QuestScreen.css) load after this sheet */
+.window.editor-warning {
+  width: min(100%, 70rem);
+  align-items: center;
+  gap: clamp(0.5rem, 3.5vh, 2rem);
+  padding: clamp(1rem, 7vh, 4rem) clamp(1rem, 5vw, 4rem);
+  border: none;
+  box-shadow: inset 0 0 0 2px var(--alert), var(--window-shadow);
+  background:
+    repeating-linear-gradient(-45deg, var(--alert) 0 0.9rem, var(--shade) 0.9rem 1.8rem) top / 100% 0.75rem no-repeat,
+    repeating-linear-gradient(-45deg, var(--alert) 0 0.9rem, var(--shade) 0.9rem 1.8rem) bottom / 100% 0.75rem no-repeat,
+    var(--panel);
+  background-attachment: local;
+  text-align: center;
+}
+
+.editor-warning h2 {
+  margin: 0;
+  color: var(--alert-light);
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, min(7.5vw, 12vh), 6rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.editor-warning p {
+  margin: 0;
+  color: var(--text-bright);
+  font-size: clamp(1.25rem, min(3.4vw, 5.5vh), 2.5rem);
+  font-weight: 600;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+/* On a phone or a tablet: why it does not open */
+.editor-warning p.editor-warning-computer {
+  color: var(--accent);
+  font-size: clamp(1.1rem, min(2.6vw, 4.5vh), 1.6rem);
+  font-weight: 500;
+  text-transform: none;
+}
+
+.editor-warning-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.editor-warning-actions .button {
+  min-width: 11rem;
+  font-size: var(--step-sub);
+}

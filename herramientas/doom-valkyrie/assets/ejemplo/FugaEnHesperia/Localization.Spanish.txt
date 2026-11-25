@@ -1,0 +1,125 @@
+.,Spanish
+quest.name,Fuga en Hesperia
+quest.synopsys,El pozo Argent de la estación Hesperia ha reventado: cerrad sus válvulas.
+quest.description,"Una misión de ejemplo para el pack de la comunidad DooM, para 1-4 marines, de 60 a 90 minutos: portales que se abren al verlos, un mazo de amenaza, energía Argent, armas que recoger, una puerta con tarjeta, dos consolas y un jefe.\n\n<i>Necesita el juego de mesa DOOM (2016) y el pack DooM activado en Valkyrie.</i>"
+quest.authors,"<b>Autor</b>\nEjemplo de la skill doom-valkyrie"
+quest.authors_short,Skill doom-valkyrie
+EventPrologo.text,"<i>La estación de bombeo Hesperia extrae energía Argent del subsuelo de Marte. Hace una hora reventó la válvula maestra de su pozo, y lo que salió por ella no era gas.</i>\n\n<i>Vuestro pelotón llega por el teletransportador de emergencia de la esclusa. Hay que cerrar a mano las dos válvulas de seguridad antes de que la fuga alcance la superficie.</i>"
+EventPrologo.button1,Continuar
+EventPreparacion.text,"<b>Preparación</b>\n\nCada marine forma su mazo con el juego UAC y dos armas iniciales distintas (la clase que elegisteis en Valkyrie solo las sugiere) y roba 3 cartas. Con menos de 4 marines, usad las cartas de pelotón.\n\nNo hace falta carta de Invasión: la app decide qué sale de cada portal. Barajad 3 mazos de evento cualesquiera para la defensa de los demonios y dejad a mano sus cartas, el Argent y el mazo de Ejecución."
+EventPreparacion.button1,Continuar
+EventArgentRonda.text,"<b>Energía Argent</b>\n\nEl invasor gana 2 Argent: repartidlos lo más igual posible entre las cartas de los demonios que hay en el mapa."
+EventArgentRonda.button1,Continuar
+EventAmenazaPregunta.text,"<b>Mazo de amenaza</b>\n\n¿Jugáis con el mazo de amenaza de esta misión? Al empezar cada ronda saldrá una carta al azar con un efecto para esa ronda."
+EventAmenazaPregunta.button1,Sí
+EventAmenazaPregunta.button2,No
+EventAmenaza1.text,"<b>Carta de amenaza: Sed de sangre</b>\n\nEsta ronda, cada demonio tira 1 dado rojo más cuando ataca.\n\n<i>Quedan {var:amenazaQuedan} cartas en el mazo.</i>"
+EventAmenaza1.button1,Continuar
+EventAmenaza2.text,"<b>Carta de amenaza: Piel de hierro</b>\n\nEsta ronda, cada demonio suma 1 escudo a su defensa.\n\n<i>Quedan {var:amenazaQuedan} cartas en el mazo.</i>"
+EventAmenaza2.button1,Continuar
+EventAmenaza3.text,"<b>Carta de amenaza: Marea Argent</b>\n\nEl invasor gana 1 Argent por cada carta de demonio boca arriba.\n\n<i>Quedan {var:amenazaQuedan} cartas en el mazo.</i>"
+EventAmenaza3.button1,Continuar
+EventAmenaza4.text,"<b>Carta de amenaza: Rugido del pozo</b>\n\nEl primer grupo de demonios que se active esta ronda gana 2 puntos de movimiento.\n\n<i>Quedan {var:amenazaQuedan} cartas en el mazo.</i>"
+EventAmenaza4.button1,Continuar
+EventAmenaza5.text,"<b>Carta de amenaza: Brecha</b>\n\nSi queda algún portal en el mapa, pulsad el más cercano a un marine: se abre ahora, aunque nadie lo vea.\n\n<i>Quedan {var:amenazaQuedan} cartas en el mazo.</i>"
+EventAmenaza5.button1,Continuar
+EventAmenaza6.text,"<b>Carta de amenaza: Respiro</b>\n\nEsta ronda no pasa nada. Aprovechadla.\n\n<i>Quedan {var:amenazaQuedan} cartas en el mazo.</i>"
+EventAmenaza6.button1,Continuar
+TokenTeleEntrada.text,Un teletransportador activo: aquí pueden reaparecer los marines. Todos los activos son adyacentes entre sí para moverse.
+TokenTeleEntrada.button1,Continuar
+TokenReglasApp.text,"<b>Cómo se juega con la app</b>\n\nValkyrie hace de invasor. Jugad las activaciones de los marines en el orden que queráis: al terminar cada una, pulsad «Fin del Turno» en el retrato del marine y la app activará un grupo de demonios al azar. Moved y atacad con sus figuras como dice la activación. La defensa de un demonio es la primera carta del mazo de eventos: usad solo sus iconos.\n\nCuando muera un marine, pulsad KO en su retrato. En su siguiente activación reaparece en un teletransportador activo: pulsad Recuperar.\n\nCuando un marine tenga línea de visión con un portal, pulsadlo. Los demonios no abren puertas.\n\n<b>Un solo marine</b> (carta de pelotón Solo Operative): tiene dos activaciones por ronda. Al acabar la primera, pulsad «Forzar Activación» en el retrato de un grupo de demonios que aún no haya actuado, elegido al azar; al acabar la segunda, «Fin del Turno»."
+TokenReglasApp.button1,Continuar
+TokenReglasMision.text,"<b>Reglas de la misión</b>\n\n<b>Portales:</b> se abren cuando un marine los ve (la variante de Infestación de las misiones de Valkyrie). Si no quedan figuras de un demonio, no salen más.\n<b>Pelotón:</b> con menos de 4 marines, usad las cartas de pelotón.\n<b>Argent:</b> el invasor gana 2 al empezar cada ronda si hay demonios en el mapa, y más con algunos portales.\n<b>Mazo de amenaza:</b> si lo usáis, una carta al empezar cada ronda.\n<b>Frags:</b> el invasor gana con 6. Valkyrie los lleva como su «moral»: el número rojo de arriba a la izquierda es cuántas bajas más podéis sufrir sin perder, y cada KO lo baja en 1."
+TokenReglasMision.button1,Continuar
+TokenObjetivo.text,"<b>Objetivo</b>\n\nCerrad las dos válvulas de seguridad: una está en el almacén y la otra en la sala del pozo, tras la puerta amarilla (su tarjeta está en el almacén). Cuando estén cerradas, algo vendrá a por vosotros.\n\nEl invasor gana con 6 frags."
+TokenObjetivo.button1,Continuar
+TokenBotiquinEsclusa.text,Un botiquín de emergencia. Lo recoge el marine que pasa por su casilla.
+TokenBotiquinEsclusa.button1,Un marine lo recoge
+EventBotiquinEsclusa.text,Ese marine retira 5 de daño de su carta.
+EventBotiquinEsclusa.button1,Continuar
+DoorEsclusa.text,La puerta interior de la esclusa.
+DoorEsclusa.button1,Abrirla (1 punto de movimiento)
+EventMontar.text,"Colocad las piezas {c:TileEntrada} y {c:TileEsclusa}, la puerta, el teletransportador y un botiquín como se indica. Los marines empiezan en el teletransportador o a su lado.\n\nLas fichas de la izquierda, fuera del mapa, recuerdan el objetivo y las reglas: pulsadlas cuando queráis."
+EventMontar.button1,Continuar
+SpawnInicio.text,Algo se mueve ya por la esclusa. Colocad el grupo de {type} en las casillas marcadas.
+SpawnInicio.button1,Continuar
+TokenPortalCruce.text,Un portal azul crepita. Pulsadlo en cuanto un marine tenga línea de visión con él.
+TokenPortalCruce.button1,Un marine lo ve: ¡se abre!
+SpawnPortalCruceA.text,"<b>¡Se abre el portal azul!</b>\n\nColocad el grupo de {type} en las casillas marcadas o, si no caben, en las libres más cercanas."
+SpawnPortalCruceA.button1,Continuar
+SpawnPortalCruceB.text,"<b>¡Se abre el portal azul!</b>\n\nColocad el grupo de {type} en las casillas marcadas o, si no caben, en las libres más cercanas."
+SpawnPortalCruceB.button1,Continuar
+EventArgentPortal1.text,El invasor gana 1 Argent: ponedlo en las cartas de los demonios que acaban de salir.
+EventArgentPortal1.button1,Continuar
+TokenPortalAlmacen.text,Un portal azul crepita. Pulsadlo en cuanto un marine tenga línea de visión con él.
+TokenPortalAlmacen.button1,Un marine lo ve: ¡se abre!
+SpawnPortalAlmacenA.text,"<b>¡Se abre el portal azul!</b>\n\nColocad el grupo de {type} en las casillas marcadas o, si no caben, en las libres más cercanas."
+SpawnPortalAlmacenA.button1,Continuar
+SpawnPortalAlmacenB.text,"<b>¡Se abre el portal azul!</b>\n\nColocad el grupo de {type} en las casillas marcadas o, si no caben, en las libres más cercanas."
+SpawnPortalAlmacenB.button1,Continuar
+TokenTeleAlmacen.text,Un teletransportador activo: aquí pueden reaparecer los marines. Todos los activos son adyacentes entre sí para moverse.
+TokenTeleAlmacen.button1,Continuar
+TokenTeleInactivoAlmacen.text,Un teletransportador apagado. Se enciende cuando un marine entra en su casilla.
+TokenTeleInactivoAlmacen.button1,Un marine ha entrado
+EventTeleAlmacen.text,El teletransportador se enciende: desde ahora los marines pueden reaparecer aquí.
+EventTeleAlmacen.button1,Continuar
+TokenArmaMotosierra.text,Aquí está la motosierra. La recoge el marine que pasa por su casilla, sin gastar movimiento.
+TokenArmaMotosierra.button1,Un marine la recoge
+EventArmaMotosierra.text,El marine que la recoge baraja sus cartas y las pone boca abajo encima de su mazo de acción.
+EventArmaMotosierra.button1,Continuar
+TokenTarjetaAmarilla.text,Una tarjeta de acceso amarilla.
+TokenTarjetaAmarilla.button1,Un marine la recoge
+EventTarjetaAmarilla.text,Tenéis la tarjeta amarilla: ya podéis abrir las puertas amarillas.
+EventTarjetaAmarilla.button1,Continuar
+TokenBotiquinCruce.text,Un botiquín de emergencia. Lo recoge el marine que pasa por su casilla.
+TokenBotiquinCruce.button1,Un marine lo recoge
+EventBotiquinCruce.text,Ese marine retira 5 de daño de su carta.
+EventBotiquinCruce.button1,Continuar
+TokenConsolaAlmacen.text,"La válvula de seguridad del almacén, atascada a medio cerrar.\n\nUn marine adyacente puede, una vez en su activación, descartar 1 carta de acción para hacer 1 avance. Hacen falta 2."
+TokenConsolaAlmacen.button1,Un marine ha descartado una carta
+EventConsolaHechaAlmacen.text,La válvula chirría y se cierra del todo. Válvulas cerradas: {var:valvulas} de 2.
+EventConsolaHechaAlmacen.button1,Continuar
+EventConsolaFaltaAlmacen.text,Avance hecho: {var:girosAlmacen} de 2.
+EventConsolaFaltaAlmacen.button1,Continuar
+DoorAmarilla.text,La puerta de la sala del pozo, con un lector de tarjetas. Solo se abre con la tarjeta amarilla.
+DoorAmarilla.button1,Abrirla (1 punto de movimiento)
+EventAbrirEsclusa.text,La puerta da a un cruce de pasillos que huele a ozono. Retirad la puerta y colocad las piezas {c:TileCruce} y {c:TileAlmacen}, tres piezas {c:TileCuartoCruce}, la puerta amarilla y las fichas como se indica: dos portales azules, un teletransportador apagado, una consola, la tarjeta amarilla, la motosierra y un botiquín.
+EventAbrirEsclusa.button1,Continuar
+TokenPortalPozo.text,Un portal amarillo crepita. Pulsadlo en cuanto un marine tenga línea de visión con él.
+TokenPortalPozo.button1,Un marine lo ve: ¡se abre!
+SpawnPortalPozoA1.text,"<b>¡Se abre el portal amarillo!</b>\n\nColocad el grupo de {type} en las casillas marcadas o, si no caben, en las libres más cercanas."
+SpawnPortalPozoA1.button1,Continuar
+SpawnPortalPozoA2.text,Y también: colocad el grupo de {type} en las casillas marcadas.
+SpawnPortalPozoA2.button1,Continuar
+SpawnPortalPozoB.text,"<b>¡Se abre el portal amarillo!</b>\n\nColocad el grupo de {type} en las casillas marcadas o, si no caben, en las libres más cercanas."
+SpawnPortalPozoB.button1,Continuar
+TokenArmaLanzamisiles.text,Aquí está el lanzamisiles. Lo recoge el marine que pasa por su casilla, sin gastar movimiento.
+TokenArmaLanzamisiles.button1,Un marine lo recoge
+EventArmaLanzamisiles.text,El marine que lo recoge baraja sus cartas y las pone boca abajo encima de su mazo de acción.
+EventArmaLanzamisiles.button1,Continuar
+TokenConsolaPozo.text,"La válvula de seguridad de la sala del pozo. El suelo vibra bajo vuestros pies.\n\nUn marine adyacente puede, una vez en su activación, descartar 1 carta de acción para hacer 1 avance. Hacen falta 2."
+TokenConsolaPozo.button1,Un marine ha descartado una carta
+EventConsolaHechaPozo.text,La válvula chirría y se cierra del todo. Válvulas cerradas: {var:valvulas} de 2.
+EventConsolaHechaPozo.button1,Continuar
+EventConsolaFaltaPozo.text,Avance hecho: {var:girosPozo} de 2.
+EventConsolaFaltaPozo.button1,Continuar
+EventAbrirPozo.text,El lector acepta la tarjeta y la compuerta se retrae entre chispas. Al fondo, la boca de la perforación brilla con un fulgor rojo. Retirad la puerta y colocad las piezas {c:TilePozo} y {c:TileArmeria}, un portal amarillo, la consola y el lanzamisiles como se indica.
+EventAbrirPozo.button1,Continuar
+EventPozoSellado.text,"<b>¡El pozo está sellado!</b>\n\nLa presión se dispara y de la boca del pozo sale un fogonazo rojo. Algo enorme trepa por la perforación."
+EventPozoSellado.button1,Continuar
+CustomMonsterBaronPozo.monstername,Barón del pozo
+CustomMonsterBaronPozo.info,Usad la figura y la carta del Barón del infierno. Tiene vida adicional (en rojo en su retrato) y se le puede ejecutar como a cualquier demonio.
+ActivationBaronEmbestida.ability,<i>El Barón huele la sangre de {0}.</i>
+ActivationBaronEmbestida.master,"{action} Se mueve hasta 5 casillas hacia ese marine (si no está en el mapa, hacia el más cercano) hasta quedar adyacente.\n{action} Le ataca.\nSi aún le quedan 5 puntos de movimiento, los gasta en atacarle otra vez."
+ActivationBaronFuego.ability,<i>Una bola de fuego verde crece entre sus garras.</i>
+ActivationBaronFuego.master,"[1 Argent] Gran bola de fuego: este ataque gana +3 de alcance.\n{action} Se mueve hasta 4 casillas para tener a tiro al marine más alejado que pueda ver.\n{action} Le ataca."
+SpawnBaron.text,Colocad al {type} en la casilla marcada: si su figura ocupa varias casillas, que una de ellas sea esa (o, si no cabe, lo más cerca posible). El invasor gana 2 Argent: ponedlos en su carta.
+SpawnBaron.button1,Continuar
+SpawnBaron.uniquetitle,Barón del pozo
+SpawnBaron.uniquetext,El Barón del pozo tiene 2 de vida más, y 2 más por marine. Cuando caiga, pulsad «Derrotado» en su retrato.
+EventObjetivoFinal.text,<b>Objetivo actualizado:</b> matad al Barón del pozo. Si cae, la estación está a salvo.
+EventObjetivoFinal.button1,Continuar
+EventVictoria.text,"<b>Victoria</b>\n\nEl Barón se desploma sobre la boca del pozo y el fulgor rojo se apaga con él. Las válvulas aguantan: la fuga de Hesperia no llegará a la superficie.\n\n<i>Fin de la misión.</i>"
+EventVictoria.button1,Fin
+EventDerrota.text,"<b>Derrota</b>\n\nEl invasor se cobra su sexto frag. Los teletransportadores de Hesperia se apagan uno a uno, y la fuga sigue subiendo.\n\n<i>Fin de la misión.</i>"
+EventDerrota.button1,Fin

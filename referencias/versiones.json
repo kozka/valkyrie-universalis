@@ -1,0 +1,27 @@
+{
+  "valkyrie": {
+    "url": "https://github.com/NPBruce/valkyrie.git",
+    "commit": "752d4206738f00a6d41e34be56fe7e65e7b35965",
+    "date": "2026-06-20T18:44:49+02:00"
+  },
+  "valkyrie-store": {
+    "url": "https://github.com/NPBruce/valkyrie-store.git",
+    "commit": "f59700fc7d2521ffc546d7345777d5e35dd9b68c",
+    "date": "2026-10-07T16:44:08Z"
+  },
+  "valkyrie-questdata": {
+    "url": "https://github.com/NPBruce/valkyrie-questdata.git",
+    "commit": "2778f2121280332592bfb8ef8acce9409b5b05d9",
+    "date": "2026-02-17T17:25:16+01:00"
+  },
+  "valkyrie.wiki": {
+    "url": "https://github.com/NPBruce/valkyrie.wiki.git",
+    "commit": "3308b7f1c5e7c589c33ca2bf88848707359627cb",
+    "date": "2026-09-26T13:12:56+02:00"
+  },
+  "ValkyrieMCP": {
+    "url": "https://github.com/thijs-hakkenberg/ValkyrieMCP.git",
+    "commit": "b1a89928f74edf8f84f89d53e4ce518babfa5142",
+    "date": "2026-10-04T12:40:55+02:00"
+  }
+}

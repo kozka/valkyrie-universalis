@@ -1,0 +1,679 @@
+.,English
+// The scenario editor's own texts ('edi'), in development builds until it is ready, and in the published app while it is open to try (packages/app/editorPreview.ts): English and Spanish now (the other languages read the English ones), the other eleven languages before it is ready.
+EDITOR_DEV_ONLY,Only in development: the editor is not ready yet, and the published app does not have it.
+EDITOR_PREVIEW_NOTE,Very early stage: the editor is not ready yet. Use it only to try it out, not as a finished tool.
+EDITOR_NONE,No scenarios in the editor yet. Make a new one, copy one or import one.
+EDITOR_FOLDER,Folder: {0}
+EDITOR_OPEN,Open
+EDITOR_IMPORT_FILE,Import a scenario or a zip
+EDITOR_IMPORT_FOLDER,Import a folder
+EDITOR_IMPORTED,{0} added to the editor.
+EDITOR_IMPORT_NO_QUEST,{0} has no quest.ini: it is not a scenario.
+EDITOR_IMPORT_FAILED,{0} could not be read: {1}
+EDITOR_EXPORT,Export
+EDITOR_APART_DOOM,DooM's missions, which are edited from its menu: {0}.
+EDITOR_APART_DESCENT,Descent's adventures, which are edited from its menu: {0}.
+EDITOR_ADVENTURES,Adventures:
+EDITOR_ADVENTURES_OF,The adventures of {0}
+EDITOR_ADVENTURES_COUNT,A campaign; adventures: {0}
+EDITOR_ADVENTURES_N,Adventures ({0})
+EDITOR_NEW_ADVENTURE,New adventure
+EDITOR_NEW_ADVENTURE_OF,New adventure of {0}
+EDITOR_CAMPAIGN,Campaign:
+EDITOR_ADVENTURE_PACKAGE,An adventure is packaged and exported with its campaign.
+EDITOR_DELETE_CONFIRM,Delete «{0}» and every file in its folder? It cannot be undone.
+EDITOR_DELETED,{0} deleted.
+EDITOR_COPIED,Copied to {0}.
+EDITOR_PACKAGE_READY,Package of {0} ready: the scenario, its manifest and its cover, as Valkyrie's editor makes them.
+EDITOR_PACKAGE_FAILED,The package could not be made.
+EDITOR_SAVED,Saved.
+EDITOR_SAVE_REFUSED,Not saved: these texts would not read back the same: {0}
+EDITOR_FILES,Files
+EDITOR_FILE_SIZE,{0} KB
+EDITOR_PROBLEMS,Problems
+EDITOR_BREAKS,Break Valkyrie ({0})
+EDITOR_WRONG,Will not do what the author meant ({0})
+EDITOR_HINTS,Hints ({0})
+EDITOR_NO_PROBLEMS,Nothing found.
+EDITOR_CANNOT_OPEN,Valkyrie's editor cannot open it either: {0}
+EDITOR_COMPONENTS_LIST,Components
+EDITOR_DOT_BREAKS,Breaks Valkyrie
+EDITOR_DOT_WRONG,Will not do what the author meant
+EDITOR_NEW_COMPONENT,New {0}
+EDITOR_RENAME_STEP,Rename {0}
+EDITOR_MOVE_STEP,Move {0}
+EDITOR_ROTATE_STEP,Turn {0}
+EDITOR_SOURCE_STEP,File of {0}
+EDITOR_COMMENT_STEP,Comment of {0}
+EDITOR_DELETE_STEP,Delete {0}
+EDITOR_DELETE_COMPONENT_CONFIRM,Delete {0}? Whatever names it stops naming it.
+EDITOR_NEW_FILE,New file
+EDITOR_LEADS_TO,Leads to
+EDITOR_REACHED_FROM,Reached from
+EDITOR_LINK_BUTTON,button
+EDITOR_LINK_ADD,adds
+EDITOR_LINK_REMOVE,removes
+EDITOR_LINK_HERO,heroes of
+EDITOR_LINK_DEFEATED,when defeated
+EDITOR_LINK_MONSTER,monster
+EDITOR_LINK_PLACEMENT,place
+EDITOR_LINK_ACTIVATION,activation
+EDITOR_LINK_EVADE,evade
+EDITOR_LINK_HORROR,horror
+EDITOR_LINK_INSPECT,inspect
+EDITOR_LINK_ITEM,item
+EDITOR_LINK_QUEST,next quest
+EDITOR_LINK_TEXT,text
+EDITOR_FORMAT,Format
+EDITOR_LANGUAGES,Languages
+EDITOR_DEFAULT_LANGUAGE,Default language
+EDITOR_PREVIOUS,Back to what was chosen before
+EDITOR_REDO,Redo
+EDITOR_UNSAVED,Not saved
+EDITOR_LEAVE_UNSAVED,There are changes not saved. Leave anyway?
+EDITOR_RELOAD_UNSAVED,There are changes not saved, and Reload reads the files again without them. Reload anyway?
+EDITOR_LEAVE,Leave
+EDITOR_SAVE_UNSTABLE,Not saved: read back, {0} did not come out as it was written, so the files were left as they were. Your changes are still here.
+EDITOR_PACKAGE_BREAKS,Problems that break Valkyrie: {0}. Whoever plays the package will meet them. Make it anyway?
+EDITOR_VERSIONS,Versions
+EDITOR_NO_VERSIONS,No versions yet: one is kept each time a save changes the files.
+EDITOR_RESTORE,Restore
+EDITOR_RESTORE_CONFIRM,Go back to the version of {0}? The files as they are now are kept as another version first.
+EDITOR_RESTORE_UNSAVED,There are changes not saved, which going back to the version of {0} loses. The files as they are now are kept as another version first. Restore anyway?
+EDITOR_RESTORED,Back to the version of {0}.
+EDITOR_DRAFT,There are changes not saved from {0}: the editor closed without saving them.
+EDITOR_DRAFT_RECOVER,Take them up
+EDITOR_DRAFT_DROP,Throw them away
+EDITOR_DRAFT_FAILED,The changes not saved could not be loaded.
+EDITOR_RECOVER_STEP,Take up the changes not saved
+EDITOR_TEXT_MODE,Text mode
+EDITOR_FLAT,Without headings: all the parts one after another
+EDITOR_FULLSCREEN,Full screen
+EDITOR_MAP_CREATE,Create here
+EDITOR_TEXT_HINT,Its lines as Valkyrie's files have them. What is written here is read as Valkyrie reads its files: keys it does not know are not kept.
+EDITOR_TEXT_SECTION_LABEL,Its .ini section
+EDITOR_TEXT_TEXTS_LABEL,Its texts in
+EDITOR_TEXT_APPLY,Apply
+EDITOR_TEXT_RESET,Back to how it is
+EDITOR_TEXT_STEP,Text of {0}
+EDITOR_TEXT_HEADER,The first line has to be [{1}] (line {0}). Its name changes with Rename.
+EDITOR_TEXT_SECTION,One section only: line {0} starts another. Another component is made with New.
+EDITOR_TEXT_KEY,Line {0} of the texts: each one is {1}.something,text.
+EDITOR_TEXT_LOAD,Not like this: Valkyrie would not load it, or would stop when drawing it (a tile side that does not exist, say). It stays as it was.
+EDITOR_TEXT_FIXED,Line {0}: the editor writes it when it saves, and it is not changed here.
+EDITOR_EDIT_STEP,Change {0}
+EDITOR_GROUP_GENERAL,General
+EDITOR_GROUP_SPECIAL,Special
+EDITOR_GROUP_NEW,New
+EDITOR_GROUP_FFG,Of the game
+EDITOR_GROUP_ADVENTURES,Go to another quest of the campaign
+EDITOR_GO_TO,Go to {0}
+EDITOR_ADD_VARIABLE,Add a variable
+EDITOR_BUTTON_LABEL,Label of button {0}
+EDITOR_CONDITION,Condition
+EDITOR_NEXT_EVENT,Event of button {0}
+EDITOR_CONDITION_FAILED,When the condition fails
+EDITOR_ADD_BUTTON,Add a button
+EDITOR_REMOVE_BUTTON,Remove button {0}
+EDITOR_CHOOSE,Choose…
+EDITOR_SEARCH_CHOICES,Search by name or id
+EDITOR_SORT_BY_NAME,Sort by name
+EDITOR_LEAVE_OUT,Leave out {0}
+EDITOR_NO_CHOICES,Nothing here with these filters.
+EDITOR_TAKEN,already on the board
+EDITOR_REMOVE_PACK,Take out {0}
+EDITOR_TEXT_INSTEAD,Text instead
+EDITOR_UI_PREVIEW,Where it falls on a 16:9 screen
+EDITOR_UI_TEXT,Text
+EDITOR_MONSTER_N,Monster {0}
+EDITOR_ADD_MONSTER,Add a monster
+EDITOR_PLACE_N,Place {1} for {0} heroes
+EDITOR_ADD_PLACE,Add a place for {0} heroes
+EDITOR_ONE_HERO,1 hero
+EDITOR_PLACE_N_ONE,Place {0} for 1 hero
+EDITOR_ADD_PLACE_ONE,Add a place for 1 hero
+EDITOR_ITEM_N,Item {0}
+EDITOR_ADD_ITEM,Add an item
+EDITOR_SOLUTION_WRONG,It has to be {0} numbers from 1 to {1}, with spaces between them. The puzzle is left without a solution of its own.
+EDITOR_SET_OWN,Its own…
+EDITOR_NO_BASE,No base
+EDITOR_OLD_ACTIVATIONS,An old list of activations, as Valkyrie's editor still reads it: they can only be taken away.
+EDITOR_ACTIVATION_N,Activation {0}
+EDITOR_ADD_ACTIVATION,Add an activation
+EDITOR_ADD_ATTACK,Add an attack: {0}
+EDITOR_ATTACK_KIND,Attacks of a kind
+EDITOR_SYMBOLS,Insert a symbol
+EDITOR_SHOW_IN_GAME,See it as in a game
+EDITOR_FORMAT_TOOLS,Text format
+EDITOR_BOLD,Bold
+EDITOR_ITALIC,Italic
+EDITOR_COLOUR,Text colour
+EDITOR_COLOUR_OTHER,Another colour
+EDITOR_CONDITION_OF,Condition of button {0} of {1}
+EDITOR_PLACE_ON_MAP,Place on the map
+EDITOR_PLACING,Press on the map…
+EDITOR_THEME,Editor colours
+EDITOR_THEME_DUSK,Dusk
+EDITOR_THEME_GRAPHITE,Graphite
+EDITOR_THEME_PAPER,Paper
+EDITOR_THEME_CONTRAST,High contrast
+EDITOR_PROBLEM_UNREACHED,Today nothing reaches it, so it does not happen yet.
+EDITOR_PROBLEM_MORE,And {0} more like it.
+EDITOR_WHERE_SCENARIO,The scenario
+EDITOR_WHERE_TEXTS,Texts ({0})
+EDITOR_FIX_SLASHES,Write it with /
+EDITOR_FIX_ADD_PACK,Ask for {0}
+EDITOR_FIX_UNHIDE,Show it in the list
+EDITOR_IGNORE,Do not warn again
+EDITOR_UNIGNORE,Warn again
+EDITOR_IGNORED,Not warned about ({0})
+EDITOR_TREE,Tree
+EDITOR_TREE_FROM_START,From the start
+EDITOR_TREE_DOWN,Where {0} leads
+EDITOR_TREE_UP,What leads to {0}
+EDITOR_TREE_TO_END,Only the way to an ending
+EDITOR_TREE_TRIGGER,Trigger: {0}
+EDITOR_TREE_STARTING_ITEMS,Starting items
+EDITOR_TREE_NO_START,No event has a trigger: nothing starts.
+EDITOR_TREE_LOOSE,Loose ({0}): nothing reaches them, which is not always a mistake
+EDITOR_TREE_LOOP,again: a loop
+EDITOR_TREE_BUTTON,Button {0}
+EDITOR_TREE_IF,if {0}
+EDITOR_TREE_SETS,sets {0}
+EDITOR_TREE_FINAL,Ends the game
+EDITOR_TREE_SHOP,Opens the shop ({0} items)
+EDITOR_TREE_SHOP_CLOSES,Closes the shop
+EDITOR_TREE_MISSING,{0} (does not exist)
+EDITOR_TREE_OPEN,Open {0}
+EDITOR_TREE_CLOSE,Close {0}
+EDITOR_TREE_CHOOSE,Choose a component to see where it leads and what leads to it.
+EDITOR_VARIABLES,Variables
+EDITOR_VAR_SEARCH,Search variables
+EDITOR_VAR_NONE,No variables.
+EDITOR_VAR_NAME,Variable
+EDITOR_VAR_WRITTEN,Changed in
+EDITOR_VAR_READ,Read in
+EDITOR_VAR_SHOWN,Shown in
+EDITOR_VAR_KIND_OWN,The scenario's
+EDITOR_VAR_KIND_TRIGGER,Starts the events of its Var trigger
+EDITOR_VAR_KIND_CAMPAIGN,Kept from one quest to the next
+EDITOR_VAR_KIND_VALKYRIE,Valkyrie's
+EDITOR_VAR_KIND_READ_ONLY,Valkyrie's, read only
+EDITOR_VAR_HOW_TEST,test
+EDITOR_VAR_HOW_BUTTON,button's condition
+EDITOR_VAR_HOW_QUOTA,quota
+EDITOR_VAR_HOW_VALUE,value of an operation
+EDITOR_VAR_HOW_OPERATION,operation
+EDITOR_TEXTS,Texts
+EDITOR_BOOK,Book
+EDITOR_PANEL_TALLER,Taller panel
+EDITOR_PANEL_SHORTER,Shorter panel
+EDITOR_WRITING_IN,Writing in
+EDITOR_WRITING_BAR,Writing in {0}
+EDITOR_WRITING_BAR_DEFAULT,Writing in {0}; default language: {1}
+EDITOR_WRITING_NOW,Now writing in {0}.
+EDITOR_WRITING_HINT,The fields write in the app's language, as in Valkyrie, so Options change it too.
+EDITOR_WRITING_NEW,You are writing in {0}, and the scenario has no texts in {0}: what you write in the fields goes into a new language, and whoever plays in {1} goes on reading what was there.
+EDITOR_WRITE_IN,Write in {0}
+EDITOR_SEE_TEXTS,See the texts
+EDITOR_DEFAULT_LANGUAGE_HINT,The default language is the one read by whoever plays in a language the scenario does not have.
+EDITOR_DEFAULT_LANGUAGE_STEP,Default language: {0}
+EDITOR_TEXTS_SEARCH,Search texts
+EDITOR_TEXTS_ONLY_MISSING,Only what is missing
+EDITOR_TEXTS_TWO,Only the default language and the one written in
+EDITOR_TEXTS_ADD_LANGUAGE,Add a language…
+EDITOR_TEXTS_KEY,Key ({0} texts)
+EDITOR_TEXTS_DEFAULT,default
+EDITOR_TEXTS_LACKS,{0} missing
+EDITOR_TEXTS_MISSING,missing
+EDITOR_TEXTS_EDIT,{0} in {1}
+EDITOR_TEXTS_NO_OWNER,(no component has this name)
+EDITOR_TEXTS_NONE,No texts to show.
+EDITOR_TEXTS_STEP,Text {0} in {1}
+EDITOR_TEXT_FROM,Missing in {0}: this is the text in {1}.
+EDITOR_BOOK_LANGUAGE,As it is played in {0}, in the order of the tree of events.
+EDITOR_BOOK_SILENT,No dialog
+EDITOR_BOOK_ADDS,Puts on the map:
+EDITOR_BOOK_EMPTY,Nothing to read yet.
+EDITOR_SHOW_MORE,Show more ({0} left)
+EDITOR_FEWER,Fewer: {0}
+EDITOR_MORE,More: {0}
+EDITOR_TEST,Test
+EDITOR_TEST_HIDE,Hide
+EDITOR_TEST_EVENTS,Events, the newest first
+EDITOR_TEST_NO_EVENTS,No event has started yet.
+EDITOR_TEST_OPEN,Back to the editor, on {0}
+EDITOR_TEST_ROUND,round {0}
+EDITOR_TEST_BY_TRIGGER,trigger {0}
+EDITOR_TEST_BY_BUTTON,button {0} of {1}
+EDITOR_TEST_BY_BUTTON_RANDOM,button {0} of {1}, at random
+EDITOR_TEST_BY_BOARD,pressed on the board
+EDITOR_TEST_BY_OTHER,something else: a monster, an item…
+EDITOR_TEST_NEW_VAR,New variable
+EDITOR_TEST_NEW_VALUE,Its value
+EDITOR_TEST_SET,Set
+EDITOR_TEST_CHANGES,Goes to {0}
+EDITOR_TEST_IN,in {0}
+EDITOR_TEST_CAMPAIGN,the campaign
+EDITOR_TEST_ADVENTURE,An adventure of a campaign tested on its own: what the ones before it leave (its % and $% variables: gold, fame…) is not set; set it under Variables.
+PROBLEM_ACTIVATION_ABILITY_HERO,In Descent, {0} in an activation's ability is a random hero and {1} the monster: the other way round from Mansions.
+PROBLEM_ACTIVATION_ALL_TESTED,Every activation of its own has conditions and it has no official one: in a round where all of them fail, Valkyrie stops when it activates the monster.
+PROBLEM_ACTIVATION_BOTH_FIRST,Both the master and the minions go first: the minions do.
+PROBLEM_ACTIVATION_EMPTY,Neither the master's actions nor the minions' have a text: the activation window comes out empty.
+PROBLEM_ACTIVATION_EVENT_D2E,Its activation {value} is an event: in Descent an activation is an [Activation…] or an official one, and Valkyrie stops when it activates the monster.
+PROBLEM_ACTIVATION_EVENT_MISSING,Its activation is the event {target}, which does not exist: Valkyrie stops when it activates the monster.
+PROBLEM_ACTIVATION_EVENT_MIXED,Its activations mix an event with other names: an event is only used when it is the only one, so here every name is read as an activation of text.
+PROBLEM_ACTIVATION_MISSING,These activations are neither in the scenario nor among the official ones: {value}. Valkyrie leaves them out and chooses among the rest.
+PROBLEM_ACTIVATION_NO_ABILITY,The activation has no ability, the text at the top of its window.
+PROBLEM_ACTIVATION_NONE_VALID,None of its activations exists ({value}), neither in the scenario nor among the official ones: Valkyrie stops when it activates the monster.
+PROBLEM_ACTIVATION_NONE_VALID_UNUSED,None of its activations exists ({value}): no spawn brings this monster now, but if one did, Valkyrie would stop when it activated it.
+PROBLEM_ACTIVATION_WITH_PREFIX,The activation {value} is written with its prefix: Valkyrie adds Activation itself and does not find it. Write it without the prefix.
+PROBLEM_ADD_MISSING,It adds {target}, which does not exist: Valkyrie stops when the event runs.
+PROBLEM_ADD_NOT_BOARD,It adds {target}, which is a {type} and cannot go on the board: Valkyrie leaves it out.
+PROBLEM_ADD_OPENS_SHOP,It adds {count} quest items: in Descent that opens the shop, and the items are not given.
+PROBLEM_ADD_REMOVE_ITEM,It gives and takes away {targets} in the same event: the item does not stay with the investigators.
+PROBLEM_ADD_REMOVE_SAME,It adds and removes {targets} in the same event: Valkyrie adds them and then takes them away.
+PROBLEM_ADD_SEVERAL_ITEMS,It gives {count} quest items in one event: they are all given, but no item card is shown. Give one per event.
+PROBLEM_ADD_SPAWN,It adds the spawn {target}: a spawn is not added (Valkyrie leaves it out), but started from a button or a trigger.
+PROBLEM_ATTACK_FORMAT,The attack {value} is not kind:number: Valkyrie cannot read its number and stops.
+PROBLEM_ATTACK_NO_TEXT,The attack's text {key} is missing: its key is shown instead.
+PROBLEM_ATTACK_TYPE,{value} is not a kind of attack: heavy, bladed, firearm, spell or unarmed.
+PROBLEM_BUTTON_COLOR,The button's colour {value} is neither #RRGGBB nor a colour Valkyrie knows.
+PROBLEM_BUTTON_LABEL_IN_INI,{key} is written in the .ini: an editor loses it when it saves. Put the button's text among the texts.
+PROBLEM_BUTTON_NO_LABEL,Button {button} has no text: its key is shown on it.
+PROBLEM_BUTTONS_NOT_INTEGER,buttons={value} is not a whole number: Valkyrie cannot load the scenario.
+PROBLEM_COMPONENT_TWICE,It is defined twice, in {first} and in {second}: Valkyrie cannot load the scenario.
+PROBLEM_CONDITION_ACTION_ALONE,{key} has no condition to act on: it does nothing.
+PROBLEM_CONDITION_ACTION_UNKNOWN,{value} is not what a button does when its condition fails (none, disable or hide): Valkyrie cannot load the scenario.
+PROBLEM_CONDITIONS_IGNORED,It has both conditions and vartests: Valkyrie only reads vartests.
+PROBLEM_CONDITIONS_OLD,Its tests are written as conditions, the old way: Valkyrie reads them, and saving writes them as vartests.
+PROBLEM_COVER_MISSING,The cover picture {name} is not there.
+PROBLEM_COVER_NONE,The scenario has no cover picture.
+PROBLEM_COVER_SPACES,The cover picture's name, {name}, has spaces: the package will not find it.
+PROBLEM_CUSTOM_IMAGE_BACKSLASH,{value} is written with \: only Windows finds it. Write / instead.
+PROBLEM_CUSTOM_IMAGE_BACKSLASH_TILE,The tile's picture {value} is written with \: only Windows finds it, and on the other systems Valkyrie stops when it draws the tile. Write / instead.
+PROBLEM_DATA_FILE_MISSING,[QuestData] names {file}, which is not there: Valkyrie cannot load the scenario.
+PROBLEM_DEFAULT_LANGUAGE_MISSING,There is no default language (defaultlanguage): Valkyrie takes English.
+PROBLEM_DEFAULT_LANGUAGE_NO_FILE,There is no texts file in the default language, {value}: Valkyrie cannot show the scenario's texts.
+PROBLEM_DEFAULT_LANGUAGE_UNKNOWN,{value} is not one of Valkyrie's languages.
+PROBLEM_DIFFICULTY_NOT_NUMBER,The difficulty, {value}, is not a number (with a decimal point).
+PROBLEM_DIFFICULTY_RANGE,The difficulty, {value}, should be from 0 to 1.
+PROBLEM_DOOR_COLOR,The door's colour {value} is neither #RRGGBB nor a colour Valkyrie knows: the door stays white.
+PROBLEM_END_NO_ELIMINATED,No event has the Eliminated trigger: when an investigator is eliminated, there is no ending.
+PROBLEM_END_NO_TIME_LIMIT,No ending comes with the rounds: the investigators are never short of time.
+PROBLEM_END_NONE,No event ends the game ($end,=,1): the game never ends by itself.
+PROBLEM_EVENT_BEYOND_BUTTONS,{key} is beyond its {buttons} buttons: Valkyrie never reads it.
+PROBLEM_EVENT_LIST_FIRST,{key} lists {count} events: only the first one that can run does.
+PROBLEM_EVENT_MISSING,It goes on to {target}, which does not exist: Valkyrie skips it.
+PROBLEM_EVENT_NO_TEXT,It shows a dialog with no text.
+PROBLEM_EVENT_NOT_EVENT,It goes on to {target}, which is a {type} and not an event: Valkyrie leaves it out.
+PROBLEM_FILE_LETTER_CASE,It names {file}, but the file is {actual}: only Windows finds it.
+PROBLEM_FOLDER_DEFAULT_NAME,The folder is called {folder}: give it a name of its own, or it can clash with other scenarios.
+PROBLEM_FOLDER_SPACES,The folder's name, {folder}, has spaces: Valkyrie's package will not work.
+PROBLEM_FORMAT_MISSING,There is no format=: Valkyrie does not list the scenario.
+PROBLEM_FORMAT_NOT_NUMBER,format={value} is not a number: Valkyrie does not list the scenario.
+PROBLEM_FORMAT_OUT_OF_RANGE,format={value} is outside what Valkyrie reads ({min} to {max}): it does not list the scenario.
+PROBLEM_HERO_EVENT_MISSING,It shows the heroes the event {target} chose, which does not exist.
+PROBLEM_HEROES_MAX_D2E,Up to {value} heroes: Descent has 4 at most.
+PROBLEM_HEROES_MIN_OVER_MAX,At least {min} heroes and at most {max}: no number fits, and Valkyrie cannot start it.
+PROBLEM_HEROES_MIN_UNDER_ONE,At least {value} heroes: Valkyrie takes 1.
+PROBLEM_HEROES_NOT_NUMBER,The number of heroes is not a whole number: Valkyrie cannot load the scenario.
+PROBLEM_HIDDEN,The scenario is hidden: it will not appear in the list. Only a campaign's other quests are hidden.
+PROBLEM_INI_DATA_OUTSIDE,There are lines before the first section: Valkyrie ignores them.
+PROBLEM_INI_KEY_REPEATED,{key} is written twice in {file}: Valkyrie keeps the first one.
+PROBLEM_INI_SECTION_EMPTY_NAME,A section has no name ([]): Valkyrie ignores it.
+PROBLEM_INI_SECTION_REPEATED,The section [{section}] is twice in the file: Valkyrie keeps the first one.
+PROBLEM_INI_SPACE_LINE,Line {line} has only spaces: Valkyrie stops loading the scenario.
+PROBLEM_ITEM_DRAWN_BEFORE,It can draw {item}, which {other} gives already: if it does ({percent} %), the investigators get it twice.
+PROBLEM_ITEM_INSPECT_MISSING,Its inspect event, {target}, does not exist.
+PROBLEM_ITEM_NEVER_GIVEN,No event gives this item.
+PROBLEM_ITEM_NO_STARTING,It does not say whether it is a starting item (starting=): Valkyrie gives it at the start. Say so either way.
+PROBLEM_ITEM_NONE_EXISTS,None of its items exists ({value}): Valkyrie stops when it gives it.
+PROBLEM_ITEM_NOTHING,It has neither items nor traits: nothing is drawn.
+PROBLEM_ITEM_PACK_UNDECLARED,{value} comes from {pack}, which the scenario does not ask for: a player without it does not get it.
+PROBLEM_ITEM_STARTING_ITEM,StartingItem is the old name: Valkyrie reads it as a quest item.
+PROBLEM_ITEM_TESTS_NOT_STARTING,It has conditions but is not a starting item: Valkyrie only reads them for the starting items.
+PROBLEM_ITEM_TRAITS_NONE,No item of the packs it asks for has these traits ({traits}): nothing is drawn.
+PROBLEM_ITEM_TWICE,It gives {item}, which {other} gives already: the inventory holds one of each.
+PROBLEM_ITEM_UNKNOWN,{value} is not an item.
+PROBLEM_KEY_CONDITION_CASE,{key} is in other letters than Valkyrie's eventNCondition: Valkyrie stops when it reads it.
+PROBLEM_KEY_LETTER_CASE,{key} is written in other letters than {fix}: Valkyrie ignores it, and saving loses it.
+PROBLEM_KEY_UNKNOWN,{key} is not a key of a {type}: Valkyrie ignores it, and saving loses it.
+PROBLEM_LENGTH_MISSING,The scenario does not say how long it lasts (lengthmin and lengthmax, in minutes).
+PROBLEM_MEDIA_LETTER_CASE,It names {name}, but the file is {actual}: only Windows finds it.
+PROBLEM_MEDIA_MISSING,{name} is neither a file of the scenario nor a picture or sound of the packs: it does not show or play.
+PROBLEM_MEDIA_MISSING_FATAL,{name} is neither a file of the scenario nor a picture of the packs: Valkyrie stops when it draws it.
+PROBLEM_MEDIA_NOT_IN_PACKS,{name} is not a picture or sound of the packs the scenario asks for.
+PROBLEM_MEDIA_PICTURE_FORMAT,{name} is not a .png or .jpg picture: Valkyrie may not show it.
+PROBLEM_MEDIA_SOME_LANGUAGES,{name} is only in the folders of some languages ({languages}): a player in another one does not get it.
+PROBLEM_MEDIA_SOUND_NOT_OGG,{name} is not an .ogg sound: Valkyrie cannot play it.
+PROBLEM_MEDIA_SPACES,The name {name} has spaces: a list of sounds splits it.
+PROBLEM_MONSTER_BASE_UNKNOWN,Its base, {value}, is not a monster of the game.
+PROBLEM_MONSTER_EVENT_MISSING,Its {key}, {target}, does not exist: Valkyrie uses the usual test.
+PROBLEM_MONSTER_FIGURES,{count} spawns bring {monster}, and the game has {figures} of its figures.
+PROBLEM_MONSTER_HEALTH_NOT_NUMBER,{key}={value} is not a number.
+PROBLEM_MONSTER_IMAGE_MISSING,Its picture {name} ({key}) is not in the scenario's folder: Valkyrie stops when it shows the monster.
+PROBLEM_MONSTER_KEY_MOM_ONLY,{key} is a Mansions key: Descent does not use it.
+PROBLEM_MONSTER_NO_ACTIVATION,It has neither a base nor activations: Valkyrie stops when it activates the monster.
+PROBLEM_MONSTER_NO_ACTIVATION_UNUSED,It has neither a base nor activations: no spawn brings it now, but if one did, Valkyrie would stop when it activated it.
+PROBLEM_MONSTER_NO_CATEGORY,It has neither a base nor a kind among its traits (humanoid, beast, spirit…): the investigators get no attacks against it.
+PROBLEM_MONSTER_NO_NAME,It has neither a base nor a name of its own.
+PROBLEM_MONSTER_NO_TRAITS,It has neither a base nor traits: it is placed as one square and never drawn by traits.
+PROBLEM_MORALE_NO_DEFEAT,No event has the NoMorale trigger: when the morale runs out, nothing happens.
+PROBLEM_MORALE_REPEATS,It neither ends the game nor gives morale back: while the morale is below 0, it runs again after every event.
+PROBLEM_MPLACE_BOOL,{key}={value} is neither true nor false.
+PROBLEM_MPLACE_UNUSED,No spawn places its monsters here.
+PROBLEM_MUSIC_SPACES,Its music has a file name with spaces: the list splits it, and the music does not play.
+PROBLEM_MYTHOS_NO_INTENSITY,The Mythos events never say how strong they are ($mythosMinor, $mythosMajor, $mythosDeadly…).
+PROBLEM_MYTHOS_NONE,No event sets a Mythos variable ($mythos…): the Mythos phase only draws the general events.
+PROBLEM_NEVER_ADDED,No event puts it on the board: it never shows.
+PROBLEM_NEVER_RUN,Nothing starts it: no trigger, button or token leads to it.
+PROBLEM_OPERATION_EXTRA_PARTS,{value} has more than three parts: Valkyrie uses the first three.
+PROBLEM_OPERATION_OPERATOR,{value}: {op} is not an operation (=, +, -, *, / or %).
+PROBLEM_OPERATION_PARTS,{value} does not have its three parts (variable, operation and value): Valkyrie cannot load the scenario.
+PROBLEM_OPERATION_READ_ONLY,{value}: {variable} can only be read; the operation does nothing.
+PROBLEM_PACK_BASE,{pack}, the base game, need not be asked for.
+PROBLEM_PACK_COMMUNITY,It asks for {pack}, a community pack: the player downloads it in My Collection.
+PROBLEM_PACK_CONVERSION_KIT,{pack} is a conversion kit's: better to ask for the first edition's boxes it converts.
+PROBLEM_PACK_UNDECLARED,It uses {pack} ({components}) without asking for it: a player without {pack} misses that part.
+PROBLEM_PACK_UNDECLARED_CONTENT,{name} comes from {pack}, which the scenario does not ask for: a player without it misses it.
+PROBLEM_PACK_UNDECLARED_TESTED,It uses {pack} ({components}) without asking for it, and tests whether the player has it (#{pack}).
+PROBLEM_PACK_UNKNOWN,{pack} is not a pack Valkyrie knows: the scenario cannot be chosen.
+PROBLEM_PACKAGE_ENGLISH,{count} quests of the campaign have no English texts ({example}, in {language}): after a change of quest, Valkyrie reads the player's language and English, not the quest's own.
+PROBLEM_PACKAGE_ENGLISH_MISSING,{count} quests of the campaign lack English texts ({example}: {texts}, such as {key}): after a change of quest, a player in another language sees their keys.
+PROBLEM_PACKAGE_FAME,Items are drawn by fame ({items}), but no event sets the fame thresholds: only the legendary items come.
+PROBLEM_PACKAGE_FAME_LOAD,Its items are drawn by fame ({items}) when the quest loads, before {events} set the thresholds: set them in an earlier quest, or draw again with $restock.
+PROBLEM_PACKAGE_NOT_REACHED,No change of quest leads to this quest.
+PROBLEM_PLACEMENT_MASTERS,{key} has {count} masters' places: a group has one master.
+PROBLEM_PLACEMENT_MISSING,{key} names {target}, which does not exist: Valkyrie stops when it places the group.
+PROBLEM_PLACEMENT_NOT_MPLACE,{key} names {target}, which is not a monster place: Valkyrie stops when it places the group.
+PROBLEM_PLACEMENT_OVER_FOUR,{key}: Descent has 4 heroes at most, so it is never used.
+PROBLEM_POSITION_COMMA,{value} has a decimal comma: Valkyrie reads 0. Use a point.
+PROBLEM_POSITION_NOT_NUMBER,{value} is not a number: Valkyrie reads 0.
+PROBLEM_POSITION_NOT_ON_SQUARE,{value} is not on a square: in Descent, squares have whole coordinates.
+PROBLEM_PUZZLE_CLASS,{value} is not a kind of puzzle (slide, code, image or tower): it does not open.
+PROBLEM_PUZZLE_CODE_IMAGE,A code's picture is symbol or element, not {value}.
+PROBLEM_PUZZLE_IMAGE_GRID,The picture {image} is cut for {grid}, and the puzzle uses {used}.
+PROBLEM_PUZZLE_IMAGE_MISSING_D2E,Its picture is not in the scenario's folder: Valkyrie stops when it opens the puzzle.
+PROBLEM_PUZZLE_IMAGE_NONE,A picture puzzle with no picture: Valkyrie stops when it opens it.
+PROBLEM_PUZZLE_LEVEL_NOT_INTEGER,Its difficulty or its alternatives are not whole numbers: Valkyrie cannot load the scenario.
+PROBLEM_PUZZLE_NO_BUTTON,The puzzle's button has no text.
+PROBLEM_PUZZLE_NO_EVENT,Nothing happens when it is solved (event1).
+PROBLEM_PUZZLE_SKILL,{value} is not a skill's symbol ({lore}, {observation}…).
+PROBLEM_PUZZLE_SLIDE_ONE,A slide puzzle of difficulty 1: Valkyrie stops when it opens it.
+PROBLEM_PUZZLE_SOLUTION_LENGTH,The solution has {count} values and the code {level}.
+PROBLEM_PUZZLE_SOLUTION_VALUE,{value} is not a value of the code: from 1 to {max}.
+PROBLEM_QUEST_CANNOT_LOAD,Valkyrie cannot load it: {reason}
+PROBLEM_QUEST_CHANGE_MISSING,It changes to {target}, which is not in the package (the path goes from the main quest's folder).
+PROBLEM_QUEST_FILE_MISSING,There is no quest.ini.
+PROBLEM_QUEST_SECTION_MISSING,quest.ini has no [Quest] section: Valkyrie cannot load it.
+PROBLEM_QUEST_TEXT_MISSING,The scenario has no text for {key}.
+PROBLEM_QUOTA_NO_SECOND_BUTTON,A quota with one button: when the quota is not reached, nothing happens. Give it a second button.
+PROBLEM_QUOTA_OVER_TEN,Quota {value}: the investigators can give 10 at most each time, and it adds up between attempts.
+PROBLEM_RANDOM_ONE_EVENT,{key} has one event, and is chosen at random: there is nothing to choose.
+PROBLEM_REMOVE_MISSING,It removes {target}, which does not exist: nothing happens.
+PROBLEM_REMOVE_SPECIAL_FORMAT,{target} needs format 20 or more.
+PROBLEM_REMOVE_SPECIAL_UNKNOWN,{target} is not one of Valkyrie's special removals: nothing happens.
+PROBLEM_ROTATION_NOT_INTEGER,rotation={value} is not a whole number: Valkyrie cannot load the scenario.
+PROBLEM_ROTATION_NOT_RIGHT_ANGLE,rotation={value}: it should be 0, 90, 180 or 270.
+PROBLEM_SECTION_UNKNOWN,No component's name starts like this ({file}): Valkyrie ignores it.
+PROBLEM_SHOP_NEVER_CLOSED,A shop opens, but no event removes #shop: Valkyrie never closes it.
+PROBLEM_SILENT_NO_BUTTON,A silent event that goes on to {targets} with no button (buttons=1): the chain stops here.
+PROBLEM_SILENT_SEVERAL_BUTTONS,A silent event with {buttons} buttons and no conditions on them: it always goes on with the first.
+PROBLEM_SPAWN_HEALTH_NOT_NUMBER,{key}={value} is not a number.
+PROBLEM_SPAWN_MONSTER_NONE,None of its monsters ({value}) can come: Valkyrie stops when it brings the group.
+PROBLEM_SPAWN_MONSTER_UNKNOWN,{value} is not a monster.
+PROBLEM_SPAWN_NO_DECLARED_MONSTER,None of its monsters ({value}) comes from the packs the scenario asks for: a player without them gets none.
+PROBLEM_SPAWN_NO_MONSTER,It has neither monsters nor traits: Valkyrie stops when it brings the group.
+PROBLEM_SPAWN_NO_PLACE,It has neither a place nor monster places: nothing is marked on the board.
+PROBLEM_SPAWN_NO_POSITION,It has monster places but no place of its own: Valkyrie only draws the figures of a spawn with a place.
+PROBLEM_SPAWN_PLACEMENT_HEROES,It has no monster places for {heroes} heroes: Valkyrie marks only the group's area.
+PROBLEM_SPAWN_SILENT,It is silent (display=false): the group comes into play, but Valkyrie does not mark its places.
+PROBLEM_SPAWN_SPAWN_MISSING,{value} is not a spawn of the scenario.
+PROBLEM_START_NONE,No event starts the scenario (EventStart): nothing happens when it starts.
+PROBLEM_START_SEVERAL,Several events start the scenario ({events}): their order is not certain. Keep one and chain the others.
+PROBLEM_SUBQUEST_NOT_HIDDEN,A quest of the campaign that is not hidden: it will appear in the list on its own.
+PROBLEM_TEST_COMPARISON,{value}: {op} is not a comparison (==, !=, >=, <=, > or <).
+PROBLEM_TEST_ITEM_UNKNOWN,{value} is not part of a test: Valkyrie cannot load the scenario.
+PROBLEM_TEST_NO_OPERATOR,Two tests in a row with no AND or OR between them.
+PROBLEM_TEST_OPERATOR_UNKNOWN,{value} is neither AND nor OR: Valkyrie cannot load the scenario.
+PROBLEM_TEST_PARENTHESES_UNPAIRED,Its tests open and close a different number of parentheses.
+PROBLEM_TEST_PARENTHESIS_UNKNOWN,{value} is not a parenthesis: Valkyrie cannot load the scenario.
+PROBLEM_TEXT_COMPONENT_MISSING,{key} shows {name}, which is not a component of the scenario: the mark is shown as it is.
+PROBLEM_TEXT_FFG_UNKNOWN,{key} looks up {name}, which is not among the official texts Valkyrie reads.
+PROBLEM_TEXT_FILE_HEADER,The first line ({line}) is not .,Language: Valkyrie takes its second part as the language.
+PROBLEM_TEXT_FILE_MISSING,[QuestText] names {file}, which is not there: its texts do not show.
+PROBLEM_TEXT_FILE_UNCLOSED,A text opened with ||| is never closed: Valkyrie puts the rest of the file in one text.
+PROBLEM_TEXT_KEY_MISSING,{key} looks up {name}, which is not among the scenario's texts.
+PROBLEM_TEXT_KEY_REPEATED,{key} is twice in the file: Valkyrie keeps the first one.
+PROBLEM_TEXT_LINE_ENDINGS_MIXED,It mixes line endings ({crlf} CRLF, {lf} LF, {cr} CR): Valkyrie joins lines and loses texts.
+PROBLEM_TEXT_LINE_NO_COMMA,A line with no comma ({line}): Valkyrie ignores it.
+PROBLEM_TEXT_LONG,{key} is long ({length} letters): it may not fit in the window.
+PROBLEM_TEXT_MARK_UNCLOSED,{key} opens a {{dict}: lookup that is never closed: Valkyrie stops when it shows the text.
+PROBLEM_TEXT_MARK_UNKNOWN,{key} has {{mark}}, which Valkyrie does not replace: it is shown as it is.
+PROBLEM_TEXT_RANDOM_HERO_BUTTON,{key}: a random hero on a button is drawn again each time the window opens.
+PROBLEM_TEXT_SYMBOL_D2E,{key} has {{mark}}, a symbol of Descent: in Mansions it is shown as it is.
+PROBLEM_TEXT_SYMBOL_MAD24,{key} has {MAD24}, which Valkyrie's font does not have.
+PROBLEM_TEXT_SYMBOL_MOM,{key} has {{mark}}, a symbol of Mansions: in Descent it is shown as it is.
+PROBLEM_TEXTS_MISSING_LANGUAGE,{count} texts of {language} are missing in this language: a player in it sees them in {language}.
+PROBLEM_TEXTS_ORPHANS,{count} texts belong to no component (such as {example}).
+PROBLEM_TILE_BOTH_SIDES,It uses both sides of one piece ({side} and {reverse}): they cannot be on the board at once.
+PROBLEM_TILE_CUSTOM_IMAGE_FORMAT,A tile's own picture needs format 21.
+PROBLEM_TILE_NO_SIDE,It has neither a side nor a picture of its own: Valkyrie stops when it places the tile.
+PROBLEM_TILE_SIDE_TWICE,{side} is on {tiles}: the box has one piece of it.
+PROBLEM_TILE_SIDE_UNKNOWN,{side} is not a tile side of the packs: Valkyrie stops when it places the tile.
+PROBLEM_TOKEN_FORMAT,A token's size, own picture or click needs format 21.
+PROBLEM_TOKEN_NO_TYPE,It has neither a type nor a picture of its own: it is drawn as a search token.
+PROBLEM_TOKEN_SIZE,{value} is not a size: small, medium, huge, massive or a number.
+PROBLEM_TOKEN_TESTS_IGNORED,A token's conditions are ignored: it can always be pressed. Put the condition on its button or on the event it leads to.
+PROBLEM_TOKEN_TYPE_UNKNOWN,{value} is not a token: it is drawn as a search token.
+PROBLEM_TRIGGER_DEFEATED_JOINED,{trigger}: {spawn} brings {monster} too, and in Descent a monster that comes while its kind is on the board joins that group, which keeps the first one's name. If the group of {spawn} is there first, this never runs: a group of its own needs another monster or a custom monster.
+PROBLEM_TRIGGER_DEFEATED_UNIQUE_MOM,{trigger}: Mansions has no unique monsters, so it never runs. Use Defeated….
+PROBLEM_TRIGGER_DEFEATED_UNKNOWN,{trigger}: {name} is neither a monster, a custom monster nor a spawn, so it never runs.
+PROBLEM_TRIGGER_MOM_ONLY,{trigger} is a trigger of Mansions: in Descent it never runs.
+PROBLEM_TRIGGER_UNKNOWN,{trigger} is not a trigger: the event never runs by itself.
+PROBLEM_TYPE_WRONG,The scenario is of type {value}, not {game}: Valkyrie does not list it.
+PROBLEM_TYPE_WRONG_SUBQUEST,The quest is of type {value}, not {game}.
+PROBLEM_UI_COLOR,{value} is neither #RRGGBB nor a colour Valkyrie knows: Valkyrie stops when it draws the element.
+PROBLEM_UI_EMPTY,It has neither a picture nor a text: it does not show (it works as an invisible button).
+PROBLEM_UI_HALIGN,halign={value}: only left or right; anything else is the centre.
+PROBLEM_UI_STAYS,Nothing removes it: while it is on the screen, the phase cannot end.
+PROBLEM_UI_STAYS_QUEST_CHANGE,Nothing removes it before the change of quest: while it is on the screen, the heroes cannot be pressed.
+PROBLEM_UI_TEXT_ALIGNMENT,textAlignment={value}: TOP, CENTER or BOTTOM.
+PROBLEM_UI_VALIGN,valign={value}: only top or bottom; anything else is the centre.
+PROBLEM_UNIQUE_NO_TEXT,A unique monster with no text: its information window does not show its rules.
+PROBLEM_UNIQUE_NO_TITLE,A unique monster with a text and no title: its information window shows the key.
+PROBLEM_UNIQUE_TITLE_UNUSED,Valkyrie titles a unique monster Master and its name, whatever its title says.
+PROBLEM_UNREACHED_EVENTS,{count} events that no trigger, button or token reaches: {events}.
+PROBLEM_VAR_BUILTIN_UNKNOWN,{variable} is not one of Valkyrie's variables: it is always 0.
+PROBLEM_VAR_BUILTIN_UNKNOWN_D2E,{variable} is not one of Valkyrie's variables in Descent: it is always 0.
+PROBLEM_VAR_CAMPAIGN_OWN,{variable} is a campaign variable of its own: it is kept from one quest to the next.
+PROBLEM_VAR_DOLLAR_UNKNOWN,{variable} starts with $ but is not one of Valkyrie's variables in Descent: it does nothing.
+PROBLEM_VAR_ELIMINATED_D2E,#eliminated is only changed by Mansions' menu: in Descent it is always 0.
+PROBLEM_VAR_LETTER_CASE,Variables that differ only in capitals are different: {variables}.
+PROBLEM_VAR_MYTHOS_UNFINISHED,{variable} is not a variable of Valkyrie: the Mythos events use $mythosUnfinished.
+PROBLEM_VAR_NEVER_SET,{variable} is tested ({where}) but no operation changes it: it is always 0.
+PROBLEM_VAR_ONE_CHAR,{variable} has one letter: a change of quest stops Valkyrie when it meets it.
+PROBLEM_VAR_TRIGGER_NONE,{variable} starts the events whose trigger is its Var, but no event has it.
+PROBLEM_VAR_TRIGGER_NOT_SET,{trigger} waits for a variable that no operation sets: the event never runs.
+EDITOR_MAP_TOOLS,The map's tools
+EDITOR_GRID,Grid
+EDITOR_SNAP,Snap to the grid
+EDITOR_ZOOM_IN,Zoom in
+EDITOR_ZOOM_OUT,Zoom out
+EDITOR_SHOW_ALL,Show every piece
+EDITOR_TURN,Turn right
+EDITOR_TURN_BACK,Turn left
+EDITOR_TURN_KEYS,Turn the selected piece
+EDITOR_KEY_SHIFT,Shift
+EDITOR_KEY_DELETE,Delete
+EDITOR_KEY_WHEEL_TURN,Ctrl or Alt + wheel
+EDITOR_KEY_DRAG_FREE,{0} while dragging
+EDITOR_KEY_ARROWS,Arrows · wheel
+EDITOR_SNAP_OFF_KEYS,Place without snapping (or with it, when snapping is off)
+EDITOR_ZOOM_KEYS,Zoom in · out · show every piece
+EDITOR_PAN_KEYS,Move · zoom the map
+EDITOR_PANEL_KEYS,Show or hide the component's panel · the list · the panel below
+EDITOR_KEYS,Keys
+EDITOR_ONLY_PROBLEMS,Only what has something to mend
+EDITOR_HIDE_LIST,Hide the list
+EDITOR_SHOW_LIST,Show the list of components
+EDITOR_NOTHING_FOUND,Nothing found.
+EDITOR_HIDE_PANEL,Hide the panel
+EDITOR_SHOW_PANEL,Show the component's panel
+EDITOR_HIDE_BOTTOM,Hide the panel below
+EDITOR_SHOW_BOTTOM,Show the panel below
+EDITOR_SIZE_PANEL,Size of the component's panel
+EDITOR_SIZE_LIST,Size of the list
+EDITOR_SIZE_BOTTOM,Size of the panel below
+EDITOR_PANEL_LEFT,Component's panel
+EDITOR_PANEL_RIGHT,List of components
+EDITOR_PANEL_BOTTOM,Panel below
+EDITOR_VIEW,View
+EDITOR_HISTORY,History
+EDITOR_MENU,File
+EDITOR_BACK_TO_LIST,Back to the list
+EDITOR_TEST_SHORT,Test
+EDITOR_DEV_CHIP,Development only
+EDITOR_PREVIEW_CHIP,Early test
+EDITOR_ABOUT,What it is
+EDITOR_FILE_AND_COMMENT,File and comment
+EDITOR_WHEN,When and where
+EDITOR_NO_BUTTONS,No buttons: the dialog closes by itself. Add one with +.
+EDITOR_SHOWS_HIDES,What it shows and hides
+EDITOR_SOUND,Sound
+EDITOR_ALL_CLEAR,No problems
+EDITOR_QUEST_COVER,Name and cover
+EDITOR_QUEST_TEXTS,Description and authors
+EDITOR_QUEST_PLAY,Expansions, players and length
+EDITOR_GRAPH,Graph
+EDITOR_GRAPH_ROWS,Rows: what starts each one
+EDITOR_GRAPH_ALL_ROWS,Every row ({0})
+EDITOR_GRAPH_ROW,{0}
+EDITOR_GRAPH_ROW_START,At the start
+EDITOR_GRAPH_ROW_ITEMS,Items at the start
+EDITOR_GRAPH_ROW_LOOSE,Nothing reaches
+EDITOR_GRAPH_SEARCH,Find in the graph (Enter: the next one)
+EDITOR_GRAPH_FIT,See it all
+EDITOR_GRAPH_FOLLOW,Follow what is selected
+EDITOR_GRAPH_REORDER,Put it back in order
+EDITOR_GRAPH_LEGEND,What each shape means
+EDITOR_GRAPH_EMPTY,The scenario has nothing yet: right-click to make something.
+EDITOR_GRAPH_SHOWS_IF,Condition: the button shows only when it holds
+EDITOR_GRAPH_GREYS_IF,Condition: the button is greyed when it fails
+EDITOR_GRAPH_IGNORES,Condition that changes nothing (no action when it fails)
+EDITOR_GRAPH_PORT,Button {0}: press for a new event, drag to an event to link it
+EDITOR_GRAPH_ADD_PIECE,Put on the board or give: press for a new one, drag to one there
+EDITOR_GRAPH_REPEATED,Shown more than once in the graph: this is number {0}
+EDITOR_GRAPH_COPY,{0}, drawn whole elsewhere
+EDITOR_GRAPH_RANDOM_SHORT,random
+EDITOR_GRAPH_RANDOM,one at random
+EDITOR_GRAPH_FIRST,the first that can
+EDITOR_GRAPH_END,END
+EDITOR_GRAPH_NEW_EVENT_STEP,New event from {0}
+EDITOR_GRAPH_NEW_EVENT_FROM,New event from button {0}
+EDITOR_GRAPH_LINK_STEP,{0} leads to {1}
+EDITOR_GRAPH_ADD_STEP,{0} adds {1}
+EDITOR_GRAPH_ADD_NEW,New {0} on the board
+EDITOR_GRAPH_UNLINK_STEP,{0} no longer leads to {1}
+EDITOR_GRAPH_INSERT_STEP,An event between {0} and {1}
+EDITOR_GRAPH_INSERT,An event in the middle
+EDITOR_GRAPH_UNLINK,Take the link away
+EDITOR_GRAPH_GO_WHOLE,Go to where it is drawn whole
+EDITOR_GRAPH_LEGEND_TOKEN,Token, with its picture
+EDITOR_GRAPH_LEGEND_TILE,Tile
+EDITOR_GRAPH_LEGEND_EVENT,Event: dashed, it is not on the board
+EDITOR_GRAPH_LEGEND_BUTTONS,Its buttons, each in its colour
+EDITOR_GRAPH_LEGEND_CONDITION,Its conditions
+EDITOR_GRAPH_LEGEND_ADD,Puts on the board, or gives
+EDITOR_GRAPH_LEGEND_REMOVE,Takes away
+EDITOR_GRAPH_LEGEND_BRACE,A button that starts several events
+EDITOR_GRAPH_LEGEND_MARK,The same component, shown again
+EDITOR_UI_STAGE_OPEN,See it on the screen
+EDITOR_GRAPH_NO_LABEL,→ goes on
+EDITOR_SELECTIONS,Selected
+EDITOR_HISTORY_NOW,Now
+EDITOR_HISTORY_EMPTY,No changes yet.
+EDITOR_HISTORY_UNDO_TO,Back to before: {0}
+EDITOR_HISTORY_REDO_TO,Forward to after: {0}
+EDITOR_STAGE,The screen: see and place the UI elements
+EDITOR_STAGE_MAP,Map
+EDITOR_STAGE_SCREEN,Screen of
+EDITOR_STAGE_NONE,(choose one)
+EDITOR_STAGE_OF,{0} ({1})
+EDITOR_STAGE_ALL,Every UI element
+EDITOR_STAGE_GUIDES,Guides
+EDITOR_STAGE_EMPTY,No UI element here: choose one, or a screen above.
+EDITOR_ANALYSIS,Analysis
+ANALYSIS_MOM_ONLY,The analysis plays Mansions of Madness scenarios for now.
+ANALYSIS_RUN,Analyse
+ANALYSIS_AGAIN,Analyse again
+ANALYSIS_PROFILE,Table
+ANALYSIS_PROFILE_NORMAL,Usual
+ANALYSIS_PROFILE_CURIOUS,Curious (looks at everything)
+ANALYSIS_PROFILE_DIRECT,Direct (goes for the goal)
+ANALYSIS_RUNS,Games per number of investigators
+ANALYSIS_WORKING,Playing the scenario
+ANALYSIS_NOTE,Made-up investigators play it many times: a guide, not a verdict; a real table plays otherwise.
+ANALYSIS_EMPTY,Press Analyse to play the scenario many times with each number of investigators it allows and see how long it lasts, where the actions go and where nothing new happens.
+ANALYSIS_ADVICE,Advice
+ANALYSIS_FIGURES,{0} games each, {1} table
+ANALYSIS_COL_HEROES,Investigators
+ANALYSIS_COL_MINUTES,Minutes at a real table (likely range)
+ANALYSIS_COL_ROUNDS,Rounds
+ANALYSIS_COL_WALKING,Walking
+ANALYSIS_COL_WASTED,Gives nothing
+ANALYSIS_COL_IDLE,Waiting
+ANALYSIS_COL_FIGHTING,Fighting
+ANALYSIS_COL_ENDS,How it ends
+ANALYSIS_ENDING_ELIMINATED,eliminated
+ANALYSIS_ENDING_STUCK,stuck
+ANALYSIS_ENDING_ROUNDS,not over after 30 rounds
+ANALYSIS_ENDING_QUEST_CHANGE,goes on in another part
+ANALYSIS_DECLARED,The scenario says it lasts {0}–{1} minutes. Shares are of all actions; a row picks the curve below.
+ANALYSIS_ESTIMATE_NOTE,The minutes are an estimate from the scenario's words and the simulated games, fitted on 127 scenarios of the store with their players' times: two in three of those games fell within the range shown. The made-up games' own count: {0} minutes.
+ANALYSIS_CURVE,New things round by round, {0} investigators
+ANALYSIS_CURVE_BAR,Round {0}: {1} new things on average
+ANALYSIS_CURVE_NOTE,A tile, a token, an item, a monster, a puzzle or a text not read before. Red: a round where most games met nothing new.
+ANALYSIS_PACE,Pacing sheet, {0} investigators
+ANALYSIS_PACE_NOTE,What the games still playing met each round, on average. «Nothing» counts the investigators whose two actions gave them nothing; «In play», the monsters on the board when the round ends.
+ANALYSIS_PACE_ROUND,Round
+ANALYSIS_PACE_PLAYING,Games
+ANALYSIS_PACE_NOTHING,Nothing
+ANALYSIS_PACE_MONSTERS,In play
+ANALYSIS_KIND_PLACE,Places
+ANALYSIS_KIND_TOKEN,Tokens
+ANALYSIS_KIND_ITEM,Items
+ANALYSIS_KIND_STORY,Texts
+ANALYSIS_KIND_DECISION,Choices
+ANALYSIS_KIND_PUZZLE,Puzzles
+ANALYSIS_KIND_MONSTER,Monsters
+ANALYSIS_KIND_MYTHOS,Own Mythos
+ANALYSIS_BEATS,Each investigator finds something every {0} actions on average; in a typical game, the longest stretch without anything is {1} actions. A good rhythm: every 3 or 4.
+ANALYSIS_BEAT_SLOW,With {0} investigators, each finds something only every {1} actions on average: a good rhythm is one every 3 or 4 (a clue, a detail, a choice, a scare).
+ANALYSIS_BEAT_LONG,With {0} investigators, in half the games someone goes {1} actions (about {2} rounds) without finding anything: give that part of the map or that moment something to do.
+ANALYSIS_FEW_DECISIONS,A game offers {0} choices of where the story goes on average: questions with consequences (save one or go on, what to tell someone) make the players part of it.
+ANALYSIS_NO_END,No game reached an end: the made-up investigators never set $end. Check that the way to the end can be followed.
+ANALYSIS_ONLY_DEFEATS,No game was won: the ones that ended, ended with the investigators eliminated ({0}). See below where the way to victory stopped.
+ANALYSIS_BLOCKED,In {0} % of the games that did not end, the way to an ending stopped at {1}: {2} ran, but the button that leads there was not open. Needs: {3}.
+ANALYSIS_BLOCKED_TRIGGER,In {0} % of the games that did not end, the way to an ending stopped at {1}, which starts by itself but whose tests never passed. Needs: {3}.
+ANALYSIS_BLOCKED_UNCHOSEN,In {0} % of the games that did not end, nobody took the way on to {1}: {2} ran and its button was open, but the table chose others and never came back. Maybe it does not look like the way on.
+ANALYSIS_ENDING_UNTAKEN,{0} ways into an ending were never taken by any game: check that they can be reached.
+ANALYSIS_STUCK,{0} % of the games got stuck: nothing left to press and nothing new for six rounds.
+ANALYSIS_LONGER,Real tables are likely to take at least {0} minutes, more than the {1}–{2} it says: shorten the map or the texts, or say a longer time. If you have played it, trust your games over this.
+ANALYSIS_SHORTER,Real tables are likely to take {0} minutes at most, less than the {1}–{2} it says. If you have played it, trust your games over this.
+ANALYSIS_WALKING,{0} % of the actions go in walking: bring the tokens closer or give a shorter way.
+ANALYSIS_WASTED,{0} % of the presses give nothing new: give each search or interaction something to tell.
+ANALYSIS_IDLE,{0} % of the actions find nothing to do: with many investigators some are left waiting; open more to do at once.
+ANALYSIS_CARRYING,{0} % of the actions go in taking something someone carries (a key) to where it opens: put the lock nearer or give another way.
+ANALYSIS_DEAD,Rounds {0}: most games meet nothing new; give the table something then (a sound, a find, a threat).
+ANALYSIS_HARD_FEW,With {0} investigators, {1} % of the games end with them eliminated.
+ANALYSIS_EASY_MANY,With {0} investigators there is hardly any fighting and nobody falls: it may be easy.
+ANALYSIS_UNREACHED,{0} tokens are on the board but almost nobody presses them:
+ANALYSIS_NEVER_SHOWN,{0} tokens never got onto the board in any game:
+ANALYSIS_ONE_ENDING,With {0} investigators, {1} % of the games end with them eliminated, at {2}: it may be too hard.
+ANALYSIS_LONG_TEXTS,{0} windows hold more than {1} words: long to read aloud, and on a small screen they push the buttons away.
+ANALYSIS_WORN,A worn phrase, «{0}»: show what is there (a sound, a smell, something out of place) instead of saying what to feel.
+ANALYSIS_ROOMS_UNSAID,{0} events place a room with things to look at and hardly say what is there: describe what draws the eye, and let each token come from that description, so the table chooses what to look at instead of pressing everything.
+ANALYSIS_DULL_TOKENS,{0} of {1} tokens to look at change nothing (no variable, item, piece or roll): a few are atmosphere or a red herring; this many make the table press everything. Give them something that counts later, or leave them out.
+ANALYSIS_UNREAD,{0} variables are set and nothing reads them ({1}): what was found does not change what can be done. Use each clue later: a button that appears, a line that names it, a different ending.

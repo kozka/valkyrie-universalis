@@ -1,0 +1,28 @@
+Valkyrie Universalis
+Copyright 2026 Valkyrie Universalis contributors.
+
+This product is a TypeScript port of Valkyrie (https://github.com/NPBruce/valkyrie),
+licensed under the Apache License, Version 2.0. Ported files carry a notice saying
+which Valkyrie file they come from and that they were modified. Valkyrie's NOTICE:
+
+    Valkyrie GM
+    Copyright 2016 Nathan Parslow.
+
+    This product includes MS-PL licensed DotNetZip for Unity availble here:
+    https://github.com/r2d2rigo/dotnetzip-for-unity
+    The full licence is included in dotnetzip-license.rtf
+
+    This product includes code derived from Unity Studio available here:
+    https://github.com/RaduMC/UnityStudio
+
+    This product includes code derived from .NET Ogg Vorbis Encoder available here:
+    https://github.com/SteveLillis/.NET-Ogg-Vorbis-Encoder
+
+The tile zone and object data in herramientas/mansiones-valkyrie/assets come from
+ValkyrieMCP (https://github.com/thijs-hakkenberg/ValkyrieMCP), MIT licence; see
+herramientas/mansiones-valkyrie/LICENCIAS.md. The app's schematic tiles
+(packages/app/src/board/schematic-tiles.json) are built from that data.
+
+Unofficial, fan-made project. Not affiliated with, endorsed or sponsored by
+Fantasy Flight Games or Asmodee. It contains no Fantasy Flight Games content:
+each player imports their own.

@@ -1,0 +1,417 @@
+.,Russian
+// Translated by Claude from the English texts (October 2026): corrections by native speakers are welcome.
+APP_NAME,Valkyrie Universalis
+UNOFFICIAL,Неофициальное, сделано фанатами
+ADD_SCENARIO,Добавить файл сценария
+NO_SCENARIOS,Сценариев пока нет. Добавьте файл .valkyrie из магазина или от его автора.
+NOT_A_SCENARIO,{0} — не сценарий Valkyrie.
+SCENARIO_ADDED,{0} добавлен.
+SCENARIO_OTHER_GAME,{0} — сценарий для {1}: он есть в его списке.
+SCENARIO_FILTERED,{0} добавлен, но фильтры его скрывают (его языки или дополнения, которых у вас нет).
+SCENARIO_INVALID,{0} не открывается: его quest.ini не подходит для этой версии Valkyrie.
+RELOAD_LIST,Обновить список
+PLAY_SCENARIO,Играть
+LANGUAGES,Языки: {0}
+RATING,Оценка: {0} из 10
+DOWNLOAD_FAILED,Не удалось загрузить {0}. Проверьте подключение и попробуйте ещё раз.
+HEROES_RANGE,От {0} до {1} сыщиков
+MINUTES_RANGE,От {0} до {1} минут
+ABOUT_TEXT,Valkyrie Universalis — веб-версия Valkyrie, свободного приложения NPBruce и его соавторов. Её делают фанаты, и она никак не связана с Fantasy Flight Games. В ней нет изображений, звуков и текстов издателя: каждый игрок импортирует свои, и они остаются в его браузере.
+ABOUT_CODE,Код под лицензией Apache 2.0, перенесён из Valkyrie {0}.
+STORAGE_OFF,Этот браузер не сохраняет файлы: всё, что вы добавите, пропадёт после его закрытия.
+STOPPED,Сценарий остановлен: {0}
+LOADING,Загрузка…
+SYMBOL_STRENGTH,Сила
+SYMBOL_AGILITY,Ловкость
+SYMBOL_OBSERVATION,Наблюдательность
+SYMBOL_LORE,Знания
+SYMBOL_INFLUENCE,Влияние
+SYMBOL_WILL,Воля
+SYMBOL_ACTION,действие
+SYMBOL_SUCCESS,успех
+SYMBOL_CLUE,улика
+SYMBOL_TENTACLE,щупальце
+SYMBOL_PRODUCT,значок дополнения
+MORALE,Боевой дух: {0}
+AVAILABLE_XP,Доступный опыт: {0}
+SYMBOL_HEART,здоровье
+SYMBOL_FATIGUE,усталость
+SYMBOL_MIGHT,Сила
+SYMBOL_KNOWLEDGE,Знание
+SYMBOL_AWARENESS,Восприятие
+SYMBOL_SHIELD,щит
+SYMBOL_SURGE,всплеск
+MONSTER_LIST,Монстры
+NEXT_PHASE,Следующая фаза
+PHASE_BAR,Раунд
+SCROLL_UP,Предыдущие монстры
+SCROLL_DOWN,Ещё монстры
+AWARENESS,Бдительность {0}
+HORROR_VALUE,Ужас {0}
+HEALTH,Здоровье {0}
+DAMAGE,Урон {0}
+DUPLICATE,Группа {0}
+END_TITLE,Конец
+WELCOME_TITLE,Добро пожаловать в Valkyrie Universalis
+WELCOME_TEXT,Valkyrie Universalis — это веб-версия Valkyrie, которая работает на любом устройстве: компьютере, планшете или телефоне, где её можно установить как приложение.\n\nЭто ранняя версия. Она тщательно протестирована, и всё, похоже, работает, но в ней ещё могут встречаться ошибки.\n\nКое-чего пока нет, например редактора сценариев, а интерфейс ещё нужно доработать. Но уже можно играть и оценивать сценарии, а также открыть для себя несколько новых настроек…\n\nПриятной игры!
+WELCOME_HIDE,Больше не показывать
+WELCOME_START,Начать
+RATING_ALREADY_SENT,Вы уже отправили оценку этого сценария ({0}/10). Каждый сценарий оценивается только один раз на одном устройстве.
+RATING_NOT_SENT,Не удалось отправить оценку: проверьте подключение и попробуйте снова. Ваша оценка сохранена на этом устройстве.
+MY_RATING,Ваша оценка: {0}/10
+FEEDBACK_BUTTON,Сообщить о проблеме в приложении
+FEEDBACK_TITLE,Сообщить о проблеме или предложить идею
+FEEDBACK_INTRO,Что-то не работает или есть идея? Напишите нам: сообщение придёт прямо разработчику. Если это ошибка, расскажите, что вы делали и что произошло.
+FEEDBACK_KIND,Тип
+FEEDBACK_BUG,Ошибка
+FEEDBACK_IDEA,Идея
+FEEDBACK_OTHER,Другое
+FEEDBACK_COMMENT,Ваш комментарий
+FEEDBACK_EMAIL,Ваш e-mail (необязательно, если хотите получить ответ)
+FEEDBACK_TECHNICAL,Технические данные, которые тоже отправляются
+FEEDBACK_EMPTY,Напишите комментарий перед отправкой.
+FEEDBACK_FAILED,Не удалось отправить: проверьте подключение и попробуйте снова.
+FEEDBACK_SENT,Спасибо! Ваш комментарий отправлен.
+FEEDBACK_SEND,Отправить
+FEEDBACK_CANCEL,Отмена
+FEEDBACK_CLOSE,Закрыть
+PUZZLE_SYMBOLS,Символы
+PUZZLE_ADD,Добавить {0}
+PUZZLE_REMOVE,Убрать {0}
+PUZZLE_CODE,Ваша комбинация
+PUZZLE_GUESSES,Сделанные попытки
+PUZZLE_RESULT,Верно и на своём месте: {0}; верно, но не на своём месте: {1}
+PUZZLE_BLOCKS,Блоки
+PUZZLE_TARGET_BLOCK,Красный блок
+PUZZLE_BLOCK,Блок
+PUZZLE_PIECES,Части изображения
+PUZZLE_PIECE,Часть {0}
+PUZZLE_TOWERS,Башни
+PUZZLE_TOWER,Башня {0}
+IMPORT_SUBTITLE,Universalis использует материалы, которые Valkyrie импортировала из вашей собственной копии официального приложения {0}. Они копируются в этот браузер один раз и никогда его не покидают.
+IMPORT_FROM_FOLDER,Выбрать папку import Valkyrie
+IMPORT_FOLDER_DESC,В Windows она находится в %APPDATA%\Valkyrie\{0}\import.
+IMPORT_ZIP_DESC,Zip-архив той же папки import: способ для телефонов и планшетов.
+IMPORT_PROGRESS,{0} из {1} файлов
+IMPORT_NO_INI,Нет файла import.ini: выберите папку import Valkyrie или её zip-архив.
+IMPORT_RAW_ASSETS,Это файлы самого официального приложения. Universalis пока не умеет их читать: сначала импортируйте их в Valkyrie, затем выберите её папку import.
+IMPORT_NO_SPACE,В этом браузере недостаточно места: нужно {0} МБ, а свободно {1} МБ.
+IMPORT_UNREADABLE,Не удаётся прочитать zip-архив: {0}
+IMPORT_FAILED,Импорт не удался: {0}
+IMPORT_OLD,Этот импорт сделан другой версией Valkyrie или официального приложения, поэтому он не используется. Импортируйте заново в актуальной Valkyrie и принесите сюда её папку.
+THEME,Тема
+FELT,Сукно под полем
+COLOUR_BLACK,Чёрный
+COLOUR_GREEN,Зелёный
+COLOUR_RED,Бордовый
+COLOUR_BLUE,Синий
+BOARD_TILT,Наклон поля
+BOARD_TILT_TABLE,Как стол (30°)
+BOARD_TILT_VALKYRIE,Как в Valkyrie (10°)
+VERSION,Версия {0}
+NEW_VERSION,Доступна новая версия приложения.
+RELOAD_APP,Перезагрузить
+INSTALL_APP,Установить приложение
+INSTALL_APPLE,Чтобы установить его на этот iPhone или iPad, нажмите «Поделиться», а затем «На экран „Домой“».
+IMPORT_INSTALL_FIRST,На iPhone и iPad сначала установите приложение («Поделиться», затем «На экран „Домой“») и импортируйте из него: установленное приложение хранит свои файлы отдельно от файлов браузера.
+IMPORT_TO_PLAY,Чтобы играть, Universalis нужны материалы, которые Valkyrie импортировала из вашей собственной копии официального приложения {0}. А пока можно просматривать сценарии.
+BACKUP,Резервная копия
+BACKUP_TEXT,То, что хранит приложение (ваши партии, настройки, коллекция, загруженные сценарии и пакеты), находится в этом браузере на этом устройстве. Резервная копия собирает всё в один файл: чтобы перенести его в другой браузер или на другое устройство либо вернуть всё, если браузер удалит свои данные. Официального импорта в ней нет: его нужно импортировать заново.
+BACKUP_DOWNLOAD,Скачать резервную копию
+BACKUP_RESTORE,Восстановить из копии
+BACKUP_MAKING,Создание копии: {0} из {1} файлов…
+BACKUP_MADE,Копия скачана: {0} МБ.
+BACKUP_CONFIRM,Всё, что приложение хранит в этом браузере, будет заменено содержимым {0}. Продолжить?
+BACKUP_RESTORE_GO,Восстановить
+BACKUP_RESTORING,Восстановление: {0} из {1}…
+BACKUP_NOT_ONE,Этот файл не является резервной копией Valkyrie Universalis.
+BACKUP_UNREADABLE,Не удаётся прочитать копию: {0}
+BACKUP_FAILED,Не получилось: {0}
+BACKUP_UNFINISHED,Копия уже в браузере: она займёт своё место при следующем запуске приложения.
+BACKUP_NOT_FINISHED,Копия пока не смогла занять своё место ({0}): приложение попробует снова при запуске.
+DOOM_NAME,DooM
+DOOM_NEEDS_PACK,Миссиям DooM нужен их пакет контента от сообщества. Скачайте его в магазине, чтобы играть в них.
+DOOM_DOWNLOAD_PACK,Скачать DooM
+TURN_PHONE,Поверните телефон: в игру играют в горизонтальном положении.
+PLAY_UPRIGHT,Играть вертикально
+MOM_TITLE,Особняки безумия
+MOM_EDITION,Второе издание
+D2E_TITLE,Descent
+D2E_SUBTITLE,Странствия во тьме
+D2E_EDITION,Второе издание
+COLOUR_UNIVERSALIS,Universalis (с иллюстрациями)
+COLOUR_PURE,Чистый чёрный
+MARKS,Ваши отметки
+MARK_PLAYED,Сыграно
+MARK_FAVORITE,Избранное
+MARK_PENDING,Отложено
+FILTER_PLAYED,Сыгранные или нет
+FILTER_PLAYERS,Игроки
+SORT_TITLE,Сортировка
+FILTER_CATEGORIES,Тип приключения
+FILTER_CATEGORIES_NOTE,Только для «Особняков безумия». Показывает приключения со всеми отмеченными.
+CATEGORY_BEGINNERS,Для новичков
+CATEGORY_SHORT,Короткое
+CATEGORY_NARRATIVE,Сюжетное
+CATEGORY_COMBAT,Сражения
+CATEGORY_CAMPAIGN,Кампания или серия
+CATEGORY_REPLAYABLE,Можно переигрывать
+FILTERS_ON,Фильтр: {0} из {1}
+FILTERS_CLEAR,Сбросить фильтры
+FILTERS_HIDE_ALL,Фильтры скрывают все сценарии. Сбросьте их, чтобы снова их увидеть.
+FILTER_SEARCH_ON,Поиск: «{0}»
+FILTER_LANGS_ON,Языки: {0}
+FILTER_EXPANSIONS_ON,Без недостающих дополнений
+FILTER_PLAYERS_ON,Игроки: {0}
+ADULT_CONTENT,Контент для взрослых
+IGOR_NOT_LISTED,Этого приключения нет в списке. Перейдите в онлайн-магазин, чтобы увидеть его.
+IGOR_OPEN,Поговорить с Игорем
+IGOR_FILTERED,Игорь нашёл приключение, но фильтры его скрывают. Сбросьте их, чтобы увидеть его.
+FILTER_MARKS,Отмеченные
+FILTER_ALL,Все
+FILTER_PLAYED_ONLY,Сыгранные
+FILTER_UNPLAYED,Не сыгранные
+FILTER_FAVORITES,Избранные
+FILTER_PENDING,Отложенные
+SIZE_NORMAL,Обычный
+SIZE_LARGE,Крупный
+SIZE_LARGER,Очень крупный
+PIECE_SIZE,Размер жетонов на поле
+PIECE_SIZE_LARGE,Крупный (+30 %)
+OPTIONS_LOOK,Внешний вид
+OPTIONS_ADVANCED_TEXT,Изменения в ходе игры. Если всё выключено, игра идёт как в Valkyrie.
+CONFIRM_PHASE,Спрашивать перед концом фазы сыщиков
+CONFIRM_PHASE_TEXT,Закончить фазу сыщиков и начать фазу Мифов?
+KEEP_ZOOM,Сохранять мой масштаб, когда сценарий двигает камеру
+HIDE_CURSOR,Скрыть указатель мыши
+LOG_COPIED,Скопировано
+READ_ALOUD,Прочитать вслух
+STOP_READING,Остановить чтение
+AUTO_READ,Читать события вслух, когда они появляются
+ITEM_SIZE,Размер предметов
+MONSTER_PLACE,Монстры
+MONSTER_PLACE_RIGHT,Справа
+MONSTER_PLACE_BOTTOM,Внизу
+BUTTONS_APART,Кнопки событий отдельно от текста, как в официальном приложении
+EPIC_SPAWNS,Выделять появление сильного монстра
+VOICE,Голос для чтения вслух
+VOICE_BROWSER,Браузера
+VOICE_OFF,Выключен
+VOICE_SAMPLE,Дверь со скрипом открывается. Что-то ждёт во тьме.
+VOICE_TRY,Проверить голос
+VOICE_NONE,У этого браузера нет своих голосов.
+VOICE_WHICH,Голос
+VOICE_BEST,Лучший для языка
+VOICE_GEMINI,Gemini (Google)
+VOICE_GEMINI_KEY,Ключ API Gemini
+VOICE_GEMINI_MODEL,Модель
+VOICE_GEMINI_STYLE,Как читать (необязательно)
+VOICE_GEMINI_STYLE_HINT,Читай как рассказчик ужасов, тихим голосом
+VOICE_GEMINI_NOTE,Тексты отправляются в Google для озвучивания. Ключ остаётся в этом браузере и не попадает в резервные копии.
+VOICE_GEMINI_NO_KEY,Введите ключ, чтобы использовать Gemini (aistudio.google.com/apikey). Пока читает голос браузера.
+VOICE_GEMINI_TIME,Первый звук через {0} с; всё аудио через {1} с.
+VOICE_GEMINI_FAILED,Gemini не смог прочитать: {0}. Прочитал голос браузера.
+VOICE_SPEECHIFY,Speechify
+VOICE_SPEECHIFY_KEY,Ключ API Speechify
+VOICE_SPEECHIFY_LOADING,Загрузка голосов…
+VOICE_SPEECHIFY_NO_VOICES,У Speechify нет голосов для этого языка в этой модели.
+VOICE_SPEECHIFY_NOTE,Тексты отправляются в Speechify для озвучивания. Ключ остаётся в этом браузере и не попадает в резервные копии.
+VOICE_SPEECHIFY_NO_KEY,Введите ключ, чтобы использовать Speechify (platform.speechify.ai). Пока читает голос браузера.
+VOICE_SPEECHIFY_FAILED,Speechify не смог прочитать: {0}. Прочитал голос браузера.
+VOICE_DEEPGRAM,Deepgram
+VOICE_DEEPGRAM_KEY,Ключ API Deepgram
+VOICE_DEEPGRAM_NO_VOICES,У Deepgram нет голосов Aura-2 для этого языка: читает голос браузера.
+VOICE_DEEPGRAM_NOTE,Тексты отправляются в Deepgram для озвучивания. Ключ остаётся в этом браузере и не попадает в резервные копии.
+VOICE_DEEPGRAM_NO_KEY,Введите ключ, чтобы использовать Deepgram (console.deepgram.com). Пока читает голос браузера.
+VOICE_DEEPGRAM_FAILED,Deepgram не смог прочитать: {0}. Прочитал голос браузера.
+VOICE_DEEPGRAM_FAMILY,Тип голоса
+VOICE_DEEPGRAM_OTHER,Другой голос (его имя в playground)
+HORROR_REMINDER,Напоминать о проверках ужаса после активации монстров
+HORROR_REMINDER_TEXT,Шаг ужаса: каждый сыщик проходит проверку ужаса против монстра в пределах досягаемости с наибольшим значением ужаса.
+BLANK_TILES,Показывать пустой тайл вместо остановки, если тайла нет
+CLICK_SOUND,Звук щелчка кнопок в меню
+MUSIC_IMPORTED,Музыка официальной игры (импортированная)
+MUSIC_CUSTOM,Музыка приключения (авторская)
+MENU_SOUND,Звук меню
+FILTER_DOWNLOADED,Скачанные
+FILTER_DOWNLOADED_ONLY,Скачанные
+FILTER_NOT_DOWNLOADED,Не скачанные
+UPDATE_ALL,Обновить все ({0})
+UPDATING_ALL,Обновление {0} из {1}: {2}
+TILES_SHOW,Посмотреть тайлы
+TILES_SPOILER,Спойлер: тайлы раскрывают часть карты, которую вы будете исследовать. Показать их?
+TILES_CONTINUE,Продолжить и посмотреть
+TILES_TITLE,Тайлы сценария
+TILES_LOADING,Чтение карт сценария…
+TILES_NONE,Этот сценарий не выкладывает тайлы.
+TILES_OPTIONAL,Необязательные: из «{0}», которого нет в вашей коллекции
+TILES_OPTIONAL_NOTE,Сценарий выкладывает эти тайлы только если у вас есть этот набор. Если он есть, отметьте его в своей коллекции.
+TILES_UNKNOWN,Нет ни в одном известном наборе
+HEROES_ASKED_EXACT,Этот сценарий требует: {0}
+HEROES_ASKED_RANGE,Этот сценарий требует: от {0} до {1}
+HEROES_CHOSEN,выбрано: {0}
+HERO_VIEW,Размер списка
+HERO_VIEW_NORMAL,Маленькие
+HERO_VIEW_LARGE,Крупные
+HERO_VIEW_LARGER,Портреты
+OPTIONS_RESET,Восстановить настройки по умолчанию
+OPTIONS_RESET_CONFIRM,Вернуть все настройки как было? Язык, партии, отметки и скачанное останутся как есть.
+TRANSLATE,Автоматический перевод
+TRANSLATE_WARNING,ИИ переводит сценарии, которых нет на вашем языке. Он может ошибаться, а качество зависит от выбранной модели. Тексты отправляются в OpenRouter для перевода. Настроить это просто:
+TRANSLATE_STEP_1,Создайте бесплатную учётную запись на openrouter.ai.
+TRANSLATE_STEP_2,Откройте Keys (openrouter.ai/keys), нажмите Create Key, дайте ключу имя и скопируйте его: он начинается с sk-or- и показывается только один раз.
+TRANSLATE_STEP_3,Вставьте его ниже. Он хранится только в этом браузере.
+TRANSLATE_STEP_4,Выберите модель или оставьте бесплатную DeepSeek, которую мы ставим. Бесплатные модели бывают медленными или с лимитом в минуту; с балансом можно брать более быстрые.
+TRANSLATE_ENABLE,Включить
+TRANSLATE_KEY,Ключ OpenRouter
+TRANSLATE_MODEL,Модель
+TRANSLATE_MODELS_LOADING,Поиск бесплатных моделей OpenRouter…
+TRANSLATE_MODEL_OTHER,Другая модель (её имя в OpenRouter)
+TRANSLATE_TRY,Проверить перевод
+TRANSLATE_WORKING,Перевод…
+TRANSLATED,Автоматический перевод
+TRANSLATE_FAILED,Не удалось перевести: {0}
+TILES_TABLE,Нужен стол: примерно {0} × {1} см
+TILES_TABLE_NOTE,Самая большая карта со всеми тайлами сразу, без карт и компонентов вокруг.
+MUSIC_CREDIT_LABEL,Авторы музыки
+MUSIC_CREDIT,Музыка: {0}
+MUSIC_CREDIT_CHANNEL,{0} на YouTube
+MORE_INFO,Подробнее
+TILES_TABLE_INFO,Эти данные могут отличаться от действительности: это наибольший размер, рассчитанный по карте сценария.
+TRANSLATE_TIMEOUT,модель не ответила за {0} секунд. Попробуйте ещё раз или выберите другую модель
+TRANSLATE_TOOK,{0} ответила за {1} с.
+TRANSLATE_DISABLED,Временно отключено, пока мы его улучшаем.
+STORAGE,Хранилище
+STORAGE_USED,Приложение занимает {0} МБ из {1} МБ, которые ему выделяет этот браузер.
+STORAGE_PERSISTED,Браузер сохранит эти файлы, даже если ему не хватит места.
+STORAGE_NOT_PERSISTED,Если браузеру не хватит места, он может удалить эти файлы: время от времени делай резервную копию.
+STORAGE_PERSIST,Попросить браузер сохранить их
+STORAGE_PERSIST_REFUSED,Браузер не согласился. Некоторые делают это только для установленных приложений или часто посещаемых сайтов.
+STORAGE_WRITE_FAILED,Не удалось сохранить данные в этом браузере: {0}
+GO_ON_PLAYING,Продолжить игру
+SAVE_AND_QUIT,Сохранить и выйти
+COPY_DIAGNOSTICS,Скопировать подробности ошибки
+DIAGNOSTICS_COPIED,Скопировано: вставьте это в сообщение
+OTHER_WINDOW,Приложение уже открыто в другом окне или вкладке: используйте только одно, иначе они перезапишут данные друг друга.
+DELETE_SCENARIO_CONFIRM,Удалить {0} с этого устройства? Чтобы сыграть, его придётся скачать снова.
+SAVE_FAILED,Не удалось сохранить игру: {0}
+NOT_A_ZIP,{0} — не zip-файл: сценарий Valkyrie — это zip с расширением .valkyrie.
+CHECK_TITLE,{0} добавлен, есть замечания
+CHECK_TITLE_ERRORS,{0} не открывается
+CHECK_FIXED_FOLDER,Сценарий лежал в папке «{0}» внутри zip, поэтому приложение достало его, чтобы в него можно было играть. Valkyrie так его не откроет: чтобы поделиться, архивируйте содержимое папки, а не саму папку.
+CHECK_BLANK_LINE,{0}, строка {1}: в ней только пробелы или табуляции, и Valkyrie не может прочитать файл. Оставьте её пустой.
+CHECK_FORMAT,Его формат ({0}) Valkyrie не читает (поддерживаются с {1} по {2}).
+CHECK_NO_QUESTTEXT,В quest.ini нет раздела [QuestText] со списком текстов: Valkyrie не сможет его открыть.
+CHECK_MISSING_FILE,quest.ini ссылается на файл {0}, которого нет в сценарии.
+CHECK_LOCALIZATION_HEADER,{0}: первая строка должна быть вида «.,Russian», с названием языка; Valkyrie не может его прочитать.
+CHECK_MISSING_EVENT,У {0} есть кнопка на событие {1}, которого не существует.
+CHECK_MORE,И ещё {0} таких же.
+CHECK_UNREADABLE,Не удаётся прочитать {0}: {1}
+COLOUR_CLASSIC,Классический
+PREVIOUS_PAGE,Предыдущая страница
+NEXT_PAGE,Следующая страница
+PAGE_OF,Страница {0} из {1}
+TRANSLATION_BUTTON,Мой перевод
+TRANSLATION_TITLE,Ваш перевод этого сценария
+TRANSLATION_EXPLAIN,Загрузите zip с файлом Localization.<язык>.txt вашего перевода и, если вы их меняете, картинками и звуками под теми именами, что дал им сценарий. Перевод хранится на этом устройстве и используется, когда вы начинаете игру по этому сценарию на этом языке. Новый перевод на тот же язык заменяет прежний.
+TRANSLATION_NONE,У вас нет своего перевода этого сценария.
+TRANSLATION_SAVED_LINE,{0}: {1} из {2} текстов, картинок: {3}, звуков: {4} ({5}).
+TRANSLATION_LOAD,Загрузить zip
+TRANSLATION_REMOVE,Удалить
+TRANSLATION_REMOVE_LANGUAGE,Удалить перевод на {0}
+TRANSLATION_READING,Чтение…
+TRANSLATION_REPORT_TITLE,Что найдено в {0}
+TRANSLATION_NOT_SAVED,Перевод не сохранён:
+TRANSLATION_TEXTS,Переведено текстов: {0} из {1}.
+TRANSLATION_IMAGES,Заменяемых картинок: {0}.
+TRANSLATION_SOUNDS,Заменяемых звуков: {0}.
+TRANSLATION_SAVED,Сохранено на этом устройстве: перевод будет использован, когда вы играете в этот сценарий на языке {0}.
+TRANSLATION_REPLACED,Заменяет ваш прежний перевод на {0}.
+TRANSLATION_NOT_ZIP,Файл не является zip-архивом.
+TRANSLATION_NO_TEXTS_FILE,В zip нет файла Localization.<язык>.txt с текстами.
+TRANSLATION_SEVERAL_LANGUAGES,В zip тексты на нескольких языках ({0}): загружайте по одному.
+TRANSLATION_UNKNOWN_LANGUAGE,«{0}» не входит в языки Valkyrie ({1}).
+TRANSLATION_NAME_LANGUAGE,Имя {0} не совпадает с языком внутри ({1}): учитывается тот, что внутри.
+TRANSLATION_NOTHING_TRANSLATED,Ни один текст не относится к этому сценарию: может, он от другого?
+TRANSLATION_UNKNOWN_TEXTS,{0} текстов нет в сценарии (из другой версии?): {1}.
+TRANSLATION_UNUSED_FILES,{0} файлов не заменяют ни одного файла сценария и не будут использованы: {1}. Они должны называться как файлы сценария.
+TRANSLATION_REPLACES_OWN,Сценарий уже есть на языке {0}: ваши тексты заменяют его собственные.
+TRANSLATION_OTHER_LANGUAGE,Перевод на языке {0}, а вы играете на языке {1}: он будет использован, только если сменить язык на {0}.
+TRANSLATION_SWITCH_ASK,Сменить язык приложения сейчас? Новый язык: {0}. Меню и этот сценарий сменятся вместе с ним.
+TRANSLATION_SWITCH,Переключить: {0}
+TRANSLATION_STAY,Оставить: {0}
+RULES_HELP,Помощь и правила
+RULES_ACTIONS,Действия сыщика
+RULES_ACTIONS_D2E,Действия героя
+RULES_ACTIONS_DOOM,Действия морпеха
+RULES_SUMMARY,Краткие правила
+RULES_NOTE,Краткое изложение правил от фанатов, чтобы вспомнить, как играть. Не заменяет официальные правила.
+SHOW_MAP,Показать карту
+SHOW_TEXT,Вернуться к тексту
+CLEAR_ELIMINATED,Отменить гибель сыщика
+NO_WEBGL,Этот браузер не может нарисовать игровое поле: в нём нет WebGL. Включите аппаратное ускорение в его настройках или попробуйте другой браузер.
+BOARD_LOST,Игровому полю не хватило памяти, и его нельзя нарисовать снова. Полностью закройте приложение, откройте его снова и выберите «Продолжить».
+TILES_TAB,Тайлы
+MONSTERS_SHOW,Враги
+ITEMS_SHOW,Предметы
+MONSTERS_TITLE,Враги сценария
+ITEMS_TITLE,Предметы сценария
+MONSTERS_NOTE,Монстры, названные в сценарии. Случайные по признакам здесь не показаны.
+ITEMS_NOTE,Предметы, названные в сценарии. Случайные здесь не показаны.
+MONSTERS_NONE,Сценарий не называет своих монстров.
+ITEMS_NONE,Сценарий не называет своих предметов.
+HELP_SEARCH,Поиск в справке
+HELP_SEARCH_NONE,В справке ничего не найдено.
+QUIT_CONFIRM,Выйти в главное меню? Игра сохранится сама, «Далее» вернёт её.
+QUIT_CONFIRM_YES,Выйти
+BUTTON_HINTS,Слегка подсвечивать кнопки сценария, если какое-то время ничего не нажимать
+QUEST_SERIOUS,Внимание: в сценарии {0} ошибок автора, которые могут остановить игру или оборвать событие.
+QUEST_SERIOUS_SHOW,Показать
+QUEST_SERIOUS_HIDE,Скрыть
+QUEST_SERIOUS_TELL,Это ошибки автора: если какая-то остановит игру, сообщите ему.
+FAULT_ADD_MISSING,{0} выкладывает на стол то, чего нет
+FAULT_TILE,Тайла {0} нет ни в одном наборе
+FAULT_START,Нет стартового события
+FAULT_TWICE,{0} записан дважды
+FAULT_TEXT,Текст на языке {0} не закрыт
+GAME_TIMER,Показывать длительность раунда и игры
+TIMER_ROUND,Раунд {0}
+TIMER_GAME,Игра {0}
+SCENARIO_FAULTS,Предупреждать в описании сценария о серьёзных ошибках автора
+TV_MODE,Режим ТВ: всё крупнее и читается издалека
+FULLSCREEN,Во весь экран
+NOTES,Заметки
+NOTES_HINT,Улики, коды, кто что несёт…
+NOTES_KEPT,Сохраняются вместе с игрой.
+EDITOR_NOT_READY,Редактор не готов
+EDITOR_EARLY,Мы на очень ранней стадии: используйте его только чтобы попробовать, а не как готовый инструмент
+EDITOR_COMPUTER_ONLY,Пока он открывается только на компьютере, с мышью или тачпадом: не на телефоне и не на планшете.
+EDITOR_ENTER,Понятно, войти
+ADD_CONTENT_PACK,Добавить пакет из файла
+PACKS_FROM_FILES,На этом устройстве, не из списка магазина
+PACK_ADDED,{0} добавлен. Чтобы использовать его, выберите его в разделе «{1}», в «{2}».
+PACK_CHECK_TITLE,{0} добавлен, с предупреждениями
+PACK_CHECK_TITLE_ERRORS,Нельзя добавить {0}
+PACK_NOT_ZIP,{0} — не zip-файл: пакет контента — это zip с расширением .valkyrieContentPack.
+PACK_IS_SCENARIO,{0} — это сценарий, а не пакет контента: добавьте его в списке сценариев кнопкой «{1}».
+PACK_NO_INI,В {0} нет content_pack.ini ни в корне, ни в одной из папок, поэтому Valkyrie не считает его пакетом.
+PACK_NO_NAME,В content_pack.ini нет name в [ContentPack]: Valkyrie останавливается при его чтении. Добавьте name=… с названием пакета.
+PACK_NO_ID,В content_pack.ini нет id в [ContentPack]. Добавьте уникальный id (такой же, как в манифесте): под ним пакет хранится, и по нему его запрашивают сценарии.
+PACK_BAD_ID,В id «{0}» есть пробелы или знаки: сценарии перечисляют пакеты через пробел, а id даёт имя файлу. Используйте только буквы, цифры, - и _.
+PACK_OFFICIAL_ID,id «{0}» принадлежит официальному пакету: этот заменил бы его. Выберите другой id.
+PACK_STORE_ID,В магазине уже есть пакет с id «{0}»: на этом устройстве его место займёт этот. Если это не ваша версия того пакета, выберите другой id.
+PACK_NO_TYPE,В content_pack.ini нет type: добавьте type={0}Custom.
+PACK_OTHER_GAME,Это пакет для другой игры (type={0}): добавьте его из {1}.
+PACK_BAD_TYPE,type={0} не подходит для этой игры: он должен начинаться с {1}, например {1}Custom.
+PACK_NOT_CUSTOM,type={0}: пакеты сообщества используют {1}, а с другим типом пакет не появится среди них в коллекции.
+PACK_NO_IMAGE,Картинки пакета ({0}) нет в пакете: он будет показан без неё.
+PACK_NO_ICON,Значка пакета ({0}) нет в пакете.
+PACK_CASE,{0} в пакете называется {1}. Этому приложению и Windows регистр букв не важен, а Valkyrie на Android и Linux — важен, и файл не найдётся. Напишите имя с тем же регистром.
+PACK_LANGUAGE_LINE,В [LanguageData] есть строка «{0}»: в ней должны быть словарь и файл, например «pck Localization.Russian.txt».
+PACK_MISSING_LANGUAGE,[LanguageData] называет {0}, которого нет в пакете: его тексты не будут показаны.
+PACK_MISSING_DATA,[ContentPackData] называет {0}, которого нет в пакете: на этом файле Valkyrie прекращает загружать пакет.
+PACK_UNKNOWN_SECTION,{0}: Valkyrie не знает, что такое [{1}], и пропускает это. Имя раздела должно начинаться с его типа (TileSide, Monster, Item, Token…).
+PACK_DUPLICATE,[{0}] есть в {1} и в {2}: учитывается только первый. Дайте каждому своё имя.
+PACK_NAME_TAKEN,[{0}] уже определён в пакете {1}: учитывается только один из них. Дайте своему собственное имя.
+PACK_MISSING_IMAGE,{0}, [{1}]: картинки {2} нет в пакете (ни с .png, .jpg, .dds…): объект будет показан без неё.
+PACK_IMAGE_ROOTED,{0}, [{1}]: картинка {2} начинается с косой черты, поэтому Valkyrie ищет её вне пакета. Уберите косую черту.

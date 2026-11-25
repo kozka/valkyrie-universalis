@@ -1,0 +1,3294 @@
+/* The scenario editor's screens (editor/): its list of scenarios, the copy list, the new scenario form and an open
+   scenario. Only in development builds, until the editor is ready */
+.editor-dev {
+  padding: 0.4rem 0.8rem;
+  border: 1px dashed var(--trim);
+  border-radius: var(--radius-small);
+  color: var(--trim);
+  font-size: var(--step-ui);
+  font-style: italic;
+}
+
+.editor-search {
+  min-width: min(100%, 18rem);
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--panel);
+}
+
+.editor-message {
+  font-size: var(--step-ui);
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+
+.editor-empty {
+  font-style: italic;
+}
+
+.editor-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: min(100%, 60rem);
+}
+
+.editor-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.editor-row:hover {
+  border-color: var(--edge);
+}
+
+/* On a phone the row's tools go under its name, or the name is squeezed into a column of letters */
+@media (max-width: 40rem) {
+  .editor-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.editor-open {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  min-width: 0;
+  padding: 0.2rem 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.editor-name {
+  font-size: var(--step-body);
+  overflow-wrap: anywhere;
+}
+
+.editor-folder {
+  font-size: var(--step-small);
+  overflow-wrap: anywhere;
+}
+
+/* A campaign's adventures, under its row (campaign.ts) */
+.editor-adventures {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+  font-size: var(--step-small);
+}
+
+.editor-adventures ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.editor-adventures .button {
+  min-height: 2rem;
+  padding: 0.2rem 0.7rem;
+  font-size: var(--step-small);
+  overflow-wrap: anywhere;
+}
+
+.editor-row-tools,
+.editor-confirm,
+.editor-tools,
+.editor-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.editor-confirm {
+  font-size: var(--step-ui);
+  color: var(--alert-light);
+}
+
+.editor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: min(100%, 30rem);
+  padding: 1.25rem;
+}
+
+.editor-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.editor-form input {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--background);
+}
+
+.editor-form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.editor-error {
+  color: var(--alert-light);
+  overflow-wrap: anywhere;
+}
+
+.editor-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.editor-problems,
+.editor-files-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1rem;
+  min-width: 0;
+}
+
+.editor-problems ul,
+.editor-files-panel ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--step-small);
+  overflow-wrap: anywhere;
+}
+
+.editor-problems li {
+  padding: 0.15rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 60%, transparent);
+}
+
+.editor-files li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.editor-level summary {
+  cursor: pointer;
+  font-size: var(--step-ui);
+}
+
+.editor-level-breaks summary {
+  color: var(--alert-light);
+}
+
+.editor-level-wrong summary {
+  color: var(--accent);
+}
+
+@media (max-width: 50rem) {
+  .editor-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.editor-files {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.editor-versions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.editor-versions li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1rem;
+}
+
+.editor-versions .button {
+  min-height: 1.9rem;
+  padding: 0.15rem 0.7rem;
+  font-size: var(--step-small);
+}
+
+.editor-draft {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.8rem;
+  margin: 0;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-small);
+  font-size: var(--step-ui);
+}
+
+.editor-draft .button {
+  min-height: 2rem;
+  padding: 0.2rem 0.8rem;
+  font-size: var(--step-small);
+}
+
+.editor-text-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.editor-props textarea.editor-code {
+  width: 100%;
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: var(--step-small);
+  line-height: 1.35;
+  white-space: pre;
+  overflow-x: auto;
+  resize: vertical;
+}
+
+.editor-event {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.editor-event-part > select,
+.editor-event-part > textarea,
+.editor-event .editor-add {
+  width: 100%;
+}
+
+.editor-event textarea {
+  resize: vertical;
+}
+
+.editor-event code {
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: var(--step-small);
+  overflow-wrap: anywhere;
+}
+
+.editor-event .editor-inline > select:not(.editor-op) {
+  flex: 1 1 6rem;
+}
+
+.editor-event .editor-op {
+  flex: none;
+  width: 3.8rem;
+}
+
+.editor-tests {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.editor-number {
+  flex: none;
+  min-width: 1.1rem;
+  font-weight: 500;
+  color: var(--quiet);
+}
+
+.editor-arrows {
+  flex: none;
+  display: inline-flex;
+  gap: 0.15rem;
+}
+
+.editor-back:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.editor-back:disabled:hover {
+  border-color: var(--line);
+  color: inherit;
+}
+
+.editor-back[aria-pressed='true'],
+.editor-event .button[aria-pressed='true'],
+.editor-event .button[aria-checked='true'] {
+  border-color: var(--accent);
+  color: var(--accent-bright);
+}
+
+.editor-event .editor-logic {
+  align-self: flex-start;
+  min-height: 1.6rem;
+  padding: 0.05rem 0.6rem;
+}
+
+.editor-event [role='radiogroup'] {
+  flex-wrap: wrap;
+}
+
+.editor-event .editor-greyed {
+  color: var(--quiet);
+}
+
+.editor-quota input {
+  flex: 0 1 5rem;
+}
+
+/* The selection windows (Chooser.tsx): sources and traits on the left, the items on the right */
+.editor-chooser-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: color-mix(in srgb, var(--shade) 72%, transparent);
+}
+
+.editor-chooser {
+  width: min(100%, 62rem);
+  height: min(100%, 46rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  font-size: var(--step-ui);
+}
+
+.editor-chooser-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.editor-chooser-head h2 {
+  margin: 0;
+  font-size: var(--step-body);
+}
+
+.editor-chooser-head input {
+  flex: 1 1 10rem;
+  min-width: 0;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--background);
+  font-size: var(--step-small);
+}
+
+.editor-chooser-body {
+  flex: 1 1 0;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(10rem, 15rem) minmax(0, 1fr);
+  gap: 0.6rem;
+}
+
+.editor-chooser-traits,
+.editor-chooser-items {
+  min-height: 0;
+  overflow: auto;
+}
+
+.editor-chooser-traits h3 {
+  margin: 0.4rem 0 0.15rem;
+  font-size: var(--step-small);
+  font-weight: 500;
+  color: var(--quiet);
+}
+
+.editor-chooser-traits ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.editor-trait {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4rem;
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: transparent;
+  font-size: var(--step-small);
+  text-align: left;
+  cursor: pointer;
+}
+
+.editor-trait[aria-pressed='true'] {
+  border-color: var(--accent);
+  color: var(--accent-bright);
+}
+
+.editor-trait[data-dim] {
+  opacity: 0.65;
+}
+
+.editor-trait[data-excluded] .editor-trait-name {
+  text-decoration: line-through;
+}
+
+.editor-trait:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.editor-trait-name {
+  overflow-wrap: anywhere;
+}
+
+.editor-trait-count {
+  color: var(--quiet);
+}
+
+.editor-trait-out[aria-pressed='true'] {
+  border-color: var(--alert);
+  color: var(--alert-light);
+}
+
+.editor-chooser-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 0.35rem;
+  align-content: start;
+}
+
+.editor-choice {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  padding: 0.35rem 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--background);
+  font-size: var(--step-small);
+  text-align: left;
+  cursor: pointer;
+}
+
+.editor-choice:hover {
+  border-color: var(--accent);
+}
+
+.editor-choice[aria-current='true'] {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+
+/* Valkyrie colours a tile side already on the board blue */
+.editor-choice[data-used] {
+  border-left: 3px solid var(--editor-taken);
+}
+
+.editor-choice-picture {
+  align-self: stretch;
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.editor-choice-picture img,
+.editor-choice-picture .placeholder {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.editor-choice-name {
+  overflow-wrap: anywhere;
+}
+
+.editor-choice-key {
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 0.85em;
+  color: var(--quiet);
+  overflow-wrap: anywhere;
+}
+
+.editor-choice-used {
+  font-size: 0.85em;
+  color: var(--editor-taken);
+}
+
+/* The fields of the pieces and of the scenario (PiecePanel.tsx, QuestPanel.tsx) */
+.editor-piece,
+.editor-quest {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.editor-piece {
+  padding-top: 0.3rem;
+  border-top: 1px solid var(--line);
+}
+
+.editor-picked {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--background);
+  font-size: var(--step-small);
+  text-align: left;
+  cursor: pointer;
+}
+
+.editor-picked:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.editor-picked:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.editor-picked code,
+.editor-props code.editor-file,
+.editor-quest code {
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: var(--step-small);
+  color: var(--quiet);
+  overflow-wrap: anywhere;
+}
+
+.editor-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.editor-quad {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.35rem;
+}
+
+.editor-see {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* A piece's picture, with what it is beside it (PiecePanel.tsx) */
+.editor-piece-head {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  align-items: start;
+  gap: 0.6rem;
+}
+
+.editor-piece-thumb {
+  display: grid;
+  place-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: color-mix(in srgb, var(--text) 5%, transparent);
+  overflow: hidden;
+}
+
+.editor-piece-thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.editor-piece-what {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
+.editor-place code {
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  color: var(--quiet);
+}
+
+.editor-check {
+  gap: 0.45rem;
+  cursor: pointer;
+}
+
+.editor-props .editor-check input {
+  flex: none;
+}
+
+.editor-quest textarea,
+.editor-quest select,
+.editor-quest input:not([type='checkbox']),
+.editor-piece select,
+.editor-piece input:not([type='checkbox']),
+.editor-piece textarea {
+  width: 100%;
+}
+
+.editor-quest textarea {
+  resize: vertical;
+}
+
+.editor-cover {
+  align-self: flex-start;
+  max-width: 100%;
+  max-height: 8rem;
+  object-fit: contain;
+}
+
+.editor-pack {
+  flex: 1 1 auto;
+}
+
+@media (max-width: 40rem) {
+  .editor-chooser-body {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+
+  .editor-chooser-traits {
+    max-height: 30vh;
+  }
+}
+
+/* A UI element's panel (UIPanel.tsx): the alignment's nine buttons and the small screen */
+.editor-align {
+  display: grid;
+  grid-template-columns: repeat(3, 2rem);
+  gap: 0.2rem;
+}
+
+.editor-align .editor-back {
+  height: 2rem;
+  padding: 0;
+}
+
+.editor-piece .editor-error {
+  margin: 0;
+  font-size: var(--step-small);
+}
+
+/* Valkyrie's row of the game's symbols over a long text, each putting its symbol in the box (RichField.tsx) */
+.editor-paneled {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.editor-symbols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem;
+  padding: 0.2rem;
+  border: 1px solid var(--line);
+  border-bottom: 0;
+  border-radius: var(--radius-small) var(--radius-small) 0 0;
+  background: color-mix(in srgb, var(--text) 4%, transparent);
+}
+
+.editor-symbols .editor-back {
+  min-width: 1.6rem;
+  height: 1.45rem;
+  padding: 0 0.25rem;
+  border-color: transparent;
+  font-size: 0.6875rem;
+}
+
+/* A problem in words (ProblemLine.tsx): where it is, what happens, and the key that holds it */
+.editor-problem {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 0.5rem;
+  max-width: 100%;
+  font-size: var(--step-small);
+  text-align: left;
+}
+
+.editor-problem-where {
+  font-weight: 600;
+}
+
+.editor-problem-text {
+  min-width: 0;
+}
+
+.editor-problem-key {
+  color: var(--quiet);
+  font-size: 0.9em;
+}
+
+.editor-level li {
+  padding: 0.15rem 0;
+}
+
+/* The tree of events (EventTree.tsx): where to start from, then each component with how it is reached */
+.editor-tree-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.editor-segments {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.editor-segments button {
+  padding: 0.15rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: transparent;
+  font-size: var(--step-small);
+  cursor: pointer;
+}
+
+.editor-segments button[aria-checked='true'] {
+  border-color: var(--accent);
+  color: var(--accent-bright);
+}
+
+.editor-segments button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.editor-tree-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  list-style: none;
+}
+
+.editor-tree-roots {
+  padding-left: 0;
+}
+
+.editor-tree-trigger {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--quiet);
+  font-weight: 600;
+}
+
+.editor-tree-node {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.1rem 0.45rem;
+  padding: 0.05rem 0;
+}
+
+.editor-tree-toggle {
+  flex: none;
+  width: 1.1rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--quiet);
+  cursor: pointer;
+}
+
+.editor-tree-toggle:hover {
+  color: var(--accent);
+}
+
+.editor-tree-edge {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem;
+  color: var(--quiet);
+}
+
+.editor-tree-edge::after {
+  content: '→';
+}
+
+.editor-tree-button {
+  color: var(--text);
+}
+
+.editor-tree-if {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.editor-tree-badge {
+  padding: 0 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  color: var(--quiet);
+  font-size: 0.9em;
+}
+
+.editor-tree-final {
+  border-color: var(--accent);
+  color: var(--accent-bright);
+}
+
+.editor-tree-missing {
+  color: var(--alert-light);
+}
+
+.editor-tree-text {
+  flex: 1 1 16rem;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--quiet);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.editor-tree-loose {
+  margin-top: 0.6rem;
+}
+
+.editor-tree-loose summary {
+  color: var(--quiet);
+  cursor: pointer;
+}
+
+/* The variables (VariablesPanel.tsx): each with where it is changed, read and shown */
+.editor-vars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.editor-vars .editor-search {
+  max-width: 20rem;
+}
+
+.editor-var-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.editor-var-table th,
+.editor-var-table td {
+  padding: 0.2rem 0.5rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 60%, transparent);
+  text-align: left;
+  vertical-align: top;
+}
+
+.editor-var-table thead th {
+  color: var(--quiet);
+  font-weight: 600;
+}
+
+.editor-var-table tbody th {
+  font-weight: normal;
+}
+
+.editor-var-table tbody th .quiet {
+  display: block;
+  font-size: 0.9em;
+}
+
+.editor-var-uses {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* What can be done with a problem (ProblemsPanel.tsx): mend it, or not be told about it again */
+.editor-problem-actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-left: 0.6rem;
+  vertical-align: baseline;
+}
+
+.editor-problem-actions .button {
+  min-height: 1.5rem;
+  padding: 0.05rem 0.5rem;
+  font-size: var(--step-small);
+}
+
+.editor-level-ignored summary {
+  color: var(--quiet);
+}
+
+.editor-problem-ignore {
+  color: var(--quiet);
+  text-decoration: underline dotted;
+}
+
+/* The scenario has no texts in the language the fields write in (Workbench.tsx) */
+.editor-writing {
+  border-color: var(--alert-light);
+}
+
+/* A field whose text the language the editor writes in lacks (fields.tsx) */
+.editor-text-from {
+  margin: 0.2rem 0 0;
+  color: var(--accent);
+  font-size: var(--step-small);
+  font-style: italic;
+}
+
+/* The texts by language (TextsPanel.tsx) */
+.editor-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.editor-texts-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1rem;
+}
+
+.editor-texts-hint {
+  margin: 0;
+}
+
+.editor-texts-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.editor-texts-table th,
+.editor-texts-table td {
+  padding: 0.15rem 0.4rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 60%, transparent);
+  text-align: left;
+  vertical-align: top;
+}
+
+.editor-texts-table thead th {
+  position: sticky;
+  top: 0;
+  background: var(--panel);
+  color: var(--quiet);
+  font-weight: 600;
+}
+
+.editor-texts-table thead th:first-child {
+  width: min(14rem, 25%);
+}
+
+.editor-texts-table tbody th {
+  font-weight: normal;
+  overflow-wrap: anywhere;
+}
+
+.editor-texts-count {
+  margin-left: 0.4rem;
+  color: var(--accent);
+  font-weight: normal;
+}
+
+.editor-texts-cell {
+  width: 100%;
+  min-height: 1.6rem;
+  padding: 0.1rem 0.25rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-small);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  cursor: text;
+}
+
+.editor-texts-cell:hover,
+.editor-texts-cell:focus-visible {
+  border-color: var(--line);
+}
+
+.editor-texts-lacks .editor-texts-cell {
+  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+}
+
+.editor-texts-lacks em {
+  color: var(--accent);
+}
+
+.editor-texts-input {
+  width: 100%;
+  font: inherit;
+}
+
+/* The scenario read as a book (BookPanel.tsx) */
+.editor-book {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 48rem;
+}
+
+.editor-book > p {
+  margin: 0;
+}
+
+.editor-book-head h3 {
+  margin: 0;
+  font-size: var(--step-sub);
+}
+
+.editor-book-apart {
+  margin: 0.6rem 0 0;
+  color: var(--quiet);
+  font-size: var(--step-ui);
+}
+
+.editor-book-passage {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.4rem 0 0.5rem;
+  border-top: 1px solid color-mix(in srgb, var(--line) 60%, transparent);
+  scroll-margin-top: 0.4rem;
+}
+
+.editor-book-passage:focus {
+  outline: none;
+}
+
+.editor-book-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.6rem;
+  margin: 0;
+  font-size: var(--step-small);
+  font-weight: normal;
+}
+
+/* Centred, as a game's event card, like the preview */
+.editor-book-text {
+  padding: 0.6rem 0.8rem;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.editor-book-field {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.editor-book-label {
+  display: block;
+  color: var(--quiet);
+  font-size: 0.9em;
+}
+
+.editor-book-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.editor-book-buttons li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.5rem;
+}
+
+.editor-book-button {
+  padding: 0.1rem 0.6rem;
+  border: 1px solid var(--card-edge);
+  border-radius: var(--radius-small);
+  background: var(--card);
+}
+
+.editor-book-buttons .editor-book-targets::before,
+.editor-book-silent .editor-book-targets::before {
+  content: '→ ';
+  color: var(--quiet);
+}
+
+.editor-book-silent,
+.editor-book-adds {
+  margin: 0;
+}
+
+/* A page more of a long table or book */
+.editor-more {
+  align-self: flex-start;
+}
+
+/* ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   The workbench (Workbench.tsx), laid out as Valkyrie's editor: the selected component's panel on the left, the map,
+   the list of components on the right, the panel below and a status line. Every panel folds and is sized by dragging
+   its edge (layout.ts). Its chrome is in the tools' sans; the scenario's own texts keep the game's font. On a narrow
+   screen the panels go one under the other.
+   ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────── */
+.editor-workbench {
+  background: var(--background);
+  color: var(--text);
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  font-family: var(--font-tool);
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.35;
+}
+
+.editor-workbench :is(input, select, textarea, button) {
+  font-family: inherit;
+}
+
+/* Visually hidden, still read */
+.editor-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.editor-icon {
+  flex: none;
+  width: 1.05rem;
+  height: 1.05rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.editor-chevron {
+  width: 0.8rem;
+  height: 0.8rem;
+  transition: transform 0.12s;
+}
+
+[aria-expanded='true'] > .editor-chevron {
+  transform: rotate(90deg);
+}
+
+/* A button with an icon (chrome.tsx Tool) */
+.editor-tool {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-width: var(--tool, 2rem);
+  height: var(--tool, 2rem);
+  padding: 0 0.4rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--quiet);
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+.editor-tool:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--text) 9%, transparent);
+  color: var(--text-bright);
+}
+
+.editor-tool:focus-visible,
+.editor-splitter:focus-visible,
+.editor-rail:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.editor-tool:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.editor-tool[aria-pressed='true'],
+.editor-tool[aria-expanded='true'] {
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+  color: var(--accent-bright);
+}
+
+.editor-tool-text {
+  padding: 0 0.65rem;
+  color: var(--text);
+}
+
+.editor-tool-danger:hover:not(:disabled) {
+  color: var(--alert-light);
+  background: color-mix(in srgb, var(--alert) 18%, transparent);
+}
+
+.editor-workbench kbd {
+  padding: 0 0.3rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  color: var(--quiet);
+  font-family: var(--font-tool);
+  font-size: 0.6875rem;
+  white-space: nowrap;
+}
+
+.editor-count {
+  flex: none;
+  min-width: 1.25rem;
+  padding: 0 0.35rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--text) 10%, transparent);
+  color: var(--quiet);
+  font-size: 0.6875rem;
+  line-height: 1.15rem;
+  text-align: center;
+}
+
+.editor-count-breaks {
+  background: var(--alert);
+  color: var(--text-bright);
+}
+
+.editor-count-wrong {
+  background: color-mix(in srgb, var(--trim) 70%, transparent);
+  color: var(--on-accent);
+}
+
+.editor-dot {
+  flex: none;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.editor-dot-breaks {
+  background: var(--alert);
+}
+
+.editor-dot-wrong {
+  background: var(--trim);
+}
+
+.editor-dot-hint {
+  border: 1px solid var(--quiet);
+}
+
+/* The bar: groups apart, each its own kind of tool */
+.editor-bar {
+  position: relative;
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 2.75rem;
+  padding: 0.3rem 0.5rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.editor-bar-group {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0 0.35rem;
+}
+
+.editor-bar-group + .editor-bar-group {
+  border-left: 1px solid var(--line);
+}
+
+.editor-bar-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  gap: 0.35rem;
+  padding-left: 0;
+}
+
+.editor-bar h1 {
+  min-width: 0;
+  overflow: hidden;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.editor-bar-folder {
+  min-width: 0;
+  overflow: hidden;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.editor-campaign {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-width: 0;
+  color: var(--quiet);
+}
+
+.editor-campaign select {
+  min-width: 0;
+  max-width: 14rem;
+  height: 1.75rem;
+  padding: 0 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--background);
+}
+
+.editor-save {
+  border-color: var(--line);
+}
+
+.editor-save.editor-dirty {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.editor-save.editor-dirty:hover {
+  background: var(--accent-bright);
+  color: var(--on-accent);
+}
+
+.editor-unsaved {
+  color: var(--accent);
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.editor-test {
+  color: var(--text);
+}
+
+.editor-test .editor-icon {
+  fill: currentColor;
+  stroke-width: 1.25;
+}
+
+/* What drops from the bar: the menu, the questions, the test's heroes, the keys */
+.editor-menu {
+  position: relative;
+}
+
+.editor-menu-list {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  z-index: 30;
+  min-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: var(--window-shadow);
+}
+
+.editor-menu-list button {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 0.55rem;
+  border: 0;
+  border-radius: var(--radius-small);
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+.editor-menu-list button:hover:not(:disabled),
+.editor-menu-list button:focus-visible {
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  outline: none;
+}
+
+.editor-menu-list button:disabled {
+  color: var(--quiet);
+  font-style: italic;
+  cursor: default;
+  white-space: normal;
+}
+
+.editor-menu-list button > span:nth-child(2) {
+  flex: 1 1 auto;
+}
+
+.editor-menu-list hr {
+  width: 100%;
+  margin: 0.25rem 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+.editor-menu-danger {
+  color: var(--alert-light);
+}
+
+.editor-popover {
+  position: absolute;
+  top: calc(100% + 0.3rem);
+  right: 0.5rem;
+  z-index: 30;
+  max-width: min(36rem, calc(100vw - 1rem));
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: var(--window-shadow);
+}
+
+.editor-confirm {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+}
+
+.editor-confirm .button {
+  min-height: 1.9rem;
+  padding: 0.15rem 0.75rem;
+  font-size: 0.8125rem;
+}
+
+.editor-confirm-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--alert-light);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--alert) 12%, transparent);
+}
+
+.editor-test-count {
+  min-width: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.editor-keys {
+  width: 30rem;
+}
+
+.editor-keys dl {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 0.4rem 0 0;
+}
+
+.editor-keys dl > div {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 0.6rem;
+  align-items: baseline;
+}
+
+.editor-keys dd {
+  margin: 0;
+  color: var(--text);
+}
+
+/* Notices under the bar: a draft to take up, the language the fields write in */
+.editor-draft {
+  flex: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.8rem;
+  margin: 0;
+  padding: 0.35rem 0.75rem;
+  border: 0;
+  border-bottom: 1px solid var(--accent);
+  border-radius: 0;
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  font-size: 0.8125rem;
+}
+
+.editor-draft .button {
+  min-height: 1.75rem;
+  padding: 0.1rem 0.7rem;
+  font-size: 0.8125rem;
+}
+
+.editor-writing {
+  border-bottom-color: var(--alert-light);
+  background: color-mix(in srgb, var(--alert) 10%, transparent);
+}
+
+/* The panes: the component's panel, the map and the list, with handles between them */
+.editor-panes {
+  flex: 1 1 0;
+  min-height: 12rem;
+  display: grid;
+  grid-template-columns: var(--editor-left, 2.25rem) auto minmax(0, 1fr) auto var(--editor-right, 2.25rem);
+}
+
+.editor-side {
+  min-height: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--panel);
+}
+
+.editor-side-head {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 2.5rem;
+  padding: 0.25rem 0.35rem 0.25rem 0.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.editor-side-head h2 {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  font-family: var(--font-tool);
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.editor-side-head > .editor-icon {
+  color: var(--accent);
+}
+
+.editor-side-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.5rem 0.6rem 1.5rem;
+}
+
+.editor-props {
+  border-right: 1px solid var(--line);
+}
+
+.editor-right {
+  border-left: 1px solid var(--line);
+  min-width: 0;
+}
+
+/* The lists on the right never scroll sideways: long names end in an ellipsis */
+.editor-right .editor-side-body {
+  overflow-x: hidden;
+}
+
+.editor-components {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-search-row {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin: 0.4rem 0.35rem 0.2rem 0;
+}
+
+.editor-search-row .editor-search-box {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-right: 0.15rem;
+}
+
+/* The right panel's tabs: icons, the chosen one with its name */
+.editor-side-tabs {
+  gap: 0.1rem;
+  padding-left: 0.3rem;
+}
+
+.editor-side-tabs > button[role='tab'] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+  border: 0;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--quiet);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.editor-side-tabs > button[role='tab']:hover {
+  color: var(--text);
+  background: color-mix(in srgb, var(--text) 7%, transparent);
+}
+
+.editor-side-tabs > button[aria-selected='true'] {
+  color: var(--accent-bright);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+}
+
+/* The history of changes and the selections: one step a row */
+.editor-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.editor-step {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: 100%;
+  min-height: 1.75rem;
+  padding: 0.15rem 0.45rem;
+  border: 0;
+  border-radius: var(--radius-small);
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+button.editor-step:hover {
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+}
+
+.editor-step > span:nth-child(2) {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.editor-step .editor-icon {
+  color: var(--quiet);
+}
+
+.editor-step-undone {
+  color: var(--quiet);
+  font-style: italic;
+}
+
+.editor-step-now {
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+  color: var(--accent-bright);
+  font-weight: 600;
+  cursor: default;
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+
+.editor-step-now .editor-icon {
+  color: var(--accent);
+}
+
+.editor-step-type {
+  flex: none;
+  font-size: 0.6875rem;
+}
+
+/* A folded side: a strip with its icon and its name, read upwards */
+.editor-rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 0;
+  padding: 0.5rem 0;
+  border: 0;
+  background: var(--panel);
+  color: var(--quiet);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.editor-rail-left {
+  border-right: 1px solid var(--line);
+}
+
+.editor-rail-right {
+  border-left: 1px solid var(--line);
+}
+
+.editor-rail:hover {
+  color: var(--accent-bright);
+  background: color-mix(in srgb, var(--accent) 8%, var(--panel));
+}
+
+.editor-rail span {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+/* The handles that size the panels */
+.editor-splitter {
+  position: relative;
+  z-index: 5;
+  flex: none;
+  background: transparent;
+  touch-action: none;
+}
+
+.editor-splitter-v {
+  width: 5px;
+  margin: 0 -2px;
+  cursor: col-resize;
+}
+
+.editor-splitter-h {
+  height: 5px;
+  margin: -2px 0;
+  cursor: row-resize;
+}
+
+.editor-splitter:hover,
+.editor-splitter:active {
+  background: color-mix(in srgb, var(--accent) 55%, transparent);
+}
+
+body.editor-sizing {
+  cursor: col-resize;
+  user-select: none;
+}
+
+body.editor-sizing .board-canvas {
+  pointer-events: none;
+}
+
+/* The map, with its tools in a column over its corner */
+.editor-map-box {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+}
+
+.editor-map {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 12rem;
+  overflow: hidden;
+}
+
+.editor-map-tools {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--panel) 88%, transparent);
+  box-shadow: var(--window-shadow);
+}
+
+.editor-tools-gap {
+  height: 1px;
+  margin: 0.15rem 0.2rem;
+  background: var(--line);
+}
+
+.editor-map-status {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.4rem;
+  margin: 0;
+  padding: 0.1rem 0.45rem;
+  border-radius: var(--radius-small);
+  background: color-mix(in srgb, var(--background) 75%, transparent);
+  font-size: 0.75rem;
+  pointer-events: none;
+}
+
+.editor-map-status:empty {
+  display: none;
+}
+
+/* The list of components (ComponentList.tsx) */
+.editor-search-box {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.4rem 0.5rem 0.2rem;
+  padding: 0 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--background);
+  color: var(--quiet);
+}
+
+.editor-search-box:focus-within {
+  border-color: var(--accent);
+}
+
+.editor-search-box .editor-search {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0.35rem 0;
+  border: 0;
+  background: transparent;
+  font-size: 0.8125rem;
+  outline: none;
+}
+
+.editor-components .editor-side-body {
+  gap: 0;
+  padding: 0.25rem 0.3rem 1rem;
+}
+
+.editor-group-head {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.editor-group-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  height: 1.85rem;
+  padding: 0 0.3rem;
+  border: 0;
+  border-radius: var(--radius-small);
+  background: transparent;
+  color: var(--text);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.editor-group-name:hover {
+  background: color-mix(in srgb, var(--text) 6%, transparent);
+}
+
+.editor-group-name > span:not(.editor-count) {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.editor-group-name .editor-icon:not(.editor-chevron) {
+  color: var(--quiet);
+}
+
+.editor-group-head .editor-tool {
+  --tool: 1.6rem;
+  opacity: 0.55;
+}
+
+.editor-group-head:hover .editor-tool,
+.editor-group-head .editor-tool:focus-visible {
+  opacity: 1;
+}
+
+.editor-group ul {
+  margin: 0 0 0.3rem;
+  padding: 0 0 0 1.35rem;
+  list-style: none;
+}
+
+.editor-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  width: 100%;
+  min-height: 1.6rem;
+  padding: 0.1rem 0.45rem;
+  border: 0;
+  border-radius: var(--radius-small);
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+.editor-item:hover {
+  background: color-mix(in srgb, var(--text) 7%, transparent);
+}
+
+.editor-item.selected {
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+  color: var(--accent-bright);
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+
+.editor-item-quest {
+  justify-content: flex-start;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.editor-item-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.editor-item-type {
+  color: var(--quiet);
+  opacity: 0.6;
+}
+
+.editor-empty {
+  padding: 0.4rem;
+  font-style: italic;
+}
+
+/* The selected component's panel (Properties.tsx and the panels of each type) */
+.editor-props input,
+.editor-props select,
+.editor-props textarea {
+  min-width: 0;
+  padding: 0.3rem 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--background);
+  color: var(--text);
+  font-size: 0.8125rem;
+}
+
+.editor-props select {
+  height: 1.9rem;
+  padding-block: 0;
+}
+
+.editor-props :is(input, select, textarea):hover {
+  border-color: color-mix(in srgb, var(--text) 30%, var(--line));
+}
+
+.editor-props :is(input, select, textarea):focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.editor-props textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.editor-props .button {
+  min-height: 1.9rem;
+  padding: 0.15rem 0.7rem;
+  font-size: 0.8125rem;
+}
+
+.editor-props h3 {
+  margin: 0;
+  font-family: var(--font-tool);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--quiet);
+}
+
+.editor-props ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-wrap: anywhere;
+}
+
+.editor-rename {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 0.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--background);
+}
+
+.editor-rename:focus-within {
+  border-color: var(--accent);
+}
+
+.editor-rename-type {
+  padding: 0 0 0 0.5rem;
+  color: var(--quiet);
+}
+
+.editor-props .editor-rename input {
+  flex: 1 1 auto;
+  padding-left: 0.05rem;
+  border: 0;
+  background: transparent;
+  font-weight: 600;
+}
+
+.editor-rename .editor-tool {
+  --tool: 1.75rem;
+}
+
+.editor-row-form,
+.editor-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.editor-field > span,
+.editor-list-field > span,
+.editor-row-field > span {
+  color: var(--quiet);
+  font-size: 0.75rem;
+}
+
+/* A field on one row: its name in a column of its own, as Valkyrie's panels set them */
+.editor-row-field {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.editor-row-field > .editor-inline > :is(select, input) {
+  flex: 1 1 auto;
+}
+
+.editor-list-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.editor-inline {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.editor-inline input {
+  flex: 1 1 auto;
+}
+
+.editor-position {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.35rem;
+  margin: 0 0 0.25rem;
+  padding: 0;
+  border: 0;
+}
+
+.editor-position label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  color: var(--quiet);
+  font-size: 0.75rem;
+}
+
+.editor-facts {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.15rem 0.6rem;
+  margin: 0;
+}
+
+.editor-facts dt {
+  color: var(--quiet);
+}
+
+.editor-facts dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.editor-link {
+  padding: 0.05rem 0;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.editor-link:hover:not(:disabled) {
+  color: var(--accent);
+}
+
+.editor-problem-breaks {
+  color: var(--alert-light);
+}
+
+/* Valkyrie's small square buttons: ⇨, −, ↑, ↓, the symbols */
+.editor-back {
+  flex: none;
+  min-width: 1.75rem;
+  height: 1.75rem;
+  padding: 0 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: transparent;
+  color: var(--text);
+  font-size: 0.875rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.editor-back:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* A part of a panel that folds (chrome.tsx Fold) */
+.editor-fold {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.45rem 0 0.55rem;
+  border-top: 1px solid var(--line);
+}
+
+.editor-fold:first-child {
+  border-top: 0;
+}
+
+.editor-folded {
+  padding-bottom: 0.45rem;
+}
+
+.editor-fold-head {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 1.5rem;
+}
+
+.editor-fold-head h3 {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.editor-fold-head h3 button {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.editor-fold-head h3 button:hover {
+  color: var(--text);
+}
+
+.editor-fold-head .editor-tool {
+  --tool: 1.6rem;
+}
+
+.editor-fold-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.editor-event {
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-event .editor-fold-body > select,
+.editor-event .editor-fold-body > textarea,
+.editor-event .editor-add {
+  width: 100%;
+}
+
+/* Lists of names, of tests and of assignments: a box with room for a few even when empty, as Valkyrie's are, and a
+   dashed row at its end to add one */
+.editor-names,
+.editor-tests {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-height: 4.6rem;
+  margin: 0;
+  padding: 0.3rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: color-mix(in srgb, var(--background) 55%, transparent);
+  list-style: none;
+}
+
+.editor-tests ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.editor-tests > .editor-inline:last-child,
+.editor-tests > .editor-add {
+  margin-top: auto;
+}
+
+.editor-tests ol:empty::before,
+.editor-names:has(> li:only-child)::before {
+  content: '—';
+  color: var(--quiet);
+  opacity: 0.5;
+  text-align: center;
+}
+
+.editor-names > li:last-child:has(.editor-add) {
+  margin-top: auto;
+}
+
+.editor-add,
+.editor-props select.editor-add {
+  border-style: dashed;
+  background: transparent;
+  color: var(--quiet);
+}
+
+.editor-add:hover,
+.editor-props select.editor-add:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.editor-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.editor-button {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--text) 3%, transparent);
+}
+
+.editor-button .editor-names {
+  min-height: 3rem;
+}
+
+.editor-condition-toggle {
+  --tool: 1.75rem;
+  border-color: var(--line);
+  font-weight: 700;
+}
+
+/* The "?" in the graph's colours: what a failed condition does */
+.editor-condition-toggle.editor-condition-hide {
+  border-color: var(--graph-shows);
+  color: var(--graph-shows);
+}
+
+.editor-condition-toggle.editor-condition-disable {
+  border-color: var(--graph-greys);
+  color: var(--graph-greys);
+}
+
+.editor-condition-toggle.editor-condition-none {
+  border-color: var(--graph-ignores);
+  color: var(--graph-ignores);
+}
+
+/* Valkyrie's window for a button's condition */
+.editor-condition-window {
+  width: min(100%, 34rem);
+  max-height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  font-size: var(--step-ui);
+}
+
+.editor-condition-window h2 {
+  margin: 0;
+  font-size: var(--step-body);
+}
+
+.editor-condition-window h3 {
+  margin: 0;
+  color: var(--quiet);
+  font-family: var(--font-tool);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.editor-condition-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.editor-condition-actions .button[aria-checked='true'].editor-condition-hide {
+  border-color: var(--graph-shows);
+  color: var(--graph-shows);
+}
+
+.editor-condition-actions .button[aria-checked='true'].editor-condition-disable {
+  border-color: var(--graph-greys);
+  color: var(--graph-greys);
+}
+
+.editor-condition-actions .button[aria-checked='true'].editor-condition-none {
+  border-color: var(--graph-ignores);
+  color: var(--graph-ignores);
+}
+
+.editor-condition-foot .editor-ok {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.editor-condition-foot {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.4rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.editor-empty-hint {
+  margin: 0;
+  padding: 0.6rem;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-small);
+  color: var(--quiet);
+  text-align: center;
+}
+
+.editor-remove-last {
+  align-self: flex-end;
+  color: var(--quiet);
+  font-size: 0.75rem;
+}
+
+.editor-remove-last:hover {
+  color: var(--alert-light);
+}
+
+/* A text typed with its formatting drawn (RichField.tsx), on the game's card so that its colours read as in a game */
+.editor-rich {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.editor-rich-line {
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.editor-rich-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.15rem;
+  border: 1px solid var(--line);
+  border-bottom: 0;
+  border-radius: var(--radius-small) var(--radius-small) 0 0;
+  background: color-mix(in srgb, var(--text) 4%, transparent);
+}
+
+/* A line's tools show only while it is typed in, over what is above it, so that nothing moves */
+.editor-rich-line .editor-rich-tools {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  z-index: 5;
+  width: max-content;
+  max-width: min(24rem, 80vw);
+  border-bottom: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--panel);
+  box-shadow: var(--card-shadow);
+}
+
+.editor-rich-line:focus-within .editor-rich-tools {
+  display: flex;
+}
+
+.editor-rich-tool {
+  min-width: 1.5rem;
+  height: 1.45rem;
+  padding: 0 0.3rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-small);
+  background: none;
+  color: var(--text);
+  font-family: var(--font-tool);
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+.editor-rich-tool:hover,
+.editor-rich-tool[aria-pressed='true'],
+.editor-rich-tool[aria-expanded='true'] {
+  border-color: var(--line);
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+}
+
+.editor-rich-colour {
+  text-decoration: underline 3px var(--trim);
+  text-underline-offset: 2px;
+  font-weight: 700;
+}
+
+.editor-rich-tools .editor-symbols {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.editor-rich-box {
+  min-width: 0;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 0 0 var(--radius-small) var(--radius-small);
+  background: var(--card);
+  color: var(--card-text);
+  font-family: var(--font);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  cursor: text;
+}
+
+.editor-rich-line .editor-rich-box {
+  border-radius: var(--radius-small);
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.875rem;
+}
+
+/* The dialog's box grows with its text, up to a limit, then scrolls */
+.editor-rich-multi .editor-rich-box {
+  min-height: 5.5rem;
+  max-height: 22rem;
+  overflow-y: auto;
+}
+
+.editor-rich-box:hover {
+  border-color: color-mix(in srgb, var(--text) 30%, var(--line));
+}
+
+.editor-rich-box:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.editor-rich-box[data-placeholder]::before {
+  content: attr(data-placeholder);
+  color: var(--card-quiet);
+  pointer-events: none;
+}
+
+.editor-rich-symbol {
+  display: inline-block;
+  padding: 0 0.1rem;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--card-text) 12%, transparent);
+  line-height: 1.2;
+  user-select: all;
+}
+
+/* A colour as a small square (Colours.tsx), and the palette it opens */
+.editor-swatch {
+  flex: none;
+  width: 1.35rem;
+  height: 1.35rem;
+  padding: 0;
+  border: 2px solid var(--line);
+  border-radius: var(--radius-small);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, black 35%, transparent);
+  cursor: pointer;
+}
+
+.editor-swatch:hover,
+.editor-swatch[aria-expanded='true'] {
+  border-color: var(--accent);
+}
+
+.editor-palette {
+  position: fixed;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 13rem;
+  padding: 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--background);
+  box-shadow: var(--card-shadow);
+  font-family: var(--font-tool);
+  font-size: 0.75rem;
+}
+
+.editor-palette-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0.2rem;
+}
+
+.editor-swatch-cell {
+  aspect-ratio: 1;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, black 30%, transparent);
+  cursor: pointer;
+}
+
+.editor-swatch-cell:hover,
+.editor-swatch-cell[aria-pressed='true'] {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.editor-palette-any {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.editor-palette-any > span {
+  flex: 1 1 auto;
+  color: var(--quiet);
+}
+
+.editor-palette-any input[type='color'] {
+  width: 2rem;
+  height: 1.5rem;
+  padding: 0;
+  border: 1px solid var(--line);
+  background: none;
+}
+
+.editor-palette-any .button {
+  min-height: 1.5rem;
+  padding: 0 0.4rem;
+  font-family: var(--font-code);
+  font-size: 0.6875rem;
+}
+
+/* The panel below: tabs that stay when it folds */
+.editor-bottom {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  font-size: 0.8125rem;
+}
+
+.editor-bottom-folded {
+  height: auto;
+}
+
+.editor-bottom-tall {
+  height: max(8rem, 62vh);
+}
+
+/* On a narrow screen, the tabs scroll rather than widen the page; as a scroll box, they would shrink away */
+.editor-tabs {
+  flex: none;
+  display: flex;
+  align-items: stretch;
+  gap: 0.1rem;
+  min-height: 2.1rem;
+  padding: 0 0.35rem;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--line);
+}
+
+.editor-bottom-folded .editor-tabs {
+  border-bottom: 0;
+}
+
+.editor-tabs > button {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0 0.7rem;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--quiet);
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+.editor-tabs > button:hover {
+  color: var(--text);
+}
+
+.editor-tabs > button[aria-selected='true'] {
+  border-bottom-color: var(--accent);
+  color: var(--text-bright);
+}
+
+.editor-tabs > .editor-tab-quiet {
+  font-size: 0.75rem;
+}
+
+.editor-tabs-gap {
+  flex: 1 1 auto;
+}
+
+.editor-tabs-end {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  padding-left: 0.35rem;
+}
+
+.editor-tab-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  padding: 0.5rem 0.75rem;
+}
+
+/* The status line */
+.editor-status {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 1.75rem;
+  padding: 0 0.5rem;
+  border-top: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--quiet);
+  font-size: 0.75rem;
+}
+
+.editor-status-group {
+  display: flex;
+  gap: 0.1rem;
+}
+
+.editor-status-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  height: 1.4rem;
+  padding: 0 0.4rem;
+  border: 0;
+  border-radius: var(--radius-small);
+  background: transparent;
+  color: inherit;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+button.editor-status-item {
+  cursor: pointer;
+}
+
+button.editor-status-item:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+  color: var(--text);
+}
+
+button.editor-status-item:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.editor-status-breaks:not(:disabled) {
+  color: var(--alert-light);
+}
+
+.editor-status-wrong:not(:disabled) {
+  color: var(--trim);
+}
+
+.editor-status .editor-message {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  color: var(--accent);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.editor-dev-chip {
+  border: 1px dashed var(--trim);
+  color: var(--trim);
+  font-style: italic;
+}
+
+/* A narrow screen: the panels one under the other, without handles */
+@media (max-width: 60rem) {
+  .editor-workbench {
+    height: auto;
+  }
+
+  .editor-bar {
+    flex-wrap: wrap;
+  }
+
+  .editor-bar-title {
+    flex-basis: 100%;
+  }
+
+  .editor-bar-group + .editor-bar-group {
+    border-left: 0;
+  }
+
+  .editor-bar-view {
+    display: none;
+  }
+
+  .editor-panes {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .editor-splitter {
+    display: none;
+  }
+
+  .editor-rail {
+    flex-direction: row;
+    padding: 0.4rem 0.6rem;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .editor-rail span {
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  .editor-map-box {
+    height: 60vh;
+  }
+
+  .editor-props,
+  .editor-right {
+    max-height: 70vh;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .editor-bottom {
+    height: auto !important;
+  }
+
+  /* Wider than a phone, the status line made the page wider and the phone drew it smaller */
+  .editor-status {
+    flex-wrap: wrap;
+    padding-block: 0.2rem;
+  }
+
+  .editor-status-item {
+    height: auto;
+    min-height: 1.4rem;
+    white-space: normal;
+  }
+
+  /* The page scrolls; a second scroll box inside it hid what a press was meant for */
+  .editor-tab-body {
+    overflow: visible;
+  }
+}
+
+.editor-row-field .editor-quota {
+  flex: 1 1 auto;
+}
+
+.editor-quota input {
+  flex: 0 0 4.5rem;
+}
+
+.editor-quota .editor-add,
+.editor-tests .editor-inline .editor-add {
+  flex: 1 1 auto;
+  width: auto;
+  min-width: 0;
+}
+
+.editor-status-clear {
+  color: var(--mark-played);
+}
+
+/* The screen (UIStage.tsx): where the map is, a 16:9 screen with the UI elements as a game lays them out */
+.editor-stage {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+}
+
+.editor-stage-bar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2.5rem;
+  padding: 0.25rem 0.5rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.editor-stage-pick {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--quiet);
+}
+
+.editor-stage-pick select {
+  height: 1.85rem;
+  max-width: 22rem;
+  padding: 0 0.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--background);
+  color: var(--text);
+}
+
+.editor-stage-numbers {
+  margin-left: auto;
+  color: var(--quiet);
+  font-family: var(--font-code);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.editor-stage-area {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.editor-stage-screen {
+  position: relative;
+  flex: none;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background-color: var(--table);
+  box-shadow: var(--window-shadow);
+  font-family: var(--font);
+}
+
+.editor-stage-guide {
+  position: absolute;
+  pointer-events: none;
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.editor-stage-guide-v {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+}
+
+.editor-stage-guide-h {
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+}
+
+.editor-stage-element {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+  border: 0 solid var(--card-edge);
+  line-height: 1.15;
+  text-align: center;
+  white-space: pre-wrap;
+  cursor: move;
+  user-select: none;
+}
+
+.editor-stage-element img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
+
+.editor-stage-element:hover {
+  outline: 1px dashed color-mix(in srgb, var(--accent) 70%, transparent);
+}
+
+.editor-stage-frames {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.editor-stage-frame {
+  position: absolute;
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.editor-stage-frame > * {
+  pointer-events: auto;
+}
+
+.editor-stage-name {
+  position: absolute;
+  bottom: 100%;
+  left: -2px;
+  padding: 1px 5px;
+  border-radius: var(--radius-small) var(--radius-small) 0 0;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-family: var(--font-tool);
+  font-size: 11px;
+  white-space: nowrap;
+  cursor: move;
+}
+
+.editor-stage-handle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--on-accent);
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+.editor-stage-corner {
+  right: -7px;
+  bottom: -7px;
+  cursor: nwse-resize;
+}
+
+.editor-stage-edge {
+  right: -7px;
+  top: calc(50% - 6px);
+  cursor: ew-resize;
+}
+
+.editor-stage-empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: var(--font-tool);
+}
+
+/* The selected event's dialog as a game shows it (DialogShow.tsx), over the map rather than over the whole page */
+.quest-screen.editor-show {
+  position: absolute;
+  inset: 0;
+  z-index: 7;
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.editor-show .window-layer.editor-show-layer {
+  position: absolute;
+}
+
+.editor-show-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 21;
+  background: var(--panel);
+}
+
+/* A press on the map places the selected event or monster place */
+.editor-map-placing,
+.editor-map-placing * {
+  cursor: crosshair !important;
+}
+
+/* Not in Valkyrie: the analysis of the scenario (AnalysisPanel.tsx) */
+.editor-analysis {
+  display: grid;
+  gap: 0.9rem;
+  padding: 0.75rem 1rem 1rem;
+  font-family: var(--font-tool);
+}
+
+.editor-analysis h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+.editor-analysis-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1rem;
+}
+
+.editor-analysis-tools progress {
+  width: 10rem;
+}
+
+.editor-analysis-note {
+  margin: 0;
+  color: var(--quiet);
+  font-size: 0.85rem;
+}
+
+.editor-analysis-error {
+  margin: 0;
+  color: var(--alert-light);
+}
+
+.editor-analysis-advice {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.editor-analysis-advice li.wrong::marker {
+  color: var(--alert-light);
+}
+
+.editor-analysis-components {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.6rem;
+  margin-left: 0.4rem;
+}
+
+.editor-analysis-table {
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.editor-analysis-table th,
+.editor-analysis-table td {
+  padding: 0.3rem 0.7rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.editor-analysis-table tbody tr {
+  cursor: pointer;
+}
+
+.editor-analysis-table tbody tr[aria-selected='true'] {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.editor-analysis-endings {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.7rem;
+}
+
+.editor-analysis-curve {
+  max-width: 100%;
+  height: 7rem;
+}
+
+.editor-analysis-curve rect {
+  fill: var(--accent);
+}
+
+.editor-analysis-curve rect.dead {
+  fill: var(--alert-light);
+}
+
+.editor-analysis-curve text {
+  fill: var(--quiet);
+  font-size: 11px;
+}
+
+/* The pacing sheet: one row a round, numbers right-aligned, the dead rounds and the rounds where half sit idle marked */
+.editor-analysis-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.editor-analysis-pace tbody tr {
+  cursor: default;
+}
+
+.editor-analysis-pace td,
+.editor-analysis-pace th {
+  padding: 0.2rem 0.55rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.editor-analysis-pace tr.dead td:first-child {
+  color: var(--alert-light);
+  font-weight: 600;
+}
+
+.editor-analysis-pace td.warn {
+  color: var(--alert-light);
+}
+
+/* A label typed in a row (a button's) takes all the room the row leaves, so the labels line up */
+.editor-inline > .editor-paneled {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.editor-inline > .editor-paneled .editor-rich-line {
+  width: 100%;
+}
+
+.editor-menu-list.editor-menu-end {
+  left: auto;
+  right: 0;
+}
+
+/* The flat view of a panel: its parts one after another, a thin line between them */
+.editor-fold-flat {
+  border-top: 1px solid color-mix(in srgb, var(--line) 60%, transparent);
+  padding-top: 0.35rem;
+}
+
+.editor-fold-flat-head {
+  justify-content: flex-end;
+}
+
+/* The map's right-click menu, where it was clicked */
+.editor-map-menu {
+  top: auto;
+  min-width: 12rem;
+}

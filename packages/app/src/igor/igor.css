@@ -1,0 +1,312 @@
+/* Igor (Igor.tsx): his portrait at the bottom right of the menu, flickering as by candlelight, and his window: his
+   face at the left, the conversation at the right, the player's answers as buttons under it */
+.igor-button {
+  position: fixed;
+  right: max(var(--gutter), 1.5rem);
+  bottom: max(var(--gutter), 1.25rem);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  width: clamp(4.75rem, 8vw, 6.5rem);
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  animation: igor-candle 4.5s ease-in-out infinite;
+}
+
+.igor-button img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 0.7rem color-mix(in srgb, var(--room-glow) 45%, transparent));
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+.igor-button:hover img,
+.igor-button:focus-visible img {
+  transform: scale(1.06) rotate(-2deg);
+  filter: drop-shadow(0 0 1.1rem color-mix(in srgb, var(--room-glow) 75%, transparent));
+}
+
+.igor-button:focus-visible {
+  outline: none;
+}
+
+.igor-button-name {
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  color: var(--room-title);
+  text-shadow: 0 0 0.5rem var(--shade);
+}
+
+/* News waiting: a small ember on his portrait */
+.igor-button[data-news]::after {
+  content: '';
+  position: absolute;
+  top: 6%;
+  right: 8%;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: var(--room-ember);
+  box-shadow: 0 0 0.6rem var(--room-ember);
+  animation: igor-ember 1.6s ease-in-out infinite;
+}
+
+.igor-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--gutter);
+  background: color-mix(in srgb, var(--shade) 78%, transparent);
+  animation: igor-fade 0.35s ease-out;
+}
+
+.igor-window {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(9rem, 16rem) 1fr;
+  width: min(100%, 58rem);
+  height: min(100%, 44rem);
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(ellipse at 0% 100%, color-mix(in srgb, var(--room-ember) 16%, transparent), transparent 60%),
+    var(--panel);
+  box-shadow:
+    0 0 3rem color-mix(in srgb, var(--room-glow) 14%, transparent),
+    0 1rem 3rem var(--shade);
+}
+
+.igor-portrait {
+  margin: 0;
+  min-height: 0;
+  -webkit-mask-image: linear-gradient(to right, black 70%, transparent);
+  mask-image: linear-gradient(to right, black 70%, transparent);
+}
+
+.igor-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+  animation: igor-fade 0.6s ease-out;
+}
+
+.igor-talk {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  min-height: 0;
+  padding: 1.4rem 1.6rem 1.4rem 0.6rem;
+}
+
+.igor-talk h2 {
+  margin: 0;
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-weight: 400;
+  font-size: 1.7rem;
+  letter-spacing: 0.06em;
+  color: var(--room-title);
+  text-shadow: 0 0 0.7rem color-mix(in srgb, var(--room-glow) 40%, transparent);
+}
+
+.igor-log {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.65rem;
+  min-height: 0;
+  padding-right: 0.4rem;
+  overflow-y: auto;
+}
+
+.igor-line {
+  margin: 0;
+  line-height: 1.45;
+  animation: igor-rise 0.45s ease-out;
+}
+
+.igor-line.igor {
+  font-style: italic;
+  color: var(--text);
+}
+
+.igor-line.you {
+  align-self: flex-end;
+  max-width: 80%;
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--radius-small);
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+  color: var(--text-bright);
+}
+
+.igor-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.igor-choice {
+  min-height: 2.6rem;
+  padding: 0.3rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 50%, transparent);
+  border-radius: var(--radius-small);
+  background: color-mix(in srgb, var(--shade) 55%, transparent);
+  color: var(--room-title);
+  font: inherit;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.igor-choice:hover,
+.igor-choice:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 0 0.7rem color-mix(in srgb, var(--room-glow) 40%, transparent);
+  outline: none;
+}
+
+.igor-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.7rem;
+  padding: 0 0.4rem;
+  border: 0;
+  background: none;
+  color: var(--quiet);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* An adventure he offers: its cover, its name, a few words of it and why, and the way to it */
+.igor-adventure {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.9rem;
+  padding: 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  border-radius: var(--radius-small);
+  background: var(--card);
+  animation: igor-rise 0.5s ease-out;
+}
+
+.igor-adventure-cover {
+  align-self: start;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 0.2rem;
+  background: var(--card-shade);
+}
+
+.igor-adventure-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.igor-adventure-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.igor-adventure-name {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-size: 1.15rem;
+  color: var(--card-text);
+}
+
+.igor-adventure-synopsis {
+  font-size: 0.9rem;
+  color: var(--card-quiet);
+}
+
+.igor-adventure-why {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--accent);
+}
+
+.button.igor-go {
+  min-height: 2.3rem;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 40rem), (max-height: 30rem) {
+  .igor-window {
+    grid-template-columns: 1fr;
+    grid-template-rows: 8.5rem 1fr;
+    height: 100%;
+  }
+
+  .igor-portrait {
+    -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent);
+    mask-image: linear-gradient(to bottom, black 65%, transparent);
+  }
+
+  .igor-talk {
+    padding: 0.4rem 1rem 1rem;
+  }
+}
+
+@keyframes igor-candle {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  45% {
+    filter: brightness(1.12);
+  }
+  55% {
+    filter: brightness(0.93);
+  }
+}
+
+@keyframes igor-ember {
+  50% {
+    opacity: 0.45;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes igor-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes igor-rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.4rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .igor-button,
+  .igor-button::after,
+  .igor-layer,
+  .igor-layer * {
+    animation: none !important;
+  }
+}

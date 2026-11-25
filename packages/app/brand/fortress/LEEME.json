@@ -1,0 +1,22 @@
+{
+  "resolution": [
+    1536,
+    658
+  ],
+  "coordinates": "All overlays fill original canvas and align at x=0 y=0",
+  "status": "Prototype: character mask and reconstructed background require manual retouch for large movements",
+  "layers": [
+    "00_fondo_sin_guerrero_provisional.webp",
+    "04_volcan_resplandor.png",
+    "05_fuegos_castillo.png",
+    "03_portal_resplandor.png",
+    "06_simbolo_portal.png",
+    "07_niebla_lejana.png",
+    "08_niebla_media.png",
+    "01_guerrero.png",
+    "02_rocas_primer_plano.png",
+    "09_niebla_cercana.png",
+    "10_brasas.png"
+  ],
+  "tips": "For minimal motion use 00_original.webp and animate only glows, fog, embers. To animate soldier: use cleaned plate, character PNG, inspect edges first."
+}

@@ -1,0 +1,16263 @@
+{
+"nota": "Casillas de cada TileSide en su rejilla (columna i, fila j; (0,0) = casilla de la esquina superior izquierda). 'filas' empieza en la casilla (x, y). Generado por construir_losetas.py.",
+"losetas": {
+"TileSide1A": {
+"pack": "D2EBase",
+"nombre": "1A",
+"rasgos": [
+"water",
+"outside"
+],
+"reverso": "TileSide1B",
+"w": 1024,
+"h": 1024,
+"left": 79,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"########",
+"########",
+"########",
+"########",
+"########",
+"########"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+3,
+0
+],
+[
+4,
+0
+]
+],
+"hacia": "N",
+"escenarios": 7
+},
+{
+"casillas": [
+[
+3,
+5
+],
+[
+4,
+5
+]
+],
+"hacia": "S",
+"escenarios": 7
+},
+{
+"casillas": [
+[
+7,
+2
+],
+[
+7,
+3
+]
+],
+"hacia": "E",
+"escenarios": 4
+},
+{
+"casillas": [
+[
+0,
+4
+],
+[
+0,
+5
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+5
+],
+[
+2,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+6,
+5
+],
+[
+7,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide1B": {
+"pack": "D2EBase",
+"nombre": "1B",
+"rasgos": [
+"throne",
+"inside"
+],
+"reverso": "TileSide1A",
+"w": 1024,
+"h": 1024,
+"left": 105,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"########",
+"########",
+"########",
+"########",
+"########",
+"########"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+3,
+0
+],
+[
+4,
+0
+]
+],
+"hacia": "N",
+"escenarios": 13
+},
+{
+"casillas": [
+[
+3,
+5
+],
+[
+4,
+5
+]
+],
+"hacia": "S",
+"escenarios": 13
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 9
+},
+{
+"casillas": [
+[
+5,
+5
+],
+[
+6,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide2A": {
+"pack": "D2EBase",
+"nombre": "2A",
+"rasgos": [
+"water",
+"outside"
+],
+"reverso": "TileSide2B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 8
+},
+{
+"casillas": [
+[
+2,
+5
+],
+[
+3,
+5
+]
+],
+"hacia": "S",
+"escenarios": 8
+}
+]
+},
+"TileSide2B": {
+"pack": "D2EBase",
+"nombre": "2B",
+"rasgos": [
+"dirt",
+"inside"
+],
+"reverso": "TileSide2A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+2,
+5
+],
+[
+3,
+5
+]
+],
+"hacia": "S",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 7
+},
+{
+"casillas": [
+[
+0,
+3
+],
+[
+0,
+4
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+5,
+4
+],
+[
+5,
+5
+]
+],
+"hacia": "E",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 1
+}
+]
+},
+"TileSide3A": {
+"pack": "D2EBase",
+"nombre": "3A",
+"rasgos": [
+"water",
+"outside"
+],
+"reverso": "TileSide3B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 289,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 13
+},
+{
+"casillas": [
+[
+5,
+1
+],
+[
+5,
+2
+]
+],
+"hacia": "E",
+"escenarios": 12
+},
+{
+"casillas": [
+[
+2,
+3
+],
+[
+3,
+3
+]
+],
+"hacia": "S",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide3B": {
+"pack": "D2EBase",
+"nombre": "3B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide3A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 289,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+2,
+3
+],
+[
+3,
+3
+]
+],
+"hacia": "S",
+"escenarios": 9
+},
+{
+"casillas": [
+[
+5,
+1
+],
+[
+5,
+2
+]
+],
+"hacia": "E",
+"escenarios": 8
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+4,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+4,
+0
+],
+[
+5,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide4A": {
+"pack": "D2EBase",
+"nombre": "4A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide4B",
+"w": 1024,
+"h": 1024,
+"left": 210,
+"top": 210,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 9
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 6
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide4B": {
+"pack": "D2EBase",
+"nombre": "4B",
+"rasgos": [
+"inside",
+"pit",
+"dirt"
+],
+"reverso": "TileSide4A",
+"w": 1024,
+"h": 1024,
+"left": 210,
+"top": 210,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 9
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 8
+},
+{
+"casillas": [
+[
+0,
+4
+],
+[
+0,
+5
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide5A": {
+"pack": "D2EBase",
+"nombre": "5A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide5B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 289,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+2,
+3
+],
+[
+3,
+3
+]
+],
+"hacia": "S",
+"escenarios": 7
+},
+{
+"casillas": [
+[
+5,
+1
+],
+[
+5,
+2
+]
+],
+"hacia": "E",
+"escenarios": 6
+}
+]
+},
+"TileSide5B": {
+"pack": "D2EBase",
+"nombre": "5B",
+"rasgos": [
+"inside",
+"dirt"
+],
+"reverso": "TileSide5A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 289,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 15
+},
+{
+"casillas": [
+[
+5,
+1
+],
+[
+5,
+2
+]
+],
+"hacia": "E",
+"escenarios": 12
+},
+{
+"casillas": [
+[
+2,
+3
+],
+[
+3,
+3
+]
+],
+"hacia": "S",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+0,
+3
+],
+[
+1,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide6A": {
+"pack": "D2EBase",
+"nombre": "6A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide6B",
+"w": 1024,
+"h": 1024,
+"left": 302,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+5
+],
+[
+2,
+5
+]
+],
+"hacia": "S",
+"escenarios": 6
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 5
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+}
+]
+},
+"TileSide6B": {
+"pack": "D2EBase",
+"nombre": "6B",
+"rasgos": [
+"inside",
+"dirt"
+],
+"reverso": "TileSide6A",
+"w": 1024,
+"h": 1024,
+"left": 302,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+5
+],
+[
+2,
+5
+]
+],
+"hacia": "S",
+"escenarios": 12
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+0,
+3
+],
+[
+0,
+4
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+2
+],
+[
+3,
+3
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide7A": {
+"pack": "D2EBase",
+"nombre": "7A",
+"rasgos": [
+"inside",
+"timber"
+],
+"reverso": "TileSide7B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 302,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+3,
+0
+],
+[
+4,
+0
+]
+],
+"hacia": "N",
+"escenarios": 9
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 8
+},
+{
+"casillas": [
+[
+5,
+2
+],
+[
+5,
+3
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide7B": {
+"pack": "D2EBase",
+"nombre": "7B",
+"rasgos": [
+"inside",
+"snow"
+],
+"reverso": "TileSide7A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 302,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+3,
+3
+],
+[
+4,
+3
+]
+],
+"hacia": "S",
+"escenarios": 9
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 7
+},
+{
+"casillas": [
+[
+0,
+3
+],
+[
+1,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide8A": {
+"pack": "D2EBase",
+"nombre": "8A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide8B",
+"w": 512,
+"h": 512,
+"left": 33,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 9
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+3
+],
+[
+3,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide8B": {
+"pack": "D2EBase",
+"nombre": "8B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide8A",
+"w": 512,
+"h": 512,
+"left": 59,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 15
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 12
+},
+{
+"casillas": [
+[
+2,
+3
+],
+[
+3,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+3,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide9A": {
+"pack": "D2EBase",
+"nombre": "9A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide9B",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 12
+},
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 10
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 6
+}
+]
+},
+"TileSide9B": {
+"pack": "D2EBase",
+"nombre": "9B",
+"rasgos": [
+"inside",
+"dirt"
+],
+"reverso": "TileSide9A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 13
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 10
+},
+{
+"casillas": [
+[
+0,
+3
+],
+[
+1,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+3
+],
+[
+3,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide10A": {
+"pack": "D2EBase",
+"nombre": "10A",
+"rasgos": [
+"outside",
+"farm"
+],
+"reverso": "TileSide10B",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 4
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 3
+}
+]
+},
+"TileSide10B": {
+"pack": "D2EBase",
+"nombre": "10B",
+"rasgos": [
+"inside",
+"tomb"
+],
+"reverso": "TileSide10A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 8
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 7
+},
+{
+"casillas": [
+[
+0,
+3
+],
+[
+1,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide11A": {
+"pack": "D2EBase",
+"nombre": "11A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide11B",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 7
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 5
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide11B": {
+"pack": "D2EBase",
+"nombre": "11B",
+"rasgos": [
+"inside",
+"tomb"
+],
+"reverso": "TileSide11A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 6
+},
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 4
+},
+{
+"casillas": [
+[
+2,
+3
+],
+[
+3,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide12A": {
+"pack": "D2EBase",
+"nombre": "12A",
+"rasgos": [
+"outside",
+"water"
+],
+"reverso": "TileSide12B",
+"w": 1024,
+"h": 1024,
+"left": 262.5,
+"top": 233.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+".####",
+"#####",
+"#####",
+"..###",
+"..##."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 12
+},
+{
+"casillas": [
+[
+2,
+4
+],
+[
+3,
+4
+]
+],
+"hacia": "S",
+"escenarios": 12
+}
+]
+},
+"TileSide12B": {
+"pack": "D2EBase",
+"nombre": "12B",
+"rasgos": [
+"inside",
+"dirt",
+"lava"
+],
+"reverso": "TileSide12A",
+"w": 1024,
+"h": 1024,
+"left": 233.5,
+"top": 233.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####.",
+"#####",
+"#####",
+"###..",
+".##.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+4
+],
+[
+2,
+4
+]
+],
+"hacia": "S",
+"escenarios": 14
+},
+{
+"casillas": [
+[
+4,
+1
+],
+[
+4,
+2
+]
+],
+"hacia": "E",
+"escenarios": 14
+}
+]
+},
+"TileSide13A": {
+"pack": "D2EBase",
+"nombre": "13A",
+"rasgos": [
+"outside",
+"timber"
+],
+"reverso": "TileSide13B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+".####.",
+"######",
+"######",
+"######",
+"##....",
+"##...."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+5
+],
+[
+1,
+5
+]
+],
+"hacia": "S",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 8
+},
+{
+"casillas": [
+[
+0,
+3
+],
+[
+0,
+4
+]
+],
+"hacia": "O",
+"escenarios": 1
+}
+]
+},
+"TileSide13B": {
+"pack": "D2EBase",
+"nombre": "13B",
+"rasgos": [
+"inside",
+"library"
+],
+"reverso": "TileSide13A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+".####.",
+"######",
+"######",
+"######",
+"....##",
+"....##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+4,
+5
+],
+[
+5,
+5
+]
+],
+"hacia": "S",
+"escenarios": 13
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 10
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+1
+],
+[
+5,
+2
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide14A": {
+"pack": "D2EBase",
+"nombre": "14A",
+"rasgos": [
+"outside",
+"graves"
+],
+"reverso": "TileSide14B",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+".###",
+"####",
+"####",
+".###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 15
+},
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 10
+}
+]
+},
+"TileSide14B": {
+"pack": "D2EBase",
+"nombre": "14B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide14A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###.",
+"####",
+"####",
+"###."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 8
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide15A": {
+"pack": "D2EBase",
+"nombre": "15A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide15B",
+"w": 1024,
+"h": 1024,
+"left": 249.5,
+"top": 302,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"..##.",
+"#####",
+"#####",
+"##..."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+3
+],
+[
+1,
+3
+]
+],
+"hacia": "S",
+"escenarios": 7
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 7
+},
+{
+"casillas": [
+[
+4,
+1
+],
+[
+4,
+2
+]
+],
+"hacia": "E",
+"escenarios": 2
+}
+]
+},
+"TileSide15B": {
+"pack": "D2EBase",
+"nombre": "15B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide15A",
+"w": 1024,
+"h": 1024,
+"left": 249.5,
+"top": 302,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+".##..",
+"#####",
+"#####",
+"...##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 16
+},
+{
+"casillas": [
+[
+3,
+3
+],
+[
+4,
+3
+]
+],
+"hacia": "S",
+"escenarios": 16
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+1,
+2
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+4,
+2
+],
+[
+4,
+3
+]
+],
+"hacia": "E",
+"escenarios": 2
+}
+]
+},
+"TileSide16A": {
+"pack": "D2EBase",
+"nombre": "16A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide16B",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+".##.",
+"####",
+"####",
+".##."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 11
+}
+]
+},
+"TileSide16B": {
+"pack": "D2EBase",
+"nombre": "16B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide16A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+".##.",
+"####",
+"####",
+".##."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 18
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 16
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 16
+},
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 16
+}
+]
+},
+"TileSide17A": {
+"pack": "D2EBase",
+"nombre": "17A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide17B",
+"w": 512,
+"h": 512,
+"left": 59,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"..##",
+"..##",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 9
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 9
+}
+]
+},
+"TileSide17B": {
+"pack": "D2EBase",
+"nombre": "17B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide17A",
+"w": 512,
+"h": 512,
+"left": 33,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##..",
+"##..",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+3,
+2
+],
+[
+3,
+3
+]
+],
+"hacia": "E",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide18A": {
+"pack": "D2EBase",
+"nombre": "18A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide18B",
+"w": 512,
+"h": 512,
+"left": 59,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"..##",
+"..##",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 10
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 10
+}
+]
+},
+"TileSide18B": {
+"pack": "D2EBase",
+"nombre": "18B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide18A",
+"w": 512,
+"h": 512,
+"left": 33,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##..",
+"##..",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 17
+},
+{
+"casillas": [
+[
+3,
+2
+],
+[
+3,
+3
+]
+],
+"hacia": "E",
+"escenarios": 17
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+}
+]
+},
+"TileSide19A": {
+"pack": "D2EBase",
+"nombre": "19A",
+"rasgos": [
+"outside",
+"bridge"
+],
+"reverso": "TileSide19B",
+"w": 1024,
+"h": 1024,
+"left": 354.5,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###",
+"###",
+"###",
+"###",
+"###",
+"###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+5
+],
+[
+1,
+5
+]
+],
+"hacia": "S",
+"escenarios": 6
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 6
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+1
+],
+[
+2,
+2
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide19B": {
+"pack": "D2EBase",
+"nombre": "19B",
+"rasgos": [
+"inside",
+"stairs"
+],
+"reverso": "TileSide19A",
+"w": 1024,
+"h": 1024,
+"left": 354.5,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###",
+"###",
+"###",
+"###",
+"###",
+"###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+5
+],
+[
+2,
+5
+]
+],
+"hacia": "S",
+"escenarios": 9
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 8
+}
+]
+},
+"TileSide20A": {
+"pack": "D2EBase",
+"nombre": "20A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide20B",
+"w": 1024,
+"h": 1024,
+"left": 367.5,
+"top": 105,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###",
+"###",
+".##",
+".##",
+".##",
+".##",
+"###",
+"###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+6
+],
+[
+0,
+7
+]
+],
+"hacia": "O",
+"escenarios": 7
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 6
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 2
+}
+]
+},
+"TileSide20B": {
+"pack": "D2EBase",
+"nombre": "20B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide20A",
+"w": 1024,
+"h": 1024,
+"left": 341.5,
+"top": 105,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###",
+"###",
+"##.",
+"##.",
+"##.",
+"##.",
+"###",
+"###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+2,
+6
+],
+[
+2,
+7
+]
+],
+"hacia": "E",
+"escenarios": 9
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 8
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+1,
+4
+]
+],
+"hacia": "E",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+2,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide21A": {
+"pack": "D2EBase",
+"nombre": "21A",
+"rasgos": [
+"outside",
+"water"
+],
+"reverso": "TileSide21B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 354.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 4
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide21B": {
+"pack": "D2EBase",
+"nombre": "21B",
+"rasgos": [
+"inside",
+"water"
+],
+"reverso": "TileSide21A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 354.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+5,
+1
+],
+[
+5,
+2
+]
+],
+"hacia": "E",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+1,
+2
+],
+[
+2,
+2
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+2
+],
+[
+3,
+2
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide22A": {
+"pack": "D2EBase",
+"nombre": "22A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide22B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 407,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 6
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 6
+}
+]
+},
+"TileSide22B": {
+"pack": "D2EBase",
+"nombre": "22B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide22A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 407,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 4
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 4
+}
+]
+},
+"TileSide23A": {
+"pack": "D2EBase",
+"nombre": "23A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide23B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 394,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+2,
+1
+],
+[
+3,
+1
+]
+],
+"hacia": "S",
+"escenarios": 7
+}
+]
+},
+"TileSide23B": {
+"pack": "D2EBase",
+"nombre": "23B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide23A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 394,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+2,
+1
+],
+[
+3,
+1
+]
+],
+"hacia": "S",
+"escenarios": 7
+},
+{
+"casillas": [
+[
+4,
+0
+],
+[
+5,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+}
+]
+},
+"TileSide24A": {
+"pack": "D2EBase",
+"nombre": "24A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide24B",
+"w": 1024,
+"h": 1024,
+"left": 184,
+"top": 394,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 8
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 6
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide24B": {
+"pack": "D2EBase",
+"nombre": "24B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide24A",
+"w": 1024,
+"h": 1024,
+"left": 210,
+"top": 394,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 7
+},
+{
+"casillas": [
+[
+4,
+1
+],
+[
+5,
+1
+]
+],
+"hacia": "S",
+"escenarios": 5
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide25A": {
+"pack": "D2EBase",
+"nombre": "25A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide25B",
+"w": 1024,
+"h": 1024,
+"left": 420,
+"top": 210,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##",
+"##",
+"##",
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 7
+},
+{
+"casillas": [
+[
+0,
+4
+],
+[
+0,
+5
+]
+],
+"hacia": "O",
+"escenarios": 4
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+}
+]
+},
+"TileSide25B": {
+"pack": "D2EBase",
+"nombre": "25B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide25A",
+"w": 1024,
+"h": 1024,
+"left": 394,
+"top": 210,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##",
+"##",
+"##",
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 10
+},
+{
+"casillas": [
+[
+1,
+4
+],
+[
+1,
+5
+]
+],
+"hacia": "E",
+"escenarios": 6
+},
+{
+"casillas": [
+[
+1,
+2
+],
+[
+1,
+3
+]
+],
+"hacia": "E",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+4
+],
+[
+0,
+5
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide26A": {
+"pack": "D2EBase",
+"nombre": "26A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide26B",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 98.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+".##.",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 9
+},
+{
+"casillas": [
+[
+1,
+2
+],
+[
+2,
+2
+]
+],
+"hacia": "S",
+"escenarios": 6
+}
+]
+},
+"TileSide26B": {
+"pack": "D2EBase",
+"nombre": "26B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide26A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 98.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+".##.",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 16
+},
+{
+"casillas": [
+[
+1,
+2
+],
+[
+2,
+2
+]
+],
+"hacia": "S",
+"escenarios": 12
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide27A": {
+"pack": "D2EBase",
+"nombre": "27A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide27B",
+"w": 512,
+"h": 512,
+"left": 151,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##",
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 9
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 8
+},
+{
+"casillas": [
+[
+0,
+3
+],
+[
+1,
+3
+]
+],
+"hacia": "S",
+"escenarios": 4
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+}
+]
+},
+"TileSide27B": {
+"pack": "D2EBase",
+"nombre": "27B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide27A",
+"w": 512,
+"h": 512,
+"left": 151,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##",
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+2
+],
+[
+1,
+3
+]
+],
+"hacia": "E",
+"escenarios": 13
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 12
+},
+{
+"casillas": [
+[
+0,
+3
+],
+[
+1,
+3
+]
+],
+"hacia": "S",
+"escenarios": 4
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 1
+}
+]
+},
+"TileSide28A": {
+"pack": "D2EBase",
+"nombre": "28A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide28B",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 151,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 6
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 4
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 2
+}
+]
+},
+"TileSide28B": {
+"pack": "D2EBase",
+"nombre": "28B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide28A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 151,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+2,
+1
+],
+[
+3,
+1
+]
+],
+"hacia": "S",
+"escenarios": 11
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 8
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+3,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide29A": {
+"pack": "D2EBase",
+"nombre": "29A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide29B",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 151,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 10
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+3,
+1
+]
+],
+"hacia": "E",
+"escenarios": 10
+}
+]
+},
+"TileSide29B": {
+"pack": "D2EBase",
+"nombre": "29B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide29A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 151,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 9
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+3,
+1
+]
+],
+"hacia": "E",
+"escenarios": 9
+}
+]
+},
+"TileSide30A": {
+"pack": "D2EBase",
+"nombre": "30A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide30B",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 151,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 5
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+3,
+1
+]
+],
+"hacia": "E",
+"escenarios": 5
+}
+]
+},
+"TileSide30B": {
+"pack": "D2EBase",
+"nombre": "30B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide30A",
+"w": 331,
+"h": 152,
+"left": 21.5,
+"top": 3.5,
+"pps": 72.0,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 6
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+3,
+1
+]
+],
+"hacia": "E",
+"escenarios": 6
+}
+]
+},
+"TileSideCapA": {
+"pack": "D2EBase",
+"nombre": "CapA",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSideCapB",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 90,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 32
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "S",
+"escenarios": 10
+}
+]
+},
+"TileSideCapB": {
+"pack": "D2EBase",
+"nombre": "CapB",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSideCapA",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 90,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 37
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "S",
+"escenarios": 12
+}
+]
+},
+"TileSideEntranceA": {
+"pack": "D2EBase",
+"nombre": "EntranceA",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSideEntranceB",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 36,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 34
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSideEntranceB": {
+"pack": "D2EBase",
+"nombre": "EntranceB",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSideEntranceA",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 36,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 20
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSideEntranceStairA": {
+"pack": "D2EBase",
+"nombre": "EntranceStairA",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSideEntranceStairB",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 36,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 17
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSideEntranceStairB": {
+"pack": "D2EBase",
+"nombre": "EntranceStairB",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSideEntranceStairA",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 36,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 22
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSideExtensionA": {
+"pack": "D2EBase",
+"nombre": "ExtensionA",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSideExtensionB",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 75,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "S",
+"escenarios": 19
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 18
+}
+]
+},
+"TileSideExtensionB": {
+"pack": "D2EBase",
+"nombre": "ExtensionB",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSideExtensionA",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 75,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 22
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "S",
+"escenarios": 22
+}
+]
+},
+"TileSideTransitionA": {
+"pack": "D2EBase",
+"nombre": "TransitionA",
+"rasgos": [
+"inside",
+"outside",
+"transition"
+],
+"reverso": "TileSideTransitionB",
+"w": 512,
+"h": 512,
+"left": 151,
+"top": 151,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 23
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 23
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSideTransitionB": {
+"pack": "D2EBase",
+"nombre": "TransitionB",
+"rasgos": [
+"inside",
+"outside",
+"transition"
+],
+"reverso": "TileSideTransitionA",
+"w": 512,
+"h": 512,
+"left": 151,
+"top": 151,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 12
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 12
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide36A": {
+"pack": "LoR",
+"nombre": "36A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide36B",
+"w": 1024,
+"h": 1024,
+"left": 92,
+"top": 92,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"########",
+"########",
+"########",
+"########",
+"########",
+"########",
+"########",
+"########"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide36B": {
+"pack": "LoR",
+"nombre": "36B",
+"rasgos": [
+"inside",
+"pit"
+],
+"reverso": "TileSide36A",
+"w": 1024,
+"h": 1024,
+"left": 92,
+"top": 92,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"########",
+"########",
+"########",
+"########",
+"########",
+"########",
+"########",
+"########"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+3,
+7
+],
+[
+4,
+7
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+4
+],
+[
+0,
+5
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+6,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+7,
+4
+],
+[
+7,
+5
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide37A": {
+"pack": "LoR",
+"nombre": "37A",
+"rasgos": [
+"outside",
+"stone"
+],
+"reverso": "TileSide37B",
+"w": 1024,
+"h": 1024,
+"left": 39.5,
+"top": 210,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###...###",
+"#########",
+".#######.",
+"..#####..",
+"#########",
+"#########"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+4
+],
+[
+0,
+5
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+8,
+0
+],
+[
+8,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+8,
+4
+],
+[
+8,
+5
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide37B": {
+"pack": "LoR",
+"nombre": "37B",
+"rasgos": [
+"inside",
+"pit"
+],
+"reverso": "TileSide37A",
+"w": 1024,
+"h": 1024,
+"left": 39.5,
+"top": 210,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###...###",
+"#########",
+".#######.",
+"..#####..",
+"#########",
+"#########"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+4
+],
+[
+0,
+5
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+7,
+0
+],
+[
+8,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+8,
+4
+],
+[
+8,
+5
+]
+],
+"hacia": "E",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide38A": {
+"pack": "LoR",
+"nombre": "38A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide38B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 144.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"..##..",
+".####.",
+"######",
+"######",
+".####.",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide38B": {
+"pack": "LoR",
+"nombre": "38B",
+"rasgos": [
+"inside",
+"water"
+],
+"reverso": "TileSide38A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 144.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"..##..",
+".####.",
+"######",
+"######",
+".####.",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+0,
+5
+],
+[
+0,
+6
+]
+],
+"hacia": "O",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+5,
+2
+],
+[
+5,
+3
+]
+],
+"hacia": "E",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+5,
+5
+],
+[
+5,
+6
+]
+],
+"hacia": "E",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+2,
+6
+],
+[
+3,
+6
+]
+],
+"hacia": "S",
+"escenarios": 2
+}
+]
+},
+"TileSide39A": {
+"pack": "LoR",
+"nombre": "39A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide39B",
+"w": 1024,
+"h": 1024,
+"left": 144.5,
+"top": 105,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"..#####",
+".######",
+"#######",
+"#######",
+"#####..",
+"####...",
+".######",
+"..#####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+3
+],
+[
+0,
+4
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+4,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+6,
+1
+],
+[
+6,
+2
+]
+],
+"hacia": "E",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+6,
+6
+],
+[
+6,
+7
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide39B": {
+"pack": "LoR",
+"nombre": "39B",
+"rasgos": [
+"inside",
+"stairs"
+],
+"reverso": "TileSide39A",
+"w": 1024,
+"h": 1024,
+"left": 144.5,
+"top": 105,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#####..",
+"######.",
+"#######",
+"#######",
+"..#####",
+"...####",
+"######.",
+"#####.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+6
+],
+[
+0,
+7
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+6,
+3
+],
+[
+6,
+4
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide40A": {
+"pack": "LoR",
+"nombre": "40A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide40B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 249.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"###...",
+"###..."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide40B": {
+"pack": "LoR",
+"nombre": "40B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide40A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 249.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"...###",
+"...###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+5,
+3
+],
+[
+5,
+4
+]
+],
+"hacia": "E",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide41A": {
+"pack": "LoR",
+"nombre": "41A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide41B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 407,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide41B": {
+"pack": "LoR",
+"nombre": "41B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide41A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 407,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+4,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide42A": {
+"pack": "LoR",
+"nombre": "42A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide42B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 407,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide42B": {
+"pack": "LoR",
+"nombre": "42B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide42A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 407,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide43A": {
+"pack": "LoR",
+"nombre": "43A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide43B",
+"w": 512,
+"h": 512,
+"left": 138,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 3
+}
+]
+},
+"TileSide43B": {
+"pack": "LoR",
+"nombre": "43B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide43A",
+"w": 512,
+"h": 512,
+"left": 164,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 5
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 5
+}
+]
+},
+"TileSide31A": {
+"pack": "LotW",
+"nombre": "31A",
+"rasgos": [
+"rubble",
+"outside"
+],
+"reverso": "TileSide31B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+5,
+2
+],
+[
+5,
+3
+]
+],
+"hacia": "E",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+2,
+5
+],
+[
+3,
+5
+]
+],
+"hacia": "S",
+"escenarios": 2
+}
+]
+},
+"TileSide31B": {
+"pack": "LotW",
+"nombre": "31B",
+"rasgos": [
+"treasure",
+"inside"
+],
+"reverso": "TileSide31A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+2,
+5
+],
+[
+3,
+5
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+2
+],
+[
+5,
+3
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide32A": {
+"pack": "LotW",
+"nombre": "32A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide32B",
+"w": 432,
+"h": 432,
+"left": 72.0,
+"top": 72.0,
+"pps": 72.0,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 1
+}
+]
+},
+"TileSide32B": {
+"pack": "LotW",
+"nombre": "32B",
+"rasgos": [
+"treasure",
+"inside"
+],
+"reverso": "TileSide32A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 3
+}
+]
+},
+"TileSide33A": {
+"pack": "LotW",
+"nombre": "33A",
+"rasgos": [
+"outside",
+"water"
+],
+"reverso": "TileSide33B",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 151,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+3,
+1
+]
+],
+"hacia": "E",
+"escenarios": 2
+}
+]
+},
+"TileSide33B": {
+"pack": "LotW",
+"nombre": "33B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide33A",
+"w": 432,
+"h": 288,
+"left": 72.0,
+"top": 72.0,
+"pps": 72.0,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 4
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+3,
+1
+]
+],
+"hacia": "E",
+"escenarios": 4
+}
+]
+},
+"TileSide34A": {
+"pack": "LotW",
+"nombre": "34A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide34B",
+"w": 360,
+"h": 576,
+"left": 72.0,
+"top": 72.0,
+"pps": 72.0,
+"x": 0,
+"y": 0,
+"filas": [
+"###",
+"###",
+"###",
+"###",
+"###",
+"###"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": [
+{
+"casillas": [
+[
+2,
+0
+],
+[
+2,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide34B": {
+"pack": "LotW",
+"nombre": "34B",
+"rasgos": [
+"stairs",
+"inside"
+],
+"reverso": "TileSide34A",
+"w": 1024,
+"h": 1024,
+"left": 354.5,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###",
+"###",
+"###",
+"###",
+"###",
+"###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+2,
+4
+],
+[
+2,
+5
+]
+],
+"hacia": "E",
+"escenarios": 2
+}
+]
+},
+"TileSide35A": {
+"pack": "LotW",
+"nombre": "35A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide35B",
+"w": 1024,
+"h": 1024,
+"left": 262.5,
+"top": 249.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+".####",
+"#####",
+"#####",
+"..###",
+"..##."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+2,
+4
+],
+[
+3,
+4
+]
+],
+"hacia": "S",
+"escenarios": 2
+}
+]
+},
+"TileSide35B": {
+"pack": "LotW",
+"nombre": "35B",
+"rasgos": [
+"lava",
+"inside"
+],
+"reverso": "TileSide35A",
+"w": 1024,
+"h": 1024,
+"left": 236.5,
+"top": 249.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####.",
+"#####",
+"#####",
+"###..",
+".##.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+1,
+4
+],
+[
+2,
+4
+]
+],
+"hacia": "S",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+4,
+1
+],
+[
+4,
+2
+]
+],
+"hacia": "E",
+"escenarios": 3
+}
+]
+},
+"TileSideS1A": {
+"pack": "LotW",
+"nombre": "S1A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSideS1B",
+"w": 432,
+"h": 432,
+"left": 72.0,
+"top": 72.0,
+"pps": 72.0,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": []
+},
+"TileSideS1B": {
+"pack": "LotW",
+"nombre": "S1B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSideS1A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide78A": {
+"pack": "MoB",
+"nombre": "78A",
+"rasgos": [
+"outside",
+"swamp"
+],
+"reverso": "TileSide78B",
+"w": 512,
+"h": 512,
+"left": 164,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide78B": {
+"pack": "MoB",
+"nombre": "78B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide78A",
+"w": 512,
+"h": 512,
+"left": 164,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide79A": {
+"pack": "MoB",
+"nombre": "79A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide79B",
+"w": 512,
+"h": 512,
+"left": 151,
+"top": 151,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide79B": {
+"pack": "MoB",
+"nombre": "79B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide79A",
+"w": 280,
+"h": 280,
+"left": 72.0,
+"top": 72.0,
+"pps": 72.0,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide80A": {
+"pack": "MoB",
+"nombre": "80A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide80B",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+1
+],
+[
+3,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+3,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide80B": {
+"pack": "MoB",
+"nombre": "80B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide80A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+3,
+1
+]
+],
+"hacia": "E",
+"escenarios": 2
+}
+]
+},
+"TileSide81A": {
+"pack": "MoB",
+"nombre": "81A",
+"rasgos": [
+"outside",
+"swamp",
+"bridge",
+"sludge"
+],
+"reverso": "TileSide81B",
+"w": 1024,
+"h": 1024,
+"left": 262.5,
+"top": 249.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#####",
+"#####",
+"#####",
+"#####",
+"#####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+3
+],
+[
+0,
+4
+]
+],
+"hacia": "O",
+"escenarios": 1
+}
+]
+},
+"TileSide81B": {
+"pack": "MoB",
+"nombre": "81B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide81A",
+"w": 1024,
+"h": 1024,
+"left": 236.5,
+"top": 249.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#####",
+"#####",
+"#####",
+"#####",
+"#####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+4
+],
+[
+2,
+4
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+4,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+4,
+3
+],
+[
+4,
+4
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide82A": {
+"pack": "MoB",
+"nombre": "82A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide82B",
+"w": 512,
+"h": 512,
+"left": 98.5,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###",
+"###",
+"###",
+"###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide82B": {
+"pack": "MoB",
+"nombre": "82B",
+"rasgos": [
+"inside",
+"library"
+],
+"reverso": "TileSide82A",
+"w": 512,
+"h": 512,
+"left": 98.5,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###",
+"###",
+"###",
+"###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 1
+}
+]
+},
+"TileSide83A": {
+"pack": "MoB",
+"nombre": "83A",
+"rasgos": [
+"outside",
+"swamp",
+"sludge"
+],
+"reverso": "TileSide83B",
+"w": 1024,
+"h": 1024,
+"left": 184,
+"top": 354.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+2
+],
+[
+3,
+2
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+4,
+2
+],
+[
+5,
+2
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+1
+],
+[
+5,
+2
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide83B": {
+"pack": "MoB",
+"nombre": "83B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide83A",
+"w": 1024,
+"h": 1024,
+"left": 184,
+"top": 354.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+2
+],
+[
+1,
+2
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+2
+],
+[
+3,
+2
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+4,
+2
+],
+[
+5,
+2
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide84A": {
+"pack": "MoB",
+"nombre": "84A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide84B",
+"w": 1024,
+"h": 1024,
+"left": 144.5,
+"top": 236.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#######",
+"#######",
+"#######",
+"..###..",
+"..###.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+2,
+4
+],
+[
+3,
+4
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+6,
+0
+],
+[
+6,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide84B": {
+"pack": "MoB",
+"nombre": "84B",
+"rasgos": [
+"inside",
+"outside"
+],
+"reverso": "TileSide84A",
+"w": 1024,
+"h": 1024,
+"left": 144.5,
+"top": 236.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#######",
+"#######",
+"#######",
+"..###..",
+"..###.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+4
+],
+[
+4,
+4
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+6,
+0
+],
+[
+6,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide85A": {
+"pack": "MoB",
+"nombre": "85A",
+"rasgos": [
+"outside",
+"swamp"
+],
+"reverso": "TileSide85B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##....",
+"##....",
+"####..",
+"#####.",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+4
+],
+[
+0,
+5
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+5
+],
+[
+3,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+4,
+5
+],
+[
+5,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+4
+],
+[
+5,
+5
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide85B": {
+"pack": "MoB",
+"nombre": "85B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide85A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"....##",
+"....##",
+"..####",
+".#####",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+4
+],
+[
+0,
+5
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+2,
+5
+],
+[
+3,
+5
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+4,
+0
+],
+[
+5,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+5,
+4
+],
+[
+5,
+5
+]
+],
+"hacia": "E",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+5
+],
+[
+1,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide86A": {
+"pack": "MoB",
+"nombre": "86A",
+"rasgos": [
+"outside",
+"swamp",
+"water",
+"sludge"
+],
+"reverso": "TileSide86B",
+"w": 1024,
+"h": 1024,
+"left": 92,
+"top": 367.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"########",
+".######.",
+"..####.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+6,
+0
+],
+[
+7,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide86B": {
+"pack": "MoB",
+"nombre": "86B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide86A",
+"w": 1024,
+"h": 1024,
+"left": 92,
+"top": 367.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"########",
+".######.",
+"..####.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide87A": {
+"pack": "MoB",
+"nombre": "87A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide87B",
+"w": 1024,
+"h": 1024,
+"left": 79,
+"top": 92,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"########",
+"########",
+"########",
+"########",
+"########",
+"########",
+"########",
+"########"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+7
+],
+[
+2,
+7
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+4,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+7,
+5
+],
+[
+7,
+6
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide87B": {
+"pack": "MoB",
+"nombre": "87B",
+"rasgos": [
+"inside",
+"torture",
+"sludge"
+],
+"reverso": "TileSide87A",
+"w": 1024,
+"h": 1024,
+"left": 79,
+"top": 92,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"########",
+"########",
+"########",
+"########",
+"########",
+"########",
+"########",
+"########"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+4,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+7
+],
+[
+4,
+7
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+6,
+0
+],
+[
+7,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+7,
+1
+],
+[
+7,
+2
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSideEntranceSwampA": {
+"pack": "MoB",
+"nombre": "EntranceSwampA",
+"rasgos": [
+"outside",
+"swamp"
+],
+"reverso": "TileSideEntranceSwampB",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 36,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSideEntranceSwampB": {
+"pack": "MoB",
+"nombre": "EntranceSwampB",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSideEntranceSwampA",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 36,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide70A": {
+"pack": "MoR",
+"nombre": "70A",
+"rasgos": [
+"outside",
+"inside",
+"transition"
+],
+"reverso": "TileSide70B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+4
+],
+[
+0,
+5
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+5
+],
+[
+3,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide70B": {
+"pack": "MoR",
+"nombre": "70B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide70A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 4
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 4
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 4
+},
+{
+"casillas": [
+[
+2,
+5
+],
+[
+3,
+5
+]
+],
+"hacia": "S",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+4,
+0
+],
+[
+5,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+2
+],
+[
+5,
+3
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide71A": {
+"pack": "MoR",
+"nombre": "71A",
+"rasgos": [
+"outside",
+"tents"
+],
+"reverso": "TileSide71B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####..",
+"####..",
+"####..",
+"..####",
+"..####",
+"..####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+}
+]
+},
+"TileSide71B": {
+"pack": "MoR",
+"nombre": "71B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide71A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"..####",
+"..####",
+"..####",
+"####..",
+"####..",
+"####.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+2,
+5
+],
+[
+3,
+5
+]
+],
+"hacia": "S",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+0,
+4
+],
+[
+0,
+5
+]
+],
+"hacia": "O",
+"escenarios": 1
+}
+]
+},
+"TileSide72A": {
+"pack": "MoR",
+"nombre": "72A",
+"rasgos": [
+"outside",
+"stables"
+],
+"reverso": "TileSide72B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 302,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+5,
+1
+],
+[
+5,
+2
+]
+],
+"hacia": "E",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide72B": {
+"pack": "MoR",
+"nombre": "72B",
+"rasgos": [
+"inside",
+"hall"
+],
+"reverso": "TileSide72A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 302,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+5,
+1
+],
+[
+5,
+2
+]
+],
+"hacia": "E",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+4,
+0
+],
+[
+5,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide73A": {
+"pack": "MoR",
+"nombre": "73A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide73B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 354.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+2
+],
+[
+3,
+2
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide73B": {
+"pack": "MoR",
+"nombre": "73B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide73A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 354.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+2,
+2
+],
+[
+3,
+2
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+4,
+2
+],
+[
+5,
+2
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+1
+],
+[
+5,
+2
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide74A": {
+"pack": "MoR",
+"nombre": "74A",
+"rasgos": [
+"inside",
+"outside",
+"transition",
+"bedroom"
+],
+"reverso": "TileSide74B",
+"w": 1024,
+"h": 1024,
+"left": 289,
+"top": 263,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##..",
+"###.",
+"####",
+"####",
+"###."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+3,
+2
+],
+[
+3,
+3
+]
+],
+"hacia": "E",
+"escenarios": 3
+}
+]
+},
+"TileSide74B": {
+"pack": "MoR",
+"nombre": "74B",
+"rasgos": [
+"inside",
+"outside",
+"transition"
+],
+"reverso": "TileSide74A",
+"w": 1024,
+"h": 1024,
+"left": 315,
+"top": 263,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"..##",
+".###",
+"####",
+"####",
+".###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 4
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 4
+}
+]
+},
+"TileSide75A": {
+"pack": "MoR",
+"nombre": "75A",
+"rasgos": [
+"outside",
+"pit"
+],
+"reverso": "TileSide75B",
+"w": 420,
+"h": 420,
+"left": 72.0,
+"top": 72.0,
+"pps": 72.0,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": []
+},
+"TileSide75B": {
+"pack": "MoR",
+"nombre": "75B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide75A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide76A": {
+"pack": "MoR",
+"nombre": "76A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide76B",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+3,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide76B": {
+"pack": "MoR",
+"nombre": "76B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide76A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+3,
+1
+]
+],
+"hacia": "E",
+"escenarios": 3
+}
+]
+},
+"TileSide77A": {
+"pack": "MoR",
+"nombre": "77A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide77B",
+"w": 280,
+"h": 280,
+"left": 72.0,
+"top": 72.0,
+"pps": 72.0,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide77B": {
+"pack": "MoR",
+"nombre": "77B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide77A",
+"w": 512,
+"h": 512,
+"left": 164,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 5
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 5
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide50A": {
+"pack": "SoN",
+"nombre": "50A",
+"rasgos": [
+"city",
+"fountain"
+],
+"reverso": "TileSide50B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 184,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+5
+],
+[
+3,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+2
+],
+[
+5,
+3
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide50B": {
+"pack": "SoN",
+"nombre": "50B",
+"rasgos": [
+"blackrealm",
+"altar"
+],
+"reverso": "TileSide50A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 184,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide51A": {
+"pack": "SoN",
+"nombre": "51A",
+"rasgos": [
+"city",
+"beds"
+],
+"reverso": "TileSide51B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 289,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"..##.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+2,
+3
+],
+[
+3,
+3
+]
+],
+"hacia": "S",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 2
+}
+]
+},
+"TileSide51B": {
+"pack": "SoN",
+"nombre": "51B",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSide51A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 289,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"..##.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide52A": {
+"pack": "SoN",
+"nombre": "52A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide52B",
+"w": 1024,
+"h": 1024,
+"left": 249.5,
+"top": 302,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#####",
+"#####",
+"#####",
+".####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide52B": {
+"pack": "SoN",
+"nombre": "52B",
+"rasgos": [
+"inside",
+"water"
+],
+"reverso": "TileSide52A",
+"w": 1024,
+"h": 1024,
+"left": 249.5,
+"top": 302,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#####",
+"#####",
+"#####",
+"####."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide53A": {
+"pack": "SoN",
+"nombre": "53A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide53B",
+"w": 512,
+"h": 512,
+"left": 59,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide53B": {
+"pack": "SoN",
+"nombre": "53B",
+"rasgos": [
+"inside",
+"water"
+],
+"reverso": "TileSide53A",
+"w": 512,
+"h": 512,
+"left": 33,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide54A": {
+"pack": "SoN",
+"nombre": "54A",
+"rasgos": [
+"city",
+"study"
+],
+"reverso": "TileSide54B",
+"w": 512,
+"h": 512,
+"left": 59,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide54B": {
+"pack": "SoN",
+"nombre": "54B",
+"rasgos": [
+"blackrealm",
+"pit"
+],
+"reverso": "TileSide54A",
+"w": 512,
+"h": 512,
+"left": 33,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide55A": {
+"pack": "SoN",
+"nombre": "55A",
+"rasgos": [
+"city",
+"prison"
+],
+"reverso": "TileSide55B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 302,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide55B": {
+"pack": "SoN",
+"nombre": "55B",
+"rasgos": [
+"blackrealm",
+"stairs"
+],
+"reverso": "TileSide55A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 302,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide56A": {
+"pack": "SoN",
+"nombre": "56A",
+"rasgos": [
+"city",
+"library"
+],
+"reverso": "TileSide56B",
+"w": 1024,
+"h": 1024,
+"left": 184,
+"top": 302,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+5,
+2
+],
+[
+5,
+3
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide56B": {
+"pack": "SoN",
+"nombre": "56B",
+"rasgos": [
+"blackrealm",
+"plinth"
+],
+"reverso": "TileSide56A",
+"w": 1024,
+"h": 1024,
+"left": 210,
+"top": 302,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide57A": {
+"pack": "SoN",
+"nombre": "57A",
+"rasgos": [
+"city"
+],
+"reverso": "TileSide57B",
+"w": 1024,
+"h": 1024,
+"left": 302,
+"top": 210,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####",
+"..##",
+"..##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide57B": {
+"pack": "SoN",
+"nombre": "57B",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSide57A",
+"w": 1024,
+"h": 1024,
+"left": 302,
+"top": 210,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####",
+"##..",
+"##.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide58A": {
+"pack": "SoN",
+"nombre": "58A",
+"rasgos": [
+"city",
+"water"
+],
+"reverso": "TileSide58B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 341.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"..##.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+2
+],
+[
+3,
+2
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide58B": {
+"pack": "SoN",
+"nombre": "58B",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSide58A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 341.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"..##.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide59A": {
+"pack": "SoN",
+"nombre": "59A",
+"rasgos": [
+"blackrealm",
+"city",
+"transition"
+],
+"reverso": "TileSide59B",
+"w": 1024,
+"h": 1024,
+"left": 249.5,
+"top": 262.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####.",
+"####.",
+"#####",
+"#####",
+".###."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide59B": {
+"pack": "SoN",
+"nombre": "59B",
+"rasgos": [
+"blackrealm",
+"altar",
+"city",
+"transition"
+],
+"reverso": "TileSide59A",
+"w": 1024,
+"h": 1024,
+"left": 249.5,
+"top": 262.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+".####",
+".####",
+"#####",
+"#####",
+".###."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide60A": {
+"pack": "SoN",
+"nombre": "60A",
+"rasgos": [
+"city",
+"tavern"
+],
+"reverso": "TileSide60B",
+"w": 1024,
+"h": 1024,
+"left": 236.5,
+"top": 249.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#####",
+"#####",
+"#####",
+"#####",
+"#####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+2,
+4
+],
+[
+3,
+4
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+3
+],
+[
+0,
+4
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+4,
+3
+],
+[
+4,
+4
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide60B": {
+"pack": "SoN",
+"nombre": "60B",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSide60A",
+"w": 1024,
+"h": 1024,
+"left": 262.5,
+"top": 249.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#####",
+"#####",
+"#####",
+"#####",
+"#####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide61A": {
+"pack": "SoN",
+"nombre": "61A",
+"rasgos": [
+"city",
+"water"
+],
+"reverso": "TileSide61B",
+"w": 512,
+"h": 512,
+"left": 59,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"..##",
+"..##",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide61B": {
+"pack": "SoN",
+"nombre": "61B",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSide61A",
+"w": 420,
+"h": 420,
+"left": 70.0,
+"top": 70.0,
+"pps": 70.0,
+"x": 0,
+"y": 0,
+"filas": [
+"##..",
+"##..",
+"####",
+"####"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": []
+},
+"TileSide62A": {
+"pack": "SoN",
+"nombre": "62A",
+"rasgos": [
+"city"
+],
+"reverso": "TileSide62B",
+"w": 512,
+"h": 512,
+"left": 98.5,
+"top": 111.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###",
+"###",
+"###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+2,
+1
+],
+[
+2,
+2
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide62B": {
+"pack": "SoN",
+"nombre": "62B",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSide62A",
+"w": 512,
+"h": 512,
+"left": 98.5,
+"top": 111.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###",
+"###",
+"###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide63A": {
+"pack": "SoN",
+"nombre": "63A",
+"rasgos": [
+"city"
+],
+"reverso": "TileSide63B",
+"w": 1024,
+"h": 1024,
+"left": 249.5,
+"top": 354.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#####",
+"#####",
+"#####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+4,
+1
+],
+[
+4,
+2
+]
+],
+"hacia": "E",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+1,
+2
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide63B": {
+"pack": "SoN",
+"nombre": "63B",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSide63A",
+"w": 1024,
+"h": 1024,
+"left": 249.5,
+"top": 354.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#####",
+"#####",
+"#####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide64A": {
+"pack": "SoN",
+"nombre": "64A",
+"rasgos": [
+"city"
+],
+"reverso": "TileSide64B",
+"w": 490,
+"h": 280,
+"left": 70.0,
+"top": 70.0,
+"pps": 70.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#####",
+"#####"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": []
+},
+"TileSide64B": {
+"pack": "SoN",
+"nombre": "64B",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSide64A",
+"w": 490,
+"h": 280,
+"left": 70.0,
+"top": 70.0,
+"pps": 70.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#####",
+"#####"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": []
+},
+"TileSide65A": {
+"pack": "SoN",
+"nombre": "65A",
+"rasgos": [
+"city"
+],
+"reverso": "TileSide65B",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+3,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide65B": {
+"pack": "SoN",
+"nombre": "65B",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSide65A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide66A": {
+"pack": "SoN",
+"nombre": "66A",
+"rasgos": [
+"city"
+],
+"reverso": "TileSide66B",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide66B": {
+"pack": "SoN",
+"nombre": "66B",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSide66A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide67A": {
+"pack": "SoN",
+"nombre": "67A",
+"rasgos": [
+"city"
+],
+"reverso": "TileSide67B",
+"w": 512,
+"h": 512,
+"left": 151,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 2
+}
+]
+},
+"TileSide67B": {
+"pack": "SoN",
+"nombre": "67B",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSide67A",
+"w": 512,
+"h": 512,
+"left": 151,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide68A": {
+"pack": "SoN",
+"nombre": "68A",
+"rasgos": [
+"city"
+],
+"reverso": "TileSide68B",
+"w": 512,
+"h": 512,
+"left": 138,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide68B": {
+"pack": "SoN",
+"nombre": "68B",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSide68A",
+"w": 512,
+"h": 512,
+"left": 164,
+"top": 164,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide69A": {
+"pack": "SoN",
+"nombre": "69A",
+"rasgos": [
+"city"
+],
+"reverso": "TileSide69B",
+"w": 512,
+"h": 512,
+"left": 151,
+"top": 151,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide69B": {
+"pack": "SoN",
+"nombre": "69B",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSide69A",
+"w": 512,
+"h": 512,
+"left": 151,
+"top": 151,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSideCapSoNA": {
+"pack": "SoN",
+"nombre": "CapSoNA",
+"rasgos": [
+"city"
+],
+"reverso": "TileSideCapSoNB",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 90,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSideCapSoNB": {
+"pack": "SoN",
+"nombre": "CapSoNB",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSideCapSoNA",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 90,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSideEntranceSoNA": {
+"pack": "SoN",
+"nombre": "EntranceSoNA",
+"rasgos": [
+"city"
+],
+"reverso": "TileSideEntranceSoNB",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 36,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSideEntranceSoNB": {
+"pack": "SoN",
+"nombre": "EntranceSoNB",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSideEntranceSoNA",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 36,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSideExtensionSoNA": {
+"pack": "SoN",
+"nombre": "ExtensionSoNA",
+"rasgos": [
+"city"
+],
+"reverso": "TileSideExtensionSoNB",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 75,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "S",
+"escenarios": 2
+}
+]
+},
+"TileSideExtensionSoNB": {
+"pack": "SoN",
+"nombre": "ExtensionSoNB",
+"rasgos": [
+"blackrealm"
+],
+"reverso": "TileSideExtensionSoNA",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 75,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSideTransitionSoNA": {
+"pack": "SoN",
+"nombre": "TransitionSoNA",
+"rasgos": [
+"city",
+"outside",
+"transition"
+],
+"reverso": "TileSideTransitionSoNB",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 75.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "S",
+"escenarios": 3
+}
+]
+},
+"TileSideTransitionSoNB": {
+"pack": "SoN",
+"nombre": "TransitionSoNB",
+"rasgos": [
+"blackrealm",
+"inside"
+],
+"reverso": "TileSideTransitionSoNA",
+"w": 256,
+"h": 256,
+"left": 23,
+"top": 75.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSideTransitionSoN2A": {
+"pack": "SoN",
+"nombre": "TransitionSoN2A",
+"rasgos": [
+"city",
+"inside",
+"transition"
+],
+"reverso": "TileSideTransitionSoN2B",
+"w": 512,
+"h": 512,
+"left": 151,
+"top": 151,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSideTransitionSoN2B": {
+"pack": "SoN",
+"nombre": "TransitionSoN2B",
+"rasgos": [
+"blackrealm",
+"city",
+"transition"
+],
+"reverso": "TileSideTransitionSoN2A",
+"w": 280,
+"h": 280,
+"left": 70.0,
+"top": 70.0,
+"pps": 70.0,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": []
+},
+"TileSide88A": {
+"pack": "TCTR",
+"nombre": "88A",
+"rasgos": [
+"outside",
+"swamp"
+],
+"reverso": "TileSide88B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+5
+],
+[
+3,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide88B": {
+"pack": "TCTR",
+"nombre": "88B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide88A",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide89A": {
+"pack": "TCTR",
+"nombre": "89A",
+"rasgos": [
+"outside",
+"pit"
+],
+"reverso": "TileSide89B",
+"w": 1024,
+"h": 1024,
+"left": 289,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+3
+],
+[
+0,
+4
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+4
+],
+[
+3,
+5
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide89B": {
+"pack": "TCTR",
+"nombre": "89B",
+"rasgos": [
+"inside",
+"pit"
+],
+"reverso": "TileSide89A",
+"w": 1024,
+"h": 1024,
+"left": 289,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+4
+],
+[
+0,
+5
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+3
+],
+[
+3,
+4
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide90A": {
+"pack": "TCTR",
+"nombre": "90A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide90B",
+"w": 1024,
+"h": 1024,
+"left": 289,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###..",
+"####.",
+"####.",
+"#####",
+"#####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+3
+],
+[
+0,
+4
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+4
+],
+[
+2,
+4
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide90B": {
+"pack": "TCTR",
+"nombre": "90B",
+"rasgos": [
+"inside",
+"stairs"
+],
+"reverso": "TileSide90A",
+"w": 1024,
+"h": 1024,
+"left": 184,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#####",
+"#####",
+"####.",
+"####.",
+"###.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+4
+],
+[
+2,
+4
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+4,
+0
+],
+[
+4,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide91A": {
+"pack": "TCTR",
+"nombre": "91A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide91B",
+"w": 1024,
+"h": 1024,
+"left": 289,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+".##.",
+".###",
+".###",
+"###.",
+"###.",
+".##."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+3
+],
+[
+0,
+4
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+5
+],
+[
+2,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide91B": {
+"pack": "TCTR",
+"nombre": "91B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide91A",
+"w": 1024,
+"h": 1024,
+"left": 289,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+".##.",
+"###.",
+"###.",
+".###",
+".###",
+".##."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+5
+],
+[
+2,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+2,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+3
+],
+[
+3,
+4
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide92A": {
+"pack": "TCTR",
+"nombre": "92A",
+"rasgos": [
+"outside",
+"swamp",
+"sludge"
+],
+"reverso": "TileSide92B",
+"w": 1024,
+"h": 1024,
+"left": 302,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"###.",
+"##..",
+"##..",
+"##..",
+"##.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+5
+],
+[
+1,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide92B": {
+"pack": "TCTR",
+"nombre": "92B",
+"rasgos": [
+"inside",
+"statues"
+],
+"reverso": "TileSide92A",
+"w": 1024,
+"h": 1024,
+"left": 302,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##..",
+"##..",
+"##..",
+"##..",
+"###.",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+5
+],
+[
+3,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide93A": {
+"pack": "TCTR",
+"nombre": "93A",
+"rasgos": [
+"outside",
+"swamp",
+"sludge"
+],
+"reverso": "TileSide93B",
+"w": 1024,
+"h": 1024,
+"left": 289,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###.",
+"####",
+"####",
+"###.",
+"##.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+4
+],
+[
+1,
+4
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide93B": {
+"pack": "TCTR",
+"nombre": "93B",
+"rasgos": [
+"inside",
+"map"
+],
+"reverso": "TileSide93A",
+"w": 1024,
+"h": 1024,
+"left": 289,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##..",
+"###.",
+"####",
+"####",
+"###."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+4
+],
+[
+1,
+4
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+2
+],
+[
+3,
+3
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide94A": {
+"pack": "TCTR",
+"nombre": "94A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide94B",
+"w": 1024,
+"h": 1024,
+"left": 394,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###",
+"###",
+"###",
+"###",
+"###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+4
+],
+[
+1,
+4
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+3
+],
+[
+2,
+4
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide94B": {
+"pack": "TCTR",
+"nombre": "94B",
+"rasgos": [
+"inside",
+"map"
+],
+"reverso": "TileSide94A",
+"w": 1024,
+"h": 1024,
+"left": 394,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###",
+"###",
+"###",
+"###",
+"###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+3
+],
+[
+0,
+4
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+2,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide95A": {
+"pack": "TCTR",
+"nombre": "95A",
+"rasgos": [
+"outside",
+"inside",
+"transition",
+"drawbridge"
+],
+"reverso": "TileSide95B",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide95B": {
+"pack": "TCTR",
+"nombre": "95B",
+"rasgos": [
+"outside",
+"inside",
+"transition"
+],
+"reverso": "TileSide95A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide96A": {
+"pack": "TCTR",
+"nombre": "96A",
+"rasgos": [
+"outside",
+"sludge",
+"water"
+],
+"reverso": "TileSide96B",
+"w": 512,
+"h": 512,
+"left": 98.5,
+"top": 33,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###",
+"###",
+"###",
+"###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+2,
+1
+],
+[
+2,
+2
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide96B": {
+"pack": "TCTR",
+"nombre": "96B",
+"rasgos": [
+"inside",
+"water"
+],
+"reverso": "TileSide96A",
+"w": 512,
+"h": 512,
+"left": 98.5,
+"top": 59,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"###",
+"###",
+"###",
+"###"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+2,
+1
+],
+[
+2,
+2
+]
+],
+"hacia": "E",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+}
+]
+},
+"TileSide97A": {
+"pack": "TCTR",
+"nombre": "97A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide97B",
+"w": 512,
+"h": 512,
+"left": 138,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##",
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+3
+],
+[
+1,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+1
+],
+[
+1,
+2
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide97B": {
+"pack": "TCTR",
+"nombre": "97B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide97A",
+"w": 420,
+"h": 280,
+"left": 72.0,
+"top": 72.0,
+"pps": 72.0,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": []
+},
+"TileSide98A": {
+"pack": "TCTR",
+"nombre": "98A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide98B",
+"w": 512,
+"h": 512,
+"left": 203.5,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#",
+"#",
+"#",
+"#"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": []
+},
+"TileSide98B": {
+"pack": "TCTR",
+"nombre": "98B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide98A",
+"w": 512,
+"h": 512,
+"left": 203.5,
+"top": 46,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#",
+"#",
+"#",
+"#"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide44A": {
+"pack": "TT",
+"nombre": "44A",
+"rasgos": [
+"outside",
+"inside",
+"transition"
+],
+"reverso": "TileSide44B",
+"w": 1024,
+"h": 1024,
+"left": 197,
+"top": 197,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"####..",
+"####..",
+"##....",
+"##...."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+5
+],
+[
+1,
+5
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 2
+}
+]
+},
+"TileSide44B": {
+"pack": "TT",
+"nombre": "44B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide44A",
+"w": 576,
+"h": 576,
+"left": 72.0,
+"top": 72.0,
+"pps": 72.0,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"..####",
+"..####",
+"....##",
+"....##"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+4,
+0
+],
+[
+5,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+4,
+5
+],
+[
+5,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+5,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide45A": {
+"pack": "TT",
+"nombre": "45A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide45B",
+"w": 720,
+"h": 360,
+"left": 72.0,
+"top": 72.0,
+"pps": 72.0,
+"x": 0,
+"y": 0,
+"filas": [
+"########",
+"########",
+"...##..."
+],
+"fuente": "imagen de Valkyrie",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+4,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+3,
+2
+],
+[
+4,
+2
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+6,
+0
+],
+[
+7,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+7,
+0
+],
+[
+7,
+1
+]
+],
+"hacia": "E",
+"escenarios": 2
+}
+]
+},
+"TileSide45B": {
+"pack": "TT",
+"nombre": "45B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide45A",
+"w": 1024,
+"h": 1024,
+"left": 92,
+"top": 354.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"########",
+"########",
+"...##..."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+4,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+2
+],
+[
+4,
+2
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+7,
+0
+],
+[
+7,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide46A": {
+"pack": "TT",
+"nombre": "46A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide46B",
+"w": 432,
+"h": 360,
+"left": 72.0,
+"top": 72.0,
+"pps": 72.0,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+".##."
+],
+"fuente": "imagen de Valkyrie",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide46B": {
+"pack": "TT",
+"nombre": "46B",
+"rasgos": [
+"water",
+"inside"
+],
+"reverso": "TileSide46A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 111.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"####",
+"####",
+".##."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSide47A": {
+"pack": "TT",
+"nombre": "47A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide47B",
+"w": 288,
+"h": 288,
+"left": 72.0,
+"top": 72.0,
+"pps": 72.0,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide47B": {
+"pack": "TT",
+"nombre": "47B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSide47A",
+"w": 512,
+"h": 512,
+"left": 151,
+"top": 151,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide48A": {
+"pack": "TT",
+"nombre": "48A",
+"rasgos": [
+"outside",
+"water"
+],
+"reverso": "TileSide48B",
+"w": 1024,
+"h": 1024,
+"left": 144.5,
+"top": 144.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#######",
+"#######",
+"#######",
+"#######",
+"#######",
+"#######",
+"#######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+5
+],
+[
+0,
+6
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+4,
+0
+],
+[
+5,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+6,
+1
+],
+[
+6,
+2
+]
+],
+"hacia": "E",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+6
+],
+[
+1,
+6
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSide48B": {
+"pack": "TT",
+"nombre": "48B",
+"rasgos": [
+"water",
+"inside"
+],
+"reverso": "TileSide48A",
+"w": 1024,
+"h": 1024,
+"left": 144.5,
+"top": 144.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"#######",
+"#######",
+"#######",
+"#######",
+"#######",
+"#######",
+"#######"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+6
+],
+[
+1,
+6
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+6
+],
+[
+6,
+6
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+6,
+5
+],
+[
+6,
+6
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSide49A": {
+"pack": "TT",
+"nombre": "49A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSide49B",
+"w": 1024,
+"h": 1024,
+"left": 144.5,
+"top": 144.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+".....##",
+"...####",
+".#####.",
+"######.",
+"#####..",
+".####..",
+"..##..."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+3
+],
+[
+0,
+4
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+2,
+6
+],
+[
+3,
+6
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+5,
+0
+],
+[
+6,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+6,
+0
+],
+[
+6,
+1
+]
+],
+"hacia": "E",
+"escenarios": 2
+}
+]
+},
+"TileSide49B": {
+"pack": "TT",
+"nombre": "49B",
+"rasgos": [
+"inside",
+"water"
+],
+"reverso": "TileSide49A",
+"w": 1024,
+"h": 1024,
+"left": 144.5,
+"top": 144.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##.....",
+"####...",
+".#####.",
+".######",
+"..#####",
+"..####.",
+"...##.."
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+3,
+6
+],
+[
+4,
+6
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+6,
+3
+],
+[
+6,
+4
+]
+],
+"hacia": "E",
+"escenarios": 2
+}
+]
+},
+"TileSideS2A": {
+"pack": "TT",
+"nombre": "S2A",
+"rasgos": [
+"outside"
+],
+"reverso": "TileSideS2B",
+"w": 288,
+"h": 216,
+"left": 0.0,
+"top": 0.0,
+"pps": 72.0,
+"x": 0,
+"y": 0,
+"filas": [
+"..##",
+"####",
+"####"
+],
+"fuente": "imagen de Valkyrie",
+"salidas": []
+},
+"TileSideS2B": {
+"pack": "TT",
+"nombre": "S2B",
+"rasgos": [
+"inside"
+],
+"reverso": "TileSideS2A",
+"w": 512,
+"h": 512,
+"left": 46,
+"top": 98.5,
+"pps": 105,
+"x": 0,
+"y": 0,
+"filas": [
+"##..",
+"####",
+"####"
+],
+"fuente": "importación (Road to Legend 1.5.5)",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSideD1CRN": {
+"pack": "D1ED",
+"nombre": "Crn1Core",
+"rasgos": [],
+"reverso": "",
+"w": 450,
+"h": 450,
+"left": 104.0,
+"top": 109.0,
+"pps": 104.0,
+"x": -1,
+"y": -1,
+"filas": [
+"####",
+"####",
+"##..",
+"##.."
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1CRN2": {
+"pack": "D1ED",
+"nombre": "Crn2Core",
+"rasgos": [],
+"reverso": "",
+"w": 450,
+"h": 450,
+"left": 104.0,
+"top": 109.0,
+"pps": 104.0,
+"x": -1,
+"y": -1,
+"filas": [
+"####",
+"####",
+"##..",
+"##.."
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1X": {
+"pack": "D1ED",
+"nombre": "XCore",
+"rasgos": [],
+"reverso": "",
+"w": 460,
+"h": 460,
+"left": 230.0,
+"top": 230.0,
+"pps": 101.0,
+"x": -2,
+"y": -2,
+"filas": [
+".##.",
+"####",
+"####",
+".##."
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1T": {
+"pack": "D1ED",
+"nombre": "T1Core",
+"rasgos": [],
+"reverso": "",
+"w": 460,
+"h": 430,
+"left": 230.0,
+"top": 227.0,
+"pps": 103.0,
+"x": -2,
+"y": -2,
+"filas": [
+".##.",
+".##.",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1T2": {
+"pack": "D1ED",
+"nombre": "T2Core",
+"rasgos": [],
+"reverso": "",
+"w": 460,
+"h": 430,
+"left": 230.0,
+"top": 227.0,
+"pps": 103.0,
+"x": -2,
+"y": -2,
+"filas": [
+".##.",
+".##.",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1End": {
+"pack": "D1ED",
+"nombre": "EndCore",
+"rasgos": [],
+"reverso": "",
+"w": 213,
+"h": 135,
+"left": 107.0,
+"top": 30.0,
+"pps": 100.0,
+"x": -1,
+"y": 0,
+"filas": [
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1Hall1": {
+"pack": "D1ED",
+"nombre": "HallCore2x2",
+"rasgos": [],
+"reverso": "",
+"w": 210,
+"h": 272,
+"left": 105.0,
+"top": 134.0,
+"pps": 106.0,
+"x": -1,
+"y": -1,
+"filas": [
+"##",
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1HallA": {
+"pack": "D1ED",
+"nombre": "HallBCore2x4",
+"rasgos": [],
+"reverso": "",
+"w": 210,
+"h": 485,
+"left": 102.0,
+"top": 244.0,
+"pps": 105.0,
+"x": -1,
+"y": -2,
+"filas": [
+"##",
+"##",
+"##",
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1HallB": {
+"pack": "D1ED",
+"nombre": "HallCCore2x6",
+"rasgos": [],
+"reverso": "",
+"w": 200,
+"h": 660,
+"left": 100.0,
+"top": 330.0,
+"pps": 100.0,
+"x": -1,
+"y": -3,
+"filas": [
+"##",
+"##",
+"##",
+"##",
+"##",
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1RoomA": {
+"pack": "D1ED",
+"nombre": "RoomA1Core4x4",
+"rasgos": [],
+"reverso": "",
+"w": 469,
+"h": 474,
+"left": 234.0,
+"top": 236.0,
+"pps": 104.0,
+"x": -2,
+"y": -2,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1RoomA2": {
+"pack": "D1ED",
+"nombre": "RoomA2Core4x4",
+"rasgos": [],
+"reverso": "",
+"w": 460,
+"h": 460,
+"left": 227.0,
+"top": 331.0,
+"pps": 102.0,
+"x": -2,
+"y": -3,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1RoomB": {
+"pack": "D1ED",
+"nombre": "RoomB1Core4x6",
+"rasgos": [],
+"reverso": "",
+"w": 465,
+"h": 677,
+"left": 233.0,
+"top": 337.0,
+"pps": 104.0,
+"x": -2,
+"y": -3,
+"filas": [
+"####",
+"####",
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1RoomB2": {
+"pack": "D1ED",
+"nombre": "RoomB2Core4x6",
+"rasgos": [],
+"reverso": "",
+"w": 460,
+"h": 660,
+"left": 233.0,
+"top": 337.0,
+"pps": 104.0,
+"x": -2,
+"y": -3,
+"filas": [
+"####",
+"####",
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1RoomB3": {
+"pack": "D1ED",
+"nombre": "RoomB3Core4x6",
+"rasgos": [],
+"reverso": "",
+"w": 460,
+"h": 660,
+"left": 233.0,
+"top": 330.0,
+"pps": 103.0,
+"x": -2,
+"y": -3,
+"filas": [
+"####",
+"####",
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1RoomC": {
+"pack": "D1ED",
+"nombre": "RoomC1Core6x6",
+"rasgos": [],
+"reverso": "",
+"w": 680,
+"h": 677,
+"left": 337.0,
+"top": 339.0,
+"pps": 104.0,
+"x": -3,
+"y": -3,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1RoomC2": {
+"pack": "D1ED",
+"nombre": "RoomC2Core6x6",
+"rasgos": [],
+"reverso": "",
+"w": 700,
+"h": 696,
+"left": 75.0,
+"top": 375.0,
+"pps": 100.0,
+"x": -1,
+"y": -4,
+"filas": [
+"...#...",
+".######",
+".######",
+".######",
+"#######",
+".######",
+".######"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSide_D1_Stomach": {
+"pack": "D1ED",
+"nombre": "Stomach",
+"rasgos": [],
+"reverso": "",
+"w": 400,
+"h": 228,
+"left": 30.0,
+"top": 55.0,
+"pps": 100.0,
+"x": 0,
+"y": -1,
+"filas": [
+".##.",
+"####",
+"#..."
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1RoomC1RTL6x6": {
+"pack": "D1ED",
+"nombre": "RoomC1RTL6x6",
+"rasgos": [],
+"reverso": "",
+"w": 701,
+"h": 700,
+"left": 85.0,
+"top": 380.0,
+"pps": 100.0,
+"x": -1,
+"y": -4,
+"filas": [
+"...##..",
+".######",
+".######",
+"#######",
+"#######",
+".######",
+".######"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideD1RoomC2RTL6x6": {
+"pack": "D1ED",
+"nombre": "RoomC2RTL6x6",
+"rasgos": [],
+"reverso": "",
+"w": 697,
+"h": 700,
+"left": 85.0,
+"top": 380.0,
+"pps": 100.0,
+"x": -1,
+"y": -4,
+"filas": [
+"...##..",
+".######",
+".######",
+"#######",
+"#######",
+".######",
+".######"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideRubble1x1": {
+"pack": "D1ED",
+"nombre": "Rubble1x1",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 100,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideRubble1x2": {
+"pack": "D1ED",
+"nombre": "Rubble1x2",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 200,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#",
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideRubble1x3": {
+"pack": "D1ED",
+"nombre": "Rubble1x3",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 300,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#",
+"#",
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideMud1x1": {
+"pack": "D1ED",
+"nombre": "Mud1x1",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 100,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideMud1x2": {
+"pack": "D1ED",
+"nombre": "Mud1x2",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 200,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#",
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideMud1x3": {
+"pack": "D1ED",
+"nombre": "Mud1x3",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 300,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#",
+"#",
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideHole1x1": {
+"pack": "D1ED",
+"nombre": "hole1x3",
+"rasgos": [],
+"reverso": "",
+"w": 110,
+"h": 110,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideHole1x2": {
+"pack": "D1ED",
+"nombre": "hole1x2",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 200,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#",
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideHole1x3": {
+"pack": "D1ED",
+"nombre": "hole1x3",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 300,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#",
+"#",
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideWater1x1": {
+"pack": "D1ED",
+"nombre": "water1x1",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 100,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideWater1x2": {
+"pack": "D1ED",
+"nombre": "water1x2",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 200,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#",
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideWater1x3": {
+"pack": "D1ED",
+"nombre": "water1x3",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 300,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#",
+"#",
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideLava1x1": {
+"pack": "D1ED",
+"nombre": "lava1x1",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 100,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideLava1x2": {
+"pack": "D1ED",
+"nombre": "lava1x2",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 200,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#",
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideLava1x3": {
+"pack": "D1ED",
+"nombre": "lava1x3",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 300,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#",
+"#",
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideIce1x1": {
+"pack": "D1ED",
+"nombre": "Ice1x1",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 100,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideIce1x2": {
+"pack": "D1ED",
+"nombre": "Ice1x2",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 200,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#",
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideIce1x3": {
+"pack": "D1ED",
+"nombre": "Ice1x3",
+"rasgos": [],
+"reverso": "",
+"w": 100,
+"h": 300,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#",
+"#",
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideIce2x2": {
+"pack": "D1ED",
+"nombre": "Ice2x2",
+"rasgos": [],
+"reverso": "",
+"w": 200,
+"h": 200,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideIce2x3": {
+"pack": "D1ED",
+"nombre": "Ice2x3",
+"rasgos": [],
+"reverso": "",
+"w": 200,
+"h": 300,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##",
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSide_D1_Lightning2x10": {
+"pack": "D1ED",
+"nombre": "Lightning2x10",
+"rasgos": [],
+"reverso": "",
+"w": 200,
+"h": 1000,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"##",
+"##",
+"##",
+"##",
+"##",
+"##",
+"##",
+"##",
+"##",
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSide_D1_Fire": {
+"pack": "D1ED",
+"nombre": "Fire Template",
+"rasgos": [],
+"reverso": "",
+"w": 400,
+"h": 497,
+"left": 0.0,
+"top": 0.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"#...",
+"###.",
+"####",
+"###.",
+"#..."
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSide_D1_Trap": {
+"pack": "D1ED",
+"nombre": "Trap",
+"rasgos": [],
+"reverso": "",
+"w": 460,
+"h": 466,
+"left": 229.0,
+"top": 235.0,
+"pps": 109.0,
+"x": -2,
+"y": -2,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideDooM_01_A": {
+"pack": "DooM",
+"nombre": "1A",
+"rasgos": [],
+"reverso": "TileSideDooM_01_B",
+"w": 624,
+"h": 947,
+"left": 0.0,
+"top": 14.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+8
+],
+[
+3,
+8
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+2
+],
+[
+5,
+3
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_01_B": {
+"pack": "DooM",
+"nombre": "1B",
+"rasgos": [],
+"reverso": "TileSideDooM_01_A",
+"w": 625,
+"h": 948,
+"left": 26.0,
+"top": 14.0,
+"pps": 100.0,
+"x": 0,
+"y": 0,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+2,
+8
+],
+[
+3,
+8
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+4,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_02_A": {
+"pack": "DooM",
+"nombre": "2A",
+"rasgos": [],
+"reverso": "TileSideDooM_02_B",
+"w": 659,
+"h": 621,
+"left": 126.0,
+"top": 90.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+5
+],
+[
+3,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+2
+],
+[
+5,
+3
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_02_B": {
+"pack": "DooM",
+"nombre": "2B",
+"rasgos": [],
+"reverso": "TileSideDooM_02_A",
+"w": 660,
+"h": 623,
+"left": 126.0,
+"top": 90.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideDooM_03_A": {
+"pack": "DooM",
+"nombre": "3A",
+"rasgos": [],
+"reverso": "TileSideDooM_03_B",
+"w": 423,
+"h": 647,
+"left": 90.0,
+"top": 120.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"####",
+"####",
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+3,
+2
+],
+[
+3,
+3
+]
+],
+"hacia": "E",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+0,
+5
+],
+[
+1,
+5
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+0
+],
+[
+3,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_03_B": {
+"pack": "DooM",
+"nombre": "3B",
+"rasgos": [],
+"reverso": "TileSideDooM_03_A",
+"w": 422,
+"h": 644,
+"left": 90.0,
+"top": 115.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"####",
+"####",
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+5
+],
+[
+1,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_04_A": {
+"pack": "DooM",
+"nombre": "4A",
+"rasgos": [],
+"reverso": "TileSideDooM_04_B",
+"w": 419,
+"h": 646,
+"left": 90.0,
+"top": 120.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"####",
+"####",
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+1,
+5
+],
+[
+2,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+0
+],
+[
+3,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+2
+],
+[
+3,
+3
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_04_B": {
+"pack": "DooM",
+"nombre": "4B",
+"rasgos": [],
+"reverso": "TileSideDooM_04_A",
+"w": 422,
+"h": 648,
+"left": 90.0,
+"top": 120.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"####",
+"####",
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+5
+],
+[
+1,
+5
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+2
+],
+[
+3,
+3
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_05_A": {
+"pack": "DooM",
+"nombre": "5A",
+"rasgos": [],
+"reverso": "TileSideDooM_05_B",
+"w": 420,
+"h": 447,
+"left": 90.0,
+"top": 115.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 6
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 4
+},
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 2
+}
+]
+},
+"TileSideDooM_05_B": {
+"pack": "DooM",
+"nombre": "5B",
+"rasgos": [],
+"reverso": "TileSideDooM_05_A",
+"w": 422,
+"h": 444,
+"left": 90.0,
+"top": 120.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": []
+},
+"TileSideDooM_06_A": {
+"pack": "DooM",
+"nombre": "6A",
+"rasgos": [],
+"reverso": "TileSideDooM_06_B",
+"w": 419,
+"h": 420,
+"left": 90.0,
+"top": 93.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_06_B": {
+"pack": "DooM",
+"nombre": "6B",
+"rasgos": [],
+"reverso": "TileSideDooM_06_A",
+"w": 420,
+"h": 420,
+"left": 92.0,
+"top": 91.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_07_A": {
+"pack": "DooM",
+"nombre": "7A",
+"rasgos": [],
+"reverso": "TileSideDooM_07_B",
+"w": 419,
+"h": 419,
+"left": 90.0,
+"top": 90.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 5
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_07_B": {
+"pack": "DooM",
+"nombre": "7B",
+"rasgos": [],
+"reverso": "TileSideDooM_07_A",
+"w": 420,
+"h": 419,
+"left": 90.0,
+"top": 90.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_08_A": {
+"pack": "DooM",
+"nombre": "8A",
+"rasgos": [],
+"reverso": "TileSideDooM_08_B",
+"w": 395,
+"h": 444,
+"left": 92.0,
+"top": 118.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 2
+}
+]
+},
+"TileSideDooM_08_B": {
+"pack": "DooM",
+"nombre": "8B",
+"rasgos": [],
+"reverso": "TileSideDooM_08_A",
+"w": 395,
+"h": 446,
+"left": 90.0,
+"top": 115.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"####",
+"####",
+"####",
+"####"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_09_A": {
+"pack": "DooM",
+"nombre": "9A",
+"rasgos": [],
+"reverso": "TileSideDooM_09_B",
+"w": 446,
+"h": 446,
+"left": 216.0,
+"top": 116.0,
+"pps": 100.0,
+"x": -2,
+"y": -1,
+"filas": [
+".##.",
+"####",
+"####",
+".##."
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 3
+}
+]
+},
+"TileSideDooM_09_B": {
+"pack": "DooM",
+"nombre": "9B",
+"rasgos": [],
+"reverso": "TileSideDooM_09_A",
+"w": 445,
+"h": 447,
+"left": 218.0,
+"top": 118.0,
+"pps": 100.0,
+"x": -2,
+"y": -1,
+"filas": [
+".##.",
+"####",
+"####",
+".##."
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+0,
+2
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+2,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+3
+],
+[
+2,
+3
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+3,
+1
+],
+[
+3,
+2
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_10_A": {
+"pack": "DooM",
+"nombre": "10A",
+"rasgos": [],
+"reverso": "TileSideDooM_10_B",
+"w": 218,
+"h": 645,
+"left": 90.0,
+"top": 118.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"##",
+"##",
+"##",
+"##",
+"##",
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 7
+},
+{
+"casillas": [
+[
+0,
+5
+],
+[
+1,
+5
+]
+],
+"hacia": "S",
+"escenarios": 7
+},
+{
+"casillas": [
+[
+1,
+2
+],
+[
+1,
+3
+]
+],
+"hacia": "E",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+4
+],
+[
+0,
+5
+]
+],
+"hacia": "O",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_10_B": {
+"pack": "DooM",
+"nombre": "10B",
+"rasgos": [],
+"reverso": "TileSideDooM_10_A",
+"w": 218,
+"h": 645,
+"left": 93.0,
+"top": 116.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"##",
+"##",
+"##",
+"##",
+"##",
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+0,
+5
+],
+[
+1,
+5
+]
+],
+"hacia": "S",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+1,
+2
+],
+[
+1,
+3
+]
+],
+"hacia": "E",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_11_A": {
+"pack": "DooM",
+"nombre": "11A",
+"rasgos": [],
+"reverso": "TileSideDooM_11_B",
+"w": 250,
+"h": 194,
+"left": 125.0,
+"top": 93.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"##",
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_11_B": {
+"pack": "DooM",
+"nombre": "11B",
+"rasgos": [],
+"reverso": "TileSideDooM_11_A",
+"w": 251,
+"h": 194,
+"left": 124.0,
+"top": 93.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"##",
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_12_A": {
+"pack": "DooM",
+"nombre": "12A",
+"rasgos": [],
+"reverso": "TileSideDooM_12_B",
+"w": 227,
+"h": 219,
+"left": 101.0,
+"top": 92.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"##",
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+1,
+0
+],
+[
+1,
+1
+]
+],
+"hacia": "E",
+"escenarios": 3
+}
+]
+},
+"TileSideDooM_12_B": {
+"pack": "DooM",
+"nombre": "12B",
+"rasgos": [],
+"reverso": "TileSideDooM_12_A",
+"w": 228,
+"h": 219,
+"left": 126.0,
+"top": 93.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"##",
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "N",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_13_A": {
+"pack": "DooM",
+"nombre": "13A",
+"rasgos": [],
+"reverso": "TileSideDooM_13_B",
+"w": 202,
+"h": 216,
+"left": 101.0,
+"top": 91.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"##",
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 6
+}
+]
+},
+"TileSideDooM_13_B": {
+"pack": "DooM",
+"nombre": "13B",
+"rasgos": [],
+"reverso": "TileSideDooM_13_A",
+"w": 203,
+"h": 217,
+"left": 101.0,
+"top": 92.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"##",
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+1
+],
+[
+1,
+1
+]
+],
+"hacia": "S",
+"escenarios": 2
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_14_A": {
+"pack": "DooM",
+"nombre": "14A",
+"rasgos": [],
+"reverso": "TileSideDooM_14_B",
+"w": 151,
+"h": 194,
+"left": 126.0,
+"top": 93.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"#",
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "E",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 3
+}
+]
+},
+"TileSideDooM_14_B": {
+"pack": "DooM",
+"nombre": "14B",
+"rasgos": [],
+"reverso": "TileSideDooM_14_A",
+"w": 151,
+"h": 195,
+"left": 126.0,
+"top": 93.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"#",
+"#"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "E",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_15_A": {
+"pack": "DooM",
+"nombre": "15A",
+"rasgos": [],
+"reverso": "TileSideDooM_15_B",
+"w": 202,
+"h": 117,
+"left": 101.0,
+"top": 92.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "S",
+"escenarios": 7
+}
+]
+},
+"TileSideDooM_15_B": {
+"pack": "DooM",
+"nombre": "15B",
+"rasgos": [],
+"reverso": "TileSideDooM_15_A",
+"w": 203,
+"h": 116,
+"left": 101.0,
+"top": 92.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"##"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+1,
+0
+]
+],
+"hacia": "S",
+"escenarios": 3
+}
+]
+},
+"TileSideDooM_16_A": {
+"pack": "DooM",
+"nombre": "16A",
+"rasgos": [],
+"reverso": "TileSideDooM_16_B",
+"w": 650,
+"h": 621,
+"left": 115.0,
+"top": 92.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+5,
+2
+],
+[
+5,
+3
+]
+],
+"hacia": "E",
+"escenarios": 5
+},
+{
+"casillas": [
+[
+2,
+5
+],
+[
+3,
+5
+]
+],
+"hacia": "S",
+"escenarios": 3
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+5
+],
+[
+1,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+4,
+5
+],
+[
+5,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+}
+]
+},
+"TileSideDooM_16_B": {
+"pack": "DooM",
+"nombre": "16B",
+"rasgos": [],
+"reverso": "TileSideDooM_16_A",
+"w": 650,
+"h": 623,
+"left": 117.0,
+"top": 94.0,
+"pps": 100.0,
+"x": -1,
+"y": -1,
+"filas": [
+"######",
+"######",
+"######",
+"######",
+"######",
+"######"
+],
+"fuente": "imagen del pack de la comunidad",
+"salidas": [
+{
+"casillas": [
+[
+0,
+0
+],
+[
+0,
+1
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+0,
+2
+],
+[
+0,
+3
+]
+],
+"hacia": "O",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+2,
+5
+],
+[
+3,
+5
+]
+],
+"hacia": "S",
+"escenarios": 1
+},
+{
+"casillas": [
+[
+5,
+2
+],
+[
+5,
+3
+]
+],
+"hacia": "E",
+"escenarios": 1
+}
+]
+}
+},
+"nota_salidas": "'salidas': tramos de 2 casillas por donde los escenarios publicados unen esa cara con otra (i, j en la rejilla de la cara; 'hacia' sin girar; 'escenarios' = paquetes distintos que la unen así). Generado por construir_salidas.py con 59 paquetes."
+}

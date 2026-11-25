@@ -1,0 +1,151 @@
+// What Igor says in French (lines.ts says what each kind of line is for). Not in Valkyrie.
+import type { IgorLines } from '../lines.ts';
+
+export const French: IgorLines = {
+  greetings: [
+    'Bonsoir, Monseigneur. Je vous attendais… je vous attends toujours.',
+    'Ah, c’est vous. Entrez, entrez. La maison s’ennuyait de vous. Et ceux qui l’habitent aussi.',
+    'Monseigneur m’a sonné ? J’aurais juré entendre la clochette. Ou peut-être était-ce le vent entre les tombes.',
+    'Bon retour au château, Monseigneur. Je vous ai gardé votre fauteuil près de la cheminée.',
+    'Monseigneur. Quelle joie de vous voir avec tous vos membres à leur place.',
+    'Bonsoir. Ne prêtez pas attention aux griffures sur la porte de la cave. C’est… l’humidité.',
+    'Vous arrivez à la bonne heure, Monseigneur. La lune est pleine et les bougies presque entières.',
+  ],
+  halloween: [
+    'En ces nuits où le voile entre les vivants et les morts s’amincit, mieux vaut ne pas rester seul.',
+    'La veille de la Toussaint approche. Les défunts demandent déjà de vos nouvelles.',
+    'Cette semaine, les citrouilles sourient plus que de raison, Monseigneur. Je ne m’y fierais pas.',
+    'On dit que la nuit des Morts, les demeures racontent leurs propres histoires. J’en connais quelques-unes.',
+  ],
+  smallTalk: [
+    'Comment vous portez-vous aujourd’hui, Monseigneur ? Approchez-vous du feu, asseyez-vous. Je vous apporte quelque chose de chaud.',
+    'Prenez place. Le fauteuil grince, mais il tient encore. Comme moi.',
+    'Au fait, cela se prononce « Aïgor ». Encore que, à ce stade, cela m’est bien égal.',
+    'J’ai fait briller l’argenterie et j’ai nourri… ce qui vit dans le puits. Tout est en ordre.',
+    'Pardonnez l’odeur de soufre. Je faisais la poussière dans la bibliothèque interdite.',
+    'Le docteur ne reçoit pas aujourd’hui. Mais moi, si, Monseigneur. Moi, je reçois toujours.',
+    'L’orage ne faiblit pas. Une nuit idéale pour perdre la raison en bonne compagnie.',
+  ],
+  offer: [
+    'En quoi puis-je vous servir ce soir ?',
+    'Dites-moi, que désire Votre Excellence ?',
+    'J’ai de grandes histoires à vous conter, Monseigneur. Vous plairait-il d’en écouter une ?',
+    'Cherchez-vous une horreur en particulier ? La cave en est pleine.',
+  ],
+  wantAdventure: ['Igor, recommande-moi une aventure.', 'Je veux une bonne histoire, Igor.', 'Surprends-moi avec une horreur.'],
+  wantNews: 'Quoi de neuf ?',
+  wantNothing: ['Rien, merci, Igor.', 'Je passais juste dire bonjour.', 'Pas maintenant, Igor.'],
+  newsIntro: [
+    'Ah, Monseigneur, avant toute chose… {0} Souhaitez-vous en savoir plus ?',
+    'J’ai des nouvelles qui ne peuvent attendre. {0} Je vous raconte ?',
+    'Permettez-moi un murmure, avant que les murs ne l’entendent. {0} Voulez-vous que je vous la montre ?',
+  ],
+  newsMore: 'Raconte-m’en plus.',
+  newsOther: 'Je préfère que tu m’en recommandes une autre.',
+  noNews: [
+    'Rien de nouveau sous la lune, Monseigneur. Seulement les horreurs habituelles, bien conservées.',
+    'Aucune nouvelle. Le courrier d’outre-tombe est lent ces temps-ci.',
+    'Tout est comme avant : les mêmes demeures, les mêmes morts sans repos.',
+  ],
+  beforeQuestions: [
+    'Permettez-moi quelques questions, pour ne pas me tromper sur vos goûts.',
+    'Avant d’ouvrir la bonne crypte, laissez-moi vous demander une chose ou deux.',
+    'Ce sera un plaisir. Mais dites-moi…',
+    'Très bien. J’ai le registre juste ici. Voyons…',
+  ],
+  questions: {
+    players: {
+      ask: [
+        'Combien d’âmes s’assiéront à table ce soir ?',
+        'Combien d’investigateurs oseront franchir le seuil ?',
+        'Pour combien dois-je préparer le salon… et les cercueils ?',
+      ],
+      options: { '1': 'Moi seul', '2': 'Deux', '3': 'Trois', '4': 'Quatre', '5': 'Cinq ou plus' },
+    },
+    experience: {
+      ask: [
+        'Avez-vous déjà parcouru bien des demeures maudites, ou est-ce votre première visite ?',
+        'Connaissez-vous bien les horreurs d’Arkham, ou préférez-vous commencer en douceur ?',
+        'Combien de folie portez-vous déjà sur vos épaules ?',
+      ],
+      options: { new: 'On débute', some: 'Quelques parties', veteran: 'Vétérans endurcis' },
+    },
+    time: {
+      ask: [
+        'Combien de temps pouvez-vous accorder à l’horreur ce soir ?',
+        'Jusqu’à quelle heure comptez-vous rester ? Je demande pour les bougies.',
+        'Une courte visite, ou restez-vous jusqu’au chant du coq ?',
+      ],
+      options: { short: 'Quelque chose de court', evening: 'Une soirée', night: 'Toute la nuit' },
+    },
+    style: {
+      ask: [
+        'Qu’est-ce qui vous tente le plus : une bonne histoire, le combat ou un mystère à résoudre ?',
+        'Préférez-vous lire de vieux journaux intimes, empoigner le fusil ou déchiffrer des énigmes ?',
+        'Quel genre de cauchemar vous sied, Monseigneur ?',
+      ],
+      options: { story: 'Une bonne histoire', action: 'Action et monstres', mystery: 'Mystère et énigmes', surprise: 'Surprends-moi' },
+    },
+    format: {
+      ask: [
+        'Cherchez-vous une seule nuit d’horreur, ou une saga qui dure plusieurs séances ?',
+        'Une histoire qui s’achève ce soir, ou une qui vous hantera des semaines durant ?',
+      ],
+      options: { oneNight: 'Une seule nuit', saga: 'Une saga en plusieurs parties' },
+    },
+  },
+  acks: {
+    'players:1': ['Une âme solitaire. Les demeures préfèrent ceux qui marchent seuls…', 'Vous seul. Tant mieux : personne ne vous entendra crier.'],
+    'players:2': ['Deux. Un couple courageux, ou deux inconscients.', 'Deux âmes. Ni plus, ni moins.'],
+    'players:3': ['Trois. Le nombre des sorcières de Macbeth.', 'Trois investigateurs. Je préparerai trois tasses de thé.'],
+    'players:4': ['Quatre. Une table complète, comme au bon vieux temps.', 'Quatre braves. Ou quatre amuse-bouches, selon le point de vue.'],
+    'players:5': ['Une foule ! Je sortirai la belle vaisselle.', 'Beaucoup d’invités. Les grandes demeures vous en savent gré.'],
+    'experience:new': ['Du sang neuf. Je serai délicat… au début.', 'Ne craignez rien, nous commencerons par l’aile la moins maudite.'],
+    'experience:veteran': ['Ah, des âmes aguerries. J’ai de quoi vous ôter le sommeil.', 'Des vétérans. Alors nous descendrons dans les caves les plus profondes.'],
+    'time:short': ['Quelque chose de court. Une petite frayeur avant de dormir.', 'Entendu : de l’horreur de poche.'],
+    'time:night': ['Toute la nuit. J’allumerai d’autres bougies.', 'Jusqu’à l’aube, donc. Je dirai au coq de ne pas chanter.'],
+    'style:story': ['Des histoires… je les ai reliées en cuir. Ne demandez pas de qui.', 'Un bon récit. Comme ceux que contait le vieux Lovecraft.'],
+    'style:action': ['De l’action ! Je vais chercher le fusil de grand-père.', 'Des monstres, alors. J’aiguiserai le tisonnier.'],
+    'style:mystery': ['Un mystère. Rien ne vaut le plaisir de soupçonner tout le monde.', 'Des énigmes… mon passe-temps favori après creuser.'],
+    'format:saga': ['Une saga. Vous reviendrez nuit après nuit, comme les revenants.'],
+    any: ['Je vois.', 'Je comprends, Monseigneur.', 'Excellent choix.', 'Hmm… oui, oui.', 'J’en prends note de ma plus belle encre.', 'Très bien.'],
+  },
+  results: [
+    'J’ai fouillé les rayonnages les plus poussiéreux. Ces trois histoires vous attendent :',
+    'Je crois avoir exactement ce qu’il vous faut. Voyez ces trois-là, Monseigneur :',
+    'Ah, oui. Ces trois-là vous feront trembler comme il se doit :',
+    'De toutes les horreurs de la bibliothèque, je choisirais ces trois-là :',
+  ],
+  resultsFew: ['Les histoires se font rares pour un goût si exigeant, mais voici ce que j’ai trouvé :'],
+  resultsNone: [
+    'Je crains que vous ne connaissiez déjà toutes les horreurs que vous cherchiez, Monseigneur. Demandez-moi autre chose.',
+    'Aucune histoire ne convient… Peut-être manque-t-il des extensions à votre collection, ou les avez-vous toutes vécues.',
+  ],
+  goThere: 'Emmène-moi là-bas',
+  askAgain: 'Pose-moi encore tes questions',
+  thanks: 'Merci, Igor',
+  farewell: [
+    'Faites de beaux cauchemars, Monseigneur.',
+    'Je vous raccompagne à la porte… non, pas par là. Par ici. Suivez-moi !',
+    'Revenez vite. Nous, nous ne bougeons pas d’ici.',
+    'Bonne nuit. Et n’ouvrez pas la porte de la cave, je vous en supplie.',
+    'Que les Grands Anciens vous soient favorables.',
+  ],
+  why: {
+    players: 'pour {0} joueurs',
+    minutes: 'environ {0} min',
+    tags: {
+      beginners: 'pour débuter',
+      narrative: 'très narrative',
+      combat: 'avec du combat',
+      deduction: 'de déduction',
+      puzzles: 'avec des énigmes',
+      campaign: 'partie d’une saga',
+      replayable: 'rejouable',
+      short: 'courte',
+      long: 'longue',
+      hard: 'exigeante',
+    },
+  },
+  close: 'Fermer',
+};

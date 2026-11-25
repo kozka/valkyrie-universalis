@@ -1,0 +1,55 @@
+/* Not in Valkyrie: the (i) and its note, shown on hover, on focus or when pressed. The note spans the nearest
+   positioned parent, so that on a phone it stays on the screen: give the line that holds the (i) position: relative */
+.info-tip {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-inline-start: 0.4rem;
+}
+
+.info-tip-button {
+  width: 1.15rem;
+  height: 1.15rem;
+  padding: 0;
+  border: 1px solid var(--quiet);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--quiet);
+  font: italic 700 0.72rem/1 Georgia, serif;
+  cursor: help;
+}
+
+.info-tip-button:hover,
+.info-tip-button:focus-visible,
+.info-tip-button[aria-expanded='true'] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.info-tip-text {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  z-index: 10;
+  width: max-content;
+  max-width: min(24rem, 100%);
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  color: var(--text);
+  font-size: var(--step-small);
+  font-style: normal;
+  line-height: 1.35;
+  box-shadow: 0 0.3rem 0.8rem color-mix(in srgb, var(--shade) 70%, transparent);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.info-tip:hover .info-tip-text,
+.info-tip-button:focus-visible + .info-tip-text,
+.info-tip-text[data-open='true'] {
+  visibility: visible;
+  opacity: 1;
+}

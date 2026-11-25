@@ -1,0 +1,862 @@
+/* Descent's and DooM's hero selection in the Universalis theme (DescentHeroRoom.tsx): the room fills the screen as a
+   cover, and the frames sit on a stage of the room's own picture (1672×941), lined up with it wherever the screen is between 16:10
+   and 16:9, smaller where the frames would not fit; everything on it is placed in percent of that picture and sized in
+   the stage's own width (cqw) */
+.hero-selection.frame-room {
+  /* Over Descent's hero column too (QuestScreen.css), which sits above the windows */
+  z-index: 23;
+  padding: 0;
+  gap: 0;
+  overflow: hidden;
+  background: var(--hall-soot);
+}
+
+.frame-room-art {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  animation: frame-room-enter 0.8s ease-out both;
+}
+
+.frame-room-art canvas {
+  position: absolute;
+  inset: 0;
+}
+
+.frame-room-stage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* The hall's cover (max), unless the frames (1360×905 of it) would not fit (min) */
+  width: min(max(100vw, 177.68dvh), 122.94vw, 184.75dvh);
+  aspect-ratio: 1672 / 941;
+  transform: translate(-50%, -50%);
+  container-type: size;
+  touch-action: pan-y pinch-zoom;
+  animation: frame-room-rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.15s both;
+}
+
+/* Descent's runestone (2 November 2026): its blue instead of embers; its frames, at 0.8 of the hall's picture
+   (DescentHeroRoom.tsx), take 1320×742 of it; and its words the size of Mansions' and DooM's */
+.frame-room[data-look='d2e'] {
+  --hall-title: var(--rune-title);
+  --hall-ink: var(--rune-ink);
+  --hall-glow: var(--rune-glow);
+  --hall-ember: var(--rune-deep);
+  --hall-spark: var(--rune-spark);
+  --hall-soot: var(--rune-soot);
+}
+
+.frame-room[data-look='d2e'] .frame-room-stage {
+  width: min(max(100vw, 177.68dvh), 126.6vw, 225dvh);
+}
+
+.frame-room[data-look='d2e'] .frame-room-title {
+  font-size: 2.3cqw;
+}
+
+.frame-room[data-look='d2e'] .frame-room-button span {
+  font-size: max(1.45cqw, 11px);
+}
+
+.frame-room[data-look='d2e'] .hero-choice span.frame-room-name {
+  font-size: max(0.95cqw, 8px);
+}
+
+/* Coming in: the hall out of the dark, then the frames, as if lit from below */
+@keyframes frame-room-enter {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes frame-room-rise {
+  from {
+    opacity: 0;
+    filter: brightness(2.2) saturate(0.4);
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+.frame-room-piece {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+
+.frame-room-piece img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* A piece's lights alone, over it: on, with now and then the stutter of a tired tube (DooM's frames) */
+.frame-room .frame-room-glow,
+.frame-room-ring-glow {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  animation: frame-room-flicker 8s steps(1, end) infinite;
+}
+
+.frame-room-ring-glow {
+  background-repeat: no-repeat;
+}
+
+.frame-room [data-fit] {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* The title on its banner, pale gold with an ember's glow under it */
+.frame-room-title {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-weight: 400;
+  font-size: 2.85cqw;
+  line-height: 1.15;
+  color: var(--hall-title);
+  text-shadow:
+    0 0 0.9cqw color-mix(in srgb, var(--hall-ember) 45%, transparent),
+    0 0.15cqw 0.2cqw var(--hall-soot);
+}
+
+/* The rings. The portraits keep the classic list's classes (hero-list, hero-choice), which the tests and the keyboard
+   know: none of that list's look here */
+.frame-room .frame-room-rings {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.frame-room .hero-choice,
+.frame-room .hero-choice[aria-pressed='true'] {
+  display: block;
+  width: auto;
+  gap: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: inherit;
+}
+
+.frame-room-tile {
+  position: absolute;
+  list-style: none;
+}
+
+/* Each ring breathes like the embers it is forged of, out of step with the others */
+.frame-room-tile::before {
+  content: '';
+  position: absolute;
+  inset: 8% 6% 12%;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, transparent 72%, color-mix(in srgb, var(--hall-ember) 45%, transparent) 86%, transparent);
+  opacity: 0.25;
+  pointer-events: none;
+  animation: frame-room-smoulder 4.6s ease-in-out infinite;
+  animation-delay: calc(var(--i, 0) * -0.71s);
+}
+
+.frame-room-choice {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+.frame-room-choice:focus-visible {
+  outline: none;
+}
+
+.frame-room-ring-art {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  transition: filter 0.35s ease;
+}
+
+/* The ring's hole: the portrait, round, under the metal */
+.frame-room-hole {
+  position: absolute;
+  overflow: hidden;
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  background: radial-gradient(circle, var(--card) 40%, var(--hall-soot));
+}
+
+.frame-room-portrait {
+  position: absolute;
+  inset: 0;
+  transition: filter 0.6s ease;
+}
+
+.frame-room .frame-room-portrait .portrait {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  object-fit: cover;
+  object-position: 50% 25%;
+  transform: scale(1.04);
+  transition: transform 0.35s ease;
+}
+
+.frame-room .frame-room-portrait .portrait.placeholder {
+  display: grid;
+  place-items: center;
+  background: var(--card);
+  color: var(--hall-title);
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-size: 3cqw;
+}
+
+/* Pointed at: the ring flares, the portrait comes closer and a ring of fire turns round it */
+.frame-room-fire {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    transparent,
+    color-mix(in srgb, var(--hall-ember) 85%, transparent) 8%,
+    transparent 16%,
+    color-mix(in srgb, var(--hall-glow) 80%, transparent) 30%,
+    transparent 40%,
+    color-mix(in srgb, var(--hall-ember) 85%, transparent) 55%,
+    transparent 63%,
+    color-mix(in srgb, var(--hall-spark) 70%, transparent) 76%,
+    transparent 86%
+  );
+  mask: radial-gradient(closest-side, transparent 74%, var(--hall-soot) 87%, transparent 96%);
+  -webkit-mask: radial-gradient(closest-side, transparent 74%, var(--hall-soot) 87%, transparent 96%);
+  mix-blend-mode: screen;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  animation: frame-room-turn 3.2s linear infinite;
+  pointer-events: none;
+}
+
+.frame-room-choice:not([aria-pressed='true']):is(:hover, :focus-visible) .frame-room-fire {
+  opacity: 1;
+}
+
+.frame-room-choice:not([aria-pressed='true']):is(:hover, :focus-visible) .portrait {
+  transform: scale(1.12);
+}
+
+.frame-room-choice:not([aria-pressed='true']):is(:hover, :focus-visible) .frame-room-ring-art {
+  filter: brightness(1.35) drop-shadow(0 0 0.7cqw var(--hall-ember));
+}
+
+.frame-room-choice:not([aria-pressed='true']):is(:hover, :focus-visible) .frame-room-name {
+  color: var(--hall-spark);
+  text-shadow: 0 0 0.6cqw var(--hall-ember);
+}
+
+.frame-room-choice:active .frame-room-ring-art {
+  filter: brightness(1.7) drop-shadow(0 0 1.1cqw var(--hall-glow));
+}
+
+/* Chosen: grey and dim, its likeness gone to its circle */
+.frame-room-choice[aria-pressed='true'] {
+  cursor: default;
+}
+
+.frame-room-choice[aria-pressed='true'] .frame-room-portrait {
+  filter: grayscale(1) brightness(0.45);
+}
+
+.frame-room-choice[aria-pressed='true'] .frame-room-ring-art {
+  filter: saturate(0.4) brightness(0.7);
+}
+
+.frame-room-choice[aria-pressed='true'] .frame-room-name {
+  opacity: 0.5;
+}
+
+/* Past the last hero: an empty ring, its fire out */
+.frame-room-empty .frame-room-ring-art {
+  filter: grayscale(0.85) brightness(0.45);
+}
+
+.frame-room-empty::before {
+  display: none;
+}
+
+.frame-room-name {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  padding: 0 0.5cqw;
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  line-height: 1.2;
+  color: var(--hall-ink);
+  text-shadow: 0 0.1cqw 0.2cqw var(--hall-soot);
+  transition:
+    opacity 0.6s ease,
+    color 0.3s ease;
+}
+
+.frame-room .hero-choice span.frame-room-name {
+  font-size: max(1.05cqw, 8px);
+  line-height: 1.2;
+}
+
+/* A page turning, from the side it comes */
+.frame-room-rings[data-turning='right'] .frame-room-tile {
+  animation: frame-room-from-right 0.45s ease-out;
+}
+
+.frame-room-rings[data-turning='left'] .frame-room-tile {
+  animation: frame-room-from-left 0.45s ease-out;
+}
+
+/* The gems glint now and then: a four-pointed star of light that flashes and fades */
+.frame-room-glints {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.frame-room-glint {
+  position: absolute;
+  background:
+    radial-gradient(circle, var(--hall-spark) 0, color-mix(in srgb, var(--hall-glow) 60%, transparent) 12%, transparent 36%),
+    linear-gradient(90deg, transparent 0, color-mix(in srgb, var(--hall-spark) 80%, transparent) 50%, transparent 100%) center / 100% 6% no-repeat,
+    linear-gradient(0deg, transparent 0, color-mix(in srgb, var(--hall-spark) 80%, transparent) 50%, transparent 100%) center / 6% 100% no-repeat;
+  mix-blend-mode: screen;
+  opacity: 0;
+  animation: frame-room-glint 6s ease-in-out infinite;
+}
+
+.frame-room-glint[data-empty] {
+  display: none;
+}
+
+/* The page's dots: embers, the page's burning */
+.frame-room-dots {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75cqw;
+}
+
+.frame-room-dot {
+  width: 0.6cqw;
+  height: 0.6cqw;
+  min-width: 5px;
+  min-height: 5px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--hall-glow) 25%, var(--hall-soot));
+  box-shadow: inset 0 0 0.15cqw var(--hall-soot);
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.frame-room-dot:hover,
+.frame-room-dot:focus-visible {
+  background: color-mix(in srgb, var(--hall-glow) 60%, transparent);
+  outline: none;
+}
+
+.frame-room-dot[aria-current='page'] {
+  background: radial-gradient(circle, var(--hall-spark), var(--hall-glow) 45%, var(--hall-ember));
+  box-shadow: 0 0 0.6cqw var(--hall-ember);
+  transform: scale(1.3);
+}
+
+/* The arrows and the buttons: their piece of the frames, lit when pointed at, pressed in when pressed */
+.frame-room-arrow,
+.frame-room-button {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  transition:
+    filter 0.35s ease,
+    transform 0.1s ease;
+}
+
+.frame-room-arrow img,
+.frame-room-button img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+.frame-room-arrow:not(:disabled) {
+  animation: frame-room-call 2.8s ease-in-out infinite;
+}
+
+.frame-room-arrow.next:not(:disabled) {
+  animation-delay: -1.4s;
+}
+
+.frame-room-arrow:hover:not(:disabled),
+.frame-room-arrow:focus-visible,
+.frame-room-button:hover,
+.frame-room-button:focus-visible {
+  filter: brightness(1.4) drop-shadow(0 0 0.9cqw var(--hall-ember));
+  animation: none;
+  outline: none;
+}
+
+.frame-room-arrow.previous:hover:not(:disabled) {
+  transform: translateX(-0.3cqw);
+}
+
+.frame-room-arrow.next:hover:not(:disabled) {
+  transform: translateX(0.3cqw);
+}
+
+.frame-room-arrow:active:not(:disabled),
+.frame-room-button:active {
+  transform: scale(0.96);
+  filter: brightness(1.8) drop-shadow(0 0 1.3cqw var(--hall-glow));
+}
+
+.frame-room-arrow:disabled {
+  cursor: default;
+  filter: grayscale(0.9) brightness(0.35);
+}
+
+.frame-room-button span {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  padding: 0 0.6cqw;
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-size: max(2cqw, 12px);
+  line-height: 1.2;
+  color: var(--hall-title);
+  text-shadow: 0 0.15cqw 0.25cqw var(--hall-soot);
+  transition:
+    color 0.5s ease,
+    text-shadow 0.5s ease;
+}
+
+/* Confirm waits dim until there are enough heroes, then burns: its frame throbs and its word glows like hot iron */
+.frame-room-button.confirm {
+  filter: brightness(0.7) saturate(0.6);
+}
+
+.frame-room[data-ready] .frame-room-button.confirm:not(:hover):not(:focus-visible) {
+  animation: frame-room-ready 2.4s ease-in-out infinite;
+}
+
+.frame-room[data-ready] .frame-room-button.confirm span {
+  color: var(--hall-spark);
+  animation: frame-room-hot 2.4s ease-in-out infinite;
+}
+
+.frame-room[data-ready] .frame-room-button.confirm::after {
+  content: '';
+  position: absolute;
+  inset: 22% 8% 22% 6%;
+  background: linear-gradient(100deg, transparent 30%, color-mix(in srgb, var(--hall-spark) 35%, transparent) 50%, transparent 70%) -150% 0 / 60% 100% no-repeat;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  animation: frame-room-sweep 3.6s ease-in-out infinite;
+}
+
+/* The circles of the heroes chosen, on the plate */
+.frame-room-circles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.frame-room-diamond {
+  position: absolute;
+  user-select: none;
+}
+
+.frame-room-circle {
+  position: absolute;
+  pointer-events: auto;
+}
+
+.frame-room-circle-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+/* A circle of the dark kind is a little smaller in kozka's bar */
+.frame-room-circle[data-kind='optional'] .frame-room-circle-art {
+  inset: calc((100% - var(--circle-dark, 91.4%)) / 2);
+  width: var(--circle-dark, 91.4%);
+  height: var(--circle-dark, 91.4%);
+}
+
+/* As many as the quest asks for burn while empty, breathing */
+.frame-room-circle[data-kind='required']:not([data-filled]) .frame-room-circle-art {
+  animation: frame-room-breathe 2.2s ease-in-out infinite;
+}
+
+/* A hero chosen, in its circle, under the ring */
+.frame-room-chosen {
+  position: absolute;
+  inset: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  animation: frame-room-settle 0.6s ease-out;
+}
+
+.frame-room-chosen-picture {
+  position: absolute;
+  inset: var(--circle-inset, 14.6%);
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--card);
+}
+
+.frame-room-chosen-picture img,
+.frame-room-chosen-picture .placeholder,
+.frame-room-flyer-picture img,
+.frame-room-flyer-picture .placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 25%;
+}
+
+.frame-room-chosen-picture .placeholder,
+.frame-room-flyer-picture .placeholder {
+  display: grid;
+  place-items: center;
+  background: var(--card);
+  color: var(--hall-title);
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-size: 1.5cqw;
+}
+
+.frame-room-chosen-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.frame-room-circle[data-kind='optional'] .frame-room-chosen-ring {
+  inset: calc((100% - var(--circle-dark, 91.4%)) / 2);
+  width: var(--circle-dark, 91.4%);
+  height: var(--circle-dark, 91.4%);
+}
+
+.frame-room-chosen[data-arriving] {
+  visibility: hidden;
+  animation: none;
+}
+
+.frame-room-chosen:hover,
+.frame-room-chosen:focus-visible {
+  filter: brightness(1.25) drop-shadow(0 0 0.6cqw var(--hall-ember));
+  outline: none;
+}
+
+/* A landing: the circle flares in a ring of fire and throws sparks */
+.frame-room-flare {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.frame-room-flare::before {
+  content: '';
+  position: absolute;
+  inset: 8%;
+  border-radius: 50%;
+  box-shadow:
+    0 0 1.2cqw 0.4cqw var(--hall-glow),
+    inset 0 0 1cqw 0.3cqw var(--hall-ember);
+  opacity: 0;
+  animation: frame-room-burst 0.8s ease-out;
+}
+
+.frame-room-sparks i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6%;
+  height: 6%;
+  margin: -3% 0 0 -3%;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--hall-spark), var(--hall-glow) 50%, transparent 70%);
+  opacity: 0;
+  animation: frame-room-spark 0.85s ease-out both;
+}
+
+/* The flight from the ring to the circle, shimmering through an SVG filter as through heat */
+.frame-room-flyer {
+  position: absolute;
+  z-index: 3;
+  transform-origin: 0 0;
+  border-radius: 50%;
+  pointer-events: none;
+  will-change: transform;
+  box-shadow:
+    0 0 1.4cqw 0.3cqw color-mix(in srgb, var(--hall-ember) 75%, transparent),
+    0 0 3cqw 0.6cqw color-mix(in srgb, var(--hall-glow) 35%, transparent);
+}
+
+.frame-room-flyer-picture {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@keyframes frame-room-smoulder {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes frame-room-turn {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes frame-room-glint {
+  0%,
+  78%,
+  100% {
+    opacity: 0;
+    transform: scale(0.3) rotate(0deg);
+  }
+  86% {
+    opacity: 1;
+    transform: scale(1) rotate(25deg);
+  }
+  94% {
+    opacity: 0;
+    transform: scale(0.5) rotate(45deg);
+  }
+}
+
+@keyframes frame-room-call {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.35) drop-shadow(0 0 0.6cqw var(--hall-ember));
+  }
+}
+
+@keyframes frame-room-breathe {
+  0%,
+  100% {
+    filter: brightness(0.85);
+  }
+  50% {
+    filter: brightness(1.3) drop-shadow(0 0 0.5cqw var(--hall-ember));
+  }
+}
+
+@keyframes frame-room-ready {
+  0%,
+  100% {
+    filter: brightness(1.1) drop-shadow(0 0 0.4cqw color-mix(in srgb, var(--hall-ember) 60%, transparent));
+  }
+  50% {
+    filter: brightness(1.35) drop-shadow(0 0 1cqw var(--hall-ember));
+  }
+}
+
+@keyframes frame-room-hot {
+  0%,
+  100% {
+    text-shadow:
+      0 0 0.5cqw var(--hall-ember),
+      0 0.15cqw 0.25cqw var(--hall-soot);
+  }
+  50% {
+    text-shadow:
+      0 0 1.1cqw var(--hall-glow),
+      0 0 0.4cqw var(--hall-ember),
+      0 0.15cqw 0.25cqw var(--hall-soot);
+  }
+}
+
+@keyframes frame-room-sweep {
+  0%,
+  40% {
+    background-position: -150% 0;
+  }
+  100% {
+    background-position: 250% 0;
+  }
+}
+
+@keyframes frame-room-settle {
+  from {
+    filter: brightness(2) saturate(1.5);
+  }
+}
+
+@keyframes frame-room-burst {
+  0% {
+    opacity: 1;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+@keyframes frame-room-spark {
+  0% {
+    opacity: 1;
+    transform: rotate(var(--angle, 0deg)) translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(var(--angle, 0deg)) translateY(calc(var(--far, 80%) * -9)) scale(0.3);
+  }
+}
+
+@keyframes frame-room-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(3cqw);
+  }
+}
+
+@keyframes frame-room-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-3cqw);
+  }
+}
+
+@keyframes frame-room-flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  71% {
+    opacity: 0.35;
+  }
+  72% {
+    opacity: 1;
+  }
+  73.5% {
+    opacity: 0.55;
+  }
+  74.5% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  91% {
+    opacity: 1;
+  }
+}
+
+/* DooM's look: the ship's colours and a hard, narrow type; frames of steel with octagonal holes, a scan instead of fire */
+.frame-room[data-look='doom'] {
+  --hall-title: var(--deck-title);
+  --hall-ink: var(--deck-ink);
+  --hall-glow: var(--deck-glow);
+  --hall-ember: var(--deck-ember);
+  --hall-spark: var(--deck-spark);
+  --hall-soot: var(--deck-soot);
+  --font-heading: var(--font-deck);
+}
+
+.frame-room[data-look='doom'] :is(.frame-room-title, .frame-room-name, .frame-room-button span) {
+  font-weight: 700;
+  font-stretch: condensed;
+  letter-spacing: 0.02em;
+}
+
+.frame-room[data-look='doom'] .frame-room-title {
+  font-size: 3.1cqw;
+  text-shadow:
+    0 0.12cqw 0 var(--deck-soot),
+    0 0 0.7cqw color-mix(in srgb, var(--hall-ember) 50%, transparent);
+}
+
+.frame-room[data-look='doom'] .frame-room-tile::before {
+  inset: 6%;
+  border-radius: 12%;
+  background: radial-gradient(closest-side, transparent 80%, color-mix(in srgb, var(--hall-ember) 40%, transparent) 94%, transparent);
+}
+
+/* Pointed at: a scan runs down the portrait, its edges lit */
+.frame-room[data-look='doom'] .frame-room-fire {
+  border-radius: 0;
+  mask: none;
+  -webkit-mask: none;
+  background: linear-gradient(180deg, transparent 0, color-mix(in srgb, var(--hall-glow) 55%, transparent) 48%, color-mix(in srgb, var(--hall-spark) 70%, transparent) 50%, transparent 54%) 0 -100% / 100% 60% no-repeat;
+  box-shadow: inset 0 0 1.4cqw color-mix(in srgb, var(--hall-ember) 70%, transparent);
+  animation: frame-room-scan 1.6s linear infinite;
+}
+
+.frame-room[data-look='doom'] .frame-room-portrait::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(180deg, transparent 0 2px, color-mix(in srgb, var(--deck-soot) 18%, transparent) 2px 3px);
+  pointer-events: none;
+}
+
+@keyframes frame-room-scan {
+  to {
+    background-position: 0 220%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .frame-room *,
+  .frame-room *::before,
+  .frame-room *::after {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,15 @@
+ASSETS PARA ESCENA DE LAVA - PROTOTIPO
+
+Todas las capas están en lienzos transparentes de 1536 x 480, con sus coordenadas de escena originales.
+
+00_fondo_original.webp: imagen original sin modificar; punto de partida más fiel.
+00_fondo_sin_elementos_aprox.webp: reconstrucción automática bajo banderolas y jaulas. ES APROXIMADA: observar artefactos y retocar antes de usar en producción.
+01-04: recortes aproximados de banderolas y jaulas. La máscara incluye en algunos bordes píxeles adyacentes; revisar antes de animación importante.
+05-07: resplandores de portal, cascadas y grietas; animar alpha de forma muy leve.
+08-10: humo semitransparente por zonas; desplazar 1-5 px/s, mantener bajo alpha para no tapar ilustración.
+11: brasas opcionales; mover muy poco y no usar todas juntas si quieres un efecto sobrio.
+
+MONTAJE: fondo (original o limpio), humo valle, jaulas/banderolas, glow portal/cascadas/grietas, humo portal, brasas, humo frontal.
+
+NOTA: Al usar fondo original NO mover los recortes mucho: el elemento original sigue dibujado debajo. Para movimiento real utiliza el fondo reconstruido y mejora con inpainting específico antes de producción.
+La puerta, castillos, puentes, rocas y lava original permanecen en el fondo.

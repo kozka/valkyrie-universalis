@@ -1,0 +1,14 @@
+.,English
+EventLlegadaVictoria.text,|||<b>Highport</b>\n\nYou ride into town with the bell on the cart, and the folk of Darkford at the market cheer you. At the inn you hear that the clapper was taken by "a monk from the crypt".\n\nYou rest: your morale is back to {var:$%morale}.|||
+EventLlegadaVictoria.button1,Continue
+EventLlegadaDerrota.text,"<b>Highport</b>\n\nYou reach town tired and without the bell. The smiths say they could cast a new one… if someone recovers the clapper, which rumour says lies in Darkford's crypt.\n\nYou rest: your morale is back to {var:$%morale}."
+EventLlegadaDerrota.button1,Continue
+EventCiudad.text,What do you do in Highport? At the market, besides buying and selling, you can spend your XP with the Skills button.
+EventCiudad.button1,Go to the market
+EventCiudad.button2,Donate to the temple (25 gold)
+EventCiudad.button3,Set off for Darkford
+EventMercado.button1,Leave the market
+EventDonativo.text,The priest blesses you and writes your names in the temple's book: the heroes gain 1 fame.
+EventDonativo.button1,Continue
+EventPartir.text,You take the coast road to Darkford. At dusk, the graveyard's slabs creak.
+EventPartir.button1,Continue

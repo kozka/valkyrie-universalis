@@ -1,0 +1,1506 @@
+/* Universalis' scenario screens for Mansions (17 October 2026) and Descent (1 November 2026, its pieces at the end):
+   the list and a scenario's details, made of kozka's pieces (brand/scenario-list/, brand/scenario-details/,
+   brand/d2e-scenarios/) and DooM (1 November 2026: brand/doom-scenarios/), each one cut as a window of old was, so that it takes any
+   size and any language: the corners kept as they are and the sides stretched between them (border-image). The
+   title's banner carries its crest and its medallion apart, centred over it. Only the look: QuestSelectionScreen.tsx
+   and QuestDetailsScreen.tsx are the classic screens, with a few hooks (data-fact, classes on the buttons, the cover
+   again behind a card, the library's candles). Not in Valkyrie. */
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection {
+  max-width: 70rem;
+  position: relative;
+  isolation: isolate;
+  gap: 1.25rem;
+}
+
+/* The investigators' study, darker still, behind the whole list */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(color-mix(in srgb, var(--shade) 62%, transparent), color-mix(in srgb, var(--shade) 62%, transparent)),
+    url('../../assets/hero-room.webp') center / cover;
+}
+
+/* The head: back, the title's banner, and the store's connection */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .screen-head {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr) max-content;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .screen-head > .back {
+  justify-self: start;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .screen-head > :last-child {
+  justify-self: end;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .screen-head h1 {
+  justify-self: center;
+}
+
+/* Valkyrie writes it in capitals: in small capitals here, quieter beside the title */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .screen-head .button.connection {
+  --button-h: 2.9rem;
+  padding-inline: 1.1rem;
+  font-size: 1.05rem;
+  text-transform: lowercase;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.04em;
+}
+
+/* The banner (scenario-title.webp, 1084×290): its caps 150 wide, the frame above 99 and below 67 of its pixels */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) :is(.quest-selection, .quest-details) .screen-head h1 {
+  --title-h: clamp(5rem, 10.5vw, 8.2rem);
+  position: relative;
+  box-sizing: border-box;
+  height: var(--title-h, 6rem);
+  min-width: calc(var(--title-h, 6rem) / 290 * 820);
+  margin: 0;
+  padding: calc(var(--title-h, 6rem) / 290 * 99) calc(var(--title-h, 6rem) / 290 * 160) calc(var(--title-h, 6rem) / 290 * 67);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-image: url('../../assets/scenario-title.webp') 99 150 67 fill / calc(var(--title-h, 6rem) / 290 * 99)
+    calc(var(--title-h, 6rem) / 290 * 150) calc(var(--title-h, 6rem) / 290 * 67);
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-weight: 400;
+  font-size: calc(var(--title-h, 6rem) * 0.3);
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--room-title);
+  text-shadow:
+    0 0 0.6rem color-mix(in srgb, var(--room-glow) 40%, transparent),
+    0 0.1rem 0.15rem var(--shade);
+}
+
+/* Its crest (495×124, at the banner's top) and its medallion (125×100, 190 from its top) */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) :is(.quest-selection, .quest-details) .screen-head h1::before,
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) :is(.quest-selection, .quest-details) .screen-head h1::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: center / 100% 100% no-repeat;
+  pointer-events: none;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) :is(.quest-selection, .quest-details) .screen-head h1::before {
+  top: -1px;
+  width: calc(var(--title-h, 6rem) / 290 * 495);
+  height: calc(var(--title-h, 6rem) / 290 * 124);
+  background-image: url('../../assets/scenario-title-crest.webp');
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) :is(.quest-selection, .quest-details) .screen-head h1::after {
+  top: calc(var(--title-h, 6rem) / 290 * 190 - 1px);
+  width: calc(var(--title-h, 6rem) / 290 * 125);
+  height: calc(var(--title-h, 6rem) / 290 * 100);
+  background-image: url('../../assets/scenario-title-medal.webp');
+}
+
+/* The buttons: kozka's gold frame (scenario-button.webp, 503×130, corners of 45), red for going back, leaving and
+   deleting */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) :is(.quest-selection, .quest-details) :is(.screen-head, .list-tools, .screen-foot, .details-actions) .button,
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest-action {
+  --button-h: 2.9rem;
+  min-height: var(--button-h, 2.9rem);
+  padding: 0.2rem 1.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/scenario-button.webp') 45 fill / calc(var(--button-h, 2.9rem) / 130 * 45);
+  background: none;
+  box-shadow: none;
+  color: var(--room-title);
+  font-size: var(--step-ui);
+  font-style: normal;
+  letter-spacing: 0.02em;
+  transition:
+    filter 140ms ease,
+    transform 140ms ease;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) :is(.quest-selection, .quest-details) .screen-head .button {
+  --button-h: 3.3rem;
+  padding-inline: 1.5rem;
+  font-size: 1.15rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) :is(.quest-selection, .quest-details) :is(.screen-head, .list-tools, .screen-foot, .details-actions) .button:hover:not(:disabled) {
+  filter: brightness(1.18);
+  text-shadow: 0 0 0.5rem color-mix(in srgb, var(--room-glow) 35%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) :is(.quest-selection, .quest-details) :is(.screen-head, .list-tools, .screen-foot, .details-actions) .button:active:not(:disabled) {
+  filter: brightness(0.9);
+  transform: translateY(1px);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) :is(.quest-selection, .quest-details) .button.back,
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .screen-head .button.connection.offline,
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .action-no-entry .quest-action {
+  border-image-source: url('../../assets/scenario-button-red.webp');
+  border-style: solid;
+  color: var(--room-red);
+}
+
+/* The thinner frame (scenario-textbox.webp, 612×82, corners of 30 and 32): the filter and the buttons that act on the
+   list */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .list-tools :is(.button.reload, .button.add-scenario, .button.filter-button) {
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/scenario-textbox.webp') 30 30 32 fill / calc(var(--button-h, 2.9rem) / 82 * 30)
+    calc(var(--button-h, 2.9rem) / 82 * 30) calc(var(--button-h, 2.9rem) / 82 * 32);
+  background: none;
+}
+
+/* The fields the player writes in or picks from (the search, the sort, the filters' choices): quiet, a fine gold line
+   on the dark, not buttons */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection :is(.search input, .sort select),
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection :is(.filter-option, .filter-lang) {
+  border: 1px solid color-mix(in srgb, var(--accent) 38%, transparent);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--shade) 60%, transparent);
+  box-shadow: inset 0 1px 0.4rem color-mix(in srgb, var(--shade) 80%, transparent);
+  color: var(--room-title);
+  transition:
+    border-color 140ms ease,
+    box-shadow 140ms ease;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection :is(.search input, .sort select):hover,
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection :is(.filter-option, .filter-lang):hover {
+  border-color: color-mix(in srgb, var(--accent) 60%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection :is(.search input, .sort select):focus-visible {
+  outline: none;
+  border-color: color-mix(in srgb, var(--accent) 85%, transparent);
+  box-shadow:
+    inset 0 1px 0.4rem color-mix(in srgb, var(--shade) 80%, transparent),
+    0 0 0.5rem color-mix(in srgb, var(--room-glow) 30%, transparent);
+}
+
+/* Icons, drawn in the gold of the text, on the buttons that have one */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) :is(.quest-selection, .quest-details) :is(.button.back, .button.connection, .button.reload, .button.add-scenario, .button.report-issue, .tiles-button, .button.custom-translation)::before,
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .search::before,
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .select::after,
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact[data-fact]::before,
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest-action::after,
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .action-no-entry .quest-action::before {
+  content: '';
+  flex: none;
+  width: 1.15em;
+  height: 1.15em;
+  background: currentColor;
+  mask: var(--icon, none) center / contain no-repeat;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) :is(.quest-selection, .quest-details) .button.back {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.4' d='M15 4l-8 8 8 8'/%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .screen-head .button.connection {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.9'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M7.5 12H16M12.8 8.5l3.5 3.5-3.5 3.5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .list-tools .button.reload {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath d='M19.5 12a7.5 7.5 0 1 1-2.2-5.3'/%3E%3Cpath d='M19.5 3.5V8H15'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .list-tools .button.add-scenario {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.7'%3E%3Cpath d='M6 2.5h8l4.5 4.5v14.5H6z'/%3E%3Cpath d='M14 2.5V7h4.5M9 12h6M9 15.5h6'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .list-tools .button.filter-button {
+  width: var(--button-h, 2.9rem);
+  padding: 0;
+  color: var(--room-title);
+}
+
+/* The tools: how many, the search, the filter and the sort; then, on a line of their own, the buttons */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .list-tools {
+  gap: 0.75rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .list-tools::before {
+  content: '';
+  order: 1;
+  flex-basis: 100%;
+  height: 0;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .list-tools > .button:not(.filter-button) {
+  order: 2;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .list-tools .count {
+  flex: 0 1 auto;
+  margin: 0 0.75rem 0 0;
+  padding-bottom: 0.35rem;
+  font-size: 1.35rem;
+  color: var(--room-title);
+  background: linear-gradient(to right, color-mix(in srgb, var(--accent) 55%, transparent), transparent) bottom / 100% 1px
+    no-repeat;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .search {
+  position: relative;
+  flex: 1 1 14rem;
+  display: flex;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .search::before {
+  position: absolute;
+  left: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--accent);
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.2'%3E%3Ccircle cx='10.5' cy='10.5' r='6.5'/%3E%3Cpath d='M15.5 15.5L21 21'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .search input {
+  width: 100%;
+  min-height: 2.6rem;
+  padding: 0.3rem 1rem 0.3rem 2.6rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .sort {
+  flex-wrap: wrap;
+  min-width: 0;
+  gap: 0.5rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .sort label {
+  gap: 0.6rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .sort label > span:first-child {
+  color: color-mix(in srgb, var(--room-title) 65%, transparent);
+  font-style: italic;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .select {
+  position: relative;
+  display: inline-flex;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .select::after {
+  position: absolute;
+  right: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.85em;
+  height: 0.85em;
+  color: var(--room-title);
+  pointer-events: none;
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.4' d='M5 9l7 7 7-7'/%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .sort select {
+  min-height: 2.6rem;
+  padding: 0.3rem 2.2rem 0.3rem 0.9rem;
+  appearance: none;
+  cursor: pointer;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .sort option {
+  background: var(--panel);
+  color: var(--text);
+}
+
+/* The filter window, in the card's frame; the choices made, lit in gold as before */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .filter-popup {
+  padding: 2.2rem 2.4rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/scenario-card.webp') 55 fill / 2.1rem;
+  background: none;
+  box-shadow: 0 1rem 3rem var(--shade);
+  color: var(--room-title);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .filter-popup h2 {
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-weight: 400;
+  color: var(--room-title);
+  text-shadow: 0 0 0.6rem color-mix(in srgb, var(--room-glow) 35%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .filter-popup :is(#filter-langs, .filter-choice p) {
+  color: color-mix(in srgb, var(--room-title) 75%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection :is(.filter-option, .filter-lang) {
+  opacity: 1;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .filter-lang:not([aria-pressed='true']) {
+  color: color-mix(in srgb, var(--room-title) 45%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .filter-option[aria-checked='true'],
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .filter-option[aria-pressed='true'],
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .filter-lang[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent);
+  box-shadow: 0 0 0.5rem color-mix(in srgb, var(--room-glow) 35%, transparent);
+  color: var(--on-accent);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .filter-missing {
+  color: var(--room-title);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .filter-popup .button.primary {
+  --button-h: 3rem;
+  min-height: var(--button-h, 3rem);
+  min-width: 7rem;
+  padding: 0.2rem 1.6rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/scenario-button.webp') 45 fill / calc(var(--button-h, 3rem) / 130 * 45);
+  background: none;
+  box-shadow: none;
+  color: var(--room-title);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .filter-popup .button.primary:hover {
+  filter: brightness(1.18);
+  text-shadow: 0 0 0.5rem color-mix(in srgb, var(--room-glow) 35%, transparent);
+}
+
+/* The difficulty in kozka's tentacles (difficulty-tentacle.webp, 60×90 with the gap beside each): five, a little
+   taller than the diamonds they replace, red as far as the scenario's difficulty goes, in the list and the details */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) :is(.quest-selection, .quest-details) .difficulty {
+  font-size: inherit;
+  letter-spacing: 0;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) :is(.quest-selection, .quest-details) .difficulty .marks {
+  display: inline-block;
+  width: calc(5 * 1em);
+  height: 1.5em;
+  overflow: hidden;
+  color: transparent;
+  background: color-mix(in srgb, var(--room-title) 20%, transparent);
+  mask: url('../../assets/difficulty-tentacle.webp') left center / 1em 1.5em repeat-x;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) :is(.quest-selection, .quest-details) .difficulty .marks.lit {
+  background: var(--alert);
+}
+
+/* Each scenario: the card's frame (scenario-card.webp, 906×278, corners of 55) */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quests {
+  gap: 1.1rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest.card {
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 10.5rem minmax(0, 1fr) auto;
+  gap: 1.6rem;
+  align-items: center;
+  padding: 1.6rem 1.9rem 1.6rem 1.7rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/scenario-card.webp') 55 fill / 2.1rem;
+  background: none;
+  box-shadow: none;
+  color: var(--room-title);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest.card:hover:not(:disabled) {
+  box-shadow: none;
+  filter: drop-shadow(0 0 0.6rem color-mix(in srgb, var(--room-glow) 22%, transparent));
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest.card:disabled {
+  background: none;
+  color: var(--room-title);
+}
+
+/* The cover again, faded in from the left on the card's right side, inside its frame */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest-backdrop {
+  position: absolute;
+  top: 1.05rem;
+  right: 1.05rem;
+  bottom: 1.05rem;
+  width: 48%;
+  z-index: 0;
+  opacity: 0.5;
+  pointer-events: none;
+  mask-image: linear-gradient(to right, transparent, black 55%, black 90%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest-backdrop :is(img, .placeholder) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.75) brightness(0.8);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest.card > :not(.quest-backdrop) {
+  position: relative;
+  z-index: 1;
+}
+
+/* The cover in his old photograph (scenario-photo.webp, 380×416): its hole leans 3.9° to the left */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 380 / 416;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  transform: none;
+  filter: drop-shadow(0 0.3rem 0.45rem var(--shade));
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../../assets/scenario-photo.webp') center / 100% 100% no-repeat;
+  pointer-events: none;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .photo :is(img, .placeholder) {
+  position: absolute;
+  left: 49.8%;
+  top: 47.2%;
+  width: 84%;
+  height: 77.5%;
+  aspect-ratio: auto;
+  transform: translate(-50%, -50%) rotate(-3.9deg);
+  object-fit: cover;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest-text {
+  gap: 0.45rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest-name {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--room-title);
+  text-shadow: 0 0.1rem 0.2rem var(--shade);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .synopsys {
+  font-size: 1.05rem;
+  color: color-mix(in srgb, var(--room-title) 72%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest-language {
+  padding: 0.05rem 0.4rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 70%, transparent);
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--shade) 60%, transparent);
+  box-shadow:
+    inset 0 0 0 2px color-mix(in srgb, var(--shade) 85%, transparent),
+    inset 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent);
+  color: var(--room-title);
+  font-size: 0.95rem;
+}
+
+/* The facts, under a gold line: each with its icon, the first two with their word below */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .facts {
+  align-items: center;
+  gap: 0.55rem 1.3rem;
+  margin-top: 0.2rem;
+  font-size: 1rem;
+  color: var(--room-title);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .facts:not(.stats)::before {
+  content: '';
+  flex-basis: 100%;
+  height: 1px;
+  margin-bottom: 0.3rem;
+  background: linear-gradient(
+    to right,
+    color-mix(in srgb, var(--accent) 65%, transparent),
+    color-mix(in srgb, var(--accent) 35%, transparent) 70%,
+    transparent
+  );
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact[data-fact] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact[data-fact]::before {
+  color: var(--accent);
+  background: var(--accent);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact-label {
+  color: color-mix(in srgb, var(--room-title) 70%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact:is([data-fact='heroes'], [data-fact='duration']) {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 0.6rem;
+  line-height: 1.15;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact:is([data-fact='heroes'], [data-fact='duration'])::before {
+  grid-row: 1 / 3;
+  width: 1.6em;
+  height: 1.6em;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact:is([data-fact='heroes'], [data-fact='duration']) .fact-value {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 1.1rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact:is([data-fact='heroes'], [data-fact='duration']) .fact-label {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 0.88rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact:is([data-fact='duration'], [data-fact='difficulty']) {
+  padding-left: 1.3rem;
+  border-left: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact[data-fact='difficulty']::before {
+  display: none;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact[data-fact='difficulty'] .difficulty {
+  font-size: 1rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact[data-fact='heroes'] {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM1 21c0-4.2 3.6-7 8-7s8 2.8 8 7zm17.2 0c0-2.1-.7-3.9-1.9-5.3 3.4.3 6.7 2.4 6.7 5.3z'/%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact[data-fact='duration'] {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3.5 2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact[data-fact='packs'] {
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.6'%3E%3Cpath d='M12 2.5l8.5 4.5v10L12 21.5 3.5 17V7z'/%3E%3Cpath d='M3.5 7L12 11.5 20.5 7M12 11.5v10'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact[data-fact='average-duration'] {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.8'%3E%3Cpath d='M6 3h12M6 21h12M7.5 3c0 4.5 4.5 6 4.5 9s-4.5 4.5-4.5 9M16.5 3c0 4.5-4.5 6-4.5 9s4.5 4.5 4.5 9'/%3E%3C/g%3E%3Cpath d='M9 19.5h6L12 16z'/%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact[data-fact='win-ratio'] {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 20.5h18V22H3zM5 13h3v6H5zm5.5-7h3v13h-3zM16 9.5h3V19h-3z'/%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact[data-fact='rating'] {
+  flex-basis: 100%;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact[data-fact='rating']::before {
+  display: none;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .facts.stats {
+  color: var(--room-title);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .pack {
+  margin-right: 0.3rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .rating {
+  font-size: 1.2rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .rating .marks {
+  color: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .rating .marks.lit {
+  color: var(--accent);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .reviews {
+  color: color-mix(in srgb, var(--room-title) 70%, transparent);
+}
+
+/* What choosing it does, in a framed button with its arrow; red, with a warning, while expansions are missing */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest-action {
+  --button-h: 3.1rem;
+  padding: 0.2rem 1.4rem 0.2rem 1.9rem;
+  gap: 0.9rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest-action::after {
+  width: 0.8em;
+  height: 0.8em;
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.4' d='M9 4l8 8-8 8'/%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .action-download .quest-action {
+  background: none;
+  color: var(--room-title);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .action-no-entry .quest-action {
+  padding: 0.2rem 1.2rem;
+  gap: 0.55rem;
+  font-size: 1.05rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .action-no-entry .quest-action::after {
+  display: none;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .action-no-entry .quest-action::before {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' d='M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm-1.3 4.5h2.6l-.4 8h-1.8zM12 16a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z'/%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest.card:hover:not(:disabled) .quest-action {
+  filter: brightness(1.18);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .sort-heading {
+  border-bottom-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  color: var(--room-title);
+}
+
+/* A narrow screen: the title first, then back and the connection; the cards with a smaller photograph */
+@media (max-width: 44rem) {
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .screen-head {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .screen-head h1 {
+    --title-h: 4.2rem;
+    grid-column: 1 / -1;
+    order: -1;
+    justify-self: center;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .screen-head h1 {
+    font-size: calc(var(--title-h, 6rem) * 0.27);
+  }
+
+  /* Not in Valkyrie (11 November 2026): the tools in few rows, so that the first scenarios show on a phone: the search
+     with its filter beside it, the sort, and the two buttons side by side */
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .search {
+    flex: 1 1 10rem;
+    min-width: 0;
+  }
+
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .list-tools {
+    gap: 0.5rem 0.6rem;
+  }
+
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .list-tools > :is(.reload, .add-scenario) {
+    flex: 1 1 0;
+    min-width: 0;
+    padding-inline: 0.6rem;
+    font-size: var(--step-small);
+  }
+
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest.card {
+    align-items: start;
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    gap: 0.9rem 1rem;
+    padding: 1.2rem 1.1rem;
+    border-image-width: 1.6rem;
+  }
+
+  /* Under all the rest, at the right (screens/QuestSelectionScreen.css lays the card out on a narrow screen) */
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest-action {
+    grid-column: 1 / -1;
+    justify-self: end;
+  }
+
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest-backdrop {
+    display: none;
+  }
+
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .quest-name {
+    font-size: 1.3rem;
+  }
+
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .fact:is([data-fact='duration'], [data-fact='difficulty']) {
+    padding-left: 0;
+    border-left: none;
+  }
+}
+
+/* A scenario's details (QuestDetailsScreen.tsx), as kozka drew it: the title's banner and, apart on the right, the
+   buttons that act on the scenario; the photograph on the left; on its right the player's marks, the description in
+   the card's frame and the facts, each in its box; back and Start, his parchment button, at the bottom. The screen's
+   own boxes let their parts go (display: contents) so that one grid lays them all out */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details {
+  max-width: 86rem;
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(12rem, 22rem) minmax(0, 1fr) auto auto;
+  grid-template-rows: auto auto auto auto auto 1fr;
+  grid-template-areas:
+    'title title report delete'
+    'title title tiles translation'
+    'photo marks marks marks'
+    'photo desc desc desc'
+    'photo facts facts facts'
+    'back . start start';
+  gap: 1rem 1.6rem;
+  align-items: start;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details > :is(.screen-head, .details, .screen-foot),
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details :is(.details-text, .details-actions) {
+  display: contents;
+}
+
+/* The library, its candles lit (libraryArt.ts), behind it all */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details-library {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: center / cover no-repeat;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details-library canvas {
+  position: absolute;
+  inset: 0;
+}
+
+/* The name on the banner, bigger than the list's title, cut short when it does not fit */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .screen-head h1 {
+  --title-h: clamp(5.2rem, 10vw, 8.4rem);
+  grid-area: title;
+  justify-self: start;
+  align-self: center;
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-size: calc(var(--title-h, 6rem) * 0.34);
+  line-height: calc(var(--title-h, 6rem) / 290 * 124 - 2px);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .screen-head .button {
+  --button-h: 3.1rem;
+  align-self: center;
+  font-size: var(--step-ui);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .button.report-issue {
+  grid-area: report;
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.8'%3E%3Cpath d='M12 3.5L2.5 20h19z'/%3E%3Cpath d='M12 9.5v5M12 17.3v.2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .button.back.delete {
+  grid-area: delete;
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.8'%3E%3Cpath d='M4 6.5h16M9.5 6.5V4h5v2.5M6.5 6.5l1 14h9l1-14M10 10.5v6.5M14 10.5v6.5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .tiles-button {
+  grid-area: tiles;
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.7'%3E%3Cpath d='M3 6l6-2.5 6 2.5 6-2.5v14.5L15 20.5 9 18l-6 2.5z'/%3E%3Cpath d='M9 3.5V18M15 6v14.5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .button.custom-translation {
+  grid-area: translation;
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.8'%3E%3Cpath d='M3 5h10M8 3v2M5 5c1 4 4 7 7 8M11 5c-1 4-4 7-7 8'/%3E%3Cpath d='M12.5 21l4-10 4 10M14 17.5h5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* The four buttons on the right, as two columns of the same width */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details :is(.button.report-issue, .button.back.delete, .tiles-button, .button.custom-translation) {
+  justify-self: stretch;
+}
+
+/* The photograph, with its metal corners (details-photo.webp, 428×536): its hole leans about 3° to the left */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details > .photo {
+  grid-area: photo;
+  position: relative;
+  width: 100%;
+  max-width: none;
+  aspect-ratio: 428 / 536;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  transform: none;
+  filter: drop-shadow(0 0.4rem 0.6rem var(--shade));
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details > .photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../../assets/details-photo.webp') center / 100% 100% no-repeat;
+  pointer-events: none;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details > .photo :is(img, .placeholder) {
+  position: absolute;
+  left: 49.9%;
+  top: 49.6%;
+  width: 88%;
+  height: 88%;
+  aspect-ratio: auto;
+  transform: translate(-50%, -50%) rotate(-3.1deg);
+  object-fit: cover;
+}
+
+/* The player's marks, each in a gold frame, its icon lit when it is set */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .mark-buttons {
+  grid-area: marks;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .mark-button {
+  --button-h: 3rem;
+  padding-inline: 1.3rem;
+  font-size: 1.05rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .mark-button .mark-icon {
+  width: 1.15em;
+  height: 1.15em;
+  color: color-mix(in srgb, var(--accent) 55%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .mark-button[aria-pressed='true'] {
+  color: var(--accent-bright);
+  filter: drop-shadow(0 0 0.4rem color-mix(in srgb, var(--room-glow) 35%, transparent));
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .mark-button[aria-pressed='true'] .mark-icon {
+  color: var(--accent-bright);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .my-rating-note {
+  color: color-mix(in srgb, var(--room-title) 75%, transparent);
+  font-style: italic;
+}
+
+/* The description, in the card's frame */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .card.description {
+  grid-area: desc;
+  max-width: none;
+  padding: 2.2rem 3rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/scenario-card.webp') 55 fill / 2.1rem;
+  background: none;
+  box-shadow: none;
+  color: var(--room-title);
+  font-size: 1.22rem;
+  line-height: 1.55;
+}
+
+/* The author's mistakes that stop a game (QuestHealth.tsx), when there are some: a row of its own over the description */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details:has(.quest-health) {
+  grid-template-rows: auto auto auto auto auto auto 1fr;
+  grid-template-areas:
+    'title title report delete'
+    'title title tiles translation'
+    'photo marks marks marks'
+    'photo health health health'
+    'photo desc desc desc'
+    'photo facts facts facts'
+    'back . start start';
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .quest-health {
+  grid-area: health;
+}
+
+/* The facts, each in a thin frame with its icon */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details-facts {
+  grid-area: facts;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0.9rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details-facts > div {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  align-content: center;
+  column-gap: 0.9rem;
+  padding: 0.9rem 1.3rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/scenario-textbox.webp') 30 30 32 fill / 1.25rem 1.25rem 1.35rem;
+  background: none;
+  flex-basis: auto;
+  font-size: inherit;
+  color: var(--room-title);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details-facts > div::before {
+  content: '';
+  grid-row: 1 / 3;
+  width: 1.9rem;
+  height: 1.9rem;
+  background: var(--accent);
+  mask: var(--icon, none) center / contain no-repeat;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details-facts dt {
+  font-style: normal;
+  font-size: 1rem;
+  color: color-mix(in srgb, var(--room-title) 75%, transparent);
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details-facts dd {
+  font-size: 1.25rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details-facts [data-fact='difficulty'] {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' d='M12 2.5c-4.7 0-8 3.2-8 7.6 0 2.6 1.2 4.4 3 5.5V19a1.5 1.5 0 0 0 1.5 1.5h7A1.5 1.5 0 0 0 17 19v-3.4c1.8-1.1 3-2.9 3-5.5 0-4.4-3.3-7.6-8-7.6zM8.8 9.2a1.9 1.9 0 1 1 0 3.8 1.9 1.9 0 0 1 0-3.8zm6.4 0a1.9 1.9 0 1 1 0 3.8 1.9 1.9 0 0 1 0-3.8zM12 13.6l1.2 2.2h-2.4z'/%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details-facts [data-fact='duration'] {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3.5 2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details-facts .authors {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' d='M20.5 3.5c-6 .5-10.5 4-12.5 9.5l-1.2 3.6-2.8 4 1 .9 3.2-3.5 3.3-.8c4.6-1.2 8.1-6 9-13.7zM9.8 14.3c1.4-3.6 4-6.4 7.4-8.2-2.4 2.4-4.3 5.1-5.6 8.2z'/%3E%3C/svg%3E");
+}
+
+/* Authors on several lines (translators too, as many scenarios name them): the whole row, in columns */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details-facts .authors:has(br) {
+  grid-column: 1 / -1;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details-facts .authors:has(br) dd {
+  columns: 3 13rem;
+  column-gap: 2rem;
+  font-size: 1.05rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details-facts .difficulty {
+  font-size: 1.2rem;
+}
+
+/* Back, red; Start, on his parchment (details-start.webp, 526×281: caps of 155 and 150, the frame 75 above and below),
+   in ink */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .screen-foot > .button.back {
+  grid-area: back;
+  align-self: end;
+  justify-self: start;
+  --button-h: 3.3rem;
+  font-size: 1.15rem;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .screen-foot > .button.primary {
+  --start-h: clamp(4.2rem, 6.5vw, 5.6rem);
+  grid-area: start;
+  align-self: end;
+  justify-self: end;
+  height: var(--start-h, 5rem);
+  min-height: 0;
+  min-width: calc(var(--start-h, 5rem) / 281 * 620);
+  padding: 0 calc(var(--start-h, 5rem) / 281 * 175) 0 calc(var(--start-h, 5rem) / 281 * 205);
+  gap: calc(var(--start-h, 5rem) * 0.28);
+  border: 1px solid transparent;
+  border-image: url('../../assets/details-start.webp') 75 150 75 155 fill / calc(var(--start-h, 5rem) / 281 * 75)
+    calc(var(--start-h, 5rem) / 281 * 150) calc(var(--start-h, 5rem) / 281 * 75) calc(var(--start-h, 5rem) / 281 * 155);
+  background: none;
+  box-shadow: none;
+  color: var(--room-ink);
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-size: calc(var(--start-h, 5rem) * 0.36);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .screen-foot > .button.primary::after {
+  content: '';
+  width: 0.55em;
+  height: 0.55em;
+  background: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.4' d='M9 4l8 8-8 8'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .screen-foot > .button.primary:hover:not(:disabled) {
+  filter: brightness(1.07) drop-shadow(0 0 0.8rem color-mix(in srgb, var(--room-glow) 45%, transparent));
+}
+
+/* A narrow screen: one column, the photograph smaller and centred */
+@media (max-width: 44rem) {
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: none;
+    grid-template-areas:
+      'title title'
+      'report delete'
+      'tiles translation'
+      'photo photo'
+      'marks marks'
+      'desc desc'
+      'facts facts'
+      'back start';
+  }
+
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details:has(.quest-health) {
+    grid-template-areas:
+      'title title'
+      'report delete'
+      'tiles translation'
+      'photo photo'
+      'marks marks'
+      'health health'
+      'desc desc'
+      'facts facts'
+      'back start';
+  }
+
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .screen-head h1 {
+    --title-h: 4.4rem;
+    justify-self: center;
+  }
+
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .button.report-issue {
+    justify-self: start;
+  }
+
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .details > .photo {
+    width: min(100%, 14rem);
+    justify-self: center;
+  }
+
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .card.description {
+    padding: 1.6rem 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  :root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-details .screen-foot > .button.primary {
+    --start-h: 3.8rem;
+    min-width: 0;
+  }
+}
+
+/* A filter on: the filter button glows, and the bar under the tools says by what (QuestSelectionScreen.tsx) */
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .list-tools .button.filter-button[data-active] {
+  color: var(--accent-bright);
+  filter: drop-shadow(0 0 0.45rem color-mix(in srgb, var(--room-glow) 70%, transparent));
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .active-filters {
+  border-color: color-mix(in srgb, var(--room-glow) 55%, transparent);
+  background: color-mix(in srgb, var(--room-glow) 9%, color-mix(in srgb, var(--shade) 85%, transparent));
+}
+
+:root[data-theme='universalis']:is([data-look='MoM'], [data-look='D2E'], [data-look='DooM']) .quest-selection .active-filters-title {
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  color: var(--room-title);
+}
+
+/* Descent's look (1 November 2026, kozka's frames: brand/d2e-scenarios/): the same screens, with his gold and blood
+   frames, the dark cave of the dwarves behind, and skulls for the difficulty. Each piece is cut so that it keeps its
+   ends as drawn at any width: the buttons' ends are half their height (no middle row to stretch), the title and the
+   card carry the ornaments at their middle apart, centred over them */
+
+/* The cave behind the list and the details, darker still */
+:root[data-theme='universalis'][data-look='D2E'] :is(.quest-selection, .quest-details)::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(color-mix(in srgb, var(--shade) 45%, transparent), color-mix(in srgb, var(--shade) 45%, transparent)),
+    url('../../assets/d2e-scenario-cave.webp') center / cover;
+}
+
+/* The banner (d2e-scenario-title.webp, 1061×227): its caps 150 wide, the frame 85 above and 55 below */
+:root[data-theme='universalis'][data-look='D2E'] :is(.quest-selection, .quest-details) .screen-head h1 {
+  min-width: calc(var(--title-h, 6rem) / 227 * 640);
+  padding: calc(var(--title-h, 6rem) / 227 * 88) calc(var(--title-h, 6rem) / 227 * 165) calc(var(--title-h, 6rem) / 227 * 58);
+  border-image: url('../../assets/d2e-scenario-title.webp') 85 150 55 fill / calc(var(--title-h, 6rem) / 227 * 85)
+    calc(var(--title-h, 6rem) / 227 * 150) calc(var(--title-h, 6rem) / 227 * 55);
+  font-size: calc(var(--title-h, 6rem) * 0.25);
+  color: var(--room-title);
+  text-shadow:
+    0 0.12rem 0 var(--shade),
+    0 0 0.7rem color-mix(in srgb, var(--room-glow) 35%, transparent);
+}
+
+/* Its hammer (245×126, at the banner's top) and its gem (105×81, 146 from its top) */
+:root[data-theme='universalis'][data-look='D2E'] :is(.quest-selection, .quest-details) .screen-head h1::before {
+  width: calc(var(--title-h, 6rem) / 227 * 245);
+  height: calc(var(--title-h, 6rem) / 227 * 126);
+  background-image: url('../../assets/d2e-scenario-title-crest.webp');
+}
+
+:root[data-theme='universalis'][data-look='D2E'] :is(.quest-selection, .quest-details) .screen-head h1::after {
+  top: calc(var(--title-h, 6rem) / 227 * 146 - 1px);
+  width: calc(var(--title-h, 6rem) / 227 * 105);
+  height: calc(var(--title-h, 6rem) / 227 * 81);
+  background-image: url('../../assets/d2e-scenario-title-medal.webp');
+}
+
+/* The buttons: the dark frame (d2e-scenario-button.webp, 394×90: ends 52 wide), red for going back, leaving and
+   expansions missing (d2e-scenario-button-red.webp, 261×112: ends 52 wide) */
+:root[data-theme='universalis'][data-look='D2E'] :is(.quest-selection, .quest-details) :is(.screen-head, .list-tools, .screen-foot, .details-actions) .button,
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .quest-action,
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .filter-popup .button.primary {
+  padding-inline: 1.6rem;
+  border-image: url('../../assets/d2e-scenario-button.webp') 44 52 45 fill / calc(var(--button-h, 2.9rem) / 2) calc(var(--button-h, 2.9rem) / 90 * 52);
+}
+
+:root[data-theme='universalis'][data-look='D2E'] :is(.quest-selection, .quest-details) .button.back,
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .screen-head .button.connection,
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .action-no-entry .quest-action {
+  border-image: url('../../assets/d2e-scenario-button-red.webp') 55 52 56 fill / calc(var(--button-h, 2.9rem) / 2) calc(var(--button-h, 2.9rem) / 112 * 52);
+  color: var(--room-red);
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .screen-head .button.connection.online {
+  color: var(--room-title);
+}
+
+/* The fields: the search in its frame (d2e-scenario-textbox.webp, 734×79), the filter in its square
+   (d2e-scenario-square.webp, 103×96), the sort in theirs, which bring their arrow (d2e-scenario-select.webp, 302×86) */
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .list-tools :is(.button.reload, .button.add-scenario) {
+  border-image: url('../../assets/d2e-scenario-button.webp') 44 52 45 fill / calc(var(--button-h, 2.9rem) / 2) calc(var(--button-h, 2.9rem) / 90 * 52);
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .list-tools .button.filter-button {
+  width: calc(var(--button-h, 2.9rem) * 1.07);
+  border-image: url('../../assets/d2e-scenario-square.webp') 47 48 48 fill / calc(var(--button-h, 2.9rem) / 2);
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .search input,
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .sort select {
+  min-height: 2.9rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .search input {
+  padding-left: 2.9rem;
+  border-image: url('../../assets/d2e-scenario-textbox.webp') 39 30 fill / 1.45rem 1.2rem;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .search::before {
+  left: 1.15rem;
+  color: var(--room-title);
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .sort select {
+  min-width: 9.5rem;
+  padding-right: 2.8rem;
+  border-image: url('../../assets/d2e-scenario-select.webp') 43 52 43 30 fill / 1.45rem 2.1rem 1.45rem 1.1rem;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .select::after {
+  display: none;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection :is(.search input, .sort select):is(:hover, :focus-visible) {
+  border-color: transparent;
+  box-shadow: none;
+  filter: brightness(1.15) drop-shadow(0 0 0.35rem color-mix(in srgb, var(--room-glow) 30%, transparent));
+}
+
+/* Each adventure in the card's frame (d2e-scenario-card.webp, 1643×499, corners of 120), its edges plain from corner to
+   corner (kozka, 2 November 2026: the ornaments along them were too much over the adventures), the words clear of
+   its rails */
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .quest.card {
+  --corner: 5rem;
+  padding: 3.1rem 3.1rem 3.1rem 2.8rem;
+  border-image: url('../../assets/d2e-scenario-card.webp') 120 fill / var(--corner, 5rem);
+}
+
+/* The card glows when it is pointed at */
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .quest.card:hover:not(:disabled) {
+  filter: drop-shadow(0 0 0.7rem color-mix(in srgb, var(--room-glow) 30%, transparent));
+}
+
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .quest-backdrop {
+  top: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+/* The facts under a gold line, as Mansions' */
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .quest-language {
+  border-color: color-mix(in srgb, var(--room-glow) 60%, transparent);
+}
+
+/* The difficulty in skulls: five, red as far as the adventure's difficulty goes */
+:root[data-theme='universalis'][data-look='D2E'] :is(.quest-selection, .quest-details) .difficulty .marks {
+  height: 1.5em;
+  width: calc(5 * 1.5em);
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-3 -1 30 26'%3E%3Cpath fill-rule='evenodd' d='M12 2.5c-4.7 0-8 3.2-8 7.6 0 2.6 1.2 4.4 3 5.5V19a1.5 1.5 0 0 0 1.5 1.5h7A1.5 1.5 0 0 0 17 19v-3.4c1.8-1.1 3-2.9 3-5.5 0-4.4-3.3-7.6-8-7.6zM8.8 9.2a1.9 1.9 0 1 1 0 3.8 1.9 1.9 0 0 1 0-3.8zm6.4 0a1.9 1.9 0 1 1 0 3.8 1.9 1.9 0 0 1 0-3.8zM12 13.6l1.2 2.2h-2.4z'/%3E%3C/svg%3E") left center / 1.5em 1.5em repeat-x;
+}
+
+/* The filter window and the description, in the card's frame */
+:root[data-theme='universalis'][data-look='D2E'] .quest-selection .filter-popup,
+:root[data-theme='universalis'][data-look='D2E'] .quest-details .card.description {
+  padding: 2.8rem 2.8rem;
+  border-image: url('../../assets/d2e-scenario-card.webp') 120 fill / 4.2rem;
+}
+
+/* The facts of the details, each in the field's frame */
+:root[data-theme='universalis'][data-look='D2E'] .quest-details .details-facts > div {
+  border-image: url('../../assets/d2e-scenario-textbox.webp') 30 30 fill / 1.15rem 1.2rem;
+}
+
+/* Start: the red frame, big, its word lit */
+:root[data-theme='universalis'][data-look='D2E'] .quest-details .screen-foot > .button.primary {
+  min-width: calc(var(--start-h, 5rem) * 3.2);
+  padding: 0 calc(var(--start-h, 5rem) * 0.7);
+  border-image: url('../../assets/d2e-scenario-button-red.webp') 55 52 56 fill / calc(var(--start-h, 5rem) / 2) calc(var(--start-h, 5rem) / 112 * 52);
+  color: var(--room-title);
+  font-size: calc(var(--start-h, 5rem) * 0.34);
+  text-shadow: 0 0 0.6rem color-mix(in srgb, var(--room-glow) 55%, transparent);
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-details .screen-foot > .button.primary:hover:not(:disabled) {
+  filter: brightness(1.2) drop-shadow(0 0 0.9rem color-mix(in srgb, var(--room-glow) 50%, transparent));
+}
+
+/* A narrow screen: the card's corners smaller */
+@media (max-width: 44rem) {
+  :root[data-theme='universalis'][data-look='D2E'] .quest-selection .quest.card {
+    --corner: 3.4rem;
+    padding: 2.3rem 2rem;
+  }
+}
+
+/* DooM's look (1 November 2026, kozka's steel frames: brand/doom-scenarios/): the same screens, with the ship's
+   bridge behind, steel frames with their orange lights, the title's lights flickering as tired tubes do */
+
+:root[data-theme='universalis'][data-look='DooM'] :is(.quest-selection, .quest-details)::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(color-mix(in srgb, var(--shade) 45%, transparent), color-mix(in srgb, var(--shade) 45%, transparent)),
+    url('../../assets/doom-scenario-room.webp') center / cover;
+}
+
+/* The banner (doom-scenario-title.webp, 2080×535): its ends 480 wide, the frame 118 above and 127 below; the lights at
+   the middle of its top and bottom (212×535) over it, and its glow alone (the same size), flickering */
+:root[data-theme='universalis'][data-look='DooM'] :is(.quest-selection, .quest-details) .screen-head h1 {
+  --title-h: clamp(5.4rem, 11vw, 8.8rem);
+  min-width: calc(var(--title-h, 6rem) / 535 * 1400);
+  padding: calc(var(--title-h, 6rem) / 535 * 125) calc(var(--title-h, 6rem) / 535 * 500) calc(var(--title-h, 6rem) / 535 * 132);
+  border-image: url('../../assets/doom-scenario-title.webp') 118 480 127 fill / calc(var(--title-h, 6rem) / 535 * 118)
+    calc(var(--title-h, 6rem) / 535 * 480) calc(var(--title-h, 6rem) / 535 * 127);
+  font-family: var(--font-deck);
+  font-weight: 700;
+  font-stretch: condensed;
+  font-size: calc(var(--title-h, 6rem) * 0.27);
+  text-transform: none;
+  color: var(--room-title);
+  text-shadow:
+    0 0.12rem 0 var(--shade),
+    0 0 0.8rem color-mix(in srgb, var(--room-glow) 45%, transparent);
+}
+
+:root[data-theme='universalis'][data-look='DooM'] :is(.quest-selection, .quest-details) .screen-head h1::before {
+  top: -1px;
+  width: calc(var(--title-h, 6rem) / 535 * 212);
+  height: var(--title-h, 6rem);
+  margin-left: calc(var(--title-h, 6rem) / 535 * -14);
+  background-image: url('../../assets/doom-scenario-title-lights.webp');
+}
+
+:root[data-theme='universalis'][data-look='DooM'] :is(.quest-selection, .quest-details) .screen-head h1::after {
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  width: auto;
+  transform: none;
+  background: none;
+  border: 1px solid transparent;
+  border-image: url('../../assets/doom-scenario-title-glow.webp') 118 480 127 / calc(var(--title-h, 6rem) / 535 * 118)
+    calc(var(--title-h, 6rem) / 535 * 480) calc(var(--title-h, 6rem) / 535 * 127);
+  mix-blend-mode: screen;
+  animation: doom-scenario-flicker 9s steps(1, end) infinite;
+}
+
+/* The buttons: the steel frame (doom-scenario-button.webp, 352×72), dark red for going back, leaving and expansions
+   missing (doom-scenario-button-red.webp, 254×87); their ends half their height */
+:root[data-theme='universalis'][data-look='DooM'] :is(.quest-selection, .quest-details) :is(.screen-head, .list-tools, .screen-foot, .details-actions) .button,
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .quest-action,
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .filter-popup .button.primary,
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .list-tools :is(.button.reload, .button.add-scenario) {
+  padding-inline: 1.5rem;
+  border-image: url('../../assets/doom-scenario-button.webp') 35 34 36 fill / calc(var(--button-h, 2.9rem) / 2) calc(var(--button-h, 2.9rem) / 72 * 34);
+}
+
+:root[data-theme='universalis'][data-look='DooM'] :is(.quest-selection, .quest-details) .button.back,
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .screen-head .button.connection,
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .action-no-entry .quest-action {
+  border-image: url('../../assets/doom-scenario-button-red.webp') 43 34 fill / calc(var(--button-h, 2.9rem) / 2) calc(var(--button-h, 2.9rem) / 86 * 34);
+  color: var(--room-red);
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .screen-head .button.connection.online {
+  color: var(--room-title);
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .list-tools .button.filter-button {
+  border-image: url('../../assets/doom-scenario-square.webp') 36 fill / calc(var(--button-h, 2.9rem) / 2);
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .search input,
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .sort select {
+  min-height: 2.9rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .search input {
+  padding-left: 2.9rem;
+  border-image: url('../../assets/doom-scenario-textbox.webp') 36 30 fill / 1.45rem 1.2rem;
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .search::before {
+  left: 1.15rem;
+  color: var(--room-glow);
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .sort select {
+  min-width: 9.5rem;
+  border-image: url('../../assets/doom-scenario-select.webp') 36 30 fill / 1.45rem 1.2rem;
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection :is(.search input, .sort select):is(:hover, :focus-visible) {
+  border-color: transparent;
+  box-shadow: none;
+  filter: brightness(1.15) drop-shadow(0 0 0.35rem color-mix(in srgb, var(--room-glow) 30%, transparent));
+}
+
+/* Each mission in the card's frame (doom-scenario-card.webp, 1588×504, corners of 115), its lights breathing when it is
+   pointed at */
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .quest.card {
+  padding: 2.2rem 2.6rem 2.3rem 2.3rem;
+  border-image: url('../../assets/doom-scenario-card.webp') 115 fill / 3.6rem;
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .quest.card:hover:not(:disabled) {
+  filter: drop-shadow(0 0 0.7rem color-mix(in srgb, var(--room-glow) 32%, transparent));
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .quest-backdrop {
+  top: 1.4rem;
+  right: 1.4rem;
+  bottom: 1.4rem;
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .quest-language {
+  border-color: color-mix(in srgb, var(--room-glow) 60%, transparent);
+}
+
+:root[data-theme='universalis'][data-look='DooM'] :is(.quest-selection, .quest-details) .difficulty .marks {
+  height: 1.5em;
+  width: calc(5 * 1.5em);
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-3 -1 30 26'%3E%3Cpath fill-rule='evenodd' d='M12 2.5c-4.7 0-8 3.2-8 7.6 0 2.6 1.2 4.4 3 5.5V19a1.5 1.5 0 0 0 1.5 1.5h7A1.5 1.5 0 0 0 17 19v-3.4c1.8-1.1 3-2.9 3-5.5 0-4.4-3.3-7.6-8-7.6zM8.8 9.2a1.9 1.9 0 1 1 0 3.8 1.9 1.9 0 0 1 0-3.8zm6.4 0a1.9 1.9 0 1 1 0 3.8 1.9 1.9 0 0 1 0-3.8zM12 13.6l1.2 2.2h-2.4z'/%3E%3C/svg%3E") left center / 1.5em 1.5em repeat-x;
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .quest-selection .filter-popup,
+:root[data-theme='universalis'][data-look='DooM'] .quest-details .card.description {
+  padding: 2.2rem 2.5rem;
+  border-image: url('../../assets/doom-scenario-card.webp') 115 fill / 3.2rem;
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .quest-details .details-facts > div {
+  border-image: url('../../assets/doom-scenario-textbox.webp') 30 30 fill / 1.15rem 1.2rem;
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .quest-details .screen-foot > .button.primary {
+  min-width: calc(var(--start-h, 5rem) * 3.2);
+  padding: 0 calc(var(--start-h, 5rem) * 0.7);
+  border-image: url('../../assets/doom-scenario-button-red.webp') 43 34 fill / calc(var(--start-h, 5rem) / 2) calc(var(--start-h, 5rem) / 86 * 34);
+  color: var(--room-title);
+  font-family: var(--font-deck);
+  font-weight: 700;
+  font-size: calc(var(--start-h, 5rem) * 0.34);
+  text-shadow: 0 0 0.6rem color-mix(in srgb, var(--room-glow) 55%, transparent);
+}
+
+:root[data-theme='universalis'][data-look='DooM'] .quest-details .screen-foot > .button.primary:hover:not(:disabled) {
+  filter: brightness(1.2) drop-shadow(0 0 0.9rem color-mix(in srgb, var(--room-glow) 50%, transparent));
+}
+
+@keyframes doom-scenario-flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  61% {
+    opacity: 0.4;
+  }
+  62% {
+    opacity: 1;
+  }
+  63.5% {
+    opacity: 0.6;
+  }
+  64.5% {
+    opacity: 1;
+  }
+  88% {
+    opacity: 0.8;
+  }
+  89% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 44rem) {
+  :root[data-theme='universalis'][data-look='DooM'] .quest-selection .quest.card {
+    padding: 1.8rem 1.6rem;
+    border-image-width: 2.6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root[data-theme='universalis'][data-look='DooM'] :is(.quest-selection, .quest-details) .screen-head h1::after {
+    animation: none;
+  }
+}

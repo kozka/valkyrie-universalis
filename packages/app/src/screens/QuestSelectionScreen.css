@@ -1,0 +1,577 @@
+.quest-selection {
+  max-width: 64rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.list-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+.list-tools .count {
+  flex: 1 1 10rem;
+  font-style: italic;
+}
+
+.search input,
+.sort select {
+  min-height: 2.75rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--panel);
+  color: var(--text);
+}
+
+.search input {
+  width: min(16rem, 70vw);
+}
+
+.search input::placeholder {
+  color: var(--quiet);
+  font-style: italic;
+}
+
+.sort,
+.sort label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--quiet);
+}
+
+/* The filter window (FilterPopup): the languages the player reads, and whether to hide what needs missing expansions */
+.button.filter-button {
+  min-width: 2.75rem;
+  padding-inline: 0.6rem;
+  color: var(--quiet);
+}
+
+/* Not in Valkyrie: a filter on lights the button and says how many */
+.button.filter-button {
+  position: relative;
+}
+
+.button.filter-button[data-active] {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: 0 0 0.6rem color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.filter-count {
+  position: absolute;
+  top: -0.45rem;
+  right: -0.45rem;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  padding: 0 0.3rem;
+  border-radius: 0.65rem;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+/* Not in Valkyrie: the bar that says the list is filtered, by what, and clears it */
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-top: 0.75rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 60%, transparent);
+  border-left-width: 4px;
+  border-radius: var(--radius-small);
+  background: color-mix(in srgb, var(--accent) 10%, var(--panel));
+}
+
+.active-filters-title {
+  font-weight: 700;
+  color: var(--accent-bright);
+}
+
+.active-filters-list {
+  display: flex;
+  flex: 1 1 12rem;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.active-filter {
+  padding: 0.1rem 0.55rem;
+  border-radius: 1rem;
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+  color: var(--text-bright);
+  font-size: 0.85rem;
+}
+
+.button.active-filters-clear {
+  min-height: 2.25rem;
+}
+
+/* Not in Valkyrie: the guide says a scenario is for adults, a small mark on its card */
+.adult-badge {
+  flex: none;
+  padding: 0 0.3rem;
+  border: 1px solid var(--alert-light);
+  border-radius: 0.25rem;
+  color: var(--alert-light);
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.2rem;
+  letter-spacing: 0.02em;
+}
+
+.filter-option[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.filter-note {
+  margin: 0;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--quiet);
+}
+
+.filter-button svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linejoin: round;
+}
+
+.filter-popup {
+  width: min(100%, 34rem);
+  padding: 1.5rem;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.filter-popup h2 {
+  font-size: var(--step-sub);
+}
+
+.filter-langs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.filter-lang {
+  min-width: 2.75rem;
+  min-height: 2.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--panel);
+  color: var(--quiet);
+  letter-spacing: 0.06em;
+  opacity: 0.55;
+  cursor: pointer;
+}
+
+.filter-lang[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+  opacity: 1;
+}
+
+/* Not in Valkyrie: what the list shows of the player's marks (ui/marks.ts) */
+.filter-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.filter-choice p {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.filter-icon {
+  width: 1.3em;
+  height: 1.3em;
+  fill: var(--accent);
+}
+
+/* The numbers of investigators, a little narrower than the other choices so that the ten fit on a line or two */
+#filter-players + .filter-options .filter-option {
+  min-width: 2.6rem;
+  padding-inline: 0.6rem;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.filter-option {
+  min-height: 2.5rem;
+  padding: 0.25rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-small);
+  background: var(--panel);
+  color: var(--quiet);
+  font: inherit;
+  cursor: pointer;
+}
+
+.filter-option[aria-checked='true'] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.filter-missing {
+  border: none;
+  background: none;
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.empty {
+  max-width: 34rem;
+  font-size: var(--step-read);
+  font-style: italic;
+  color: var(--quiet);
+}
+
+.quests {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Each scenario: an index card with its picture pinned on, as Valkyrie's list pins a photograph on paper */
+.quest {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 7.5rem 1fr auto;
+  gap: 1.25rem;
+  align-items: start;
+  padding: 1rem 1.25rem 1.1rem 1rem;
+  border: 1px solid var(--line);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.quest:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--lift-shadow);
+}
+
+.quest:disabled {
+  cursor: default;
+  background: color-mix(in srgb, var(--card) 55%, transparent);
+  color: var(--card-quiet);
+}
+
+.photo {
+  display: block;
+  padding: 0.3rem 0.3rem 0.9rem;
+  background: var(--photo);
+  box-shadow: var(--photo-shadow);
+  transform: rotate(-1.6deg);
+}
+
+.photo img,
+.photo .placeholder {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.photo .placeholder {
+  font-size: var(--step-title);
+}
+
+.quest-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.quest-name {
+  font-size: var(--step-sub);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.synopsys {
+  font-style: italic;
+  color: var(--card-quiet);
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  margin-top: 0.35rem;
+  font-size: var(--step-ui);
+}
+
+.fact-label {
+  color: var(--card-quiet);
+}
+
+.pack {
+  margin-right: 0.4rem;
+}
+
+.pack.missing {
+  color: var(--alert);
+  text-decoration: line-through;
+}
+
+.difficulty {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  letter-spacing: 0.15em;
+  font-size: 0.8em;
+}
+
+.difficulty .marks {
+  color: color-mix(in srgb, var(--card-text) 18%, transparent);
+  white-space: nowrap;
+}
+
+.difficulty .marks.lit {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  color: var(--alert);
+}
+
+/* The store's connection: a button to go offline or online, or what is happening (DrawOnlineModeButton) */
+.connection {
+  font-size: var(--step-ui);
+  font-style: italic;
+  color: var(--quiet);
+}
+
+.button.connection {
+  min-height: 2.5rem;
+  font-style: normal;
+  font-size: var(--step-ui);
+  letter-spacing: 0.04em;
+}
+
+.button.connection.offline,
+.connection.error {
+  color: var(--alert-light);
+}
+
+.button.connection.online,
+.connection.online {
+  color: var(--accent);
+}
+
+.quest-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 0.75rem;
+}
+
+/* The player's marks, right after the name (ui/MarkButtons.tsx) */
+.quest-head .mark-badges {
+  margin-right: auto;
+}
+
+/* The languages of a scenario, where Valkyrie draws their flags */
+.quest-languages {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.quest-language {
+  padding: 0 0.3em;
+  border: 1px solid var(--card-quiet);
+  border-radius: var(--radius-small);
+  color: var(--card-quiet);
+  font-size: var(--step-small);
+  letter-spacing: 0.06em;
+}
+
+.facts.stats {
+  margin-top: 0;
+  color: var(--card-quiet);
+}
+
+.rating {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  letter-spacing: 0.1em;
+}
+
+.rating .marks {
+  color: color-mix(in srgb, var(--card-text) 18%, transparent);
+  white-space: nowrap;
+}
+
+.rating .marks.lit {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  color: var(--card-text);
+}
+
+/* What choosing the scenario does: download, update, play, or nothing while expansions are missing */
+.quest-action {
+  align-self: center;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid currentColor;
+  border-radius: var(--radius-small);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.action-download .quest-action {
+  border-color: var(--card-text);
+  background: var(--card-text);
+  color: var(--card);
+}
+
+.action-update .quest-action,
+.action-no-entry .quest-action {
+  color: var(--alert);
+}
+
+.action-no-entry .quest-action {
+  border-style: dashed;
+}
+
+.sort-heading {
+  margin: 0.25rem 0 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--line);
+  font-size: var(--step-sub);
+  font-weight: 500;
+  color: var(--text-bright);
+}
+
+.quest-load-error {
+  align-items: center;
+  justify-content: center;
+}
+
+.load-error {
+  width: min(100%, 34rem);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-color: var(--alert);
+}
+
+.load-error h1 {
+  font-size: var(--step-sub);
+  color: var(--alert-light);
+}
+
+.load-error-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 34rem) {
+  .quest {
+    grid-template-columns: 5rem 1fr;
+    gap: 0.9rem;
+  }
+
+  .quest-action {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
+
+/* Not in Valkyrie (11 November 2026): on a narrow screen (a phone held upright, where a list reads best) the cover
+   and the title side by side, and the synopsis, the facts and the figures under them across the whole card, rather
+   than all squeezed beside the cover with nothing under it */
+@media (max-width: 44rem) {
+  .quest-selection .quest-text {
+    display: contents;
+  }
+
+  .quest-selection .quest-head {
+    grid-column: 2 / -1;
+    align-self: center;
+  }
+
+  .quest-selection :is(.quest-text > :is(.synopsys, .facts), .quest > .quest-action) {
+    grid-column: 1 / -1;
+  }
+
+  .quest-selection .quest > .quest-action {
+    justify-self: end;
+  }
+}
+
+/* Not in Valkyrie: what the app found in a scenario the player added (host/scenarioPackage.ts) */
+.scenario-report {
+  width: min(100%, 38rem);
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.scenario-report h2 {
+  margin: 0;
+  font-size: var(--step-sub);
+}
+
+.scenario-report ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-wrap: anywhere;
+}
+
+.scenario-report .button {
+  align-self: flex-end;
+}
+
+/* Not in Valkyrie: the scenario Igor brought the player to, lit for a few seconds (igor/Igor.tsx) */
+.quest.card[data-highlight] {
+  animation: igor-found 1.5s ease-in-out 4;
+}
+
+@keyframes igor-found {
+  50% {
+    box-shadow: 0 0 1.6rem 0.3rem color-mix(in srgb, var(--accent) 70%, transparent);
+  }
+}

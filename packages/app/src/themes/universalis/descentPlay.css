@@ -1,0 +1,334 @@
+/* Universalis' game for Descent (1 November 2026): as DooM's (doomPlay.css), with the gold frames of Descent's scenario
+   screens (brand/d2e-scenarios/): every window in the card's frame, its buttons dark (the master's red), the heroes and
+   the monsters in the square frame, the one chosen lit, morale in the red frame, Menu in the dark button; and Log,
+   Skills and Items as kozka's pictures, a book, a map and a pack (brand/d2e-hud/), their words kept for whoever cannot
+   see them. Not in Valkyrie. */
+
+/* The windows, in the card's frame (d2e-scenario-card.webp, 1643×499, corners of 120) */
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen :is(.window.panel:not(.skills-window), .panel.monster-panel) {
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/d2e-scenario-card.webp') 120 fill / 2.6rem;
+  background: none;
+  box-shadow: none;
+  filter: drop-shadow(0 0.8rem 1.4rem color-mix(in srgb, var(--shade) 85%, transparent));
+  color: var(--card-text);
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .panel.monster-panel {
+  /* The monster inside the frame's drawn edge, which is thick (Windows.tsx MonsterPicture, 12 November 2026) */
+  padding: 1.5rem 1.6rem 1.3rem;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .window.panel .card {
+  border: none;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+/* An event: its text, an gold line, its buttons */
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .event-window {
+  padding: 1.1rem 1.2rem;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .event-window.folded {
+  padding: 0.5rem 0.8rem;
+  border-image-width: 1.3rem;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .event-window > .event-text {
+  padding: 1.4rem 2.6rem 1.2rem;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .event-window > .event-text + .event-buttons {
+  background: linear-gradient(
+      to right,
+      transparent,
+      color-mix(in srgb, var(--accent) 60%, transparent) 20%,
+      color-mix(in srgb, var(--accent) 60%, transparent) 80%,
+      transparent
+    )
+    top / 100% 1px no-repeat;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .event-buttons {
+  gap: 0.55rem;
+  padding: 0.9rem 0.6rem 0.4rem;
+}
+
+/* The buttons in the windows and over the board, in the dark button (d2e-scenario-button.webp, 394×90, its ends half
+   its height); an author's colour for a button stays on its words */
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen :is(.window.panel:not(.skills-window), .panel.monster-panel) .button,
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .button.hud:is(.menu-button, .scroll) {
+  --button-h: min(2.9rem, 11vh);
+  min-height: var(--button-h, 2.9rem);
+  padding: 0.25rem 1.4rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/d2e-scenario-button.webp') 44 52 45 fill / calc(var(--button-h, 2.9rem) / 2) calc(var(--button-h, 2.9rem) / 90 * 52);
+  background: none;
+  box-shadow: none;
+  color: var(--room-title);
+  transition:
+    filter 140ms ease,
+    transform 140ms ease;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen :is(.window.panel, .panel.monster-panel) .button:hover:not(:disabled),
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .button.hud:is(.menu-button, .scroll):hover:not(:disabled) {
+  background: none;
+  color: var(--room-title);
+  filter: brightness(1.2);
+  text-shadow: 0 0 0.5rem color-mix(in srgb, var(--room-glow) 45%, transparent);
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen :is(.window.panel, .panel.monster-panel) .button:active:not(:disabled) {
+  filter: brightness(0.9);
+  transform: translateY(1px);
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen :is(.window.panel, .panel.monster-panel) .button:disabled {
+  filter: grayscale(0.8) brightness(0.6);
+}
+
+/* A monster group's master in the red button */
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .window.panel .button.event-button.master {
+  border-image: url('../../assets/d2e-scenario-button-red.webp') 55 52 56 fill / calc(var(--button-h, 2.9rem) / 2) calc(var(--button-h, 2.9rem) / 112 * 52);
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .button.hud.menu-button {
+  --button-h: min(2.9rem, 11vh);
+  padding-inline: 1.6rem;
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-weight: 400;
+  font-size: 1.1rem;
+  filter: drop-shadow(0 0.3rem 0.6rem color-mix(in srgb, var(--shade) 80%, transparent));
+}
+
+/* The windows' titles, the activation's name, the monster's name: the game's titles, lit */
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen :is(.window.panel, .panel.monster-panel) :is(h1, h2, h3, .activation-name, .monster-name) {
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-weight: 400;
+  color: var(--room-title);
+  text-shadow: 0 0 0.6rem color-mix(in srgb, var(--room-glow) 40%, transparent);
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .event-text h3.master {
+  color: var(--room-red);
+}
+
+/* The heroes and the monsters in the square frame (d2e-scenario-square.webp, 103×96) */
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen :is(.hero-slot, .monster-icon) {
+  position: relative;
+  padding: 0.42rem;
+  border: none;
+  border-radius: 0;
+  background: color-mix(in srgb, var(--shade) 80%, transparent);
+  overflow: visible;
+  transition:
+    filter 160ms ease,
+    transform 160ms ease;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen :is(.hero-slot, .monster-icon)::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid transparent;
+  border-image: url('../../assets/d2e-scenario-square.webp') 30 / 0.8rem;
+  pointer-events: none;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen :is(.hero-slot .portrait, .hero-slot .empty, .monster-icon .monster-picture) {
+  border: none;
+  border-radius: 0;
+  object-position: 50% 25%;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen :is(.hero-slot, .monster-icon):hover {
+  filter: brightness(1.15) drop-shadow(0 0 0.4rem color-mix(in srgb, var(--room-glow) 45%, transparent));
+}
+
+/* The hero chosen: its frame lit orange and breathing */
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .hero-slot.selected {
+  box-shadow: none;
+  filter: drop-shadow(0 0 0.55rem var(--room-glow));
+  animation: d2e-play-selected 2.2s ease-in-out infinite;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .hero-slot.selected::after,
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .monster-icon.unique::after {
+  filter: sepia(1) saturate(4) hue-rotate(-20deg) brightness(1.2);
+}
+
+/* A hero that has acted, and a group that has activated: dim */
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .hero-slot.activated .portrait,
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .monster-icon.activated .monster-picture {
+  filter: grayscale(0.7) brightness(0.45);
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .monster-badge,
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .monster-duplicate {
+  z-index: 1;
+  border-radius: 0.2rem;
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-weight: 400;
+}
+
+/* Morale, red in a red frame, glowing */
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .morale {
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/d2e-scenario-square.webp') 30 / 0.8rem;
+  background: radial-gradient(circle at 50% 40%, color-mix(in srgb, var(--room-red) 35%, var(--shade)), var(--shade) 75%) padding-box;
+  color: var(--room-red);
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-weight: 400;
+  text-shadow: 0 0 0.7rem var(--room-glow);
+}
+
+/* Log, Skills and Items as his pictures: the book, the map and the pack; their words out of sight but read out */
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .descent-buttons {
+  gap: 0.9rem;
+  align-items: end;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .descent-buttons .button.hud {
+  /* The size of Mansions' bar's pictures (themes/universalis/play.css) */
+  width: min(3.6rem, 13vh);
+  height: min(3.6rem, 13vh);
+  min-height: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: center / contain no-repeat;
+  box-shadow: none;
+  color: transparent;
+  font-size: 0;
+  filter: drop-shadow(0 0.25rem 0.4rem color-mix(in srgb, var(--shade) 85%, transparent));
+  transition:
+    filter 140ms ease,
+    transform 140ms ease;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .descent-buttons .button.hud:nth-child(1) {
+  background-image: url('../../assets/d2e-hud-log.webp');
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .descent-buttons .button.hud:nth-child(2) {
+  background-image: url('../../assets/d2e-hud-skills.webp');
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .descent-buttons .button.hud:nth-child(3) {
+  background-image: url('../../assets/d2e-hud-items.webp');
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .descent-buttons .button.hud:hover:not(.idle) {
+  background-color: transparent;
+  transform: translateY(-3px) scale(1.07);
+  filter: brightness(1.15) drop-shadow(0 0 0.6rem color-mix(in srgb, var(--room-glow) 55%, transparent));
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .descent-buttons .button.hud:active:not(.idle) {
+  transform: scale(0.95);
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .descent-buttons .button.hud.idle {
+  filter: grayscale(0.6) brightness(0.65);
+}
+
+@keyframes d2e-play-selected {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 0.35rem color-mix(in srgb, var(--room-glow) 70%, transparent));
+  }
+  50% {
+    filter: drop-shadow(0 0 0.8rem var(--room-glow));
+  }
+}
+
+@media (max-width: 40rem) {
+  :root[data-theme='universalis'][data-look='D2E'] .quest-screen .descent-buttons .button.hud {
+    width: min(2.9rem, 13vh);
+    height: min(2.9rem, 13vh);
+  }
+}
+
+@media (max-height: 32rem) and (orientation: landscape) {
+  :root[data-theme='universalis'][data-look='D2E'] .quest-screen .event-window > .event-text {
+    padding: 0.9rem 2.4rem 0.8rem;
+  }
+
+  :root[data-theme='universalis'][data-look='D2E'] .quest-screen :is(.window.panel, .panel.monster-panel) .button {
+    --button-h: 2.6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root[data-theme='universalis'][data-look='D2E'] .quest-screen .hero-slot.selected {
+    animation: none;
+  }
+}
+
+/* The game's menu, a hero's and a monster's window (3 November 2026, kozka: the framed buttons were too heavy there;
+   class bar-buttons in Windows.tsx): a slim bar with a crystal at each
+   end (brand/d2e-play-menu/, 1058×110, its ends 110), lit blue when pointed at; the window keeps its frame */
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .window.panel.bar-buttons .event-buttons {
+  gap: 0;
+  padding-block: 0.3rem;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .window.panel.bar-buttons .button {
+  --button-h: min(2.9rem, 11vh);
+  position: relative;
+  isolation: isolate;
+  min-height: var(--button-h, 2.9rem);
+  padding: 0 calc(var(--button-h, 2.9rem) * 0.75);
+  /* Two lines rather than cut, when the window is narrow (a phone held upright with large text) */
+  white-space: normal;
+  text-wrap: balance;
+  line-height: 1.15;
+  border: none;
+  border-image: url('../../assets/d2e-menu-bar.webp') 0 110 fill / 0 var(--button-h, 2.9rem);
+  color: var(--card-text);
+  text-shadow: 0 1px 0.2rem var(--shade);
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .window.panel.bar-buttons .button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-image: url('../../assets/d2e-menu-bar-lit.webp') 0 110 fill / 0 var(--button-h, 2.9rem);
+  opacity: 0;
+  transition: opacity 160ms ease;
+  pointer-events: none;
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .window.panel.bar-buttons .button:is(:hover, :focus-visible):not(:disabled) {
+  filter: none;
+  color: var(--room-title);
+}
+
+:root[data-theme='universalis'][data-look='D2E'] .quest-screen .window.panel.bar-buttons .button:is(:hover, :focus-visible):not(:disabled)::before {
+  opacity: 1;
+}
+
+/* The option «buttons apart» (play/play.css): the frame goes round the text alone, the buttons below it */
+:root[data-theme='universalis'][data-look='D2E'][data-buttons-apart] .quest-screen .event-window:not(.folded) > .event-text.card {
+  padding: 1.9rem 2.9rem 1.7rem;
+  border: 1px solid transparent;
+  border-image: url('../../assets/d2e-scenario-card.webp') 120 fill / 2.6rem;
+  box-shadow: var(--window-shadow);
+}
+
+@media (max-height: 32rem) and (orientation: landscape) {
+  :root[data-theme='universalis'][data-look='D2E'][data-buttons-apart] .quest-screen .event-window:not(.folded) > .event-text.card {
+    padding: 1.2rem 2.5rem 1rem;
+  }
+}

@@ -1,0 +1,151 @@
+// What Igor says in German (lines.ts says what each kind of line is for). Not in Valkyrie.
+import type { IgorLines } from '../lines.ts';
+
+export const German: IgorLines = {
+  greetings: [
+    'Guten Abend, gnädiger Herr. Ich habe Sie erwartet… ich erwarte Sie immer.',
+    'Ach, Sie sind es. Treten Sie ein, treten Sie ein. Das Haus hat Sie vermisst. Und jene, die darin hausen, ebenfalls.',
+    'Haben Sie geläutet, gnädiger Herr? Ich hätte schwören können, die Glocke zu hören. Oder war es der Wind zwischen den Grabsteinen?',
+    'Willkommen zurück im Schloss, gnädiger Herr. Ich habe Ihnen den Sessel am Kamin freigehalten.',
+    'Gnädiger Herr. Welche Freude, Sie mit allen Gliedmaßen an ihrem Platz zu sehen.',
+    'Guten Abend. Achten Sie nicht auf das Kratzen an der Kellertür. Das ist… die Feuchtigkeit.',
+    'Sie kommen zur rechten Stunde, gnädiger Herr. Der Mond ist voll und die Kerzen fast unberührt.',
+  ],
+  halloween: [
+    'In diesen Nächten, da der Schleier zwischen Lebenden und Toten dünn wird, sollte man nicht allein sein.',
+    'Allerheiligen naht. Die Verstorbenen haben schon nach Ihnen gefragt.',
+    'Die Kürbisse grinsen diese Woche mehr, als sich gehört, gnädiger Herr. Ich würde ihnen nicht trauen.',
+    'Man sagt, in der Nacht der Toten erzählen die Villen ihre eigenen Geschichten. Ich kenne einige davon.',
+  ],
+  smallTalk: [
+    'Wie fühlen Sie sich heute, gnädiger Herr? Kommen Sie näher ans Feuer, setzen Sie sich. Ich bringe Ihnen etwas Warmes.',
+    'Nehmen Sie Platz. Der Sessel knarrt, aber er hält noch. Wie ich.',
+    'Übrigens, man spricht es „Ei-gor“ aus. Wobei es mir inzwischen herzlich gleich ist.',
+    'Ich habe das Silber poliert und… das, was im Brunnen wohnt, gefüttert. Alles in Ordnung.',
+    'Verzeihen Sie den Schwefelgeruch. Ich habe die verbotene Bibliothek abgestaubt.',
+    'Der Doktor empfängt heute nicht. Aber ich, gnädiger Herr. Ich empfange immer.',
+    'Der Sturm will nicht nachlassen. Eine prächtige Nacht, um in guter Gesellschaft den Verstand zu verlieren.',
+  ],
+  offer: [
+    'Womit darf ich Ihnen heute Nacht dienen?',
+    'Sagen Sie, was wünschen Euer Exzellenz?',
+    'Ich habe große Geschichten zu erzählen, gnädiger Herr. Möchten Sie eine hören?',
+    'Suchen Sie einen bestimmten Schrecken? Der Keller ist voll davon.',
+  ],
+  wantAdventure: ['Igor, empfiehl mir ein Abenteuer.', 'Ich will eine gute Geschichte, Igor.', 'Überrasch mich mit etwas Grauen.'],
+  wantNews: 'Gibt es Neuigkeiten?',
+  wantNothing: ['Nichts, danke, Igor.', 'Ich wollte nur kurz vorbeischauen.', 'Jetzt nicht, Igor.'],
+  newsIntro: [
+    'Ach, gnädiger Herr, bevor ich es vergesse… {0} Möchten Sie mehr erfahren?',
+    'Ich habe Neuigkeiten, die nicht warten können. {0} Soll ich erzählen?',
+    'Gestatten Sie ein Flüstern, ehe die Wände es hören. {0} Soll ich es Ihnen zeigen?',
+  ],
+  newsMore: 'Erzähl mir mehr.',
+  newsOther: 'Empfiehl mir lieber ein anderes.',
+  noNews: [
+    'Nichts Neues unter dem Mond, gnädiger Herr. Nur die üblichen Schrecken, gut erhalten.',
+    'Keine Neuigkeiten. Die Post aus dem Jenseits ist dieser Tage langsam.',
+    'Alles wie gehabt: dieselben Villen, dieselben ruhelosen Toten.',
+  ],
+  beforeQuestions: [
+    'Gestatten Sie mir einige Fragen, damit ich Ihren Geschmack nicht verfehle.',
+    'Ehe ich die richtige Gruft öffne, lassen Sie mich ein, zwei Dinge fragen.',
+    'Es wird mir ein Vergnügen sein. Doch sagen Sie…',
+    'Sehr wohl. Ich habe das Register gleich hier. Sehen wir nach…',
+  ],
+  questions: {
+    players: {
+      ask: [
+        'Wie viele Seelen werden heute Nacht an der Tafel sitzen?',
+        'Wie viele Ermittler wagen es, die Schwelle zu überschreiten?',
+        'Für wie viele soll ich den Salon herrichten… und die Särge?',
+      ],
+      options: { '1': 'Nur ich', '2': 'Zwei', '3': 'Drei', '4': 'Vier', '5': 'Fünf oder mehr' },
+    },
+    experience: {
+      ask: [
+        'Haben Sie schon viele verfluchte Villen durchschritten, oder ist dies Ihr erster Besuch?',
+        'Kennen Sie die Schrecken von Arkham gut, oder möchten Sie lieber sanft beginnen?',
+        'Wie viel Wahnsinn tragen Sie bereits mit sich?',
+      ],
+      options: { new: 'Wir sind neu', some: 'Ein paar Partien', veteran: 'Abgebrühte Veteranen' },
+    },
+    time: {
+      ask: [
+        'Wie viel Zeit können Sie dem Grauen heute Nacht schenken?',
+        'Wie lange gedenken Sie zu bleiben? Ich frage wegen der Kerzen.',
+        'Ein kurzer Besuch, oder bleiben Sie, bis der Hahn kräht?',
+      ],
+      options: { short: 'Etwas Kurzes', evening: 'Einen Abend', night: 'Die ganze Nacht' },
+    },
+    style: {
+      ask: [
+        'Wonach steht Ihnen der Sinn: eine gute Geschichte, ein Kampf oder ein Rätsel?',
+        'Lesen Sie lieber alte Tagebücher, greifen zur Flinte oder knacken Rätsel?',
+        'Welche Art von Albtraum beliebt Ihnen, gnädiger Herr?',
+      ],
+      options: { story: 'Eine gute Geschichte', action: 'Action und Monster', mystery: 'Mysterien und Rätsel', surprise: 'Überrasch mich' },
+    },
+    format: {
+      ask: [
+        'Suchen Sie eine einzige Nacht des Grauens, oder eine Saga über mehrere Abende?',
+        'Eine Geschichte, die heute Nacht endet, oder eine, die Sie wochenlang verfolgt?',
+      ],
+      options: { oneNight: 'Eine einzige Nacht', saga: 'Eine Saga in mehreren Teilen' },
+    },
+  },
+  acks: {
+    'players:1': ['Eine einsame Seele. Die Villen mögen jene, die allein gehen…', 'Nur Sie. Umso besser: Niemand wird Sie schreien hören.'],
+    'players:2': ['Zwei. Ein tapferes Paar, oder zwei Narren.', 'Zwei Seelen. Nicht mehr, nicht weniger.'],
+    'players:3': ['Drei. Die Zahl von Macbeths Hexen.', 'Drei Ermittler. Ich setze drei Tassen Tee auf.'],
+    'players:4': ['Vier. Eine volle Tafel, wie in alten Zeiten.', 'Vier Tapfere. Oder vier Häppchen, je nach Sichtweise.'],
+    'players:5': ['Eine ganze Gesellschaft! Ich hole das gute Porzellan.', 'Viele Gäste. Die großen Häuser sind dankbar.'],
+    'experience:new': ['Frisches Blut. Ich werde behutsam sein… anfangs.', 'Keine Sorge, wir beginnen im am wenigsten verfluchten Flügel.'],
+    'experience:veteran': ['Ah, erfahrene Seelen. Ich habe etwas, das Ihnen den Schlaf rauben wird.', 'Veteranen. Dann steigen wir in die tiefsten Keller hinab.'],
+    'time:short': ['Etwas Kurzes. Ein schneller Schreck vor dem Zubettgehen.', 'Verstanden: Grauen im Taschenformat.'],
+    'time:night': ['Die ganze Nacht. Ich zünde mehr Kerzen an.', 'Bis zum Morgengrauen also. Ich sage dem Hahn, er soll schweigen.'],
+    'style:story': ['Geschichten… ich habe sie in Leder gebunden. Fragen Sie nicht, wessen.', 'Eine gute Erzählung. Wie die des alten Lovecraft.'],
+    'style:action': ['Action! Ich hole Großvaters Flinte.', 'Monster also. Ich schärfe den Schürhaken.'],
+    'style:mystery': ['Ein Mysterium. Nichts geht darüber, jeden zu verdächtigen.', 'Rätsel… mein liebster Zeitvertreib nach dem Graben.'],
+    'format:saga': ['Eine Saga. Sie werden Nacht für Nacht wiederkehren, wie die ruhelosen Toten.'],
+    any: ['Ich verstehe.', 'Gewiss, gnädiger Herr.', 'Eine ausgezeichnete Wahl.', 'Hmm… ja, ja.', 'Notiert, mit meiner feinsten Tinte.', 'Sehr wohl.'],
+  },
+  results: [
+    'Ich habe die staubigsten Regale durchsucht. Diese drei Geschichten erwarten Sie:',
+    'Ich glaube, ich habe genau das Richtige. Sehen Sie sich diese drei an, gnädiger Herr:',
+    'Ah, ja. Diese drei werden Sie ordentlich erzittern lassen:',
+    'Von allen Schrecken der Bibliothek würde ich diese drei wählen:',
+  ],
+  resultsFew: ['Für einen so anspruchsvollen Geschmack sind die Geschichten rar, aber dies habe ich gefunden:'],
+  resultsNone: [
+    'Ich fürchte, Sie kennen bereits jeden Schrecken, den Sie suchten, gnädiger Herr. Fragen Sie mich nach etwas anderem.',
+    'Keine Geschichte passt… Vielleicht fehlen Ihrer Sammlung Erweiterungen, oder Sie haben sie alle erlebt.',
+  ],
+  goThere: 'Bring mich hin',
+  askAgain: 'Frag mich noch einmal',
+  thanks: 'Danke, Igor',
+  farewell: [
+    'Angenehme Albträume, gnädiger Herr.',
+    'Ich begleite Sie zur Tür… nein, nicht dort entlang. Hier entlang. Folgen Sie mir!',
+    'Kommen Sie bald wieder. Wir laufen nicht davon.',
+    'Gute Nacht. Und öffnen Sie bitte nicht die Kellertür, ich flehe Sie an.',
+    'Mögen die Großen Alten Ihnen gewogen sein.',
+  ],
+  why: {
+    players: 'für {0} Spieler',
+    minutes: 'etwa {0} Min.',
+    tags: {
+      beginners: 'für den Einstieg',
+      narrative: 'sehr erzählerisch',
+      combat: 'mit Kampf',
+      deduction: 'ein Krimi',
+      puzzles: 'mit Rätseln',
+      campaign: 'Teil einer Saga',
+      replayable: 'wiederspielbar',
+      short: 'kurz',
+      long: 'lang',
+      hard: 'anspruchsvoll',
+    },
+  },
+  close: 'Schließen',
+};

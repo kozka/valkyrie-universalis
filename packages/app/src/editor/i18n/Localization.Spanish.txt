@@ -1,0 +1,678 @@
+.,Spanish
+EDITOR_DEV_ONLY,Solo en desarrollo: el editor aún no está listo y la app publicada no lo tiene.
+EDITOR_PREVIEW_NOTE,Fase muy temprana: el editor aún no está listo. Úsalo solo para probarlo, no como herramienta final.
+EDITOR_NONE,Aún no hay escenarios en el editor. Haz uno nuevo, copia uno o impórtalo.
+EDITOR_FOLDER,Carpeta: {0}
+EDITOR_OPEN,Abrir
+EDITOR_IMPORT_FILE,Importar un escenario o un zip
+EDITOR_IMPORT_FOLDER,Importar una carpeta
+EDITOR_IMPORTED,{0} añadido al editor.
+EDITOR_IMPORT_NO_QUEST,{0} no tiene quest.ini: no es un escenario.
+EDITOR_IMPORT_FAILED,No se pudo leer {0}: {1}
+EDITOR_EXPORT,Exportar
+EDITOR_APART_DOOM,Misiones de DooM, que se editan desde su menú: {0}.
+EDITOR_APART_DESCENT,Aventuras de Descent, que se editan desde su menú: {0}.
+EDITOR_ADVENTURES,Aventuras:
+EDITOR_ADVENTURES_OF,Las aventuras de {0}
+EDITOR_ADVENTURES_COUNT,Una campaña; aventuras: {0}
+EDITOR_ADVENTURES_N,Aventuras ({0})
+EDITOR_NEW_ADVENTURE,Nueva aventura
+EDITOR_NEW_ADVENTURE_OF,Nueva aventura de {0}
+EDITOR_CAMPAIGN,Campaña:
+EDITOR_ADVENTURE_PACKAGE,Una aventura se empaqueta y se exporta con su campaña.
+EDITOR_DELETE_CONFIRM,¿Borrar «{0}» y todos los ficheros de su carpeta? No se puede deshacer.
+EDITOR_DELETED,{0} borrado.
+EDITOR_COPIED,Copiado en {0}.
+EDITOR_PACKAGE_READY,Paquete de {0} listo: el escenario, su manifiesto y su portada, como los hace el editor de Valkyrie.
+EDITOR_PACKAGE_FAILED,No se pudo hacer el paquete.
+EDITOR_SAVED,Guardado.
+EDITOR_SAVE_REFUSED,No se ha guardado: estos textos no se leerían igual: {0}
+EDITOR_FILES,Ficheros
+EDITOR_FILE_SIZE,{0} KB
+EDITOR_PROBLEMS,Problemas
+EDITOR_BREAKS,Rompen Valkyrie ({0})
+EDITOR_WRONG,No harán lo que quería el autor ({0})
+EDITOR_HINTS,Sugerencias ({0})
+EDITOR_NO_PROBLEMS,No se ha encontrado nada.
+EDITOR_CANNOT_OPEN,Tampoco lo abre el editor de Valkyrie: {0}
+EDITOR_COMPONENTS_LIST,Componentes
+EDITOR_DOT_BREAKS,Rompe Valkyrie
+EDITOR_DOT_WRONG,No hará lo que quería el autor
+EDITOR_NEW_COMPONENT,Nuevo {0}
+EDITOR_RENAME_STEP,Renombrar {0}
+EDITOR_MOVE_STEP,Mover {0}
+EDITOR_ROTATE_STEP,Girar {0}
+EDITOR_SOURCE_STEP,Fichero de {0}
+EDITOR_COMMENT_STEP,Comentario de {0}
+EDITOR_DELETE_STEP,Borrar {0}
+EDITOR_DELETE_COMPONENT_CONFIRM,¿Borrar {0}? Lo que lo nombra deja de nombrarlo.
+EDITOR_NEW_FILE,Fichero nuevo
+EDITOR_LEADS_TO,Lleva a
+EDITOR_REACHED_FROM,Se llega desde
+EDITOR_LINK_BUTTON,botón
+EDITOR_LINK_ADD,añade
+EDITOR_LINK_REMOVE,quita
+EDITOR_LINK_HERO,héroes de
+EDITOR_LINK_DEFEATED,al ser derrotado
+EDITOR_LINK_MONSTER,monstruo
+EDITOR_LINK_PLACEMENT,casilla
+EDITOR_LINK_ACTIVATION,activación
+EDITOR_LINK_EVADE,evadir
+EDITOR_LINK_HORROR,horror
+EDITOR_LINK_INSPECT,inspeccionar
+EDITOR_LINK_ITEM,objeto
+EDITOR_LINK_QUEST,aventura siguiente
+EDITOR_LINK_TEXT,texto
+EDITOR_FORMAT,Formato
+EDITOR_LANGUAGES,Idiomas
+EDITOR_DEFAULT_LANGUAGE,Idioma por defecto
+EDITOR_PREVIOUS,Volver a lo elegido antes
+EDITOR_REDO,Rehacer
+EDITOR_UNSAVED,Sin guardar
+EDITOR_LEAVE_UNSAVED,Hay cambios sin guardar. ¿Salir igualmente?
+EDITOR_RELOAD_UNSAVED,Hay cambios sin guardar, y Recargar vuelve a leer los ficheros sin ellos. ¿Recargar igualmente?
+EDITOR_LEAVE,Salir
+EDITOR_SAVE_UNSTABLE,No se ha guardado: leído otra vez, {0} no salía como se escribió, así que los ficheros siguen como estaban. Tus cambios siguen aquí.
+EDITOR_PACKAGE_BREAKS,Problemas que rompen Valkyrie: {0}. Quien juegue el paquete se los encontrará. ¿Crearlo igualmente?
+EDITOR_VERSIONS,Versiones
+EDITOR_NO_VERSIONS,Aún no hay versiones: se guarda una cada vez que guardar cambia los ficheros.
+EDITOR_RESTORE,Restaurar
+EDITOR_RESTORE_CONFIRM,¿Volver a la versión del {0}? Los ficheros de ahora se guardan antes como otra versión.
+EDITOR_RESTORE_UNSAVED,Hay cambios sin guardar, y volver a la versión del {0} los pierde. Los ficheros de ahora se guardan antes como otra versión. ¿Restaurar igualmente?
+EDITOR_RESTORED,De vuelta a la versión del {0}.
+EDITOR_DRAFT,Hay cambios sin guardar del {0}: el editor se cerró sin guardarlos.
+EDITOR_DRAFT_RECOVER,Recuperarlos
+EDITOR_DRAFT_DROP,Descartarlos
+EDITOR_DRAFT_FAILED,No se pudieron cargar los cambios sin guardar.
+EDITOR_RECOVER_STEP,Recuperar los cambios sin guardar
+EDITOR_TEXT_MODE,Modo texto
+EDITOR_FLAT,Sin grupos: todas las partes seguidas
+EDITOR_FULLSCREEN,Pantalla completa
+EDITOR_MAP_CREATE,Crear aquí
+EDITOR_TEXT_HINT,Sus líneas como las tienen los ficheros de Valkyrie. Lo que escribas aquí se lee como lee Valkyrie sus ficheros: las claves que no conoce no se guardan.
+EDITOR_TEXT_SECTION_LABEL,Su sección del .ini
+EDITOR_TEXT_TEXTS_LABEL,Sus textos en
+EDITOR_TEXT_APPLY,Aplicar
+EDITOR_TEXT_RESET,Volver a como está
+EDITOR_TEXT_STEP,Texto de {0}
+EDITOR_TEXT_HEADER,La primera línea tiene que ser [{1}] (línea {0}). El nombre se cambia con Renombrar.
+EDITOR_TEXT_SECTION,Solo una sección: la línea {0} empieza otra. Otro componente se hace con Nuevo.
+EDITOR_TEXT_KEY,Línea {0} de los textos: cada una es {1}.algo,texto.
+EDITOR_TEXT_LOAD,Así no: Valkyrie no lo cargaría, o se pararía al dibujarlo (un lado de loseta que no existe, por ejemplo). Queda como estaba.
+EDITOR_TEXT_FIXED,Línea {0}: lo pone el editor al guardar, y aquí no se cambia.
+EDITOR_EDIT_STEP,Cambiar {0}
+EDITOR_GROUP_GENERAL,General
+EDITOR_GROUP_SPECIAL,Especiales
+EDITOR_GROUP_NEW,Nuevos
+EDITOR_GROUP_FFG,Del juego
+EDITOR_GROUP_ADVENTURES,Pasar a otra aventura de la campaña
+EDITOR_GO_TO,Ir a {0}
+EDITOR_ADD_VARIABLE,Añadir una variable
+EDITOR_BUTTON_LABEL,Texto del botón {0}
+EDITOR_CONDITION,Condición
+EDITOR_NEXT_EVENT,Evento del botón {0}
+EDITOR_CONDITION_FAILED,Si la condición no se cumple
+EDITOR_ADD_BUTTON,Añadir un botón
+EDITOR_REMOVE_BUTTON,Quitar el botón {0}
+EDITOR_CHOOSE,Elegir…
+EDITOR_SEARCH_CHOICES,Buscar por nombre o ID
+EDITOR_SORT_BY_NAME,Ordenar por nombre
+EDITOR_LEAVE_OUT,Dejar fuera {0}
+EDITOR_NO_CHOICES,Con estos filtros no queda nada.
+EDITOR_TAKEN,ya está en el tablero
+EDITOR_REMOVE_PACK,Quitar {0}
+EDITOR_TEXT_INSTEAD,Texto en su lugar
+EDITOR_UI_PREVIEW,Dónde cae en una pantalla 16:9
+EDITOR_UI_TEXT,Texto
+EDITOR_MONSTER_N,Monstruo {0}
+EDITOR_ADD_MONSTER,Añadir un monstruo
+EDITOR_PLACE_N,Casilla {1} para {0} héroes
+EDITOR_ADD_PLACE,Añadir una casilla para {0} héroes
+EDITOR_ONE_HERO,1 héroe
+EDITOR_PLACE_N_ONE,Casilla {0} para 1 héroe
+EDITOR_ADD_PLACE_ONE,Añadir una casilla para 1 héroe
+EDITOR_ITEM_N,Objeto {0}
+EDITOR_ADD_ITEM,Añadir un objeto
+EDITOR_SOLUTION_WRONG,Tienen que ser {0} números del 1 al {1}, separados por espacios. El puzle se queda sin solución propia.
+EDITOR_SET_OWN,Propio…
+EDITOR_NO_BASE,Sin base
+EDITOR_OLD_ACTIVATIONS,Una lista antigua de activaciones, que el editor de Valkyrie aún lee: solo se pueden quitar.
+EDITOR_ACTIVATION_N,Activación {0}
+EDITOR_ADD_ACTIVATION,Añadir una activación
+EDITOR_ADD_ATTACK,Añadir un ataque: {0}
+EDITOR_ATTACK_KIND,Ataques de un tipo
+EDITOR_SYMBOLS,Insertar un símbolo
+EDITOR_SHOW_IN_GAME,Verlo como en la partida
+EDITOR_FORMAT_TOOLS,Formato del texto
+EDITOR_BOLD,Negrita
+EDITOR_ITALIC,Cursiva
+EDITOR_COLOUR,Color del texto
+EDITOR_COLOUR_OTHER,Otro color
+EDITOR_CONDITION_OF,Condición del botón {0} de {1}
+EDITOR_PLACE_ON_MAP,Colocar en el mapa
+EDITOR_PLACING,Pulsa en el mapa…
+EDITOR_THEME,Colores del editor
+EDITOR_THEME_DUSK,Crepúsculo
+EDITOR_THEME_GRAPHITE,Grafito
+EDITOR_THEME_PAPER,Papel
+EDITOR_THEME_CONTRAST,Alto contraste
+EDITOR_PROBLEM_UNREACHED,Hoy nada llega a él, así que todavía no pasa.
+EDITOR_PROBLEM_MORE,Y {0} más como este.
+EDITOR_WHERE_SCENARIO,El escenario
+EDITOR_WHERE_TEXTS,Textos ({0})
+EDITOR_FIX_SLASHES,Escribirlo con /
+EDITOR_FIX_ADD_PACK,Pedir {0}
+EDITOR_FIX_UNHIDE,Que salga en la lista
+EDITOR_IGNORE,No avisar más
+EDITOR_UNIGNORE,Volver a avisar
+EDITOR_IGNORED,Sin avisar ({0})
+EDITOR_TREE,Árbol
+EDITOR_TREE_FROM_START,Desde el inicio
+EDITOR_TREE_DOWN,Adónde lleva {0}
+EDITOR_TREE_UP,Qué lleva a {0}
+EDITOR_TREE_TO_END,Solo el camino a un final
+EDITOR_TREE_TRIGGER,Activador: {0}
+EDITOR_TREE_STARTING_ITEMS,Objetos iniciales
+EDITOR_TREE_NO_START,Ningún evento tiene activador: no empieza nada.
+EDITOR_TREE_LOOSE,Sueltos ({0}): no llega nada a ellos, lo que no siempre es un error
+EDITOR_TREE_LOOP,otra vez: un bucle
+EDITOR_TREE_BUTTON,Botón {0}
+EDITOR_TREE_IF,si {0}
+EDITOR_TREE_SETS,pone {0}
+EDITOR_TREE_FINAL,Termina la partida
+EDITOR_TREE_SHOP,Abre la tienda ({0} objetos)
+EDITOR_TREE_SHOP_CLOSES,Cierra la tienda
+EDITOR_TREE_MISSING,{0} (no existe)
+EDITOR_TREE_OPEN,Abrir {0}
+EDITOR_TREE_CLOSE,Cerrar {0}
+EDITOR_TREE_CHOOSE,Elige un componente para ver adónde lleva y qué lleva a él.
+EDITOR_VARIABLES,Variables
+EDITOR_VAR_SEARCH,Buscar variables
+EDITOR_VAR_NONE,No hay variables.
+EDITOR_VAR_NAME,Variable
+EDITOR_VAR_WRITTEN,Se cambia en
+EDITOR_VAR_READ,Se lee en
+EDITOR_VAR_SHOWN,Se enseña en
+EDITOR_VAR_KIND_OWN,Del escenario
+EDITOR_VAR_KIND_TRIGGER,Lanza los eventos de su activador Var
+EDITOR_VAR_KIND_CAMPAIGN,Pasa de una aventura a la siguiente
+EDITOR_VAR_KIND_VALKYRIE,De Valkyrie
+EDITOR_VAR_KIND_READ_ONLY,De Valkyrie, solo de lectura
+EDITOR_VAR_HOW_TEST,condición
+EDITOR_VAR_HOW_BUTTON,condición de un botón
+EDITOR_VAR_HOW_QUOTA,cuota
+EDITOR_VAR_HOW_VALUE,valor de una operación
+EDITOR_VAR_HOW_OPERATION,operación
+EDITOR_TEXTS,Textos
+EDITOR_BOOK,Libro
+EDITOR_PANEL_TALLER,Panel más alto
+EDITOR_PANEL_SHORTER,Panel más bajo
+EDITOR_WRITING_IN,Escribes en
+EDITOR_WRITING_BAR,Escribes en {0}
+EDITOR_WRITING_BAR_DEFAULT,Escribes en {0}; idioma por defecto: {1}
+EDITOR_WRITING_NOW,Ahora escribes en {0}.
+EDITOR_WRITING_HINT,Las fichas escriben en el idioma de la app, como en Valkyrie, así que también se cambia en Opciones.
+EDITOR_WRITING_NEW,Escribes en {0} y el escenario no tiene textos en {0}: lo que escribas en las fichas irá a un idioma nuevo, y quien juegue en {1} seguirá leyendo lo que había.
+EDITOR_WRITE_IN,Escribir en {0}
+EDITOR_SEE_TEXTS,Ver los textos
+EDITOR_DEFAULT_LANGUAGE_HINT,El idioma por defecto es el que lee quien juega en un idioma que el escenario no tiene.
+EDITOR_DEFAULT_LANGUAGE_STEP,Idioma por defecto: {0}
+EDITOR_TEXTS_SEARCH,Buscar textos
+EDITOR_TEXTS_ONLY_MISSING,Solo lo que falta
+EDITOR_TEXTS_TWO,Solo el idioma por defecto y el que escribes
+EDITOR_TEXTS_ADD_LANGUAGE,Añadir un idioma…
+EDITOR_TEXTS_KEY,Clave ({0} textos)
+EDITOR_TEXTS_DEFAULT,por defecto
+EDITOR_TEXTS_LACKS,faltan {0}
+EDITOR_TEXTS_MISSING,falta
+EDITOR_TEXTS_EDIT,{0} en {1}
+EDITOR_TEXTS_NO_OWNER,(ningún componente se llama así)
+EDITOR_TEXTS_NONE,No hay textos que enseñar.
+EDITOR_TEXTS_STEP,Texto {0} en {1}
+EDITOR_TEXT_FROM,Falta en {0}: es el texto en {1}.
+EDITOR_BOOK_LANGUAGE,Como se juega en {0}, en el orden del árbol de eventos.
+EDITOR_BOOK_SILENT,Sin diálogo
+EDITOR_BOOK_ADDS,Pone en el mapa:
+EDITOR_BOOK_EMPTY,Aún no hay nada que leer.
+EDITOR_SHOW_MORE,Ver más (quedan {0})
+EDITOR_FEWER,Menos: {0}
+EDITOR_MORE,Más: {0}
+EDITOR_TEST,Prueba
+EDITOR_TEST_HIDE,Ocultar
+EDITOR_TEST_EVENTS,Eventos, el último primero
+EDITOR_TEST_NO_EVENTS,Aún no ha empezado ningún evento.
+EDITOR_TEST_OPEN,Volver al editor, a {0}
+EDITOR_TEST_ROUND,ronda {0}
+EDITOR_TEST_BY_TRIGGER,activador {0}
+EDITOR_TEST_BY_BUTTON,botón {0} de {1}
+EDITOR_TEST_BY_BUTTON_RANDOM,botón {0} de {1}, al azar
+EDITOR_TEST_BY_BOARD,pulsado en el tablero
+EDITOR_TEST_BY_OTHER,otra cosa: un monstruo, un objeto…
+EDITOR_TEST_NEW_VAR,Variable nueva
+EDITOR_TEST_NEW_VALUE,Su valor
+EDITOR_TEST_SET,Poner
+EDITOR_TEST_CHANGES,Pasa a {0}
+EDITOR_TEST_IN,en {0}
+EDITOR_TEST_CAMPAIGN,la campaña
+EDITOR_TEST_ADVENTURE,Una aventura de una campaña probada sola: lo que dejan las de antes (sus variables % y $%: oro, fama…) no está; ponlo en Variables.
+PROBLEM_ACTIVATION_ABILITY_HERO,En Descent, {0} en la capacidad de una activación es un héroe al azar y {1} el monstruo: al revés que en Mansiones.
+PROBLEM_ACTIVATION_ALL_TESTED,Todas sus activaciones propias tienen condiciones y no tiene ninguna oficial: en una ronda en que fallen todas, Valkyrie se para al activar el monstruo.
+PROBLEM_ACTIVATION_BOTH_FIRST,Van primero el maestro y los esbirros a la vez: van primero los esbirros.
+PROBLEM_ACTIVATION_EMPTY,Ni las acciones del maestro ni las de los esbirros tienen texto: la ventana de activación sale vacía.
+PROBLEM_ACTIVATION_EVENT_D2E,Su activación {value} es un evento: en Descent una activación es una [Activation…] o una oficial, y Valkyrie se para al activar el monstruo.
+PROBLEM_ACTIVATION_EVENT_MISSING,Su activación es el evento {target}, que no existe: Valkyrie se para al activar el monstruo.
+PROBLEM_ACTIVATION_EVENT_MIXED,Sus activaciones mezclan un evento con otros nombres: un evento solo se usa si va solo, así que aquí todos se leen como activaciones de texto.
+PROBLEM_ACTIVATION_MISSING,Estas activaciones no están ni en el escenario ni entre las oficiales: {value}. Valkyrie las deja fuera y elige entre las demás.
+PROBLEM_ACTIVATION_NO_ABILITY,La activación no tiene capacidad, el texto de arriba de su ventana.
+PROBLEM_ACTIVATION_NONE_VALID,No existe ninguna de sus activaciones ({value}), ni en el escenario ni entre las oficiales: Valkyrie se para al activar el monstruo.
+PROBLEM_ACTIVATION_NONE_VALID_UNUSED,No existe ninguna de sus activaciones ({value}): ahora ningún generador saca este monstruo, pero si alguno lo sacara, Valkyrie se pararía al activarlo.
+PROBLEM_ACTIVATION_WITH_PREFIX,La activación {value} lleva el prefijo: Valkyrie le pone Activation delante y no la encuentra. Escríbela sin el prefijo.
+PROBLEM_ADD_MISSING,Añade {target}, que no existe: Valkyrie se para al saltar el evento.
+PROBLEM_ADD_NOT_BOARD,Añade {target}, que es un {type} y no puede ir al tablero: Valkyrie lo deja fuera.
+PROBLEM_ADD_OPENS_SHOP,Añade {count} objetos de escenario: en Descent eso abre la tienda, y los objetos no se entregan.
+PROBLEM_ADD_REMOVE_ITEM,Entrega y quita {targets} en el mismo evento: el objeto no se queda en el inventario.
+PROBLEM_ADD_REMOVE_SAME,Añade y quita {targets} en el mismo evento: Valkyrie los añade y luego los quita.
+PROBLEM_ADD_SEVERAL_ITEMS,Entrega {count} objetos de escenario en un mismo evento: se dan todos, pero no se ve la carta de ninguno. Da uno por evento.
+PROBLEM_ADD_SPAWN,Añade el generador {target}: un generador no se añade (Valkyrie lo deja fuera), sino que se lanza desde un botón o un activador.
+PROBLEM_ATTACK_FORMAT,El ataque {value} no es tipo:número: Valkyrie no puede leer su número y se para.
+PROBLEM_ATTACK_NO_TEXT,Falta el texto del ataque {key}: en su lugar se ve la clave.
+PROBLEM_ATTACK_TYPE,{value} no es un tipo de ataque: heavy, bladed, firearm, spell o unarmed.
+PROBLEM_BUTTON_COLOR,El color del botón, {value}, no es #RRGGBB ni un color que conozca Valkyrie.
+PROBLEM_BUTTON_LABEL_IN_INI,{key} está escrito en el .ini: un editor lo pierde al guardar. Pon el texto del botón entre los textos.
+PROBLEM_BUTTON_NO_LABEL,El botón {button} no tiene texto: en él se ve la clave.
+PROBLEM_BUTTONS_NOT_INTEGER,buttons={value} no es un número entero: Valkyrie no puede cargar el escenario.
+PROBLEM_COMPONENT_TWICE,Está definido dos veces, en {first} y en {second}: Valkyrie no puede cargar el escenario.
+PROBLEM_CONDITION_ACTION_ALONE,{key} no tiene una condición sobre la que actuar: no hace nada.
+PROBLEM_CONDITION_ACTION_UNKNOWN,{value} no es lo que hace un botón cuando falla su condición (none, disable o hide): Valkyrie no puede cargar el escenario.
+PROBLEM_CONDITIONS_IGNORED,Tiene conditions y vartests a la vez: Valkyrie solo lee vartests.
+PROBLEM_CONDITIONS_OLD,Sus condiciones están escritas como conditions, a la antigua: Valkyrie las lee, y al guardar se escriben como vartests.
+PROBLEM_COVER_MISSING,La imagen de portada {name} no está.
+PROBLEM_COVER_NONE,El escenario no tiene imagen de portada.
+PROBLEM_COVER_SPACES,El nombre de la imagen de portada, {name}, tiene espacios: el paquete no la encontrará.
+PROBLEM_CUSTOM_IMAGE_BACKSLASH,{value} está escrito con \: solo lo encuentra Windows. Escribe / en su lugar.
+PROBLEM_CUSTOM_IMAGE_BACKSLASH_TILE,La imagen de la loseta, {value}, está escrita con \: solo la encuentra Windows, y en los demás sistemas Valkyrie se para al dibujar la loseta. Escribe / en su lugar.
+PROBLEM_DATA_FILE_MISSING,[QuestData] nombra {file}, que no está: Valkyrie no puede cargar el escenario.
+PROBLEM_DEFAULT_LANGUAGE_MISSING,No hay idioma por defecto (defaultlanguage): Valkyrie toma el inglés.
+PROBLEM_DEFAULT_LANGUAGE_NO_FILE,No hay fichero de textos en el idioma por defecto, {value}: Valkyrie no puede enseñar los textos del escenario.
+PROBLEM_DEFAULT_LANGUAGE_UNKNOWN,{value} no es un idioma de Valkyrie.
+PROBLEM_DIFFICULTY_NOT_NUMBER,La dificultad, {value}, no es un número (con punto decimal).
+PROBLEM_DIFFICULTY_RANGE,La dificultad, {value}, tiene que ir de 0 a 1.
+PROBLEM_DOOR_COLOR,El color de la puerta, {value}, no es #RRGGBB ni un color que conozca Valkyrie: la puerta sale blanca.
+PROBLEM_END_NO_ELIMINATED,Ningún evento tiene el activador Eliminated: si eliminan a un investigador, no hay final.
+PROBLEM_END_NO_TIME_LIMIT,Ningún final llega con las rondas: a los investigadores nunca se les acaba el tiempo.
+PROBLEM_END_NONE,Ningún evento termina la partida ($end,=,1): la partida no se acaba nunca sola.
+PROBLEM_EVENT_BEYOND_BUTTONS,{key} queda más allá de sus {buttons} botones: Valkyrie nunca lo lee.
+PROBLEM_EVENT_LIST_FIRST,{key} lista {count} eventos: solo salta el primero que puede.
+PROBLEM_EVENT_MISSING,Sigue con {target}, que no existe: Valkyrie se lo salta.
+PROBLEM_EVENT_NO_TEXT,Enseña un diálogo sin texto.
+PROBLEM_EVENT_NOT_EVENT,Sigue con {target}, que es un {type} y no un evento: Valkyrie lo deja fuera.
+PROBLEM_FILE_LETTER_CASE,Nombra {file}, pero el fichero es {actual}: solo lo encuentra Windows.
+PROBLEM_FOLDER_DEFAULT_NAME,La carpeta se llama {folder}: ponle un nombre propio, o puede chocar con otros escenarios.
+PROBLEM_FOLDER_SPACES,El nombre de la carpeta, {folder}, tiene espacios: el paquete de Valkyrie no funcionará.
+PROBLEM_FORMAT_MISSING,Falta format=: Valkyrie no enseña el escenario en la lista.
+PROBLEM_FORMAT_NOT_NUMBER,format={value} no es un número: Valkyrie no enseña el escenario en la lista.
+PROBLEM_FORMAT_OUT_OF_RANGE,format={value} está fuera de lo que lee Valkyrie (de {min} a {max}): no enseña el escenario en la lista.
+PROBLEM_HERO_EVENT_MISSING,Enseña los héroes que eligió el evento {target}, que no existe.
+PROBLEM_HEROES_MAX_D2E,Hasta {value} héroes: Descent tiene 4 como mucho.
+PROBLEM_HEROES_MIN_OVER_MAX,Al menos {min} héroes y como mucho {max}: no cabe ningún número, y Valkyrie no puede empezarlo.
+PROBLEM_HEROES_MIN_UNDER_ONE,Al menos {value} héroes: Valkyrie toma 1.
+PROBLEM_HEROES_NOT_NUMBER,El número de héroes no es un número entero: Valkyrie no puede cargar el escenario.
+PROBLEM_HIDDEN,El escenario está oculto: no saldrá en la lista. Solo se ocultan las otras aventuras de una campaña.
+PROBLEM_INI_DATA_OUTSIDE,Hay líneas antes de la primera sección: Valkyrie no las lee.
+PROBLEM_INI_KEY_REPEATED,{key} está escrito dos veces en {file}: Valkyrie se queda con el primero.
+PROBLEM_INI_SECTION_EMPTY_NAME,Una sección no tiene nombre ([]): Valkyrie no la lee.
+PROBLEM_INI_SECTION_REPEATED,La sección [{section}] está dos veces en el fichero: Valkyrie se queda con la primera.
+PROBLEM_INI_SPACE_LINE,La línea {line} solo tiene espacios: Valkyrie no puede cargar el escenario.
+PROBLEM_ITEM_DRAWN_BEFORE,Puede sacar {item}, que ya da {other}: si lo saca ({percent} %), los investigadores lo tienen dos veces.
+PROBLEM_ITEM_INSPECT_MISSING,Su evento al inspeccionarlo, {target}, no existe.
+PROBLEM_ITEM_NEVER_GIVEN,Ningún evento entrega este objeto.
+PROBLEM_ITEM_NO_STARTING,No dice si es un objeto inicial (starting=): Valkyrie lo entrega al empezar. Dilo en un sentido o en otro.
+PROBLEM_ITEM_NONE_EXISTS,No existe ninguno de sus objetos ({value}): Valkyrie se para al entregarlo.
+PROBLEM_ITEM_NOTHING,No tiene ni objetos ni atributos: no se saca nada.
+PROBLEM_ITEM_PACK_UNDECLARED,{value} es de {pack}, que el escenario no pide: quien no lo tenga no lo recibe.
+PROBLEM_ITEM_STARTING_ITEM,StartingItem es el nombre antiguo: Valkyrie lo lee como un objeto de escenario.
+PROBLEM_ITEM_TESTS_NOT_STARTING,Tiene condiciones pero no es un objeto inicial: Valkyrie solo las lee en los objetos iniciales.
+PROBLEM_ITEM_TRAITS_NONE,Ningún objeto de los packs que pide tiene esos atributos ({traits}): no se saca nada.
+PROBLEM_ITEM_TWICE,Da {item}, que ya da {other}: en el inventario solo cabe uno de cada.
+PROBLEM_ITEM_UNKNOWN,{value} no es un objeto.
+PROBLEM_KEY_CONDITION_CASE,{key} no está escrito como lo escribe Valkyrie (eventNCondition): Valkyrie se para al leerlo.
+PROBLEM_KEY_LETTER_CASE,{key} no está escrito como {fix}: Valkyrie no lo lee, y al guardar se pierde.
+PROBLEM_KEY_UNKNOWN,{key} no es una clave de un {type}: Valkyrie no la lee, y al guardar se pierde.
+PROBLEM_LENGTH_MISSING,El escenario no dice cuánto dura (lengthmin y lengthmax, en minutos).
+PROBLEM_MEDIA_LETTER_CASE,Nombra {name}, pero el fichero es {actual}: solo lo encuentra Windows.
+PROBLEM_MEDIA_MISSING,{name} no es un fichero del escenario ni una imagen o un sonido de los packs: no se ve ni se oye.
+PROBLEM_MEDIA_MISSING_FATAL,{name} no es un fichero del escenario ni una imagen de los packs: Valkyrie se para al dibujarlo.
+PROBLEM_MEDIA_NOT_IN_PACKS,{name} no es una imagen ni un sonido de los packs que pide el escenario.
+PROBLEM_MEDIA_PICTURE_FORMAT,{name} no es una imagen .png o .jpg: puede que Valkyrie no la enseñe.
+PROBLEM_MEDIA_SOME_LANGUAGES,{name} solo está en las carpetas de algunos idiomas ({languages}): quien juegue en otro no lo tiene.
+PROBLEM_MEDIA_SOUND_NOT_OGG,{name} no es un sonido .ogg: Valkyrie no puede reproducirlo.
+PROBLEM_MEDIA_SPACES,El nombre {name} tiene espacios: en una lista de sonidos se parte.
+PROBLEM_MONSTER_BASE_UNKNOWN,Su base, {value}, no es un monstruo del juego.
+PROBLEM_MONSTER_EVENT_MISSING,Su {key}, {target}, no existe: Valkyrie usa la tirada de siempre.
+PROBLEM_MONSTER_FIGURES,{count} generadores sacan {monster}, y el juego tiene {figures} figuras de él.
+PROBLEM_MONSTER_HEALTH_NOT_NUMBER,{key}={value} no es un número.
+PROBLEM_MONSTER_IMAGE_MISSING,Su imagen {name} ({key}) no está en la carpeta del escenario: Valkyrie se para al enseñar el monstruo.
+PROBLEM_MONSTER_KEY_MOM_ONLY,{key} es una clave de Mansiones: Descent no la usa.
+PROBLEM_MONSTER_NO_ACTIVATION,No tiene base ni activaciones: Valkyrie se para al activar el monstruo.
+PROBLEM_MONSTER_NO_ACTIVATION_UNUSED,No tiene base ni activaciones: ahora ningún generador lo saca, pero si alguno lo sacara, Valkyrie se pararía al activarlo.
+PROBLEM_MONSTER_NO_CATEGORY,No tiene base ni un tipo entre sus atributos (humanoid, beast, spirit…): los investigadores no tienen ataques contra él.
+PROBLEM_MONSTER_NO_NAME,No tiene base ni nombre propio.
+PROBLEM_MONSTER_NO_TRAITS,No tiene base ni atributos: se coloca como una casilla y nunca sale en un sorteo por atributos.
+PROBLEM_MORALE_NO_DEFEAT,Ningún evento tiene el activador NoMorale: si se acaba la moral, no pasa nada.
+PROBLEM_MORALE_REPEATS,No termina la partida ni devuelve moral: mientras la moral siga por debajo de 0, vuelve a saltar tras cada evento.
+PROBLEM_MPLACE_BOOL,{key}={value} no es ni true ni false.
+PROBLEM_MPLACE_UNUSED,Ningún generador coloca aquí sus monstruos.
+PROBLEM_MUSIC_SPACES,Su música tiene un nombre de fichero con espacios: la lista lo parte, y la música no suena.
+PROBLEM_MYTHOS_NO_INTENSITY,Los eventos de Mitos nunca dicen cuánto pegan ($mythosMinor, $mythosMajor, $mythosDeadly…).
+PROBLEM_MYTHOS_NONE,Ningún evento pone una variable de Mitos ($mythos…): la fase de Mitos solo saca los eventos generales.
+PROBLEM_NEVER_ADDED,Ningún evento lo pone en el tablero: nunca se ve.
+PROBLEM_NEVER_RUN,Nada lo lanza: no llega a él ningún activador, botón ni ficha.
+PROBLEM_OPERATION_EXTRA_PARTS,{value} tiene más de tres partes: Valkyrie usa las tres primeras.
+PROBLEM_OPERATION_OPERATOR,{value}: {op} no es una operación (=, +, -, *, / o %).
+PROBLEM_OPERATION_PARTS,{value} no tiene sus tres partes (variable, operación y valor): Valkyrie no puede cargar el escenario.
+PROBLEM_OPERATION_READ_ONLY,{value}: {variable} solo se puede leer; la operación no hace nada.
+PROBLEM_PACK_BASE,{pack}, el juego base, no hace falta pedirlo.
+PROBLEM_PACK_COMMUNITY,Pide {pack}, un pack de la comunidad: el jugador lo baja en Mi Colección.
+PROBLEM_PACK_CONVERSION_KIT,{pack} es de un kit de conversión: mejor pedir las cajas de la primera edición que convierte.
+PROBLEM_PACK_UNDECLARED,Usa {pack} ({components}) sin pedirlo: quien no lo tenga se queda sin esa parte.
+PROBLEM_PACK_UNDECLARED_CONTENT,{name} es de {pack}, que el escenario no pide: quien no lo tenga se queda sin ello.
+PROBLEM_PACK_UNDECLARED_TESTED,Usa {pack} ({components}) sin pedirlo, y comprueba si el jugador lo tiene (#{pack}).
+PROBLEM_PACK_UNKNOWN,{pack} no es un pack que conozca Valkyrie: el escenario no se puede elegir.
+PROBLEM_PACKAGE_ENGLISH,{count} aventuras de la campaña no tienen textos en inglés ({example}, en {language}): tras un cambio de aventura, Valkyrie lee el idioma del jugador y el inglés, no el de la aventura.
+PROBLEM_PACKAGE_ENGLISH_MISSING,A {count} aventuras de la campaña les faltan textos en inglés ({example}: {texts}, como {key}): tras un cambio de aventura, quien juegue en otro idioma ve sus claves.
+PROBLEM_PACKAGE_FAME,Se sortean objetos por fama ({items}), pero ningún evento pone los umbrales de fama: solo salen los legendarios.
+PROBLEM_PACKAGE_FAME_LOAD,Sus objetos se sortean por fama ({items}) al cargar la aventura, antes de que {events} pongan los umbrales: ponlos en una aventura anterior, o vuelve a sortear con $restock.
+PROBLEM_PACKAGE_NOT_REACHED,Ningún cambio de aventura lleva a esta aventura.
+PROBLEM_PLACEMENT_MASTERS,{key} tiene {count} casillas de maestro: un grupo tiene un maestro.
+PROBLEM_PLACEMENT_MISSING,{key} nombra {target}, que no existe: Valkyrie se para al colocar el grupo.
+PROBLEM_PLACEMENT_NOT_MPLACE,{key} nombra {target}, que no es una casilla de monstruo: Valkyrie se para al colocar el grupo.
+PROBLEM_PLACEMENT_OVER_FOUR,{key}: Descent tiene 4 héroes como mucho, así que nunca se usa.
+PROBLEM_POSITION_COMMA,{value} lleva coma decimal: Valkyrie lee 0. Usa un punto.
+PROBLEM_POSITION_NOT_NUMBER,{value} no es un número: Valkyrie lee 0.
+PROBLEM_POSITION_NOT_ON_SQUARE,{value} no cae en una casilla: en Descent las casillas tienen coordenadas enteras.
+PROBLEM_PUZZLE_CLASS,{value} no es un tipo de puzle (slide, code, image o tower): no se abre.
+PROBLEM_PUZZLE_CODE_IMAGE,La imagen de un código es symbol o element, no {value}.
+PROBLEM_PUZZLE_IMAGE_GRID,La imagen {image} está cortada para {grid}, y el puzle usa {used}.
+PROBLEM_PUZZLE_IMAGE_MISSING_D2E,Su imagen no está en la carpeta del escenario: Valkyrie se para al abrir el puzle.
+PROBLEM_PUZZLE_IMAGE_NONE,Un puzle de imagen sin imagen: Valkyrie se para al abrirlo.
+PROBLEM_PUZZLE_LEVEL_NOT_INTEGER,Su dificultad o sus alternativas no son números enteros: Valkyrie no puede cargar el escenario.
+PROBLEM_PUZZLE_NO_BUTTON,El botón del puzle no tiene texto.
+PROBLEM_PUZZLE_NO_EVENT,No pasa nada al resolverlo (event1).
+PROBLEM_PUZZLE_SKILL,{value} no es el símbolo de una habilidad ({lore}, {observation}…).
+PROBLEM_PUZZLE_SLIDE_ONE,Un puzle de deslizar de dificultad 1: Valkyrie se para al abrirlo.
+PROBLEM_PUZZLE_SOLUTION_LENGTH,La solución tiene {count} valores y el código {level}.
+PROBLEM_PUZZLE_SOLUTION_VALUE,{value} no es un valor del código: de 1 a {max}.
+PROBLEM_QUEST_CANNOT_LOAD,Valkyrie no puede cargarlo: {reason}
+PROBLEM_QUEST_CHANGE_MISSING,Cambia a {target}, que no está en el paquete (la ruta va desde la carpeta de la aventura principal).
+PROBLEM_QUEST_FILE_MISSING,No hay quest.ini.
+PROBLEM_QUEST_SECTION_MISSING,quest.ini no tiene sección [Quest]: Valkyrie no puede cargarlo.
+PROBLEM_QUEST_TEXT_MISSING,El escenario no tiene texto para {key}.
+PROBLEM_QUOTA_NO_SECOND_BUTTON,Una cuota con un solo botón: si no se alcanza, no pasa nada. Dale un segundo botón.
+PROBLEM_QUOTA_OVER_TEN,Cuota {value}: los investigadores pueden poner 10 como mucho cada vez, y se acumula entre intentos.
+PROBLEM_RANDOM_ONE_EVENT,{key} tiene un solo evento, y se elige al azar: no hay nada que elegir.
+PROBLEM_REMOVE_MISSING,Quita {target}, que no existe: no pasa nada.
+PROBLEM_REMOVE_SPECIAL_FORMAT,{target} necesita el formato 20 o más.
+PROBLEM_REMOVE_SPECIAL_UNKNOWN,{target} no es uno de los quitados especiales de Valkyrie: no pasa nada.
+PROBLEM_ROTATION_NOT_INTEGER,rotation={value} no es un número entero: Valkyrie no puede cargar el escenario.
+PROBLEM_ROTATION_NOT_RIGHT_ANGLE,rotation={value}: tiene que ser 0, 90, 180 o 270.
+PROBLEM_SECTION_UNKNOWN,Ningún componente se llama así al principio ({file}): Valkyrie no lo lee.
+PROBLEM_SHOP_NEVER_CLOSED,Se abre una tienda, pero ningún evento quita #shop: Valkyrie no la cierra nunca.
+PROBLEM_SILENT_NO_BUTTON,Un evento silencioso que sigue con {targets} sin botón (buttons=1): la cadena se corta aquí.
+PROBLEM_SILENT_SEVERAL_BUTTONS,Un evento silencioso con {buttons} botones y sin condiciones en ellos: siempre sigue por el primero.
+PROBLEM_SPAWN_HEALTH_NOT_NUMBER,{key}={value} no es un número.
+PROBLEM_SPAWN_MONSTER_NONE,No puede salir ninguno de sus monstruos ({value}): Valkyrie se para al sacar el grupo.
+PROBLEM_SPAWN_MONSTER_UNKNOWN,{value} no es un monstruo.
+PROBLEM_SPAWN_NO_DECLARED_MONSTER,Ninguno de sus monstruos ({value}) es de los packs que pide el escenario: quien no los tenga no recibe ninguno.
+PROBLEM_SPAWN_NO_MONSTER,No tiene monstruos ni atributos: Valkyrie se para al sacar el grupo.
+PROBLEM_SPAWN_NO_PLACE,No tiene sitio ni casillas de monstruo: no se marca nada en el tablero.
+PROBLEM_SPAWN_NO_POSITION,Tiene casillas de monstruo pero no sitio propio: Valkyrie solo dibuja las figuras de un generador con sitio.
+PROBLEM_SPAWN_PLACEMENT_HEROES,No tiene casillas de monstruo para {heroes} héroes: Valkyrie solo marca la zona del grupo.
+PROBLEM_SPAWN_SILENT,Es silencioso (display=false): el grupo entra en juego, pero Valkyrie no marca sus casillas.
+PROBLEM_SPAWN_SPAWN_MISSING,{value} no es un generador del escenario.
+PROBLEM_START_NONE,Ningún evento empieza el escenario (EventStart): no pasa nada al empezar.
+PROBLEM_START_SEVERAL,Varios eventos empiezan el escenario ({events}): su orden no es seguro. Deja uno y encadena los demás.
+PROBLEM_SUBQUEST_NOT_HIDDEN,Una aventura de la campaña sin ocultar: saldrá suelta en la lista.
+PROBLEM_TEST_COMPARISON,{value}: {op} no es una comparación (==, !=, >=, <=, > o <).
+PROBLEM_TEST_ITEM_UNKNOWN,{value} no es parte de una condición: Valkyrie no puede cargar el escenario.
+PROBLEM_TEST_NO_OPERATOR,Dos condiciones seguidas sin AND ni OR entre ellas.
+PROBLEM_TEST_OPERATOR_UNKNOWN,{value} no es AND ni OR: Valkyrie no puede cargar el escenario.
+PROBLEM_TEST_PARENTHESES_UNPAIRED,Sus condiciones abren y cierran un número distinto de paréntesis.
+PROBLEM_TEST_PARENTHESIS_UNKNOWN,{value} no es un paréntesis: Valkyrie no puede cargar el escenario.
+PROBLEM_TEXT_COMPONENT_MISSING,{key} enseña {name}, que no es un componente del escenario: la marca se ve tal cual.
+PROBLEM_TEXT_FFG_UNKNOWN,{key} busca {name}, que no está entre los textos oficiales que lee Valkyrie.
+PROBLEM_TEXT_FILE_HEADER,La primera línea ({line}) no es .,Idioma: Valkyrie toma su segunda parte como idioma.
+PROBLEM_TEXT_FILE_MISSING,[QuestText] nombra {file}, que no está: sus textos no se ven.
+PROBLEM_TEXT_FILE_UNCLOSED,Un texto abierto con ||| no se cierra nunca: Valkyrie mete el resto del fichero en un solo texto.
+PROBLEM_TEXT_KEY_MISSING,{key} busca {name}, que no está entre los textos del escenario.
+PROBLEM_TEXT_KEY_REPEATED,{key} está dos veces en el fichero: Valkyrie se queda con el primero.
+PROBLEM_TEXT_LINE_ENDINGS_MIXED,Mezcla finales de línea ({crlf} CRLF, {lf} LF, {cr} CR): Valkyrie junta líneas y pierde textos.
+PROBLEM_TEXT_LINE_NO_COMMA,Una línea sin coma ({line}): Valkyrie no la lee.
+PROBLEM_TEXT_LONG,{key} es largo ({length} letras): puede que no quepa en la ventana.
+PROBLEM_TEXT_MARK_UNCLOSED,{key} abre una búsqueda {{dict}: que nunca se cierra: Valkyrie se para al enseñar el texto.
+PROBLEM_TEXT_MARK_UNKNOWN,{key} tiene {{mark}}, que Valkyrie no cambia: se ve tal cual.
+PROBLEM_TEXT_RANDOM_HERO_BUTTON,{key}: un héroe al azar en un botón se vuelve a sortear cada vez que se abre la ventana.
+PROBLEM_TEXT_SYMBOL_D2E,{key} tiene {{mark}}, un símbolo de Descent: en Mansiones se ve tal cual.
+PROBLEM_TEXT_SYMBOL_MAD24,{key} tiene {MAD24}, que no está en la fuente de Valkyrie.
+PROBLEM_TEXT_SYMBOL_MOM,{key} tiene {{mark}}, un símbolo de Mansiones: en Descent se ve tal cual.
+PROBLEM_TEXTS_MISSING_LANGUAGE,Faltan en este idioma {count} textos de {language}: quien juegue en él los ve en {language}.
+PROBLEM_TEXTS_ORPHANS,{count} textos no son de ningún componente (como {example}).
+PROBLEM_TILE_BOTH_SIDES,Usa las dos caras de una misma pieza ({side} y {reverse}): no pueden estar a la vez en el tablero.
+PROBLEM_TILE_CUSTOM_IMAGE_FORMAT,La imagen propia de una loseta necesita el formato 21.
+PROBLEM_TILE_NO_SIDE,No tiene lado ni imagen propia: Valkyrie se para al colocar la loseta.
+PROBLEM_TILE_SIDE_TWICE,{side} está en {tiles}: la caja tiene una pieza.
+PROBLEM_TILE_SIDE_UNKNOWN,{side} no es un lado de loseta de los packs: Valkyrie se para al colocar la loseta.
+PROBLEM_TOKEN_FORMAT,El tamaño, la imagen propia o el clic de una ficha necesitan el formato 21.
+PROBLEM_TOKEN_NO_TYPE,No tiene tipo ni imagen propia: se dibuja como una ficha de búsqueda.
+PROBLEM_TOKEN_SIZE,{value} no es un tamaño: small, medium, huge, massive o un número.
+PROBLEM_TOKEN_TESTS_IGNORED,Las condiciones de una ficha no se leen: siempre se puede pulsar. Pon la condición en su botón o en el evento al que lleva.
+PROBLEM_TOKEN_TYPE_UNKNOWN,{value} no es una ficha: se dibuja como una ficha de búsqueda.
+PROBLEM_TRIGGER_DEFEATED_JOINED,{trigger}: {spawn} también trae {monster}, y en Descent un monstruo que sale cuando ya hay de los suyos en el tablero se junta con ese grupo, que se queda con el nombre del primero. Si el grupo de {spawn} está antes, esto nunca salta: un grupo aparte necesita otro monstruo o un monstruo propio.
+PROBLEM_TRIGGER_DEFEATED_UNIQUE_MOM,{trigger}: Mansiones no tiene monstruos únicos, así que nunca salta. Usa Defeated….
+PROBLEM_TRIGGER_DEFEATED_UNKNOWN,{trigger}: {name} no es un monstruo, un monstruo propio ni un generador, así que nunca salta.
+PROBLEM_TRIGGER_MOM_ONLY,{trigger} es un activador de Mansiones: en Descent nunca salta.
+PROBLEM_TRIGGER_UNKNOWN,{trigger} no es un activador: el evento nunca salta solo.
+PROBLEM_TYPE_WRONG,El escenario es del tipo {value}, no {game}: Valkyrie no lo enseña en la lista.
+PROBLEM_TYPE_WRONG_SUBQUEST,La aventura es del tipo {value}, no {game}.
+PROBLEM_UI_COLOR,{value} no es #RRGGBB ni un color que conozca Valkyrie: Valkyrie se para al dibujar el elemento.
+PROBLEM_UI_EMPTY,No tiene imagen ni texto: no se ve (vale como botón invisible).
+PROBLEM_UI_HALIGN,halign={value}: solo left o right; lo demás es el centro.
+PROBLEM_UI_STAYS,Nada lo quita: mientras esté en pantalla, la fase no puede terminar.
+PROBLEM_UI_STAYS_QUEST_CHANGE,Nada lo quita antes del cambio de aventura: mientras esté en pantalla, no se pueden pulsar los héroes.
+PROBLEM_UI_TEXT_ALIGNMENT,textAlignment={value}: TOP, CENTER o BOTTOM.
+PROBLEM_UI_VALIGN,valign={value}: solo top o bottom; lo demás es el centro.
+PROBLEM_UNIQUE_NO_TEXT,Un monstruo único sin texto: su ventana de información no enseña sus reglas.
+PROBLEM_UNIQUE_NO_TITLE,Un monstruo único con texto y sin título: su ventana de información enseña la clave.
+PROBLEM_UNIQUE_TITLE_UNUSED,Valkyrie titula a un monstruo único Maestro y su nombre, diga lo que diga su título.
+PROBLEM_UNREACHED_EVENTS,{count} eventos a los que no llega ningún activador, botón ni ficha: {events}.
+PROBLEM_VAR_BUILTIN_UNKNOWN,{variable} no es una variable de Valkyrie: vale siempre 0.
+PROBLEM_VAR_BUILTIN_UNKNOWN_D2E,{variable} no es una variable de Valkyrie en Descent: vale siempre 0.
+PROBLEM_VAR_CAMPAIGN_OWN,{variable} es una variable de campaña propia: se guarda de una aventura a la siguiente.
+PROBLEM_VAR_DOLLAR_UNKNOWN,{variable} empieza por $ pero no es una variable de Valkyrie en Descent: no hace nada.
+PROBLEM_VAR_ELIMINATED_D2E,#eliminated solo lo cambia el menú de Mansiones: en Descent vale siempre 0.
+PROBLEM_VAR_LETTER_CASE,Variables que solo se distinguen en las mayúsculas son distintas: {variables}.
+PROBLEM_VAR_MYTHOS_UNFINISHED,{variable} no es una variable de Valkyrie: los eventos de Mitos usan $mythosUnfinished.
+PROBLEM_VAR_NEVER_SET,{variable} se comprueba ({where}) pero ninguna operación la cambia: vale siempre 0.
+PROBLEM_VAR_ONE_CHAR,{variable} tiene una sola letra: un cambio de aventura para Valkyrie al encontrarla.
+PROBLEM_VAR_TRIGGER_NONE,{variable} lanza los eventos que tienen su Var como activador, pero ninguno lo tiene.
+PROBLEM_VAR_TRIGGER_NOT_SET,{trigger} espera a una variable que ninguna operación pone: el evento nunca salta.
+EDITOR_MAP_TOOLS,Herramientas del mapa
+EDITOR_GRID,Rejilla
+EDITOR_SNAP,Ajustar a la rejilla
+EDITOR_ZOOM_IN,Acercar
+EDITOR_ZOOM_OUT,Alejar
+EDITOR_SHOW_ALL,Ver todas las piezas
+EDITOR_TURN,Girar a la derecha
+EDITOR_TURN_BACK,Girar a la izquierda
+EDITOR_TURN_KEYS,Girar la pieza elegida
+EDITOR_KEY_SHIFT,Mayús
+EDITOR_KEY_DELETE,Supr
+EDITOR_KEY_WHEEL_TURN,Ctrl o Alt + rueda
+EDITOR_KEY_DRAG_FREE,{0} al arrastrar
+EDITOR_KEY_ARROWS,Flechas · rueda
+EDITOR_SNAP_OFF_KEYS,Colocar sin ajustar (o ajustando, si el ajuste está quitado)
+EDITOR_ZOOM_KEYS,Acercar · alejar · ver todas las piezas
+EDITOR_PAN_KEYS,Mover · acercar el mapa
+EDITOR_PANEL_KEYS,Mostrar u ocultar la ficha · la lista · el panel de abajo
+EDITOR_KEYS,Teclas
+EDITOR_ONLY_PROBLEMS,Solo lo que tiene algo que arreglar
+EDITOR_HIDE_LIST,Ocultar la lista
+EDITOR_SHOW_LIST,Mostrar la lista de componentes
+EDITOR_NOTHING_FOUND,No se ha encontrado nada.
+EDITOR_HIDE_PANEL,Ocultar la ficha
+EDITOR_SHOW_PANEL,Mostrar la ficha del componente
+EDITOR_HIDE_BOTTOM,Ocultar el panel de abajo
+EDITOR_SHOW_BOTTOM,Mostrar el panel de abajo
+EDITOR_SIZE_PANEL,Tamaño de la ficha
+EDITOR_SIZE_LIST,Tamaño de la lista
+EDITOR_SIZE_BOTTOM,Tamaño del panel de abajo
+EDITOR_PANEL_LEFT,Ficha del componente
+EDITOR_PANEL_RIGHT,Lista de componentes
+EDITOR_PANEL_BOTTOM,Panel de abajo
+EDITOR_VIEW,Vista
+EDITOR_HISTORY,Historial
+EDITOR_MENU,Archivo
+EDITOR_BACK_TO_LIST,Volver a la lista
+EDITOR_TEST_SHORT,Probar
+EDITOR_DEV_CHIP,Solo en desarrollo
+EDITOR_PREVIEW_CHIP,En pruebas
+EDITOR_ABOUT,Qué es
+EDITOR_FILE_AND_COMMENT,Fichero y comentario
+EDITOR_WHEN,Cuándo y dónde
+EDITOR_NO_BUTTONS,Sin botones: el diálogo se cierra solo. Añade uno con +.
+EDITOR_SHOWS_HIDES,Qué muestra y qué quita
+EDITOR_SOUND,Sonido
+EDITOR_ALL_CLEAR,Sin problemas
+EDITOR_QUEST_COVER,Nombre y portada
+EDITOR_QUEST_TEXTS,Descripción y autores
+EDITOR_QUEST_PLAY,Expansiones, jugadores y duración
+EDITOR_GRAPH,Grafo
+EDITOR_GRAPH_ROWS,Filas: qué empieza cada una
+EDITOR_GRAPH_ALL_ROWS,Todas las filas ({0})
+EDITOR_GRAPH_ROW,{0}
+EDITOR_GRAPH_ROW_START,Al empezar
+EDITOR_GRAPH_ROW_ITEMS,Objetos al empezar
+EDITOR_GRAPH_ROW_LOOSE,Nada llega
+EDITOR_GRAPH_SEARCH,Buscar en el grafo (Intro: el siguiente)
+EDITOR_GRAPH_FIT,Verlo todo
+EDITOR_GRAPH_FOLLOW,Seguir lo elegido
+EDITOR_GRAPH_REORDER,Volver a ordenarlo
+EDITOR_GRAPH_LEGEND,Qué es cada forma
+EDITOR_GRAPH_EMPTY,El escenario aún no tiene nada: clic derecho para crear algo.
+EDITOR_GRAPH_SHOWS_IF,Condición: el botón solo sale si se cumple
+EDITOR_GRAPH_GREYS_IF,Condición: el botón sale apagado si no se cumple
+EDITOR_GRAPH_IGNORES,Condición que no cambia nada (sin acción si no se cumple)
+EDITOR_GRAPH_PORT,Botón {0}: pulsa para un evento nuevo, arrastra a un evento para enlazarlo
+EDITOR_GRAPH_ADD_PIECE,Poner en el tablero o dar: pulsa para uno nuevo, arrastra a uno que ya esté
+EDITOR_GRAPH_REPEATED,Sale más de una vez en el grafo: es el número {0}
+EDITOR_GRAPH_COPY,{0}, dibujado entero en otro sitio
+EDITOR_GRAPH_RANDOM_SHORT,al azar
+EDITOR_GRAPH_RANDOM,uno al azar
+EDITOR_GRAPH_FIRST,el primero que pueda
+EDITOR_GRAPH_END,FIN
+EDITOR_GRAPH_NEW_EVENT_STEP,Evento nuevo desde {0}
+EDITOR_GRAPH_NEW_EVENT_FROM,Evento nuevo desde el botón {0}
+EDITOR_GRAPH_LINK_STEP,{0} lleva a {1}
+EDITOR_GRAPH_ADD_STEP,{0} añade {1}
+EDITOR_GRAPH_ADD_NEW,{0} nuevo en el tablero
+EDITOR_GRAPH_UNLINK_STEP,{0} ya no lleva a {1}
+EDITOR_GRAPH_INSERT_STEP,Un evento entre {0} y {1}
+EDITOR_GRAPH_INSERT,Un evento en medio
+EDITOR_GRAPH_UNLINK,Quitar el enlace
+EDITOR_GRAPH_GO_WHOLE,Ir a donde está entero
+EDITOR_GRAPH_LEGEND_TOKEN,Marcador, con su imagen
+EDITOR_GRAPH_LEGEND_TILE,Loseta
+EDITOR_GRAPH_LEGEND_EVENT,Evento: discontinuo, no está en el tablero
+EDITOR_GRAPH_LEGEND_BUTTONS,Sus botones, cada uno en su color
+EDITOR_GRAPH_LEGEND_CONDITION,Sus condiciones
+EDITOR_GRAPH_LEGEND_ADD,Pone en el tablero, o da
+EDITOR_GRAPH_LEGEND_REMOVE,Quita
+EDITOR_GRAPH_LEGEND_BRACE,Un botón que lanza varios eventos
+EDITOR_GRAPH_LEGEND_MARK,El mismo componente, otra vez
+EDITOR_UI_STAGE_OPEN,Verla en la pantalla
+EDITOR_GRAPH_NO_LABEL,→ sigue
+EDITOR_SELECTIONS,Selecciones
+EDITOR_HISTORY_NOW,Ahora
+EDITOR_HISTORY_EMPTY,Aún no hay cambios.
+EDITOR_HISTORY_UNDO_TO,Volver a antes de: {0}
+EDITOR_HISTORY_REDO_TO,Avanzar hasta después de: {0}
+EDITOR_STAGE,La pantalla: ver y colocar las interfaces
+EDITOR_STAGE_MAP,Mapa
+EDITOR_STAGE_SCREEN,Pantalla de
+EDITOR_STAGE_NONE,(elige una)
+EDITOR_STAGE_OF,{0} ({1})
+EDITOR_STAGE_ALL,Todas las interfaces
+EDITOR_STAGE_GUIDES,Guías
+EDITOR_STAGE_EMPTY,Aquí no hay interfaces: elige una, o una pantalla arriba.
+EDITOR_ANALYSIS,Análisis
+ANALYSIS_MOM_ONLY,Por ahora, el análisis juega escenarios de Las Mansiones de la Locura.
+ANALYSIS_RUN,Analizar
+ANALYSIS_AGAIN,Volver a analizar
+ANALYSIS_PROFILE,Mesa
+ANALYSIS_PROFILE_NORMAL,Normal
+ANALYSIS_PROFILE_CURIOUS,Curiosa (lo mira todo)
+ANALYSIS_PROFILE_DIRECT,Directa (va al objetivo)
+ANALYSIS_RUNS,Partidas por número de investigadores
+ANALYSIS_WORKING,Jugando el escenario
+ANALYSIS_NOTE,Investigadores inventados lo juegan muchas veces: es una guía, no un veredicto; una mesa de verdad juega distinto.
+ANALYSIS_EMPTY,Pulsa Analizar para jugar el escenario muchas veces con cada número de investigadores que admite y ver cuánto dura, en qué se van las acciones y dónde no pasa nada nuevo.
+ANALYSIS_ADVICE,Consejos
+ANALYSIS_FIGURES,{0} partidas cada uno, mesa {1}
+ANALYSIS_COL_HEROES,Investigadores
+ANALYSIS_COL_MINUTES,Minutos en una mesa de verdad (lo probable)
+ANALYSIS_COL_ROUNDS,Rondas
+ANALYSIS_COL_WALKING,Andando
+ANALYSIS_COL_WASTED,No aporta
+ANALYSIS_COL_IDLE,Esperando
+ANALYSIS_COL_FIGHTING,Luchando
+ANALYSIS_COL_ENDS,Cómo acaba
+ANALYSIS_ENDING_ELIMINATED,eliminados
+ANALYSIS_ENDING_STUCK,atascada
+ANALYSIS_ENDING_ROUNDS,sin acabar tras 30 rondas
+ANALYSIS_ENDING_QUEST_CHANGE,sigue en otra parte
+ANALYSIS_DECLARED,El escenario dice que dura {0}–{1} minutos. Los porcentajes son de todas las acciones; una fila elige la curva de abajo.
+ANALYSIS_ESTIMATE_NOTE,Los minutos son una estimación a partir de las palabras del escenario y de las partidas simuladas, ajustada con 127 escenarios de la tienda y los tiempos de sus jugadores: dos de cada tres de esas partidas cayeron dentro del margen que se muestra. La cuenta propia de las partidas inventadas: {0} minutos.
+ANALYSIS_CURVE,Novedades ronda a ronda, {0} investigadores
+ANALYSIS_CURVE_BAR,Ronda {0}: {1} novedades de media
+ANALYSIS_CURVE_NOTE,Una loseta, una ficha, un objeto, un monstruo, un puzle o un texto que no se había leído. En rojo, las rondas en que la mayoría de las partidas no encontró nada nuevo.
+ANALYSIS_PACE,Hoja de ritmo, {0} investigadores
+ANALYSIS_PACE_NOTE,Lo que encontraron de media en cada ronda las partidas que seguían. «Nada» cuenta los investigadores cuyas dos acciones no les dieron nada; «En juego», los monstruos en el tablero al acabar la ronda.
+ANALYSIS_PACE_ROUND,Ronda
+ANALYSIS_PACE_PLAYING,Partidas
+ANALYSIS_PACE_NOTHING,Nada
+ANALYSIS_PACE_MONSTERS,En juego
+ANALYSIS_KIND_PLACE,Lugares
+ANALYSIS_KIND_TOKEN,Fichas
+ANALYSIS_KIND_ITEM,Objetos
+ANALYSIS_KIND_STORY,Textos
+ANALYSIS_KIND_DECISION,Decisiones
+ANALYSIS_KIND_PUZZLE,Puzles
+ANALYSIS_KIND_MONSTER,Monstruos
+ANALYSIS_KIND_MYTHOS,Mitos propios
+ANALYSIS_BEATS,Cada investigador encuentra algo cada {0} acciones de media; en una partida típica, el tramo más largo sin nada es de {1} acciones. Un buen ritmo: cada 3 o 4.
+ANALYSIS_BEAT_SLOW,Con {0} investigadores, cada uno encuentra algo solo cada {1} acciones de media: un buen ritmo es uno cada 3 o 4 (una pista, un detalle, una decisión, un susto).
+ANALYSIS_BEAT_LONG,Con {0} investigadores, en la mitad de las partidas alguien pasa {1} acciones (unas {2} rondas) sin encontrar nada: dale algo que hacer a esa parte del mapa o a ese momento.
+ANALYSIS_FEW_DECISIONS,Una partida ofrece de media {0} decisiones sobre adónde va la historia: preguntas con consecuencias (salvar a uno o seguir, qué decirle a alguien) meten a los jugadores en ella.
+ANALYSIS_NO_END,Ninguna partida llegó a un final: los investigadores inventados nunca pusieron $end. Comprueba que el camino al final se puede seguir.
+ANALYSIS_ONLY_DEFEATS,Ninguna partida se ganó: las que acabaron fue con los investigadores eliminados ({0}). Mira abajo dónde se paró el camino a la victoria.
+ANALYSIS_BLOCKED,En el {0} % de las partidas que no acabaron, el camino a un final se paró en {1}: {2} se jugó, pero el botón que lleva allí no estaba abierto. Pide: {3}.
+ANALYSIS_BLOCKED_TRIGGER,En el {0} % de las partidas que no acabaron, el camino a un final se paró en {1}, que salta solo pero cuyas condiciones nunca se cumplieron. Pide: {3}.
+ANALYSIS_BLOCKED_UNCHOSEN,En el {0} % de las partidas que no acabaron, nadie siguió hacia {1}: {2} se jugó y su botón estaba abierto, pero la mesa eligió otros y no volvió. Quizá no parece el camino.
+ANALYSIS_ENDING_UNTAKEN,Ninguna partida tomó {0} caminos hacia un final: comprueba que se puede llegar a ellos.
+ANALYSIS_STUCK,El {0} % de las partidas se atascó: nada que pulsar y nada nuevo durante seis rondas.
+ANALYSIS_LONGER,Lo probable es que una mesa de verdad tarde al menos {0} minutos, más de los {1}–{2} que dice: acorta el mapa o los textos, o di una duración mayor. Si lo has jugado, fíate más de tus partidas.
+ANALYSIS_SHORTER,Lo probable es que una mesa de verdad tarde como mucho {0} minutos, menos de los {1}–{2} que dice. Si lo has jugado, fíate más de tus partidas.
+ANALYSIS_WALKING,El {0} % de las acciones se va en andar: acerca las fichas o da un camino más corto.
+ANALYSIS_WASTED,El {0} % de las veces que se pulsa una ficha no aporta nada nuevo: que cada búsqueda o interacción cuente algo.
+ANALYSIS_IDLE,El {0} % de las acciones no encuentra nada que hacer: con muchos investigadores alguno se queda esperando; abre más frentes a la vez.
+ANALYSIS_CARRYING,El {0} % de las acciones se va en llevar algo que lleva uno (una llave) hasta donde abre: acerca la cerradura o da otra forma de pasar.
+ANALYSIS_DEAD,En las rondas {0} la mayoría de las partidas no encuentra nada nuevo: dale algo a la mesa entonces (un ruido, un hallazgo, una amenaza).
+ANALYSIS_HARD_FEW,Con {0} investigadores, el {1} % de las partidas acaba con todos eliminados.
+ANALYSIS_EASY_MANY,Con {0} investigadores apenas se lucha y nadie cae: puede ser fácil.
+ANALYSIS_UNREACHED,{0} fichas están en el tablero pero casi nadie las pulsa:
+ANALYSIS_NEVER_SHOWN,{0} fichas no llegaron a ponerse en el tablero en ninguna partida:
+ANALYSIS_ONE_ENDING,Con {0} investigadores, el {1} % de las partidas acaba con ellos eliminados, en {2}: puede ser demasiado difícil.
+ANALYSIS_LONG_TEXTS,{0} ventanas tienen más de {1} palabras: largas de leer en voz alta, y en una pantalla pequeña empujan los botones fuera.
+ANALYSIS_WORN,Una frase gastada, «{0}»: enseña lo que hay (un ruido, un olor, algo fuera de su sitio) en vez de decir qué sentir.
+ANALYSIS_ROOMS_UNSAID,{0} eventos colocan una sala con cosas que mirar y apenas dicen qué hay: describe lo que llama la atención y que cada ficha salga de esa descripción, para que la mesa elija qué mirar en vez de pulsarlo todo.
+ANALYSIS_DULL_TOKENS,{0} de {1} fichas para mirar no cambian nada (ni variable, ni objeto, ni pieza, ni tirada): unas pocas son ambiente o un despiste; tantas obligan a pulsarlo todo. Dales algo que cuente después, o quítalas.
+ANALYSIS_UNREAD,{0} variables se ponen y nada las lee ({1}): lo encontrado no cambia lo que se puede hacer. Usa cada pista después: un botón que aparece, una frase que la nombra, otro final.

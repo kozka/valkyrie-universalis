@@ -1,0 +1,43 @@
+/* A download covers the screen, as Valkyrie's black loading screen does */
+.window-layer.loading-layer {
+  z-index: 35;
+  background: var(--shade);
+}
+
+.loading-screen {
+  width: min(100%, 34rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.loading-text {
+  margin: 0;
+  font-size: var(--step-sub);
+  font-style: italic;
+  text-align: center;
+  color: var(--text-bright);
+}
+
+.loading-bar {
+  width: 100%;
+  height: 0.9rem;
+  appearance: none;
+  border: 1px solid var(--edge);
+  border-radius: var(--radius-small);
+  background: transparent;
+  overflow: hidden;
+}
+
+.loading-bar::-webkit-progress-bar {
+  background: transparent;
+}
+
+.loading-bar::-webkit-progress-value {
+  background: var(--text-bright);
+}
+
+.loading-bar::-moz-progress-bar {
+  background: var(--text-bright);
+}

@@ -1,0 +1,275 @@
+{
+ "contadores": {
+  "claves repetidas": 0,
+  "final:crlf": 3066,
+  "final:lf": 83,
+  "final:mezcla": 5,
+  "final:una-linea": 7,
+  "líneas solo con espacios": 0,
+  "medios que faltan (quest.ini principal)": 37,
+  "paquetes": 59,
+  "quests": 295,
+  "referencias a medios": 2756,
+  "secciones repetidas": 0,
+  "texto:utf8": 3031,
+  "texto:utf8-bom": 130
+ },
+ "formatos_todos_los_quest": {
+  "13": 2,
+  "15": 6,
+  "17": 33,
+  "18": 54,
+  "19": 173,
+  "20": 4,
+  "21": 23
+ },
+ "formatos_quest_raiz": {
+  "13": 1,
+  "18": 4,
+  "19": 28,
+  "20": 4,
+  "21": 22
+ },
+ "paquetes_con_varios_quest": {
+  "total": 17,
+  "mayores": [
+   {
+    "paquete": "TSR",
+    "quest_ini": 36
+   },
+   {
+    "paquete": "ChainsOfBilehall",
+    "quest_ini": 28
+   },
+   {
+    "paquete": "TheLegacyOfIthyndrus_Soul",
+    "quest_ini": 16
+   },
+   {
+    "paquete": "TheLegacyOfIthyndrus_Essence",
+    "quest_ini": 16
+   },
+   {
+    "paquete": "TheLegacyOfIthyndrus_Body",
+    "quest_ini": 16
+   },
+   {
+    "paquete": "RuinsofDarkness",
+    "quest_ini": 15
+   },
+   {
+    "paquete": "PestilentialSwamp",
+    "quest_ini": 15
+   },
+   {
+    "paquete": "ForgottenSouls",
+    "quest_ini": 15
+   },
+   {
+    "paquete": "EscapeFromBelthir",
+    "quest_ini": 15
+   },
+   {
+    "paquete": "DarkElements",
+    "quest_ini": 15
+   }
+  ]
+ },
+ "idiomas_QuestText_raiz": {
+  "English": 56,
+  "Spanish": 49,
+  "German": 41,
+  "Italian": 3,
+  "Russian": 3,
+  "French": 2,
+  "Portuguese": 1,
+  "Japanese": 1
+ },
+ "secciones_desconocidas": {},
+ "medios_por_extension": {
+  ".ogg": 881,
+  ".png": 331,
+  ".jpg": 101,
+  ".wav": 93,
+  ".jpeg": 12,
+  ".mp3": 4,
+  ".webp": 2
+ },
+ "medios_que_faltan_por_clave": {
+  "audio": 63,
+  "imageplace": 1,
+  "music": 1
+ },
+ "imagenes": {
+  "total_medidas": 444,
+  "mas_de_4096px": 0,
+  "mas_de_8192px": 0,
+  "mayores": [
+   {
+    "fichero": "CalamityattheCove/CampaignPhase/Spanish/CatCCampaignMap.jpg",
+    "ancho_alto": [
+     2048,
+     1536
+    ]
+   },
+   {
+    "fichero": "CalamityattheCove/CampaignPhase/German/CatCCampaignMap.jpg",
+    "ancho_alto": [
+     2048,
+     1536
+    ]
+   },
+   {
+    "fichero": "CalamityattheCove/CampaignPhase/CatCCampaignMap.jpg",
+    "ancho_alto": [
+     2048,
+     1536
+    ]
+   },
+   {
+    "fichero": "HeroesDeTerrinothJain/Imagenes/Prologue_Frame.png",
+    "ancho_alto": [
+     2038,
+     1024
+    ]
+   },
+   {
+    "fichero": "Doom_Puesto_Garen/Images/latest_cb=20160519052047.jpg",
+    "ancho_alto": [
+     1920,
+     1080
+    ]
+   },
+   {
+    "fichero": "Doom_Puesto_Garen/Images/daz9esh-f9771a02-6d79-4489-a172-c23dc2399ce3.png",
+    "ancho_alto": [
+     1920,
+     1080
+    ]
+   },
+   {
+    "fichero": "Doom_FOP_E1M4/Images/mars_reveal.jpg",
+    "ancho_alto": [
+     1920,
+     1080
+    ]
+   },
+   {
+    "fichero": "Doom_FOP_E1M4/Images/Black.png",
+    "ancho_alto": [
+     1920,
+     1080
+    ]
+   },
+   {
+    "fichero": "Doom_FOP_E1M3/Images/shot00005.jpg",
+    "ancho_alto": [
+     1920,
+     1080
+    ]
+   },
+   {
+    "fichero": "Doom_FOP_E1M3/Images/mars_reveal.jpg",
+    "ancho_alto": [
+     1920,
+     1080
+    ]
+   }
+  ]
+ },
+ "casos": {
+  "'\\' en customImage o imageplace (solo vale en Windows)": {
+   "total": 1,
+   "paquetes": 1,
+   "por_paquete": {
+    "ChainsOfBilehall": 1
+   },
+   "ejemplos": [
+    "ChainsOfBilehall/Chains/04_Quest: [CustomMonsterZarihellsShadow] imageplace=Images\\ZarihellsShadow.png"
+   ]
+  },
+  "Localization con finales mezclados": {
+   "total": 5,
+   "paquetes": 4,
+   "por_paquete": {
+    "CalamityattheCove": 2,
+    "HostofEverdark": 1,
+    "NaturesIre": 1,
+    "ShardsofEverdark": 1
+   },
+   "ejemplos": [
+    "CalamityattheCove/04TownUnderFire/Localization.Spanish.txt",
+    "CalamityattheCove/05BelthirsDiscovery/Localization.Spanish.txt",
+    "HostofEverdark/Localization.German.txt",
+    "NaturesIre/08WebbedGulch/Localization.Spanish.txt",
+    "ShardsofEverdark/Localization.German.txt"
+   ]
+  },
+  "[QuestText] apunta a un fichero que no está": {
+   "total": 65,
+   "paquetes": 8,
+   "por_paquete": {
+    "ForgottenSouls": 11,
+    "TheLegacyOfIthyndrus_Soul": 11,
+    "NaturesIre": 10,
+    "TheLegacyOfIthyndrus_Body": 9,
+    "TheLegacyOfIthyndrus_Essence": 7,
+    "PestilentialSwamp": 6,
+    "ShadowBinders": 6,
+    "CalamityattheCove": 5
+   },
+   "ejemplos": [
+    "CalamityattheCove/01FoothillsFolly: Localization.German.txt",
+    "CalamityattheCove/02TheGreatwoodEscape: Localization.German.txt",
+    "CalamityattheCove/03BeneathCastleDaerion: Localization.German.txt",
+    "CalamityattheCove/04TownUnderFire: Localization.German.txt",
+    "CalamityattheCove/05BelthirsDiscovery: Localization.German.txt",
+    "ForgottenSouls/01TreasureVault: Localization.German.txt",
+    "ForgottenSouls/02ShinyCorridor: Localization.German.txt",
+    "ForgottenSouls/03HallofRiddles: Localization.German.txt",
+    "ForgottenSouls/05LengthySewers: Localization.German.txt",
+    "ForgottenSouls/07TrashHeap: Localization.German.txt",
+    "ForgottenSouls/08DeadlyKennel: Localization.German.txt",
+    "ForgottenSouls/10TheOnset: Localization.German.txt"
+   ]
+  },
+  "medio con mayúsculas distintas": {
+   "total": 1,
+   "paquetes": 1,
+   "por_paquete": {
+    "ValkyrieTrollfens": 1
+   },
+   "ejemplos": [
+    "ValkyrieTrollfens/04_Finale: [EventVillager1TestFailed] audio=../Sounds/wings.ogg"
+   ]
+  },
+  "medio que no está en el paquete": {
+   "total": 65,
+   "paquetes": 9,
+   "por_paquete": {
+    "GiftForAKing": 21,
+    "ForgottenSouls": 18,
+    "NaturesIre": 14,
+    "TSR": 5,
+    "ValkyrieLairOfTheWyrm": 2,
+    "ValkyrieTrollfens": 2,
+    "FestivalDeSang": 1,
+    "LaFortalezadelaMuerte": 1
+   },
+   "ejemplos": [
+    "FestivalDeSang: [CustomMonsterHyraxleFou] imageplace=Images/Hyrax le Fou.png",
+    "ForgottenSouls/03HallofRiddles: [EventSearch1TrapCage] audio=../Sounds/Splash.ogg",
+    "ForgottenSouls/03HallofRiddles: [EventSearch1TrapPit] audio=../Sounds/TreeFalls.ogg",
+    "ForgottenSouls/04TunnelsEnd: [EventSearch1TrapCage] audio=../Sounds/Splash.ogg",
+    "ForgottenSouls/04TunnelsEnd: [EventSearch1TrapPit] audio=../Sounds/TreeFalls.ogg",
+    "ForgottenSouls/05LengthySewers: [EventSearch1TrapCage] audio=../Sounds/Splash.ogg",
+    "ForgottenSouls/05LengthySewers: [EventSearch1TrapPit] audio=../Sounds/TreeFalls.ogg",
+    "ForgottenSouls/06FogFilledPassage: [EventSearch1TrapCage] audio=../Sounds/Splash.ogg",
+    "ForgottenSouls/06FogFilledPassage: [EventSearch1TrapPit] audio=../Sounds/TreeFalls.ogg",
+    "ForgottenSouls/08DeadlyKennel: [EventSearch1TrapCage] audio=../Sounds/Splash.ogg",
+    "ForgottenSouls/08DeadlyKennel: [EventSearch1TrapPit] audio=../Sounds/TreeFalls.ogg",
+    "ForgottenSouls/10TheOnset: [EventSearch1TrapCage] audio=../Sounds/Splash.ogg"
+   ]
+  }
+ }
+}

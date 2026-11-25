@@ -1,0 +1,278 @@
+{
+ "contadores": {
+  "claves repetidas": 8816,
+  "final:crlf": 2201,
+  "final:lf": 6125,
+  "final:mezcla": 3,
+  "final:una-linea": 10,
+  "líneas solo con espacios": 0,
+  "medios que faltan (quest.ini principal)": 60,
+  "medios solo en carpeta de idioma": 81,
+  "paquetes": 168,
+  "quests": 2132,
+  "referencias a medios": 940688,
+  "secciones repetidas": 34476,
+  "texto:utf8": 8337,
+  "texto:utf8-bom": 2
+ },
+ "formatos_todos_los_quest": {
+  "9": 3,
+  "12": 4,
+  "13": 8,
+  "15": 3,
+  "17": 9,
+  "18": 2026,
+  "19": 12,
+  "20": 2,
+  "21": 65
+ },
+ "formatos_quest_raiz": {
+  "9": 3,
+  "12": 4,
+  "13": 8,
+  "15": 3,
+  "17": 9,
+  "18": 62,
+  "19": 12,
+  "20": 2,
+  "21": 65
+ },
+ "paquetes_con_varios_quest": {
+  "total": 7,
+  "mayores": [
+   {
+    "paquete": "Pruebas_en",
+    "quest_ini": 777
+   },
+   {
+    "paquete": "Pruebas_es",
+    "quest_ini": 776
+   },
+   {
+    "paquete": "Snow_es",
+    "quest_ini": 102
+   },
+   {
+    "paquete": "Snow_en",
+    "quest_ini": 102
+   },
+   {
+    "paquete": "Desert_es",
+    "quest_ini": 102
+   },
+   {
+    "paquete": "Desert_en",
+    "quest_ini": 102
+   },
+   {
+    "paquete": "ConversaDeBebado",
+    "quest_ini": 10
+   }
+  ]
+ },
+ "idiomas_QuestText_raiz": {
+  "Spanish": 147,
+  "English": 88,
+  "French": 62,
+  "Polish": 54,
+  "Portuguese": 40,
+  "Italian": 31,
+  "Korean": 20,
+  "Russian": 15,
+  "German": 14,
+  "Chinese": 11,
+  "Czech": 9,
+  "English_global": 3,
+  "Spanish_global": 3
+ },
+ "secciones_desconocidas": {},
+ "medios_por_extension": {
+  ".png": 3500,
+  ".ogg": 2120,
+  ".jpg": 1416,
+  ".wav": 13,
+  ".mp3": 12,
+  ".jpeg": 6,
+  ".gif": 6,
+  "": 1
+ },
+ "medios_que_faltan_por_clave": {
+  "image": 15992,
+  "music": 10553,
+  "imageplace": 6,
+  "audio": 5
+ },
+ "imagenes": {
+  "total_medidas": 2972,
+  "mas_de_4096px": 9,
+  "mas_de_8192px": 1,
+  "mayores": [
+   {
+    "fichero": "MisterioenSeahide/Polish/advertiser.png",
+    "ancho_alto": [
+     8559,
+     10357
+    ]
+   },
+   {
+    "fichero": "ReturnToTheMirror/HoistWheel.jpg",
+    "ancho_alto": [
+     4118,
+     7138
+    ]
+   },
+   {
+    "fichero": "EyesBehindTheMirror/HoistWheel.jpg",
+    "ancho_alto": [
+     4118,
+     7138
+    ]
+   },
+   {
+    "fichero": "WendyAdamsII/calles.jpg",
+    "ancho_alto": [
+     6067,
+     3467
+    ]
+   },
+   {
+    "fichero": "Possessed/CollapsedHallway7.jpg",
+    "ancho_alto": [
+     4705,
+     3091
+    ]
+   },
+   {
+    "fichero": "CrimsonAlly/Vintage_1952_Pharmacy_Prescriptions_Lot_of_500_-_5.jpg",
+    "ancho_alto": [
+     4569,
+     3006
+    ]
+   },
+   {
+    "fichero": "MansionMarberlard/mansion.jpg",
+    "ancho_alto": [
+     4439,
+     3082
+    ]
+   },
+   {
+    "fichero": "TheUnspeakableOne/Theater.jpg",
+    "ancho_alto": [
+     4256,
+     2832
+    ]
+   },
+   {
+    "fichero": "Renacer/Polish/intro.png",
+    "ancho_alto": [
+     4140,
+     4185
+    ]
+   },
+   {
+    "fichero": "MisterioenSeahide/advertiser.png",
+    "ancho_alto": [
+     3370,
+     4078
+    ]
+   }
+  ]
+ },
+ "casos": {
+  "Localization con finales mezclados": {
+   "total": 3,
+   "paquetes": 3,
+   "por_paquete": {
+    "ArkhamCrimeWave": 1,
+    "MisterioHotelGibbins": 1,
+    "UnaTormentaDeBienvenida": 1
+   },
+   "ejemplos": [
+    "ArkhamCrimeWave/Localization.Spanish.txt",
+    "MisterioHotelGibbins/Localization.Spanish.txt",
+    "UnaTormentaDeBienvenida/Localization.Chinese.txt"
+   ]
+  },
+  "[QuestData] con mayúsculas distintas": {
+   "total": 4,
+   "paquetes": 2,
+   "por_paquete": {
+    "LastTrainToArkham": 3,
+    "HauntedLegacy": 1
+   },
+   "ejemplos": [
+    "HauntedLegacy: eventsTESTFunctions.ini",
+    "LastTrainToArkham: EventsPuzzleMachine.ini",
+    "LastTrainToArkham: EventsPuzzleSafe.ini",
+    "LastTrainToArkham: EventsQItemGrotesqueStone.ini"
+   ]
+  },
+  "medio con mayúsculas distintas": {
+   "total": 2,
+   "paquetes": 2,
+   "por_paquete": {
+    "Renacer": 1,
+    "UnaTormentaDeBienvenida": 1
+   },
+   "ejemplos": [
+    "Renacer: [UIInfoPistaBrote] image=PISTA2.png",
+    "UnaTormentaDeBienvenida: [UI_Fondo_Negro] image=fondonegro1.jpg"
+   ]
+  },
+  "medio que no está en el paquete": {
+   "total": 26556,
+   "paquetes": 19,
+   "por_paquete": {
+    "Pruebas_en": 7751,
+    "Pruebas_es": 7741,
+    "Snow_en": 3411,
+    "Desert_en": 2611,
+    "Desert_es": 2611,
+    "Snow_es": 2411,
+    "HistoriasDeArkhamAgathaCraneII": 4,
+    "Renacer": 4
+   },
+   "ejemplos": [
+    "AlemDoBeco: [PuzzleMosaicoMorte] image=interface/morte.jpg",
+    "BellaDaMorirePrologo: [CustomMonsterNubeFalene] imageplace=swarm.jpg",
+    "DemoniosEntreLosWilson: [CustomMonsterValeria] imageplace=v.png",
+    "Desert_en/CampaignEnd: [UIImage] image=../Images/EndCampaign.png",
+    "Desert_en/all/folder_0001: [UIEnding01] image=../../Images/ending01.png",
+    "Desert_en/all/folder_0001: [UIEnding02] image=../../Images/ending02.png",
+    "Desert_en/all/folder_0001: [UIEnding06] image=../../Images/ending06.png",
+    "Desert_en/all/folder_0001: [UIEnding07] image=../../Images/ending07.png",
+    "Desert_en/all/folder_0001: [UIEnding08] image=../../Images/ending_abomination.png",
+    "Desert_en/all/folder_0001: [EventEnding08] music=../../Sounds/ending_abomination.ogg",
+    "Desert_en/all/folder_0001: [UIEnding10] image=../../Images/ending10.png",
+    "Desert_en/all/folder_0001: [UIEnding11] image=../../Images/ending11.png"
+   ]
+  },
+  "secciones o claves repetidas en un fichero": {
+   "total": 1949,
+   "paquetes": 6,
+   "por_paquete": {
+    "Pruebas_en": 775,
+    "Pruebas_es": 774,
+    "Desert_en": 100,
+    "Desert_es": 100,
+    "Snow_en": 100,
+    "Snow_es": 100
+   },
+   "ejemplos": [
+    "Desert_en/all/folder_0001: tokens.ini",
+    "Desert_en/all/folder_0002: tokens.ini",
+    "Desert_en/all/folder_0003: tokens.ini",
+    "Desert_en/all/folder_0004: tokens.ini",
+    "Desert_en/all/folder_0005: tokens.ini",
+    "Desert_en/all/folder_0006: tokens.ini",
+    "Desert_en/all/folder_0007: tokens.ini",
+    "Desert_en/all/folder_0008: tokens.ini",
+    "Desert_en/all/folder_0009: tokens.ini",
+    "Desert_en/all/folder_0010: tokens.ini",
+    "Desert_en/all/folder_0011: tokens.ini",
+    "Desert_en/all/folder_0012: tokens.ini"
+   ]
+  }
+ }
+}

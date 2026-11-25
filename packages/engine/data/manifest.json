@@ -1,0 +1,2228 @@
+{
+  "valkyrieCommit": "752d4206738f00a6d41e34be56fe7e65e7b35965",
+  "valkyrieVersion": "3.28 MAJOR",
+  "files": [
+    {
+      "path": "content/MoM/base/Localization.English.txt",
+      "bytes": 434,
+      "sha256": "f6b811ad5d3d970d20d027be8564414016a9a7b82266cec73aea92f768985922"
+    },
+    {
+      "path": "content/MoM/base/Localization.French.txt",
+      "bytes": 699,
+      "sha256": "cffaa05f0faaecfb6d8c02c0ae936651d1551bf96db027a1dd27d169eb5756e0"
+    },
+    {
+      "path": "content/MoM/base/Localization.German.txt",
+      "bytes": 487,
+      "sha256": "67b67182e903fb8d1fbe557f4175b8e6f52ad6e6f6a08eeeb23fab6627a18539"
+    },
+    {
+      "path": "content/MoM/base/Localization.Italian.txt",
+      "bytes": 496,
+      "sha256": "e8a3b6a4a3d7401acb7b91f1f0c740a5c3fa2d800c9d225d00b59cd0bcb39d2e"
+    },
+    {
+      "path": "content/MoM/base/Localization.Polish.txt",
+      "bytes": 448,
+      "sha256": "ec44de760533713b06a13535c7730de03256625a41763fed316008db56815cc8"
+    },
+    {
+      "path": "content/MoM/base/Localization.Russian.txt",
+      "bytes": 850,
+      "sha256": "aef53de684e561d1d26f344a4ad773ab6d93493fc0b7d5eaee22f5d4ac6f706f"
+    },
+    {
+      "path": "content/MoM/base/Localization.Spanish.txt",
+      "bytes": 553,
+      "sha256": "5edb0d2d707d73cbe99ae2b72c679c07b0438a4d6308c516ab973754aa217c0f"
+    },
+    {
+      "path": "content/MoM/base/activations.ini",
+      "bytes": 156918,
+      "sha256": "47046a193c571b4b236c2206ab96787963118f2e39975c3162c7c7d12dfbaaf3"
+    },
+    {
+      "path": "content/MoM/base/attacks.ini",
+      "bytes": 35466,
+      "sha256": "c3bb774ac59b17b56d15c7c1c1eaf43eada6029763fec0af49eba2c4985873e5"
+    },
+    {
+      "path": "content/MoM/base/audio.ini",
+      "bytes": 10335,
+      "sha256": "ae7139e293b3b17befeb5e5d0ddca3f4229f9ce7e79b7cd4cb06d7458d00a4b3"
+    },
+    {
+      "path": "content/MoM/base/content_pack.ini",
+      "bytes": 904,
+      "sha256": "9b962bf50b9be0c9768e953d62cbbd1aa276767f01353d74b0c65a554a25a9f4"
+    },
+    {
+      "path": "content/MoM/base/dunwich_data.ini",
+      "bytes": 5252,
+      "sha256": "ff40ab68d9392580915867304273b3199285096d80ac22476da7878b3479afe4"
+    },
+    {
+      "path": "content/MoM/base/evade.ini",
+      "bytes": 36204,
+      "sha256": "e81968c10f303444eca31a065d5c9ae488359c81fa95cf7735a95cddf2b44867"
+    },
+    {
+      "path": "content/MoM/base/horror.ini",
+      "bytes": 37686,
+      "sha256": "6dd761c08ad2d5001fb70262ec9fc5043e9365c53e805d1b5ef42ee7afb4abbb"
+    },
+    {
+      "path": "content/MoM/base/horror_attacks.ini",
+      "bytes": 8819,
+      "sha256": "0264c3dd68f12976eaae88a5727402951ea20d727506bf4b511607ffac963b16"
+    },
+    {
+      "path": "content/MoM/base/images.ini",
+      "bytes": 12085,
+      "sha256": "0bed6a66c6f7426497a5340e67d46615fe5cbdf4db5ef56d5077306b2fda3e96"
+    },
+    {
+      "path": "content/MoM/base/investigators.ini",
+      "bytes": 1236,
+      "sha256": "dc342ef07485aa5fa20bbac8575cae1a09d45e2f5ec7e95ad8396bdcb9e2a14d"
+    },
+    {
+      "path": "content/MoM/base/items.ini",
+      "bytes": 8106,
+      "sha256": "b84d96ecbb3a2529756ba8f091c09285ce91494dc7333224032f192cd150821b"
+    },
+    {
+      "path": "content/MoM/base/monsters.ini",
+      "bytes": 3722,
+      "sha256": "335662a9cd04848536c65d3aa2312bc68500e2a1700514490be6a764e11e9d7d"
+    },
+    {
+      "path": "content/MoM/base/mythos.ini",
+      "bytes": 96301,
+      "sha256": "323e0a937e7d88bff3ffe2e9d830af0da2c7ba0c4b518fd0b495a0752a36180f"
+    },
+    {
+      "path": "content/MoM/base/puzzle.ini",
+      "bytes": 469,
+      "sha256": "0d8596e775c19772c1dbe8d2e5861995533e471dbb1ff3884275a98f9b319eca"
+    },
+    {
+      "path": "content/MoM/base/tiles.ini",
+      "bytes": 7068,
+      "sha256": "7d8bc6079959ea70316ad26a916d7e38df973aafa9c25866618f607fd844a86a"
+    },
+    {
+      "path": "content/MoM/base/tokens.ini",
+      "bytes": 3623,
+      "sha256": "b9eb17b5eb92b6bd3c3fb3dd29d54664700452aafb9250ef2a3cc15fa086f016"
+    },
+    {
+      "path": "content/MoM/base/tokens_items.ini",
+      "bytes": 8170,
+      "sha256": "a9c08e81feab9d6aeef798399df2d28f680c9a73edd8b1c290df2f4c8fb43c34"
+    },
+    {
+      "path": "content/MoM/base/tokens_monsters.ini",
+      "bytes": 2683,
+      "sha256": "ab5802b2d4039dc0c68d02be212f024084df2530811607e23162a4953ba43ace"
+    },
+    {
+      "path": "content/MoM/btt/content_pack.ini",
+      "bytes": 362,
+      "sha256": "5e8ed67a075e2cca7ea0528b041b7b256f1fea6603bd9c18c658293e1f220a0d"
+    },
+    {
+      "path": "content/MoM/btt/investigators.ini",
+      "bytes": 257,
+      "sha256": "ca962b9f2359f507457649b3f133e37309629790a88522e36983754592444643"
+    },
+    {
+      "path": "content/MoM/btt/items.ini",
+      "bytes": 1588,
+      "sha256": "78bf248fa65a75a4926dad565241ee810255dd088a1095496eaac64c920a3b29"
+    },
+    {
+      "path": "content/MoM/btt/monsters.ini",
+      "bytes": 394,
+      "sha256": "f53de16861851b9f38a7d3e6a98e15b2c73472480db1cb2594a8dce43f06b279"
+    },
+    {
+      "path": "content/MoM/btt/tiles.ini",
+      "bytes": 1812,
+      "sha256": "1191171301dd666bfc47e4b84c7c2b49f16f94a6f01ba0dbe741a314ea4b99f8"
+    },
+    {
+      "path": "content/MoM/btt/tokens.ini",
+      "bytes": 728,
+      "sha256": "ef8639c0301b204fad24ee0660aa41efb2a794b92d58656cf5f143e5a4b89364"
+    },
+    {
+      "path": "content/MoM/btt/tokens_items.ini",
+      "bytes": 1599,
+      "sha256": "1923597401729e9a0f5a79d1f2f53f3b381ad1c6b6c9bd246f4b16f511040768"
+    },
+    {
+      "path": "content/MoM/ck/ck-tokensandcards/content_pack.ini",
+      "bytes": 305,
+      "sha256": "4d20d66dc0b284878e26f9cbdb84f374da7e02759e5b4ca1f6e9051d5041cc1e"
+    },
+    {
+      "path": "content/MoM/ck/ck-tokensandcards/items.ini",
+      "bytes": 254,
+      "sha256": "9d74612c372d59d4ceb05d6f8a39169b0d698f6165b3821d54a756e283358fac"
+    },
+    {
+      "path": "content/MoM/ck/ck-tokensandcards/tokens.ini",
+      "bytes": 269,
+      "sha256": "035dd5f31e5d73cdfe013ccccd985243190ccd9d03d2139c0d701e46a8ef5bcc"
+    },
+    {
+      "path": "content/MoM/ck/cotw-investigators/content_pack.ini",
+      "bytes": 235,
+      "sha256": "5a59f66a2b39056f4f78290ad1922c6d91d69aae1a336cbec0150bae551986a1"
+    },
+    {
+      "path": "content/MoM/ck/cotw-investigators/investigators.ini",
+      "bytes": 500,
+      "sha256": "0c1bbbe5ce38846f2eeca89093d1da6ec2e55ad110a58ea99e1cde679009d685"
+    },
+    {
+      "path": "content/MoM/ck/cotw-monsters/content_pack.ini",
+      "bytes": 225,
+      "sha256": "4e89dc35325027221c882fcb4cee46553a69afc321f2611ed98278dcf9dfa609"
+    },
+    {
+      "path": "content/MoM/ck/cotw-monsters/monsters.ini",
+      "bytes": 2868,
+      "sha256": "47f2ffc4085486a599700b6b1ff03264110799454acb6d61c985c8498d3ad823"
+    },
+    {
+      "path": "content/MoM/ck/cotw-tiles/content_pack.ini",
+      "bytes": 218,
+      "sha256": "fa8220daf73cbbce69143f20bfc2ee6b9797601c3882823bcc6cdbaff6c32069"
+    },
+    {
+      "path": "content/MoM/ck/cotw-tiles/tiles.ini",
+      "bytes": 3329,
+      "sha256": "a704483bb72ab4228ab3e4ccd93c3409af5bd7d97c10e3a6a577f4b43de1a834"
+    },
+    {
+      "path": "content/MoM/ck/fa-investigators/content_pack.ini",
+      "bytes": 289,
+      "sha256": "719d1e2ca36ff13b93eacca98c1474daaa1389366db70902be868e7dca6aae0b"
+    },
+    {
+      "path": "content/MoM/ck/fa-investigators/investigators.ini",
+      "bytes": 495,
+      "sha256": "f95b12d7599c52d15c3b5997182795d132644d344dd6879f7d8c99d6dc0bbbc3"
+    },
+    {
+      "path": "content/MoM/ck/fa-monsters/content_pack.ini",
+      "bytes": 278,
+      "sha256": "da371e89838eb28c460a982dd5778a90832a3609006c259c1b90a3495acb02bd"
+    },
+    {
+      "path": "content/MoM/ck/fa-monsters/monsters.ini",
+      "bytes": 834,
+      "sha256": "e2d4c293a54424358c7075d784ff2219022d787d71ee0dc6e07fc3121c0f7230"
+    },
+    {
+      "path": "content/MoM/ck/fa-tiles/content_pack.ini",
+      "bytes": 284,
+      "sha256": "e4fd395395280286789d8f1e06797f3291ded93d39c20987de9a6b93f8f49c44"
+    },
+    {
+      "path": "content/MoM/ck/fa-tiles/tiles.ini",
+      "bytes": 1888,
+      "sha256": "a9cbf87ce025c6828b3d1aef04facae6581d58ef5a2e6cbc44f2558ee545c175"
+    },
+    {
+      "path": "content/MoM/ck/mom1e-investigators/content_pack.ini",
+      "bytes": 293,
+      "sha256": "1e925a47aa494d62d4ea6292fe24e381abc540ad243c8f81b1a4d8fbb9889b3d"
+    },
+    {
+      "path": "content/MoM/ck/mom1e-investigators/investigators.ini",
+      "bytes": 1095,
+      "sha256": "5510868fcc36a6fdd81b50b297af99e7c82a3e09b128e72f137b2b8ddd68d892"
+    },
+    {
+      "path": "content/MoM/ck/mom1e-monsters/content_pack.ini",
+      "bytes": 283,
+      "sha256": "5eeb47cb8f5fc63511be4f601e75b8921068314dd6738eac06f9ebc35625d879"
+    },
+    {
+      "path": "content/MoM/ck/mom1e-monsters/monsters.ini",
+      "bytes": 3396,
+      "sha256": "758f8a62ded1625aa35f5c5d325fe45f4e13db05c9e0edb6f9463d11e67cc43d"
+    },
+    {
+      "path": "content/MoM/ck/mom1e-tiles/content_pack.ini",
+      "bytes": 288,
+      "sha256": "d293c82634f3058117ce73cbf7f754bcd343616683e50500aed99593ce18f774"
+    },
+    {
+      "path": "content/MoM/ck/mom1e-tiles/tiles.ini",
+      "bytes": 4694,
+      "sha256": "28298eb4abc9b04946d4d207c410ed48cfef0495762673511e0ae9f0151e6c64"
+    },
+    {
+      "path": "content/MoM/hj/content_pack.ini",
+      "bytes": 445,
+      "sha256": "077f015919a92f56e83898cd152346fa30760d12b198a6abfce8a71dc1c1a979"
+    },
+    {
+      "path": "content/MoM/hj/investigators.ini",
+      "bytes": 552,
+      "sha256": "4a5a474ce323005649a9671a77fbf6cca630ee227ee90f90af5f785401011eeb"
+    },
+    {
+      "path": "content/MoM/hj/items.ini",
+      "bytes": 2705,
+      "sha256": "479fc4d4358ad7f0da1e09963d03176bac63e37e28ce93f3e0e36f915785fb58"
+    },
+    {
+      "path": "content/MoM/hj/monsters.ini",
+      "bytes": 685,
+      "sha256": "4180d07c7b811ea7269ec1655963247f544727821ee47ddcda8d908a1789b74f"
+    },
+    {
+      "path": "content/MoM/hj/tiles.ini",
+      "bytes": 5563,
+      "sha256": "29d4c385fb9883e652ba11f712ce2816978172267850e87286070a4bff7c6de9"
+    },
+    {
+      "path": "content/MoM/hj/tokens.ini",
+      "bytes": 1089,
+      "sha256": "0b73800aea6c7bb4141fff5773d9c34b13f7d2b15cea9602ddefe175c55a788d"
+    },
+    {
+      "path": "content/MoM/hj/tokens_items.ini",
+      "bytes": 2725,
+      "sha256": "1429cea4fea80933f7703a2b4dec95019e9e67641299d00df66a821620405632"
+    },
+    {
+      "path": "content/MoM/hj/tokens_monsters.ini",
+      "bytes": 462,
+      "sha256": "df97bf3407330a2ca9d69868e38318d91b968a03e1e591ce424338e692e29524"
+    },
+    {
+      "path": "content/MoM/pots/content_pack.ini",
+      "bytes": 383,
+      "sha256": "4fc75be2074e3c2d67df58e22f75adc798684c58109168f45387623608e47d0d"
+    },
+    {
+      "path": "content/MoM/pots/investigators.ini",
+      "bytes": 500,
+      "sha256": "bc6eb35c1a514e8a208351da12440c179188beb61ee3137db479b9d9aac98c8d"
+    },
+    {
+      "path": "content/MoM/pots/items.ini",
+      "bytes": 3091,
+      "sha256": "97ae2bdbd01da690df928f4f47d3b4d0d48547980b7c6112216d5a9557dcc8ac"
+    },
+    {
+      "path": "content/MoM/pots/monsters.ini",
+      "bytes": 696,
+      "sha256": "a647aab008cac11a1c05965ea7f5435c5c6cb50c4eecc9b70fe4fd10762eae9d"
+    },
+    {
+      "path": "content/MoM/pots/tiles.ini",
+      "bytes": 5349,
+      "sha256": "79cd5e1f445dfac90848e658cd490e85aff2d277ae4729dbca530475e349a9dd"
+    },
+    {
+      "path": "content/MoM/pots/tokens.ini",
+      "bytes": 789,
+      "sha256": "0375892a48004e134b6b9a1ede14d3aaa38b12c6faa5da235685c988f7345b87"
+    },
+    {
+      "path": "content/MoM/pots/tokens_items.ini",
+      "bytes": 3115,
+      "sha256": "04293ad19b886f1efc70b243a608444ff09ad5741aed8925cc5d5044e6275b4c"
+    },
+    {
+      "path": "content/MoM/pots/tokens_monsters.ini",
+      "bytes": 473,
+      "sha256": "b2b7be1a305ed8c0364ead106ee5429d2147efea16dac43a8354ed34386cc49d"
+    },
+    {
+      "path": "content/MoM/rn/content_pack.ini",
+      "bytes": 222,
+      "sha256": "b79d9b5d14b676a31e578184b81daa2de6e178c27668af61223f3acca6b6bc34"
+    },
+    {
+      "path": "content/MoM/sm/content_pack.ini",
+      "bytes": 224,
+      "sha256": "a92c290e14bac022832797bb4e1a463a76653ccd31dc657344a15114f23856b4"
+    },
+    {
+      "path": "content/MoM/soa/content_pack.ini",
+      "bytes": 448,
+      "sha256": "02d5f5040ae69cd6ed2ab2ed0c557ee6e3167121bd0302cfd8fd6dafde5f88be"
+    },
+    {
+      "path": "content/MoM/soa/investigators.ini",
+      "bytes": 541,
+      "sha256": "abe4c43f405b595353043d8ff8a21a596d456b4aef5106e46d76152ac0de9a97"
+    },
+    {
+      "path": "content/MoM/soa/items.ini",
+      "bytes": 3126,
+      "sha256": "d0f0dbef6a28cd514183f2c21e7767924b4ec127db239e7914003dbd56125da3"
+    },
+    {
+      "path": "content/MoM/soa/monsters.ini",
+      "bytes": 663,
+      "sha256": "630c54b39a6614111f4fa39f8fb80c7771fb3170685a27f4e5e5eb48127f1409"
+    },
+    {
+      "path": "content/MoM/soa/tiles.ini",
+      "bytes": 5149,
+      "sha256": "4aed532e7e7083ddfa4614ba3d046b5f7476f59083f35693b715c3e1ceea6306"
+    },
+    {
+      "path": "content/MoM/soa/tokens.ini",
+      "bytes": 1702,
+      "sha256": "248bba1e7ab978138d7b062fa3f5cd9758704843b34690123645b95b971e50d6"
+    },
+    {
+      "path": "content/MoM/soa/tokens_items.ini",
+      "bytes": 3030,
+      "sha256": "159c388073d6ebcf13bd602a828b05d1cff868559ad7086d88c85c5f02b15a47"
+    },
+    {
+      "path": "content/MoM/sot/content_pack.ini",
+      "bytes": 380,
+      "sha256": "1e98686ad28b9920a835c00b0c80555a741cfeec2d44539dbc44ccbc56a372bb"
+    },
+    {
+      "path": "content/MoM/sot/investigators.ini",
+      "bytes": 245,
+      "sha256": "43fb8d04a262eace024accaff5c06e57c9185e17762ae157cb521d4e32672822"
+    },
+    {
+      "path": "content/MoM/sot/items.ini",
+      "bytes": 1883,
+      "sha256": "7c7bb7ea167350990b0f92028658e474eaa707313e698d32b61745747a70f6be"
+    },
+    {
+      "path": "content/MoM/sot/monsters.ini",
+      "bytes": 407,
+      "sha256": "838dd031a9dc24be3785722bfa88e7a63930203443ffe28793719f345d4cb361"
+    },
+    {
+      "path": "content/MoM/sot/tiles.ini",
+      "bytes": 1528,
+      "sha256": "d6bd8f489f06a504b94b5c98530107f83e4277168da833c07d7c3b71d3c439ab"
+    },
+    {
+      "path": "content/MoM/sot/tokens.ini",
+      "bytes": 1064,
+      "sha256": "b202ddbd0b2b2cbc427ef7ee600d797397e18155f29375a2dd3f5291c85a8bbd"
+    },
+    {
+      "path": "content/MoM/sot/tokens_items.ini",
+      "bytes": 1828,
+      "sha256": "b7f42a281ef0ff399d5a937fb4e9a5b9ba4a47b75cf3e0ab11060c9fc6f43df4"
+    },
+    {
+      "path": "content/D2E/base/activations.ini",
+      "bytes": 5516,
+      "sha256": "8e51c9c64da01083e967ed199c769a8cc3a26f0feb768112e47ab88cb39a6a8a"
+    },
+    {
+      "path": "content/D2E/base/audio.ini",
+      "bytes": 3465,
+      "sha256": "f94881017ba99b7e8c6bd7ed7ed65a58ed5ffe3d5de7b9ba729597a6a6f8a894"
+    },
+    {
+      "path": "content/D2E/base/classes.ini",
+      "bytes": 5106,
+      "sha256": "b7521781a6e32420f717f070bbf06648a916458c814f929f96a0b71f648c5098"
+    },
+    {
+      "path": "content/D2E/base/content_pack.ini",
+      "bytes": 761,
+      "sha256": "5e4ec2db1925f975e35545a476809433d8e3fc699143ba082fb8b9d871f1fbb4"
+    },
+    {
+      "path": "content/D2E/base/heros.ini",
+      "bytes": 1192,
+      "sha256": "93c8e91676972daea164c9599ba879c4b0094a50024a751903eb25b918861547"
+    },
+    {
+      "path": "content/D2E/base/images.ini",
+      "bytes": 6668,
+      "sha256": "d624be226cd4e61847df88950b2ca31e2cd43f963374f98478015417831a6a7c"
+    },
+    {
+      "path": "content/D2E/base/items.ini",
+      "bytes": 8206,
+      "sha256": "12880acd6a93f70746513eba1f01e1a772c0d1e07843ee3831af2c9ef8d38ad3"
+    },
+    {
+      "path": "content/D2E/base/lieutenants.ini",
+      "bytes": 844,
+      "sha256": "f60c7b01e9e5b6e29fbf48199f4225181485eb43aa8f1aadde446165f10f8024"
+    },
+    {
+      "path": "content/D2E/base/ltActivations.ini",
+      "bytes": 3197,
+      "sha256": "e8289f1bbb9295577259ec517e58e07385e12c4cef04dd2dc6fb3cecaf72cb80"
+    },
+    {
+      "path": "content/D2E/base/monsters.ini",
+      "bytes": 2065,
+      "sha256": "030e3f8204faefb823bea0ddaf4f943516cb5a9d37f2f87952dbac2695d96d56"
+    },
+    {
+      "path": "content/D2E/base/perils.ini",
+      "bytes": 5746,
+      "sha256": "e203dc01c9c015a51fdac7dc9a151e9297c5f6313aae31bb85e074de196bb900"
+    },
+    {
+      "path": "content/D2E/base/tiles.ini",
+      "bytes": 7948,
+      "sha256": "4f7835130f3234048826f6c4ca75a811f60d35dd1b4574efe829bcd5224c06a5"
+    },
+    {
+      "path": "content/D2E/base/tokens.ini",
+      "bytes": 561,
+      "sha256": "8d685028cfe989fe7cc8c4508c9da0d5500c31e616d03d8b36c894733a39b0fb"
+    },
+    {
+      "path": "content/D2E/base/travel.ini",
+      "bytes": 2021,
+      "sha256": "9c2a1230c61409af71219196c59f6565e5e52e0c83354de3158086a49502f40c"
+    },
+    {
+      "path": "content/D2E/boxed/ll/classes.ini",
+      "bytes": 3733,
+      "sha256": "589e5862dc266fdf719804102909ef80dccada67b2296456edb01003e02d8641"
+    },
+    {
+      "path": "content/D2E/boxed/ll/content_pack.ini",
+      "bytes": 181,
+      "sha256": "8119aa828532edfde79b9e4b6cc46df330440d85ac5722c210d161eb4ea32f24"
+    },
+    {
+      "path": "content/D2E/boxed/ll/items.ini",
+      "bytes": 529,
+      "sha256": "4e250cc02c31f89ea7e538ecd27d31e2a5293a0a6c9f054eb81193cd0d68d378"
+    },
+    {
+      "path": "content/D2E/boxed/lor/activations.ini",
+      "bytes": 2111,
+      "sha256": "237dc879fa8642ecfb32a5c2aaf37268604b79384b982405722dacdb25b4690d"
+    },
+    {
+      "path": "content/D2E/boxed/lor/classes.ini",
+      "bytes": 2502,
+      "sha256": "6c16216fb944591bb630fbdbee944978ffbffe4153eb7ef8bffc27564996d83e"
+    },
+    {
+      "path": "content/D2E/boxed/lor/content_pack.ini",
+      "bytes": 280,
+      "sha256": "a9b2fb7430d6c313529bf1fbd24f104413c837e6e5153bec74d7453c04d0550b"
+    },
+    {
+      "path": "content/D2E/boxed/lor/heros.ini",
+      "bytes": 472,
+      "sha256": "b7c9e6baef5333bb0011491782bd07a61f723aa6d1feef1a718064a1c09ea81a"
+    },
+    {
+      "path": "content/D2E/boxed/lor/items.ini",
+      "bytes": 4768,
+      "sha256": "4a7ce6f5296baedab8db94a81e9fcab4b3602adbaa2d3ed163a39449ba9c0a9c"
+    },
+    {
+      "path": "content/D2E/boxed/lor/lieutenants.ini",
+      "bytes": 503,
+      "sha256": "32673e8f62b056522959e106403b4fdfc467b8e47b71afef177694ed02e2986f"
+    },
+    {
+      "path": "content/D2E/boxed/lor/ltActivations.ini",
+      "bytes": 2105,
+      "sha256": "238741fc7828b1a7e9b78475e605ab0ba53e11ff1cbe94565918dacce4abf21f"
+    },
+    {
+      "path": "content/D2E/boxed/lor/monsters.ini",
+      "bytes": 831,
+      "sha256": "3f5cfd58423325d1cf29c4fa5b2ac485a1392ac4acae0dc049310d05a4000564"
+    },
+    {
+      "path": "content/D2E/boxed/lor/tiles.ini",
+      "bytes": 1711,
+      "sha256": "fbc05ad5c86a9ba2f796612b23787633cd41a8e40d6fa7d543d276c37a6abdac"
+    },
+    {
+      "path": "content/D2E/boxed/lor/tokens.ini",
+      "bytes": 51,
+      "sha256": "cbd578e9138ce3db9a43d967b0470a0121eceed627c1233a205bef063d4a7703"
+    },
+    {
+      "path": "content/D2E/boxed/lotw/activations.ini",
+      "bytes": 1568,
+      "sha256": "53619c97dcbc9cc4e9534fdad59c079822b8a12e772ac082beb4e897f686d5e4"
+    },
+    {
+      "path": "content/D2E/boxed/lotw/classes.ini",
+      "bytes": 1294,
+      "sha256": "5656ad808a571f0809b0ef7f37a9a0b4403012dd1f973c48060a7633cbcb1b79"
+    },
+    {
+      "path": "content/D2E/boxed/lotw/content_pack.ini",
+      "bytes": 279,
+      "sha256": "f7da537534811fb329d9dc319646dcfbb10a301a204e6ec01609b5d70e454242"
+    },
+    {
+      "path": "content/D2E/boxed/lotw/heros.ini",
+      "bytes": 250,
+      "sha256": "3324c9328b8973235c15fedee885817814c83e37546ed693b4d59c236e98e0c5"
+    },
+    {
+      "path": "content/D2E/boxed/lotw/items.ini",
+      "bytes": 2216,
+      "sha256": "22b09f0b1375e3fe0090beb2e1be3d03be8e820e93f641540477320d87a671ff"
+    },
+    {
+      "path": "content/D2E/boxed/lotw/lieutenants.ini",
+      "bytes": 189,
+      "sha256": "e5c93ce1cac784d5f1ef9397aa3607b1bfc092b2d9336bff8369989edb354376"
+    },
+    {
+      "path": "content/D2E/boxed/lotw/ltActivations.ini",
+      "bytes": 527,
+      "sha256": "30236edc8262ba1f3954cca7570905ecf66abc4a91cfbe9a277a8bee8f30b1ff"
+    },
+    {
+      "path": "content/D2E/boxed/lotw/monsters.ini",
+      "bytes": 392,
+      "sha256": "36d0f1c20e4f77d0ada07974af7873984d2fd19c1b3ab7640fb258a378df2901"
+    },
+    {
+      "path": "content/D2E/boxed/lotw/tiles.ini",
+      "bytes": 1293,
+      "sha256": "ce04c5880a0a0b854e7e51de6fe9c51f27e9f0c44da5f50b233f0e7b0b6f4394"
+    },
+    {
+      "path": "content/D2E/boxed/lotw/tokens.ini",
+      "bytes": 71,
+      "sha256": "cec5dee45214faf2e98fe9d2d1823984a9def906fb2d599c6d67d218232d15c3"
+    },
+    {
+      "path": "content/D2E/boxed/mob/activations.ini",
+      "bytes": 1946,
+      "sha256": "3410150793c00daa07606580a4a3ab61f1a8b2b75989f488fd52af0a67c92339"
+    },
+    {
+      "path": "content/D2E/boxed/mob/content_pack.ini",
+      "bytes": 258,
+      "sha256": "31c939e3854703572996cc1d30509cf6fc5377c8b2c30992014bb911b69f258a"
+    },
+    {
+      "path": "content/D2E/boxed/mob/items.ini",
+      "bytes": 1685,
+      "sha256": "8db046ab14c8dedb181e63665f757d0eb2c92f1f7ba81f753d1267478acd2db1"
+    },
+    {
+      "path": "content/D2E/boxed/mob/lieutenants.ini",
+      "bytes": 413,
+      "sha256": "047822f55c8c1e7ce10e4d345eb651ba98e70734bc36b5029fe42b4f0113a474"
+    },
+    {
+      "path": "content/D2E/boxed/mob/ltActivations.ini",
+      "bytes": 1616,
+      "sha256": "97bcd8e368c7789450cd3b70598ef9cb8d6ba3b1220ce123268be7ee744e43e1"
+    },
+    {
+      "path": "content/D2E/boxed/mob/monsters.ini",
+      "bytes": 598,
+      "sha256": "4c161192f000c405d6622129997e5f1eafd7042ef752541b924fd9c4d75da194"
+    },
+    {
+      "path": "content/D2E/boxed/mob/tiles.ini",
+      "bytes": 2463,
+      "sha256": "06eb1edc4447d8a8c57c48d99de11df5ad382a0d28f49f9a6df9ec3cffa28880"
+    },
+    {
+      "path": "content/D2E/boxed/mob/tokens.ini",
+      "bytes": 65,
+      "sha256": "2365885f78ad4ef376fc3fba6a0e9b23353b23bc0577ff872e46ce9489929b6c"
+    },
+    {
+      "path": "content/D2E/boxed/mor/activations.ini",
+      "bytes": 1335,
+      "sha256": "214c296dedf9c72aa2a1b049c97f5fc84611e5a139b9757d563d1bd9be45a997"
+    },
+    {
+      "path": "content/D2E/boxed/mor/classes.ini",
+      "bytes": 1297,
+      "sha256": "5420c7de954a9d5447e9c6fcf4aee6f6245c2856c421bd0829927dab6b74f179"
+    },
+    {
+      "path": "content/D2E/boxed/mor/content_pack.ini",
+      "bytes": 267,
+      "sha256": "832e749e24d82d30d40f1bed816762619f2c84b0327310f9bd6fa02a887b76c1"
+    },
+    {
+      "path": "content/D2E/boxed/mor/heros.ini",
+      "bytes": 227,
+      "sha256": "5827138636595517be6a8e729f1516a175ccff73556843e8e96cc2f3fa8b8e44"
+    },
+    {
+      "path": "content/D2E/boxed/mor/items.ini",
+      "bytes": 2392,
+      "sha256": "15d79ce0362096709b43f85a180229e1b06dc627a661bc139b84cb1b981d1a99"
+    },
+    {
+      "path": "content/D2E/boxed/mor/lieutenants.ini",
+      "bytes": 115,
+      "sha256": "52cbc402594dc576be595e413a8cbe927900613f86bae137759d9eed7a30e13d"
+    },
+    {
+      "path": "content/D2E/boxed/mor/ltActivations.ini",
+      "bytes": 473,
+      "sha256": "0944e9519dfff7be09cdeedc4c98d4076e8452fafc32af55d82f50bc00987b83"
+    },
+    {
+      "path": "content/D2E/boxed/mor/monsters.ini",
+      "bytes": 365,
+      "sha256": "8f56ae5d702c9466451c5d33f9511f2d75855aeb39c29fd254eb0811fdf535cb"
+    },
+    {
+      "path": "content/D2E/boxed/mor/tiles.ini",
+      "bytes": 1753,
+      "sha256": "bd83a9eee2a3d7192ca9f3d1468832b2075745a16d32d81f2249e28b0855e564"
+    },
+    {
+      "path": "content/D2E/boxed/son/activations.ini",
+      "bytes": 2251,
+      "sha256": "8976cddab60e095462b9c71965ced3b8379fcca328a9e077e094f85228ea06cb"
+    },
+    {
+      "path": "content/D2E/boxed/son/classes.ini",
+      "bytes": 2624,
+      "sha256": "d17e804d5fe21c326087bcd5a1d384367dbd855f7f661f3a9b7a8b82cd3d273a"
+    },
+    {
+      "path": "content/D2E/boxed/son/content_pack.ini",
+      "bytes": 271,
+      "sha256": "9874217312071b96257752a0cbc17d1a55a87f9d3f6f671ddfd760b472ee9f25"
+    },
+    {
+      "path": "content/D2E/boxed/son/heros.ini",
+      "bytes": 484,
+      "sha256": "fe9f542ed9f2f8e1c356d3daed64eea7d10a1276afe4229d08a2a1546fff4c8f"
+    },
+    {
+      "path": "content/D2E/boxed/son/items.ini",
+      "bytes": 4940,
+      "sha256": "69ceb9cd2d6332f14c635807890e0981d0e65c8444bd981332e788008a600638"
+    },
+    {
+      "path": "content/D2E/boxed/son/lieutenants.ini",
+      "bytes": 633,
+      "sha256": "c8e6a13abae36c9a7d37537f9f3a850140e83141e5baf31caf64d547b3557c9e"
+    },
+    {
+      "path": "content/D2E/boxed/son/ltActivations.ini",
+      "bytes": 2213,
+      "sha256": "8238c054a0e67a5b14fe822a886e05da9298593f5553c7299bcba2d4f4f4e093"
+    },
+    {
+      "path": "content/D2E/boxed/son/monsters.ini",
+      "bytes": 854,
+      "sha256": "71c0a60976b732459c610d0c318746fc3de5a89212b7c6a1ee233e2315bde5b3"
+    },
+    {
+      "path": "content/D2E/boxed/son/tiles.ini",
+      "bytes": 5735,
+      "sha256": "3d9673a32826c4343271683c6e4731b25edb182bb184b9e802804f5aaa2441bd"
+    },
+    {
+      "path": "content/D2E/boxed/tctr/activations.ini",
+      "bytes": 2260,
+      "sha256": "85f1307c5b2be5aa387fd13f7f6ddef3e424f9ac6dfa96a37f8600bcb75db7c4"
+    },
+    {
+      "path": "content/D2E/boxed/tctr/classes.ini",
+      "bytes": 1277,
+      "sha256": "c9a9bc471e6b585f5a54a91fc8c4fa095ec64bdd9814d18c4f6bd8b0799d1455"
+    },
+    {
+      "path": "content/D2E/boxed/tctr/content_pack.ini",
+      "bytes": 269,
+      "sha256": "11e75812d4141d145df2beb9f71a1ef46a74d47140c1a2b5c7f1b36bdb4eb8ec"
+    },
+    {
+      "path": "content/D2E/boxed/tctr/items.ini",
+      "bytes": 1877,
+      "sha256": "ec29d5a00997f42179452111291d0a009189991f5ffffc12dd25988a5cd31c90"
+    },
+    {
+      "path": "content/D2E/boxed/tctr/lieutenants.ini",
+      "bytes": 413,
+      "sha256": "047822f55c8c1e7ce10e4d345eb651ba98e70734bc36b5029fe42b4f0113a474"
+    },
+    {
+      "path": "content/D2E/boxed/tctr/ltActivations.ini",
+      "bytes": 1616,
+      "sha256": "97bcd8e368c7789450cd3b70598ef9cb8d6ba3b1220ce123268be7ee744e43e1"
+    },
+    {
+      "path": "content/D2E/boxed/tctr/monsters.ini",
+      "bytes": 694,
+      "sha256": "20ff794b6e5cb61fa552321aa56c90251737070dc7d6598c98616e4f9c6f9f9a"
+    },
+    {
+      "path": "content/D2E/boxed/tctr/tiles.ini",
+      "bytes": 3077,
+      "sha256": "8c1dbc5ecf7c57163888a0109601854b3e6122b99a63ddb6fa1385be6c543f0a"
+    },
+    {
+      "path": "content/D2E/boxed/tctr/tokens.ini",
+      "bytes": 65,
+      "sha256": "2365885f78ad4ef376fc3fba6a0e9b23353b23bc0577ff872e46ce9489929b6c"
+    },
+    {
+      "path": "content/D2E/boxed/tt/activations.ini",
+      "bytes": 866,
+      "sha256": "950db9244028401d291280c3fbdee95af65bb9c56a4fb674cc1cb674acb55169"
+    },
+    {
+      "path": "content/D2E/boxed/tt/classes.ini",
+      "bytes": 1228,
+      "sha256": "89674e053677d6dd551abac4e41b95658f45117bd7fbaaf44842b67a95467fbb"
+    },
+    {
+      "path": "content/D2E/boxed/tt/content_pack.ini",
+      "bytes": 276,
+      "sha256": "c7cc9a7db5f65819c57f4eb2feeed5ae8eed4c7d6038c4e39626a7d234e6a93f"
+    },
+    {
+      "path": "content/D2E/boxed/tt/heros.ini",
+      "bytes": 246,
+      "sha256": "5002d92b63b2dbdb9607eebe1f5f6eae5c61f90584dd37f90f395ec1612e2f0b"
+    },
+    {
+      "path": "content/D2E/boxed/tt/items.ini",
+      "bytes": 3045,
+      "sha256": "c02ea731b14092cfaa4f61ac037fbad5df19cb2fe4995e708ea37b6108cbfc9f"
+    },
+    {
+      "path": "content/D2E/boxed/tt/lieutenants.ini",
+      "bytes": 135,
+      "sha256": "0547e0c2dd02125aee4d26d400210c623d151246ad477110e9e28159330aa8e1"
+    },
+    {
+      "path": "content/D2E/boxed/tt/ltActivations.ini",
+      "bytes": 563,
+      "sha256": "f22f2662f54bf33fffe53e6e0c9bc5a8f40d0fdef24624c0d263c5aaef6fdc5e"
+    },
+    {
+      "path": "content/D2E/boxed/tt/monsters.ini",
+      "bytes": 394,
+      "sha256": "b8f3973e9aa9144ff01bb2277d6c2ca858765737d0fb2f6deed4b59109f8e6c6"
+    },
+    {
+      "path": "content/D2E/boxed/tt/tiles.ini",
+      "bytes": 1698,
+      "sha256": "af8d3b89416c0480268ea88a4aebc3181ace39aedb0a38093646df556e5a1806"
+    },
+    {
+      "path": "content/D2E/boxed/tt/tokens.ini",
+      "bytes": 71,
+      "sha256": "cec5dee45214faf2e98fe9d2d1823984a9def906fb2d599c6d67d218232d15c3"
+    },
+    {
+      "path": "content/D2E/ck/aod/activations.ini",
+      "bytes": 2275,
+      "sha256": "fe27bfb23b8cac704d587ff451114613b3c5c0ab835289ff96e4d6302571fa89"
+    },
+    {
+      "path": "content/D2E/ck/aod/content_pack.ini",
+      "bytes": 254,
+      "sha256": "0026cc3297575c71929eeadbdc16fb8c4f31a5e99ea31c70f42227683e5a5cc7"
+    },
+    {
+      "path": "content/D2E/ck/aod/heroes.ini",
+      "bytes": 462,
+      "sha256": "03e9a87f54188720054c4172be9e88102ebc381aac8a58cefbe0ad85fc26dec1"
+    },
+    {
+      "path": "content/D2E/ck/aod/monsters.ini",
+      "bytes": 1052,
+      "sha256": "d038109178fbcb64aac93c002428e99257403459d093f752a599b448b4f34371"
+    },
+    {
+      "path": "content/D2E/ck/d1e/activations.ini",
+      "bytes": 5730,
+      "sha256": "66a81bb0a4cf6f221a0d67aef68e7010240763c173ac6fd82ffa9082c60e23de"
+    },
+    {
+      "path": "content/D2E/ck/d1e/content_pack.ini",
+      "bytes": 210,
+      "sha256": "d58d403d263a34a790e780b0cee1d8d0033cd6f488fd2dd9511e89dcb9c064ae"
+    },
+    {
+      "path": "content/D2E/ck/d1e/heroes.ini",
+      "bytes": 2147,
+      "sha256": "43ab17a5797f13a3940407f96fdb381225129f60cb298aff9025254381125227"
+    },
+    {
+      "path": "content/D2E/ck/d1e/monsters.ini",
+      "bytes": 2919,
+      "sha256": "3fb9d293831a18cd9c71eb9b491846bca30702dad075b50c932eacf9753dc748"
+    },
+    {
+      "path": "content/D2E/ck/dq/content_pack.ini",
+      "bytes": 169,
+      "sha256": "aef9db9b803248cacab9c2a5e2ec014a0cbfa554c3d53d4bf68d7374d53401e2"
+    },
+    {
+      "path": "content/D2E/ck/dq/heroes.ini",
+      "bytes": 632,
+      "sha256": "e249ef6727cf410e8c463d9f2cfc69e779d49e08d6865d9665e187c2d48fc6f2"
+    },
+    {
+      "path": "content/D2E/ck/promo/content_pack.ini",
+      "bytes": 171,
+      "sha256": "9e404313630aeb02b55259f46650c7bc6c332fb6dbd3b042ea6f3a7aedf77c1c"
+    },
+    {
+      "path": "content/D2E/ck/promo/heroes.ini",
+      "bytes": 429,
+      "sha256": "f426dcac9c02f78d338e8acd5077f799bd7102d65b5aa6b45ac395f6e27962f0"
+    },
+    {
+      "path": "content/D2E/ck/toi/activations.ini",
+      "bytes": 3495,
+      "sha256": "a76a68211689f7de0b74ee309732312048c7e95eab0062de9a7d343a145bfc2b"
+    },
+    {
+      "path": "content/D2E/ck/toi/content_pack.ini",
+      "bytes": 244,
+      "sha256": "f142ccc2cf62d521c775837061d6688fed319e84dfe34088d05fbdcf14e6e0b4"
+    },
+    {
+      "path": "content/D2E/ck/toi/heroes.ini",
+      "bytes": 621,
+      "sha256": "4c9fd349c01c960236ed82b6f5ba0096e7ffda328d11366acc33544ffc913a3a"
+    },
+    {
+      "path": "content/D2E/ck/toi/monsters.ini",
+      "bytes": 977,
+      "sha256": "fccb023684be9c9eb9f71e8fdf71d54f75e34bce34587e92284ac629978b816d"
+    },
+    {
+      "path": "content/D2E/ck/wod/activations.ini",
+      "bytes": 1939,
+      "sha256": "5cba3ff10844d128b37cf2405602cd091d78d229d1c6bbb91051d9464e6cadbf"
+    },
+    {
+      "path": "content/D2E/ck/wod/content_pack.ini",
+      "bytes": 254,
+      "sha256": "27f61d01801936d86d6a3290cebeaa8b660832812be2fb6b278bce810668a5f6"
+    },
+    {
+      "path": "content/D2E/ck/wod/heroes.ini",
+      "bytes": 692,
+      "sha256": "57af131629adecb08b96bf05ac427d98e4d2a483ad00c9ae23e3da9d97e8d6f7"
+    },
+    {
+      "path": "content/D2E/ck/wod/monsters.ini",
+      "bytes": 630,
+      "sha256": "ffc90f8e5427611a75dcded0c14ce44690c9dfc63b075d1c6dffc188a5cd0de2"
+    },
+    {
+      "path": "content/D2E/h&m/botw/activations.ini",
+      "bytes": 1470,
+      "sha256": "580b2f0518ab4624082b9b24476883c8846174494d33d4c767a15c0dedf1a352"
+    },
+    {
+      "path": "content/D2E/h&m/botw/content_pack.ini",
+      "bytes": 202,
+      "sha256": "6e9fd2b31b4e182310ce8df8adc95dace35777cd0278636ab152d8bbca111528"
+    },
+    {
+      "path": "content/D2E/h&m/botw/heros.ini",
+      "bytes": 437,
+      "sha256": "49e1ffb22d72d7dcbaf92becce0dea07f98097592210ad8a85d4671d21150cc4"
+    },
+    {
+      "path": "content/D2E/h&m/botw/monsters.ini",
+      "bytes": 551,
+      "sha256": "74bd5a3039897749b24dcc59b9c3abb5cf586054baa75ee8cad8a83e3b1e549e"
+    },
+    {
+      "path": "content/D2E/h&m/cod/activations.ini",
+      "bytes": 1334,
+      "sha256": "8cc2101c75eb7be7947f12eeb43c05a0f772b395f597c5b3f7f11d9df0fcb575"
+    },
+    {
+      "path": "content/D2E/h&m/cod/content_pack.ini",
+      "bytes": 201,
+      "sha256": "48a6f8bcce9f3c8c9730f6b4cec70f468072309927896010b64ec22355895303"
+    },
+    {
+      "path": "content/D2E/h&m/cod/heros.ini",
+      "bytes": 418,
+      "sha256": "df7cc7abdb9479f6f88dce251fbf31ddc76407e34c731f205448da7fd550d4f3"
+    },
+    {
+      "path": "content/D2E/h&m/cod/monsters.ini",
+      "bytes": 559,
+      "sha256": "9a32f19dc7e7a8ed8cf639d84d8124778795b1f0cbe40b970fd3280f5c4c9bee"
+    },
+    {
+      "path": "content/D2E/h&m/cotf/activations.ini",
+      "bytes": 1244,
+      "sha256": "e2717ee99aaddfad577460672c16bbcd1382194988ec38cd1d0fb4c211520ce8"
+    },
+    {
+      "path": "content/D2E/h&m/cotf/content_pack.ini",
+      "bytes": 209,
+      "sha256": "80d95459c0fc33ea82c0a24ca0bf690fddea4566071f7cb2cc47eab51c7a456b"
+    },
+    {
+      "path": "content/D2E/h&m/cotf/heros.ini",
+      "bytes": 415,
+      "sha256": "13911f00033dc05d72a3d0838485420d577c32eeb2aea8cd9388526f5b765d60"
+    },
+    {
+      "path": "content/D2E/h&m/cotf/monsters.ini",
+      "bytes": 547,
+      "sha256": "bf8d49120087a469a679ae698edde1d5c3138bf93d3f72bb4f529cfcf79ea79a"
+    },
+    {
+      "path": "content/D2E/h&m/god/activations.ini",
+      "bytes": 1370,
+      "sha256": "dd831680bbfae1ac063119e0b752ddbfbf8cdcd229203a063be19c08682af48b"
+    },
+    {
+      "path": "content/D2E/h&m/god/content_pack.ini",
+      "bytes": 206,
+      "sha256": "6c6a9bbc48739a0cbeb7d52cbf3ffd40d5a628c49ea49fdb985ef8a905290453"
+    },
+    {
+      "path": "content/D2E/h&m/god/heros.ini",
+      "bytes": 412,
+      "sha256": "4bece6604f3493b4f559b7e25bf1f562de78e3c8873338df5bce82f7347a6720"
+    },
+    {
+      "path": "content/D2E/h&m/god/monsters.ini",
+      "bytes": 661,
+      "sha256": "d3c0ed72be9e11b244b3d4ad62339780ef7647a4673afdd49989bb91622b11fa"
+    },
+    {
+      "path": "content/D2E/h&m/ooto/activations.ini",
+      "bytes": 1349,
+      "sha256": "739c25e2e32ffed791841ecee7a1e7379e85567188864a2bcc0caf87d06b9039"
+    },
+    {
+      "path": "content/D2E/h&m/ooto/content_pack.ini",
+      "bytes": 204,
+      "sha256": "b94cf0b5e91f82489e7acc2d0e0f9abbf3e65872322552f4fd4b722c895bf506"
+    },
+    {
+      "path": "content/D2E/h&m/ooto/heros.ini",
+      "bytes": 449,
+      "sha256": "23cd135eb17ab99d56dd49efed6363c6eb1594e3031992b3595d9a6bff5e057a"
+    },
+    {
+      "path": "content/D2E/h&m/ooto/monsters.ini",
+      "bytes": 593,
+      "sha256": "ba737af8cdaefd02be73866ff91da94c369e24ae4f8c79d663f266488df7ba97"
+    },
+    {
+      "path": "content/D2E/h&m/soe/activations.ini",
+      "bytes": 1397,
+      "sha256": "b4eee3c0a26471580e2a21a62157ef24516f00287b2e3b418fc536b1d1942b4c"
+    },
+    {
+      "path": "content/D2E/h&m/soe/content_pack.ini",
+      "bytes": 203,
+      "sha256": "2f82f537043e4d480a62ed77c6dd70347534523b222d81f82d2e60020776725e"
+    },
+    {
+      "path": "content/D2E/h&m/soe/heros.ini",
+      "bytes": 426,
+      "sha256": "cf91e64d47a626a1fdeff467a338b25125e6e07607148b0d7ca541c17c4a4981"
+    },
+    {
+      "path": "content/D2E/h&m/soe/monsters.ini",
+      "bytes": 665,
+      "sha256": "eb4e8862b014f74d9ef9bff049493768d20d687c278e0d181e5705632d1468d5"
+    },
+    {
+      "path": "content/D2E/h&m/sots/activations.ini",
+      "bytes": 1307,
+      "sha256": "600ac7748e06b5d9ec0b9dbc61969bd500bbc37048797cc5f8e5e1a10473f992"
+    },
+    {
+      "path": "content/D2E/h&m/sots/content_pack.ini",
+      "bytes": 207,
+      "sha256": "8f0b8d1a991b62592b1405203b42f1f2a83006b4cc8f3937d71b9d828ec030e5"
+    },
+    {
+      "path": "content/D2E/h&m/sots/heros.ini",
+      "bytes": 443,
+      "sha256": "819448e11852a9780b63388133c471179b114058a25a6dd7507535d8bfb114c4"
+    },
+    {
+      "path": "content/D2E/h&m/sots/monsters.ini",
+      "bytes": 685,
+      "sha256": "c371053a08e950335171a4d88a369a11736ccb793a390f01d7e4d5f1619b911d"
+    },
+    {
+      "path": "content/D2E/h&m/toc/activations.ini",
+      "bytes": 1425,
+      "sha256": "4a007c23b526752503484b8ee742d46eb81601d715bed9d998d71ba034dfbf10"
+    },
+    {
+      "path": "content/D2E/h&m/toc/content_pack.ini",
+      "bytes": 204,
+      "sha256": "24fc3efa4d358d5f58a1fdfccbd06d69f66cb415330ffcb474f41a1c430161e3"
+    },
+    {
+      "path": "content/D2E/h&m/toc/heros.ini",
+      "bytes": 408,
+      "sha256": "3a4805aa621574bcc491abe5b08be9b8243e0ec15427bd75e7403f94aff435cf"
+    },
+    {
+      "path": "content/D2E/h&m/toc/monsters.ini",
+      "bytes": 585,
+      "sha256": "2e5530a555a451e0a59df021b7fa6b81931a382a57bcf776e953f147c7c34d87"
+    },
+    {
+      "path": "content/D2E/h&m/vod/activations.ini",
+      "bytes": 1298,
+      "sha256": "5a7f3f5cbdabb867982a7f1f5e1efb60f2ae8376843c6f80bd8d3adc910a554f"
+    },
+    {
+      "path": "content/D2E/h&m/vod/content_pack.ini",
+      "bytes": 200,
+      "sha256": "b51d78fc54ac50f65b4336a18013b997d960a1955c880aebe9d251319b87ae6b"
+    },
+    {
+      "path": "content/D2E/h&m/vod/heros.ini",
+      "bytes": 425,
+      "sha256": "286e22b2e12bf36c95d1037dd2c03eaa4f7fb89229ad4eb9285ad9d73bff88c7"
+    },
+    {
+      "path": "content/D2E/h&m/vod/monsters.ini",
+      "bytes": 631,
+      "sha256": "12e8d946c9b2465b267f32e5d7d4f905ebe1e750acc33282fd752bda86c8ac01"
+    },
+    {
+      "path": "content/D2E/lt/alricfarrow/content_pack.ini",
+      "bytes": 845,
+      "sha256": "729e43ba3b033e6c761b082ca286c8cc6c64ebbb4bda758a34613b942e75192c"
+    },
+    {
+      "path": "content/D2E/lt/ardus/content_pack.ini",
+      "bytes": 840,
+      "sha256": "88446815bd6efdc7399ba6d47c059aebe22115302c8e334dc71a86288aeeb1be"
+    },
+    {
+      "path": "content/D2E/lt/ariad/content_pack.ini",
+      "bytes": 756,
+      "sha256": "67209ca2a7d6dc96f517c9fb4b7e10c5c0b438d5e88c7d849a52fbe605c54746"
+    },
+    {
+      "path": "content/D2E/lt/belthir/content_pack.ini",
+      "bytes": 802,
+      "sha256": "9d00d959a25881f347ff43c8bf69375a04a6a928f5e0923029f81973a017145e"
+    },
+    {
+      "path": "content/D2E/lt/bolgoreth/content_pack.ini",
+      "bytes": 848,
+      "sha256": "1b166afd009081fa11860d8990e53d8fbfb729b6a86916429847e6fe0a7872aa"
+    },
+    {
+      "path": "content/D2E/lt/elizafarrow/content_pack.ini",
+      "bytes": 854,
+      "sha256": "436933c482d0b9d1d6f8cd93aeab92be3e4fc3c65460a6b1e20f1050e8f8cd67"
+    },
+    {
+      "path": "content/D2E/lt/kyndrithul/content_pack.ini",
+      "bytes": 871,
+      "sha256": "0bdb50ce29415f50ee3fb1a36c2011c990a1c61c2c44f9fbfec3ad255f78a1c0"
+    },
+    {
+      "path": "content/D2E/lt/merickfarrow/content_pack.ini",
+      "bytes": 878,
+      "sha256": "160c63ee83ea76d02b066ef348cebd713e691373980c67898b3b36f8126961d2"
+    },
+    {
+      "path": "content/D2E/lt/mirklace/content_pack.ini",
+      "bytes": 885,
+      "sha256": "b7e58950395fffe456365b5da39c1680420d539bc58cd6ffccf713a425f1b3c7"
+    },
+    {
+      "path": "content/D2E/lt/queenariad/content_pack.ini",
+      "bytes": 884,
+      "sha256": "5a4fd03b4e833b75e5a1df9c4dc8ccbe95cfc10b25c44d6b276a154b29d0c7eb"
+    },
+    {
+      "path": "content/D2E/lt/raythen/content_pack.ini",
+      "bytes": 898,
+      "sha256": "371e3a9d56cad87e315c0dec9bccf119caebf5f379fb943763598b4286aadabf"
+    },
+    {
+      "path": "content/D2E/lt/rylanolliven/content_pack.ini",
+      "bytes": 827,
+      "sha256": "983f18731cee197ca0c22c8d2c9a9572846e79d03b05932fb1bdf9ea1c5e0a54"
+    },
+    {
+      "path": "content/D2E/lt/serena/content_pack.ini",
+      "bytes": 875,
+      "sha256": "c2439e2f7fc754a0c2f0e4d652e1db88f1a3da4a7af022abdd7b8a055b4ffb9e"
+    },
+    {
+      "path": "content/D2E/lt/skarn/content_pack.ini",
+      "bytes": 755,
+      "sha256": "5951657827df90df41f0a78ec89dd405b376b2163c94d04bf586f8614467ad94"
+    },
+    {
+      "path": "content/D2E/lt/splig/content_pack.ini",
+      "bytes": 756,
+      "sha256": "b6cd49f37e713f2ef6564c7f754eaa5145a276656b827171793a870ecb06ad9b"
+    },
+    {
+      "path": "content/D2E/lt/tristayneolliven/content_pack.ini",
+      "bytes": 919,
+      "sha256": "38b0cdc1827359ebe5a746fd6725d913dfc18b4297ff071ce4e0b6c760785e04"
+    },
+    {
+      "path": "content/D2E/lt/valyndra/content_pack.ini",
+      "bytes": 883,
+      "sha256": "29f4e64d2f7cfaed37cbd39da776326b75111efe5bd628390ea9f1a750619092"
+    },
+    {
+      "path": "content/D2E/lt/verminous/content_pack.ini",
+      "bytes": 908,
+      "sha256": "b20465468e58c7c4b131f41bdca199becf7eabd77ebb564d32773676d859a41b"
+    },
+    {
+      "path": "content/D2E/lt/zachareth/content_pack.ini",
+      "bytes": 894,
+      "sha256": "08461e52daf0726fee42728001b9555e193107b1386f8b06c6b189b7a6528f7a"
+    },
+    {
+      "path": "content/D2E/lt/zarihell/content_pack.ini",
+      "bytes": 825,
+      "sha256": "c4b646e61b2fddf8b30fef64e26529249f47cf6fec8cd52d01f37e2edb394b11"
+    },
+    {
+      "path": "text/Localization.Chinese.txt",
+      "bytes": 11006,
+      "sha256": "0b3f7783e7c9bba7d1db9278c2d980e4e26607843fe1add88963db99f0f97bb7"
+    },
+    {
+      "path": "text/Localization.Czech.txt",
+      "bytes": 17213,
+      "sha256": "75bc7a6df59faf823c6e92347e696b02fceed459a563e0153a6354df98589376"
+    },
+    {
+      "path": "text/Localization.English.txt",
+      "bytes": 16199,
+      "sha256": "02d3a2ec371e3616c4eaae28bcc5ff430c90557b9b033699118ce94b3eed7fb3"
+    },
+    {
+      "path": "text/Localization.French.txt",
+      "bytes": 14537,
+      "sha256": "3064ac1dd290b47c8bbbdb57d775b40f00baf792b02176e38c85c8d2ed4ed0c1"
+    },
+    {
+      "path": "text/Localization.German.txt",
+      "bytes": 14160,
+      "sha256": "9971818c5252d2f765332f78aac0d689226e089b8566d8f6c93fe72149ef2bec"
+    },
+    {
+      "path": "text/Localization.Italian.txt",
+      "bytes": 12717,
+      "sha256": "d83514838dac8528142f0eec082ca3d9dfbe77294b38cef38bf7ddae60800873"
+    },
+    {
+      "path": "text/Localization.Japanese.txt",
+      "bytes": 18034,
+      "sha256": "7e924deadb517ca8c14ab8914ba68fd6003cc37d47219cfde5c07b90b665a6f4"
+    },
+    {
+      "path": "text/Localization.Korean.txt",
+      "bytes": 16910,
+      "sha256": "98ab8014edc50021d1d80d8927f0a74737f6c1dc144f3bf5ca4862188e744751"
+    },
+    {
+      "path": "text/Localization.Polish.txt",
+      "bytes": 13073,
+      "sha256": "317d947f867945f496882bfc9b9641bea813ef01eb091e5a95dd3e467fdcbf05"
+    },
+    {
+      "path": "text/Localization.Portuguese.txt",
+      "bytes": 14485,
+      "sha256": "3363b299ceef1686e085d2a27d63d641140f003290017cfee18ad8d0dd8afa02"
+    },
+    {
+      "path": "text/Localization.Russian.txt",
+      "bytes": 19865,
+      "sha256": "2f4a357aeffc969f71041ef9e0196c61c16c46da0480aa937df4293f986fc398"
+    },
+    {
+      "path": "text/Localization.Spanish.txt",
+      "bytes": 14406,
+      "sha256": "2e98a603a60a07b65397c80809656302d99e82836763677c312e00b86c784713"
+    },
+    {
+      "path": "text/Localization.Ukrainian.txt",
+      "bytes": 20177,
+      "sha256": "2cd3b4a5bc70f9dc8f3df193812185f3c4a6b51d32c58940deb0c5814a47c230"
+    },
+    {
+      "path": "text/download.txt",
+      "bytes": 64,
+      "sha256": "694bf086a01c5c720576466a9ac39623c1dc20240a18a06014fce8ec4206cf0f"
+    },
+    {
+      "path": "Resources/slidepuzzles.txt",
+      "bytes": 7726,
+      "sha256": "1e92694a7ec80cb0623d47bc009aa76e8eca80c8fb40cf430849524fc792daf3"
+    }
+  ],
+  "images": [
+    {
+      "path": "content/MoM/base/img/HighEditorTransparency.png",
+      "bytes": 47472,
+      "width": 250,
+      "height": 250
+    },
+    {
+      "path": "content/MoM/base/img/LowEditorTransparency.png",
+      "bytes": 42279,
+      "width": 250,
+      "height": 250
+    },
+    {
+      "path": "content/MoM/base/img/MediumEditorTransparency.png",
+      "bytes": 45843,
+      "width": 250,
+      "height": 250
+    },
+    {
+      "path": "content/MoM/base/img/SpriteAtlasTexture-token.png",
+      "bytes": 1660904,
+      "width": 2048,
+      "height": 1024
+    },
+    {
+      "path": "content/MoM/base/img/Tile_Alley_End_MAD20.jpg",
+      "bytes": 41076,
+      "width": 504,
+      "height": 252
+    },
+    {
+      "path": "content/MoM/base/img/agent_craven_token.png",
+      "bytes": 81188,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/barricadeinside.png",
+      "bytes": 20253,
+      "width": 117,
+      "height": 117
+    },
+    {
+      "path": "content/MoM/base/img/barricadeoutside.png",
+      "bytes": 26298,
+      "width": 117,
+      "height": 117
+    },
+    {
+      "path": "content/MoM/base/img/blue_man_token.png",
+      "bytes": 84883,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/blue_woman_token.png",
+      "bytes": 86003,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/bobby_foster_token.png",
+      "bytes": 76903,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/cat_token.png",
+      "bytes": 78504,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/clue_token.png",
+      "bytes": 112827,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/darkness.png",
+      "bytes": 89847,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/dog_token.png",
+      "bytes": 86268,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/doorinside.png",
+      "bytes": 11472,
+      "width": 129,
+      "height": 154
+    },
+    {
+      "path": "content/MoM/base/img/dooroutside.png",
+      "bytes": 11550,
+      "width": 129,
+      "height": 154
+    },
+    {
+      "path": "content/MoM/base/img/edna_hughes_token.png",
+      "bytes": 73697,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/eugene_clemens_token.png",
+      "bytes": 109179,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/explore_token.png",
+      "bytes": 117334,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/fire.png",
+      "bytes": 19669,
+      "width": 117,
+      "height": 117
+    },
+    {
+      "path": "content/MoM/base/img/grace_bechman_token.png",
+      "bytes": 79503,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/green_man_token.png",
+      "bytes": 83490,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/green_woman_token.png",
+      "bytes": 83834,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/grey_man_token.png",
+      "bytes": 79695,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/grey_woman_token.png",
+      "bytes": 82172,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/howard_bechman_token.png",
+      "bytes": 76876,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/interact_token.png",
+      "bytes": 118712,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/investigators_token.png",
+      "bytes": 85104,
+      "width": 238,
+      "height": 248
+    },
+    {
+      "path": "content/MoM/base/img/joyce_little_token.png",
+      "bytes": 77931,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/mildred_bechman_token.png",
+      "bytes": 80327,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/orange_man_token.png",
+      "bytes": 90740,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/orange_woman_token.png",
+      "bytes": 90078,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/othera_gilman_token.png",
+      "bytes": 82275,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/purple_man_token.png",
+      "bytes": 83314,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/purple_woman_token.png",
+      "bytes": 80797,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/red_man_token.png",
+      "bytes": 86068,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/red_woman_token.png",
+      "bytes": 86330,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/richard_bechman_token.png",
+      "bytes": 80845,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/search_token.png",
+      "bytes": 122714,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/secretinside.png",
+      "bytes": 18116,
+      "width": 117,
+      "height": 117
+    },
+    {
+      "path": "content/MoM/base/img/secretoutside.png",
+      "bytes": 19624,
+      "width": 117,
+      "height": 117
+    },
+    {
+      "path": "content/MoM/base/img/sewer.png",
+      "bytes": 23557,
+      "width": 117,
+      "height": 118
+    },
+    {
+      "path": "content/MoM/base/img/sight_token.png",
+      "bytes": 120605,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/sylvia_marsh_token.png",
+      "bytes": 81197,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/trapdoor.png",
+      "bytes": 86581,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/victor_blake_token.png",
+      "bytes": 79959,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/wallinside.png",
+      "bytes": 16827,
+      "width": 129,
+      "height": 154
+    },
+    {
+      "path": "content/MoM/base/img/wallinsidegreen.png",
+      "bytes": 15327,
+      "width": 129,
+      "height": 154
+    },
+    {
+      "path": "content/MoM/base/img/walloutside.png",
+      "bytes": 15230,
+      "width": 128,
+      "height": 154
+    },
+    {
+      "path": "content/MoM/base/img/walloutsidegreen.png",
+      "bytes": 14030,
+      "width": 128,
+      "height": 154
+    },
+    {
+      "path": "content/MoM/base/img/white_man_token.png",
+      "bytes": 80997,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/white_woman_token.png",
+      "bytes": 79373,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/yellow_man_token.png",
+      "bytes": 87313,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/yellow_woman_token.png",
+      "bytes": 89839,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/base/img/zadok_allen_token.png",
+      "bytes": 72817,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/btt/img/SpriteAtlasTexture-token.png",
+      "bytes": 1660037,
+      "width": 2048,
+      "height": 1024
+    },
+    {
+      "path": "content/MoM/ck/ck-tokensandcards/MAD01CK.png",
+      "bytes": 515671,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "content/MoM/ck/ck-tokensandcards/img/MAD09-allytoken-ammi.png",
+      "bytes": 85060,
+      "width": 200,
+      "height": 201
+    },
+    {
+      "path": "content/MoM/ck/ck-tokensandcards/img/MAD09-allytoken-corrina.png",
+      "bytes": 77464,
+      "width": 200,
+      "height": 199
+    },
+    {
+      "path": "content/MoM/ck/ck-tokensandcards/img/MAD09-allytoken-eric.png",
+      "bytes": 82416,
+      "width": 200,
+      "height": 200
+    },
+    {
+      "path": "content/MoM/ck/ck-tokensandcards/img/zebulon_whateley_token.png",
+      "bytes": 79505,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/ck/cotw-investigators/MAD09I.png",
+      "bytes": 380389,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "content/MoM/ck/cotw-monsters/MAD09M.png",
+      "bytes": 375562,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "content/MoM/ck/cotw-tiles/MAD09T.png",
+      "bytes": 511749,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "content/MoM/ck/cotw-tiles/img/Tile_Campsite_MAD09.jpg",
+      "bytes": 49800,
+      "width": 504,
+      "height": 252
+    },
+    {
+      "path": "content/MoM/ck/cotw-tiles/img/Tile_Cave_Bend_MAD09.jpg",
+      "bytes": 57503,
+      "width": 504,
+      "height": 252
+    },
+    {
+      "path": "content/MoM/ck/cotw-tiles/img/Tile_Outhouse_MAD09.jpg",
+      "bytes": 47062,
+      "width": 504,
+      "height": 252
+    },
+    {
+      "path": "content/MoM/ck/cotw-tiles/img/Tile_Pigpen_MAD09.jpg",
+      "bytes": 42118,
+      "width": 504,
+      "height": 252
+    },
+    {
+      "path": "content/MoM/ck/cotw-tiles/img/Tile_River_Bend_1_MAD09.jpg",
+      "bytes": 48728,
+      "width": 504,
+      "height": 252
+    },
+    {
+      "path": "content/MoM/ck/fa-investigators/MAD06I.png",
+      "bytes": 372920,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "content/MoM/ck/fa-monsters/MAD06M.png",
+      "bytes": 367586,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "content/MoM/ck/fa-tiles/MAD06T.png",
+      "bytes": 438096,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "content/MoM/ck/fa-tiles/img/Tile_Cave_3_MAD06.jpg",
+      "bytes": 57785,
+      "width": 504,
+      "height": 252
+    },
+    {
+      "path": "content/MoM/ck/fa-tiles/img/Tile_Observation_Room_MAD06.jpg",
+      "bytes": 60001,
+      "width": 504,
+      "height": 252
+    },
+    {
+      "path": "content/MoM/ck/fa-tiles/img/Tile_Operating_Theater_MAD06.jpg",
+      "bytes": 111567,
+      "width": 504,
+      "height": 504
+    },
+    {
+      "path": "content/MoM/ck/mom1e-investigators/MAD01I.png",
+      "bytes": 361034,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "content/MoM/ck/mom1e-monsters/MAD01M.png",
+      "bytes": 357217,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "content/MoM/ck/mom1e-tiles/MAD01T.png",
+      "bytes": 440771,
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "content/MoM/ck/mom1e-tiles/img/Tile_Cave_1_MAD01.jpg",
+      "bytes": 44952,
+      "width": 504,
+      "height": 252
+    },
+    {
+      "path": "content/MoM/ck/mom1e-tiles/img/Tile_Cave_2_MAD01.jpg",
+      "bytes": 47291,
+      "width": 504,
+      "height": 252
+    },
+    {
+      "path": "content/MoM/ck/mom1e-tiles/img/Tile_Chasm_MAD01.jpg",
+      "bytes": 48276,
+      "width": 504,
+      "height": 252
+    },
+    {
+      "path": "content/MoM/ck/mom1e-tiles/img/Tile_Front_Yard_MAD01.jpg",
+      "bytes": 125750,
+      "width": 756,
+      "height": 504
+    },
+    {
+      "path": "content/MoM/ck/mom1e-tiles/img/Tile_Hallway_1_MAD01.jpg",
+      "bytes": 44664,
+      "width": 504,
+      "height": 252
+    },
+    {
+      "path": "content/MoM/ck/mom1e-tiles/img/Tile_Laboratory_MAD01.jpg",
+      "bytes": 92937,
+      "width": 504,
+      "height": 504
+    },
+    {
+      "path": "content/MoM/ck/mom1e-tiles/img/Tile_Secret_Passage_MAD01.jpg",
+      "bytes": 37940,
+      "width": 504,
+      "height": 252
+    },
+    {
+      "path": "content/MoM/hj/img/arthur_holloway_token.png",
+      "bytes": 80477,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/hj/img/doctor_rose_barnett_token.png",
+      "bytes": 83195,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/hj/img/dot_fisher_token.png",
+      "bytes": 77052,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/hj/img/ethel_gibbs_token.png",
+      "bytes": 78190,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/hj/img/fred_cooper_token.png",
+      "bytes": 74222,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/hj/img/officer_butler_token.png",
+      "bytes": 78226,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/hj/img/rift_token.png",
+      "bytes": 142157,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/hj/img/water_token.png",
+      "bytes": 122384,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/pots/img/clinton_freeman_token.png",
+      "bytes": 83180,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/pots/img/eula_dorman_token.png",
+      "bytes": 78962,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/pots/img/marshall_hastings_token.png",
+      "bytes": 76904,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/pots/img/merle_garvin_token.png",
+      "bytes": 79112,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/pots/img/overgrowth_token.png",
+      "bytes": 84410,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/pots/img/rubble_token.png",
+      "bytes": 92703,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/pots/img/templedoor2_token.png",
+      "bytes": 54558,
+      "width": 256,
+      "height": 304
+    },
+    {
+      "path": "content/MoM/pots/img/templedoor_token.png",
+      "bytes": 51994,
+      "width": 256,
+      "height": 304
+    },
+    {
+      "path": "content/MoM/pots/img/templewall2_token.png",
+      "bytes": 83523,
+      "width": 256,
+      "height": 304
+    },
+    {
+      "path": "content/MoM/pots/img/templewall_token.png",
+      "bytes": 63992,
+      "width": 256,
+      "height": 304
+    },
+    {
+      "path": "content/MoM/pots/img/veda_whitsley_token.png",
+      "bytes": 83353,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/soa/img/SpriteAtlasTexture-token.png",
+      "bytes": 1660037,
+      "width": 2048,
+      "height": 1024
+    },
+    {
+      "path": "content/MoM/soa/img/cyan_man_token.png",
+      "bytes": 92151,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/soa/img/cyan_woman_token.png",
+      "bytes": 91379,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/soa/img/drew_walker_token.png",
+      "bytes": 79958,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/soa/img/naomi_o_bannion_token.png",
+      "bytes": 81386,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/soa/img/pink_man_token.png",
+      "bytes": 87825,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/soa/img/pink_woman_token.png",
+      "bytes": 88577,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "content/MoM/sot/img/SpriteAtlasTexture-token.png",
+      "bytes": 1660037,
+      "width": 2048,
+      "height": 1024
+    },
+    {
+      "path": "content/D2E/base/img/030B.png",
+      "bytes": 102780,
+      "width": 331,
+      "height": 152
+    },
+    {
+      "path": "content/D2E/base/img/DJ02_Conversion_Kit.png",
+      "bytes": 146830,
+      "width": 300,
+      "height": 300
+    },
+    {
+      "path": "content/D2E/base/img/HighEditorTransparency.png",
+      "bytes": 47472,
+      "width": 250,
+      "height": 250
+    },
+    {
+      "path": "content/D2E/base/img/LowEditorTransparency.png",
+      "bytes": 42279,
+      "width": 250,
+      "height": 250
+    },
+    {
+      "path": "content/D2E/base/img/MediumEditorTransparency.png",
+      "bytes": 45843,
+      "width": 250,
+      "height": 250
+    },
+    {
+      "path": "content/D2E/boxed/lotw/img/032A.png",
+      "bytes": 57066,
+      "width": 432,
+      "height": 432
+    },
+    {
+      "path": "content/D2E/boxed/lotw/img/033B.png",
+      "bytes": 27288,
+      "width": 432,
+      "height": 288
+    },
+    {
+      "path": "content/D2E/boxed/lotw/img/034A.png",
+      "bytes": 60504,
+      "width": 360,
+      "height": 576
+    },
+    {
+      "path": "content/D2E/boxed/lotw/img/S1A.png",
+      "bytes": 57401,
+      "width": 432,
+      "height": 432
+    },
+    {
+      "path": "content/D2E/boxed/lotw/img/SecretA.png",
+      "bytes": 13581,
+      "width": 72,
+      "height": 72
+    },
+    {
+      "path": "content/D2E/boxed/lotw/img/SecretB.png",
+      "bytes": 13206,
+      "width": 72,
+      "height": 72
+    },
+    {
+      "path": "content/D2E/boxed/mob/img/079B.png",
+      "bytes": 18603,
+      "width": 280,
+      "height": 280
+    },
+    {
+      "path": "content/D2E/boxed/mor/img/075A.png",
+      "bytes": 46871,
+      "width": 420,
+      "height": 420
+    },
+    {
+      "path": "content/D2E/boxed/mor/img/077A.png",
+      "bytes": 16245,
+      "width": 280,
+      "height": 280
+    },
+    {
+      "path": "content/D2E/boxed/son/img/058B.png",
+      "bytes": 42608,
+      "width": 560,
+      "height": 350
+    },
+    {
+      "path": "content/D2E/boxed/son/img/061B.png",
+      "bytes": 43879,
+      "width": 420,
+      "height": 420
+    },
+    {
+      "path": "content/D2E/boxed/son/img/064A.png",
+      "bytes": 36751,
+      "width": 490,
+      "height": 280
+    },
+    {
+      "path": "content/D2E/boxed/son/img/064B.png",
+      "bytes": 37700,
+      "width": 490,
+      "height": 280
+    },
+    {
+      "path": "content/D2E/boxed/son/img/transition2B.png",
+      "bytes": 16931,
+      "width": 280,
+      "height": 280
+    },
+    {
+      "path": "content/D2E/boxed/tctr/img/079B.png",
+      "bytes": 18603,
+      "width": 280,
+      "height": 280
+    },
+    {
+      "path": "content/D2E/boxed/tctr/img/097B.png",
+      "bytes": 127989,
+      "width": 420,
+      "height": 280
+    },
+    {
+      "path": "content/D2E/boxed/tt/img/044B.png",
+      "bytes": 82882,
+      "width": 576,
+      "height": 576
+    },
+    {
+      "path": "content/D2E/boxed/tt/img/045A.png",
+      "bytes": 62368,
+      "width": 720,
+      "height": 360
+    },
+    {
+      "path": "content/D2E/boxed/tt/img/046A.png",
+      "bytes": 38649,
+      "width": 432,
+      "height": 360
+    },
+    {
+      "path": "content/D2E/boxed/tt/img/047A.png",
+      "bytes": 17629,
+      "width": 288,
+      "height": 288
+    },
+    {
+      "path": "content/D2E/boxed/tt/img/S2A.png",
+      "bytes": 124876,
+      "width": 288,
+      "height": 216
+    },
+    {
+      "path": "content/D2E/boxed/tt/img/SecretA.png",
+      "bytes": 13581,
+      "width": 72,
+      "height": 72
+    },
+    {
+      "path": "content/D2E/boxed/tt/img/SecretB.png",
+      "bytes": 13206,
+      "width": 72,
+      "height": 72
+    },
+    {
+      "path": "content/D2E/ck/aod/img/AoD.png",
+      "bytes": 265719,
+      "width": 360,
+      "height": 358
+    },
+    {
+      "path": "content/D2E/ck/aod/img/Aurim.png",
+      "bytes": 67306,
+      "width": 178,
+      "height": 178
+    },
+    {
+      "path": "content/D2E/ck/aod/img/Eliam.png",
+      "bytes": 68522,
+      "width": 170,
+      "height": 170
+    },
+    {
+      "path": "content/D2E/ck/aod/img/Kirga.png",
+      "bytes": 110225,
+      "width": 226,
+      "height": 226
+    },
+    {
+      "path": "content/D2E/ck/d1e/img/BogranTheShadow.png",
+      "bytes": 93272,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "path": "content/D2E/ck/d1e/img/D1E.png",
+      "bytes": 359533,
+      "width": 564,
+      "height": 564
+    },
+    {
+      "path": "content/D2E/ck/d1e/img/Landrec.png",
+      "bytes": 73514,
+      "width": 178,
+      "height": 178
+    },
+    {
+      "path": "content/D2E/ck/dq/img/DQ.png",
+      "bytes": 357611,
+      "width": 400,
+      "height": 397
+    },
+    {
+      "path": "content/D2E/ck/dq/img/HugoTheGlorious.png",
+      "bytes": 23088,
+      "width": 97,
+      "height": 97
+    },
+    {
+      "path": "content/D2E/ck/promo/img/Promo.png",
+      "bytes": 24232,
+      "width": 200,
+      "height": 200
+    },
+    {
+      "path": "content/D2E/ck/promo/img/TobinFarslayer.png",
+      "bytes": 65520,
+      "width": 170,
+      "height": 170
+    },
+    {
+      "path": "content/D2E/ck/toi/img/LaughinBuldar.png",
+      "bytes": 95829,
+      "width": 200,
+      "height": 200
+    },
+    {
+      "path": "content/D2E/ck/toi/img/ToI.jpg",
+      "bytes": 716355,
+      "width": 900,
+      "height": 900
+    },
+    {
+      "path": "content/D2E/ck/wod/img/WoD.jpg",
+      "bytes": 13209,
+      "width": 225,
+      "height": 224
+    }
+  ]
+}

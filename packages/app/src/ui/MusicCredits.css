@@ -1,0 +1,39 @@
+/* Not in Valkyrie: the music's credit, small and quiet in the bottom right corner of the menus */
+.music-credits {
+  position: fixed;
+  right: max(0.5rem, env(safe-area-inset-right));
+  bottom: max(0.4rem, env(safe-area-inset-bottom));
+  z-index: 5;
+  pointer-events: none;
+  font-size: 0.68rem;
+  color: var(--quiet);
+  opacity: 0.6;
+  text-align: right;
+}
+
+.music-credits p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  justify-content: flex-end;
+}
+
+.music-credits a {
+  pointer-events: auto;
+  display: inline-flex;
+  opacity: 0.85;
+}
+
+.music-credits a:hover,
+.music-credits a:focus-visible {
+  opacity: 1;
+}
+
+.music-credits .video-mark {
+  fill: var(--video-brand);
+}
+
+.music-credits .video-play {
+  fill: var(--video-play);
+}

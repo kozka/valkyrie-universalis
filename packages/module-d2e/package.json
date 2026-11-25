@@ -1,0 +1,14 @@
+{
+  "name": "@universalis/module-d2e",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Descent 2nd ed. module of Valkyrie Universalis, ported from Valkyrie's C#.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@universalis/engine": "0.1.0"
+  }
+}

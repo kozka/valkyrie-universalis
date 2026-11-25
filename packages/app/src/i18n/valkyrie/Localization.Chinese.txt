@@ -1,0 +1,10 @@
+.,Chinese
+// Valkyrie's own texts that its Chinese file leaves out or empty and the app shows, written by Claude (October 2026): only
+// gaps, loaded before Valkyrie's so that an empty line of its own does not hide them (host/boot.ts; tests/texts.test.ts)
+STATS_AVERAGE_DURATION,平均時長：{0} 分鐘
+STATS_AVERAGE_WIN_RATIO,平均勝率：{0}%
+STATS_MENU_BUTTON,選單
+STATS_NB_USER_REVIEWS,（{0} 則玩家評價）
+STATS_NO_AVERAGE_DURATION,沒有平均時長資料
+STATS_NO_AVERAGE_WIN_RATIO,沒有平均勝率資料
+UPDATE,更新

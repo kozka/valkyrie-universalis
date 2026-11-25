@@ -1,0 +1,13 @@
+.,English
+quest.name,The Bell of Darkford
+quest.synopsys,Goblins have stolen the bell that kept Darkford's dead asleep.
+quest.description,"Every dusk for a hundred years, the bell of Darkford's temple has rung and the valley's dead have slept. Three nights ago, goblins carried it off up the hill.\n\n<i>Example mini-campaign of two quests with a visit to town between them, for 2-4 heroes and the base game only, with Road to Legend rules. What you do in the first quest changes the second.</i>"
+quest.authors,"<b>Author</b>\nExample of the descent-valkyrie skill"
+quest.authors_short,descent-valkyrie skill
+EventIntro1.text,"<i>Every dusk for a hundred years, the bell of Darkford's temple has rung over the valley, and the dead of the old graveyard have slept in peace.</i>\n\n<i>Three nights ago the bell fell silent. Goblins tore it from its tower and dragged it up the hill on a cart. Since then, every night, something scratches beneath the gravestones…</i>"
+EventIntro1.button1,Continue
+EventIntro2.text,"<b>The campaign</b>\n\nTwo quests with a visit to Highport between them. What you do in the first changes the second.\n\nValkyrie tracks morale, experience (Skills button: each hero spends their XP), gold and items (Items button). Everything else —damage, fatigue, conditions, movement— you apply yourselves with the Road to Legend rules."
+EventIntro2.button1,Continue
+EventDificultad.text,"Choose the difficulty, as in Road to Legend:\n\n<b>Normal</b>: you start with 50 gold per hero.\n<b>Hard</b>: no gold, and perils come one round earlier."
+EventDificultad.button1,Normal
+EventDificultad.button2,Hard

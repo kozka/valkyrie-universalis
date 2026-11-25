@@ -1,0 +1,4 @@
+.,Portuguese
+// Valkyrie's own texts that its Portuguese file leaves out or empty and the app shows, written by Claude (October 2026): only
+// gaps, loaded before Valkyrie's so that an empty line of its own does not hide them (host/boot.ts; tests/texts.test.ts)
+REQUIRED,Obrigatório

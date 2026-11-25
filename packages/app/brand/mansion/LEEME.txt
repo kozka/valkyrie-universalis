@@ -1,0 +1,13 @@
+ESCENA MANSION - PRIMER PROTOTIPO
+Dimension comun: 1536x480. PNG con alpha, todos alineados al origen 0,0.
+
+00_original.webp: fondo exacto sin modificaciones.
+00_fondo_verja_aproximada.webp: SOLO PRUEBA, relleno aproximado de algunas zonas de la verja.
+01_mansion.png: recorte aproximado de la casa; bordes deben refinarse.
+02/03: verja segmentada, contiene algunos elementos del terreno; requiere refinamiento.
+04/05: arboles oscuros por umbral, ramas finas pueden perderse.
+06 luna recortada; esta sigue en el fondo original.
+07/08/09 luces superponibles.
+11/12/13 niebla extra transparente.
+
+AVISO: Para PARALLAX real hace falta restaurar los fondos ocultos; este prototipo NO es una segmentacion profesional lista para desplazar los objetos a grandes distancias. Recomendado: mantener el original fijo, animar fog y glow y refinar uno por uno los recortes que se deseen mover.

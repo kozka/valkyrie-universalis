@@ -1,0 +1,243 @@
+/* Universalis' windows for Mansions (17 October 2026): every window of a game, and those over the scenario screens, in
+   the gold frame of kozka's scenario card (scenario-card.webp, 906×278, corners of 55), its buttons in his gold
+   button (scenario-button.webp, 503×130, corners of 45), cut as windows of old were (border-image), so they take any
+   size. The texts keep the colours their authors give them: the frame's inside is as dark as Valkyrie's cards. The
+   buttons over the board come later. Not in Valkyrie. */
+
+:root[data-theme='universalis'][data-game='MoM'] :is(.quest-screen, .quest-selection, .quest-details) .window.panel,
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .panel.monster-panel {
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/scenario-card.webp') 55 fill / 1.8rem;
+  background: none;
+  box-shadow: none;
+  /* A shadow that follows the frame, whose corners are cut away */
+  filter: drop-shadow(0 0.8rem 1.4rem color-mix(in srgb, var(--shade) 85%, transparent));
+  color: var(--card-text);
+}
+
+/* The monster's panel keeps its picture, name and damage buttons inside the frame's drawn edge, as the events do */
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .panel.monster-panel {
+  padding: 1rem 1.1rem;
+}
+
+/* Inside a framed window, what was a card of its own is the frame's inside */
+:root[data-theme='universalis'][data-game='MoM'] :is(.quest-screen, .quest-selection, .quest-details) .window.panel .card {
+  border: none;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+/* An event: its text, a gold line, its buttons */
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .event-window {
+  padding: 1rem 1.1rem;
+}
+
+/* Folded to a strip (play/Windows.tsx), in a thinner frame */
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .event-window.folded {
+  padding: 0.45rem 0.7rem;
+  border-image-width: 1.1rem;
+}
+
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .event-window > .event-text {
+  padding: 1.3rem 2.5rem 1.2rem;
+}
+
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .event-window > .event-text + .event-buttons {
+  background: linear-gradient(
+      to right,
+      transparent,
+      color-mix(in srgb, var(--accent) 55%, transparent) 20%,
+      color-mix(in srgb, var(--accent) 55%, transparent) 80%,
+      transparent
+    )
+    top / 100% 1px no-repeat;
+}
+
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .event-buttons {
+  gap: 0.55rem;
+  padding: 0.9rem 0.6rem 0.4rem;
+}
+
+/* The buttons in the windows, in the gold frame; an author's colour for a button stays on its words */
+:root[data-theme='universalis'][data-game='MoM'] :is(.quest-screen, .quest-selection, .quest-details) .window.panel .button {
+  --button-h: min(2.9rem, 11vh);
+  min-height: var(--button-h, 2.9rem);
+  padding: 0.25rem 1.3rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/scenario-button.webp') 45 fill / calc(var(--button-h, 2.9rem) / 130 * 45);
+  background: none;
+  box-shadow: none;
+  color: var(--room-title);
+  transition:
+    filter 140ms ease,
+    transform 140ms ease;
+}
+
+:root[data-theme='universalis'][data-game='MoM'] :is(.quest-screen, .quest-selection, .quest-details) .window.panel .button:hover:not(:disabled) {
+  filter: brightness(1.18);
+  text-shadow: 0 0 0.5rem color-mix(in srgb, var(--room-glow) 35%, transparent);
+}
+
+:root[data-theme='universalis'][data-game='MoM'] :is(.quest-screen, .quest-selection, .quest-details) .window.panel .button:active:not(:disabled) {
+  filter: brightness(0.9);
+  transform: translateY(1px);
+}
+
+:root[data-theme='universalis'][data-game='MoM'] :is(.quest-screen, .quest-selection, .quest-details) .window.panel .button:disabled {
+  filter: grayscale(0.8) brightness(0.7);
+}
+
+/* The window's title, in the game's titles and the frame's gold */
+:root[data-theme='universalis'][data-game='MoM'] :is(.quest-screen, .quest-selection, .quest-details) .window.panel :is(h1, h2) {
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-weight: 400;
+  color: var(--room-title);
+  text-shadow: 0 0 0.6rem color-mix(in srgb, var(--room-glow) 35%, transparent);
+}
+
+/* Over the board (17 October 2026): Menu in kozka's gold frame (hud-menu.webp, 232×184, corners of 48), the size it
+   had; and the phase bar's Items, Set and Log as his pictures, a satchel, a map and a book, their words kept for
+   whoever cannot see them */
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen {
+  --phase-bar-height: 4.6rem;
+}
+
+/* Menu, and the next phase's arrow at the bottom right, in the same frame */
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .button.hud:is(.menu-button, .next-phase) {
+  --menu-h: 2.75rem;
+  min-height: var(--menu-h, 2.75rem);
+  padding: 0.3rem 1.3rem;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-image: url('../../assets/hud-menu.webp') 48 fill / calc(var(--menu-h, 2.75rem) / 184 * 48);
+  background: none;
+  box-shadow: none;
+  color: var(--room-title);
+  font-size: 1.1rem;
+  filter: drop-shadow(0 0.3rem 0.6rem color-mix(in srgb, var(--shade) 80%, transparent));
+  transition:
+    filter 140ms ease,
+    transform 140ms ease;
+}
+
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .button.hud.next-phase {
+  min-width: 3.6rem;
+  padding: 0.3rem 1rem;
+}
+
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .button.hud:is(.menu-button, .next-phase):hover:not(:disabled) {
+  background: none;
+  color: var(--room-title);
+  filter: brightness(1.18);
+  text-shadow: 0 0 0.5rem color-mix(in srgb, var(--room-glow) 40%, transparent);
+}
+
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .phase-bar .button.hud:is(.items, .set, .log, .notes) {
+  position: relative;
+  /* Never more than an eighth of the screen's height: with large text on a phone held sideways the bar took a third of
+     it, and the windows above it had no room (11 November 2026) */
+  width: min(3.6rem, 13vh);
+  height: min(3.6rem, 13vh);
+  min-height: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: center / contain no-repeat;
+  box-shadow: none;
+  filter: drop-shadow(0 0.2rem 0.35rem color-mix(in srgb, var(--shade) 85%, transparent));
+  transition:
+    filter 140ms ease,
+    transform 140ms ease;
+}
+
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .phase-bar .button.hud.items {
+  background-image: url('../../assets/hud-items.webp');
+}
+
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .phase-bar .button.hud.set {
+  background-image: url('../../assets/hud-set.webp');
+}
+
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .phase-bar .button.hud.log {
+  background-image: url('../../assets/hud-log.webp');
+}
+
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .phase-bar .button.hud.notes {
+  background-image: url('../../assets/hud-notes.webp');
+}
+
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .phase-bar .button.hud:is(.items, .set, .log, .notes):hover:not(:disabled) {
+  background-color: transparent;
+  transform: translateY(-2px) scale(1.06);
+  filter: brightness(1.12) drop-shadow(0 0 0.5rem color-mix(in srgb, var(--room-glow) 45%, transparent));
+}
+
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .phase-bar .button.hud:is(.items, .set, .log, .notes):active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+/* The words, out of sight but read out */
+:root[data-theme='universalis'][data-game='MoM'] .quest-screen .phase-bar .hud-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* A phone: smaller pictures, so that the phase's name keeps its room */
+@media (max-width: 40rem) {
+  :root[data-theme='universalis'][data-game='MoM'] .quest-screen .phase-bar .button.hud:is(.items, .set, .log, .notes) {
+    width: min(2.9rem, 13vh);
+    height: min(2.9rem, 13vh);
+  }
+
+  :root[data-theme='universalis'][data-game='MoM'] .quest-screen {
+    --phase-bar-height: 4rem;
+  }
+}
+
+/* A phone held sideways: the event's window thinner inside its frame (screens/QuestScreen.css), Menu and the next phase's
+   arrow no taller than the pictures */
+@media (max-height: 32rem) and (orientation: landscape) {
+  :root[data-theme='universalis'][data-game='MoM'] .quest-screen .button.hud:is(.menu-button, .next-phase) {
+    --menu-h: min(2.75rem, 12vh);
+    font-size: min(1.1rem, 5.5vh);
+  }
+
+  :root[data-theme='universalis'][data-game='MoM'] .quest-screen .event-window {
+    padding: 0.7rem 0.8rem;
+  }
+
+  :root[data-theme='universalis'][data-game='MoM'] .quest-screen .event-window > .event-text {
+    padding: 0.9rem 2.4rem 0.8rem;
+  }
+
+  :root[data-theme='universalis'][data-game='MoM'] .quest-screen .event-buttons {
+    gap: 0.45rem;
+    padding: 0.65rem 0.4rem 0.3rem;
+  }
+
+  :root[data-theme='universalis'][data-game='MoM'] :is(.quest-screen, .quest-selection, .quest-details) .window.panel .button {
+    --button-h: 2.6rem;
+  }
+}
+
+/* The option «buttons apart» (play/play.css): the frame goes round the text alone, the buttons below it */
+:root[data-theme='universalis'][data-game='MoM'][data-buttons-apart] .quest-screen .event-window:not(.folded) > .event-text.card {
+  padding: 1.6rem 2.6rem 1.4rem;
+  border: 1px solid transparent;
+  border-image: url('../../assets/scenario-card.webp') 55 fill / 1.8rem;
+  box-shadow: var(--window-shadow);
+}
+
+@media (max-height: 32rem) and (orientation: landscape) {
+  :root[data-theme='universalis'][data-game='MoM'][data-buttons-apart] .quest-screen .event-window:not(.folded) > .event-text.card {
+    padding: 1.2rem 2.5rem 1rem;
+  }
+}

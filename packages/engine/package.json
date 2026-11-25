@@ -1,0 +1,15 @@
+{
+  "name": "@universalis/engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Game-agnostic engine of Valkyrie Universalis, ported from Valkyrie's C#.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./data/*": "./data/*"
+  },
+  "dependencies": {
+    "fflate": "^0.8.3"
+  }
+}

@@ -1,0 +1,513 @@
+/* Mansions' investigator selection in the Universalis theme (HeroRoom.tsx): the study fills the screen; the frames sit
+   on a stage of their picture's shape (3:2), as large as the screen holds, and everything on it is placed in percent of
+   that picture and sized in the stage's own width (cqw) */
+.hero-selection.hero-room {
+  z-index: 6;
+  padding: 0;
+  gap: 0;
+  overflow: hidden;
+  background: var(--shade);
+}
+
+/* Coming in: the room and its frames rise out of the dark, the frames a moment after */
+.hero-room-art {
+  animation: hero-room-enter 0.6s ease-out both;
+}
+
+.hero-room-stage {
+  animation: hero-room-enter 0.7s ease-out 0.15s both;
+}
+
+@keyframes hero-room-enter {
+  from {
+    opacity: 0;
+  }
+}
+
+.hero-room-art {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-room-art canvas {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-room-stage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(100%, 150dvh);
+  aspect-ratio: 3 / 2;
+  transform: translate(-50%, -50%);
+  container-type: size;
+  /* A sideways swipe turns the page (HeroRoom.tsx), so the browser must leave it alone */
+  touch-action: pan-y pinch-zoom;
+}
+
+.hero-room-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Words that must fit their place in any language: one line, shrunk by HeroRoom.tsx useFit when it is too long */
+.hero-room [data-fit] {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.hero-room-title {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-weight: 400;
+  font-size: 3cqw;
+  line-height: 1.2;
+  color: var(--room-title);
+  text-shadow:
+    0 0 0.8cqw color-mix(in srgb, var(--room-glow) 40%, transparent),
+    0 0.15cqw 0.2cqw var(--shade);
+}
+
+/* The eight ovals of a page. The portraits keep the classic list's classes (hero-list, hero-choice), which the tests
+   and the keyboard know: none of that list's look here */
+.hero-room .hero-room-portraits {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-room .hero-choice,
+.hero-room .hero-choice[aria-pressed='true'] {
+  display: block;
+  width: auto;
+  gap: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: inherit;
+}
+
+.hero-room-slot,
+.hero-room-empty {
+  position: absolute;
+  list-style: none;
+}
+
+/* Past the last investigator: the frame's own figure, in black and white */
+.hero-room-empty {
+  filter: grayscale(1) contrast(1.15) brightness(0.85);
+}
+
+.hero-room-portrait {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+.hero-room-portrait:focus-visible {
+  outline: none;
+}
+
+/* The portrait, cut to the hole's shape; the picture itself blurred behind it fills whatever the picture leaves */
+.hero-room-oval {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  background: var(--card);
+  transition: filter 0.6s ease;
+}
+
+.hero-room .hero-room-oval .hero-room-oval-fill,
+.hero-room .hero-room-oval .portrait {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.hero-room .hero-room-oval .hero-room-oval-fill {
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.5);
+  filter: blur(0.6cqw) brightness(0.7);
+}
+
+/* The oval picture leaves a little transparent margin round its oval: a little larger, it fills the hole */
+.hero-room .hero-room-oval img.portrait {
+  transform: scale(1.12);
+  transition: transform 0.25s ease;
+}
+
+/* No picture (no import): its initials on the dark */
+.hero-room .hero-room-oval .portrait.placeholder {
+  display: grid;
+  place-items: center;
+  background: var(--card);
+  color: var(--room-title);
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-size: 3cqw;
+}
+
+.hero-room .hero-room-portrait:not([aria-pressed='true']):hover img.portrait,
+.hero-room .hero-room-portrait:not([aria-pressed='true']):focus-visible img.portrait {
+  transform: scale(1.18);
+}
+
+.hero-room-portrait:not([aria-pressed='true']):hover .hero-room-oval,
+.hero-room-portrait:not([aria-pressed='true']):focus-visible .hero-room-oval {
+  filter: brightness(1.15);
+}
+
+/* Chosen: grey and dim, as it cannot be chosen again; its likeness has gone to its circle */
+.hero-room-portrait[aria-pressed='true'] {
+  cursor: default;
+}
+
+.hero-room-portrait[aria-pressed='true'] .hero-room-oval {
+  filter: grayscale(1) brightness(0.5);
+}
+
+.hero-room-portrait[aria-pressed='true'] .hero-room-name {
+  opacity: 0.55;
+}
+
+.hero-room-name {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  padding: 0 0.7cqw;
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-size: max(1.2cqw, 8.5px);
+  line-height: 1.2;
+  color: var(--room-ink);
+  transition: opacity 0.6s ease;
+}
+
+.hero-room .hero-choice span.hero-room-name {
+  font-size: max(1.2cqw, 8.5px);
+  line-height: 1.2;
+}
+
+/* A page turning, from the side it comes */
+.hero-room-portraits[data-turning='right'] .hero-room-slot,
+.hero-room-portraits[data-turning='right'] .hero-room-empty {
+  animation: hero-room-from-right 0.45s ease-out;
+}
+
+.hero-room-portraits[data-turning='left'] .hero-room-slot,
+.hero-room-portraits[data-turning='left'] .hero-room-empty {
+  animation: hero-room-from-left 0.45s ease-out;
+}
+
+/* Which page of the investigators shows: small dots, the page's lit */
+.hero-room-dots {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75cqw;
+}
+
+.hero-room-dot {
+  width: 0.55cqw;
+  height: 0.55cqw;
+  min-width: 5px;
+  min-height: 5px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--room-glow) 28%, transparent);
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.hero-room-dot:hover,
+.hero-room-dot:focus-visible {
+  background: color-mix(in srgb, var(--room-glow) 60%, transparent);
+  outline: none;
+}
+
+.hero-room-dot[aria-current='page'] {
+  background: var(--room-glow);
+  box-shadow: 0 0 0.5cqw color-mix(in srgb, var(--room-glow) 70%, transparent);
+  transform: scale(1.25);
+}
+
+/* The arrows and the buttons: their piece of the frames, lit when pointed at, pressed in when pressed */
+.hero-room-arrow,
+.hero-room-button {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition:
+    filter 0.4s ease,
+    transform 0.1s ease;
+}
+
+.hero-room-arrow:not(:disabled) {
+  animation: hero-room-call 3.2s ease-in-out infinite;
+}
+
+.hero-room-arrow:hover:not(:disabled),
+.hero-room-arrow:focus-visible,
+.hero-room-button:hover,
+.hero-room-button:focus-visible {
+  filter: brightness(1.45) drop-shadow(0 0 0.9cqw var(--room-glow));
+  animation: none;
+  outline: none;
+}
+
+.hero-room-arrow:active:not(:disabled),
+.hero-room-button:active {
+  transform: scale(0.96);
+  filter: brightness(1.7) drop-shadow(0 0 1.2cqw var(--room-glow));
+}
+
+.hero-room-arrow:disabled {
+  cursor: default;
+  filter: grayscale(1) brightness(0.3);
+}
+
+.hero-room-button span {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  padding: 0 1.2cqw;
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-size: max(1.9cqw, 12px);
+  line-height: 1.2;
+  color: var(--room-title);
+  text-shadow: 0 0.15cqw 0.25cqw var(--shade);
+  transition:
+    color 0.6s ease,
+    text-shadow 0.6s ease;
+}
+
+/* Finished waits a little dim until there are enough investigators, then glows softly, its word lit */
+.hero-room-button.finished {
+  filter: brightness(0.8);
+}
+
+.hero-room[data-ready] .hero-room-button.finished:not(:hover):not(:focus-visible) {
+  filter: brightness(1.2) drop-shadow(0 0 0.6cqw color-mix(in srgb, var(--room-glow) 55%, transparent));
+  animation: hero-room-ready 3.5s ease-in-out infinite;
+}
+
+.hero-room[data-ready] .hero-room-button.finished span {
+  color: var(--accent-bright);
+  text-shadow:
+    0 0 0.7cqw color-mix(in srgb, var(--room-glow) 80%, transparent),
+    0 0.15cqw 0.25cqw var(--shade);
+}
+
+/* The circles of the investigators chosen */
+.hero-room-circle {
+  position: absolute;
+}
+
+.hero-room-circle-empty {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+}
+
+.hero-room-circle::after {
+  content: '';
+  position: absolute;
+  inset: -4%;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* As many as the scenario asks for glow like embers while empty, the rest up to how many it takes softly */
+.hero-room-circle[data-kind='required']::after {
+  box-shadow:
+    0 0 1.4cqw 0.25cqw color-mix(in srgb, var(--room-ember) 75%, transparent),
+    inset 0 0 1.2cqw 0.2cqw color-mix(in srgb, var(--room-ember) 55%, transparent);
+  animation: hero-room-breathe 2.2s ease-in-out infinite;
+}
+
+.hero-room-circle[data-kind='optional']::after {
+  box-shadow: inset 0 0 1cqw 0.1cqw color-mix(in srgb, var(--room-glow) 30%, transparent);
+}
+
+.hero-room-circle[data-filled]::after {
+  box-shadow: 0 0 0.9cqw 0.15cqw color-mix(in srgb, var(--room-glow) 40%, transparent);
+  animation: none;
+}
+
+.hero-room-circle[data-kind='closed'] .hero-room-circle-empty {
+  filter: grayscale(1) brightness(0.35);
+}
+
+/* An investigator chosen, filling its circle */
+.hero-room-chosen {
+  position: absolute;
+  inset: 3%;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--card);
+  cursor: pointer;
+  animation: hero-room-settle 0.5s ease-out;
+}
+
+.hero-room-chosen img,
+.hero-room-chosen .placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-room-chosen img {
+  transform: scale(1.12);
+}
+
+.hero-room-chosen .placeholder {
+  display: grid;
+  place-items: center;
+  color: var(--room-title);
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-size: 1.6cqw;
+}
+
+/* While it flies there, it is the flight that shows */
+.hero-room-chosen[data-arriving] {
+  visibility: hidden;
+  animation: none;
+}
+
+.hero-room-chosen:hover,
+.hero-room-chosen:focus-visible {
+  filter: brightness(1.2);
+  outline: none;
+}
+
+/* The flight from the oval to the circle (HeroRoom.tsx Flyer), rippling through an SVG filter */
+.hero-room-flyer {
+  position: absolute;
+  z-index: 3;
+  transform-origin: 0 0;
+  border-radius: 50%;
+  overflow: hidden;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.hero-room-filter {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.hero-room-flyer-picture {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-room-flyer-picture img,
+.hero-room-flyer-picture .placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.12);
+}
+
+.hero-room-flyer-picture .placeholder {
+  display: grid;
+  place-items: center;
+  background: var(--card);
+  color: var(--room-title);
+  font-family: var(--font-heading);
+  text-transform: var(--heading-case, none);
+  font-size: 1.6cqw;
+}
+
+@keyframes hero-room-breathe {
+  0%,
+  100% {
+    opacity: 0.65;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes hero-room-call {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.3) drop-shadow(0 0 0.6cqw var(--room-glow));
+  }
+}
+
+@keyframes hero-room-ready {
+  0%,
+  100% {
+    filter: brightness(1.15) drop-shadow(0 0 0.5cqw color-mix(in srgb, var(--room-glow) 45%, transparent));
+  }
+  50% {
+    filter: brightness(1.3) drop-shadow(0 0 0.9cqw color-mix(in srgb, var(--room-glow) 65%, transparent));
+  }
+}
+
+@keyframes hero-room-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(3cqw);
+  }
+}
+
+@keyframes hero-room-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-3cqw);
+  }
+}
+
+@keyframes hero-room-settle {
+  from {
+    filter: brightness(1.6);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-room *,
+  .hero-room *::before,
+  .hero-room *::after {
+    animation: none !important;
+  }
+}

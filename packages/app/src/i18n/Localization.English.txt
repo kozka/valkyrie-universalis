@@ -1,0 +1,416 @@
+.,English
+APP_NAME,Valkyrie Universalis
+UNOFFICIAL,Unofficial, fan-made
+ADD_SCENARIO,Add a scenario file
+NO_SCENARIOS,No scenarios yet. Add a .valkyrie file from the store or from its author.
+NOT_A_SCENARIO,{0} is not a Valkyrie scenario.
+SCENARIO_ADDED,{0} added.
+SCENARIO_OTHER_GAME,{0} is a scenario for {1}: it is listed there.
+SCENARIO_FILTERED,{0} added, but the filters hide it (its languages, or expansions you do not have).
+SCENARIO_INVALID,{0} cannot be opened: its quest.ini is not valid for this version of Valkyrie.
+RELOAD_LIST,Reload the list
+PLAY_SCENARIO,Play
+LANGUAGES,Languages: {0}
+RATING,Rating: {0} out of 10
+DOWNLOAD_FAILED,{0} could not be downloaded. Check the connection and try again.
+HEROES_RANGE,{0} to {1} investigators
+MINUTES_RANGE,{0} to {1} minutes
+ABOUT_TEXT,Valkyrie Universalis is a web version of Valkyrie, the free app by NPBruce and its contributors. It is made by fans and has no ties to Fantasy Flight Games. It carries no art, sound or text from the publisher: each player imports their own, and it stays in their browser.
+ABOUT_CODE,Code under the Apache 2.0 licence, ported from Valkyrie {0}.
+STORAGE_OFF,This browser does not keep files: what you add is gone when you close it.
+STOPPED,The scenario stopped: {0}
+LOADING,Loading…
+SYMBOL_STRENGTH,Strength
+SYMBOL_AGILITY,Agility
+SYMBOL_OBSERVATION,Observation
+SYMBOL_LORE,Lore
+SYMBOL_INFLUENCE,Influence
+SYMBOL_WILL,Will
+SYMBOL_ACTION,action
+SYMBOL_SUCCESS,success
+SYMBOL_CLUE,clue
+SYMBOL_TENTACLE,tentacle
+SYMBOL_PRODUCT,expansion icon
+MORALE,Morale: {0}
+AVAILABLE_XP,Available experience: {0}
+SYMBOL_HEART,health
+SYMBOL_FATIGUE,fatigue
+SYMBOL_MIGHT,Might
+SYMBOL_KNOWLEDGE,Knowledge
+SYMBOL_AWARENESS,Awareness
+SYMBOL_SHIELD,shield
+SYMBOL_SURGE,surge
+MONSTER_LIST,Monsters
+NEXT_PHASE,Next phase
+PHASE_BAR,Round
+SCROLL_UP,Previous monsters
+SCROLL_DOWN,More monsters
+AWARENESS,Awareness {0}
+HORROR_VALUE,Horror {0}
+HEALTH,Health {0}
+DAMAGE,Damage {0}
+DUPLICATE,Group {0}
+END_TITLE,The end
+WELCOME_TITLE,Welcome to Valkyrie Universalis
+WELCOME_TEXT,Valkyrie Universalis is a web version of Valkyrie that runs on any device: computer, tablet or phone, where you can also install it as an app.\n\nThis is an early version. It has been tested thoroughly and everything seems to work, but it may still have the odd bug.\n\nSome things are still missing, such as the scenario editor, and the interface needs polishing, among other details. But you can already play and rate scenarios, and it brings a few new options for you to discover…\n\nEnjoy!
+WELCOME_HIDE,Don't show this again
+WELCOME_START,Start
+RATING_ALREADY_SENT,You already sent your rating of this scenario ({0}/10). Each scenario is rated only once on each device.
+RATING_NOT_SENT,The rating could not be sent: check your connection and try again. Your rating is kept on this device.
+MY_RATING,Your rating: {0}/10
+FEEDBACK_BUTTON,Report an app problem
+FEEDBACK_TITLE,Report a problem or suggest an idea
+FEEDBACK_INTRO,Found something that fails, or have an idea? Tell us: it goes straight to the developer. If it is a bug, say what you were doing and what happened.
+FEEDBACK_KIND,Kind
+FEEDBACK_BUG,Bug
+FEEDBACK_IDEA,Idea
+FEEDBACK_OTHER,Other
+FEEDBACK_COMMENT,Your comment
+FEEDBACK_EMAIL,Your email (optional, if you want an answer)
+FEEDBACK_TECHNICAL,Technical details also sent
+FEEDBACK_EMPTY,Write a comment before sending.
+FEEDBACK_FAILED,It could not be sent: check your connection and try again.
+FEEDBACK_SENT,Thank you! Your comment has been sent.
+FEEDBACK_SEND,Send
+FEEDBACK_CANCEL,Cancel
+FEEDBACK_CLOSE,Close
+PUZZLE_SYMBOLS,Symbols
+PUZZLE_ADD,Add {0}
+PUZZLE_REMOVE,Take out {0}
+PUZZLE_CODE,Your guess
+PUZZLE_GUESSES,Guesses made
+PUZZLE_RESULT,{0} right in the right place, {1} right in the wrong place
+PUZZLE_BLOCKS,Blocks
+PUZZLE_TARGET_BLOCK,Red block
+PUZZLE_BLOCK,Block
+PUZZLE_PIECES,Pieces of the picture
+PUZZLE_PIECE,Piece {0}
+PUZZLE_TOWERS,Towers
+PUZZLE_TOWER,Tower {0}
+IMPORT_SUBTITLE,Universalis uses the content Valkyrie imported from your own copy of the official {0} app. It is copied into this browser once and never leaves it.
+IMPORT_FROM_FOLDER,Choose Valkyrie's import folder
+IMPORT_FOLDER_DESC,On Windows it is %APPDATA%\Valkyrie\{0}\import.
+IMPORT_ZIP_DESC,A zip of that same import folder: the way for phones and tablets.
+IMPORT_PROGRESS,{0} of {1} files
+IMPORT_NO_INI,There is no import.ini: choose Valkyrie's import folder, or a zip of it.
+IMPORT_RAW_ASSETS,These are the official app's own files. Universalis cannot read them yet: import them in Valkyrie first, then choose its import folder.
+IMPORT_NO_SPACE,There is not enough room in this browser: it needs {0} MB and {1} MB are free.
+IMPORT_UNREADABLE,The zip cannot be read: {0}
+IMPORT_FAILED,The import failed: {0}
+IMPORT_OLD,This import was made by another version of Valkyrie or of the official app, so it is not used. Import again in an up-to-date Valkyrie and bring its folder here.
+THEME,Theme
+FELT,Board felt
+COLOUR_BLACK,Black
+COLOUR_GREEN,Green
+COLOUR_RED,Burgundy
+COLOUR_BLUE,Blue
+BOARD_TILT,Board tilt
+BOARD_TILT_TABLE,Like a table (30°)
+BOARD_TILT_VALKYRIE,As in Valkyrie (10°)
+VERSION,Version {0}
+NEW_VERSION,There is a new version of the app.
+RELOAD_APP,Reload
+INSTALL_APP,Install the app
+INSTALL_APPLE,To install it on this iPhone or iPad, tap Share and then Add to Home Screen.
+IMPORT_INSTALL_FIRST,On iPhone and iPad, install the app first (Share, then Add to Home Screen) and import from it: the installed app keeps its files apart from the browser's.
+IMPORT_TO_PLAY,To play, Universalis needs the content Valkyrie imported from your own copy of the official {0} app. Until then you can look through the scenarios.
+BACKUP,Backup
+BACKUP_TEXT,What the app keeps (your saved games, the options, your collection and the downloaded scenarios and packs) lives in this browser, on this device. A backup puts it all in one file: to take it to another browser or device, or to have it back if the browser clears its data. The official import is not in it: import it again.
+BACKUP_DOWNLOAD,Download a backup
+BACKUP_RESTORE,Restore a backup
+BACKUP_MAKING,Making the backup: {0} of {1} files…
+BACKUP_MADE,Backup downloaded: {0} MB.
+BACKUP_CONFIRM,Everything the app keeps in this browser will be replaced by what {0} has. Go on?
+BACKUP_RESTORE_GO,Restore
+BACKUP_RESTORING,Restoring: {0} of {1}…
+BACKUP_NOT_ONE,This file is not a Valkyrie Universalis backup.
+BACKUP_UNREADABLE,The backup cannot be read: {0}
+BACKUP_FAILED,It could not be done: {0}
+BACKUP_UNFINISHED,The backup is in the browser: it takes its place when the app starts again.
+BACKUP_NOT_FINISHED,The backup could not take its place yet ({0}): it will try again when the app starts.
+DOOM_NAME,DooM
+DOOM_NEEDS_PACK,DooM's missions need its community content pack. Download it from the store to play them.
+DOOM_DOWNLOAD_PACK,Download DooM
+TURN_PHONE,Turn your phone: games are played in landscape.
+PLAY_UPRIGHT,Play upright
+MOM_TITLE,Mansions of Madness
+MOM_EDITION,Second Edition
+D2E_TITLE,Descent
+D2E_SUBTITLE,Journeys in the Dark
+D2E_EDITION,Second Edition
+COLOUR_UNIVERSALIS,Universalis (illustrated)
+COLOUR_PURE,Pure black
+MARKS,Your marks
+MARK_PLAYED,Played
+MARK_FAVORITE,Favourite
+MARK_PENDING,Pending
+FILTER_PLAYED,Played or not
+FILTER_PLAYERS,Players
+SORT_TITLE,Sort by
+FILTER_CATEGORIES,Adventure type
+FILTER_CATEGORIES_NOTE,Mansions only. Shows the adventures that have all the ones ticked.
+CATEGORY_BEGINNERS,For beginners
+CATEGORY_SHORT,Short
+CATEGORY_NARRATIVE,Narrative
+CATEGORY_COMBAT,Combat
+CATEGORY_CAMPAIGN,Campaign or series
+CATEGORY_REPLAYABLE,Replayable
+FILTERS_ON,Filtering: {0} of {1}
+FILTERS_CLEAR,Clear filters
+FILTERS_HIDE_ALL,The filters hide every scenario. Clear them to see them again.
+FILTER_SEARCH_ON,Search: “{0}”
+FILTER_LANGS_ON,Languages: {0}
+FILTER_EXPANSIONS_ON,No missing expansions
+FILTER_PLAYERS_ON,Players: {0}
+ADULT_CONTENT,Adult content
+IGOR_NOT_LISTED,That adventure is not in this list. Go online to the store to see it.
+IGOR_OPEN,Talk to Igor
+IGOR_FILTERED,Igor found the adventure, but the filters hide it. Clear them to see it.
+FILTER_MARKS,Marked
+FILTER_ALL,All
+FILTER_PLAYED_ONLY,Played
+FILTER_UNPLAYED,Not played
+FILTER_FAVORITES,Favourites
+FILTER_PENDING,Pending
+SIZE_NORMAL,Normal
+SIZE_LARGE,Large
+SIZE_LARGER,Larger
+PIECE_SIZE,Size of the tokens on the board
+PIECE_SIZE_LARGE,Large (+30%)
+OPTIONS_LOOK,Look
+OPTIONS_ADVANCED_TEXT,Changes to how a game plays. All off, a game plays as in Valkyrie.
+CONFIRM_PHASE,Ask before ending the investigators' phase
+CONFIRM_PHASE_TEXT,End the investigators' phase and start the Mythos phase?
+KEEP_ZOOM,Keep my zoom when the scenario moves the camera
+HIDE_CURSOR,Hide the mouse pointer
+LOG_COPIED,Copied
+READ_ALOUD,Read aloud
+STOP_READING,Stop reading
+AUTO_READ,Read the events aloud as they appear
+ITEM_SIZE,Size of the items
+MONSTER_PLACE,Monsters
+MONSTER_PLACE_RIGHT,On the right
+MONSTER_PLACE_BOTTOM,At the bottom
+BUTTONS_APART,Event buttons apart from their text, as the official app
+EPIC_SPAWNS,Mark the appearance of a tough monster
+VOICE,Voice for reading aloud
+VOICE_BROWSER,The browser's
+VOICE_OFF,Off
+VOICE_SAMPLE,The door creaks open. Something waits in the dark.
+VOICE_TRY,Try the voice
+VOICE_NONE,This browser has no voices of its own.
+VOICE_WHICH,Voice
+VOICE_BEST,The best for the language
+VOICE_GEMINI,Gemini (Google)
+VOICE_GEMINI_KEY,Gemini API key
+VOICE_GEMINI_MODEL,Model
+VOICE_GEMINI_STYLE,How to read (optional)
+VOICE_GEMINI_STYLE_HINT,Read like a horror narrator, in a low voice
+VOICE_GEMINI_NOTE,The texts are sent to Google to be read. The key stays in this browser and is not saved in backups.
+VOICE_GEMINI_NO_KEY,Enter a key to use Gemini (aistudio.google.com/apikey). Until then, the browser's voice reads.
+VOICE_GEMINI_TIME,First sound after {0} s; all the audio after {1} s.
+VOICE_GEMINI_FAILED,Gemini could not read it: {0}. The browser's voice read it instead.
+VOICE_SPEECHIFY,Speechify
+VOICE_SPEECHIFY_KEY,Speechify API key
+VOICE_SPEECHIFY_LOADING,Loading the voices…
+VOICE_SPEECHIFY_NO_VOICES,Speechify has no voices for this language with this model.
+VOICE_SPEECHIFY_NOTE,The texts are sent to Speechify to be read. The key stays in this browser and is not saved in backups.
+VOICE_SPEECHIFY_NO_KEY,Enter a key to use Speechify (platform.speechify.ai). Until then, the browser's voice reads.
+VOICE_SPEECHIFY_FAILED,Speechify could not read it: {0}. The browser's voice read it instead.
+VOICE_DEEPGRAM,Deepgram
+VOICE_DEEPGRAM_KEY,Deepgram API key
+VOICE_DEEPGRAM_NO_VOICES,Deepgram has no voices of this kind for this language: the browser's voice reads.
+VOICE_DEEPGRAM_NOTE,The texts are sent to Deepgram to be read. The key stays in this browser and is not saved in backups.
+VOICE_DEEPGRAM_NO_KEY,Enter a key to use Deepgram (console.deepgram.com). Until then, the browser's voice reads.
+VOICE_DEEPGRAM_FAILED,Deepgram could not read it: {0}. The browser's voice read it instead.
+VOICE_DEEPGRAM_FAMILY,Kind of voice
+VOICE_DEEPGRAM_OTHER,Other voice (its name in the playground)
+HORROR_REMINDER,Remind of the horror checks after the monsters act
+HORROR_REMINDER_TEXT,Horror step: each investigator makes a horror check against the monster within range with the highest horror rating.
+BLANK_TILES,Draw a blank tile when one is missing, instead of stopping
+CLICK_SOUND,Click sound on the menus' buttons
+MUSIC_IMPORTED,Music of the official game (imported)
+MUSIC_CUSTOM,Music of the adventure (its author's)
+MENU_SOUND,Sound of the menus
+FILTER_DOWNLOADED,Downloaded
+FILTER_DOWNLOADED_ONLY,Downloaded
+FILTER_NOT_DOWNLOADED,Not downloaded
+UPDATE_ALL,Update all ({0})
+UPDATING_ALL,Updating {0} of {1}: {2}
+TILES_SHOW,See the tiles
+TILES_SPOILER,Spoiler warning: the tiles show part of the map you will explore. Do you want to see them?
+TILES_CONTINUE,Continue and see them
+TILES_TITLE,Tiles of the scenario
+TILES_LOADING,Reading the scenario's maps…
+TILES_NONE,This scenario places no tiles of its own.
+TILES_OPTIONAL,Optional: from “{0}”, which is not in your collection
+TILES_OPTIONAL_NOTE,The scenario only places these tiles if you own that pack. If you do, tick it in My Collection.
+TILES_UNKNOWN,Not in any known pack
+HEROES_ASKED_EXACT,This scenario asks for {0}
+HEROES_ASKED_RANGE,This scenario asks for {0} to {1}
+HEROES_CHOSEN,chosen: {0}
+HERO_VIEW,Size of the list
+HERO_VIEW_NORMAL,Small
+HERO_VIEW_LARGE,Large
+HERO_VIEW_LARGER,Pictures
+OPTIONS_RESET,Restore default options
+OPTIONS_RESET_CONFIRM,Put every option back as it came? The language, your games, your marks and what you downloaded stay as they are.
+TRANSLATE,Automatic translation
+TRANSLATE_WARNING,An AI translates the scenarios that do not come in your language. It can make mistakes, and how well it does depends on the model you choose. The texts are sent to OpenRouter to be translated. Setting it up is easy:
+TRANSLATE_STEP_1,Create a free account at openrouter.ai.
+TRANSLATE_STEP_2,Go to Keys (openrouter.ai/keys), press Create Key, give it a name and copy the key: it starts with sk-or- and is shown only once.
+TRANSLATE_STEP_3,Paste it below. It is kept only in this browser.
+TRANSLATE_STEP_4,Choose a model, or keep the free DeepSeek one we set. Free models can be slow or limited per minute; with credit you can use faster ones.
+TRANSLATE_ENABLE,Turn on
+TRANSLATE_KEY,OpenRouter key
+TRANSLATE_MODEL,Model
+TRANSLATE_MODELS_LOADING,Looking for OpenRouter's free models…
+TRANSLATE_MODEL_OTHER,Another model (its OpenRouter name)
+TRANSLATE_TRY,Try the translation
+TRANSLATE_WORKING,Translating…
+TRANSLATED,Automatic translation
+TRANSLATE_FAILED,Could not translate: {0}
+TILES_TABLE,Table needed: about {0} × {1} cm
+TILES_TABLE_NOTE,The largest map with all its tiles down at once, without the cards and pieces around it.
+MUSIC_CREDIT_LABEL,Music credits
+MUSIC_CREDIT,Music: {0}
+MUSIC_CREDIT_CHANNEL,{0} on YouTube
+MORE_INFO,More information
+TILES_TABLE_INFO,This information may differ from reality: it is the largest size calculated from the scenario's map.
+TRANSLATE_TIMEOUT,the model took more than {0} seconds to answer. Try again or choose another model
+TRANSLATE_TOOK,{0} answered in {1} s.
+TRANSLATE_DISABLED,Temporarily disabled while we improve it.
+STORAGE,Storage
+STORAGE_USED,The app takes {0} MB of the {1} MB this browser lets it use.
+STORAGE_PERSISTED,The browser keeps these files even when it runs short of space.
+STORAGE_NOT_PERSISTED,If the browser runs short of space, it may delete these files: make a backup now and then.
+STORAGE_PERSIST,Ask the browser to keep them
+STORAGE_PERSIST_REFUSED,The browser did not agree. Some browsers only do it for installed apps or sites you visit often.
+STORAGE_WRITE_FAILED,Something could not be saved in this browser: {0}
+GO_ON_PLAYING,Keep playing
+SAVE_AND_QUIT,Save and quit
+COPY_DIAGNOSTICS,Copy the details of the error
+DIAGNOSTICS_COPIED,Copied: paste it in your report
+OTHER_WINDOW,The app is already open in another window or tab: use only one, or they will overwrite each other's data.
+DELETE_SCENARIO_CONFIRM,Delete {0} from this device? You will have to download it again to play it.
+SAVE_FAILED,The game could not be saved: {0}
+NOT_A_ZIP,{0} is not a zip file: a Valkyrie scenario is a zip with the .valkyrie extension.
+CHECK_TITLE,{0} added, with notes
+CHECK_TITLE_ERRORS,{0} cannot be opened
+CHECK_FIXED_FOLDER,The scenario was inside the folder «{0}» of the zip, so the app took it out to play it. Valkyrie would not open it like that: to share it, zip what is inside the folder, not the folder.
+CHECK_BLANK_LINE,{0}, line {1}: it has only spaces or tabs, and Valkyrie cannot read the file. Leave it empty.
+CHECK_FORMAT,Its format ({0}) is not one Valkyrie reads (from {1} to {2}).
+CHECK_NO_QUESTTEXT,quest.ini has no [QuestText] section, which lists its texts: Valkyrie cannot open it.
+CHECK_MISSING_FILE,quest.ini names the file {0}, which is not in the scenario.
+CHECK_LOCALIZATION_HEADER,{0}: its first line must be like «.,English», naming its language; Valkyrie cannot read it.
+CHECK_MISSING_EVENT,{0} has a button to the event {1}, which does not exist.
+CHECK_MORE,And {0} more like these.
+CHECK_UNREADABLE,{0} cannot be read: {1}
+COLOUR_CLASSIC,Classic
+PREVIOUS_PAGE,Previous page
+NEXT_PAGE,Next page
+PAGE_OF,Page {0} of {1}
+TRANSLATION_BUTTON,My translation
+TRANSLATION_TITLE,Your translation of this scenario
+TRANSLATION_EXPLAIN,Load a zip with the Localization.<language>.txt of your translation and, if you change them, the pictures and sounds under the names the scenario gives them. It is kept on this device and used when you start a game of this scenario in that language. Another one in the same language replaces it.
+TRANSLATION_NONE,You have no translation of your own of this scenario.
+TRANSLATION_SAVED_LINE,{0}: {1} of {2} texts, {3} pictures and {4} sounds ({5}).
+TRANSLATION_LOAD,Load a zip
+TRANSLATION_REMOVE,Remove
+TRANSLATION_REMOVE_LANGUAGE,Remove the translation into {0}
+TRANSLATION_READING,Reading…
+TRANSLATION_REPORT_TITLE,What was found in {0}
+TRANSLATION_NOT_SAVED,It was not kept:
+TRANSLATION_TEXTS,Texts translated: {0} of {1}.
+TRANSLATION_IMAGES,Pictures it replaces: {0}.
+TRANSLATION_SOUNDS,Sounds it replaces: {0}.
+TRANSLATION_SAVED,Kept on this device: it will be used when you play this scenario in {0}.
+TRANSLATION_REPLACED,It replaces the translation into {0} you had.
+TRANSLATION_NOT_ZIP,The file is not a zip.
+TRANSLATION_NO_TEXTS_FILE,The zip has no Localization.<language>.txt file with the texts.
+TRANSLATION_SEVERAL_LANGUAGES,The zip has texts in several languages ({0}): load one at a time.
+TRANSLATION_UNKNOWN_LANGUAGE,«{0}» is not one of Valkyrie’s languages ({1}).
+TRANSLATION_NAME_LANGUAGE,The name of {0} does not say the language it holds ({1}): the one inside counts.
+TRANSLATION_NOTHING_TRANSLATED,None of its texts belongs to this scenario: is it from another one?
+TRANSLATION_UNKNOWN_TEXTS,{0} texts do not exist in the scenario (from another version?): {1}.
+TRANSLATION_UNUSED_FILES,{0} files replace none of the scenario’s and will not be used: {1}. They must be named as the scenario’s are.
+TRANSLATION_REPLACES_OWN,The scenario already comes in {0}: your texts replace its own.
+TRANSLATION_OTHER_LANGUAGE,It is in {0} and you play in {1}: it will only be used if you change the language to {0}.
+TRANSLATION_SWITCH_ASK,Switch the app to {0} now? The menus and this scenario will change with it.
+TRANSLATION_SWITCH,Switch to {0}
+TRANSLATION_STAY,Stay in {0}
+RULES_HELP,Help and rules
+RULES_ACTIONS,Investigator actions
+RULES_ACTIONS_D2E,Hero actions
+RULES_ACTIONS_DOOM,Marine actions
+RULES_SUMMARY,Rules summary
+RULES_NOTE,A fan-made summary to refresh how the game is played. It does not replace the official rulebooks.
+SHOW_MAP,Show the board
+SHOW_TEXT,Back to the text
+CLEAR_ELIMINATED,Clear Eliminated
+NO_WEBGL,This browser cannot draw the board, because it has no WebGL. Turn on hardware acceleration in its settings, or try another browser.
+BOARD_LOST,The board ran out of memory and cannot be drawn again. Close the app completely, open it again and use Continue.
+TILES_TAB,Tiles
+MONSTERS_SHOW,Monsters
+ITEMS_SHOW,Items
+MONSTERS_TITLE,Monsters of the scenario
+ITEMS_TITLE,Items of the scenario
+MONSTERS_NOTE,The monsters the scenario names. Those it draws at random by their traits are not here.
+ITEMS_NOTE,The items the scenario names. Those drawn at random are not here.
+MONSTERS_NONE,This scenario names no monsters of its own.
+ITEMS_NONE,This scenario names no items of its own.
+HELP_SEARCH,Search the help
+HELP_SEARCH_NONE,Nothing in the help matches that.
+QUIT_CONFIRM,Leave for the main menu? The game saves itself, and Continue takes it up again.
+QUIT_CONFIRM_YES,Leave
+BUTTON_HINTS,Make the scenario's own buttons glow softly after a while without a press
+QUEST_SERIOUS,Careful: this scenario has {0} mistakes by its author that can stop the game or leave an event half done.
+QUEST_SERIOUS_SHOW,See them
+QUEST_SERIOUS_HIDE,Hide
+QUEST_SERIOUS_TELL,They are the author’s: if one stops your game, tell them.
+FAULT_ADD_MISSING,{0} puts on the table something that does not exist
+FAULT_TILE,The tile {0} is in no pack
+FAULT_START,It has no event to start with
+FAULT_TWICE,{0} is written twice
+FAULT_TEXT,A text in {0} is not closed properly
+GAME_TIMER,Show how long the round and the game have lasted
+TIMER_ROUND,Round {0}
+TIMER_GAME,Game {0}
+SCENARIO_FAULTS,Warn in a scenario's details of its author's serious mistakes
+TV_MODE,Television mode: everything bigger and easier to read from afar
+FULLSCREEN,Full screen
+NOTES,Notes
+NOTES_HINT,Clues, codes, who carries what…
+NOTES_KEPT,They are kept with the game when it saves.
+EDITOR_NOT_READY,The editor is not ready
+EDITOR_EARLY,We are at a very early stage: use it only to try it out, not as a finished tool
+EDITOR_COMPUTER_ONLY,For now it only opens on a computer, with a mouse or a touchpad: not on a phone or a tablet.
+EDITOR_ENTER,Understood, enter
+ADD_CONTENT_PACK,Add a pack from a file
+PACKS_FROM_FILES,On this device, not in the store's list
+PACK_ADDED,{0} added. To use it, choose it in {1}, under {2}.
+PACK_CHECK_TITLE,{0} added, with warnings
+PACK_CHECK_TITLE_ERRORS,{0} cannot be added
+PACK_NOT_ZIP,{0} is not a zip file: a content pack is a zip with the .valkyrieContentPack extension.
+PACK_IS_SCENARIO,{0} is a scenario, not a content pack: add it from the scenario list with «{1}».
+PACK_NO_INI,{0} has no content_pack.ini, at its top or in one of its folders, so Valkyrie does not take it as a pack.
+PACK_NO_NAME,content_pack.ini has no name in [ContentPack]: Valkyrie stops when it reads it. Add name=… with the pack's name.
+PACK_NO_ID,content_pack.ini has no id in [ContentPack]. Add a unique id (the same one as in its manifest): the pack is kept by it, and scenarios ask for it.
+PACK_BAD_ID,The id «{0}» has spaces or signs: scenarios list their packs separated by spaces, and it names a file. Use only letters, numbers, - and _.
+PACK_OFFICIAL_ID,The id «{0}» is an official pack's: this one would replace it. Choose another id.
+PACK_STORE_ID,The store already has a pack with the id «{0}»: on this device, this one takes its place. If it is not your own version of that pack, choose another id.
+PACK_NO_TYPE,content_pack.ini has no type: add type={0}Custom.
+PACK_OTHER_GAME,It is a pack for the other game (type={0}): add it from {1}.
+PACK_BAD_TYPE,type={0} is not for this game: it must start with {1}, as {1}Custom.
+PACK_NOT_CUSTOM,type={0}: community packs use {1}, and with another type it does not show among them in the collection.
+PACK_NO_IMAGE,The pack's picture ({0}) is not in the pack: it will show without one.
+PACK_NO_ICON,The pack's icon ({0}) is not in the pack.
+PACK_CASE,{0} is called {1} in the pack. This app and Windows do not mind the capitals, but Valkyrie on Android and Linux does, and will not find it. Write it with the same capitals.
+PACK_LANGUAGE_LINE,[LanguageData] has the line «{0}»: it must be the dictionary and the file, as «pck Localization.English.txt».
+PACK_MISSING_LANGUAGE,[LanguageData] names {0}, which is not in the pack: its texts will not show.
+PACK_MISSING_DATA,[ContentPackData] names {0}, which is not in the pack: Valkyrie stops loading the pack at that file.
+PACK_UNKNOWN_SECTION,{0}: Valkyrie does not know what [{1}] is and ignores it. A section's name must start with its type (TileSide, Monster, Item, Token…).
+PACK_DUPLICATE,[{0}] is in {1} and in {2}: only the first one counts. Give each its own name.
+PACK_NAME_TAKEN,[{0}] is already defined by the pack {1}: only one of them counts. Give yours a name of its own.
+PACK_MISSING_IMAGE,{0}, [{1}]: the picture {2} is not in the pack (with or without .png, .jpg, .dds…): it will show without one.
+PACK_IMAGE_ROOTED,{0}, [{1}]: the picture {2} starts with a slash, so Valkyrie looks for it outside the pack. Remove the slash.
